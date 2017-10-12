@@ -22,6 +22,7 @@ cd $1
 repositories='
 files
 honzi.github.io
+IDTC
 Saria.htm
 '
 
@@ -33,12 +34,11 @@ do
         echo 'checking https://github.com/honzi/'$repository
         cd $repository
         git status
+        cd ..
 
     else
         echo 'https://github.com/honzi/'$repository' NOT YET CLONED'
     fi
-
-    cd ..
 
     echo
 done

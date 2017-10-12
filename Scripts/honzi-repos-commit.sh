@@ -23,6 +23,7 @@ cd $1
 repositories='
 files
 honzi.github.io
+IDTC
 Saria.htm
 '
 
@@ -36,12 +37,11 @@ do
         cd $repository
         git add -A
         git commit -m "$2"
+        cd ..
 
     else
         echo 'https://github.com/honzi/'$repository' NOT YET CLONED'
     fi
-
-    cd ..
 
     echo
 done

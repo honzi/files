@@ -22,6 +22,7 @@ cd $1
 repositories='
 files
 honzi.github.io
+IDTC
 Saria.htm
 '
 

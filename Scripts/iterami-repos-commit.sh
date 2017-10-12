@@ -23,7 +23,6 @@ cd $1
 iterami_repositories='
 9YG0E6r.htm
 Alarm.htm
-AoM-Guide.htm
 Aquarium-2D.htm
 Avoidance-2D.htm
 BaseConverter.htm
@@ -31,16 +30,8 @@ BinaryDataEndecoder.htm
 Birthday.htm
 Blog.php
 Calculator.htm
-CH-Guide.htm
 ChatBot.py
-Chrome-CookieClickerSimplifier
-Chrome-DarkTheme
-Chrome-GitHubCodeWrap
 Chrome-iterami
-Chrome-RedditSimplifier
-Chrome-TwitchSimplifier
-Chrome-WikipediaSimplifier
-Chrome-YouTubeSimplifier
 Click.htm
 Clock.htm
 ColorDrops.htm
@@ -54,7 +45,6 @@ ContactForm.htm
 ContactForm.php
 Countdown.htm
 D2LoD-ArcaneSanctuary.htm
-D2LoD-Guide.htm
 DesertStreetMarket.htm
 Documentation.htm
 DotEyeIllusion.htm
@@ -67,12 +57,10 @@ Drupal-disable_window_alert
 Drupal-integer_to_decimal
 Drupal-move_field_description
 Drupal-workflow_transitions_roles_fix
-DS-Guide.htm
 Duel.htm
 EmojiText.htm
 eog-Plugin-MenuEnhancer
 ESP-Test.htm
-EVE-Guide.htm
 ExperienceCalculator.htm
 FakeLogin.php
 Fireworks-2D.htm
@@ -82,10 +70,10 @@ Functions.php
 gedit-Plugin-MenuEnhancer
 GitHub-API.htm
 Guess.htm
+Guides.htm
 Hallway-2D3D.htm
 Hexagons-2D.htm
 Hrad.htm
-HS-Guide.htm
 Info.php
 InterestCalculator.htm
 Inventory.php
@@ -96,10 +84,8 @@ LayeredSnake-2D3D.htm
 LocalStorage.htm
 Market
 Match.htm
-MC-ResourcePacks
 OfficeTowers.htm
 OS.asm
-pages.github.io
 Particleball-2D.htm
 ParticleRun-2D.htm
 PasswordGenerator.htm
@@ -111,7 +97,6 @@ Platform-3D.htm
 PlusPlus.htm
 Poem.htm
 ProcessEditor
-PT-Guide.htm
 QjnyYap.htm
 Race-2D.htm
 Race-3D.htm
@@ -123,12 +108,9 @@ RockPaperScissors.htm
 RomanNumerals.htm
 RPG-Above.htm
 RPG-Side.htm
-RS-Guide.htm
 RTS-2D.htm
 RTS-Boxing.htm
 SC-AI.cpp
-SC-Guide.htm
-SC-Maps.htm
 Scripts
 Shooter-2D.htm
 Slots.htm
@@ -148,7 +130,6 @@ TemplateEngine-Lite.php
 Terminal.htm
 TextEditor.htm
 TextInfo.htm
-TF2-Guide.htm
 ThemePark-3D.htm
 Time.htm
 TimeColors.htm
@@ -167,7 +148,6 @@ WebScraper.py
 WebServer.py
 Wiki.php
 WindowInfo.htm
-WoW-Guide.htm
 '
 
 # Commit cloned iterami repositories.
@@ -179,12 +159,11 @@ do
         cd $repository
         git add -A
         git commit -m "$2"
+        cd ..
 
     else
         echo 'https://github.com/iterami/'$repository' NOT YET CLONED'
     fi
-
-    cd ..
 
     echo
 done
