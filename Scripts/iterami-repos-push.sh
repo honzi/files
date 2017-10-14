@@ -31,6 +31,7 @@ Blog.php
 Calculator.htm
 ChatBot.py
 Chrome-iterami
+CityMaze.htm
 Click.htm
 Clock.htm
 ColorDrops.htm
@@ -83,7 +84,6 @@ LayeredSnake-2D3D.htm
 LocalStorage.htm
 Market
 Match.htm
-OfficeTowers.htm
 OS.asm
 Particleball-2D.htm
 ParticleRun-2D.htm
@@ -124,8 +124,8 @@ Starfield-2D3D.htm
 Starfield-3D.htm
 Sudoku.htm
 SurrealIntermission.htm
-TemplateEngine.php
 TemplateEngine-Lite.php
+TemplateEngine.php
 Terminal.htm
 TextEditor.htm
 TextInfo.htm
