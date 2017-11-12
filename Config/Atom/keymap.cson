@@ -116,3 +116,5 @@
   'shift-insert': 'unset!'
   'shift-pagedown': 'unset!'
   'shift-pageup': 'unset!'
+'.platform-win32 atom-text-editor':
+  'ctrl-r': 'unset!'
