@@ -24,6 +24,7 @@ repositories='
 files
 honzi.github.io
 IDTC
+IDTC.htm
 Saria.htm
 '
 
