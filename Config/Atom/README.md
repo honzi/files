@@ -1,2 +1,3 @@
 Packages:
+* minimap
 * sort-lines
