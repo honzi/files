@@ -143,6 +143,7 @@ URIViewer.htm
 Vidce.htm
 Warped.htm
 WASD-2D.htm
+WASD-3D.htm
 WebScraper.py
 WebServer.py
 Wiki.php
