@@ -25,6 +25,7 @@
       "exception-reporting"
       "fuzzy-finder"
       "git-diff"
+      "github"
       "go-to-line"
       "grammar-selector"
       "image-view"
@@ -98,6 +99,7 @@
     zoomFontWhenCtrlScrolling: false
   "find-and-replace":
     liveSearchMinimumCharacters: 2
+    scrollToResultOnLiveSearch: true
   minimap:
     charHeight: 1
     devicePixelRatioRounding: false
