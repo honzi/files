@@ -19,10 +19,6 @@ echo 'pulling https://github.com/honzi/files'
 git pull
 echo
 
-# Execute honzi-repos-fetch.sh, which has the
-#   updated list of honzi repositories.
-sh honzi-repos-fetch.sh $1
-
 # Execute iterami-repos-fetch.sh, which has the
 #   updated list of iterami repositories.
 sh iterami-repos-fetch.sh $1
