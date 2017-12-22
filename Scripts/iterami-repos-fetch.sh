@@ -62,6 +62,7 @@ eog-Plugin-MenuEnhancer
 ESP-Test.htm
 ExperienceCalculator.htm
 FakeLogin.php
+FileBrowser.c
 Fireworks-2D.htm
 Forums
 FractalRunner-2D3D.htm
