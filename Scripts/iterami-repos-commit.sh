@@ -65,7 +65,6 @@ ExperienceCalculator.htm
 FakeLogin.php
 FileBrowser.c
 Fireworks-2D.htm
-Forums
 FractalRunner-2D3D.htm
 Functions.php
 gedit-Plugin-MenuEnhancer
@@ -83,7 +82,6 @@ iterami.github.io
 Jetpack-2D.htm
 LayeredSnake-2D3D.htm
 LocalStorage.htm
-Market
 Match.htm
 OS.asm
 Particleball-2D.htm
