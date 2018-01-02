@@ -4,7 +4,7 @@
 sudo apt-get update
 sudo apt-get dist-upgrade
 sudo apt-get upgrade
-sudo apt autoremove
+sudo apt-get autoremove
 
 
 # INSTALL
@@ -16,13 +16,29 @@ sudo apt-get install synaptic
 
 sudo apt-get update
 sudo apt-get upgrade
-sudo apt autoremove
+sudo apt-get autoremove
 
 
 # UNINSTALL
+sudo apt-get remove activity-log-manager
+sudo apt-get remove aisleriot
+sudo apt-get remove brasero
+sudo apt-get remove evolution
+sudo apt-get remove gnome-mahjongg
+sudo apt-get remove gnome-mines
+sudo apt-get remove gnome-orca
+sudo apt-get remove gnome-sudoku
+sudo apt-get remove libreoffice-core
+sudo apt-get remove remmina
+sudo apt-get remove rhythmbox
+sudo apt-get remove shotwell
+sudo apt-get remove simple-scan
+sudo apt-get remove thunderbird
+sudo apt-get remove transmission-common
+
 sudo apt-get update
 sudo apt-get upgrade
-sudo apt autoremove
+sudo apt-get autoremove
 
 
 # CONFIGURE

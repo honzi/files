@@ -124,4 +124,3 @@
     * `24-hour time`: YES
     * `Seconds`: YES
     * `Include week numbers`: YES
-
