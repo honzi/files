@@ -58,7 +58,7 @@ sudo apt-get autoremove
 # CONFIGURE
 sudo rm /etc/opt/chrome/policies/managed/chrome-gnome-shell.json
 sudo rm /etc/chromium/policies/managed/chrome-gnome-shell.json
-sudo rm /home/honzi/.steam/root/ubuntu12_32/steam-runtime/i386/usr/lib/i386-linux-gnu/libstdc++.so.6
+sudo rm ~/.steam/root/ubuntu12_32/steam-runtime/i386/usr/lib/i386-linux-gnu/libstdc++.so.6
 
 gsettings set org.gnome.desktop.peripherals.touchpad send-events disabled-on-external-mouse
 
