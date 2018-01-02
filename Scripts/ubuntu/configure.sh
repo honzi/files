@@ -40,7 +40,6 @@ sudo apt-get remove shotwell
 sudo apt-get remove simple-scan
 sudo apt-get remove thunderbird
 sudo apt-get remove transmission-common
-sudo apt-get remove unity-scope-gdrive
 sudo apt-get remove whoopsie
 
 sudo apt-get update
