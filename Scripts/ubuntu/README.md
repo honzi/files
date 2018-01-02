@@ -8,16 +8,17 @@
 3. Save boot changes to continue boot, and select `Install Ubuntu`.
 4. Install Ubuntu solo without third-party software selected.
 5. Shutdown computer and remove USB.
-6. Start computer, run update and configuration scripts. Shut down computer.
+6. Start computer, run configuration script. Shut down computer.
 7. Start computer, select `GNOME Flashback (Metacity)` before logging in, and begin manual configuration.
 
 ---
 
-### Script Updates and Configuration
+### Configuration Script
 
 1. `sudo apt-get install git`.
 2. `git clone https://github.com/honzi/files.git` into `~/Documents/iterami`.
 3. `sh files/Scripts/ubuntu/configure.sh`
+4. Add `manual` to opened `gedit` file and save it.
 
 ---
 
@@ -91,8 +92,7 @@
       * `Steam`
       * `Firefox`
       * `Terminal`
-* `Steam`:
-  * Download and install.
+* `Steam`
 * `System Settings`:
   * `Appearance`:
     * `Background`: `Colors & Gradients`, solid `#000`
