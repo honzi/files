@@ -92,6 +92,8 @@
       * `Steam`
       * `Firefox`
       * `Terminal`
+  * `Properties`:
+    * `Size`: 16
 * `Steam`
 * `System Settings`:
   * `Appearance`:
