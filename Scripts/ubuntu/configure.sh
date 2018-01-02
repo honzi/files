@@ -20,9 +20,14 @@ sudo apt-get autoremove
 
 
 # UNINSTALL
+sudo apt-get remove account-plugin-facebook
+sudo apt-get remove account-plugin-flikr
+sudo apt-get remove account-plugin-google
 sudo apt-get remove activity-log-manager
 sudo apt-get remove aisleriot
 sudo apt-get remove brasero
+sudo apt-get remove cheese
+sudo apt-get remove chrome-gnome-shell
 sudo apt-get remove evolution
 sudo apt-get remove gnome-mahjongg
 sudo apt-get remove gnome-mines
@@ -35,6 +40,8 @@ sudo apt-get remove shotwell
 sudo apt-get remove simple-scan
 sudo apt-get remove thunderbird
 sudo apt-get remove transmission-common
+sudo apt-get remove unity-scope-gdrive
+sudo apt-get remove whoopsie
 
 sudo apt-get update
 sudo apt-get upgrade
