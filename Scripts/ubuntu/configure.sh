@@ -34,6 +34,7 @@ sudo apt-get remove account-plugin-google
 sudo apt-get remove activity-log-manager
 sudo apt-get remove aisleriot
 sudo apt-get remove brasero
+sudo apt-get remove brltty
 sudo apt-get remove cheese
 sudo apt-get remove chrome-gnome-shell
 sudo apt-get remove evolution
@@ -41,13 +42,21 @@ sudo apt-get remove gnome-mahjongg
 sudo apt-get remove gnome-mines
 sudo apt-get remove gnome-orca
 sudo apt-get remove gnome-sudoku
+sudo apt-get remove hyphen-en-us
 sudo apt-get remove libreoffice-core
+sudo apt-get remove libreoffice-common
+sudo apt-get remove openoffice.org-hyphenation
 sudo apt-get remove remmina
 sudo apt-get remove rhythmbox
+sudo apt-get remove rhythmbox-data
 sudo apt-get remove shotwell
+sudo apt-get remove shotwell-common
 sudo apt-get remove simple-scan
 sudo apt-get remove thunderbird
+sudo apt-get remove totem
+sudo apt-get remove totem-common
 sudo apt-get remove transmission-common
+sudo apt-get remove vino
 sudo apt-get remove whoopsie
 
 sudo apt-get update
