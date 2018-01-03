@@ -62,7 +62,7 @@ eog-Plugin-MenuEnhancer
 ESP-Test.htm
 ExperienceCalculator.htm
 FakeLogin.php
-FileBrowser.c
+FileBrowser.gtk
 Fireworks-2D.htm
 FractalRunner-2D3D.htm
 Functions.php
@@ -125,7 +125,7 @@ Sudoku.htm
 SurrealIntermission.htm
 TemplateEngine-Lite.php
 TemplateEngine.php
-TextEditor.c
+TextEditor.gtk
 TextInfo.htm
 ThemePark-3D.htm
 Time.htm
