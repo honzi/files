@@ -60,6 +60,7 @@ sudo apt-get remove shotwell-common
 sudo apt-get remove simple-scan
 sudo apt-get remove thunderbird
 sudo apt-get remove totem
+sudo apt-get remove libtotem0
 sudo apt-get remove totem-common
 sudo apt-get remove transmission-common
 sudo apt-get remove vino
