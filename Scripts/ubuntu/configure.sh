@@ -12,6 +12,7 @@ sudo apt-get autoremove
 sudo apt-get install chromium-browser
 sudo apt-get install dconf-editor
 sudo apt-get install gnome-session-fallback
+sudo apt-get install libglew-dev
 sudo apt-get install libgtk-3-dev
 sudo apt-get install synaptic
 
