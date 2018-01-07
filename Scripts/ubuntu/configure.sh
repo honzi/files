@@ -34,6 +34,7 @@ sudo apt-get remove account-plugin-google
 sudo apt-get remove activity-log-manager
 sudo apt-get remove aisleriot
 sudo apt-get remove aspell
+sudo apt-get remove baobab
 sudo apt-get remove brasero
 sudo apt-get remove brltty
 sudo apt-get remove cheese
