@@ -40,8 +40,11 @@ sudo apt-get remove brasero
 sudo apt-get remove brltty
 sudo apt-get remove cheese
 sudo apt-get remove chrome-gnome-shell
+sudo apt-get remove evince-common
 sudo apt-get remove evolution
+sudo apt-get remove evolution-common
 sudo apt-get remove evolution-data-server-online-accounts
+sudo apt-get remove folks-common
 sudo apt-get remove gnome-mahjongg
 sudo apt-get remove gnome-mines
 sudo apt-get remove gnome-orca
