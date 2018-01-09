@@ -44,11 +44,13 @@ sudo apt-get remove evince-common
 sudo apt-get remove evolution
 sudo apt-get remove evolution-common
 sudo apt-get remove evolution-data-server-online-accounts
+sudo apt-get remove example-content
 sudo apt-get remove folks-common
 sudo apt-get remove gnome-mahjongg
 sudo apt-get remove gnome-mines
 sudo apt-get remove gnome-orca
 sudo apt-get remove gnome-sudoku
+sudo apt-get remove gucharmap
 sudo apt-get remove hyphen-en-us
 sudo apt-get remove libaccount-plugin-generic-oauth
 sudo apt-get remove libaccount-plugin-google
