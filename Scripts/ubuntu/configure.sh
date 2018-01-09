@@ -53,6 +53,16 @@ sudo apt-get remove libreoffice-core
 sudo apt-get remove libreoffice-common
 sudo apt-get remove mobile-broadband-provider-info
 sudo apt-get remove openoffice.org-hyphenation
+sudo apt-get remove printer-driver-brlaser
+sudo apt-get remove printer-driver-c2esp
+sudo apt-get remove printer-driver-foo2zjs-common
+sudo apt-get remove printer-driver-gutenprint
+sudo apt-get remove printer-driver-min12xxw
+sudo apt-get remove printer-driver-postscript-hp
+sudo apt-get remove printer-driver-ptouch
+sudo apt-get remove printer-driver-pxljr
+sudo apt-get remove printer-driver-sag-gdi
+sudo apt-get remove printer-driver-splix
 sudo apt-get remove remmina
 sudo apt-get remove rhythmbox
 sudo apt-get remove rhythmbox-data
