@@ -101,6 +101,12 @@ sudo apt-get remove totem
 sudo apt-get remove libtotem0
 sudo apt-get remove totem-common
 sudo apt-get remove transmission-common
+sudo apt-get remove ubuntu-docs
+sudo apt-get remove ubuntu-minimal
+sudo apt-get remove ubuntu-software
+sudo apt-get remove ubuntu-standard
+sudo apt-get remove ubuntu-touch-sounds
+sudo apt-get remove ubuntu-wallpapers-xenial
 sudo apt-get remove unity-scope-firefoxbookmarks
 sudo apt-get remove uno-libs3
 sudo apt-get remove vino
