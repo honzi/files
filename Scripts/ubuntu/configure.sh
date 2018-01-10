@@ -112,6 +112,7 @@ sudo apt-get remove unity-scope-firefoxbookmarks
 sudo apt-get remove uno-libs3
 sudo apt-get remove vino
 sudo apt-get remove whoopsie
+sudo apt-get remove whoopsie-preferences
 
 sudo apt-get update
 sudo apt-get upgrade
