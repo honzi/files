@@ -80,6 +80,7 @@ sudo apt-get remove totem
 sudo apt-get remove libtotem0
 sudo apt-get remove totem-common
 sudo apt-get remove transmission-common
+sudo apt-get remove unity-scope-firefoxbookmarks
 sudo apt-get remove vino
 sudo apt-get remove whoopsie
 
