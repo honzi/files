@@ -1,15 +1,21 @@
 `honzi`'s Ubuntu Installation
 -----------------------------
 
+### Boot Setup (Only Once)
+
+1. Start computer and spam `ESC` to open boot config.
+2. Set to boot from USB.
+3. Save changes and shut down computer.
+
+---
+
 ### Installation
 
-1. Insert USB into computer.
-2. Start computer, spam `ESC`, and set to boot from USB.
-3. Save boot changes to continue boot, and select `Install Ubuntu`.
-4. Install Ubuntu solo without third-party software selected.
-5. Shutdown computer and remove USB.
-6. Start computer, run configuration script. Shut down computer.
-7. Start computer, select `GNOME Flashback (Metacity)` before logging in, and begin manual configuration.
+1. Boot with USB plugged in and select `Install Ubuntu`.
+2. Install Ubuntu solo without third-party software selected.
+3. Shutdown computer and remove USB.
+4. Start computer, run `Configuration Script` steps. Shut down computer.
+5. Start computer, select `GNOME Flashback (Metacity)` before logging in, and begin manual configuration.
 
 ---
 
