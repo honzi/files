@@ -51,6 +51,7 @@ sudo apt-get remove gnome-mines
 sudo apt-get remove gnome-orca
 sudo apt-get remove gnome-sudoku
 sudo apt-get remove gucharmap
+sudo apt-get remove hplip-data
 sudo apt-get remove hyphen-en-us
 sudo apt-get remove libaccount-plugin-generic-oauth
 sudo apt-get remove libaccount-plugin-google
