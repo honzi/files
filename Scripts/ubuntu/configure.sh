@@ -81,6 +81,8 @@ sudo apt-get remove libfreerdp-utils1.1
 sudo apt-get remove libreoffice-common
 sudo apt-get remove mobile-broadband-provider-info
 sudo apt-get remove mythes-en-us
+sudo apt-get remove nautilus-sendto
+sudo apt-get remove nautilus-share
 sudo apt-get remove onboard
 sudo apt-get remove openoffice.org-hyphenation
 sudo apt-get remove openprinting-ppds
