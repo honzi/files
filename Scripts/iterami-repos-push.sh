@@ -28,6 +28,7 @@ BaseConverter.htm
 BinaryDataEndecoder.htm
 Birthday.htm
 Blog.php
+Bookmarklets.htm
 Calculator.htm
 ChatBot.py
 Chrome-iterami
