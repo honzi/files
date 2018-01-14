@@ -74,6 +74,7 @@ sudo apt-get remove imagemagick-common
 sudo apt-get remove jayatana
 sudo apt-get remove libaccount-plugin-generic-oauth
 sudo apt-get remove libaccount-plugin-google
+sudo apt-get remove libcheese8
 sudo apt-get remove libfreerdp-common1.1.0
 sudo apt-get remove libfreerdp-codec1.1
 sudo apt-get remove libfreerdp-crypto1.1
