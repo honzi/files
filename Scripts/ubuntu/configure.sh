@@ -135,8 +135,13 @@ sudo apt-get remove unity-scope-yelp
 sudo apt-get remove unity-scope-zotero
 sudo apt-get remove uno-libs3
 sudo apt-get remove vino
+sudo apt-get remove wbritish
+sudo apt-get remove webbrowser-app
 sudo apt-get remove whoopsie
 sudo apt-get remove whoopsie-preferences
+sudo apt-get remove yelp
+sudo apt-get remove yelp-xsl
+sudo apt-get remove libyelp0
 
 sudo apt-get update
 sudo apt-get upgrade
