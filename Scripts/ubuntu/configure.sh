@@ -115,6 +115,10 @@ sudo apt-get remove ubuntu-software
 sudo apt-get remove ubuntu-standard
 sudo apt-get remove ubuntu-touch-sounds
 sudo apt-get remove ubuntu-wallpapers-xenial
+sudo apt-get remove unity-lens-applications
+sudo apt-get remove unity-lens-files
+sudo apt-get remove unity-lens-music
+sudo apt-get remove unity-lens-photos
 sudo apt-get remove unity-scope-calculator
 sudo apt-get remove unity-scope-chromiumbookmarks
 sudo apt-get remove unity-scope-colourlovers
