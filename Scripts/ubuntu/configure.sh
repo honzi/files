@@ -102,6 +102,7 @@ sudo apt-get remove printer-driver-splix
 sudo apt-get remove remmina-common
 sudo apt-get remove rhythmbox
 sudo apt-get remove rhythmbox-data
+sudo apt-get remove session-shortcuts
 sudo apt-get remove shotwell
 sudo apt-get remove shotwell-common
 sudo apt-get remove simple-scan
