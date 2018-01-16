@@ -274,7 +274,6 @@ gsettings set org.gnome.settings-daemon.plugins.media-keys active false
 gsettings set org.gnome.settings-daemon.plugins.smartcard active false
 gsettings set org.gtk.settings.file-chooser show-hidden true
 
-
 git config --global user.name "Jan Hořava"
 git config --global user.email czechinthemail@gmail.com
 
