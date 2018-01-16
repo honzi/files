@@ -270,7 +270,21 @@ gsettings set org.gnome.nautilus.preferences default-folder-viewer 'list-view'
 gsettings set org.gnome.nautilus.preferences enable-interactive-search false
 gsettings set org.gnome.nautilus.preferences mouse-use-extra-buttons false
 gsettings set org.gnome.nautilus.preferences show-hidden-files true
-gsettings set org.gnome.settings-daemon.plugins.media-keys active false
+gsettings set org.gnome.settings-daemon.plugins.media-keys area-screenshot ''
+gsettings set org.gnome.settings-daemon.plugins.media-keys area-screenshot-clip ''
+gsettings set org.gnome.settings-daemon.plugins.media-keys logout ''
+gsettings set org.gnome.settings-daemon.plugins.media-keys magnifier ''
+gsettings set org.gnome.settings-daemon.plugins.media-keys magnifier-zoom-in ''
+gsettings set org.gnome.settings-daemon.plugins.media-keys magnifier-zoom-out ''
+gsettings set org.gnome.settings-daemon.plugins.media-keys screencast ''
+gsettings set org.gnome.settings-daemon.plugins.media-keys screenreader ''
+gsettings set org.gnome.settings-daemon.plugins.media-keys screensaver ''
+gsettings set org.gnome.settings-daemon.plugins.media-keys screenshot ''
+gsettings set org.gnome.settings-daemon.plugins.media-keys screenshot-clip ''
+gsettings set org.gnome.settings-daemon.plugins.media-keys terminal ''
+gsettings set org.gnome.settings-daemon.plugins.media-keys video-out ''
+gsettings set org.gnome.settings-daemon.plugins.media-keys window-screenshot ''
+gsettings set org.gnome.settings-daemon.plugins.media-keys window-screenshot-clip ''
 gsettings set org.gnome.settings-daemon.plugins.smartcard active false
 gsettings set org.gtk.settings.file-chooser show-hidden true
 
