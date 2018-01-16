@@ -161,22 +161,22 @@ gsettings set com.canonical.indicator.datetime show-day true
 gsettings set com.canonical.indicator.datetime show-seconds true
 gsettings set com.canonical.indicator.datetime show-week-numbers true
 gsettings set com.canonical.indicator.datetime time-format 24-hour
-gsettings set org.compiz.integrated run-command-1 ['disabled']
-gsettings set org.compiz.integrated run-command-2 ['disabled']
-gsettings set org.compiz.integrated run-command-3 ['disabled']
-gsettings set org.compiz.integrated run-command-4 ['disabled']
-gsettings set org.compiz.integrated run-command-5 ['disabled']
-gsettings set org.compiz.integrated run-command-6 ['disabled']
-gsettings set org.compiz.integrated run-command-7 ['disabled']
-gsettings set org.compiz.integrated run-command-8 ['disabled']
-gsettings set org.compiz.integrated run-command-9 ['disabled']
-gsettings set org.compiz.integrated run-command-10 ['disabled']
-gsettings set org.compiz.integrated run-command-11 ['disabled']
-gsettings set org.compiz.integrated run-command-12 ['disabled']
-gsettings set org.compiz.integrated show-hud ['<Alt>']
+gsettings set org.compiz.integrated run-command-1 []
+gsettings set org.compiz.integrated run-command-2 []
+gsettings set org.compiz.integrated run-command-3 []
+gsettings set org.compiz.integrated run-command-4 []
+gsettings set org.compiz.integrated run-command-5 []
+gsettings set org.compiz.integrated run-command-6 []
+gsettings set org.compiz.integrated run-command-7 []
+gsettings set org.compiz.integrated run-command-8 []
+gsettings set org.compiz.integrated run-command-9 []
+gsettings set org.compiz.integrated run-command-10 []
+gsettings set org.compiz.integrated run-command-11 []
+gsettings set org.compiz.integrated run-command-12 []
+gsettings set org.compiz.integrated show-hud []
 gsettings set org.gnome.desktop.background color-shading-type solid
 gsettings set org.gnome.desktop.background picture-options none
-gsettings set org.gnome.desktop.background primary-color #000000000000
+gsettings set org.gnome.desktop.background primary-color '#000000000000'
 gsettings set org.gnome.desktop.peripherals.touchpad send-events disabled-on-external-mouse
 gsettings set org.gnome.desktop.peripherals.touchpad tap-to-click false
 gsettings set org.gnome.desktop.privacy remember-app-usage false
@@ -254,7 +254,7 @@ gsettings set org.gnome.eog.plugins active-plugins []
 gsettings set org.gnome.file-roller.file-selector show-hidden true
 gsettings set org.gnome.gedit.plugins active-plugins []
 gsettings set org.gnome.gedit.preferences.editor auto-indent true
-gsettings set org.gnome.gedit.preferences.editor backet-matching true
+gsettings set org.gnome.gedit.preferences.editor bracket-matching true
 gsettings set org.gnome.gedit.preferences.editor display-line-numbers true
 gsettings set org.gnome.gedit.preferences.editor display-overview-map true
 gsettings set org.gnome.gedit.preferences.editor highlight-current-line true
@@ -266,13 +266,14 @@ gsettings set org.gnome.login-screen enable-fingerprint-authentication false
 gsettings set org.gnome.login-screen enable-smartcard-authentication false
 gsettings set org.gnome.metacity.keybindings toggle-tiled-left []
 gsettings set org.gnome.metacity.keybindings toggle-tiled-right []
-gsettings set org.gnome.nautilus.preferences default-folder-viewer 'list_view'
+gsettings set org.gnome.nautilus.preferences default-folder-viewer 'list-view'
 gsettings set org.gnome.nautilus.preferences enable-interactive-search false
 gsettings set org.gnome.nautilus.preferences mouse-use-extra-buttons false
 gsettings set org.gnome.nautilus.preferences show-hidden-files true
 gsettings set org.gnome.settings-daemon.plugins.media-keys active false
 gsettings set org.gnome.settings-daemon.plugins.smartcard active false
 gsettings set org.gtk.settings.file-chooser show-hidden true
+
 
 git config --global user.name "Jan Hořava"
 git config --global user.email czechinthemail@gmail.com
