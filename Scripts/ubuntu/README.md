@@ -46,14 +46,6 @@
     * `Manage search engines`: Remove all non-encrypted-Google search engines.
     * `Default browser`: YES
     * `Continue running background apps when Chromium is closed`: NO
-* `File Browser`:
-  * `Behavior`:
-    * `Executable Text Files`: `Ask each time`
-  * `Preview`:
-    * `Show thumbnails`: `Never`
-  * `Views`:
-    * `View new folders using`: `List View`
-    * `Show hidden and backup files`: YES
 * `Firefox`:
   * `General`:
     * `When Firefox starts`: `Show my windows and tabs from last time`
@@ -69,20 +61,6 @@
     * `Use the address bar for search and navigation`: YES
     * `Provide search suggestions`: NO
     * Remove non-Google search engines.
-* `gedit`:
-  * `Editor`:
-    * `Tab width`: 4
-    * `Insert spaces instead of tabs`: YES
-  * `Font & Colors`:
-    * `Color Scheme`: `Oblivion`
-  * `Plugins`:
-    * ALL OFF
-  * `View`:
-    * `Display line numbers`: YES
-    * `Display statusbar`: NO
-    * `Display overview map`: YES
-    * `Highlight current line`: YES
-    * `Highlight matching brackets`: YES
 * `Panels`:
   * Contents:
     * Remove all unwanted items.
@@ -101,34 +79,3 @@
   * `Properties`:
     * `Size`: 16
 * `Steam`
-* `System Settings`:
-  * `Appearance`:
-    * `Background`: `Colors & Gradients`, solid `#000`
-  * `Bluetooth`:
-    * `Bluetooth`: NO
-    * `Show Bluetooth status in the menu bar`: NO
-  * `Brightness & Lock`:
-    * `Turn screen off when inactive for`: `10 minutes`
-  * `Details`:
-    * `Removeable Media`: All must `Ask what to do`.
-  * `Displays`:
-    * `Sticky edges`: NO
-  * `Keyboard`:
-    * Disable all shortcuts except for:
-      * Audio volume
-      * Eject
-      * Lock screen
-  * `Mouse & Touchpad`:
-    * `Tap to click`: NO
-  * `Security & Privacy`:
-    * `Diagnostics`:
-      * `Send error reports to Canonical`: NO
-      * `Send occasional system information to Canonical`: NO
-    * `Files & Applications`:
-      * `Record file and application usage`: NO
-  * `Time & Date`:
-    * `Weekday`: YES
-    * `Date and month`: YES
-    * `24-hour time`: YES
-    * `Seconds`: YES
-    * `Include week numbers`: YES
