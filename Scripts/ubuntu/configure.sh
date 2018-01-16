@@ -156,11 +156,15 @@ sudo rm /etc/opt/chrome/policies/managed/chrome-gnome-shell.json
 sudo rm /etc/chromium/policies/managed/chrome-gnome-shell.json
 sudo rm ~/.steam/root/ubuntu12_32/steam-runtime/i386/usr/lib/i386-linux-gnu/libstdc++.so.6
 
+gsettings set apps.indicator-session suppress-logout-menuitem true
 gsettings set com.canonical.indicator.datetime show-date true
 gsettings set com.canonical.indicator.datetime show-day true
 gsettings set com.canonical.indicator.datetime show-seconds true
 gsettings set com.canonical.indicator.datetime show-week-numbers true
 gsettings set com.canonical.indicator.datetime time-format 24-hour
+gsettings set com.canonical.indicator.power show-percentage true
+gsettings set com.canonical.indicator.power show-time true
+gsettings set com.canonical.unity-greeter play-ready-sound false
 gsettings set org.compiz.integrated run-command-1 []
 gsettings set org.compiz.integrated run-command-2 []
 gsettings set org.compiz.integrated run-command-3 []
@@ -177,6 +181,9 @@ gsettings set org.compiz.integrated show-hud []
 gsettings set org.gnome.desktop.background color-shading-type solid
 gsettings set org.gnome.desktop.background picture-options none
 gsettings set org.gnome.desktop.background primary-color '#000000000000'
+gsettings set org.gnome.desktop.interface clock-show-date true
+gsettings set org.gnome.desktop.interface clock-show-seconds true
+gsettings set org.gnome.desktop.media-handling autorun-x-content-start-app []
 gsettings set org.gnome.desktop.peripherals.touchpad send-events disabled-on-external-mouse
 gsettings set org.gnome.desktop.peripherals.touchpad tap-to-click false
 gsettings set org.gnome.desktop.privacy remember-app-usage false
@@ -264,6 +271,7 @@ gsettings set org.gnome.gedit.preferences.editor tabs-size 4
 gsettings set org.gnome.gedit.preferences.ui statusbar-visible false
 gsettings set org.gnome.login-screen enable-fingerprint-authentication false
 gsettings set org.gnome.login-screen enable-smartcard-authentication false
+gsettings set org.gnome.metacity edge-tiling false
 gsettings set org.gnome.metacity.keybindings toggle-tiled-left []
 gsettings set org.gnome.metacity.keybindings toggle-tiled-right []
 gsettings set org.gnome.nautilus.preferences default-folder-viewer 'list-view'
