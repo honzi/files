@@ -115,6 +115,7 @@ sudo apt-get remove transmission-common
 sudo apt-get remove ubuntu-docs
 sudo apt-get remove ubuntu-minimal
 sudo apt-get remove ubuntu-software
+sudo apt-get remove ubuntu-sounds
 sudo apt-get remove ubuntu-standard
 sudo apt-get remove ubuntu-touch-sounds
 sudo apt-get remove ubuntu-wallpapers-xenial
@@ -158,6 +159,7 @@ sudo rm /etc/chromium/policies/managed/chrome-gnome-shell.json
 sudo rm ~/.steam/root/ubuntu12_32/steam-runtime/i386/usr/lib/i386-linux-gnu/libstdc++.so.6
 
 gsettings set apps.indicator-session suppress-logout-menuitem true
+gsettings set apps.update-manager show-details true
 gsettings set com.canonical.indicator.datetime show-date true
 gsettings set com.canonical.indicator.datetime show-day true
 gsettings set com.canonical.indicator.datetime show-seconds true
@@ -184,12 +186,12 @@ gsettings set org.gnome.desktop.background picture-options none
 gsettings set org.gnome.desktop.background primary-color '#000000000000'
 gsettings set org.gnome.desktop.interface clock-show-date true
 gsettings set org.gnome.desktop.interface clock-show-seconds true
-gsettings set org.gnome.desktop.media-handling autorun-x-content-start-app []
 gsettings set org.gnome.desktop.peripherals.touchpad send-events disabled-on-external-mouse
 gsettings set org.gnome.desktop.peripherals.touchpad tap-to-click false
 gsettings set org.gnome.desktop.privacy remember-app-usage false
 gsettings set org.gnome.desktop.privacy remember-recent-files false
 gsettings set org.gnome.desktop.session idle-delay 1800
+gsettings set org.gnome.desktop.sound event-sounds false
 gsettings set org.gnome.desktop.wm.keybindings activate-window-menu []
 gsettings set org.gnome.desktop.wm.keybindings begin-move []
 gsettings set org.gnome.desktop.wm.keybindings begin-resize []
