@@ -260,7 +260,7 @@ gsettings set org.gnome.desktop.wm.keybindings toggle-fullscreen []
 gsettings set org.gnome.desktop.wm.keybindings toggle-maximized []
 gsettings set org.gnome.desktop.wm.keybindings toggle-shaded []
 gsettings set org.gnome.desktop.wm.keybindings unmaximize []
-gsettings set org.gnome.desktop.wm.preferences button-layout :maximize,minimize,close
+gsettings set org.gnome.desktop.wm.preferences button-layout :minimize,maximize,close
 gsettings set org.gnome.desktop.wm.preferences num-workspaces 1
 gsettings set org.gnome.eog.plugins active-plugins []
 gsettings set org.gnome.file-roller.file-selector show-hidden true
