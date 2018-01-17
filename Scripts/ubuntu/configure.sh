@@ -89,6 +89,7 @@ sudo apt-get remove nautilus-share
 sudo apt-get remove onboard
 sudo apt-get remove openoffice.org-hyphenation
 sudo apt-get remove openprinting-ppds
+sudo apt-get remove popularity-contest
 sudo apt-get remove printer-driver-brlaser
 sudo apt-get remove printer-driver-c2esp
 sudo apt-get remove printer-driver-foo2zjs-common
