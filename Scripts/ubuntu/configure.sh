@@ -83,6 +83,7 @@ sudo apt-get remove libfreerdp-locale1.1
 sudo apt-get remove libfreerdp-primitives1.1
 sudo apt-get remove libfreerdp-utils1.1
 sudo apt-get remove libreoffice-common
+sudo apt-get remove librhythmbox-core9
 sudo apt-get remove mobile-broadband-provider-info
 sudo apt-get remove mythes-en-us
 sudo apt-get remove nautilus-sendto
