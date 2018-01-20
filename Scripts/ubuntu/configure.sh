@@ -68,6 +68,7 @@ sudo apt-get remove gnome-font-viewer
 sudo apt-get remove gnome-mahjongg
 sudo apt-get remove gnome-mines
 sudo apt-get remove gnome-orca
+sudo apt-get remove gnome-session-canberra
 sudo apt-get remove gnome-sudoku
 sudo apt-get remove gucharmap
 sudo apt-get remove hplip-data
