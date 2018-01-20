@@ -64,6 +64,7 @@ sudo apt-get remove evolution-data-server-online-accounts
 sudo apt-get remove example-content
 sudo apt-get remove folks-common
 sudo apt-get remove fonts-opensymbol
+sudo apt-get remove gnome-font-viewer
 sudo apt-get remove gnome-mahjongg
 sudo apt-get remove gnome-mines
 sudo apt-get remove gnome-orca
