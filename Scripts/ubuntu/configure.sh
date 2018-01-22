@@ -46,6 +46,7 @@ sudo apt-get remove bluez-obexd
 sudo apt-get remove branding-ubuntu
 sudo apt-get remove brasero
 sudo apt-get remove brltty
+sudo apt-get remove checkbox-gui
 sudo apt-get remove cheese
 sudo apt-get remove chrome-gnome-shell
 sudo apt-get remove cups
@@ -120,6 +121,8 @@ sudo apt-get remove totem
 sudo apt-get remove libtotem0
 sudo apt-get remove totem-common
 sudo apt-get remove transmission-common
+sudo apt-get remove ttf-ancient-fonts-symbola
+sudo apt-get remove ubuntu-core-launcher
 sudo apt-get remove ubuntu-docs
 sudo apt-get remove ubuntu-minimal
 sudo apt-get remove ubuntu-software
