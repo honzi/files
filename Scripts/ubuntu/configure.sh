@@ -147,6 +147,7 @@ sudo apt-get remove unity-scope-virtualbox
 sudo apt-get remove unity-scope-yelp
 sudo apt-get remove unity-scope-zotero
 sudo apt-get remove uno-libs3
+sudo apt-get remove usb-creator-common
 sudo apt-get remove vino
 sudo apt-get remove wbritish
 sudo apt-get remove webbrowser-app
