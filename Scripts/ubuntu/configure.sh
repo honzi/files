@@ -48,6 +48,7 @@ sudo apt-get remove brasero
 sudo apt-get remove brltty
 sudo apt-get remove checkbox-gui
 sudo apt-get remove cheese
+sudo apt-get remove cheese-common
 sudo apt-get remove chrome-gnome-shell
 sudo apt-get remove cups
 sudo apt-get remove cups-browsed
