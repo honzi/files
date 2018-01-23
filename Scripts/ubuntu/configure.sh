@@ -116,6 +116,8 @@ sudo apt-get remove session-shortcuts
 sudo apt-get remove shotwell
 sudo apt-get remove shotwell-common
 sudo apt-get remove simple-scan
+sudo apt-get remove system-config-printer-common
+sudo apt-get remove system-config-printer-udev
 sudo apt-get remove thunderbird
 sudo apt-get remove totem
 sudo apt-get remove libtotem0
