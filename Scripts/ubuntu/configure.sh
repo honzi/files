@@ -66,6 +66,7 @@ sudo apt-get remove evolution-data-server-online-accounts
 sudo apt-get remove example-content
 sudo apt-get remove folks-common
 sudo apt-get remove fonts-opensymbol
+sudo apt-get remove gnome-accessibility-themes
 sudo apt-get remove gnome-calculator
 sudo apt-get remove gnome-disk-utility
 sudo apt-get remove gnome-font-viewer
