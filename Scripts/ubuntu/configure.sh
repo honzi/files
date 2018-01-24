@@ -136,6 +136,7 @@ sudo apt-get remove ubuntu-standard
 sudo apt-get remove ubuntu-touch-sounds
 sudo apt-get remove ubuntu-wallpapers-xenial
 sudo apt-get remove unity-accessibility-profiles
+sudo apt-get remove unity-control-center-faces
 sudo apt-get remove unity-lens-applications
 sudo apt-get remove unity-lens-files
 sudo apt-get remove unity-lens-music
