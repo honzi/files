@@ -66,6 +66,7 @@ sudo apt-get remove evolution-data-server-online-accounts
 sudo apt-get remove example-content
 sudo apt-get remove folks-common
 sudo apt-get remove fonts-opensymbol
+sudo apt-get remove foomatic-db-compressed-ppds
 sudo apt-get remove genisoimage
 sudo apt-get remove gnome-accessibility-themes
 sudo apt-get remove gnome-calculator
@@ -74,6 +75,7 @@ sudo apt-get remove gnome-font-viewer
 sudo apt-get remove gnome-mahjongg
 sudo apt-get remove gnome-mines
 sudo apt-get remove gnome-orca
+sudo apt-get remove gnome-screenshot
 sudo apt-get remove gnome-session-canberra
 sudo apt-get remove gnome-sudoku
 sudo apt-get remove gnome-system-log
