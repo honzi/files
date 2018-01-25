@@ -38,6 +38,7 @@ sudo apt-get remove account-plugin-facebook
 sudo apt-get remove account-plugin-flickr
 sudo apt-get remove account-plugin-google
 sudo apt-get remove activity-log-manager
+sudo apt-get remove adium-theme-ubuntu
 sudo apt-get remove aisleriot
 sudo apt-get remove aspell
 sudo apt-get remove baobab
