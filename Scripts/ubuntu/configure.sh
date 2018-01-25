@@ -60,6 +60,7 @@ sudo apt-get remove cups-filters
 sudo apt-get remove cups-filters-core-drivers
 sudo apt-get remove cups-pk-helper
 sudo apt-get remove cups-server-common
+sudo apt-get remove enchant
 sudo apt-get remove evince-common
 sudo apt-get remove evolution
 sudo apt-get remove evolution-common
