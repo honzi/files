@@ -81,6 +81,7 @@ sudo apt-get remove gnome-screenshot
 sudo apt-get remove gnome-session-canberra
 sudo apt-get remove gnome-sudoku
 sudo apt-get remove gnome-system-log
+sudo apt-get remove gnome-video-effects
 sudo apt-get remove gucharmap
 sudo apt-get remove hplip-data
 sudo apt-get remove hyphen-en-us
