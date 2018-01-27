@@ -17,6 +17,7 @@ sudo apt-get install gnome-session-flashback
 sudo apt-get install libglew-dev
 sudo apt-get install libgtk-3-dev
 sudo apt-get install synaptic
+sudo apt-get install warzone2100
 
 mkdir -p ~/.iterami/
 mkdir -p ~/.iterami/storage/
