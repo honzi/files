@@ -74,6 +74,8 @@ sudo apt-get remove evolution-common
 sudo apt-get remove evolution-data-server-online-accounts
 sudo apt-get remove example-content
 sudo apt-get remove folks-common
+sudo apt-get remove fonts-guru-extra
+sudo apt-get remove fonts-lohit-guru
 sudo apt-get remove fonts-opensymbol
 sudo apt-get remove fonts-tlwg-garuda
 sudo apt-get remove fonts-tlwg-garuda-ttf
