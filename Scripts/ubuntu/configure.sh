@@ -11,6 +11,15 @@ sudo apt-get autoremove
 
 
 # INSTALL
+mkdir -p ~/.iterami/
+mkdir -p ~/.iterami/repositories/
+mkdir -p ~/.iterami/storage/
+
+cd ~/.iterami/repositories/
+git clone https://github.com/honzi/files.git
+cd files/Scripts
+sh fetch-iterami-honzi-repos.sh ~/.iterami/repositories/
+
 sudo apt-get install chromium-browser
 sudo apt-get install dconf-editor
 sudo apt-get install gnome-session-flashback
@@ -18,9 +27,6 @@ sudo apt-get install libglew-dev
 sudo apt-get install libgtk-3-dev
 sudo apt-get install synaptic
 sudo apt-get install warzone2100
-
-mkdir -p ~/.iterami/
-mkdir -p ~/.iterami/storage/
 
 sudo dpkg --add-architecture i386
 wget -nc -O ~/.iterami/storage/Release.key https://dl.winehq.org/wine-builds/Release.key
