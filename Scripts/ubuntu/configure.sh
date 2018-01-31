@@ -164,6 +164,10 @@ sudo apt-get remove printer-driver-ptouch
 sudo apt-get remove printer-driver-pxljr
 sudo apt-get remove printer-driver-sag-gdi
 sudo apt-get remove printer-driver-splix
+sudo apt-get remove pyotherside
+sudo apt-get remove qtdeclarative5-accounts-plugin
+sudo apt-get remove qtdeclarative5-qtquick2-plugin
+sudo apt-get remove qtdeclarative5-test-plugin
 sudo apt-get remove remmina-common
 sudo apt-get remove rhythmbox
 sudo apt-get remove rhythmbox-data
@@ -171,6 +175,7 @@ sudo apt-get remove seahorse
 sudo apt-get remove session-shortcuts
 sudo apt-get remove shotwell
 sudo apt-get remove shotwell-common
+sudo apt-get remove signon-ui
 sudo apt-get remove simple-scan
 sudo apt-get remove system-config-printer-common
 sudo apt-get remove system-config-printer-udev
