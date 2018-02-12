@@ -149,6 +149,7 @@ WebScraper.py
 WebServer.py
 Wiki.php
 WindowInfo.htm
+WZ2100-AI.js
 '
 
 # `git status` cloned iterami repositories.
