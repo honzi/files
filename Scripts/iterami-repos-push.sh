@@ -61,6 +61,7 @@ EmojiText.htm
 Engine.gtk
 eog-Plugin-MenuEnhancer
 ESP-Test.htm
+EVETools.htm
 ExperienceCalculator.htm
 FakeLogin.php
 FileBrowser.gtk
