@@ -80,6 +80,7 @@ Info.php
 InterestCalculator.htm
 Inventory.php
 IP.php
+IssueExport.htm
 iterami.github.io
 Jetpack-2D.htm
 LayeredSnake-2D3D.htm
