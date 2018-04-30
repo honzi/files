@@ -1,5 +1,5 @@
-`honzi`'s Ubuntu Installation
------------------------------
+`honzi`'s Ubuntu 16.04 Installation
+-----------------------------------
 
 ### Boot Setup (Only Once)
 
