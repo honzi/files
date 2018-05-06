@@ -22,8 +22,8 @@
 ### Configuration Script
 
 1. `sudo apt-get install git`.
-2. `git clone https://github.com/honzi/files.git` into `~/Documents/iterami`.
-3. `sh files/Scripts/ubuntu/configure.sh`. Script can be run multiple times, if needed.
+2. `cd ~/Documents` and `git clone https://github.com/honzi/files.git`.
+3. `sh files/Scripts/ubuntu/16.04/configure.sh`. Script can be run multiple times, if needed.
 4. Add `manual` to opened `gedit` file and save it.
 
 ---
