@@ -71,11 +71,12 @@
     * Disable all menu categories.
     * Add menu items for:
       * `Chromium`
-      * `TextEditor.c`
-      * `FileBrowser.c`
+      * `TextEditor.gtk`
+      * GTK (submenu)
       * `Steam`
-      * `Firefox`
+      * `EVE`
       * `Terminal`
   * `Properties`:
+    * Solid `#000` background.
     * `Size`: 16
 * `Steam`
