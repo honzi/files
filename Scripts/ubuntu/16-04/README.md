@@ -3,7 +3,7 @@
 
 ### Boot Setup (Only Once)
 
-1. Start computer and spam `ESC` to open boot config.
+1. Start computer and spam BIOS key.
 2. Set to boot from USB.
 3. Save changes and shut down computer.
 
@@ -23,8 +23,10 @@
 
 1. `sudo apt-get install git`.
 2. `cd ~/Documents` and `git clone https://github.com/honzi/files.git`.
-3. `sh files/Scripts/ubuntu/16.04/configure.sh`. Script can be run multiple times, if needed.
-4. Add `manual` to opened `gedit` file and save it.
+3. `sh files/Scripts/ubuntu/16.04/configure.sh`.
+  * Script can be run multiple times, if needed.
+  * If uninstalling a package suggests installing more packages, do not uninstall that package. Rerun script after.
+4. Add `manual` to opened `gedit` file. Save it and close `gedit`.
 
 ---
 
@@ -60,23 +62,25 @@
   * `Search`:
     * `Use the address bar for search and navigation`: YES
     * `Provide search suggestions`: NO
-    * Remove non-Google search engines.
+    * Remove non-encrypted-Google search engines.
 * `Panels`:
   * Contents:
-    * Remove all unwanted items.
-    * Move `Notification Area` to bottom right corner.
     * Add `Main Menu` to bottom left corner.
     * Delete top panel.
+    * Move `Notification Area` to bottom right corner.
+    * Remove all unwanted items.
   * `Main Menu`:
-    * Disable all menu categories.
+    * Disable all menu categories. Ignore enabled empty submenus.
     * Add menu items for:
       * `Chromium`
       * `TextEditor.gtk`
       * GTK (submenu)
+      * `Warzone 2100`
       * `Steam`
       * `EVE`
       * `Terminal`
+      * `System Tools`
   * `Properties`:
-    * Solid `#000` background.
     * `Size`: 16
+    * Solid `#000` background.
 * `Steam`
