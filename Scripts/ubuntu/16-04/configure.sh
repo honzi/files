@@ -356,6 +356,7 @@ gsettings set org.gnome.metacity.keybindings toggle-tiled-left []
 gsettings set org.gnome.metacity.keybindings toggle-tiled-right []
 gsettings set org.gnome.nautilus.preferences default-folder-viewer 'list-view'
 gsettings set org.gnome.nautilus.preferences enable-interactive-search false
+gsettings set org.gnome.nautilus.preferences executable-text-activation 'ask'
 gsettings set org.gnome.nautilus.preferences mouse-use-extra-buttons false
 gsettings set org.gnome.nautilus.preferences show-hidden-files true
 gsettings set org.gnome.settings-daemon.plugins.media-keys area-screenshot ''
