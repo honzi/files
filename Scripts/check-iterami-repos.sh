@@ -1,10 +1,10 @@
 #!/bin/sh
 
 # Required arguments:
-#   $1: Relative path to the directory in which the iterami
-#         and honzi repositories are stored.
+#   $1: Relative path to the directory in which
+#         the iterami repositories are stored.
 #
-# Example: sh check-iterami-honzi-repos.sh honzi/
+# Example: sh check-iterami-repos.sh repositories/
 
 # Check if at least 1 argument was passed.
 if [ $# -lt 1 ]
@@ -14,7 +14,7 @@ then
 fi
 
 # Update this repository to fetch latest
-#   list of iterami and honzi repositories.
+#   list of iterami repositories.
 echo 'pulling https://github.com/honzi/files'
 git pull
 echo

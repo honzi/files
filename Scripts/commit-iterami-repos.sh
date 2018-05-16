@@ -1,11 +1,11 @@
 #!/bin/sh
 
 # Required arguments:
-#   $1: Relative path to the directory in which the iterami
-#         and honzi repositories are stored.
+#   $1: Relative path to the directory in which
+#         the iterami repositories are stored.
 #   $2: Commit message.
 #
-# Example: sh commit-iterami-honzi-repos.sh honzi/ 'This is a commit message!'
+# Example: sh commit-iterami-repos.sh repositories/ 'This is a commit message!'
 
 # Check if at least 2 arguments were passed.
 if [ $# -lt 2 ]
@@ -15,7 +15,7 @@ then
 fi
 
 # Update this repository to fetch latest
-#   list of iterami and honzi repositories.
+#   list of iterami repositories.
 echo 'pulling https://github.com/honzi/files'
 git pull
 echo
