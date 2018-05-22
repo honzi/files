@@ -58,7 +58,6 @@ Drupal-move_field_description
 Drupal-workflow_transitions_roles_fix
 Duel.htm
 EmojiText.htm
-Engine.gtk
 eog-Plugin-MenuEnhancer
 ESP-Test.htm
 EVETools.gtk
@@ -85,6 +84,7 @@ Jetpack-2D.htm
 LayeredSnake-2D3D.htm
 LocalStorage.htm
 Match.htm
+MultiverseEditor.gtk
 MultiverseEditor.htm
 OS.asm
 Particleball-2D.htm
@@ -137,7 +137,6 @@ Tubes-2D3D.htm
 U1.htm
 UnitConverter.htm
 URIViewer.htm
-Vidce.htm
 Warped.htm
 WASD-2D.htm
 WebScraper.py
