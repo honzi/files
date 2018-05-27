@@ -84,6 +84,7 @@ Jetpack-2D.htm
 LayeredSnake-2D3D.htm
 LocalStorage.htm
 Match.htm
+Multiverse.htm
 MultiverseEditor.gtk
 MultiverseEditor.htm
 MultiverseLevels.htm
