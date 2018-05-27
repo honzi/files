@@ -86,6 +86,7 @@ LocalStorage.htm
 Match.htm
 MultiverseEditor.gtk
 MultiverseEditor.htm
+MultiverseLevels.htm
 OS.asm
 Particleball-2D.htm
 ParticleRun-2D.htm
