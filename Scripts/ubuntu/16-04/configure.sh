@@ -33,7 +33,7 @@ wget -nc -O ~/.iterami/storage/Release.key https://dl.winehq.org/wine-builds/Rel
 sudo apt-key add ~/.iterami/storage/Release.key
 sudo apt-add-repository https://dl.winehq.org/wine-builds/ubuntu/
 sudo apt-get update
-sudo apt-get install --install-recommends winehq-stable
+sudo apt-get install --install-recommends wine-devel
 
 sudo apt-get update
 sudo apt-get upgrade
