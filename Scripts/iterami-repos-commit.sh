@@ -33,7 +33,8 @@ Blog.php
 Bookmarklets.htm
 Calculator.htm
 ChatBot.py
-Chrome-iterami
+Chromium-iterami-Extension
+Chromium-iterami-Theme
 Click.htm
 Clock.htm
 ColorDrops.htm
