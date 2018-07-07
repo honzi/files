@@ -33,6 +33,7 @@ Blog.php
 Bookmarklets.htm
 Calculator.htm
 ChatBot.py
+Chromium-iterami-DevTools
 Chromium-iterami-Extension
 Chromium-iterami-Theme
 Click.htm
