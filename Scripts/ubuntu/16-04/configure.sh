@@ -21,6 +21,8 @@ cd files/Scripts
 sh fetch-iterami-honzi-repos.sh ~/.iterami/repositories/
 
 sudo apt-get install chromium-browser
+sudo add-apt-repository ppa:canonical-chromium-builds/stage
+
 sudo apt-get install dconf-editor
 sudo apt-get install gnome-session-flashback
 sudo apt-get install libglew-dev
