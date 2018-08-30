@@ -20,6 +20,28 @@ echo 'pulling https://github.com/honzi/files'
 git pull
 echo
 
-# Execute iterami-repos-commit.sh, which has the
-#   updated list of iterami repositories.
-sh iterami-repos-commit.sh $1 "$2"
+# Get an array of all iterami repositories.
+. ./iterami-repos-list.sh
+
+# Navigate to the target directory name
+#   and create it if it doesn't exist.
+mkdir -p $1
+cd $1
+
+# Commit cloned iterami repositories.
+for repository in $iterami_repositories
+do
+    if [ -d $repository ]
+    then
+        echo 'adding/committing https://github.com/iterami/'$repository
+        cd $repository
+        git add -A
+        git commit -m "$2"
+        cd ..
+
+    else
+        echo 'https://github.com/iterami/'$repository' NOT YET CLONED'
+    fi
+
+    echo
+done

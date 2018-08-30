@@ -19,6 +19,27 @@ echo 'pulling https://github.com/honzi/files'
 git pull
 echo
 
-# Execute iterami-repos-push.sh, which has the
-#   updated list of iterami repositories.
-sh iterami-repos-push.sh $1
+# Get an array of all iterami repositories.
+. ./iterami-repos-list.sh
+
+# Navigate to the target directory name
+#   and create it if it doesn't exist.
+mkdir -p $1
+cd $1
+
+# Push cloned iterami repositories.
+for repository in $iterami_repositories
+do
+    if [ -d $repository ]
+    then
+        echo 'pushing https://github.com/iterami/'$repository
+        cd $repository
+        git push origin HEAD
+        cd ..
+
+    else
+        echo 'https://github.com/iterami/'$repository' NOT YET CLONED'
+    fi
+
+    echo
+done
