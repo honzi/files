@@ -69,12 +69,13 @@ PlusPlus.htm
 Poem.htm
 ProcessEditor
 QjnyYap.htm
+RNG.htm
 Race-2D.htm
 Rain-2D.htm
+random_number_test.htm
 RandomRepository.htm
 RandomSCP.htm
 ReactionTest.htm
-RNG.htm
 RockPaperScissors.htm
 RomanNumerals.htm
 RPG-Above.htm
