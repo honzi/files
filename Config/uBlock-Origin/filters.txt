@@ -1,0 +1,4 @@
+clips.twitch.tv##.clips-chat-replay
+condemnedgame.com
+youtube.com###comments
+youtube.com/live_chat$subdocument
