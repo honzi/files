@@ -47,6 +47,7 @@
     * `Use system title bar and borders`: NO
     * `Manage search engines`: Remove all non-encrypted-Google search engines.
     * `Default browser`: YES
+    * `Offer to translate pages that aren't in a language you read`: NO
     * `Continue running background apps when Chromium is closed`: NO
 * `Firefox`:
   * `General`:

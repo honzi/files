@@ -6,4 +6,3 @@ Modified flags:
   * `#media-router-cast-allow-all-ips`: disabled
   * `#show-autofill-type-predictions`: disabled
   * `#smooth-scrolling`: disabled
-
