@@ -3,7 +3,7 @@
 # No arguments.
 
 # Empty the trash.
-rm -rf ~/.local/share/Trash/*
+sudo rm -rf ~/.local/share/Trash/*
 
 # Adjust screen.
 sh ~/.iterami/repositories/Scripts/ubuntu/xrandr-scale.sh eDP1 1600 900 1920 1080 1.2 1.2
