@@ -1,0 +1,27 @@
+body{
+    background: #000;
+    color: #aaa;
+    font-family: sans-serif;
+    text-align: center;
+}
+div{
+    display: inline-block;
+    line-height: 35px;
+    text-align: right;
+    vertical-align: top;
+}
+.error{
+    color: #f00;
+    display: block;
+}
+input{
+    background: #000;
+    color: #aaa;
+    font-size: 100%;
+    width: 230px;
+}
+input[type=submit]{
+    cursor: pointer;
+    font-size: 123%;
+    width: auto;
+}

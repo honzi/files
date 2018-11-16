@@ -1,0 +1,71 @@
+<?php
+
+function delete_ghost_fields_admin_configuration() {
+  $form = array();
+
+  $form['delete_ghost_fields-machine_names'] = array(
+    '#description' => t('Enter one machine name per line of the ghost fields you wish to delete.'),
+    '#required' => TRUE,
+    '#title' => t('Machine Names'),
+    '#type' => 'textarea',
+  );
+
+  $form['#validate'][] = 'delete_ghost_fields_admin_validate';
+
+  return system_settings_form($form);
+}
+
+function delete_ghost_fields_admin_validate(&$form, &$form_state) {
+  $machine_names = explode(
+    "\n",
+    $form['delete_ghost_fields-machine_names']['#value']
+  );
+
+  /**
+   * Delete ghost fields.
+   */
+  foreach ($machine_names as $machine_name) {
+    db_delete('field_config')
+      ->condition('field_name', $machine_name)
+      ->execute();
+
+    db_delete('field_config_instance')
+      ->condition('field_name', $machine_name)
+      ->execute();
+
+    db_drop_table('field_data_' . $machine_name);
+    db_drop_table('field_revision_' . $machine_name);
+  }
+
+  field_cache_clear(TRUE);
+}
+
+/**
+ * Implements hook_menu().
+ */
+function delete_ghost_fields_menu() {
+  return array(
+    'admin/structure/delete-ghost-fields' => array(
+      'access arguments' => array(
+        'administer delete_ghost_fields',
+      ),
+      'description' => t('delete_ghost_fields'),
+      'page arguments' => array(
+        'delete_ghost_fields_admin_configuration',
+      ),
+      'page callback' => 'drupal_get_form',
+      'title' => t('delete_ghost_fields'),
+    ),
+  );
+}
+
+/**
+ * Implements hook_permission().
+ */
+function delete_ghost_fields_permission() {
+  return array(
+    'administer delete_ghost_fields' => array(
+      'title' => t('Administer delete_ghost_fields'),
+    ),
+  );
+}

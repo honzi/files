@@ -1,0 +1,266 @@
+<?php
+
+function json_tables_add_extra_json($id, $json) {
+  drupal_add_js(
+    array(
+      'json_tables' => array(
+        $id => json_encode($json),
+      ),
+    ),
+    array(
+      'type' => 'setting',
+    )
+  );
+}
+
+function json_tables_admin_config() {
+  $form = array();
+
+  $form['json_tables-content_types'] = array(
+    '#attributes' => array(
+      'class' => array('iterami-json-tables-textarea')
+    ),
+    'und' => array(
+      0 => array(
+        '#default_value' => variable_get(
+          'iterami-json_tables-content_types',
+          json_tables_default_content_types_config()
+        ),
+        '#description' => t('json_tables content types config JSON textarea. Enter the machine names of which content types and fields are utilized and the IDs of which data is available to each content type. All textareas should have values separated by one comma and no spaces.'),
+        '#title' => t('json_tables Content Types Config'),
+        '#type' => 'textarea',
+      ),
+    ),
+    '#type' => 'container',
+  );
+  $form['json_tables-extra'] = array(
+    '#attributes' => array(
+      'class' => array('iterami-json-tables-textarea')
+    ),
+    'und' => array(
+      1 => array(
+        '#default_value' => variable_get(
+          'iterami-json_tables-extra',
+          json_tables_default_extra_config()
+        ),
+        '#description' => t('json_tables extra config JSON textarea. Create extra JSON data that can be utilized by content types to create table fields.'),
+        '#title' => t('json_tables Extra Config'),
+        '#type' => 'textarea',
+      ),
+    ),
+    '#type' => 'container',
+  );
+  $form['json_tables-logic'] = array(
+    '#attributes' => array(
+      'class' => array('iterami-json-tables-textarea')
+    ),
+    'und' => array(
+      2 => array(
+        '#default_value' => variable_get(
+          'iterami-json_tables-logic',
+          json_tables_default_logic_config()
+        ),
+        '#description' => t('json_tables logic config JSON textarea.'),
+        '#title' => t('json_tables Logic Config'),
+        '#type' => 'textarea',
+      ),
+    ),
+    '#type' => 'container',
+  );
+
+  $form['#attached']['js'] = array(drupal_get_path('module', 'json_tables') . '/js/json_tables.js');
+  $form['#validate'][] = 'json_tables_admin_validate';
+
+  return system_settings_form($form);
+}
+
+function json_tables_admin_validate(&$form, &$form_state) {
+  json_tables_delete_type_configs();
+
+  $content_type_config = $form['json_tables-content_types']['und'][0]['#value'];
+
+  // If the saved config is empty or the default config, delete config variables.
+  if (strlen($content_type_config) === 0 || $content_type_config === json_tables_default_content_types_config()) {
+      variable_del('iterami-json_tables-content_types');
+
+  }
+  else {
+    // Save config form textarea into a variable.
+    variable_set(
+      'iterami-json_tables-content_types',
+      $content_type_config
+    );
+
+    // Create and save new content type config.
+    $types = array();
+    $json = json_decode($content_type_config);
+    foreach ($json->data as $data) {
+      $key = $data->{'Content_Types'};
+      variable_set(
+        'iterami-json_tables-type-' . $key,
+        json_encode($data)
+      );
+      $types[] = $key;
+    }
+
+    // Save content type variable list, if any types exist.
+    if (count($types) > 0) {
+      variable_set(
+        'iterami-json_tables-types',
+        json_encode($types)
+      );
+    }
+  }
+
+  variable_del('iterami-json_tables-extra');
+  $extra_config = $form['json_tables-extra']['und'][1]['#value'];
+
+  if (strlen($extra_config) !== 0 && $extra_config !== json_tables_default_extra_config()) {
+    variable_set(
+      'iterami-json_tables-extra',
+      $extra_config
+    );
+  }
+
+  variable_del('iterami-json_tables-logic');
+  $logic_config = $form['json_tables-logic']['und'][2]['#value'];
+
+  if (strlen($logic_config) !== 0 && $logic_config !== json_tables_default_logic_config()) {
+    variable_set(
+      'iterami-json_tables-logic',
+      $logic_config
+    );
+  }
+}
+
+function json_tables_default_content_types_config() {
+  return '{"cols":{"Content_Types":{},"Fields":{"type":"textarea"},"Extra":{"type":"textarea"}},"data":[]}';
+}
+
+function json_tables_default_extra_config() {
+  return '{"cols":{"ID":{},"Type":{"data":"element_types","type":"select"},"Value":{"type":"textarea"},"Default":{},"Logic":{"type":"textarea"}},"data":[]}';
+}
+
+function json_tables_default_logic_config() {
+  return '{"cols":{"ID":{},"Type":{"data":"logic_types","type":"select"},"Type_Data":{"type":"textarea"},"Result":{"data":"logic_result","type":"select"},"Result_Data":{"type":"textarea"}},"data":[]}';
+}
+
+function json_tables_delete_type_configs() {
+  // Delete existing content type configs, if any exist.
+  if ($types = variable_get('iterami-json_tables-types', FALSE)) {
+    $types = json_decode($types);
+    foreach ($types as $type) {
+      variable_del('iterami-json_tables-type-' . $type);
+    }
+    variable_del('iterami-json_tables-types');
+  }
+}
+
+/**
+ * Implements hook_form_alter().
+ */
+function json_tables_form_alter(&$form, &$form_state, $form_id) {
+  $extra_json = array();
+  if ($form_id === 'json_tables_admin_config') {
+    $extra_json = array(
+      'element_types' => array(
+        'default' => 'select',
+        'value' => array(
+          'select',
+          'text',
+          'textarea',
+        ),
+      ),
+      'logic_types' => array(
+        'value' => array(
+          'equal',
+        ),
+      ),
+      'logic_result' => array(
+        'value' => array(
+          'hide',
+          'show',
+        ),
+      ),
+    );
+  }
+
+  // Only modify forms specified on the config page.
+  if ($json = variable_get('iterami-json_tables-type-' . $form_id, FALSE)) {
+    // Apply class to specified fields so JavaScript knows to use them.
+    $json_decoded = json_decode($json);
+    $json_decoded->{'Fields'} = explode(',', $json_decoded->{'Fields'});
+    $json_decoded->{'Extra'} = explode(',', $json_decoded->{'Extra'});
+    foreach ($json_decoded->{'Fields'} as $field) {
+      $field = trim($field);
+      $form[$field]['#attributes']['class'][] = 'iterami-json-tables-textarea';
+    }
+
+    if ($extra_json_config = variable_get('iterami-json_tables-extra', FALSE)) {
+      $extra_json_config = json_decode($extra_json_config);
+      foreach ($json_decoded->{'Extra'} as $key => $data) {
+        $extra_json[$extra_json_config->{'data'}[$key]->{'ID'}] = array(
+          'default' => $extra_json_config->{'data'}[$key]->{'Default'},
+          'logic' => $extra_json_config->{'data'}[$key]->{'Logic'},
+          'type' => $extra_json_config->{'data'}[$key]->{'Type'},
+          'value' => $extra_json_config->{'data'}[$key]->{'Value'},
+        );
+      }
+    }
+
+    if ($logic_json = variable_get('iterami-json_tables-logic', FALSE)) {
+      $logic_json_array = array();
+      $logic_json = json_decode($logic_json);
+      $extra_json_config->{'Logic'} = explode(',', $extra_json_config->{'Logic'});
+      foreach ($extra_json_config->{'Logic'} as $key => $data) {
+        $logic_json_array[$logic_json->{'data'}[$key]->{'ID'}] = array(
+          'result' => $logic_json->{'data'}[$key]->{'Result'},
+          'result-data' => $logic_json->{'data'}[$key]->{'Result_Data'},
+          'type' => $logic_json->{'data'}[$key]->{'Type'},
+          'type-data' => $logic_json->{'data'}[$key]->{'Type_Data'},
+        );
+      }
+
+      json_tables_add_extra_json(
+        'logic',
+        $logic_json_array
+      );
+    }
+
+    // Add json_tables JavaScript file to the form.
+    $form['#attached']['js'] = array(drupal_get_path('module', 'json_tables') . '/js/json_tables.js');
+  }
+
+  if (count($extra_json) > 0) {
+    json_tables_add_extra_json(
+      'extra',
+      $extra_json
+    );
+  }
+}
+
+/**
+ * Implements hook_menu().
+ */
+function json_tables_menu() {
+  return array(
+    'admin/structure/json-tables' => array(
+      'access arguments' => array('administer json_tables'),
+      'description' => t('json_tables'),
+      'page arguments' => array('json_tables_admin_config'),
+      'page callback' => 'drupal_get_form',
+      'title' => t('json_tables'),
+    ),
+  );
+}
+
+/**
+ * Implements hook_permission().
+ */
+function json_tables_permission() {
+  return array(
+    'administer json_tables' => array(
+      'title' => t('Administer json_tables'),
+    ),
+  );
+}

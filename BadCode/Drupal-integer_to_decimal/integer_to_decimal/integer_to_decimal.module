@@ -1,0 +1,133 @@
+<?php
+
+function integer_to_decimal_admin_configuration() {
+  $form = array();
+
+  $form['integer_to_decimal-machine_names'] = array(
+    '#description' => t('Enter one machine name per line of the fields you wish to change.'),
+    '#required' => TRUE,
+    '#title' => t('Machine Names'),
+    '#type' => 'textarea',
+  );
+  $form['integer_to_decimal-not_null'] = array(
+    '#description' => t('Enter the "Not NULL" status of the modified fields in the database.'),
+    '#required' => FALSE,
+    '#title' => t('Not NULL'),
+    '#type' => 'checkbox',
+  );
+  $form['integer_to_decimal-precision'] = array(
+    '#default_value' => '10',
+    '#description' => t('Enter the precision of the modified fields in the database.'),
+    '#required' => TRUE,
+    '#title' => t('Precision'),
+    '#type' => 'textfield',
+  );
+  $form['integer_to_decimal-scale'] = array(
+    '#default_value' => '2',
+    '#description' => t('Enter the scale of the modified fields in the database.'),
+    '#required' => TRUE,
+    '#title' => t('Scale'),
+    '#type' => 'textfield',
+  );
+
+  $form['#validate'][] = 'integer_to_decimal_admin_validate';
+
+  return system_settings_form($form);
+}
+
+function integer_to_decimal_admin_validate(&$form, &$form_state) {
+  $machine_names = explode(
+    "\n",
+    $form['integer_to_decimal-machine_names']['#value']
+  );
+
+  /**
+   * Properties these new decimal fields will have.
+   */
+  $not_null = $form['integer_to_decimal-not_null']['#value'] === 1
+    ? TRUE
+    : FALSE;
+  $precision = intval($form['integer_to_decimal-precision']['#value']);
+  $scale = intval($form['integer_to_decimal-scale']['#value']);
+
+  /**
+   * Change integer fields to a decimal fields.
+   */
+  foreach ($machine_names as $machine_name) {
+    $field_array = array(
+      'not null' => $not_null,
+      'precision' => $precision,
+      'scale' => $scale,
+      'type' => 'numeric',
+    );
+    $field_value = $machine_name . '_value';
+
+    db_change_field(
+      'field_data_' . $machine_name,
+      $field_value,
+      $field_value,
+      $field_array
+    );
+
+    db_change_field(
+      'field_revision_' . $machine_name,
+      $field_value,
+      $field_value,
+      $field_array
+    );
+
+    $data = unserialize(
+      db_query(
+        'SELECT data FROM {field_config} WHERE field_name = :field_name',
+        array(
+          ':field_name' => $machine_name,
+        )
+      )->fetchField()
+    );
+    $data['settings']['precision'] = $precision;
+    $data['settings']['scale'] = $scale;
+
+    db_update('field_config')
+      ->fields(
+        array(
+          'data' => serialize($data),
+          'type' => 'number_decimal',
+        )
+      )->condition(
+        'field_name',
+        $machine_name
+      )->execute();
+  }
+
+  field_cache_clear(TRUE);
+}
+
+/**
+ * Implements hook_menu().
+ */
+function integer_to_decimal_menu() {
+  return array(
+    'admin/structure/integer-to-decimal' => array(
+      'access arguments' => array(
+        'administer integer_to_decimal',
+      ),
+      'description' => t('integer_to_decimal'),
+      'page arguments' => array(
+        'integer_to_decimal_admin_configuration',
+      ),
+      'page callback' => 'drupal_get_form',
+      'title' => t('integer_to_decimal'),
+    ),
+  );
+}
+
+/**
+ * Implements hook_permission().
+ */
+function integer_to_decimal_permission() {
+  return array(
+    'administer integer_to_decimal' => array(
+      'title' => t('Administer integer_to_decimal'),
+    ),
+  );
+}

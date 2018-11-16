@@ -1,0 +1,6 @@
+configure = admin/structure/delete-ghost-fields
+core = 7.x
+description = `delete_ghost_fields` is a `Drupal 7.x` module that can delete specific "ghost" fields.
+name = delete_ghost_fields
+package = Fields
+version = 7.x-20161223.0

@@ -1,0 +1,43 @@
+a{
+    color: #4c4;
+}
+a:hover{
+    color: #777;
+}
+body{
+    background: #000;
+    color: #aaa;
+    font-family: sans-serif;
+}
+input,
+textarea{
+    background: #000;
+    color: #aaa;
+}
+input[type=checkbox],
+input[type=submit]{
+    cursor: pointer;
+}
+#inventory-form{
+    margin-top: 10px;
+}
+#inventory-form-inputs{
+    display: inline-block;
+    line-height: 35px;
+}
+#inventory-help-text{
+    display: inline-block;
+    line-height: 35px;
+    text-align: right;
+}
+#inventory-labels{
+    background: #333;
+}
+table{
+    border-collapse: collapse;
+    width: 100%;
+}
+td{
+    border: 1px solid #000;
+    padding: 5px;
+}

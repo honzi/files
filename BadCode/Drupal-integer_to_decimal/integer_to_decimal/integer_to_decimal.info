@@ -1,0 +1,7 @@
+configure = admin/structure/integer-to-decimal
+core = 7.x
+dependencies[] = number
+description = `integer_to_decimal` is a `Drupal 7.x` module that can convert specific `integer` fields to `decimal` fields.
+name = integer_to_decimal
+package = Fields
+version = 7.x-20161223.0

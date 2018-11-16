@@ -1,0 +1,22 @@
+<?php
+
+/**
+ * Implements hook_install().
+ */
+function workflow_transitions_roles_fix_install() {
+  /**
+   * Increase length of `roles` column in the `workflow_transitions` table to 21,500.
+   */
+  db_change_field(
+    'workflow_transitions',
+    'roles',
+    'roles',
+    array(
+      'description' => 'The {role}.sid that a user must have to perform transition.',
+      'length' => '21500',
+      'not null' => FALSE,
+      'serialize' => TRUE,
+      'type' => 'varchar',
+    )
+  );
+}

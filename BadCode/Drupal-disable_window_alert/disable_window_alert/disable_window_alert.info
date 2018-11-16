@@ -1,0 +1,6 @@
+core = 7.x
+description = `disable_window_alert` is a `Drupal 7.x` module that overwrites the default `window.alert` function with a function that returns `false`.
+name = disable_window_alert
+package = User interface
+scripts[] = js/disable_window_alert.js
+version = 7.x-20161223.0

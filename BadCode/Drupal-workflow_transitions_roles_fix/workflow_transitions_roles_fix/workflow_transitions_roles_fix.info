@@ -1,0 +1,6 @@
+core = 7.x
+dependencies[] = workflow
+description = `workflow_transitions_roles_fix` is a `Drupal 7.x` module to increase the length of the `roles` column in the `workflow_transitions` database table, which allows simultaneous use of the `role_export` and `workflow` modules. This module should be enabled once, then disabled and removed.
+name = workflow_transitions_roles_fix
+package = Workflow
+version = 7.x-20161223.1

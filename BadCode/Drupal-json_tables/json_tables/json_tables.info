@@ -1,0 +1,7 @@
+configure = admin/structure/json-tables
+core = 7.x
+dependencies[] = field
+description = `json_tables` is a `Drupal 7.x` module that can utilizies JSON within textarea fields to create HTML tables.
+name = json_tables
+package = Fields
+version = 7.x-20170131.0

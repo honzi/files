@@ -1,0 +1,13 @@
+<!doctype html>
+<meta charset=utf-8>
+<title>ContactForm.php</title>
+<link href=css/contactform.css rel=stylesheet>
+
+<form action=php/send.php method=post>
+    <div>
+        <input name=message-title placeholder="title, optional"><br>
+        <input name=return-email placeholder="email, optional but required if you want a response"><br>
+        <textarea name=message placeholder="message, optional"></textarea><br>
+        <input class=send name=send type=submit value=Send><input type=reset value=Clear>
+    </div>
+</form>

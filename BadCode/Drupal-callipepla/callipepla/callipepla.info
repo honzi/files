@@ -1,0 +1,13 @@
+core = 7.x
+description = `callipepla` is a `Drupal 7.x` module that runs the Quail JavaScript library on every visited page. Results are displayed in your browser's console and a CSS class is applied to error elements. Not recommended for use on production servers. <a href=http://quailjs.org>http://quailjs.org</a> <a href=https://github.com/quailjs/quail>https://github.com/quailjs/quail</a>
+files[] = js/guidelines/508.json
+files[] = js/guidelines/508.tests.json
+files[] = js/guidelines/wcag.json
+files[] = js/guidelines/wcag.tests.json
+files[] = js/tests.json
+name = callipepla
+package = Accessibility
+scripts[] = js/callipepla.js
+scripts[] = js/quail.jquery.min.js
+stylesheets[all][] = css/callipepla.css
+version = 7.x-20161223.0

@@ -1,0 +1,7 @@
+configure = admin/structure/alter-field-maxlength
+core = 7.x
+dependencies[] = number
+description = `alter_field_maxlength` is a `Drupal 7.x` module that can alter the maxlength of fields that already have existing data.
+name = alter_field_maxlength
+package = Fields
+version = 7.x-20161223.0

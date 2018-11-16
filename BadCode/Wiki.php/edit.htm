@@ -1,0 +1,26 @@
+<!doctype html>
+<meta charset=utf-8>
+<title>Edit Page</title>
+<link href=css/wiki.css rel=stylesheet>
+
+<a href=index.htm>Index</a>
+
+<form action=php/edit.php id=edit-form method=post>
+    <div id=edit-help-text>
+        Content:<br>
+        <br>
+        ID:<br>
+        Title:<br>
+        Delete?<br>
+        Password:
+    </div>
+    <div id=edit-form-inputs>
+        <textarea cols=100 id=content name=content rows=15></textarea><br>
+        <input id=id name=id size=35><br>
+        <input id=title name=title size=35><br>
+        <input name=delete type=checkbox value=1><br>
+        <input name=password size=35 type=password><input name=save-button type=submit value=Save>
+    </div>
+</form>
+
+<script src=js/edit.js></script>

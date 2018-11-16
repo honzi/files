@@ -1,0 +1,6 @@
+core = 7.x
+description = `move_field_description` is a `Drupal 7.x` module that moves form field descriptions directly below their labels.
+name = move_field_description
+package = Fields
+scripts[] = js/move_field_description.js
+version = 7.x-20161223.0

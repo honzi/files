@@ -1,0 +1,95 @@
+<?php
+
+function alter_field_maxlength_admin_configuration() {
+  $form = array();
+
+  $form['alter_field_maxlength-machine_names'] = array(
+    '#description' => t('Enter one machine name per line of the fields you wish to modify.'),
+    '#required' => TRUE,
+    '#title' => t('Machine Names'),
+    '#type' => 'textarea',
+  );
+  $form['alter_field_maxlength-maxlength'] = array(
+    '#default_value' => '255',
+    '#description' => t('Enter the maxlength of the modified fields in the database.'),
+    '#required' => TRUE,
+    '#title' => t('Maxlength'),
+    '#type' => 'textfield',
+  );
+
+  $form['#validate'][] = 'alter_field_maxlength_admin_validate';
+
+  return system_settings_form($form);
+}
+
+function alter_field_maxlength_admin_validate(&$form, &$form_state) {
+  $machine_names = explode(
+    "\n",
+    $form['alter_field_maxlength-machine_names']['#value']
+  );
+
+  /**
+   * Properties these modified fields will have.
+   */
+  $maxlength = intval($form['alter_field_maxlength-maxlength']['#value']);;
+
+  /**
+   * Change the maxlength of specified fields.
+   */
+  foreach ($machine_names as $machine_name) {
+    db_query('ALTER TABLE field_data_' . $machine_name . ' CHANGE ' . $machine_name . '_value ' . $machine_name . '_value VARCHAR(' . $maxlength . ')');
+    db_query('ALTER TABLE field_revision_' . $machine_name . ' CHANGE ' . $machine_name . '_value ' . $machine_name . '_value VARCHAR(' . $maxlength . ')');
+
+    $data = unserialize(
+      db_query(
+        'SELECT data FROM {field_config} WHERE field_name = :field_name',
+        array(
+          ':field_name' => $machine_name,
+        )
+      )->fetchField()
+    );
+    $data['settings']['max_length'] = $maxlength;
+
+    db_update('field_config')
+      ->fields(
+        array(
+          'data' => serialize($data),
+        )
+      )->condition(
+        'field_name',
+        $machine_name
+      )->execute();
+  }
+
+  field_cache_clear(TRUE);
+}
+
+/**
+ * Implements hook_menu().
+ */
+function alter_field_maxlength_menu() {
+  return array(
+    'admin/structure/alter-field-maxlength' => array(
+      'access arguments' => array(
+        'administer alter_field_maxlength',
+      ),
+      'description' => t('alter_field_maxlength'),
+      'page arguments' => array(
+        'alter_field_maxlength_admin_configuration',
+      ),
+      'page callback' => 'drupal_get_form',
+      'title' => t('alter_field_maxlength'),
+    ),
+  );
+}
+
+/**
+ * Implements hook_permission().
+ */
+function alter_field_maxlength_permission() {
+  return array(
+    'administer alter_field_maxlength' => array(
+      'title' => t('Administer alter_field_maxlength'),
+    ),
+  );
+}

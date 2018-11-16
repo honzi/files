@@ -1,0 +1,27 @@
+<!doctype html>
+<meta charset=utf-8>
+<title>New Post</title>
+<link href=css/blog.css rel=stylesheet>
+
+<a href=index.htm>Index</a>
+<form action=php/post.php id=blog-form method=post>
+    <div id=blog-help-text>
+        Content:<br>
+        <br>
+        ID:<br>
+        Title:<br>
+        Name:<br>
+        Delete?<br>
+        Password:
+    </div>
+    <div id=blog-form-inputs>
+        <textarea cols=42 id=content name=content rows=5></textarea><br>
+        <input id=id name=id size=35><br>
+        <input id=title name=title size=35><br>
+        <input id=username name=username size=35><br>
+        <input name=delete type=checkbox value=1><br>
+        <input name=password size=35 type=password><input name=post-button type=submit value=Post>
+    </div>
+</form>
+
+<script src=js/post.js></script>
