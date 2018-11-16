@@ -1,0 +1,30 @@
+<!doctype html>
+<meta charset=utf-8>
+<meta content="width=device-width,initial-scale=1" name=viewport>
+<title>Music-Local.htm</title>
+<link href=../common/css/music.css rel=stylesheet>
+
+<canvas id=music-display></canvas>
+<audio class=hidden controls=false id=audio-player></audio>
+<div id=controls>
+    <div id=track>
+        <span id=title></span><br>
+        <span id=time-current>0</span> / <b id=time-total>0</span> [<span id=time-percent>0</span>%]
+    </div>
+    <input id=play-button type=button value="Play [SPACE]">
+      <input id=iterate-left type=button value=←><input id=iterate-right type=button value=→><br>
+    <input id=audio-mute type=checkbox>
+      <input id=audio-volume max=1 min=0 step=0.01 type=range value=1>
+      x<input id=playbackrate value=1><br>
+    <input id=addTrack type=button value=Add>
+      <input id=clearPlaylist type=button value=Clear>
+      <input id=exportPlaylist type=button value=Export>
+      <input id=importPlaylist type=button value=Import><br>
+    <label>Autoplay<input checked id=autoplay type=checkbox></label>
+    <label>Shuffle<input id=shuffle type=checkbox></label>
+</div>
+<table id=tracks></table>
+
+<script src=../common/js/core.js></script>
+<script src=../common/js/music.js></script>
+<script src=js/music-local.js></script>

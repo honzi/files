@@ -1,0 +1,10 @@
+[Plugin]
+Authors=https://iterami.com
+Copyright=CC0
+Description=Adds more menu items.
+IAge=3
+Loader=python
+Module=gedit-plugin-menuenhancer
+Name=gedit-Plugin-MenuEnhancer
+Version=20150616.0
+Website=https://github.com/iterami/gedit-Plugin-MenuEnhancer
