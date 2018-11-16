@@ -1,0 +1,2002 @@
+package main;
+//package honzifoxProject;
+//Imports\\
+import java.awt.BorderLayout;
+import java.awt.Color;
+import java.awt.Component;
+import java.awt.Dimension;
+import java.awt.FlowLayout;
+import java.awt.Font;
+import java.awt.Frame;
+import java.awt.Graphics;
+import java.awt.Graphics2D;
+import java.awt.GridBagConstraints;
+import java.awt.GridBagLayout;
+import java.awt.Insets;
+import java.awt.Toolkit;
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
+import java.awt.event.ComponentEvent;
+import java.awt.event.ComponentListener;
+import java.awt.event.KeyAdapter;
+import java.awt.event.KeyEvent;
+import java.awt.event.MouseAdapter;
+import java.awt.event.MouseEvent;
+import java.awt.event.MouseListener;
+import java.awt.geom.Rectangle2D;
+import java.awt.print.PrinterException;
+import java.io.BufferedReader;
+import java.io.BufferedWriter;
+import java.io.File;
+import java.io.FileReader;
+import java.io.FileWriter;
+import java.io.IOException;
+import java.io.InputStreamReader;
+import java.io.PrintWriter;
+import java.lang.reflect.Method;
+import java.net.MalformedURLException;
+import java.net.URL;
+import java.util.Date;
+import java.util.GregorianCalendar;
+
+import javax.swing.BorderFactory;
+import javax.swing.ButtonGroup;
+import javax.swing.JButton;
+import javax.swing.JCheckBoxMenuItem;
+import javax.swing.JDialog;
+import javax.swing.JEditorPane;
+import javax.swing.JFileChooser;
+import javax.swing.JFrame;
+import javax.swing.JLabel;
+import javax.swing.JMenu;
+import javax.swing.JMenuBar;
+import javax.swing.JMenuItem;
+import javax.swing.JOptionPane;
+import javax.swing.JPanel;
+import javax.swing.JPopupMenu;
+import javax.swing.JScrollPane;
+import javax.swing.JTabbedPane;
+import javax.swing.JTable;
+import javax.swing.JTextArea;
+import javax.swing.JTextField;
+import javax.swing.JToolBar;
+import javax.swing.JTree;
+import javax.swing.KeyStroke;
+import javax.swing.Timer;
+import javax.swing.UIManager;
+import javax.swing.border.TitledBorder;
+import javax.swing.event.ChangeEvent;
+import javax.swing.event.ChangeListener;
+import javax.swing.event.HyperlinkEvent;
+import javax.swing.event.HyperlinkListener;
+import javax.swing.event.TreeSelectionEvent;
+import javax.swing.event.TreeSelectionListener;
+import javax.swing.text.DefaultStyledDocument;
+import javax.swing.text.MutableAttributeSet;
+import javax.swing.text.SimpleAttributeSet;
+import javax.swing.text.StyleContext;
+import javax.swing.text.html.HTMLDocument;
+import javax.swing.text.html.HTMLFrameHyperlinkEvent;
+import javax.swing.tree.DefaultMutableTreeNode;
+// MAIN PUBLIC CLASS ///////////////////////////////////////////////////////////////////////////////////////////////////////
+public class Honzifox extends JFrame implements ActionListener, ComponentListener, TreeSelectionListener{
+/**
+	 * 
+	 */
+	private static final long serialVersionUID = 1L;
+//-----Variable Components-----\\
+Date now;
+int playerStartSet, playerEndSet, blockSet;
+
+int bytesRead,checker;
+int closingAllTabs=0;
+int currentTip=1;
+int customSizeX, customSizeY;
+int errorNum=0;
+int firstTabCheck=1;
+int frameCount=1;
+int fullScreenChecker=0;
+int isRun=0;
+int maxTips=3;
+int numTabs=0;
+int tabTypeOpen=0;
+String customSizeXText, customSizeYText;
+String DATE_FORMAT = "MM-dd-yyyy HH:mm:ss";
+String errorName="";
+String currentURL="http://www.uncyclopedia.org/wiki/Main_Page", homePageURL = "http://www.uncyclopedia.org/wiki/Main_Page";
+String urlDisplay;
+String tip1="   --DID YOU KNOW?--\n\nIf you have any Questions, Comments, or Suggestions for how we can improve Honzifox in any way, feel free to post it on the offical forums. (http://forums.honzifox.com/index.php)";
+String tip2="   --DID YOU KNOW?--\n\nIf you are wondering why some parts of the Menu are not enabled, it is usually because you have not selected the tab that exclusively uses that specific menu.";
+String tip3="   --DID YOU KNOW?--\n\nYou can change the position of the Tab Bar via the View menu. You can move it to the top, left, right, or bottom of the screen.";
+
+//String[][] urlBackwardArray = new String[100][1000];
+//String[][] urlForwardArray = new String[100][1000];
+JEditorPane[] jepArray = new JEditorPane[1000];
+JTextField[] hwbURLTextFieldArray = new JTextField[1000];
+int[][] hgePlayerStartArray = new int[1][2];
+int[][] hgePlayerEndArray = new int[1][2];
+int[][] hgeBlockNumArray = new int[1000][2];
+Rectangle2D[] hgeBlockArray = new Rectangle2D[1000];
+JTextArea[] hteTextAreaArray = new JTextArea[1000];
+
+Object[] tabsTableColumnNames = {"Tab Number","Tab Name","Tab Type","Date of Creation","Comments"};
+Object[][] tabsTableData = new String[3000][5];
+//-----Global Components-----\\
+BufferedReader in;
+ButtonGroup tabBarButtonGroupType, tabBarButtonGroupPlacement;
+char[] buffy;
+Component fSelectedComponent;
+Dimension screenSize;
+Font font;
+File fFile;
+GridBagConstraints c = new GridBagConstraints();
+java.text.SimpleDateFormat sdf = new java.text.SimpleDateFormat(DATE_FORMAT);
+JavaFilter fJavaFilter = new JavaFilter();
+JButton hgeSetPlayerStartPos, hgeSetPlayerEndPos, hgeSetBlockPos, hgeRunGame;
+JDialog errorConsoleFrame, tipOfTheDayFrame;
+JEditorPane jep;
+JFrame frame = new JFrame();
+JLabel statusBarText;
+JMenuBar menuBar, newMenuBar;
+JMenu menuFile, menuEdit, menuNavigation, menuTabs, menuView, menuTools, menuOptions, menuHelp,
+menuFileNew, menuTabsNew, menuViewTabBar, menuViewWindowSize, menuViewOpenPageIn;
+JMenuItem menuFileOpenLocation, menuFileSave, menuFileSaveAs, menuFilePrint, menuFileCloseCurrentTab, menuFileCloseAllTabs,
+menuEditCopy, menuEditCut, menuEditPaste, menuEditDelete, menuEditSelectAll, menuEditInsertTimeDate,
+menuNavigationHome,
+menuTabsCloseCurrentTab, menuTabsCloseAllTabs,
+menuViewViewPageSource, menuViewOpenPageInDefault, menuViewOpenPageInFF, menuViewOpenPageInIE, menuViewOpenPageInO;
+JCheckBoxMenuItem menuViewTabBarTop, menuViewTabBarRight, menuViewTabBarLeft, menuViewTabBarBottom;
+JMenu popupNewTab, popupBGWindowSize, popupHWBWindowSize, popupHTEWindowSize;
+JMenuItem popupCloseCurrentTab, popupCloseAllTabs,
+popupSelectAll,
+popupBGWindowSizeMaximize,popupBGWindowSizeMinimize,popupBGWindowSize800x600,popupBGWindowSize1024x768,popupBGWindowSize1280x1024,popupBGWindowSizeCustom,popupBGWindowSizeFullScreen,
+popupHWBWindowSizeMaximize,popupHWBWindowSizeMinimize,popupHWBWindowSize800x600,popupHWBWindowSize1024x768,popupHWBWindowSize1280x1024,popupHWBWindowSizeCustom,popupHWBWindowSizeFullScreen,
+popupHTEWindowSizeMaximize,popupHTEWindowSizeMinimize,popupHTEWindowSize800x600,popupHTEWindowSize1024x768,popupHTEWindowSize1280x1024,popupHTEWindowSizeCustom,popupHTEWindowSizeFullScreen;
+JPanel tabsTabPanel, hwbTabPanel, hgeTabPanel, hteTabPanel, errorConsolePanel, optionsPreferencesPanel, optionsPreferencesSeleted,
+hwbURLToolbar, hwbUniversalSidebar, hgeEditorToolbar, hgeUniversalSidebar, hteUniversalSidebar;
+JScrollPane tabTableScroll, hwbScroll, hteTextAreaScroll, errorConsoleScroll, optionsPreferencesTreeScroll, TOTDScroll;
+JTabbedPane mainTabbedPane;
+JTable tabsTable;
+JTextArea hteTextArea, errorConsoleTextArea, totdTextArea;
+JTextField hwbURLTextField, customWindowSizeTextField;
+JToolBar hwbToolbarPanel, hwbSidebar, hgeToolbarPanel, hgeSidebar, hteSidebar, statusBar;
+JTree optionsPreferencesTree;
+MouseAdapter bgPopupAdapter, hwbPopupAdapter, htePopupAdapter;
+StringBuffer sbuf;
+TitledBorder optionsPreferencesSelectedBorder;
+URL url;
+
+MutableAttributeSet mas = new SimpleAttributeSet();
+StyleContext sc = new StyleContext();
+DefaultStyledDocument dse = new DefaultStyledDocument(sc);
+//-----Main Constructor------\\
+public Honzifox(int getFrameCount){
+	frameCount=getFrameCount;
+	createMenuBar();
+	createUserInterface();}
+//MENUBAR CONSTRUCTOR///////////////////////////////////////////////////////////////////////////////////////////////////////
+public JMenuBar createMenuBar() {
+JPopupMenu.setDefaultLightWeightPopupEnabled(false);
+//-----Create Menu Bar-----\\
+menuBar = new JMenuBar();
+// MENU: FILE ////////////////////////////////////////////////////////////////TODO
+menuFile = new JMenu("File");
+menuFile.setMnemonic('F');
+menuBar.add(menuFile);
+//-----SUBMENU: File --> New-----\\
+menuFileNew = new JMenu("New...");
+menuFileNew.setMnemonic('N');
+menuFile.add(menuFileNew);
+//-----MENUITEM: File --> New --> Honzifox Web Browser Tab-----\\
+menuFileNew.add(makeMI("Honzifox Web Browser Tab","newHWB",this,'W',true,KeyEvent.VK_T));
+//-----MENUITEM: File --> New --> Honzifox Game Engine Project-----\\
+menuFileNew.add(makeMI("Honzifox Game Engine Project","newHGE",this,'G',true));
+//-----MENUITEM: File --> New --> Honzifox Text Editor File-----\\
+menuFileNew.add(makeMI("Honzifox Text Editor File","newHTE",this,'T',true));
+menuFileNew.addSeparator();
+//-----MENUITEM: File --> New Honzifox Window-----\\
+menuFileNew.add(makeMI("Honzifox Window","newWindow",this,'W',true,KeyEvent.VK_N));
+menuFile.addSeparator();
+//-----MENUITEM: File --> Open Location-----\\
+menuFileOpenLocation = makeMI("Open Location","openLocation",this,'L',false,KeyEvent.VK_L);
+menuFile.add(menuFileOpenLocation);
+//-----MENUITEM: File --> Open File-----\\
+menuFile.add(makeMI("Open File...","open",this,'F',true,KeyEvent.VK_O));
+menuFile.addSeparator();
+//-----MENUITEM: File --> Save-----\\
+menuFileSave = makeMI("Save","",this,'S',false,KeyEvent.VK_S);
+menuFile.add(menuFileSave);
+//-----MENUITEM: File --> Save As...-----\\
+menuFileSaveAs = makeMI("Save As...","saveAs",this,'A',false);
+menuFile.add(menuFileSaveAs);
+menuFile.addSeparator();
+//-----MENUITEM: File --> Print-----\\
+menuFilePrint = makeMI("Print...","print",this,'P',false,KeyEvent.VK_P);
+menuFile.add(menuFilePrint);
+menuFile.addSeparator();
+//-----MENUITEM: File --> Close This Window-----\\
+menuFile.add(makeMI("Close This Window","closeThisWindow",this,'E',true));
+//-----MENUITEM: File --> Close Current Tab-----\\
+menuFileCloseCurrentTab = makeMI("Close Current Tab","closeCurrentTab",this,'C',false,KeyEvent.VK_W);
+menuFile.add(menuFileCloseCurrentTab);
+//-----MENUITEM: File --> Close All Tabs-----\\
+menuFileCloseAllTabs = makeMI("Close All Tabs","closeAllTabs",this,'A',false);
+menuFile.add(menuFileCloseAllTabs);
+menuFile.addSeparator();
+//-----MENUITEM: File --> Restart Honzifox-----\\
+menuFile.add(makeMI("Restart Honzifox","restartHonzifox",this,'R',true));
+//-----MENUITEM: File --> Close All Honzifox Windows-----\\
+menuFile.add(makeMI("Close All Honzifox Windows","closeAllHonzifoxWindows",this,'H',true));
+//MENU: EDIT //////////////////////////////////////////////////////////////////TODO
+menuEdit = new JMenu("Edit");
+menuEdit.setMnemonic('E');
+menuBar.add(menuEdit);
+//-----MENUITEM: Edit --> Copy-----\\
+menuEditCopy = makeMI("Copy","copy",this,'C',false,KeyEvent.VK_C);
+menuEdit.add(menuEditCopy);
+//-----MENUITEM: Edit --> Cut-----\\
+menuEditCut = makeMI("Cut","cut",this,'T',false,KeyEvent.VK_X);
+menuEdit.add(menuEditCut);
+//-----MENUITEM: Edit --> Paste-----\\
+menuEditPaste = makeMI("Paste","paste",this,'T',false,KeyEvent.VK_V);
+menuEdit.add(menuEditPaste);
+//-----MENUITEM: Edit --> Delete-----\\
+menuEditDelete = makeMI("Delete","delete",this,'D',false);
+menuEdit.add(menuEditDelete);
+menuEdit.addSeparator();
+//-----MENUITEM: Edit --> Select All-----\\
+menuEditSelectAll = makeMI("Select All","selectAll",this,'A',false,KeyEvent.VK_A);
+menuEdit.add(menuEditSelectAll);
+menuEdit.addSeparator();
+//-----MENUITEM: Edit --> Insert Time/Date-----\\
+menuEditInsertTimeDate = makeMI("Insert Time/Date","insertTimeDate",this,'I',false);
+menuEdit.add(menuEditInsertTimeDate);
+//MENU: NAVIGATION //////////////////////////////////////////////////////////////////TODO
+menuNavigation = new JMenu("Navigation");
+menuNavigation.setMnemonic('N');
+menuNavigation.setEnabled(false);
+menuBar.add(menuNavigation);
+//-----MENUITEM: Navigation --> Home-----\\
+menuNavigationHome = makeMI("Home","goHome",this,'H',true,KeyEvent.VK_HOME);
+menuNavigation.add(menuNavigationHome);
+//MENU: TABS ///////////////////////////////////////////////////////////////////TODO
+menuTabs = new JMenu("Tabs");
+menuTabs.setMnemonic('A');
+menuBar.add(menuTabs);
+//-----SUBMENU: Tabs --> New-----\\
+menuTabsNew = new JMenu("New...");
+menuTabsNew.setMnemonic('N');
+menuTabs.add(menuTabsNew);
+//-----MENUITEM: Tabs --> New --> Honzifox Web Browser Tab-----\\
+menuTabsNew.add(makeMI("Honzifox Web Browser Tab","newHWB",this,'W',true,KeyEvent.VK_T));
+//-----MENUITEM: Tabs --> New --> Honzifox Game Engine Project-----\\
+menuTabsNew.add(makeMI("Honzifox Game Engine Project","newHGE",this,'G',true));
+//-----MENUITEM: Tabs --> New --> Honzifox Text Editor File-----\\
+menuTabsNew.add(makeMI("Honzifox Text Editor File","newHTE",this,'T',true));
+menuTabs.addSeparator();
+//-----MENUITEM: Tabs --> Close Current Tab-----\\
+menuTabsCloseCurrentTab = makeMI("Close Current Tab","closeCurrentTab",this,'C',false,KeyEvent.VK_W);
+menuTabs.add(menuTabsCloseCurrentTab);
+//-----MENUITEM: Tabs --> Close All Tabs-----\\
+menuTabsCloseAllTabs = makeMI("Close All Tabs","closeAllTabs",this,'B',false);
+menuTabs.add(menuTabsCloseAllTabs);
+//MENU: VIEW /////////////////////////////////////////////////////////////////TODO
+menuView = new JMenu("View");
+menuView.setMnemonic('V');
+menuBar.add(menuView);
+//-----SUBMENU: View --> Tab Bar...-----\\
+menuViewTabBar = new JMenu("Tab Bar...");
+menuViewTabBar.setMnemonic('T');
+menuView.add(menuViewTabBar);
+//-----MENUITEM: View --> Tab Bar... --> Top-----\\
+menuViewTabBarTop = makeCBMI("Top","tabBarTop",this,'T',true, true);
+menuViewTabBar.add(menuViewTabBarTop);
+//-----MENUITEM: View --> Tab Bar... --> Left-----\\
+menuViewTabBarLeft = makeCBMI("Left","tabBarLeft",this,'L',true, false);
+menuViewTabBar.add(menuViewTabBarLeft);
+//-----MENUITEM: View --> Tab Bar... --> Right-----\\
+menuViewTabBarRight = makeCBMI("Right","tabBarRight",this,'R',true, false);
+menuViewTabBar.add(menuViewTabBarRight);
+//-----MENUITEM: View --> Tab Bar... --> Bottom-----\\
+menuViewTabBarBottom = makeCBMI("Bottom","tabBarBottom",this,'B',true, false);
+menuViewTabBar.add(menuViewTabBarBottom);
+tabBarButtonGroupPlacement = new ButtonGroup();
+tabBarButtonGroupPlacement.add(menuViewTabBarTop);
+tabBarButtonGroupPlacement.add(menuViewTabBarRight);
+tabBarButtonGroupPlacement.add(menuViewTabBarLeft);
+tabBarButtonGroupPlacement.add(menuViewTabBarBottom);
+//-----SUBMENU: View --> Window Size-----\\
+menuViewWindowSize = new JMenu("Window Size...");
+menuViewWindowSize.setMnemonic('W');
+menuView.add(menuViewWindowSize);
+//-----MENUITEM: View --> Window Size --> Maximize-----\\
+menuViewWindowSize.add(makeMI("Maximize","windowSizeMax",this,'X',true));
+//-----MENUITEM: View --> Window Size --> Minimize-----\\
+menuViewWindowSize.add(makeMI("Minimize","windowSizeMin",this,'Z',true));
+menuViewWindowSize.addSeparator();
+//-----MENUITEM: View --> Window Size --> 800 x 600-----\\
+menuViewWindowSize.add(makeMI("800 x 600","windowSize800x600",this,'8',true));
+//-----MENUITEM: View --> Window Size --> 1024 x 768-----\\
+menuViewWindowSize.add(makeMI("1024 x 768","windowSize1024x768",this,'1',true));
+//-----MENUITEM: View --> Window Size --> 1280 x 1024-----\\
+menuViewWindowSize.add(makeMI("1280 x 1024","windowSize1280x1024",this,'2',true));
+//-----MENUITEM: View --> Window Size --> Custom...-----\\
+menuViewWindowSize.add(makeMI("Custom...","windowSizeCustom",this,'C',true));
+menuViewWindowSize.addSeparator();
+//-----MENUITEM: View --> Window Size --> Full Screen-----\\
+menuViewWindowSize.add(makeMI("Full Screen","windowSizeFullScreen",this,'F',true,KeyEvent.VK_F11));
+menuView.addSeparator();
+//-----MENUITEM: View --> View Page Source-----\\
+menuViewViewPageSource = makeMI("View Page Source Code","viewPageSource",this,'C',false);
+menuView.add(menuViewViewPageSource);
+menuView.addSeparator();
+//-----SUBMENU: View --> Open Page In...-----\\
+menuViewOpenPageIn = new JMenu("Open Page In...");
+menuViewOpenPageIn.setMnemonic('N');
+menuView.add(menuViewOpenPageIn);
+//-----MENUITEM: View --> Open Page In... --> Default Web Browser-----\\
+menuViewOpenPageInDefault = makeMI("Default Web Browser","openPageInDefault",this,'I',false);
+menuViewOpenPageIn.add(menuViewOpenPageInDefault);
+menuViewOpenPageIn.addSeparator();
+//-----MENUITEM: View --> Open Page In... --> Mozilla Firefox-----\\
+menuViewOpenPageInFF = makeMI("Mozilla Firefox","openPageInFF",this,'F',false);
+menuViewOpenPageIn.add(menuViewOpenPageInFF);
+//-----MENUITEM: View --> Open Page In... --> Windows Internet Explorer-----\\
+menuViewOpenPageInIE = makeMI("Windows Internet Explorer","openPageInIE",this,'W',false);
+menuViewOpenPageIn.add(menuViewOpenPageInIE);
+//-----MENUITEM: View --> Open Page In... --> Opera-----\\
+menuViewOpenPageInO = makeMI("Opera","openPageInO",this,'O',false);
+menuViewOpenPageIn.add(menuViewOpenPageInO);
+//MENU: TOOLS /////////////////////////////////////////////////////////////////TODO
+menuTools = new JMenu("Tools");
+menuTools.setMnemonic('T');
+menuBar.add(menuTools);
+//-----MENUITEM: Tools --> Error Console-----\\
+menuTools.add(makeMI("Error Console","errorConsole",this,'E',true));
+//MENU: OPTIONS /////////////////////////////////////////////////////////////////TODO
+menuOptions = new JMenu("Options");
+menuOptions.setMnemonic('O');
+menuBar.add(menuOptions);
+//-----MENUITEM: Options --> Options/Preferences-----\\
+menuOptions.add(makeMI("Options/Preferences","optionsPreferences",this,'O',true));
+//MENU: HELP /////////////////////////////////////////////////////////////////TODO
+menuHelp = new JMenu("Help");
+menuHelp.setMnemonic('H');
+menuBar.add(menuHelp);
+//-----MENUITEM: Help --> Tip of the Day-----\\
+menuHelp.add(makeMI("Tip of the Day","tipOfTheDay",this,'T',true));
+//END MENUBAR CONSTRUCTION\\
+return menuBar;}
+//MAIN INTERFACE////////////////////////////////////////////////////////////////////////////////////////////////////////////
+public void createUserInterface(){
+//-----Interface Globals-----\\
+try{UIManager.setLookAndFeel("com.sun.java.swing.plaf.windows.WindowsLookAndFeel");}catch(Exception LnFStartup){}
+//-----Menu Bar-----\\
+newMenuBar = createMenuBar();
+//-----Desktop-----\\
+mainTabbedPane = new JTabbedPane();
+mainTabbedPane.setTabLayoutPolicy(JTabbedPane.SCROLL_TAB_LAYOUT);
+mainTabbedPane.setTabPlacement(JTabbedPane.TOP);
+mainTabbedPane.setVisible(true);
+//mainTabbedPane.setPreferredSize(new Dimension(0,28));
+frame.add(mainTabbedPane, java.awt.BorderLayout.CENTER);
+//-----Tabs Panel-----\\
+tabsTabPanel = new JPanel();
+tabsTabPanel.setLayout(new BorderLayout());
+tabsTable = new JTable(tabsTableData, tabsTableColumnNames);
+tabsTabPanel.add(tabsTable.getTableHeader(), BorderLayout.PAGE_START);
+//tabsTabPanel.add(tabsTable, java.awt.BorderLayout.CENTER);
+tabTableScroll = new JScrollPane(tabsTable);
+tabsTabPanel.add(tabTableScroll, java.awt.BorderLayout.CENTER);
+mainTabbedPane.addTab("Tabs", null, tabsTabPanel, "Tabs");numTabs++;
+//------\\
+ChangeListener changeListener = new ChangeListener() {
+	public void stateChanged(ChangeEvent changeEvent) {
+		JTabbedPane sourceTabbedPane = (JTabbedPane)changeEvent.getSource();
+		int index = sourceTabbedPane.getSelectedIndex();
+		if(mainTabbedPane.getTabCount()>=1 && closingAllTabs!=1){
+			if(mainTabbedPane.getTitleAt(mainTabbedPane.getSelectedIndex()).endsWith("Tabs")){
+				frame.setTitle(mainTabbedPane.getTitleAt(mainTabbedPane.getSelectedIndex())+" - [Honzifox]");
+				tabTypeOpen=0;
+				menuFileOpenLocation.setEnabled(false);
+				menuFilePrint.setEnabled(false);
+				menuEditCopy.setEnabled(false);
+				menuEditCut.setEnabled(false);
+				menuEditPaste.setEnabled(false);
+				menuEditDelete.setEnabled(false);
+				menuEditSelectAll.setEnabled(false);
+				menuEditInsertTimeDate.setEnabled(false);
+				menuNavigation.setEnabled(false);
+				menuViewViewPageSource.setEnabled(false);
+				menuViewOpenPageInDefault.setEnabled(false);
+				menuViewOpenPageInFF.setEnabled(false);
+				menuViewOpenPageInIE.setEnabled(false);
+				menuViewOpenPageInO.setEnabled(false);
+			}
+			else if(mainTabbedPane.getTitleAt(mainTabbedPane.getSelectedIndex()).endsWith("- [HWB]")){
+				frame.setTitle(hwbURLTextFieldArray[index].getText()+" - [HWB] - [Honzifox]");
+				tabTypeOpen=1;
+				menuFileOpenLocation.setEnabled(true);
+				menuFilePrint.setEnabled(true);
+				menuEditCopy.setEnabled(false);
+				menuEditCut.setEnabled(false);
+				menuEditPaste.setEnabled(false);
+				menuEditDelete.setEnabled(false);
+				menuEditSelectAll.setEnabled(true);
+				menuEditInsertTimeDate.setEnabled(false);
+				menuNavigation.setEnabled(true);
+				menuViewViewPageSource.setEnabled(true);
+				menuViewOpenPageInDefault.setEnabled(true);
+				menuViewOpenPageInFF.setEnabled(true);
+				menuViewOpenPageInIE.setEnabled(true);
+				menuViewOpenPageInO.setEnabled(true);
+			}else if(mainTabbedPane.getTitleAt(mainTabbedPane.getSelectedIndex()).endsWith("- [HGE]")){
+				frame.setTitle(mainTabbedPane.getTitleAt(mainTabbedPane.getSelectedIndex())+" - [Honzifox]");
+				tabTypeOpen=2;
+				menuFileOpenLocation.setEnabled(false);
+				menuFilePrint.setEnabled(false);
+				menuEditCopy.setEnabled(false);
+				menuEditCut.setEnabled(false);
+				menuEditPaste.setEnabled(false);
+				menuEditDelete.setEnabled(false);
+				menuEditSelectAll.setEnabled(false);
+				menuEditInsertTimeDate.setEnabled(false);
+				menuNavigation.setEnabled(false);
+				menuViewViewPageSource.setEnabled(false);
+				menuViewOpenPageInDefault.setEnabled(true);
+				menuViewOpenPageInFF.setEnabled(false);
+				menuViewOpenPageInIE.setEnabled(false);
+				menuViewOpenPageInO.setEnabled(false);
+			}else if(mainTabbedPane.getTitleAt(mainTabbedPane.getSelectedIndex()).endsWith("- [HTE]")){
+				frame.setTitle(mainTabbedPane.getTitleAt(mainTabbedPane.getSelectedIndex())+" - [Honzifox]");
+				tabTypeOpen=3;
+				menuFileOpenLocation.setEnabled(false);
+				menuFilePrint.setEnabled(true);
+				menuEditCopy.setEnabled(true);
+				menuEditCut.setEnabled(true);
+				menuEditPaste.setEnabled(false);
+				menuEditDelete.setEnabled(true);
+				menuEditSelectAll.setEnabled(true);
+
+				menuEditInsertTimeDate.setEnabled(true);
+				menuNavigation.setEnabled(false);
+				menuViewViewPageSource.setEnabled(false);
+				menuViewOpenPageInDefault.setEnabled(true);
+				menuViewOpenPageInFF.setEnabled(false);
+				menuViewOpenPageInIE.setEnabled(false);
+				menuViewOpenPageInO.setEnabled(false);
+			}else if(mainTabbedPane.getTitleAt(mainTabbedPane.getSelectedIndex()).endsWith("Options/Preferences")){
+				frame.setTitle(mainTabbedPane.getTitleAt(mainTabbedPane.getSelectedIndex())+" - [Honzifox]");
+				tabTypeOpen=4;
+				menuFileOpenLocation.setEnabled(false);
+				menuFilePrint.setEnabled(false);
+				menuEditCopy.setEnabled(false);
+				menuEditCut.setEnabled(false);
+				menuEditPaste.setEnabled(false);
+				menuEditDelete.setEnabled(false);
+				menuEditSelectAll.setEnabled(false);
+				menuEditInsertTimeDate.setEnabled(false);
+				menuNavigation.setEnabled(false);
+				menuViewViewPageSource.setEnabled(false);
+				menuViewOpenPageInDefault.setEnabled(true);
+				menuViewOpenPageInFF.setEnabled(false);
+				menuViewOpenPageInIE.setEnabled(false);
+				menuViewOpenPageInO.setEnabled(false);
+			}else if(mainTabbedPane.getTitleAt(mainTabbedPane.getSelectedIndex()).endsWith("Error Console")){
+				frame.setTitle(mainTabbedPane.getTitleAt(mainTabbedPane.getSelectedIndex())+" - [Honzifox]");
+				tabTypeOpen=4;
+				menuFileOpenLocation.setEnabled(false);
+				menuFilePrint.setEnabled(false);
+				menuEditCopy.setEnabled(false);
+				menuEditCut.setEnabled(false);
+				menuEditPaste.setEnabled(false);
+				menuEditDelete.setEnabled(false);
+				menuEditSelectAll.setEnabled(false);
+				menuEditInsertTimeDate.setEnabled(false);
+				menuNavigation.setEnabled(false);
+				menuViewViewPageSource.setEnabled(false);
+				menuViewOpenPageInDefault.setEnabled(true);
+				menuViewOpenPageInFF.setEnabled(false);
+				menuViewOpenPageInIE.setEnabled(false);
+				menuViewOpenPageInO.setEnabled(false);
+			}
+			if(tabTypeOpen==0){
+				menuFileCloseCurrentTab.setEnabled(false);
+				menuTabsCloseCurrentTab.setEnabled(false);
+				popupCloseCurrentTab.setEnabled(false);
+			}else if(tabTypeOpen!=0){
+				menuFileCloseCurrentTab.setEnabled(true);
+				menuTabsCloseCurrentTab.setEnabled(true);
+				popupCloseCurrentTab.setEnabled(true);
+			}
+		}
+	}
+};
+mainTabbedPane.addChangeListener(changeListener);
+//-----Popup Menus-----\\
+////////////////////////POPUPMENU\\\\\\\\\\\\\\\\\\\\\\\\\\\\TODO
+final JPopupMenu bgPopup = new JPopupMenu();
+//-----SUBMENU: BG Popup Menu --> New...-----\\
+popupNewTab = new JMenu("New...");
+popupNewTab.setMnemonic('N');
+bgPopup.add(popupNewTab);
+//-----MENUITEM: BG Popup Menu --> New... --> Honzifox Web Browser Tab-----\\
+popupNewTab.add(makeMI("Honzifox Web Browser Tab","newHWB",this,'W',true));
+//-----MENUITEM: BG Popup Menu --> New... --> Honzifox Game Engine Project-----\\
+popupNewTab.add(makeMI("Honzifox Game Engine Project","newHGE",this,'G',true));
+//-----MENUITEM: BG Popup Menu --> New... --> Honzifox Text Editor File-----\\
+popupNewTab.add(makeMI("Honzifox Text Editor File","newHTE",this,'T',true));
+bgPopup.addSeparator();
+//-----MENUITEM: BG Popup Menu --> Close Current Tab-----\\
+popupCloseCurrentTab = makeMI("Close Current Tab","closeCurrentTab",this,'C',false);
+bgPopup.add(popupCloseCurrentTab);
+//-----MENUITEM: BG Popup Menu --> Close All Tabs-----\\
+popupCloseAllTabs = makeMI("Close All Tabs","closeAllTabs",this,'A',false);
+bgPopup.add(popupCloseAllTabs);
+bgPopup.addSeparator();
+//-----SUBMENU: BG Popup Menu --> Window Size...-----\\
+popupBGWindowSize = new JMenu("Window Size...");
+popupBGWindowSize.setMnemonic('W');
+bgPopup.add(popupBGWindowSize);
+//-----MENUITEM: BG Popup Menu --> Window Size... --> Maximize-----\\
+popupBGWindowSizeMaximize = makeMI("Maximize","windowSizeMax",this,'X',true);
+popupBGWindowSize.add(popupBGWindowSizeMaximize);
+//-----MENUITEM: BG Popup Menu --> Window Size... --> Minimize-----\\
+popupBGWindowSizeMinimize = makeMI("Minimize","windowSizeMin",this,'Z',true);
+popupBGWindowSize.add(popupBGWindowSizeMinimize);
+popupBGWindowSize.addSeparator();
+//-----MENUITEM: BG Popup Menu --> Window Size... --> 800 x 600-----\\
+popupBGWindowSize800x600 = makeMI("800 x 600","windowSize800x600",this,'8',true);
+popupBGWindowSize.add(popupBGWindowSize800x600);
+//-----MENUITEM: BG Popup Menu --> Window Size... --> 1024 x 768-----\\
+popupBGWindowSize1024x768 = makeMI("1024 x 768","windowSize1024x768",this,'1',true);
+popupBGWindowSize.add(popupBGWindowSize1024x768);
+//-----MENUITEM: BG Popup Menu --> Window Size... --> 1280 x 1024-----\\
+popupBGWindowSize1280x1024 = makeMI("1280 x 1024","windowSize1280x1024",this,'2',true);
+popupBGWindowSize.add(popupBGWindowSize1280x1024);
+//-----MENUITEM: BG Popup Menu --> Window Size... --> Custom...-----\\
+popupBGWindowSizeCustom = makeMI("Custom...","windowSizeCustom",this,'C',true);
+popupBGWindowSize.add(popupBGWindowSizeCustom);
+popupBGWindowSize.addSeparator();
+//-----MENUITEM: BG Popup Menu --> Window Size... --> Full Screen-----\\
+popupBGWindowSizeFullScreen = makeMI("Full Screen","windowSizeFullScreen",this,'F',true);
+popupBGWindowSize.add(popupBGWindowSizeFullScreen);
+bgPopupAdapter=new MouseAdapter(){public void mouseReleased(MouseEvent e){
+	if(e.isPopupTrigger()){
+    	showPopupMenu(e);
+    }
+}public void mousePressed(MouseEvent e){
+    if(e.isPopupTrigger()){
+        showPopupMenu(e);
+    }
+}public void showPopupMenu(MouseEvent e){
+    fSelectedComponent = e.getComponent();
+    bgPopup.show(fSelectedComponent,e.getX(),e.getY());
+}};
+mainTabbedPane.addMouseListener(bgPopupAdapter);
+final JPopupMenu hwbPopup = new JPopupMenu();
+//-----MENUITEM: HTE Popup --> Select All-----\\
+popupSelectAll = makeMI("Select All","selectAll",this,'A',true);
+hwbPopup.add(popupSelectAll);
+hwbPopup.addSeparator();
+//-----MENUITEM: HTE Popup --> View Page Source Code-----\\
+hwbPopup.add(makeMI("View Page Source Code","viewPageSource",this,'G',true));
+hwbPopup.addSeparator();
+//-----SUBMENU: HTE Popup --> Window Size...-----\\
+popupHWBWindowSize = new JMenu("Window Size...");
+popupHWBWindowSize.setMnemonic('W');
+hwbPopup.add(popupHWBWindowSize);
+//-----MENUITEM: HTE Popup --> Window Size... --> Maximize-----\\
+popupHWBWindowSizeMaximize = makeMI("Maximize","windowSizeMax",this,'X',true);
+popupHWBWindowSize.add(popupHWBWindowSizeMaximize);
+//-----MENUITEM: HTE Popup --> Window Size... --> Minimize-----\\
+popupHWBWindowSizeMinimize = makeMI("Minimize","windowSizeMin",this,'Z',true);
+popupHWBWindowSize.add(popupHWBWindowSizeMinimize);
+popupHWBWindowSize.addSeparator();
+//-----MENUITEM: HTE Popup --> Window Size... --> 800 x 600-----\\
+popupHWBWindowSize800x600 = makeMI("800 x 600","windowSize800x600",this,'8',true);
+popupHWBWindowSize.add(popupHWBWindowSize800x600);
+//-----MENUITEM: HTE Popup --> Window Size... --> 1024 x 768-----\\
+popupHWBWindowSize1024x768 = makeMI("1024 x 768","windowSize1024x768",this,'1',true);
+popupHWBWindowSize.add(popupHWBWindowSize1024x768);
+//-----MENUITEM: HTE Popup --> Window Size... --> 1280 x 1024-----\\
+popupHWBWindowSize1280x1024 = makeMI("1280 x 1024","windowSize1280x1024",this,'2',true);
+popupHWBWindowSize.add(popupHWBWindowSize1280x1024);
+//-----MENUITEM: HTE Popup --> Window Size... --> Custom...-----\\
+popupHWBWindowSizeCustom = makeMI("Custom...","windowSizeCustom",this,'C',true);
+popupHWBWindowSize.add(popupHWBWindowSizeCustom);
+popupHWBWindowSize.addSeparator();
+//-----MENUITEM: HTE Popup --> Window Size... --> Full Screen-----\\
+popupHWBWindowSizeFullScreen = makeMI("Full Screen","windowSizeFullScreen",this,'F',true);
+popupHWBWindowSize.add(popupHWBWindowSizeFullScreen);
+hwbPopupAdapter=new MouseAdapter(){public void mouseReleased(MouseEvent e){
+	if(e.isPopupTrigger()){
+		showPopupMenu(e);
+	}
+}public void mousePressed(MouseEvent e){
+	if(e.isPopupTrigger()){
+	  showPopupMenu(e);
+	}
+}public void showPopupMenu(MouseEvent e){
+	fSelectedComponent = e.getComponent();
+	hwbPopup.show(fSelectedComponent,e.getX(),e.getY());
+}};
+final JPopupMenu htePopup = new JPopupMenu();
+//-----MENUITEM: HWB Popup --> Select All-----\\
+popupSelectAll = makeMI("Select All","selectAll",this,'A',true);
+htePopup.add(popupSelectAll);
+htePopup.addSeparator();
+//-----SUBMENU: HWB Popup --> Window Size...-----\\
+popupHTEWindowSize = new JMenu("Window Size...");
+popupHTEWindowSize.setMnemonic('W');
+htePopup.add(popupHTEWindowSize);
+//-----MENUITEM: HWB Popup --> Window Size... --> Maximize-----\\
+popupHTEWindowSizeMaximize = makeMI("Maximize","windowSizeMax",this,'X',true);
+popupHTEWindowSize.add(popupHTEWindowSizeMaximize);
+//-----MENUITEM: HWB Popup --> Window Size... --> Minimize-----\\
+popupHTEWindowSizeMinimize = makeMI("Minimize","windowSizeMin",this,'Z',true);
+popupHTEWindowSize.add(popupHTEWindowSizeMinimize);
+popupHTEWindowSize.addSeparator();
+//-----MENUITEM: HWB Popup --> Window Size... --> 800 x 600-----\\
+popupHTEWindowSize800x600 = makeMI("800 x 600","windowSize800x600",this,'8',true);
+popupHTEWindowSize.add(popupHTEWindowSize800x600);
+//-----MENUITEM: HWB Popup --> Window Size... --> 1024 x 768-----\\
+popupHTEWindowSize1024x768 = makeMI("1024 x 768","windowSize1024x768",this,'1',true);
+popupHTEWindowSize.add(popupHTEWindowSize1024x768);
+//-----MENUITEM: HWB Popup --> Window Size... --> 1280 x 1024-----\\
+popupHTEWindowSize1280x1024 = makeMI("1280 x 1024","windowSize1280x1024",this,'2',true);
+popupHTEWindowSize.add(popupHTEWindowSize1280x1024);
+//-----MENUITEM: HWB Popup --> Window Size... --> Custom...-----\\
+popupHTEWindowSizeCustom = makeMI("Custom...","windowSizeCustom",this,'C',true);
+popupHTEWindowSize.add(popupHTEWindowSizeCustom);
+popupHTEWindowSize.addSeparator();
+//-----MENUITEM: HWB Popup --> Window Size... --> Full Screen-----\\
+popupHTEWindowSizeFullScreen = makeMI("Full Screen","windowSizeFullScreen",this,'F',true);
+popupHTEWindowSize.add(popupHTEWindowSizeFullScreen);
+htePopupAdapter=new MouseAdapter(){public void mouseReleased(MouseEvent e){
+	if(e.isPopupTrigger()){
+	showPopupMenu(e);
+}
+}public void mousePressed(MouseEvent e){
+	if(e.isPopupTrigger()){
+    showPopupMenu(e);
+}
+}public void showPopupMenu(MouseEvent e){
+	fSelectedComponent = e.getComponent();
+	htePopup.show(fSelectedComponent,e.getX(),e.getY());
+}};
+/////////////////////////////////////////////////////////////
+statusBar = new JToolBar();
+statusBar.setFloatable(false);
+statusBar.setLayout(new GridBagLayout());
+statusBar.setPreferredSize(new Dimension(0,20));
+statusBarText = new JLabel(" Honzifox Initialized Successfully");
+c.fill = GridBagConstraints.HORIZONTAL;
+c.anchor = GridBagConstraints.LINE_START;
+c.weightx = 10.0;
+c.gridwidth = 1;
+c.gridx = 0;
+c.gridy = 0;
+statusBar.add(statusBarText, c);
+frame.add(statusBar, java.awt.BorderLayout.SOUTH);
+//-----Add Components to Frame-----\\
+frame.addComponentListener(this);
+frame.setTitle("Tabs - [Honzifox]");
+frame.setJMenuBar(newMenuBar);
+frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE/*DISPOSE_ON_CLOSE*/);
+frame.setExtendedState(JFrame.MAXIMIZED_BOTH);
+frame.setUndecorated(false);
+frame.setVisible(true);
+} // End MAIN INTERFACE \\
+private void addTabToTable(String num, String name, String type, String date, String comments) {
+	String[] tabsTableHolder={num,name,type,date,comments};
+	for (int i = 0; i < tabsTableHolder.length; i++) {
+		numTabs--;
+		tabsTableData[numTabs][i]= tabsTableHolder[i];
+		numTabs++;
+	}
+}
+//MENU SELECTIONS///////////////////////////////////////////////////////////////////////////////////////////////////////////
+public void actionPerformed(ActionEvent e){
+//FILE\\TODO
+if("newHWB".equals(e.getActionCommand())){
+	firstTabCheck();
+	createHWBTab(homePageURL);
+	}
+else if("newHGE".equals(e.getActionCommand())){
+	firstTabCheck();
+	createHGETab();
+	}
+else if("newHTE".equals(e.getActionCommand())){
+	firstTabCheck();
+	createHTETab("");
+	}
+else if("newWindow".equals(e.getActionCommand())){
+	frameCount++;
+	new Honzifox(frameCount);}
+else if("openLocation".equals(e.getActionCommand())){
+	hwbURLTextFieldArray[mainTabbedPane.getSelectedIndex()].requestFocus();
+	hwbURLTextFieldArray[mainTabbedPane.getSelectedIndex()].selectAll();
+	}
+else if("open".equals(e.getActionCommand())){
+	JFileChooser fc = new JFileChooser ();
+    fc.setDialogTitle ("Open File");
+    fc.setApproveButtonText("Open File");
+	fc.setFileSelectionMode(JFileChooser.FILES_ONLY);
+	fc.setCurrentDirectory(new File ("."));
+	fc.setFileFilter(fJavaFilter);
+	int result = fc.showOpenDialog(this);
+	if(result == JFileChooser.CANCEL_OPTION) {
+    	dispose();}
+    else if(result == JFileChooser.APPROVE_OPTION) {
+		fFile = fc.getSelectedFile();
+        String file_String = readFile(fFile);
+        hteTextAreaArray[mainTabbedPane.getSelectedIndex()-1].setText(file_String);
+        mainTabbedPane.setTitleAt(mainTabbedPane.getSelectedIndex(),fFile+" - [HTE]");
+        frame.setTitle(mainTabbedPane.getTitleAt(mainTabbedPane.getSelectedIndex()));
+        tabsTableData[mainTabbedPane.getSelectedIndex()-1][1] = mainTabbedPane.getTitleAt(mainTabbedPane.getSelectedIndex());
+    }}
+else if("saveAs".equals(e.getActionCommand())){
+    JFileChooser fc = new JFileChooser();
+    fc.setDialogTitle("Save Project As");
+    fc.setApproveButtonText("Save Project");
+	fc.setCurrentDirectory (new File ("."));
+	fc.setFileFilter(fJavaFilter);
+	fc.setSelectedFile(fFile);
+	int result = fc.showSaveDialog (this);
+	if (result == JFileChooser.CANCEL_OPTION) {
+    	dispose();}
+    else if (result == JFileChooser.APPROVE_OPTION) 
+    	fFile = fc.getSelectedFile();{
+        if (fFile.exists ()) {
+        	int response = JOptionPane.showConfirmDialog (null,"Overwrite existing file?","Confirm Overwrite",JOptionPane.OK_CANCEL_OPTION,JOptionPane.QUESTION_MESSAGE);
+            if (response == JOptionPane.CANCEL_OPTION) dispose();
+        }
+        writeFile(fFile,hteTextAreaArray[mainTabbedPane.getSelectedIndex()-1].getText());
+        mainTabbedPane.setTitleAt(mainTabbedPane.getSelectedIndex(),fFile+" - [HTE]");
+        frame.setTitle(mainTabbedPane.getTitleAt(mainTabbedPane.getSelectedIndex()));
+        tabsTableData[mainTabbedPane.getSelectedIndex()-1][1] = mainTabbedPane.getTitleAt(mainTabbedPane.getSelectedIndex());
+    }}
+else if("print".equals(e.getActionCommand())){
+	if(tabTypeOpen==1){
+		try{jepArray[mainTabbedPane.getSelectedIndex()].print();}catch(PrinterException e1){}
+	}
+	else if(tabTypeOpen==3){
+		try{hteTextAreaArray[mainTabbedPane.getSelectedIndex()-1].print();}catch(PrinterException e1){}
+	}
+	}
+
+else if("closeThisWindow".equals(e.getActionCommand())){
+	frame.dispose();
+	frameCount--;
+	if(frameCount==0){
+		System.exit(0);
+	}}
+else if("closeCurrentTab".equals(e.getActionCommand())){
+	if(numTabs==2){
+		closingAllTabs=1;
+		mainTabbedPane.removeAll();
+		closeAllTabs();
+	}else{
+		int getClosedTab = mainTabbedPane.getSelectedIndex();
+		int tabCounter = numTabs;int newTabCounter = tabCounter--;
+		while(tabCounter>getClosedTab){
+			if(jepArray[getClosedTab]!=null){
+				jepArray[tabCounter] = jepArray[newTabCounter];
+			}if(hwbURLTextFieldArray[getClosedTab]!=null){
+				hwbURLTextFieldArray[tabCounter] = hwbURLTextFieldArray[newTabCounter];
+			}if(hteTextAreaArray[getClosedTab]!=null){
+				hteTextAreaArray[tabCounter] = hteTextAreaArray[newTabCounter];
+			}
+			Object[] tabsTableHolder={tabsTableData[getClosedTab][0],tabsTableData[getClosedTab][1],tabsTableData[getClosedTab][2],tabsTableData[getClosedTab][3]};
+			getClosedTab++;
+			for (int i = 0; i < 4; i++) {
+				tabsTableData[getClosedTab-2][i] = tabsTableHolder[i];
+			}
+		}
+		String[] tabsTableHolder={"","","","",""};
+		for (int i = 0; i < 4; i++) {
+			tabsTableData[numTabs-2][i] = tabsTableHolder[i];
+		}
+		mainTabbedPane.removeTabAt(mainTabbedPane.getSelectedIndex());
+		numTabs--;
+	}}
+else if("closeAllTabs".equals(e.getActionCommand())){
+	closingAllTabs=1;
+	mainTabbedPane.removeAll();
+	closeAllTabs();}
+else if("restartHonzifox".equals(e.getActionCommand())){
+	frame.dispose();
+	new Honzifox(frameCount);}
+else if("closeAllHonzifoxWindows".equals(e.getActionCommand())){
+	System.exit(0);}
+//EDIT\\TODO
+else if("copy".equals(e.getActionCommand())){
+	checker = mainTabbedPane.getSelectedIndex();
+	while(hteTextAreaArray[checker]==null){
+		checker--;
+	}
+	hteTextAreaArray[checker].requestFocus();
+	if(hteTextAreaArray[checker].getSelectedText()!=null){
+		hteTextAreaArray[checker].copy();
+	}
+	menuEditPaste.setEnabled(true);}
+else if("cut".equals(e.getActionCommand())){
+	checker = mainTabbedPane.getSelectedIndex();
+	while(hteTextAreaArray[checker]==null){
+		checker--;
+	}
+	hteTextAreaArray[checker].requestFocus();
+	if(hteTextAreaArray[checker].getSelectedText()!=null){
+		hteTextAreaArray[checker].cut();
+	}
+	menuEditPaste.setEnabled(true);}
+else if("paste".equals(e.getActionCommand())){
+	checker = mainTabbedPane.getSelectedIndex();
+	while(hteTextAreaArray[checker]==null){
+		checker--;
+	}
+	hteTextAreaArray[checker].requestFocus();
+	hteTextAreaArray[checker].paste();}
+else if("delete".equals(e.getActionCommand())){
+	checker = mainTabbedPane.getSelectedIndex();
+	while(hteTextAreaArray[checker]==null){
+		checker--;
+	}
+	hteTextAreaArray[checker].requestFocus();
+	if(hteTextAreaArray[checker].getSelectedText()!=null){
+		hteTextAreaArray[checker].replaceRange(null,hteTextAreaArray[checker].getSelectionStart(),hteTextAreaArray[checker].getSelectionEnd());
+	}}
+else if("selectAll".equals(e.getActionCommand())){
+	if(tabTypeOpen==1){
+		checker = mainTabbedPane.getSelectedIndex();
+		while(jepArray[checker]==null){
+			checker--;
+		}
+		jepArray[checker].requestFocus();
+		jepArray[checker].selectAll();
+	}else if(tabTypeOpen==3){
+		checker = mainTabbedPane.getSelectedIndex();
+		while(hteTextAreaArray[checker]==null){
+			checker--;
+		}
+		hteTextAreaArray[checker].requestFocus();
+		hteTextAreaArray[checker].selectAll();
+	}}
+else if("insertTimeDate".equals(e.getActionCommand())){
+	checker = mainTabbedPane.getSelectedIndex();
+	while(hteTextAreaArray[checker]==null){
+		checker--;
+	}
+	hteTextAreaArray[checker].requestFocus();
+	GregorianCalendar cal = (GregorianCalendar) GregorianCalendar.getInstance();
+	if(hteTextAreaArray[checker].getSelectedText()!=null){
+		hteTextAreaArray[checker].replaceSelection(sdf.format(cal.getTime()));
+	}else{
+		hteTextAreaArray[checker].insert(sdf.format(cal.getTime()),hteTextAreaArray[checker].getCaretPosition());
+	}}
+//NAVIGATION\\TODO
+else if("goHome".equals(e.getActionCommand())){
+	try{
+		jepArray[mainTabbedPane.getSelectedIndex()].setPage(homePageURL);
+	    hwbURLTextFieldArray[mainTabbedPane.getSelectedIndex()].setText(homePageURL);
+		currentURL = homePageURL;
+		String getURLLength = homePageURL;
+		if(getURLLength.length()>=31){
+			getURLLength = getURLLength.substring(0,30)+"...";
+		}else{}
+		mainTabbedPane.setTitleAt(mainTabbedPane.getSelectedIndex(),getURLLength+" - [HWB]");
+		mainTabbedPane.setToolTipTextAt(mainTabbedPane.getSelectedIndex(),hwbURLTextFieldArray[mainTabbedPane.getSelectedIndex()]+" - [Honzifox Web Browser]");
+		frame.setTitle(hwbURLTextFieldArray[mainTabbedPane.getSelectedIndex()].getText()+" - [HWB] - [Honzifox]");
+		tabsTableData[mainTabbedPane.getSelectedIndex()-1][1] = mainTabbedPane.getTitleAt(mainTabbedPane.getSelectedIndex());
+	}catch (Exception UrlHandlerMain){}}
+//VIEW\\TODO
+else if("tabBarTop".equals(e.getActionCommand())){
+	mainTabbedPane.setTabPlacement(JTabbedPane.TOP);}
+else if("tabBarRight".equals(e.getActionCommand())){
+	mainTabbedPane.setTabPlacement(JTabbedPane.RIGHT);}
+else if("tabBarLeft".equals(e.getActionCommand())){
+	mainTabbedPane.setTabPlacement(JTabbedPane.LEFT);}
+else if("tabBarBottom".equals(e.getActionCommand())){
+	mainTabbedPane.setTabPlacement(JTabbedPane.BOTTOM);}
+else if("windowSizeMax".equals(e.getActionCommand())){
+	frame.setExtendedState(JFrame.MAXIMIZED_BOTH);}
+else if("windowSizeMin".equals(e.getActionCommand())){
+	frame.setState(Frame.ICONIFIED);}
+else if("windowSize800x600".equals(e.getActionCommand())){
+	frame.setSize(800,600);}
+else if("windowSize1024x768".equals(e.getActionCommand())){
+	frame.setSize(1024,768);}
+else if("windowSize1280x1024".equals(e.getActionCommand())){
+	frame.setSize(1280,1024);}
+else if("windowSizeCustom".equals(e.getActionCommand())){
+	customWindowSizeTextField = new JTextField();
+	customSizeXText =(String)JOptionPane.showInputDialog(null,"X Size","What is the X Size?",JOptionPane.PLAIN_MESSAGE,null,null,800);
+	if(customSizeXText!=null){
+		customSizeX = Integer.parseInt(customSizeXText);
+		customSizeYText =(String)JOptionPane.showInputDialog(null,"Y Size","What is the Y Size?",JOptionPane.PLAIN_MESSAGE,null,null,600);
+		if(customSizeYText!=null){
+			customSizeY = Integer.parseInt(customSizeYText);
+			frame.setSize(customSizeX,customSizeY);
+		}
+	}}
+else if("windowSizeFullScreen".equals(e.getActionCommand())){
+	frame.dispose();
+	if(fullScreenChecker==0){
+		frame.setExtendedState(JFrame.MAXIMIZED_BOTH);
+		frame.setUndecorated(true);
+		menuBar.setVisible(false);
+		statusBar.setVisible(false);
+		popupBGWindowSizeMaximize.setEnabled(false);
+		popupBGWindowSizeMinimize.setEnabled(false);
+		popupBGWindowSize800x600.setEnabled(false);
+		popupBGWindowSize1024x768.setEnabled(false);
+		popupBGWindowSize1280x1024.setEnabled(false);
+		popupBGWindowSizeCustom.setEnabled(false);
+		popupHWBWindowSizeMaximize.setEnabled(false);
+		popupHWBWindowSizeMinimize.setEnabled(false);
+		popupHWBWindowSize800x600.setEnabled(false);
+		popupHWBWindowSize1024x768.setEnabled(false);
+		popupHWBWindowSize1280x1024.setEnabled(false);
+		popupHWBWindowSizeCustom.setEnabled(false);
+		popupHTEWindowSizeMaximize.setEnabled(false);
+		popupHTEWindowSizeMinimize.setEnabled(false);
+		popupHTEWindowSize800x600.setEnabled(false);
+		popupHTEWindowSize1024x768.setEnabled(false);
+		popupHTEWindowSize1280x1024.setEnabled(false);
+		popupHTEWindowSizeCustom.setEnabled(false);
+		fullScreenChecker=1;
+	}else if(fullScreenChecker==1){
+		frame.setExtendedState(JFrame.MAXIMIZED_BOTH);
+		frame.setUndecorated(false);
+		menuBar.setVisible(true);
+		statusBar.setVisible(true);
+		popupBGWindowSizeMaximize.setEnabled(true);
+		popupBGWindowSizeMinimize.setEnabled(true);
+		popupBGWindowSize800x600.setEnabled(true);
+		popupBGWindowSize1024x768.setEnabled(true);
+		popupBGWindowSize1280x1024.setEnabled(true);
+		popupBGWindowSizeCustom.setEnabled(true);
+		popupHWBWindowSizeMaximize.setEnabled(true);
+		popupHWBWindowSizeMinimize.setEnabled(true);
+		popupHWBWindowSize800x600.setEnabled(true);
+		popupHWBWindowSize1024x768.setEnabled(true);
+		popupHWBWindowSize1280x1024.setEnabled(true);
+		popupHWBWindowSizeCustom.setEnabled(true);
+		popupHTEWindowSizeMaximize.setEnabled(true);
+		popupHTEWindowSizeMinimize.setEnabled(true);
+		popupHTEWindowSize800x600.setEnabled(true);
+		popupHTEWindowSize1024x768.setEnabled(true);
+		popupHTEWindowSize1280x1024.setEnabled(true);
+		popupHTEWindowSizeCustom.setEnabled(true);
+		fullScreenChecker=0;
+	}
+	frame.setVisible(true);}
+else if("viewPageSource".equals(e.getActionCommand())){
+	try {
+		url = new URL(hwbURLTextFieldArray[mainTabbedPane.getSelectedIndex()].getText());
+	    in = new BufferedReader(new InputStreamReader (url.openStream()));
+	    sbuf = new StringBuffer();
+	    buffy = new char [16*1024];
+	    bytesRead = 0;
+	    while((bytesRead = in.read(buffy,0,buffy.length)) > -1) {
+	    	sbuf.append(buffy,0,bytesRead);
+	    }
+	    createHTETab(sbuf+"");
+	} catch (MalformedURLException e1) {
+		e1.printStackTrace();
+	} catch (IOException e1) {
+		e1.printStackTrace();
+	}}
+else if("openPageInDefault".equals(e.getActionCommand())){
+	String osName = System.getProperty("os.name");
+	try{
+		if(osName.startsWith("Mac OS")){
+			Class<?> fileMgr = Class.forName("com.apple.eio.FileManager");
+			Method openURL = fileMgr.getDeclaredMethod("openURL", new Class[] {String.class});
+			openURL.invoke(null, new Object[] {currentURL});
+		}else if(osName.startsWith("Windows")){
+			Runtime.getRuntime().exec("rundll32 url.dll,FileProtocolHandler " + currentURL);
+		}else { //assume Unix or Linux
+			String[] browsers = { "firefox", "opera", "konqueror", "epiphany", "mozilla", "netscape" };
+			String browser = null;
+			for(int count = 0; count < browsers.length && browser == null; count++){
+				if (Runtime.getRuntime().exec( new String[] {"which", browsers[count]}).waitFor() == 0){
+					browser = browsers[count]; 
+				}if (browser == null){
+					throw new Exception("Could not find web browser");
+				}else{
+					Runtime.getRuntime().exec(new String[] {browser, currentURL});
+				}
+			}
+		}
+	}catch(Exception failTest){
+		JOptionPane.showMessageDialog(null, "FAILED" + ":\n" + failTest.getLocalizedMessage());
+	}}
+else if("openPageInFF".equals(e.getActionCommand())){
+	try{Runtime.getRuntime().exec("C:\\Program Files\\Mozilla Firefox\\firefox.exe "+currentURL);}catch(IOException e1){}}
+else if("openPageInIE".equals(e.getActionCommand())){
+	try{Runtime.getRuntime().exec("C:\\Program Files\\Internet Explorer\\iexplore.exe "+currentURL);}catch(IOException e1){}}
+else if("openPageInL".equals(e.getActionCommand())){
+	try{Runtime.getRuntime().exec("C:\\Program Files\\Lobo\\lobo.jar "+currentURL);}catch(IOException e1){}}
+else if("openPageInO".equals(e.getActionCommand())){
+	try{Runtime.getRuntime().exec("C:\\Program Files\\Opera\\Opera.exe "+currentURL);}catch(IOException e1){}}
+//TOOLS\\TODO
+else if("errorConsole".equals(e.getActionCommand())){
+	firstTabCheck();
+	errorConsolePanel = new JPanel();
+	errorConsolePanel.setLayout(new BorderLayout());
+	errorConsoleTextArea = new JTextArea();
+	errorConsoleScroll = new JScrollPane(errorConsoleTextArea);
+	errorConsolePanel.add(errorConsoleScroll);
+	mainTabbedPane.addTab("Error Console", null, errorConsolePanel,"Error Console - Find out what is making your life miserable.");
+	mainTabbedPane.setSelectedIndex(mainTabbedPane.getTabCount()-1);
+	GregorianCalendar cal = (GregorianCalendar) GregorianCalendar.getInstance();
+	addTabToTable(numTabs+"",mainTabbedPane.getTitleAt(mainTabbedPane.getSelectedIndex()),"Error Console", sdf.format(cal.getTime()),"");
+	numTabs++;}
+//OPTIONS\\TODO
+else if("optionsPreferences".equals(e.getActionCommand())){
+	firstTabCheck();
+	optionsPreferencesPanel = new JPanel();
+	optionsPreferencesPanel.setLayout(null);
+	optionsPreferencesSeleted = new JPanel();
+	optionsPreferencesSeleted.setBounds(160, 0, frame.getWidth()-178, frame.getHeight()-103);
+	optionsPreferencesSelectedBorder = BorderFactory.createTitledBorder(null, "Option Set Selected", TitledBorder.DEFAULT_JUSTIFICATION, TitledBorder.DEFAULT_POSITION, new Font("Dialog", Font.BOLD, 12), new Color(51, 51, 51));
+	optionsPreferencesSeleted.setBorder(optionsPreferencesSelectedBorder);
+	DefaultMutableTreeNode top = new DefaultMutableTreeNode("Honzifox Options");
+    createNodes(top);
+	optionsPreferencesTree = new JTree(top);
+	optionsPreferencesTree.addTreeSelectionListener(this);
+	optionsPreferencesTreeScroll = new JScrollPane(optionsPreferencesTree);
+	optionsPreferencesTreeScroll.setBounds(5, 5, 150, frame.getHeight()-110);
+	optionsPreferencesTreeScroll.setVerticalScrollBarPolicy(JScrollPane.VERTICAL_SCROLLBAR_AS_NEEDED);
+	optionsPreferencesTreeScroll.setHorizontalScrollBarPolicy(JScrollPane.HORIZONTAL_SCROLLBAR_AS_NEEDED);
+	optionsPreferencesPanel.add(optionsPreferencesSeleted);
+	optionsPreferencesPanel.add(optionsPreferencesTreeScroll);
+	mainTabbedPane.addTab("Options/Preferences", null, optionsPreferencesPanel,"Options/Preferences - Customize your Honzifox experience.");
+	mainTabbedPane.setSelectedIndex(mainTabbedPane.getTabCount()-1);
+	GregorianCalendar cal = (GregorianCalendar) GregorianCalendar.getInstance();
+	addTabToTable(numTabs+"",mainTabbedPane.getTitleAt(mainTabbedPane.getSelectedIndex()),"Options/Preferences", sdf.format(cal.getTime()),"");
+	numTabs++;
+	}
+//HELP\\TODO
+else if("tipOfTheDay".equals(e.getActionCommand())){
+	tipOfTheDayFrame = new JDialog(frame, "Tip of the Day - Current Tip: "+currentTip+"/"+maxTips);
+	screenSize = Toolkit.getDefaultToolkit().getScreenSize();
+	tipOfTheDayFrame.setBounds(screenSize.width/3,screenSize.height/3,screenSize.width/3,screenSize.height/3);
+	tipOfTheDayFrame.setResizable(false);
+	//-----Tip of the Day Components-----\\
+	totdTextArea = new JTextArea();
+	totdTextArea.setLineWrap(true);
+	totdTextArea.setWrapStyleWord(true);
+	totdTextArea.setMargin(new Insets(20,5,5,5));
+	TOTDScroll = new JScrollPane(totdTextArea);
+	TOTDScroll.setVerticalScrollBarPolicy(JScrollPane.VERTICAL_SCROLLBAR_AS_NEEDED);
+	TOTDScroll.setHorizontalScrollBarPolicy(JScrollPane.HORIZONTAL_SCROLLBAR_NEVER);
+	totdTextArea.setText(tip1);
+	totdTextArea.setEditable(false);
+	totdTextArea.setVisible(true);
+	tipOfTheDayFrame.add(TOTDScroll);
+	TOTDPanel totdPanel = new TOTDPanel(tipOfTheDayFrame);
+	tipOfTheDayFrame.add(totdPanel,BorderLayout.SOUTH);
+	tipOfTheDayFrame.setVisible(true);}
+} //End MENU SELECTIONS\\
+private void createNodes(DefaultMutableTreeNode top) {
+	DefaultMutableTreeNode category = null;
+    DefaultMutableTreeNode book = null;
+    //==General Options==\\
+    category = new DefaultMutableTreeNode("General Options");
+    top.add(category);
+    book = new DefaultMutableTreeNode("First");
+    category.add(book);
+    book = new DefaultMutableTreeNode("Second");
+    category.add(book);
+    book = new DefaultMutableTreeNode("Third");
+    category.add(book);
+    //==Honzifox Web Browser Options==\\
+    category = new DefaultMutableTreeNode("HWB Options");
+    top.add(category);
+    book = new DefaultMutableTreeNode("First");
+    category.add(book);
+    book = new DefaultMutableTreeNode("Second");
+    category.add(book);
+    book = new DefaultMutableTreeNode("Third");
+    category.add(book);
+    //==Honzifox Game Engine Options==\\
+    category = new DefaultMutableTreeNode("HGE Options");
+    top.add(category);
+    book = new DefaultMutableTreeNode("First");
+    category.add(book);
+    book = new DefaultMutableTreeNode("Second");
+    category.add(book);
+    book = new DefaultMutableTreeNode("Third");
+    category.add(book);
+    //==Honzifox Text Editor Options==\\
+    category = new DefaultMutableTreeNode("HTE Options");
+    top.add(category);
+    book = new DefaultMutableTreeNode("First");
+    category.add(book);
+    book = new DefaultMutableTreeNode("Second");
+    category.add(book);
+    book = new DefaultMutableTreeNode("Third");
+    category.add(book);
+}
+private void firstTabCheck(){
+	if(firstTabCheck==1){
+		newFirstTab();
+		firstTabCheck=0;
+	}
+}
+private void createHWBTab(String getURL){//TODO
+	frame.setTitle("Blank Page - [Honzifox Web Browser] - [Honzifox]");
+	//-----Toolbars-----\\
+	hwbTabPanel = new JPanel();
+	hwbTabPanel.setLayout(new BorderLayout());
+	hwbToolbarPanel = new JToolBar();
+	hwbToolbarPanel.setFloatable(false);
+	hwbToolbarPanel.setLayout(new BorderLayout());
+	hwbToolbarPanel.setVisible(true);
+	hwbURLToolbar = new JPanel();
+	hwbURLToolbar.setLayout(new GridBagLayout());
+	hwbURLToolbar.setPreferredSize(new Dimension(0,22));
+	hwbURLTextField = new JTextField(homePageURL);
+	hwbURLTextFieldArray[numTabs] = hwbURLTextField;
+	hwbURLTextField.addActionListener(new ActionListener(){
+		public void actionPerformed(ActionEvent ae){
+			try{
+				jep.setPage(hwbURLTextFieldArray[mainTabbedPane.getSelectedIndex()].getText());
+				currentURL = hwbURLTextFieldArray[mainTabbedPane.getSelectedIndex()].getText();
+				String getURLLength = hwbURLTextFieldArray[mainTabbedPane.getSelectedIndex()].getText();
+				if(getURLLength.length()>=31){
+					getURLLength = getURLLength.substring(0,30)+"...";
+				}else{}
+				mainTabbedPane.setTitleAt(mainTabbedPane.getSelectedIndex(),getURLLength+" - [HWB]");
+				mainTabbedPane.setToolTipTextAt(mainTabbedPane.getSelectedIndex(),hwbURLTextFieldArray[mainTabbedPane.getSelectedIndex()]+" - [Honzifox Web Browser]");
+				frame.setTitle(hwbURLTextFieldArray[mainTabbedPane.getSelectedIndex()].getText()+" - [HWB] - [Honzifox]");
+				tabsTableData[mainTabbedPane.getSelectedIndex()-1][1] = mainTabbedPane.getTitleAt(mainTabbedPane.getSelectedIndex());
+			}catch (Exception UrlHandlerMain){}
+		}
+	});
+	c.fill = GridBagConstraints.HORIZONTAL;
+	c.anchor = GridBagConstraints.LINE_START;
+	c.weightx = 10.0;
+	c.gridwidth = 1;
+	c.gridx = 0;
+	c.gridy = 0;
+	hwbURLToolbar.add(hwbURLTextField, c);
+	hwbToolbarPanel.add(hwbURLToolbar, java.awt.BorderLayout.SOUTH);
+	hwbTabPanel.add(hwbToolbarPanel, java.awt.BorderLayout.NORTH);
+	jep = new JEditorPane();
+	jep.setContentType("text/html");
+	jep.setEditable(false);
+	jep.addHyperlinkListener(new linkListener(jep, statusBarText));
+	jepArray[numTabs] = jep;
+	jepArray[numTabs].addMouseListener(hwbPopupAdapter);
+	hwbScroll = new JScrollPane(jep);
+	hwbScroll.setVerticalScrollBarPolicy(JScrollPane.VERTICAL_SCROLLBAR_AS_NEEDED);
+	hwbScroll.setHorizontalScrollBarPolicy(JScrollPane.HORIZONTAL_SCROLLBAR_AS_NEEDED);
+	hwbTabPanel.add(hwbScroll, java.awt.BorderLayout.CENTER);
+	if(getURL.length()>=31){
+		urlDisplay = getURL.substring(0,30)+"...";
+	}else{
+		urlDisplay = getURL;
+	}
+	mainTabbedPane.addTab(urlDisplay+" - [HWB]", null, hwbTabPanel,urlDisplay+" - [Honzifox Web Browser]");
+	try{jep.setPage(getURL);}catch(Exception SetFirstPage){}
+	mainTabbedPane.setSelectedIndex(mainTabbedPane.getTabCount()-1);
+	GregorianCalendar cal = (GregorianCalendar) GregorianCalendar.getInstance();
+	addTabToTable(numTabs+"",mainTabbedPane.getTitleAt(mainTabbedPane.getSelectedIndex()),"Honzifox Web Browser (HWB)", sdf.format(cal.getTime()),"");
+	numTabs++;
+}
+private void createHGETab(){//TODO
+	frame.setTitle("Untitled Project - [HGE] - [Honzifox]");
+	//-----Toolbars-----\\
+	hgeTabPanel = new JPanel();
+	hgeTabPanel.setLayout(new BorderLayout());
+	hgeToolbarPanel = new JToolBar();
+	hgeToolbarPanel.setFloatable(false);
+	hgeToolbarPanel.setLayout(new BorderLayout());
+	hgeToolbarPanel.setVisible(true);
+	hgeEditorToolbar = new JPanel();
+	hgeEditorToolbar.setLayout(new GridBagLayout());
+	hgeEditorToolbar.setPreferredSize(new Dimension(0,22));
+	hgeSetPlayerStartPos = new JButton("Set Player Start Position");
+	c.fill = GridBagConstraints.HORIZONTAL;
+	c.anchor = GridBagConstraints.LINE_START;
+	c.weightx = 0.0;
+	c.gridwidth = 1;
+	c.gridx = 0;
+	c.gridy = 0;
+	hgeEditorToolbar.add(hgeSetPlayerStartPos, c);
+	hgeSetPlayerEndPos = new JButton("Set Player End Position");
+	c.fill = GridBagConstraints.HORIZONTAL;
+	c.anchor = GridBagConstraints.LINE_START;
+	c.weightx = 0.0;
+	c.gridwidth = 1;
+	c.gridx = 1;
+	c.gridy = 0;
+	hgeEditorToolbar.add(hgeSetPlayerEndPos, c);
+	hgeSetBlockPos = new JButton("Set Block Position");
+	c.fill = GridBagConstraints.HORIZONTAL;
+	c.anchor = GridBagConstraints.LINE_START;
+	c.weightx = 0.0;
+	c.gridwidth = 1;
+	c.gridx = 2;
+	c.gridy = 0;
+	hgeEditorToolbar.add(hgeSetBlockPos, c);
+	hgeRunGame = new JButton("Run");
+	c.fill = GridBagConstraints.HORIZONTAL;
+	c.anchor = GridBagConstraints.LINE_START;
+	c.weightx = 0.0;
+	c.gridwidth = 1;
+	c.gridx = 3;
+	c.gridy = 0;
+	hgeEditorToolbar.add(hgeRunGame, c);
+	hgeSetPlayerStartPos.addActionListener(new ActionListener(){
+		public void actionPerformed(ActionEvent ae){
+			HGEWorkspace setter = new HGEWorkspace(1,0,0);
+			hgeSetPlayerStartPos.setEnabled(false);
+			hgeSetPlayerEndPos.setEnabled(true);
+			hgeSetBlockPos.setEnabled(true);
+		}
+	});
+	hgeSetPlayerEndPos.addActionListener(new ActionListener(){
+		public void actionPerformed(ActionEvent ae){
+			HGEWorkspace setter = new HGEWorkspace(0,1,0);
+			hgeSetPlayerStartPos.setEnabled(true);
+			hgeSetPlayerEndPos.setEnabled(false);
+			hgeSetBlockPos.setEnabled(true);
+		}
+	});
+	hgeSetBlockPos.addActionListener(new ActionListener(){
+		public void actionPerformed(ActionEvent ae){
+			HGEWorkspace setter = new HGEWorkspace(0,0,1);
+			hgeSetPlayerStartPos.setEnabled(true);
+			hgeSetPlayerEndPos.setEnabled(true);
+			hgeSetBlockPos.setEnabled(false);
+		}
+	});
+	hgeRunGame.addActionListener(new ActionListener(){
+		public void actionPerformed(ActionEvent ae){
+			HGEWorkspace setter = new HGEWorkspace(0,0,0);
+			hgeSetPlayerStartPos.setEnabled(false);
+			hgeSetPlayerEndPos.setEnabled(false);
+			hgeSetBlockPos.setEnabled(false);
+			hgeRunGame.setEnabled(false);
+			isRun=1;
+			frame.dispose();
+			frame.setExtendedState(JFrame.MAXIMIZED_BOTH);
+			frame.setUndecorated(true);
+			menuBar.setVisible(false);
+			statusBar.setVisible(false);
+			popupBGWindowSizeMaximize.setEnabled(false);
+			popupBGWindowSizeMinimize.setEnabled(false);
+			popupBGWindowSize800x600.setEnabled(false);
+			popupBGWindowSize1024x768.setEnabled(false);
+			popupBGWindowSize1280x1024.setEnabled(false);
+			popupBGWindowSizeCustom.setEnabled(false);
+			popupHWBWindowSizeMaximize.setEnabled(false);
+			popupHWBWindowSizeMinimize.setEnabled(false);
+			popupHWBWindowSize800x600.setEnabled(false);
+			popupHWBWindowSize1024x768.setEnabled(false);
+			popupHWBWindowSize1280x1024.setEnabled(false);
+			popupHWBWindowSizeCustom.setEnabled(false);
+			popupHTEWindowSizeMaximize.setEnabled(false);
+			popupHTEWindowSizeMinimize.setEnabled(false);
+			popupHTEWindowSize800x600.setEnabled(false);
+			popupHTEWindowSize1024x768.setEnabled(false);
+			popupHTEWindowSize1280x1024.setEnabled(false);
+			popupHTEWindowSizeCustom.setEnabled(false);
+			fullScreenChecker=1;
+			frame.setVisible(true);
+			repaint();
+		}
+	});
+	hgeToolbarPanel.add(hgeEditorToolbar, java.awt.BorderLayout.NORTH);
+	hgeTabPanel.add(hgeToolbarPanel, java.awt.BorderLayout.NORTH);
+	HGEWorkspace workspace = new HGEWorkspace(0,0,0);
+	JScrollPane workspaceScrollPane = new JScrollPane(workspace);
+	workspace.setPreferredSize(new Dimension(1500,1500));
+	workspaceScrollPane.setVerticalScrollBarPolicy(JScrollPane.VERTICAL_SCROLLBAR_AS_NEEDED);
+	workspaceScrollPane.setHorizontalScrollBarPolicy(JScrollPane.HORIZONTAL_SCROLLBAR_AS_NEEDED);
+	hgeTabPanel.add(workspaceScrollPane, java.awt.BorderLayout.CENTER);
+	mainTabbedPane.addTab("Untitled Project - [HGE]", null, hgeTabPanel,"Untitled Project - [The Honzifox Game Engine]");
+	mainTabbedPane.setSelectedIndex(mainTabbedPane.getTabCount()-1);
+	GregorianCalendar cal = (GregorianCalendar) GregorianCalendar.getInstance();
+	addTabToTable(numTabs+"",mainTabbedPane.getTitleAt(mainTabbedPane.getSelectedIndex()),"Honzifox Game Engine (HGE)", sdf.format(cal.getTime()),"");
+	numTabs++;
+}
+private void createHTETab(String string){//TODO
+	frame.setTitle("Untitled.txt - [HTE] - [Honzifox]");
+	//-----Toolbars-----\\
+	hteTabPanel = new JPanel();
+	hteTabPanel.setLayout(new BorderLayout());
+	hteTextArea = new JTextArea();
+	hteTextArea.setText("");
+	hteTextAreaArray[mainTabbedPane.getSelectedIndex()] = hteTextArea;
+	hteTextAreaArray[mainTabbedPane.getSelectedIndex()].setMargin(new Insets(5,5,5,5));
+	hteTextAreaArray[mainTabbedPane.getSelectedIndex()].setText(string);
+	hteTextAreaArray[mainTabbedPane.getSelectedIndex()].setCaretPosition(0);
+	hteTextAreaArray[mainTabbedPane.getSelectedIndex()].addMouseListener(htePopupAdapter);
+	hteTextAreaScroll = new JScrollPane(hteTextArea);
+	hteTextAreaScroll.setVerticalScrollBarPolicy(JScrollPane.VERTICAL_SCROLLBAR_AS_NEEDED);
+	hteTextAreaScroll.setHorizontalScrollBarPolicy(JScrollPane.HORIZONTAL_SCROLLBAR_AS_NEEDED);
+	hteTabPanel.add(hteTextAreaScroll, java.awt.BorderLayout.CENTER);
+	mainTabbedPane.addTab("Untitled.txt - [HTE]", null, hteTabPanel,"Untitled.txt - [The Honzifox Text Editor]");
+	mainTabbedPane.setSelectedIndex(mainTabbedPane.getTabCount()-1);
+	GregorianCalendar cal = (GregorianCalendar) GregorianCalendar.getInstance();
+	addTabToTable(numTabs+"",mainTabbedPane.getTitleAt(mainTabbedPane.getSelectedIndex()),"Honzifox Text Editor (HTE)", sdf.format(cal.getTime()),"");
+	numTabs++;
+}
+private String readFile(File file) {
+	StringBuffer fileBuffer;
+    String fileString=null;
+    String line;
+	try {
+    	FileReader in = new FileReader(file);
+    	BufferedReader dis = new BufferedReader (in);
+      	fileBuffer = new StringBuffer();
+      	while ((line = dis.readLine ()) != null) {
+            fileBuffer.append(line + "\n");
+      	}
+      	fileString = fileBuffer.toString();
+      	in.close();
+      	return fileString;
+    }
+    catch  (IOException e ) {
+      	return null;
+    }
+}
+private void writeFile(File file, String text) {
+	try {
+       	PrintWriter out = new PrintWriter(new BufferedWriter(new FileWriter (file)));
+       	out.print(text);
+       	out.flush();
+       	out.close();
+    }
+    catch (IOException e) {}
+}
+private void newFirstTab(){
+	menuFileSaveAs.setEnabled(true);
+	menuFileCloseCurrentTab.setEnabled(true);
+	menuFileCloseAllTabs.setEnabled(true);
+	menuEditCopy.setEnabled(false);
+	menuEditCut.setEnabled(false);
+	menuEditPaste.setEnabled(false);
+	menuEditDelete.setEnabled(false);
+	menuEditSelectAll.setEnabled(true);
+	menuTabsCloseCurrentTab.setEnabled(true);
+	menuTabsCloseAllTabs.setEnabled(true);
+	popupCloseCurrentTab.setEnabled(true);
+	popupCloseAllTabs.setEnabled(true);
+}
+private void closeAllTabs(){
+	while(numTabs!=0){
+		numTabs--;
+		String[] tabsTableHolder={"","","","",""};
+		for (int i = 0; i < tabsTableHolder.length; i++) {
+			tabsTableData[numTabs][i]= tabsTableHolder[i];
+		}
+	}
+	numTabs=1;
+	firstTabCheck=1;
+	mainTabbedPane.addTab("Tabs", null, tabsTabPanel, "Tabs");
+	frame.setTitle(mainTabbedPane.getTitleAt(0)+" - [Honzifox]");
+	menuFileOpenLocation.setEnabled(false);
+	menuFilePrint.setEnabled(false);
+	menuFileSaveAs.setEnabled(false);
+	menuFileCloseCurrentTab.setEnabled(false);
+	menuFileCloseAllTabs.setEnabled(false);
+	menuEditCopy.setEnabled(false);
+	menuEditCut.setEnabled(false);
+	menuEditPaste.setEnabled(false);
+	menuEditDelete.setEnabled(false);
+	menuEditSelectAll.setEnabled(false);
+	menuEditInsertTimeDate.setEnabled(false);
+	menuNavigation.setEnabled(false);
+	menuTabsCloseCurrentTab.setEnabled(false);
+	menuTabsCloseAllTabs.setEnabled(false);
+	menuViewViewPageSource.setEnabled(false);
+	menuViewOpenPageInDefault.setEnabled(false);
+	menuViewOpenPageInFF.setEnabled(false);
+	menuViewOpenPageInIE.setEnabled(false);
+	menuViewOpenPageInO.setEnabled(false);
+	popupCloseCurrentTab.setEnabled(false);
+	popupCloseAllTabs.setEnabled(false);
+	closingAllTabs=0;
+}
+public JMenuItem makeMI(String title,String actionC,ActionListener command,char ch, boolean enabled){
+	JMenuItem MenuItem = new JMenuItem(title);
+	MenuItem.setActionCommand(actionC);
+	MenuItem.addActionListener(command);
+	MenuItem.setMnemonic(ch);
+	MenuItem.setEnabled(enabled);
+	return MenuItem;
+}
+public JMenuItem makeMI(String title,String actionC,ActionListener command,char ch, boolean enabled,int ke){
+	JMenuItem MenuItem = new JMenuItem(title);
+	MenuItem.setActionCommand(actionC);
+	MenuItem.addActionListener(command);
+	MenuItem.setMnemonic(ch);
+	MenuItem.setEnabled(enabled);
+	MenuItem.setAccelerator(KeyStroke.getKeyStroke(ke,Toolkit.getDefaultToolkit().getMenuShortcutKeyMask(),false));
+	return MenuItem;
+}
+public JCheckBoxMenuItem makeCBMI(String title,String actionC,ActionListener command,char ch, boolean enabled,boolean selected){
+	JCheckBoxMenuItem CBMenuItem = new JCheckBoxMenuItem(title);
+	CBMenuItem.setSelected(selected);
+	CBMenuItem.setActionCommand(actionC);
+	CBMenuItem.addActionListener(command);
+	CBMenuItem.setMnemonic(ch);
+	CBMenuItem.setEnabled(enabled);
+	return CBMenuItem;
+}
+public JCheckBoxMenuItem makeCBMI(String title,String actionC,ActionListener command,char ch, boolean enabled,boolean selected,int ke){
+	JCheckBoxMenuItem CBMenuItem = new JCheckBoxMenuItem(title);
+	CBMenuItem.setSelected(selected);
+	CBMenuItem.setActionCommand(actionC);
+	CBMenuItem.addActionListener(command);
+	CBMenuItem.setMnemonic(ch);
+	CBMenuItem.setEnabled(enabled);
+	CBMenuItem.setAccelerator(KeyStroke.getKeyStroke(ke,Toolkit.getDefaultToolkit().getMenuShortcutKeyMask(),false));
+	return CBMenuItem;
+}
+//WORKSPACE////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+class HGEWorkspace extends JPanel implements MouseListener{
+	boolean playerMoveLeft, playerMoveLeftForbidden, playerMoveRight, playerMoveRightForbidden, playerJump;
+	int doOnce=0;
+	int playerStartAlreadySet=0;
+	int playerEndAlreadySet=0;
+	int blocksAlreadySet=0;
+	int numBlocks=0;
+	int gravity=3;
+	int newNumBlocks;
+	int isJumping=0;
+	int isFalling=0;
+	int alreadyJumping=0;
+	int jumpCount=0;
+	int isTimerStarted=0;
+	int timerSpeed = 15;
+	int getNewStartPosX, getNewStartPosY;
+	int focusReady=0;
+	int resetPositions=0;
+	int isReset=0;
+	Rectangle2D playerStartRectangle;
+	Rectangle2D playerEndRectangle;
+	Rectangle2D.Double blockRectangle;
+	Timer theTimer = new Timer( timerSpeed, new ActionListener(){
+        public void actionPerformed(ActionEvent event){
+        	repaint();   
+        }
+    });
+	public HGEWorkspace(int newPlayerStartSet, int newPlayerEndSet, int newBlockSet){//TODO
+		super();
+		playerStartSet=newPlayerStartSet;
+		playerEndSet=newPlayerEndSet;
+		blockSet=newBlockSet;
+		setOpaque(true);
+		addMouseListener(this);
+		addKeyListener(new KeyAdapter(){
+			public void keyPressed(KeyEvent e){
+				switch (e.getKeyCode()){
+					case 65://Left
+						if(isReset==0){
+							playerMoveLeft=true;
+						}
+						break;
+					case 87://Jump							
+						if(isReset==0){
+							playerJump=true;
+						}
+						break;
+					case 68://Right
+						if(isReset==0){
+							playerMoveRight=true;
+						}
+						break;
+					default://None
+						break;
+				}
+			}
+			public void keyReleased(KeyEvent e) {
+				switch(e.getKeyCode()){
+					case 27://Reset
+						resetWorkspace();
+						break;
+					case 65://Left
+						if(isReset==0){
+							playerMoveLeft=false;
+						}
+						break;
+					case 87://Jump
+						if(isReset==0){
+							playerJump=false;
+						}
+						break;
+					case 68://Right
+						if(isReset==0){
+							playerMoveRight=false;
+						}
+						break;
+					default://None
+						break;
+				}
+			}
+		});
+	}
+	public void resetWorkspace() {
+		repaint();
+		theTimer.stop();
+		frame.dispose();
+		frame.setExtendedState(JFrame.MAXIMIZED_BOTH);
+		frame.setUndecorated(false);
+		menuBar.setVisible(true);
+		statusBar.setVisible(true);
+		popupBGWindowSizeMaximize.setEnabled(true);
+		popupBGWindowSizeMinimize.setEnabled(true);
+		popupBGWindowSize800x600.setEnabled(true);
+		popupBGWindowSize1024x768.setEnabled(true);
+		popupBGWindowSize1280x1024.setEnabled(true);
+		popupBGWindowSizeCustom.setEnabled(true);
+		popupHWBWindowSizeMaximize.setEnabled(true);
+		popupHWBWindowSizeMinimize.setEnabled(true);
+		popupHWBWindowSize800x600.setEnabled(true);
+		popupHWBWindowSize1024x768.setEnabled(true);
+		popupHWBWindowSize1280x1024.setEnabled(true);
+		popupHWBWindowSizeCustom.setEnabled(true);
+		popupHTEWindowSizeMaximize.setEnabled(true);
+		popupHTEWindowSizeMinimize.setEnabled(true);
+		popupHTEWindowSize800x600.setEnabled(true);
+		popupHTEWindowSize1024x768.setEnabled(true);
+		popupHTEWindowSize1280x1024.setEnabled(true);
+		popupHTEWindowSizeCustom.setEnabled(true);
+		fullScreenChecker=0;
+		frame.setVisible(true);
+		isTimerStarted=0;
+		focusReady=0;
+		gravity=0;
+		playerStartSet=0;
+		playerEndSet=0;
+		blockSet=0;
+		playerMoveRight=false;
+		playerMoveLeft=false;
+		playerJump=false;
+		alreadyJumping=0;
+		resetPositions=1;
+		isRun=0;
+		hgeSetPlayerStartPos.setEnabled(true);
+		hgeSetPlayerEndPos.setEnabled(true);
+		hgeSetBlockPos.setEnabled(true);
+		hgeRunGame.setEnabled(true);
+		getNewStartPosX=hgePlayerStartArray[0][0];
+		getNewStartPosY=hgePlayerStartArray[0][1];
+		playerMoveLeftForbidden=false;
+		playerMoveRightForbidden=false;
+		isReset=0;
+		repaint();
+	}
+	public void mouseClicked(MouseEvent e){}
+	public void mouseEntered(MouseEvent e){}
+	public void mouseExited(MouseEvent e){}
+	public void mouseReleased(MouseEvent e){}
+	public void mousePressed(MouseEvent e) {
+		if(playerMoveLeftForbidden!=true && playerMoveRightForbidden!=true && playerMoveRight!=true && playerMoveLeft!=true){
+			int x=e.getX()-12;
+			int y=e.getY()-12;
+			if(isRun!=1){
+				if(playerStartSet==1){
+					requestFocusInWindow();
+					hgePlayerStartArray[0][0] = x;
+					hgePlayerStartArray[0][1] = y;
+				}if(playerEndSet==1){
+					requestFocusInWindow();
+					hgePlayerEndArray[0][0] = x;
+					hgePlayerEndArray[0][1] = y;
+				}if(blockSet==1){
+					requestFocusInWindow();
+					hgeBlockNumArray[numBlocks][0] = x;
+					hgeBlockNumArray[numBlocks][1] = y;
+				}
+				repaint();
+			}else if(isRun==1){
+				getNewStartPosX=hgePlayerStartArray[0][0];
+				getNewStartPosY=hgePlayerStartArray[0][1];
+				requestFocusInWindow();
+				focusReady=1;
+				playerStartRectangle.setRect(x,y,25,25);
+				theTimer.start();
+				isTimerStarted=1;
+				repaint();
+			}
+		}else{
+			resetWorkspace();
+		}
+	}
+	public void paintComponent(Graphics g){
+		newNumBlocks = numBlocks;
+		Graphics2D g2 = (Graphics2D) g;
+		if(doOnce==0){
+			playerStartRectangle = new Rectangle2D.Double();
+			playerEndRectangle = new Rectangle2D.Double();
+			doOnce=1;
+		}else if(doOnce!=0){
+			if(playerStartSet==1){
+				if(playerStartAlreadySet==0){
+					g2.setColor(Color.GREEN);
+					playerStartRectangle.setFrame(hgePlayerStartArray[0][0],hgePlayerStartArray[0][1],25,25);
+					getNewStartPosX = hgePlayerStartArray[0][0];
+					getNewStartPosY = hgePlayerStartArray[0][0];
+					g2.fill(playerStartRectangle);
+					playerStartAlreadySet=1;
+				}else if(playerStartAlreadySet==1){
+					super.paintComponent(g2);
+					g2.setColor(Color.GREEN);
+					playerStartRectangle.setFrame(hgePlayerStartArray[0][0],hgePlayerStartArray[0][1],25,25);
+					getNewStartPosX = hgePlayerStartArray[0][0];
+					getNewStartPosY = hgePlayerStartArray[0][0];
+					g2.fill(playerStartRectangle);
+					if(playerEndAlreadySet==1){
+						g2.setColor(Color.BLUE);
+						playerEndRectangle.setFrame(hgePlayerEndArray[0][0],hgePlayerEndArray[0][1],25,25);
+						g2.fill(playerEndRectangle);
+					}
+					if(blocksAlreadySet==1){
+						for(int i = 0; i<numBlocks; i++){
+							g2.setColor(Color.RED);
+							hgeBlockArray[i] = new Rectangle2D.Double();
+							hgeBlockArray[i].setRect(hgeBlockNumArray[i][0],hgeBlockNumArray[i][1],25,25);
+							g2.fill(hgeBlockArray[i]);
+						}
+					}
+				}
+			}if(playerEndSet==1){
+				if(playerEndAlreadySet==0){
+					g2.setColor(Color.BLUE);
+					playerEndRectangle.setFrame(hgePlayerEndArray[0][0],hgePlayerEndArray[0][1],25,25);
+					g2.fill(playerEndRectangle);
+					playerEndAlreadySet=1;
+				}else if(playerEndAlreadySet==1){
+					super.paintComponent(g2);
+					if(playerStartAlreadySet==1){
+						g2.setColor(Color.GREEN);
+						playerStartRectangle.setFrame(hgePlayerStartArray[0][0],hgePlayerStartArray[0][1],25,25);
+						g2.fill(playerStartRectangle);
+					}
+					g2.setColor(Color.BLUE);
+					playerEndRectangle.setFrame(hgePlayerEndArray[0][0],hgePlayerEndArray[0][1],25,25);
+					g2.fill(playerEndRectangle);
+					if(blocksAlreadySet==1){
+						for(int i = 0; i<numBlocks; i++){
+							g2.setColor(Color.RED);
+							hgeBlockArray[i] = new Rectangle2D.Double();
+							hgeBlockArray[i].setRect(hgeBlockNumArray[i][0],hgeBlockNumArray[i][1],25,25);
+							g2.fill(hgeBlockArray[i]);
+						}
+					}
+				}
+			}if(blockSet==1){
+				numBlocks++;
+				blocksAlreadySet=1;
+				super.paintComponent(g2);
+				if(playerStartAlreadySet==1){
+					g2.setColor(Color.GREEN);
+					playerStartRectangle.setFrame(hgePlayerStartArray[0][0],hgePlayerStartArray[0][1],25,25);
+					g2.fill(playerStartRectangle);
+				}
+				if(playerEndAlreadySet==1){
+					g2.setColor(Color.BLUE);
+					playerEndRectangle.setFrame(hgePlayerEndArray[0][0],hgePlayerEndArray[0][1],25,25);
+					g2.fill(playerEndRectangle);
+				}
+				if(blocksAlreadySet==1){
+					for(int i = 0; i<numBlocks; i++){
+						g2.setColor(Color.RED);
+						hgeBlockArray[i] = new Rectangle2D.Double();
+						hgeBlockArray[i].setRect(hgeBlockNumArray[i][0],hgeBlockNumArray[i][1],25,25);
+						g2.fill(hgeBlockArray[i]);
+					}
+				}
+			}
+		}
+		if(playerMoveRight==true || playerMoveLeft==true){
+			super.paintComponent(g2);
+			g2.setColor(Color.GREEN);
+			newNumBlocks=numBlocks;
+			if(playerMoveLeft==true && playerMoveLeftForbidden==false){
+				getNewStartPosX=getNewStartPosX-5;
+			}
+			if(playerMoveRight==true && playerMoveRightForbidden==false){
+				getNewStartPosX=getNewStartPosX+5;
+			}
+			playerStartRectangle.setFrame(getNewStartPosX,getNewStartPosY,25,25);
+			g2.fill(playerStartRectangle);
+			g2.setColor(Color.BLUE);
+			playerEndRectangle.setFrame(hgePlayerEndArray[0][0],hgePlayerEndArray[0][1],25,25);
+			g2.fill(playerEndRectangle);
+			if(blocksAlreadySet==1){
+				for(int i = 0; i<numBlocks; i++){
+					g2.setColor(Color.RED);
+					hgeBlockArray[i] = new Rectangle2D.Double();
+					hgeBlockArray[i].setRect(hgeBlockNumArray[i][0],hgeBlockNumArray[i][1],25,25);
+					g2.fill(hgeBlockArray[i]);
+				}
+			}
+		}
+		if(playerJump==true && alreadyJumping==0){
+			if(isFalling==0){
+				gravity= -20;
+				jumpCount=24;
+				alreadyJumping=1;
+			}
+		}
+		if(isTimerStarted==1 && focusReady==1){
+			super.paintComponent(g2);
+			if(getNewStartPosY<=1480){
+				getNewStartPosY+=gravity;
+			}
+			if(getNewStartPosY<=0){
+				gravity=4;
+				alreadyJumping=0;
+			}
+			if(alreadyJumping==0){
+				gravity=4;
+			}
+			if(getNewStartPosX<=0){
+				playerMoveLeftForbidden=true;
+			}else{
+				playerMoveLeftForbidden=false;
+			}
+			if(getNewStartPosX>=1480){
+				playerMoveRightForbidden=true;
+			}else{
+				playerMoveRightForbidden=false;
+			}
+			if(jumpCount!=0){
+				isJumping=0;
+				jumpCount--;
+				gravity++;
+				if(jumpCount==0){
+					alreadyJumping=0;
+				}
+			}
+			if(gravity>0){
+				isFalling=1;
+			}else{
+				isFalling=0;
+			}
+			g2.setColor(Color.GREEN);
+			playerStartRectangle.setRect(getNewStartPosX,getNewStartPosY,25,25);
+			if(numBlocks!=0){
+				if(alreadyJumping!=1){
+					for(int i = 0; i<numBlocks; i++){
+						if(getNewStartPosX>=hgeBlockNumArray[i][0]-25 && getNewStartPosX<=hgeBlockNumArray[i][0]+25){
+							if(getNewStartPosY>=hgeBlockNumArray[i][1]-25 && getNewStartPosY<=hgeBlockNumArray[i][1]+25){
+								gravity=0;
+								isFalling=0;
+							}else{
+								gravity=4;
+								isFalling=1;
+							}
+						}else{
+							gravity=4;
+							isFalling=1;
+						}
+					}
+				}
+			}
+			g2.fill(playerStartRectangle);
+			g2.setColor(Color.BLUE);
+			playerEndRectangle.setFrame(hgePlayerEndArray[0][0],hgePlayerEndArray[0][1],25,25);
+			g2.fill(playerEndRectangle);
+			if(blocksAlreadySet==1){
+				for(int i = 0; i<numBlocks; i++){
+					g2.setColor(Color.RED);
+					hgeBlockArray[i] = new Rectangle2D.Double();
+					hgeBlockArray[i].setRect(hgeBlockNumArray[i][0],hgeBlockNumArray[i][1],25,25);
+					g2.fill(hgeBlockArray[i]);
+				}
+			}
+			if(playerStartRectangle.intersects(playerEndRectangle)){
+				g2.setColor(Color.BLACK);
+				g2.drawString("Player Wins!",getNewStartPosX,getNewStartPosY-2);
+				gravity=0;
+				playerMoveLeftForbidden=true;
+				playerMoveLeft=false;
+				playerMoveRightForbidden=true;
+				playerMoveRight=false;
+				alreadyJumping=1;
+				isReset=1;
+			}
+		}
+		if(resetPositions==1){
+			super.paintComponent(g2);
+			g2.setColor(Color.GREEN);
+			playerStartRectangle.setFrame(hgePlayerStartArray[0][0],hgePlayerStartArray[0][1],25,25);
+			g2.fill(playerStartRectangle);
+			g2.setColor(Color.BLUE);
+			playerEndRectangle.setFrame(hgePlayerEndArray[0][0],hgePlayerEndArray[0][1],25,25);
+			g2.fill(playerEndRectangle);
+			if(blocksAlreadySet==1){
+				for(int i = 0; i<numBlocks; i++){
+					g2.setColor(Color.RED);
+					hgeBlockArray[i] = new Rectangle2D.Double();
+					hgeBlockArray[i].setRect(hgeBlockNumArray[i][0],hgeBlockNumArray[i][1],25,25);
+					g2.fill(hgeBlockArray[i]);
+				}
+			}
+			resetPositions=0;
+		}
+	}
+}
+//TIP OF THE DAY EMBEDDED FRAME ///////////////////////////////////////////////////////////////////////////////////////////
+class TOTDPanel extends JPanel{
+	/**
+	 * 
+	 */
+	private static final long serialVersionUID = 1L;
+	private JLabel totdDisplayTipNum;
+	private JButton totdPreviousTipButton;
+	private JButton totdNextTipButton;
+	private JButton totdCloseButton;
+	JDialog owner;
+	public TOTDPanel(JDialog tipOfTheDayFrame) {
+		owner = tipOfTheDayFrame;
+		setLayout(new FlowLayout(FlowLayout.RIGHT));
+		setSize(new Dimension (100,50));
+		totdDisplayTipNum = new JLabel();
+		totdDisplayTipNum.setText("Current Tip: "+currentTip+"/"+maxTips);
+		add(totdDisplayTipNum);
+		totdPreviousTipButton = new JButton();
+		totdPreviousTipButton.setText("Previous Tip");
+		add(totdPreviousTipButton);
+		totdPreviousTipButton.addActionListener(
+          new ActionListener(){
+            public void actionPerformed(ActionEvent event){
+              totdPreviousTipButtonActionPerformed(event);
+            }
+          }
+        );
+		totdNextTipButton = new JButton();
+		totdNextTipButton.setText("Next Tip");
+		add(totdNextTipButton);
+		totdNextTipButton.addActionListener(
+          new ActionListener(){
+            public void actionPerformed(ActionEvent event){
+              totdNextTipButtonActionPerformed(event);
+            }
+          }
+        );
+		totdCloseButton = new JButton();
+		totdCloseButton.setText("Close");
+		add(totdCloseButton);
+		totdCloseButton.addActionListener(
+          new ActionListener(){
+            public void actionPerformed(ActionEvent event){
+              totdCloseButtonActionPerformed(event);
+            }
+          }
+        );
+	}
+private void totdPreviousTipButtonActionPerformed(ActionEvent event){
+		if(currentTip>1){
+			currentTip--;
+		}else if(currentTip==1){
+			currentTip=maxTips;
+		}
+		if(currentTip==1){
+			totdTextArea.setText(tip1);
+		}else if(currentTip==2){
+			totdTextArea.setText(tip2);
+		}else if(currentTip==3){
+			totdTextArea.setText(tip3);
+		}else{
+			//ERROR REPORT
+		}
+		totdDisplayTipNum.setText("Current Tip: "+currentTip+"/"+maxTips);
+		tipOfTheDayFrame.setTitle("Tip of the Day - Current Tip: "+currentTip+"/"+maxTips);
+}
+private void totdNextTipButtonActionPerformed(ActionEvent event){
+		if(currentTip<maxTips){
+			currentTip++;
+		}else if(currentTip==maxTips){
+			currentTip=1;
+		}
+		if(currentTip==1){
+			totdTextArea.setText(tip1);
+		}else if(currentTip==2){
+			totdTextArea.setText(tip2);
+		}else if(currentTip==3){
+			totdTextArea.setText(tip3);
+		}else{
+			//ERROR REPORT
+		}
+		totdDisplayTipNum.setText("Current Tip: "+currentTip+"/"+maxTips);
+		tipOfTheDayFrame.setTitle("Tip of the Day - Current Tip: "+currentTip+"/"+maxTips);
+}
+private void totdCloseButtonActionPerformed(ActionEvent event){
+		owner.dispose();
+}
+} // END Tip of the Day CLASS \\
+//LINK LISTENER CLASS\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+class linkListener implements HyperlinkListener{
+	private JEditorPane pane;
+	private JLabel statusBar;
+	
+	public linkListener(JEditorPane jep, JLabel jl){
+		pane = jep;
+		statusBar = jl;
+	}
+	public void hyperlinkUpdate(HyperlinkEvent he){
+		HyperlinkEvent.EventType type = he.getEventType();
+		if (type == HyperlinkEvent.EventType.ENTERED){
+			if(statusBar != null){
+				statusBar.setText(" "+he.getURL().toString());
+			}
+		}
+		else if(type == HyperlinkEvent.EventType.EXITED){
+			if(statusBar != null){
+				statusBar.setText(" ");
+			}}
+		else if (type == HyperlinkEvent.EventType.ACTIVATED){
+			if(he instanceof HTMLFrameHyperlinkEvent){
+				HTMLFrameHyperlinkEvent evt = (HTMLFrameHyperlinkEvent)he;
+				HTMLDocument doc = (HTMLDocument)pane.getDocument();
+				doc.processHTMLFrameHyperlinkEvent(evt);
+			}else{
+				try{
+					pane.setPage(he.getURL());
+					currentURL = ""+he.getURL();
+					hwbURLTextFieldArray[mainTabbedPane.getSelectedIndex()].setText(""+he.getURL());
+					if(mainTabbedPane.getTabCount()>=1 && closingAllTabs!=1){
+						hwbURLTextFieldArray[mainTabbedPane.getSelectedIndex()].setText(""+he.getURL());
+						String getURLLength = he.getURL()+"";
+						if(getURLLength.length()>=31){
+							getURLLength = getURLLength.substring(0,30)+"...";
+						}
+						mainTabbedPane.setTitleAt(mainTabbedPane.getSelectedIndex(),getURLLength+" - [HWB]");
+						mainTabbedPane.setToolTipTextAt(mainTabbedPane.getSelectedIndex(),hwbURLTextField.getText()+" - [Honzifox Web Browser]");
+						frame.setTitle(hwbURLTextFieldArray[mainTabbedPane.getSelectedIndex()].getText()+" - [HWB] - [Honzifox]");
+						tabsTableData[mainTabbedPane.getSelectedIndex()-1][1] = mainTabbedPane.getTitleAt(mainTabbedPane.getSelectedIndex());
+					}
+				}
+				catch (Exception e){
+					e.printStackTrace();
+				}
+			}
+		}
+	}
+}
+//PUBLIC STATIC VOID MAIN///////////////////////////////////////////////////////////////////////////////////////////////////
+public static void main(String[] args){
+new Honzifox(1);
+} //End PUBLIC STATIC VOID MAIN\\
+public void componentHidden(ComponentEvent e) {
+}
+public void componentMoved(ComponentEvent e) {
+}
+public void componentResized(ComponentEvent e) {
+	if(statusBar.isVisible()==true){
+		if(optionsPreferencesTree != null){
+			optionsPreferencesTreeScroll.setBounds(5, 5, 150, frame.getHeight()-110);
+		}if(optionsPreferencesSeleted != null){
+			optionsPreferencesSeleted.setBounds(160, 0, frame.getWidth()-178, frame.getHeight()-103);
+		}
+	}else{
+		if(optionsPreferencesTree != null){
+			optionsPreferencesTreeScroll.setBounds(5, 5, 150, frame.getHeight()-90);
+		}if(optionsPreferencesSeleted != null){
+			optionsPreferencesSeleted.setBounds(160, 0, frame.getWidth()-178, frame.getHeight()-83);
+		}
+	}
+}
+public void componentShown(ComponentEvent e){
+}
+public void valueChanged(TreeSelectionEvent arg0){
+	DefaultMutableTreeNode node = (DefaultMutableTreeNode)optionsPreferencesTree.getLastSelectedPathComponent();
+	//if(node.isLeaf()){
+	optionsPreferencesSelectedBorder.setTitle(""+node);
+	optionsPreferencesSeleted.setBorder(optionsPreferencesSelectedBorder);
+	optionsPreferencesSeleted.repaint();
+	//}
+}
+} //END PUBLIC CLASS\\
