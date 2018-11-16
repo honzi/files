@@ -1,0 +1,11 @@
+ErrorDocument 403 http://iterami.com/games/roleplay/txt
+ErrorDocument 404 http://iterami.com/games/roleplay/txt
+ExpiresActive On
+ExpiresDefault A172800
+ExpiresByType application/javascript A172800
+ExpiresByType text/css A345600
+ExpiresByType text/html A345600
+<filesMatch "\.(css|html|js)$">
+ExpiresDefault A172800
+Header append Cache-Control "private, must-revalidate"
+</filesMatch>

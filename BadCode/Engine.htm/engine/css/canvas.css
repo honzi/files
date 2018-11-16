@@ -1,0 +1,13 @@
+body{
+    background: #000;
+    color: #aaa;
+    font-family: monospace;
+}
+canvas{
+    left: 0;
+    position: absolute;
+    top: 0;
+}
+.hidden{
+    display: none;
+}

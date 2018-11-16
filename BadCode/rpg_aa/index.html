@@ -1,0 +1,69 @@
+<!doctype html>
+<meta charset="utf-8">
+<meta content="A HTML5 role-playing game by iterami. Work in progress." name="description">
+<title>RPG</title>
+<link rel="icon" href="../h.ico">
+<link rel="stylesheet" href="r.css">
+
+<script src="l.js"></script>
+<script src="r.js"></script>
+
+
+<div id="cv"><div style="margin-left:auto;margin-right:auto;padding-bottom:200px;padding-top:200px;width:10em"><input onclick="l()" style="cursor:pointer" type="button" value="Load game canvas, if adsense is slow"></div></div>
+
+<div class="h" style="margin-top:-4px"><a href="/"><b>iterami</b></a>/RPG | <a href="/about/legal.html">©</a>2012</div>
+
+
+[ad]
+
+
+
+<table style="width:100%">
+<tr style="background-color:#222;font-size:150%">
+<td style="width:200px">Controls</td>
+<td style="width:100px">Do This</td>
+<td>Effect</td>
+</tr>
+<tr>
+<td><b>WASD</b> or <b>IJKL</b></td>
+<td>Press and Hold to Move, Release to Stop</td>
+<td>Use these keys to move your character around the game world.</td>
+</tr>
+<tr>
+<td><b>Shift</b></td>
+<td>Press and Hold to Activate, Release to Deactive</td>
+<td>Activating sprint allows your character to move at speeds equal to double that of non-sprinting movement speed. While sprinting, your character's stamina stat will be slowly depleated, and requires certain amounts of rest in order to regain stamina. Rest is defined as periods of no movement or non-sprinting movement.</td>
+</tr>
+<tr>
+<td><b>Number Keys 1-5</b></td>
+<td>Press and Release</td>
+<td>Select a spell or ability from the assortment of spells and abilities found on the bar at the bottom of the screen.</td>
+</tr>
+<tr>
+<td><b>Escape</b></td>
+<td>Press and Release</td>
+<td>Return to the main menu. WARNING: This results in loss of all progress until a game save feature can be added.</td>
+</tr>
+<tr style="background-color:#222;font-size:150%">
+<td>UI Element Color</td>
+<td>Stat</td>
+<td>Description of Purpose</td>
+</tr>
+<tr>
+<td style="background-color:#00C800;height:3em"></td>
+<td>Health</td>
+<td>Your health represents the amount of damage your character can take before expiring. Once your current health reaches zero and the bar entirely disappears, you are returned to your spawn location within the current world.</td>
+</tr>
+<tr>
+<td style="background-color:#0000C8;height:3em"></td>
+<td>Mana</td>
+<td>Mana will be used as a resource used to cast various spells. Spells will deplete a portion of your mana supply, which will slowly recharge over time.</td>
+</tr>
+<tr>
+<td style="background-color:#FFD700;height:3em"></td>
+<td>Stamina</td>
+<td>Your stamina represents how long your character can sprint before becoming tired and requiring a short period of rest. If you pace yourself, you will find you will generally have much more stamina over long periods of travel.</td>
+</tr>
+</table>
+
+<canvas id="b" style="display:none"></canvas>

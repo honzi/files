@@ -1,0 +1,50 @@
+<!doctype html>
+<meta charset=utf-8>
+<title>SkillsQuest v2014.05.18</title>
+<link href=0.css rel=stylesheet>
+
+<div>
+<a href=/>SkillsQuest</a><br>
+<input onclick="this.value=prompt('Input name:')" type=button value=edit_playero>
+<ul class=n>
+<li>arsonry: <b id=0>0</b> / <b id=00>0</b>
+<li>bowshootin: <b id=1>0</b> / <b id=11>0</b>
+<li>chefery: <b id=2>0</b> / <b id=22>0</b>
+<li>fightin: <b id=3>0</b> / <b id=33>0</b>
+<li>fishcatchin: <b id=4>0</b> / <b id=44>0</b>
+<li>herbery: <b id=5>0</b> / <b id=55>0</b>
+<li>logchoppin: <b id=6>0</b> / <b id=66>0</b>
+<li>magicianing: <b id=7>0</b> / <b id=77>0</b>
+<li>nimblocity: <b id=8>0</b> / <b id=88>0</b>
+<li>rocksmashin: <b id=9>0</b> / <b id=99>0</b>
+<li>smithery: <b id=a>0</b> / <b id=aa>0</b>
+<li>stuffmakin: <b id=b>0</b> / <b id=bb>0</b>
+<li>toughness: <b id=c>1</b> / <b id=cc>1</b>
+</div>
+
+<div>
+<canvas id=c0></canvas><canvas id=b0 style=display:none></canvas><br>
+<span id=px>0</span>x<br>
+<span id=py>0</span>y
+</div>
+
+<div class=i>
+<b>Stats</b>
+<ul>
+<li>Health: <b id=h0>10</b> / <b id=h1>10</b>
+<li>Mana: <b id=m0>0</b> / <b id=m1>0</b>
+</ul>
+
+<b>Inventory</b>
+<ul>
+<li>Coins: <b id=g>0</b>
+</ul>
+
+<b>Settings:</b> <a onclick=if(confirm('Reset?')){z('s0').value='I';z('s1').value='WASD'}>Reset</a>
+<ul>
+<li><input id=s0 maxlength=1 value=I>Toggle Item Names
+<li><input id=s1 maxlength=4 value=WASD>Move ↑←↓→
+</ul>
+</div>
+
+<script src=0.js></script>

@@ -1,0 +1,24 @@
+<!doctype html>
+<meta charset=utf-8>
+<title>Forum.php</title>
+<link href=css/forum.css rel=stylesheet>
+
+<div id=forum></div>
+
+<form action=php/post.php id=forum-form method=post>
+    <div id=forum-help-text>
+        Content:<br>
+        <br>
+        Title:<br>
+        Name:<br>
+        Password:
+    </div>
+    <div id=forum-form-inputs>
+        <textarea cols=42 maxlength=500 name=content rows=5></textarea><br>
+        <input maxlength=50 name=title size=35><br>
+        <input maxlength=64 name=username size=35><br>
+        <input maxlength=64 name=password size=35 type=password><input name=post-button type=submit value=Post>
+    </div>
+</form>
+
+<script src=js/forum.js></script>
