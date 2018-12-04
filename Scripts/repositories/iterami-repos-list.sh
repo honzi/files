@@ -107,7 +107,7 @@ Trigonometry.htm
 Tubes-2D3D.htm
 U1.htm
 UnitConverter.htm
-URIViewer.htm
+URI.htm
 Warped.htm
 WASD-2D.htm
 WindowInfo.htm
