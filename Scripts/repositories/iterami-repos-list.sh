@@ -28,7 +28,7 @@ common
 ConfigFiles
 Countdown.htm
 D2LoD-ArcaneSanctuary.htm
-Documentation.htm
+Docs.htm
 DotEyeIllusion.htm
 Dropdown.htm
 Duel.htm
