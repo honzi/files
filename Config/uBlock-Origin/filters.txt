@@ -3,4 +3,5 @@ clips.twitch.tv##.clips-chat-replay
 condemnedgame.com
 vugames.com
 youtube.com###comments
+youtube.com##.ytp-ce-element-show
 youtube.com/live_chat$subdocument
