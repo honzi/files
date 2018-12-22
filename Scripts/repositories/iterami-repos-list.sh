@@ -8,6 +8,7 @@ iterami_repositories='
 Alarm.htm
 Aquarium-2D.htm
 AspectRatio.htm
+AudioEditor.htm
 Avoidance-2D.htm
 BaseConverter.htm
 BinaryDataEndecoder.htm
@@ -96,6 +97,7 @@ SpeedText.htm
 SpeedType.htm
 Starfield-2D3D.htm
 Sudoku.htm
+Terminal.gtk
 TextEditor.gtk
 TextInfo.htm
 Time.htm
@@ -110,6 +112,7 @@ UnitConverter.htm
 URI.htm
 Warped.htm
 WASD-2D.htm
+WebBrowser.gtk
 WindowInfo.htm
 WZ2100-AI.js
 '
