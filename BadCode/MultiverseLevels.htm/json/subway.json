@@ -1,0 +1,451 @@
+{
+  "prefabs": [
+    {
+      "type": "webgl_cuboid",
+      "properties": {
+        "prefix": "train-0",
+        "all-collision": false,
+        "all-vertex-colors": [
+          0.08, 0.08, 0.08, 1,
+          0.08, 0.08, 0.08, 1,
+          0.1, 0.1, 0.1, 1,
+          0.1, 0.1, 0.1, 1
+        ],
+        "height": 25,
+        "length": 70,
+        "translate-x": -55,
+        "translate-y": 10,
+        "translate-z": 36,
+        "width": 17
+      }
+    },
+    {
+      "type": "webgl_cuboid",
+      "properties": {
+        "prefix": "train-1",
+        "all-collision": false,
+        "all-vertex-colors": [
+          0.08, 0.08, 0.08, 1,
+          0.08, 0.08, 0.08, 1,
+          0.1, 0.1, 0.1, 1,
+          0.1, 0.1, 0.1, 1
+        ],
+        "height": 25,
+        "length": 70,
+        "translate-x": -55,
+        "translate-y": 10,
+        "translate-z": -36,
+        "width": 17
+      }
+    },
+    {
+      "type": "webgl_cuboid",
+      "properties": {
+        "prefix": "train-2",
+        "all-collision": false,
+        "all-vertex-colors": [
+          0.08, 0.08, 0.08, 1,
+          0.08, 0.08, 0.08, 1,
+          0.1, 0.1, 0.1, 1,
+          0.1, 0.1, 0.1, 1
+        ],
+        "height": 25,
+        "length": 70,
+        "translate-x": -55,
+        "translate-y": 10,
+        "translate-z": -108,
+        "width": 17
+      }
+    }
+  ],
+  "spawn-translate-y": 3,
+  "entities": [
+    {
+      "id": "ceiling",
+      "rotate-x": 180,
+      "translate-x": -25,
+      "translate-y": 25,
+      "translate-z": -40,
+      "vertex-colors": [
+        0.05, 0.05, 0.05, 1,
+        0.05, 0.05, 0.05, 1,
+        0.05, 0.05, 0.05, 1,
+        0.05, 0.05, 0.05, 1
+      ],
+      "vertices": [
+        45, 0, -150, 1,
+        -45, 0, -150, 1,
+        -45, 0, 150, 1,
+        45, 0, 150, 1
+      ]
+    },
+    {
+      "id": "ceiling-fade-0",
+      "rotate-x": 180,
+      "translate-x": -40,
+      "translate-y": 25,
+      "translate-z": 130,
+      "vertex-colors": [
+        0, 0, 0, 1,
+        0, 0, 0, 1,
+        0.05, 0.05, 0.05, 1,
+        0.05, 0.05, 0.05, 1
+      ],
+      "vertices": [
+        30, 0, -20, 1,
+        -30, 0, -20, 1,
+        -30, 0, 20, 1,
+        30, 0, 20, 1
+      ]
+    },
+    {
+      "id": "ceiling-fade-1",
+      "rotate-x": 180,
+      "translate-x": -40,
+      "translate-y": 25,
+      "translate-z": -210,
+      "vertex-colors": [
+        0.05, 0.05, 0.05, 1,
+        0.05, 0.05, 0.05, 1,
+        0, 0, 0, 1,
+        0, 0, 0, 1
+      ],
+      "vertices": [
+        30, 0, -20, 1,
+        -30, 0, -20, 1,
+        -30, 0, 20, 1,
+        30, 0, 20, 1
+      ]
+    },
+    {
+      "id": "ground-tracks",
+      "translate-x": -45,
+      "translate-y": -5,
+      "translate-z": -40,
+      "vertex-colors": [
+        0.02, 0.02, 0.02, 1,
+        0.02, 0.02, 0.02, 1,
+        0.02, 0.02, 0.02, 1,
+        0.02, 0.02, 0.02, 1
+      ],
+      "vertices": [
+        25, 0, -150, 1,
+        -25, 0, -150, 1,
+        -25, 0, 150, 1,
+        25, 0, 150, 1
+      ]
+    },
+    {
+      "id": "ground-tracks-fade-0",
+      "translate-x": -45,
+      "translate-y": -5,
+      "translate-z": -210,
+      "vertex-colors": [
+        0, 0, 0, 1,
+        0, 0, 0, 1,
+        0.02, 0.02, 0.02, 1,
+        0.02, 0.02, 0.02, 1
+      ],
+      "vertices": [
+        25, 0, -20, 1,
+        -25, 0, -20, 1,
+        -25, 0, 20, 1,
+        25, 0, 20, 1
+      ]
+    },
+    {
+      "id": "ground-tracks-fade-1",
+      "translate-x": -45,
+      "translate-y": -5,
+      "translate-z": 130,
+      "vertex-colors": [
+        0.02, 0.02, 0.02, 1,
+        0.02, 0.02, 0.02, 1,
+        0, 0, 0, 1,
+        0, 0, 0, 1
+      ],
+      "vertices": [
+        25, 0, -20, 1,
+        -25, 0, -20, 1,
+        -25, 0, 20, 1,
+        25, 0, 20, 1
+      ]
+    },
+    {
+      "id": "platform",
+      "collision": true,
+      "translate-z": -40,
+      "vertex-colors": [
+        0.1, 0.1, 0.1, 1,
+        0.1, 0.1, 0.1, 1,
+        0.1, 0.1, 0.1, 1,
+        0.1, 0.1, 0.1, 1
+      ],
+      "vertices": [
+        20, 0, -150, 1,
+        -20, 0, -150, 1,
+        -20, 0, 150, 1,
+        20, 0, 150, 1
+      ]
+    },
+    {
+      "id": "safety",
+      "collision": true,
+      "draw": false,
+      "rotate-z": 270,
+      "translate-x": -20,
+      "translate-y": 10,
+      "translate-z": -40,
+      "vertices": [
+        15, 0, -150, 1,
+        -15, 0, -150, 1,
+        -15, 0, 150, 1,
+        15, 0, 150, 1
+      ]
+    },
+    {
+      "id": "tracks-00",
+      "draw-type": "LINE_STRIP",
+      "translate-x": -60,
+      "translate-y": -4,
+      "vertex-colors": [
+        0, 0, 0, 1,
+        0.5, 0.5, 0.5, 1,
+        0.5, 0.5, 0.5, 1,
+        0, 0, 0, 1
+      ],
+      "vertices": [
+        0, 0, -230, 1,
+        0, 0, -200, 1,
+        0, 0, 125, 1,
+        0, 0, 150, 1
+      ]
+    },
+    {
+      "id": "tracks-01",
+      "draw-type": "LINE_STRIP",
+      "translate-x": -50,
+      "translate-y": -4,
+      "vertex-colors": [
+        0, 0, 0, 1,
+        0.5, 0.5, 0.5, 1,
+        0.5, 0.5, 0.5, 1,
+        0, 0, 0, 1
+      ],
+      "vertices": [
+        0, 0, -230, 1,
+        0, 0, -200, 1,
+        0, 0, 125, 1,
+        0, 0, 150, 1
+      ]
+    },
+    {
+      "id": "tracks-10",
+      "draw-type": "LINE_STRIP",
+      "translate-x": -40,
+      "translate-y": -4,
+      "vertex-colors": [
+        0, 0, 0, 1,
+        0.5, 0.5, 0.5, 1,
+        0.5, 0.5, 0.5, 1,
+        0, 0, 0, 1
+      ],
+      "vertices": [
+        0, 0, -230, 1,
+        0, 0, -200, 1,
+        0, 0, 125, 1,
+        0, 0, 150, 1
+      ]
+    },
+    {
+      "id": "tracks-11",
+      "draw-type": "LINE_STRIP",
+      "translate-x": -30,
+      "translate-y": -4,
+      "vertex-colors": [
+        0, 0, 0, 1,
+        0.5, 0.5, 0.5, 1,
+        0.5, 0.5, 0.5, 1,
+        0, 0, 0, 1
+      ],
+      "vertices": [
+        0, 0, -230, 1,
+        0, 0, -200, 1,
+        0, 0, 125, 1,
+        0, 0, 150, 1
+      ]
+    },
+    {
+      "id": "wall-far",
+      "rotate-z": 270,
+      "translate-x": -70,
+      "translate-y": 10,
+      "translate-z": -40,
+      "vertex-colors": [
+        0.04, 0.04, 0.04, 1,
+        0.04, 0.04, 0.04, 1,
+        0.04, 0.04, 0.04, 1,
+        0.04, 0.04, 0.04, 1
+      ],
+      "vertices": [
+        15, 0, -150, 1,
+        -15, 0, -150, 1,
+        -15, 0, 150, 1,
+        15, 0, 150, 1
+      ]
+    },
+    {
+      "id": "wall-far-fade-0",
+      "rotate-z": 270,
+      "translate-x": -70,
+      "translate-y": 10,
+      "translate-z": -210,
+      "vertex-colors": [
+        0, 0, 0, 1,
+        0, 0, 0, 1,
+        0.04, 0.04, 0.04, 1,
+        0.04, 0.04, 0.04, 1
+      ],
+      "vertices": [
+        15, 0, -20, 1,
+        -15, 0, -20, 1,
+        -15, 0, 20, 1,
+        15, 0, 20, 1
+      ]
+    },
+    {
+      "id": "wall-far-fade-1",
+      "rotate-z": 270,
+      "translate-x": -70,
+      "translate-y": 10,
+      "translate-z": 130,
+      "vertex-colors": [
+        0.04, 0.04, 0.04, 1,
+        0.04, 0.04, 0.04, 1,
+        0, 0, 0, 1,
+        0, 0, 0, 1
+      ],
+      "vertices": [
+        15, 0, -20, 1,
+        -15, 0, -20, 1,
+        -15, 0, 20, 1,
+        15, 0, 20, 1
+      ]
+    },
+    {
+      "id": "wall-near-fade-0",
+      "rotate-z": 90,
+      "translate-x": -20,
+      "translate-y": 10,
+      "translate-z": -210,
+      "vertex-colors": [
+        0, 0, 0, 1,
+        0, 0, 0, 1,
+        0.07, 0.07, 0.07, 1,
+        0.07, 0.07, 0.07, 1
+      ],
+      "vertices": [
+        15, 0, -20, 1,
+        -15, 0, -20, 1,
+        -15, 0, 20, 1,
+        15, 0, 20, 1
+      ]
+    },
+    {
+      "id": "wall-near-fade-1",
+      "rotate-z": 90,
+      "translate-x": -20,
+      "translate-y": 10,
+      "translate-z": 130,
+      "vertex-colors": [
+        0.07, 0.07, 0.07, 1,
+        0.07, 0.07, 0.07, 1,
+        0, 0, 0, 1,
+        0, 0, 0, 1
+      ],
+      "vertices": [
+        15, 0, -20, 1,
+        -15, 0, -20, 1,
+        -15, 0, 20, 1,
+        15, 0, 20, 1
+      ]
+    },
+    {
+      "id": "wall-platform-0",
+      "collision": true,
+      "rotate-z": 90,
+      "translate-x": 20,
+      "translate-y": 12.5,
+      "translate-z": -40,
+      "vertex-colors": [
+        0.11, 0.11, 0.11, 1,
+        0.11, 0.11, 0.11, 1,
+        0.11, 0.11, 0.11, 1,
+        0.11, 0.11, 0.11, 1
+      ],
+      "vertices": [
+        12.5, 0, -150, 1,
+        -12.5, 0, -150, 1,
+        -12.5, 0, 150, 1,
+        12.5, 0, 150, 1
+      ]
+    },
+    {
+      "id": "wall-platform-1",
+      "collision": true,
+      "rotate-x": 90,
+      "translate-y": 12.5,
+      "translate-z": -190,
+      "vertex-colors": [
+        0.12, 0.12, 0.12, 1,
+        0.12, 0.12, 0.12, 1,
+        0.12, 0.12, 0.12, 1,
+        0.12, 0.12, 0.12, 1
+      ],
+      "vertices": [
+        20, 0, -12.5, 1,
+        -20, 0, -12.5, 1,
+        -20, 0, 12.5, 1,
+        20, 0, 12.5, 1
+      ]
+    },
+    {
+      "id": "wall-platform-2",
+      "collision": true,
+      "rotate-x": 270,
+      "translate-y": 12.5,
+      "translate-z": 110,
+      "vertex-colors": [
+        0.12, 0.12, 0.12, 1,
+        0.12, 0.12, 0.12, 1,
+        0.12, 0.12, 0.12, 1,
+        0.12, 0.12, 0.12, 1
+      ],
+      "vertices": [
+        20, 0, -12.5, 1,
+        -20, 0, -12.5, 1,
+        -20, 0, 12.5, 1,
+        20, 0, 12.5, 1
+      ]
+    },
+    {
+      "id": "wall-platform-3",
+      "rotate-z": 90,
+      "translate-x": -20,
+      "translate-y": -3,
+      "translate-z": -40,
+      "vertex-colors": [
+        0.07, 0.07, 0.07, 1,
+        0.07, 0.07, 0.07, 1,
+        0.07, 0.07, 0.07, 1,
+        0.07, 0.07, 0.07, 1
+      ],
+      "vertices": [
+        3, 0, -150, 1,
+        -2, 0, -150, 1,
+        -2, 0, 150, 1,
+        3, 0, 150, 1
+      ]
+    }
+  ]
+}

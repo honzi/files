@@ -1,0 +1,24 @@
+{
+  "prefabs": [
+    {
+      "type": "webgl_skybox",
+      "properties": {
+        "prefix": "skybox",
+        "bottom-color-bottom": [
+          0, 0, 0, 1
+        ],
+        "bottom-color-top": [
+          0, 0, 0.6, 1
+        ],
+        "sides": 5,
+        "top-color-bottom": [
+          1, 0.5, 0, 1
+        ],
+        "top-color-top": [
+          0, 0, 0, 1
+        ]
+      }
+    }
+  ],
+  "entities": []
+}
