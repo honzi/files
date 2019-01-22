@@ -4,5 +4,6 @@ condemnedgame.com
 reddit.com##.listing-chooser
 vugames.com
 youtube.com###comments
+youtube.com###toast
 youtube.com##.ytp-ce-element-show
 youtube.com/live_chat$subdocument
