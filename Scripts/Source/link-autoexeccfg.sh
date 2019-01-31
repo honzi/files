@@ -8,6 +8,7 @@ games=(
   "Half-Life 2/hl2"
   "Half-Life 2/episodic"
   "Half-Life 2/ep2"
+  "Half-Life 2/lostcoast"
   "Portal/portal"
   "Portal 2/portal2"
   "Team Fortress 2/tf"
