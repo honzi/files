@@ -1,6 +1,7 @@
 #!/bin/sh
 
 # No arguments.
+# Not directly used.
 
 # An array of all iterami repositories.
 iterami_repositories='

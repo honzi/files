@@ -1,6 +1,7 @@
 #!/bin/bash
 
 # No arguments.
+# Example usage: bash link-configs.sh
 
 # List of config file source paths.
 configs=(

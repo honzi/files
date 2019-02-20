@@ -4,7 +4,7 @@
 #   $1: Relative path to the directory in which the
 #         honzi/common repository will be stored.
 #
-# Example: sh common-fork-setup.sh repositories
+# Example usage: sh common-fork-setup.sh repositories
 
 # Check if at least 1 argument is passed.
 if [ $# -lt 1 ]

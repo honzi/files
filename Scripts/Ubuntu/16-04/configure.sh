@@ -1,6 +1,7 @@
 #!/bin/sh
 
 # No arguments.
+# Example usage: sh configure.sh
 
 # UPDATE
 sudo apt-get update

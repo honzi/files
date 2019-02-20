@@ -4,7 +4,7 @@
 #   $1: Relative path to the directory in which
 #         the iterami repositories are stored.
 #
-# Example: sh push-iterami-repos.sh repositories/
+# Example usage: sh push-iterami-repos.sh repositories/
 
 # Check if at least 1 argument was passed.
 if [ $# -lt 1 ]
