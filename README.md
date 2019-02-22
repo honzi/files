@@ -1,4 +1,4 @@
 honzi/files
 -----------
 
-honzi's various CC0 files.
+* `OldCode` files are no longer maintained.
