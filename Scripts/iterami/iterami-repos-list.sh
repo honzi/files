@@ -36,6 +36,7 @@ Dropdown.htm
 Duel.htm
 EmojiText.htm
 ESP-Test.htm
+EVE-Overviews.yaml
 EVETools.gtk
 ExperienceCalculator.htm
 FileBrowser.gtk
