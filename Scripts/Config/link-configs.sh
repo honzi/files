@@ -15,6 +15,7 @@ configs=(
   "$HOME/.iterami/repositories/files/Config/Portal/portal/cfg/autoexec.cfg"
   "$HOME/.iterami/repositories/files/Config/Portal 2/portal2/cfg/autoexec.cfg"
   "$HOME/.iterami/repositories/files/Config/Team Fortress 2/tf/cfg/autoexec.cfg"
+  "$HOME/.iterami/repositories/files/Config/Thief/3-Deadly-Shadows/Default.ini"
 )
 # List of config file destination directory paths.
 destinations=(
@@ -28,9 +29,10 @@ destinations=(
   "$HOME/.steam/steam/steamapps/common/Portal/portal/cfg/"
   "$HOME/.steam/steam/steamapps/common/Portal 2/portal2/cfg/"
   "$HOME/.steam/steam/steamapps/common/Team Fortress 2/tf/cfg/"
+  "$HOME/.wine/drive_c/Program Files (x86)/Thief - Deadly Shadows Demo/System"
 )
 
-for i in {0..8}
+for i in {0..10}
 do
     # The destination directory must already exist.
     if [[ -d ${destinations[i]} ]]
