@@ -7,6 +7,7 @@
 configs=(
   "$HOME/.iterami/repositories/files/Config/Crysis/diff_bauer.cfg"
   "$HOME/.iterami/repositories/files/Config/GarrysMod/garrysmod/cfg/autoexec.cfg"
+  "$HOME/.iterami/repositories/files/Config/Gothic/3/demo/Ini/ge3.ini"
   "$HOME/.iterami/repositories/files/Config/Half-Life 2/hl2/cfg/autoexec.cfg"
   "$HOME/.iterami/repositories/files/Config/Half-Life 2/episodic/cfg/autoexec.cfg"
   "$HOME/.iterami/repositories/files/Config/Half-Life 2/ep2/cfg/autoexec.cfg"
@@ -22,6 +23,7 @@ configs=(
 destinations=(
   "$HOME/.wine/drive_c/Program Files (x86)/Electronic Arts/Crytek/Crysis SP Demo/Game/Config/"
   "$HOME/.steam/steam/steamapps/common/GarrysMod/garrysmod/cfg/"
+  "$HOME/.wine/drive_c/Program Files (x86)/Gothic III Demo/Ini/"
   "$HOME/.steam/steam/steamapps/common/Half-Life 2/hl2/cfg/"
   "$HOME/.steam/steam/steamapps/common/Half-Life 2/episodic/cfg/"
   "$HOME/.steam/steam/steamapps/common/Half-Life 2/ep2/cfg/"
@@ -34,7 +36,7 @@ destinations=(
   "$HOME/.wine/drive_c/Program Files (x86)/Thief - Deadly Shadows Demo/System"
 )
 
-for i in {0..11}
+for i in {0..12}
 do
     # The destination directory must already exist.
     if [[ -d ${destinations[i]} ]]
