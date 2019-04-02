@@ -28,12 +28,12 @@ destinations=(
   "$HOME/.steam/steam/steamapps/common/Half-Life 2/episodic/cfg/"
   "$HOME/.steam/steam/steamapps/common/Half-Life 2/ep2/cfg/"
   "$HOME/.steam/steam/steamapps/common/Half-Life 2/lostcoast/cfg/"
-  "$HOME/.wine/drive_c/Program Files (x86)/Ubisoft/Dark Messiah of Might and Magic Demo/mm/cfg"
+  "$HOME/.wine/drive_c/Program Files (x86)/Ubisoft/Dark Messiah of Might and Magic Demo/mm/cfg/"
   "$HOME/.steam/steam/steamapps/common/Portal/portal/cfg/"
   "$HOME/.steam/steam/steamapps/common/Portal 2/portal2/cfg/"
   "$HOME/.steam/steam/steamapps/common/Team Fortress 2/tf/cfg/"
-  "$HOME/.wine/drive_c/Program Files (x86)/Thief - Deadly Shadows Demo/System"
-  "$HOME/.wine/drive_c/Program Files (x86)/Thief - Deadly Shadows Demo/System"
+  "$HOME/.wine/drive_c/Program Files (x86)/Thief - Deadly Shadows Demo/System/"
+  "$HOME/.wine/drive_c/Program Files (x86)/Thief - Deadly Shadows Demo/System/"
 )
 
 for i in {0..12}
