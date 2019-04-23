@@ -16,11 +16,12 @@ destinations=(
   "$HOME/.steam/steam/steamapps/common/Portal/portal/cfg/autoexec.cfg"
   "$HOME/.steam/steam/steamapps/common/Portal 2/portal2/cfg/autoexec.cfg"
   "$HOME/.steam/steam/steamapps/common/Team Fortress 2/tf/cfg/autoexec.cfg"
+  "$HOME/.steam/steam/steamapps/common/The Stanley Parable/thestanleyparable/cfg/autoexec.cfg"
   "$HOME/.wine/drive_c/Program Files (x86)/Thief - Deadly Shadows Demo/System/Default.ini"
   "$HOME/.wine/drive_c/Program Files (x86)/Thief - Deadly Shadows Demo/System/T3UI.ini"
 )
 
-for i in {0..12}
+for i in {0..13}
 do
     rm "${destinations[i]}"
 done
