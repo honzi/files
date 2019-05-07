@@ -5,6 +5,7 @@
 
 # List of config file destination directory paths.
 destinations=(
+  "$HOME/Documents/EVE/Overview/iterami-overview.yaml"
   "$HOME/.wine/drive_c/Program Files (x86)/Electronic Arts/Crytek/Crysis SP Demo/Game/Config/diff_bauer.cfg"
   "$HOME/.steam/steam/steamapps/common/GarrysMod/garrysmod/cfg/autoexec.cfg"
   "$HOME/.wine/drive_c/Program Files (x86)/Gothic III Demo/Ini/ge3.ini"
@@ -21,7 +22,7 @@ destinations=(
   "$HOME/.wine/drive_c/Program Files (x86)/Thief - Deadly Shadows Demo/System/T3UI.ini"
 )
 
-for i in {0..13}
+for i in {0..14}
 do
     rm "${destinations[i]}"
 done

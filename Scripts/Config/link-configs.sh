@@ -5,6 +5,7 @@
 
 # List of config file source paths.
 configs=(
+  "$HOME/.iterami/repositories/EVE-Overviews.yaml/yaml/iterami-overview.yaml"
   "$HOME/.iterami/repositories/files/Config/Crysis/diff_bauer.cfg"
   "$HOME/.iterami/repositories/files/Config/GarrysMod/garrysmod/cfg/autoexec.cfg"
   "$HOME/.iterami/repositories/files/Config/Gothic/3/demo/Ini/ge3.ini"
@@ -22,6 +23,7 @@ configs=(
 )
 # List of config file destination directory paths.
 destinations=(
+  "$HOME/Documents/EVE/Overview/"
   "$HOME/.wine/drive_c/Program Files (x86)/Electronic Arts/Crytek/Crysis SP Demo/Game/Config/"
   "$HOME/.steam/steam/steamapps/common/GarrysMod/garrysmod/cfg/"
   "$HOME/.wine/drive_c/Program Files (x86)/Gothic III Demo/Ini/"
@@ -38,7 +40,7 @@ destinations=(
   "$HOME/.wine/drive_c/Program Files (x86)/Thief - Deadly Shadows Demo/System/"
 )
 
-for i in {0..13}
+for i in {0..14}
 do
     # The destination directory must already exist.
     if [[ -d ${destinations[i]} ]]
