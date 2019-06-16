@@ -17,12 +17,21 @@ destinations=(
   "$HOME/.steam/steam/steamapps/common/Portal/portal/cfg/autoexec.cfg"
   "$HOME/.steam/steam/steamapps/common/Portal 2/portal2/cfg/autoexec.cfg"
   "$HOME/.steam/steam/steamapps/common/Team Fortress 2/tf/cfg/autoexec.cfg"
+  "$HOME/.steam/steam/steamapps/common/Team Fortress 2/tf/cfg/demoman.cfg"
+  "$HOME/.steam/steam/steamapps/common/Team Fortress 2/tf/cfg/engineer.cfg"
+  "$HOME/.steam/steam/steamapps/common/Team Fortress 2/tf/cfg/heavy.cfg"
+  "$HOME/.steam/steam/steamapps/common/Team Fortress 2/tf/cfg/medic.cfg"
+  "$HOME/.steam/steam/steamapps/common/Team Fortress 2/tf/cfg/pyro.cfg"
+  "$HOME/.steam/steam/steamapps/common/Team Fortress 2/tf/cfg/scout.cfg"
+  "$HOME/.steam/steam/steamapps/common/Team Fortress 2/tf/cfg/sniper.cfg"
+  "$HOME/.steam/steam/steamapps/common/Team Fortress 2/tf/cfg/soldier.cfg"
+  "$HOME/.steam/steam/steamapps/common/Team Fortress 2/tf/cfg/spy.cfg"
   "$HOME/.steam/steam/steamapps/common/The Stanley Parable/thestanleyparable/cfg/autoexec.cfg"
   "$HOME/.wine/drive_c/Program Files (x86)/Thief - Deadly Shadows Demo/System/Default.ini"
   "$HOME/.wine/drive_c/Program Files (x86)/Thief - Deadly Shadows Demo/System/T3UI.ini"
 )
 
-for i in {0..14}
+for i in {0..23}
 do
     rm "${destinations[i]}"
 done
