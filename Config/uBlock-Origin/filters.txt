@@ -1,9 +1,9 @@
 buycrysis.ea.com
 clips.twitch.tv##.clips-chat-replay
-condemnedgame.com
+||condemnedgame.com
 reddit.com##.listing-chooser
 twitch.tv##.player-alert
-vugames.com
+||vugames.com
 youtube.com###comments
 youtube.com###toast
 youtube.com##.ytp-ce-element-show
