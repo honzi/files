@@ -19,7 +19,7 @@ configs=(
   "$HOME/.iterami/repositories/files/Config/Team-Fortress-2/autoexec.cfg"
   "$HOME/.iterami/repositories/files/Config/Team-Fortress-2/demoman.cfg"
   "$HOME/.iterami/repositories/files/Config/Team-Fortress-2/engineer.cfg"
-  "$HOME/.iterami/repositories/files/Config/Team-Fortress-2/heavy.cfg"
+  "$HOME/.iterami/repositories/files/Config/Team-Fortress-2/heavyweapons.cfg"
   "$HOME/.iterami/repositories/files/Config/Team-Fortress-2/medic.cfg"
   "$HOME/.iterami/repositories/files/Config/Team-Fortress-2/pyro.cfg"
   "$HOME/.iterami/repositories/files/Config/Team-Fortress-2/scout.cfg"

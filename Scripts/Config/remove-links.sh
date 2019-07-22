@@ -19,7 +19,7 @@ destinations=(
   "$HOME/.steam/steam/steamapps/common/Team Fortress 2/tf/cfg/autoexec.cfg"
   "$HOME/.steam/steam/steamapps/common/Team Fortress 2/tf/cfg/demoman.cfg"
   "$HOME/.steam/steam/steamapps/common/Team Fortress 2/tf/cfg/engineer.cfg"
-  "$HOME/.steam/steam/steamapps/common/Team Fortress 2/tf/cfg/heavy.cfg"
+  "$HOME/.steam/steam/steamapps/common/Team Fortress 2/tf/cfg/heavyweapons.cfg"
   "$HOME/.steam/steam/steamapps/common/Team Fortress 2/tf/cfg/medic.cfg"
   "$HOME/.steam/steam/steamapps/common/Team Fortress 2/tf/cfg/pyro.cfg"
   "$HOME/.steam/steam/steamapps/common/Team Fortress 2/tf/cfg/scout.cfg"
