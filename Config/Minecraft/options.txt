@@ -10,7 +10,7 @@ forceUnicodeFont:false
 discrete_mouse_scroll:true
 invertYMouse:false
 realmsNotifications:true
-reducedDebugInfo:true
+reducedDebugInfo:false
 snooperEnabled:false
 showSubtitles:false
 touchscreen:false
@@ -24,10 +24,10 @@ guiScale:0
 particles:0
 maxFps:60
 difficulty:2
-fancyGraphics:false
+fancyGraphics:true
 ao:0
-biomeBlendRadius:0
-renderClouds:fast
+biomeBlendRadius:7
+renderClouds:true
 resourcePacks:[]
 incompatibleResourcePacks:[]
 lastServer:
@@ -51,7 +51,7 @@ useNativeTransport:true
 mainHand:right
 attackIndicator:1
 narrator:0
-tutorialStep:find_tree
+tutorialStep:none
 mouseWheelSensitivity:1.0
 rawMouseInput:true
 glDebugVerbosity:1
