@@ -1,0 +1,16 @@
+precision lowp float;
+uniform bool fog;
+uniform float float_fogDensity;
+uniform sampler2D sampler;
+uniform vec3 vec_clearColor;
+varying vec2 vec_textureCoord;
+varying vec4 vec_fragmentColor;
+varying vec4 vec_lighting;
+varying vec4 vec_position;
+void main(void){'
+    gl_FragColor = vec_fragmentColor * vec_lighting * texture2D(sampler, vec_textureCoord);
+    if(fog){
+        float distance = length(vec_position.xyz);
+        gl_FragColor.rgb *= clamp(exp(float_fogDensity * distance * -distance), 0.0, 1.0);
+    }
+}
