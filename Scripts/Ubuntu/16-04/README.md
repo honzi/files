@@ -22,7 +22,7 @@
 ### Configuration Script
 
 1. `sudo apt-get install git`.
-2. `cd ~/Documents` and `git clone https://github.com/honzi/files.git`.
+2. `cd ~/Documents` and `git clone --depth 1 https://github.com/honzi/files.git`.
 3. `sh files/Scripts/ubuntu/16.04/configure.sh`.
   * Script can be run multiple times, if needed.
   * If uninstalling a package suggests installing more packages, do not uninstall that package. Rerun script after.

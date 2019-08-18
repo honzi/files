@@ -38,7 +38,7 @@ do
         git pull
 
     else
-        git clone https://github.com/iterami/$repository.git
+        git clone --depth 1 https://github.com/iterami/$repository.git
         cd $repository
         git remote set-url origin https://honzi@github.com/iterami/$repository.git
         echo 'cloned and set origin url for https://github.com/iterami/'$repository

@@ -19,7 +19,7 @@ mkdir -p $1
 cd $1
 
 # git clone the repository from GitHub.
-git clone http://github.com/honzi/common.git
+git clone --depth 1 http://github.com/honzi/common.git
 
 # Navigate to the root directory of the cloned repository.
 cd common
