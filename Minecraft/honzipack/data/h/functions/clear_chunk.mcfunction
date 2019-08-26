@@ -1,4 +1,4 @@
-fill ~-7 0 ~8 ~8 64 ~-7 minecraft:air replace
-fill ~-7 65 ~8 ~8 128 ~-7 minecraft:air replace
-fill ~-7 129 ~8 ~8 192 ~-7 minecraft:air replace
-fill ~-7 193 ~8 ~8 255 ~-7 minecraft:air replace
+fill ~ 0 ~ ~15 64 ~15 minecraft:air replace
+fill ~ 65 ~ ~15 128 ~15 minecraft:air replace
+fill ~ 129 ~ ~15 192 ~15 minecraft:air replace
+fill ~ 193 ~ ~15 255 ~15 minecraft:air replace
