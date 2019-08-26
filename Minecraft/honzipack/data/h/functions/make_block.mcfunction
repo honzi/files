@@ -1,1 +1,1 @@
-setblock ~ ~-1 ~ minecraft:stone
+setblock ~ ~-1 ~ minecraft:stone keep
