@@ -11,10 +11,10 @@ xgamma -gamma 1
 gsettings set org.gnome.desktop.peripherals.touchpad send-events disabled-on-external-mouse
 gsettings set org.gnome.nautilus.preferences show-hidden-files true
 
-# Empty the trash.w
+# Cleanup various directories.
 sudo rm -rf ~/.local/share/Trash/*
-
-# Delete EVE logs.
+sudo rm -rf ~/.minecraft/crash-reports/*
+sudo rm -rf ~/.minecraft/logs/*
 sudo rm -rf ~/.wine/drive_c/users/honzi/My\ Documents/EVE/logs/Gamelogs/*
 
 # Update everything.
