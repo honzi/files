@@ -1,3 +1,3 @@
 scoreboard objectives setdisplay
 
-scoreboard objectives remove Position
+scoreboard objectives remove Stats
