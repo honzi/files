@@ -1,5 +1,5 @@
 {
     "values": [
-        "h:scoreboard_tick"
+        "h:scoreboard/tick"
     ]
 }
