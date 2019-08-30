@@ -5,3 +5,4 @@ give @s minecraft:diamond_axe{Enchantments:[{id:"minecraft:unbreaking",lvl:21474
 give @s minecraft:diamond_hoe{Enchantments:[{id:"minecraft:unbreaking",lvl:2147483467}]} 1
 give @s minecraft:diamond_pickaxe{Enchantments:[{id:"minecraft:unbreaking",lvl:2147483467}]} 1
 give @s minecraft:diamond_shovel{Enchantments:[{id:"minecraft:unbreaking",lvl:2147483467}]} 1
+give @s minecraft:diamond_sword{Enchantments:[{id:"minecraft:unbreaking",lvl:2147483467}]} 1
