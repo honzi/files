@@ -8,8 +8,8 @@ sh ~/.iterami/repositories/Scripts/ubuntu/xrandr-scale.sh eDP1 1600 900 1920 108
 xgamma -gamma 1
 
 # Reset settings.
-gsettings set org.gnome.desktop.peripherals.touchpad send-events disabled-on-external-mouse
-gsettings set org.gnome.nautilus.preferences show-hidden-files true
+xinput disable 12
+xinput set-float-prop 8 286 0.6
 
 # Cleanup various directories.
 sudo rm -rf ~/.local/share/Trash/*
