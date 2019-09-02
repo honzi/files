@@ -8,7 +8,7 @@ sh ~/.iterami/repositories/Scripts/ubuntu/xrandr-scale.sh eDP1 1600 900 1920 108
 xgamma -gamma 1
 
 # Reset settings.
-xinput disable 12
+xinput disable 'ETPS/2 Elantech Touchpad'
 xinput set-float-prop 8 286 0.6
 
 # Cleanup various directories.
