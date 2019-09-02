@@ -15,8 +15,7 @@ xinput set-float-prop 8 286 0.6
 sudo rm -rf ~/.local/share/Trash/*
 sudo rm -rf ~/.minecraft/crash-reports/*
 sudo rm -rf ~/.minecraft/logs/*
-sudo rm -rf ~/.warzone2100-3.1/logs/*
-sudo rm -rf ~/.warzone2100-3.2/logs/*
+sudo rm -rf ~/snap/warzone2100/current/.local/share/warzone2100-3.3.0/logs/*
 sudo rm -rf ~/.wine/drive_c/users/honzi/My\ Documents/EVE/logs/Gamelogs/*
 
 # Update everything.
