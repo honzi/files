@@ -9,7 +9,6 @@ xgamma -gamma 1
 
 # Reset settings.
 xinput disable 'ETPS/2 Elantech Touchpad'
-xinput set-float-prop 8 286 0.6
 
 # Cleanup various directories.
 sudo rm -rf ~/.local/share/Trash/*
