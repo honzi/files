@@ -27,6 +27,6 @@ cd common
 # Set the origin remote url.
 git remote set-url origin https://honzi@github.com/honzi/common.git
 
-# Force gh-pages to update.
-git push -f origin HEAD^:gh-pages
+# Push an empty commit to rebuild GitHub Pages.
+git commit -m "rebuilding pages" --allow-empty
 git push origin gh-pages
