@@ -18,4 +18,7 @@ sudo rm -rf ~/snap/warzone2100/current/.local/share/warzone2100-3.3.0/logs/*
 sudo rm -rf ~/.wine/drive_c/users/honzi/My\ Documents/EVE/logs/Gamelogs/*
 
 # Update everything.
-sudo aptdcon -c --full-upgrade
+sudo apt-get update
+sudo apt-get upgrade
+sudo apt-get dist-upgrade
+sudo apt-get autoremove
