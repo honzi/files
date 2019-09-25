@@ -21,6 +21,8 @@ git clone --depth 1 https://github.com/honzi/files.git
 cd files/Scripts
 sh fetch-iterami-honzi-repos.sh ~/.iterami/repositories/
 
+sudo apt-get install dconf-editor
+
 sudo apt-get update
 sudo apt-get upgrade
 sudo apt-get autoremove
