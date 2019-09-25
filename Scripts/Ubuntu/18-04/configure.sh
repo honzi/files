@@ -64,3 +64,15 @@ gsettings set org.gnome.desktop.wm.keybindings switch-to-workspace-up []
 gsettings set org.gnome.desktop.wm.keybindings toggle-maximized []
 gsettings set org.gnome.desktop.wm.keybindings unmaximize []
 gsettings set org.gnome.desktop.wm.preferences num-workspaces 1
+gsettings set org.gnome.gedit.plugins active-plugins []
+gsettings set org.gnome.gedit.plugins.filebrowser filter-mode []
+gsettings set org.gnome.login-screen enable-fingerprint-authentication false
+gsettings set org.gnome.login-screen enable-smartcard-authentication false
+gsettings set org.gnome.metacity edge-tiling false
+gsettings set org.gnome.metacity.keybindings toggle-tiled-left []
+gsettings set org.gnome.metacity.keybindings toggle-tiled-right []
+gsettings set org.gnome.nautilus.preferences default-folder-viewer "list-view"
+gsettings set org.gnome.nautilus.preferences executable-text-activation "ask"
+gsettings set org.gnome.nautilus.preferences mouse-use-extra-buttons false
+gsettings set org.gnome.nautilus.preferences show-create-link true
+gsettings set org.gnome.nautilus.preferences show-hidden-files true
