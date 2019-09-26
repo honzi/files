@@ -8,9 +8,15 @@ git config --global user.name "Jan Hořava"
 git config --global user.email czechinthemail@gmail.com
 
 gsettings set apps.indicator-session suppress-logout-menuitem true
+gsettings set apps.indicator-session user-show-menu false
+gsettings set apps.update-manager autoclose-install-window false
 gsettings set apps.update-manager first-run false
 gsettings set apps.update-manager show-details true
 gsettings set apps.update-manager show-versions true
+gsettings set ca.desrt.dconf-editor mouse-use-extra-buttons false
+gsettings set ca.desrt.dconf-editor show-warning false
+gsettings set ca.desrt.dconf-editor small-bookmarks-rows true
+gsettings set ca.desrt.dconf-editor small-keys-list-rows true
 gsettings set com.canonical.indicator.datetime show-date true
 gsettings set com.canonical.indicator.datetime show-day true
 gsettings set com.canonical.indicator.datetime show-seconds true
