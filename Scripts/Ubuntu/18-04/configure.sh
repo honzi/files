@@ -7,6 +7,17 @@
 git config --global user.name "Jan Hořava"
 git config --global user.email czechinthemail@gmail.com
 
+gsettings set apps.indicator-session suppress-logout-menuitem true
+gsettings set apps.update-manager first-run false
+gsettings set apps.update-manager show-details true
+gsettings set apps.update-manager show-versions true
+gsettings set com.canonical.indicator.datetime show-date true
+gsettings set com.canonical.indicator.datetime show-day true
+gsettings set com.canonical.indicator.datetime show-seconds true
+gsettings set com.canonical.indicator.datetime show-week-numbers true
+gsettings set com.canonical.indicator.datetime time-format "24-hour"
+gsettings set com.canonical.indicator.power show-percentage true
+gsettings set com.canonical.indicator.power show-time true
 gsettings set org.gnome.desktop.background color-shading-type "solid"
 gsettings set org.gnome.desktop.background picture-options "none"
 gsettings set org.gnome.desktop.background primary-color "#000000"
@@ -76,3 +87,4 @@ gsettings set org.gnome.nautilus.preferences executable-text-activation "ask"
 gsettings set org.gnome.nautilus.preferences mouse-use-extra-buttons false
 gsettings set org.gnome.nautilus.preferences show-create-link true
 gsettings set org.gnome.nautilus.preferences show-hidden-files true
+gsettings set org.gtk.settings.file-chooser show-hidden true
