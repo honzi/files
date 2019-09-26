@@ -33,16 +33,16 @@ for repository in $iterami_repositories
 do
     if [ -d $repository ]
     then
-        echo 'pulling https://github.com/iterami/'$repository
         cd $repository
         git pull
 
     else
         git clone --depth 1 https://github.com/iterami/$repository.git
         cd $repository
-        git remote set-url origin https://honzi@github.com/iterami/$repository.git
-        echo 'cloned and set origin url for https://github.com/iterami/'$repository
     fi
+
+    git remote set-url origin https://honzi@github.com/iterami/$repository.git
+    echo 'fetched and set origin url for https://github.com/iterami/'$repository
 
     cd ..
 
