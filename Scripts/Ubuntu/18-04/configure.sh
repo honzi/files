@@ -96,6 +96,7 @@ gsettings reset org.gnome.SessionManager auto-save-session
 gsettings reset org.gnome.SessionManager auto-save-session-one-shot
 gsettings reset org.gnome.SessionManager logout-prompt
 gsettings reset org.gnome.SessionManager show-fallback-warning
+gsettings reset org.gnome.Terminal.Legacy.Keybindings:/org/gnome/terminal/legacy/keybindings/ new-tab
 gsettings reset org.gnome.Terminal.Legacy.Settings confirm-close
 gsettings reset org.gnome.Terminal.Legacy.Settings default-show-menubar
 gsettings reset org.gnome.Terminal.Legacy.Settings menu-accelerator-enabled
@@ -293,7 +294,6 @@ gsettings set org.gnome.Terminal.Legacy.Keybindings:/org/gnome/terminal/legacy/k
 gsettings set org.gnome.Terminal.Legacy.Keybindings:/org/gnome/terminal/legacy/keybindings/ full-screen 'disabled'
 gsettings set org.gnome.Terminal.Legacy.Keybindings:/org/gnome/terminal/legacy/keybindings/ move-tab-left 'disabled'
 gsettings set org.gnome.Terminal.Legacy.Keybindings:/org/gnome/terminal/legacy/keybindings/ move-tab-right 'disabled'
-gsettings set org.gnome.Terminal.Legacy.Keybindings:/org/gnome/terminal/legacy/keybindings/ new-tab 'disabled'
 gsettings set org.gnome.Terminal.Legacy.Keybindings:/org/gnome/terminal/legacy/keybindings/ new-window 'disabled'
 gsettings set org.gnome.Terminal.Legacy.Keybindings:/org/gnome/terminal/legacy/keybindings/ next-tab 'disabled'
 gsettings set org.gnome.Terminal.Legacy.Keybindings:/org/gnome/terminal/legacy/keybindings/ paste 'disabled'
