@@ -1,0 +1,885 @@
+{
+  "fog-density": 0.00001,
+  "fog-state": true,
+  "multiplier-speed": 5,
+  "multiplier-jump": 3,
+  "paths": {
+    "path-moving-test-x": {
+      "end": -1,
+      "points": [
+        {
+          "translate-x": -75
+        },
+        {
+          "translate-x": 75
+        }
+      ]
+    },
+    "path-moving-test-y": {
+      "end": -1,
+      "points": [
+        {
+          "translate-y": -95
+        },
+        {
+          "translate-y": 0
+        }
+      ]
+    },
+    "path-moving-test-z": {
+      "end": -1,
+      "points": [
+        {
+          "translate-z": -95
+        },
+        {
+          "translate-z": -25
+        }
+      ]
+    }
+  },
+  "spawn-rotate-x": 25,
+  "spawn-rotate-y": 270,
+  "spawn-translate-z": 125,
+  "characters": [
+    {
+      "id": "facility",
+      "entities": [
+        {
+          "id": "billboard-x",
+          "attach-offset-x": 20,
+          "attach-offset-y": -85,
+          "attach-offset-z": -25,
+          "billboard": [
+            "x"
+          ],
+          "vertex-colors": [
+            1, 0, 0, 1,
+            1, 0, 0, 1,
+            1, 0, 0, 1
+          ],
+          "vertices": [
+            -5, 0, 0, 1,
+            5, 0, 0, 1,
+            0, 5, 0, 1
+          ]
+        },
+        {
+          "id": "billboard-xy",
+          "attach-offset-x": 20,
+          "attach-offset-y": -85,
+          "attach-offset-z": -35,
+          "billboard": [
+            "x",
+            "y"
+          ],
+          "vertex-colors": [
+            1, 1, 0, 1,
+            1, 1, 0, 1,
+            1, 1, 0, 1
+          ],
+          "vertices": [
+            -5, 0, 0, 1,
+            5, 0, 0, 1,
+            0, 5, 0, 1
+          ]
+        },
+        {
+          "id": "billboard-xyz",
+          "attach-offset-x": 30,
+          "attach-offset-y": -85,
+          "attach-offset-z": -45,
+          "billboard": [
+            "x",
+            "y",
+            "z"
+          ],
+          "vertex-colors": [
+            1, 1, 1, 1,
+            1, 1, 1, 1,
+            1, 1, 1, 1
+          ],
+          "vertices": [
+            -5, 0, 0, 1,
+            5, 0, 0, 1,
+            0, 5, 0, 1
+          ]
+        },
+        {
+          "id": "billboard-xz",
+          "attach-offset-x": 30,
+          "attach-offset-y": -85,
+          "attach-offset-z": -35,
+          "billboard": [
+            "x",
+            "z"
+          ],
+          "vertex-colors": [
+            1, 0, 1, 1,
+            1, 0, 1, 1,
+            1, 0, 1, 1
+          ],
+          "vertices": [
+            -5, 0, 0, 1,
+            5, 0, 0, 1,
+            0, 5, 0, 1
+          ]
+        },
+        {
+          "id": "billboard-yz",
+          "attach-offset-x": 40,
+          "attach-offset-y": -85,
+          "attach-offset-z": -35,
+          "billboard": [
+            "y",
+            "z"
+          ],
+          "vertex-colors": [
+            0, 1, 1, 1,
+            0, 1, 1, 1,
+            0, 1, 1, 1
+          ],
+          "vertices": [
+            -5, 0, 0, 1,
+            5, 0, 0, 1,
+            0, 5, 0, 1
+          ]
+        },
+        {
+          "id": "billboard-y",
+          "attach-offset-x": 30,
+          "attach-offset-y": -85,
+          "attach-offset-z": -25,
+          "billboard": [
+            "y"
+          ],
+          "vertex-colors": [
+            0, 1, 0, 1,
+            0, 1, 0, 1,
+            0, 1, 0, 1
+          ],
+          "vertices": [
+            -5, 0, 0, 1,
+            5, 0, 0, 1,
+            0, 5, 0, 1
+          ]
+        },
+        {
+          "id": "billboard-z",
+          "attach-offset-x": 40,
+          "attach-offset-y": -85,
+          "attach-offset-z": -25,
+          "billboard": [
+            "z"
+          ],
+          "vertex-colors": [
+            0, 0, 1, 1,
+            0, 0, 1, 1,
+            0, 0, 1, 1
+          ],
+          "vertices": [
+            -5, 0, 0, 1,
+            5, 0, 0, 1,
+            0, 5, 0, 1
+          ]
+        },
+        {
+          "id": "door-0",
+          "attach-offset-x": -99.99,
+          "attach-offset-y": -9,
+          "attach-offset-z": 125,
+          "event-modify": [
+            {
+              "amount": 90,
+              "set": true,
+              "stat": "translate-x"
+            },
+            {
+              "amount": -165,
+              "set": true,
+              "stat": "translate-y"
+            }
+          ],
+          "event-range": 0,
+          "rotate-z": 270,
+          "texture-id": "door.png",
+          "vertex-colors": [
+            1, 1, 1, 1,
+            1, 1, 1, 1,
+            1, 1, 1, 1,
+            1, 1, 1, 1
+          ],
+          "vertices": [
+            16, 0, -8, 1,
+            -16, 0, -8, 1,
+            -16, 0, 8, 1,
+            16, 0, 8, 1
+          ]
+        },
+        {
+          "id": "door-1",
+          "attach-offset-x": 99.99,
+          "attach-offset-y": -164,
+          "attach-offset-z": 125,
+          "event-modify": [
+            {
+              "amount": -90,
+              "set": true,
+              "stat": "translate-x"
+            },
+            {
+              "amount": -15,
+              "set": true,
+              "stat": "translate-y"
+            },
+            {
+              "amount": 125,
+              "set": true,
+              "stat": "translate-z"
+            }
+          ],
+          "event-range": 0,
+          "rotate-z": 90,
+          "texture-id": "door.png",
+          "vertex-colors": [
+            1, 1, 1, 1,
+            1, 1, 1, 1,
+            1, 1, 1, 1,
+            1, 1, 1, 1
+          ],
+          "vertices": [
+            16, 0, -8, 1,
+            -16, 0, -8, 1,
+            -16, 0, 8, 1,
+            16, 0, 8, 1
+          ]
+        },
+        {
+          "id": "door-2",
+          "attach-offset-x": -99.99,
+          "attach-offset-y": -164,
+          "attach-offset-z": 125,
+          "event-modify": [
+            {
+              "amount": 180,
+              "stat": "rotate-y"
+            },
+            {
+              "amount": -90,
+              "set": true,
+              "stat": "translate-x"
+            },
+            {
+              "amount": -90,
+              "set": true,
+              "stat": "translate-y"
+            },
+            {
+              "amount": 75,
+              "set": true,
+              "stat": "translate-z"
+            }
+          ],
+          "event-range": 0,
+          "rotate-z": 270,
+          "texture-id": "door.png",
+          "vertex-colors": [
+            1, 1, 1, 1,
+            1, 1, 1, 1,
+            1, 1, 1, 1,
+            1, 1, 1, 1
+          ],
+          "vertices": [
+            16, 0, -8, 1,
+            -16, 0, -8, 1,
+            -16, 0, 8, 1,
+            16, 0, 8, 1
+          ]
+        },
+        {
+          "id": "door-3",
+          "attach-offset-x": -99.99,
+          "attach-offset-y": -84,
+          "attach-offset-z": 75,
+          "event-modify": [
+            {
+              "amount": 180,
+              "stat": "rotate-y"
+            },
+            {
+              "amount": -90,
+              "set": true,
+              "stat": "translate-x"
+            },
+            {
+              "amount": -165,
+              "set": true,
+              "stat": "translate-y"
+            },
+            {
+              "amount": 125,
+              "set": true,
+              "stat": "translate-z"
+            }
+          ],
+          "event-range": 0,
+          "rotate-z": 270,
+          "texture-id": "door.png",
+          "vertex-colors": [
+            1, 1, 1, 1,
+            1, 1, 1, 1,
+            1, 1, 1, 1,
+            1, 1, 1, 1
+          ],
+          "vertices": [
+            16, 0, -8, 1,
+            -16, 0, -8, 1,
+            -16, 0, 8, 1,
+            16, 0, 8, 1
+          ]
+        },
+        {
+          "id": "door-4",
+          "attach-offset-y": -164,
+          "attach-offset-z": 149.99,
+          "event-modify": [
+            {
+              "amount": -65,
+              "set": true,
+              "stat": "translate-y"
+            },
+            {
+              "amount": 160,
+              "set": true,
+              "stat": "translate-z"
+            }
+          ],
+          "event-range": 0,
+          "rotate-x": 270,
+          "texture-align": [
+            1, 0,
+            0, 0,
+            0, 1,
+            1, 1
+          ],
+          "texture-id": "door.png",
+          "vertex-colors": [
+            1, 1, 1, 1,
+            1, 1, 1, 1,
+            1, 1, 1, 1,
+            1, 1, 1, 1
+          ],
+          "vertices": [
+            8, 0, -16, 1,
+            -8, 0, -16, 1,
+            -8, 0, 16, 1,
+            8, 0, 16, 1
+          ]
+        },
+        {
+          "id": "door-5",
+          "attach-offset-y": -65,
+          "attach-offset-z": 150.01,
+          "event-modify": [
+            {
+              "amount": -165,
+              "set": true,
+              "stat": "translate-y"
+            },
+            {
+              "amount": 140,
+              "set": true,
+              "stat": "translate-z"
+            }
+          ],
+          "event-range": 0,
+          "rotate-x": 90,
+          "texture-align": [
+            1, 0,
+            0, 0,
+            0, 1,
+            1, 1
+          ],
+          "texture-id": "door.png",
+          "vertex-colors": [
+            1, 1, 1, 1,
+            1, 1, 1, 1,
+            1, 1, 1, 1,
+            1, 1, 1, 1
+          ],
+          "vertices": [
+            8, 0, -16, 1,
+            -8, 0, -16, 1,
+            -8, 0, 16, 1,
+            8, 0, 16, 1
+          ]
+        },
+        {
+          "id": "normals-test",
+          "attach-offset-x": 75,
+          "attach-offset-y": -85,
+          "rotate-y": 90,
+          "rotate-z": 90,
+          "vertex-colors": [
+            0, 0.5, 0, 1,
+            0, 0.5, 0, 1,
+            0, 0.5, 0, 1,
+            0, 0.5, 0, 1
+          ],
+          "vertices": [
+            15, 0, -15, 1,
+            -15, 0, -15, 1,
+            -15, 0, 15, 1,
+            15, 0, 15, 1
+          ]
+        },
+        {
+          "id": "water-0",
+          "alpha": 0.4,
+          "attach-offset-y": -90,
+          "attach-offset-z": 250,
+          "collision": false,
+          "vertex-colors": [
+            0, 0, 1, 1,
+            0, 0, 1, 1,
+            0, 0, 1, 1,
+            0, 0, 1, 1
+          ],
+          "vertices": [
+            100, 0, -100, 1,
+            -100, 0, -100, 1,
+            -100, 0, 100, 1,
+            100, 0, 100, 1
+          ]
+        }
+      ]
+    },
+    {
+      "id": "cuboid-0",
+      "translate-y": -85
+    },
+    {
+      "id": "moving-test-x",
+      "entities": [
+        {
+          "id": "moving-test-x",
+          "vertex-colors": [
+            0.5, 0, 0, 1,
+            0.5, 0, 0, 1,
+            0.5, 0, 0, 1,
+            0.5, 0, 0, 1
+          ],
+          "vertices": [
+            15, 0, -15, 1,
+            -15, 0, -15, 1,
+            -15, 0, 15, 1,
+            15, 0, 15, 1
+          ]
+        }
+      ],
+      "path-id": "path-moving-test-x",
+      "translate-y": -85,
+      "translate-z": -85
+    },
+    {
+      "id": "moving-test-y",
+      "entities": [
+        {
+          "id": "moving-test-y",
+          "vertex-colors": [
+            0.5, 0, 0, 1,
+            0.5, 0, 0, 1,
+            0.5, 0, 0, 1,
+            0.5, 0, 0, 1
+          ],
+          "vertices": [
+            15, 0, -15, 1,
+            -15, 0, -15, 1,
+            -15, 0, 15, 1,
+            15, 0, 15, 1
+          ]
+        }
+      ],
+      "path-id": "path-moving-test-y",
+      "translate-y": -85,
+      "translate-z": -85
+    },
+    {
+      "id": "moving-test-z",
+      "entities": [
+        {
+          "id": "moving-test-z",
+          "rotate-x": 90,
+          "vertex-colors": [
+            0.5, 0, 0, 1,
+            0.5, 0, 0, 1,
+            0.5, 0, 0, 1,
+            0.5, 0, 0, 1
+          ],
+          "vertices": [
+            15, 0, -15, 1,
+            -15, 0, -15, 1,
+            -15, 0, 15, 1,
+            15, 0, 15, 1
+          ]
+        }
+      ],
+      "path-id": "path-moving-test-z",
+      "translate-y": -85,
+      "translate-z": -85
+    },
+    {
+      "id": "npc-0",
+      "entities": [
+        {
+          "id": "npc-0-face",
+          "billboard": "y",
+          "collision": false,
+          "vertex-colors": [
+            1, 0, 0, 1,
+            0, 1, 0, 1,
+            0, 0, 1, 1
+          ],
+          "vertices": [
+            -2, 0, 0, 1,
+            2, 0, 0, 1,
+            0, 2, 0, 1
+          ]
+        }
+      ],
+      "inventory": {
+        "test-hat": {
+          "amount": 100,
+          "entities": [
+            {
+              "attach-offset-y": 2.5,
+              "billboard": [
+                "y"
+              ],
+              "collision": false,
+              "vertex-colors": [
+                1, 0, 0, 1,
+                0, 1, 0, 1,
+                0, 0, 1, 1
+              ],
+              "vertices": [
+                -2, 0, 0, 1,
+                2, 0, 0, 1,
+                0, 2, 0, 1
+              ]
+            }
+          ],
+          "equipped": false,
+          "spell": false,
+          "stats": {}
+        }
+      },
+      "level": 64,
+      "talk": "Welcome to the facility!",
+      "trade": [
+        {
+          "get-amount": 10,
+          "get-id": "Coins",
+          "give-amount": 1,
+          "give-id": "test-hat"
+        }
+      ],
+      "translate-x": -50,
+      "translate-y": -85,
+      "translate-z": 50
+    },
+    {
+      "id": "tree-0",
+      "translate-x": -25,
+      "translate-y": -100
+    },
+    {
+      "id": "tree-1",
+      "translate-x": -50,
+      "translate-y": -100
+    }
+  ],
+  "prefabs": [
+    {
+      "type": "prefabs_webgl_cuboid",
+      "properties": {
+        "prefix": "chamber-test",
+        "all": {
+          "texture-id": "stone.png",
+          "texture-repeat-x": 20,
+          "texture-repeat-y": 20
+        },
+        "character": "facility",
+        "random-colors": true,
+        "size-x": -200,
+        "size-y": -200,
+        "size-z": -200
+      }
+    },
+    {
+      "type": "prefabs_webgl_cuboid",
+      "properties": {
+        "prefix": "chamber-water",
+        "all": {
+          "texture-id": "stone.png",
+          "texture-repeat-x": 20,
+          "texture-repeat-y": 20
+        },
+        "character": "facility",
+        "random-colors": true,
+        "size-x": -200,
+        "size-y": -200,
+        "size-z": -200,
+        "translate-z": 250
+      }
+    },
+    {
+      "type": "prefabs_webgl_cuboid",
+      "properties": {
+        "prefix": "chamber-water-platform",
+        "all": {
+          "texture-id": "stone.png",
+          "texture-repeat-x": 3,
+          "texture-repeat-y": 3
+        },
+        "back": {
+          "exclude": true
+        },
+        "bottom": {
+          "exclude": true
+        },
+        "character": "facility",
+        "random-colors": true,
+        "size-x": 30,
+        "size-y": 30,
+        "size-z": 30,
+        "translate-y": -95,
+        "translate-z": 165
+      }
+    },
+    {
+      "type": "prefabs_webgl_cuboid",
+      "properties": {
+        "prefix": "corridor-0",
+        "all": {
+          "vertex-colors": [
+            0.2, 0.2, 0.2, 1,
+            0.2, 0.2, 0.2, 1,
+            0.2, 0.2, 0.2, 1,
+            0.2, 0.2, 0.2, 1
+          ]
+        },
+        "back": {
+          "texture-align": [
+            1, 0,
+            0, 0,
+            0, 1,
+            1, 1
+          ],
+          "texture-id": "wall.png",
+          "texture-repeat-x": 20
+        },
+        "character": "facility",
+        "front": {
+          "texture-align": [
+            1, 0,
+            0, 0,
+            0, 1,
+            1, 1
+          ],
+          "texture-id": "wall.png",
+          "texture-repeat-x": 20
+        },
+        "left": {
+          "texture-id": "wall.png",
+          "texture-repeat-x": 5
+        },
+        "right": {
+          "texture-id": "wall.png",
+          "texture-repeat-x": 5
+        },
+        "size-x": -200,
+        "size-y": -50,
+        "size-z": -50,
+        "top": {
+          "texture-id": "stone.png",
+          "texture-repeat-x": 5,
+          "texture-repeat-y": 20
+        },
+        "translate-y": -155,
+        "translate-z": 125
+      }
+    },
+    {
+      "type": "prefabs_webgl_cuboid",
+      "properties": {
+        "prefix": "cuboid-0",
+        "all": {
+          "texture-id": "debug.png",
+          "vertex-colors": [
+            1, 1, 1, 1,
+            1, 1, 1, 1,
+            1, 1, 1, 1,
+            1, 1, 1, 1
+          ]
+        },
+        "character": "cuboid-0",
+        "size-x": 10,
+        "size-y": 10,
+        "size-z": 10
+      }
+    },
+    {
+      "type": "prefabs_webgl_cuboid",
+      "properties": {
+        "prefix": "observation-0",
+        "all": {
+          "vertex-colors": [
+            0.2, 0.2, 0.2, 1,
+            0.2, 0.2, 0.2, 1,
+            0.2, 0.2, 0.2, 1,
+            0.2, 0.2, 0.2, 1
+          ]
+        },
+        "back": {
+          "draw": false
+        },
+        "character": "facility",
+        "front": {
+          "draw": false
+        },
+        "left": {
+          "texture-id": "wall.png",
+          "texture-repeat-x": 5
+        },
+        "right": {
+          "texture-id": "wall.png",
+          "texture-repeat-x": 5
+        },
+        "size-x": -200,
+        "size-y": -50,
+        "size-z": -50,
+        "top": {
+          "texture-id": "stone.png",
+          "texture-repeat-x": 5,
+          "texture-repeat-y": 20
+        },
+        "translate-z": 125
+      }
+    },
+    {
+      "type": "prefabs_webgl_cuboid_tree",
+      "properties": {
+        "prefix": "tree-0",
+        "character": "tree-0"
+      }
+    },
+    {
+      "type": "prefabs_webgl_lines_tree",
+      "properties": {
+        "prefix": "tree-1",
+        "character": "tree-1"
+      }
+    },
+    {
+      "type": "prefabs_webgl_tiles",
+      "properties": {
+        "prefix": "test-tiles",
+        "character": "facility",
+        "tiles": [
+          {
+            "attach-offset-x": 15,
+            "entities": [
+              {
+                "attach-offset-x": 6,
+                "rotate-z": 90,
+                "texture-id": "stone.png",
+                "texture-repeat-x": 2,
+                "texture-repeat-y": 2,
+                "vertex-colors": [
+                  0, 1, 0, 1,
+                  0, 1, 0, 1,
+                  0, 1, 0, 1,
+                  0, 1, 0, 1
+                ],
+                "vertices": [
+                  10, 0, -10, 1,
+                  -10, 0, -10, 1,
+                  -10, 0, 10, 1,
+                  10, 0, 10, 1
+                ]
+              },
+              {
+                "attach-offset-x": 6,
+                "rotate-z": 270,
+                "texture-id": "stone.png",
+                "texture-repeat-x": 2,
+                "texture-repeat-y": 2,
+                "vertex-colors": [
+                  0, 0, 1, 1,
+                  0, 0, 1, 1,
+                  0, 0, 1, 1,
+                  0, 0, 1, 1
+                ],
+                "vertices": [
+                  10, 0, -10, 1,
+                  -10, 0, -10, 1,
+                  -10, 0, 10, 1,
+                  10, 0, 10, 1
+                ]
+              }
+            ]
+          },
+          {
+            "attach-offset-x": 15,
+            "attach-rotate-y": 270,
+            "entities": [
+              {
+                "attach-offset-x": 6,
+                "rotate-z": 90,
+                "texture-id": "stone.png",
+                "texture-repeat-x": 2,
+                "texture-repeat-y": 2,
+                "vertex-colors": [
+                  1, 0, 0, 1,
+                  1, 0, 0, 1,
+                  1, 0, 0, 1,
+                  1, 0, 0, 1
+                ],
+                "vertices": [
+                  10, 0, -10, 1,
+                  -10, 0, -10, 1,
+                  -10, 0, 10, 1,
+                  10, 0, 10, 1
+                ]
+              },
+              {
+                "attach-offset-x": 6,
+                "rotate-z": 270,
+                "texture-id": "stone.png",
+                "texture-repeat-x": 2,
+                "texture-repeat-y": 2,
+                "vertex-colors": [
+                  0, 0, 1, 1,
+                  0, 0, 1, 1,
+                  0, 0, 1, 1,
+                  0, 0, 1, 1
+                ],
+                "vertices": [
+                  10, 0, -10, 1,
+                  -10, 0, -10, 1,
+                  -10, 0, 10, 1,
+                  10, 0, 10, 1
+                ]
+              }
+            ]
+          }
+        ],
+        "tiles-max": 5,
+        "tiles-min": 3,
+        "translate-y": -90,
+        "translate-z": 75
+      }
+    }
+  ]
+}
