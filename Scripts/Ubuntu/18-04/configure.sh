@@ -149,6 +149,8 @@ gsettings reset org.gnome.gedit.plugins.pythonconsole use-system-font
 gsettings reset org.gnome.gedit.plugins.time custom-format
 gsettings reset org.gnome.gedit.plugins.time prompt-type
 gsettings reset org.gnome.gedit.plugins.time selected-format
+gsettings reset org.gnome.gedit.state.history-entry replace-with-entry
+gsettings reset org.gnome.gedit.state.history-entry search-for-entry
 gsettings reset org.gnome.gnome-panel.general confirm-panel-removal
 gsettings reset org.gnome.gnome-panel.general enable-tooltips
 gsettings reset org.gnome.gnome-panel.general panel-menu
@@ -251,6 +253,11 @@ gsettings reset org.gnome.power-manager info-page-number
 gsettings reset org.gnome.power-manager info-stats-graph-points
 gsettings reset org.gnome.power-manager info-stats-graph-smooth
 gsettings reset org.gnome.power-manager info-stats-type
+gsettings reset org.gnome.settings-daemon.peripherals.mouse double-click
+gsettings reset org.gnome.settings-daemon.peripherals.mouse drag-threshold
+gsettings reset org.gnome.settings-daemon.peripherals.mouse locate-pointer
+gsettings reset org.gnome.system.location enabled
+gsettings reset org.gnome.system.location max-accuracy-level
 gsettings reset org.gtk.Settings.ColorChooser custom-colors
 gsettings reset org.gtk.Settings.ColorChooser selected-color
 gsettings reset org.gtk.Settings.Debug enable-inspector-keybinding
@@ -281,6 +288,7 @@ gsettings set com.ubuntu.update-manager autoclose-install-window false
 gsettings set com.ubuntu.update-manager first-run false
 gsettings set com.ubuntu.update-manager show-details true
 gsettings set com.ubuntu.update-manager show-versions true
+gsettings set org.gnome.ControlCenter last-panel 'background'
 gsettings set org.gnome.GWeather distance-unit 'km'
 gsettings set org.gnome.GWeather speed-unit 'ms'
 gsettings set org.gnome.GWeather temperature-unit 'centigrade'
