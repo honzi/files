@@ -11,6 +11,7 @@ xgamma -gamma 1
 xinput disable 'ETPS/2 Elantech Touchpad'
 
 # Cleanup various directories.
+> ~/.bash_history
 sudo rm -rf ~/.local/share/Trash/*
 sudo rm -rf ~/.minecraft/crash-reports/*
 sudo rm -rf ~/.minecraft/logs/*
