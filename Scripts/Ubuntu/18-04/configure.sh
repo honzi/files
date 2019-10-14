@@ -395,3 +395,5 @@ gsettings set org.gnome.nautilus.preferences show-create-link true
 gsettings set org.gnome.nautilus.preferences show-hidden-files true
 gsettings set org.gnome.nm-applet disable-wifi-create true
 gsettings set org.gtk.Settings.FileChooser show-hidden true
+
+killall indicator-messages-service
