@@ -6,7 +6,6 @@
 # Reset various settings.
 sh ~/.iterami/repositories/Scripts/ubuntu/xrandr-scale.sh eDP1 1600 900 1920 1080 1.2 1.2
 xgamma -gamma 1
-xinput disable 'ETPS/2 Elantech Touchpad'
 
 # Cleanup various directories.
 > ~/.bash_history
@@ -20,6 +19,8 @@ sudo rm -rf ~/.wine/drive_c/users/honzi/My\ Documents/EVE/logs/Gamelogs/*
 
 # Stop various processes.
 killall indicator-messages-service
+sudo modprobe -r uvcvideo
+xinput disable 'ETPS/2 Elantech Touchpad'
 
 # Update everything.
 sudo apt-get update
