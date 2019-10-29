@@ -16,6 +16,7 @@ killall indicator-messages-service
 
 # Cleanup various directories.
 > ~/.bash_history
+sudo rm -rf ~/.cache/thumbnails/*
 sudo rm -rf ~/.local/share/Trash/*
 sudo rm -rf ~/.minecraft/crash-reports/*
 sudo rm -rf ~/.minecraft/logs/*

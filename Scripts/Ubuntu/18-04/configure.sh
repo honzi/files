@@ -229,7 +229,6 @@ gsettings reset org.gnome.nautilus.preferences search-filter-time-type
 gsettings reset org.gnome.nautilus.preferences search-view
 gsettings reset org.gnome.nautilus.preferences show-delete-permanently
 gsettings reset org.gnome.nautilus.preferences show-directory-item-counts
-gsettings reset org.gnome.nautilus.preferences show-image-thumbnails
 gsettings reset org.gnome.nautilus.preferences show-move-to-trash-shortcut-changed-dialog
 gsettings reset org.gnome.nautilus.preferences tabs-open-position
 gsettings reset org.gnome.nautilus.preferences thumbnail-limit
@@ -393,6 +392,7 @@ gsettings set org.gnome.nautilus.preferences executable-text-activation 'ask'
 gsettings set org.gnome.nautilus.preferences mouse-use-extra-buttons false
 gsettings set org.gnome.nautilus.preferences show-create-link true
 gsettings set org.gnome.nautilus.preferences show-hidden-files true
+gsettings set org.gnome.nautilus.preferences show-image-thumbnails 'never'
 gsettings set org.gnome.nm-applet disable-wifi-create true
 gsettings set org.gtk.Settings.FileChooser show-hidden true
 
