@@ -96,6 +96,7 @@ gsettings reset org.gnome.SessionManager auto-save-session
 gsettings reset org.gnome.SessionManager auto-save-session-one-shot
 gsettings reset org.gnome.SessionManager logout-prompt
 gsettings reset org.gnome.SessionManager show-fallback-warning
+gsettings reset org.gnome.Terminal.Legacy.Keybindings:/org/gnome/terminal/legacy/keybindings/ close-tab
 gsettings reset org.gnome.Terminal.Legacy.Keybindings:/org/gnome/terminal/legacy/keybindings/ new-tab
 gsettings reset org.gnome.Terminal.Legacy.Settings confirm-close
 gsettings reset org.gnome.Terminal.Legacy.Settings default-show-menubar
@@ -291,7 +292,6 @@ gsettings set org.gnome.ControlCenter last-panel 'background'
 gsettings set org.gnome.GWeather distance-unit 'km'
 gsettings set org.gnome.GWeather speed-unit 'ms'
 gsettings set org.gnome.GWeather temperature-unit 'centigrade'
-gsettings set org.gnome.Terminal.Legacy.Keybindings:/org/gnome/terminal/legacy/keybindings/ close-tab 'disabled'
 gsettings set org.gnome.Terminal.Legacy.Keybindings:/org/gnome/terminal/legacy/keybindings/ close-window 'disabled'
 gsettings set org.gnome.Terminal.Legacy.Keybindings:/org/gnome/terminal/legacy/keybindings/ copy 'disabled'
 gsettings set org.gnome.Terminal.Legacy.Keybindings:/org/gnome/terminal/legacy/keybindings/ find 'disabled'
