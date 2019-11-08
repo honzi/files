@@ -1,1 +1,0 @@
-/home/honzi/.iterami/repositories/files/Scripts/Ubuntu/18-04/wakeup.sh
