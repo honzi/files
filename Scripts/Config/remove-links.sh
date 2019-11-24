@@ -29,9 +29,10 @@ destinations=(
   "$HOME/.steam/steam/steamapps/common/The Stanley Parable/thestanleyparable/cfg/autoexec.cfg"
   "$HOME/.wine/drive_c/Program Files (x86)/Thief - Deadly Shadows Demo/System/Default.ini"
   "$HOME/.wine/drive_c/Program Files (x86)/Thief - Deadly Shadows Demo/System/T3UI.ini"
+  "$HOME/Documents/Thief - Deadly Shadows Demo/SaveGames/User Options/options.ini"
 )
 
-for i in {0..23}
+for i in {0..24}
 do
     rm "${destinations[i]}"
 done
