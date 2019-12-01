@@ -1,0 +1,24 @@
+<Attributes Version="7">
+ <Attr name="Activated" value="1"/>
+ <Attr name="Option.fsaa_mode" value=""/>
+ <Attr name="Option.g_difficultyLevel" value="4"/>
+ <Attr name="Option.hud_voicemode" value="0"/>
+ <Attr name="OptionCfg.g_blood" value="1"/>
+ <Attr name="OptionCfg.g_quickGame_map" value=""/>
+ <Attr name="OptionCfg.hud_subtitles" value="1"/>
+ <Attr name="OptionCfg.r_Fullscreen" value="0"/>
+ <Attr name="OptionCfg.r_Height" value="900"/>
+ <Attr name="OptionCfg.r_Width" value="1400"/>
+ <Attr name="OptionCfg.sys_spec_GameEffects" value="1"/>
+ <Attr name="OptionCfg.sys_spec_Particles" value="1"/>
+ <Attr name="OptionCfg.sys_spec_PostProcessing" value="1"/>
+ <Attr name="OptionCfg.sys_spec_Shading" value="1"/>
+ <Attr name="OptionCfg.sys_spec_Shadows" value="1"/>
+ <Attr name="OptionCfg.sys_spec_Sound" value="1"/>
+ <Attr name="OptionCfg.sys_spec_Texture" value="1"/>
+ <Attr name="OptionCfg.sys_spec_VolumetricEffects" value="2"/>
+ <Attr name="OptionCfg.sys_spec_Water" value="1"/>
+ <Attr name="Singleplayer.LastSavedGame" value="SNEAK-0.CRYSISJMSF"/>
+ <Attr name="Singleplayer.LastSelectedDifficulty" value="4"/>
+ <Attr name="Singleplayer.SaveRunningID" value="10"/>
+</Attributes>
