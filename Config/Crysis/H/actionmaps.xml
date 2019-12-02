@@ -1,0 +1,510 @@
+<ActionMaps>
+ <actionmap name="debug" version="19">
+  <action name="godmode" onPress="1" noModifiers="1">
+   <key name="f4"/>
+  </action>
+  <action name="debug" onPress="1">
+   <key name="7"/>
+  </action>
+  <action name="ulammo" onPress="1" noModifiers="1">
+   <key name="np_2"/>
+  </action>
+  <action name="thirdperson" onPress="1" noModifiers="1">
+   <key name="f1"/>
+  </action>
+  <action name="flymode" onPress="1" noModifiers="1">
+   <key name="f3"/>
+  </action>
+  <action name="debug_ag_step" onPress="1">
+   <key name="backslash"/>
+  </action>
+  <action name="tweak_dec" onPress="1">
+   <key name="np_subtract"/>
+  </action>
+  <action name="tweak_left" onPress="1">
+   <key name="left"/>
+   <key name="np_4"/>
+  </action>
+  <action name="tweak_up" onPress="1">
+   <key name="up"/>
+   <key name="np_8"/>
+  </action>
+  <action name="tweak_right" onPress="1">
+   <key name="right"/>
+   <key name="np_6"/>
+  </action>
+  <action name="tweak_down" onPress="1">
+   <key name="down"/>
+   <key name="np_2"/>
+  </action>
+  <action name="tweak_inc" onPress="1">
+   <key name="np_add"/>
+  </action>
+  <action name="tweak_enable" onPress="1">
+   <key name="np_enter"/>
+  </action>
+ </actionmap>
+ <actionmap name="default" version="19">
+  <action name="hud_mousey">
+   <key name="maxis_y"/>
+   <key name="xi_thumbry"/>
+  </action>
+  <action name="xi_use" onPress="1" onRelease="1">
+   <key name="xi_x"/>
+  </action>
+  <action name="hud_select3" onPress="1">
+   <key name="3"/>
+  </action>
+  <action name="objectives" onPress="1" onRelease="1">
+   <key name="o"/>
+  </action>
+  <action name="hud_mousex">
+   <key name="maxis_x"/>
+   <key name="xi_thumbrx"/>
+  </action>
+  <action name="hud_openchat" onPress="1">
+   <key name="y"/>
+  </action>
+  <action name="hud_select5" onPress="1">
+   <key name="5"/>
+  </action>
+  <action name="hud_suit_mod" onPress="1" onRelease="1">
+   <key name="key"/>
+   <key name="xi_triggerl_btn"/>
+  </action>
+  <action name="hud_buy_weapons" onPress="1">
+   <key name="p"/>
+   <key name="xi_dpad_right"/>
+  </action>
+  <action name="zoom" onPress="1" onRelease="1">
+   <key name="mouse2"/>
+  </action>
+  <action name="use" onPress="1" onRelease="1">
+   <key name="f"/>
+  </action>
+  <action name="attack1" onPress="1" onRelease="1">
+   <key name="mouse1"/>
+   <key name="xi_triggerr_btn"/>
+  </action>
+  <action name="hud_select2" onPress="1">
+   <key name="2"/>
+  </action>
+  <action name="firemode" onPress="1">
+   <key name="x"/>
+   <key name="xi_dpad_up"/>
+  </action>
+  <action name="hud_select4" onPress="1">
+   <key name="4"/>
+  </action>
+  <action name="voice_chat_talk" onPress="1" onRelease="1">
+   <key name="key"/>
+  </action>
+  <action name="hud_suit_menu" onPress="1" onRelease="1">
+   <key name="mouse3"/>
+  </action>
+  <action name="xi_disconnect" onPress="1" onRelease="1">
+   <key name="disconnect"/>
+  </action>
+  <action name="xi_zoom" onPress="1" onRelease="1">
+   <key name="xi_shoulderr"/>
+  </action>
+  <action name="hud_mouseclick" onPress="1" onRelease="1">
+   <key name="mouse1"/>
+  </action>
+  <action name="hud_select1" onPress="1">
+   <key name="1"/>
+  </action>
+  <action name="buyammo" onPress="1" consoleCmd="1">
+   <key name="period"/>
+  </action>
+  <action name="skip_cutscene" onPress="1" noModifiers="1">
+   <key name="space"/>
+  </action>
+  <action name="xi_hud_back" onPress="1" onRelease="1">
+   <key name="xi_back"/>
+  </action>
+  <action name="hud_pda_scroll" onPress="1">
+   <key name="backspace"/>
+  </action>
+  <action name="cycle_spectator_mode" onPress="1">
+   <key name="space"/>
+  </action>
+  <action name="hud_mptutorial_disable" onPress="1">
+   <key name="end"/>
+  </action>
+  <action name="hud_night_vision" onPress="1">
+   <key name="n"/>
+  </action>
+  <action name="xi_hud_show_pda_map" onPress="1" onRelease="1">
+   <key name="xi_start"/>
+  </action>
+  <action name="hud_show_pda_map" onPress="1">
+   <key name="m"/>
+  </action>
+  <action name="hud_toggle_scoreboard_cursor" onPress="1" onRelease="1">
+   <key name="space"/>
+  </action>
+  <action name="hud_hide_multiplayer_scoreboard" onRelease="1">
+   <key name="tab"/>
+  </action>
+  <action name="hud_show_multiplayer_scoreboard" onPress="1">
+   <key name="tab"/>
+  </action>
+  <action name="hud_mouserightbtnup" onRelease="1">
+   <key name="mouse2"/>
+  </action>
+  <action name="hud_mouserightbtndown" onPress="1">
+   <key name="mouse2"/>
+  </action>
+  <action name="hud_mousewheeldown" onPress="1">
+   <key name="mwheel_down"/>
+  </action>
+  <action name="hud_mousewheelup" onPress="1">
+   <key name="mwheel_up"/>
+  </action>
+  <action name="hud_openteamchat" onPress="1">
+   <key name="u"/>
+  </action>
+  <action name="xi_hud_mouseclick" onPress="1" onRelease="1">
+   <key name="xi_a"/>
+  </action>
+  <action name="prev_spectator_target" onPress="1">
+   <key name="left"/>
+  </action>
+  <action name="next_spectator_target" onPress="1">
+   <key name="right"/>
+   <key name="mouse2"/>
+  </action>
+ </actionmap>
+ <actionmap name="helicopter" version="19">
+  <action name="v_rotatedir" always="1">
+   <key name="maxis_x"/>
+  </action>
+  <action name="v_rotatepitch" always="1">
+   <key name="maxis_y"/>
+  </action>
+  <action name="v_pitchup" onPress="1" onRelease="1">
+   <key name="r"/>
+  </action>
+  <action name="v_movedown" onPress="1" onRelease="1" retriggerable="1">
+   <key name="s"/>
+  </action>
+  <action name="v_moveup" onPress="1" onRelease="1" retriggerable="1">
+   <key name="w"/>
+  </action>
+  <action name="v_rollleft" onPress="1" onRelease="1" onHold="1">
+   <key name="a"/>
+  </action>
+  <action name="v_rollright" onPress="1" onRelease="1" onHold="1">
+   <key name="d"/>
+  </action>
+  <action name="v_brake" onPress="1" onRelease="1">
+   <key name="key"/>
+  </action>
+  <action name="v_boost" onPress="1" onRelease="1" retriggerable="1">
+   <key name="lshift"/>
+   <key name="xi_shoulderl"/>
+  </action>
+  <action name="v_pitchdown" onPress="1" onRelease="1">
+   <key name="c"/>
+  </action>
+ </actionmap>
+ <actionmap name="landvehicle" version="19">
+  <action name="v_moveforward" onPress="1" onRelease="1" retriggerable="1">
+   <key name="w"/>
+  </action>
+  <action name="v_moveback" onPress="1" onRelease="1" retriggerable="1">
+   <key name="s"/>
+  </action>
+  <action name="v_turnleft" onPress="1" onRelease="1" retriggerable="1">
+   <key name="a"/>
+  </action>
+  <action name="v_turnright" onPress="1" onRelease="1" retriggerable="1">
+   <key name="d"/>
+  </action>
+  <action name="v_rollleft" onPress="1" onRelease="1">
+   <key name="q"/>
+  </action>
+  <action name="v_rollright" onPress="1" onRelease="1">
+   <key name="e"/>
+  </action>
+  <action name="v_brake" onPress="1" onRelease="1">
+   <key name="space"/>
+   <key name="xi_a"/>
+  </action>
+  <action name="v_boost" onPress="1" onRelease="1" retriggerable="1">
+   <key name="lshift"/>
+   <key name="xi_shoulderl"/>
+  </action>
+ </actionmap>
+ <actionmap name="multiplayer" version="19">
+  <action name="radio_group_2" onPress="1">
+   <key name="f7"/>
+  </action>
+  <action name="radio_group_0" onPress="1">
+   <key name="f5"/>
+  </action>
+  <action name="radio_group_1" onPress="1">
+   <key name="f6"/>
+  </action>
+  <action name="radio_group_3" onPress="1">
+   <key name="f8"/>
+  </action>
+ </actionmap>
+ <actionmap name="player" version="19">
+  <action name="horn" onPress="1" onRelease="1">
+   <key name="h"/>
+  </action>
+  <action name="previtem" onPress="1">
+   <key name="mwheel_down"/>
+  </action>
+  <action name="xi_rotateyaw">
+   <key name="xi_thumbrx"/>
+  </action>
+  <action name="small" onPress="1">
+   <key name="1"/>
+  </action>
+  <action name="xi_movey">
+   <key name="xi_thumbly"/>
+  </action>
+  <action name="gboots" onPress="1">
+   <key name="n"/>
+  </action>
+  <action name="drop" onPress="1" onRelease="1">
+   <key name="key"/>
+  </action>
+  <action name="lights" onPress="1">
+   <key name="l"/>
+  </action>
+  <action name="moveforward" onPress="1" onRelease="1" retriggerable="1">
+   <key name="w"/>
+  </action>
+  <action name="crouch" onPress="1" onRelease="1">
+   <key name="c"/>
+   <key name="xi_thumbl"/>
+  </action>
+  <action name="moveback" onPress="1" onRelease="1" retriggerable="1">
+   <key name="s"/>
+  </action>
+  <action name="grenade" onPress="1" onRelease="1">
+   <key name="g"/>
+  </action>
+  <action name="jump" onPress="1" onRelease="1">
+   <key name="space"/>
+   <key name="xi_a"/>
+  </action>
+  <action name="explosive" onPress="1">
+   <key name="3"/>
+  </action>
+  <action name="utility" onPress="1">
+   <key name="5"/>
+  </action>
+  <action name="zoom_in" onPress="1">
+   <key name="mwheel_up"/>
+   <key name="xi_shoulderr"/>
+  </action>
+  <action name="leanright" onPress="1" onRelease="1" onHold="1">
+   <key name="e"/>
+  </action>
+  <action name="nextitem" onPress="1">
+   <key name="mwheel_up"/>
+   <key name="xi_dpad_left"/>
+  </action>
+  <action name="xi_rotatepitch">
+   <key name="xi_thumbry"/>
+  </action>
+  <action name="sprint" onPress="1" onRelease="1" retriggerable="1">
+   <key name="lshift"/>
+   <key name="xi_shoulderl"/>
+  </action>
+  <action name="medium" onPress="1">
+   <key name="2"/>
+  </action>
+  <action name="special" onPress="1" onRelease="1">
+   <key name="t"/>
+   <key name="xi_thumbr"/>
+  </action>
+  <action name="leanleft" onPress="1" onRelease="1" onHold="1">
+   <key name="q"/>
+  </action>
+  <action name="handgrenade" onPress="1">
+   <key name="h"/>
+  </action>
+  <action name="moveleft" onPress="1" onRelease="1" retriggerable="1">
+   <key name="a"/>
+  </action>
+  <action name="prone" onPress="1">
+   <key name="v"/>
+  </action>
+  <action name="moveright" onPress="1" onRelease="1" retriggerable="1">
+   <key name="d"/>
+  </action>
+  <action name="binoculars" onPress="1">
+   <key name="b"/>
+   <key name="xi_b"/>
+  </action>
+  <action name="reload" onPress="1">
+   <key name="r"/>
+   <key name="xi_x"/>
+  </action>
+  <action name="hud_weapon_mod" onPress="1">
+   <key name="j"/>
+   <key name="xi_dpad_down"/>
+  </action>
+  <action name="zoom_out" onPress="1">
+   <key name="mwheel_down"/>
+   <key name="xi_shoulderl"/>
+  </action>
+  <action name="xi_handgrenade" onPress="1" onRelease="1">
+   <key name="xi_y"/>
+  </action>
+  <action name="xi_grenade" onPress="1" onRelease="1">
+   <key name="xi_y"/>
+  </action>
+  <action name="xi_movex">
+   <key name="xi_thumblx"/>
+  </action>
+  <action name="suitmode" onPress="1">
+   <key name="4"/>
+  </action>
+  <action name="rotateyaw">
+   <key name="maxis_x"/>
+  </action>
+  <action name="rotatepitch">
+   <key name="maxis_y"/>
+  </action>
+ </actionmap>
+ <actionmap name="seavehicle" version="19">
+  <action name="v_moveforward" onPress="1" onRelease="1" retriggerable="1">
+   <key name="w"/>
+  </action>
+  <action name="v_moveback" onPress="1" onRelease="1" retriggerable="1">
+   <key name="s"/>
+  </action>
+  <action name="v_turnleft" onPress="1" onRelease="1" retriggerable="1">
+   <key name="a"/>
+  </action>
+  <action name="v_turnright" onPress="1" onRelease="1" retriggerable="1">
+   <key name="d"/>
+  </action>
+  <action name="v_brake" onPress="1" onRelease="1">
+   <key name="space"/>
+   <key name="xi_a"/>
+  </action>
+  <action name="v_boost" onPress="1" onRelease="1" onHold="1" retriggerable="1">
+   <key name="lshift"/>
+   <key name="xi_shoulderl"/>
+  </action>
+ </actionmap>
+ <actionmap name="singleplayer" version="19">
+  <action name="load" onPress="1" consoleCmd="1">
+   <key name="f8"/>
+  </action>
+  <action name="save" onPress="1" consoleCmd="1">
+   <key name="f5"/>
+  </action>
+  <action name="loadLastSave" onPress="1" consoleCmd="1">
+   <key name="f9"/>
+  </action>
+ </actionmap>
+ <actionmap name="vehicle" version="19">
+  <action name="v_zoom_out" onPress="1">
+   <key name="mwheel_down"/>
+  </action>
+  <action name="v_changeseat5" onPress="1">
+   <key name="5"/>
+  </action>
+  <action name="v_changeseat3" onPress="1">
+   <key name="3"/>
+  </action>
+  <action name="v_zoom_in" onPress="1">
+   <key name="mwheel_up"/>
+  </action>
+  <action name="use" onPress="1" onRelease="1">
+   <key name="xi_x"/>
+  </action>
+  <action name="v_horn" onPress="1" onRelease="1">
+   <key name="r"/>
+   <key name="xi_thumbr"/>
+  </action>
+  <action name="v_changeseat1" onPress="1">
+   <key name="1"/>
+  </action>
+  <action name="v_rotateyaw">
+   <key name="maxis_x"/>
+  </action>
+  <action name="v_changeseat2" onPress="1">
+   <key name="2"/>
+  </action>
+  <action name="v_changeseat4" onPress="1">
+   <key name="4"/>
+  </action>
+  <action name="v_changeview" onPress="1">
+   <key name="v"/>
+   <key name="xi_b"/>
+  </action>
+  <action name="v_lights" onPress="1" onRelease="1">
+   <key name="g"/>
+   <key name="xi_thumbl"/>
+  </action>
+  <action name="binoculars" onPress="1">
+   <key name="b"/>
+  </action>
+  <action name="xi_v_rotateyaw">
+   <key name="xi_thumbrx"/>
+  </action>
+  <action name="v_rotatepitch">
+   <key name="maxis_y"/>
+  </action>
+  <action name="v_changeseat" onPress="1">
+   <key name="xi_y"/>
+  </action>
+  <action name="xi_v_movey">
+   <key name="xi_thumbly"/>
+  </action>
+  <action name="xi_v_movex">
+   <key name="xi_thumblx"/>
+  </action>
+  <action name="xi_v_rotatepitch">
+   <key name="xi_thumbry"/>
+  </action>
+ </actionmap>
+ <actionmap name="vtol" version="19">
+  <action name="v_strafeleft" onPress="1" onRelease="1" onHold="1">
+   <key name="a"/>
+  </action>
+  <action name="v_rotatedir" always="1">
+   <key name="maxis_x"/>
+  </action>
+  <action name="v_moveforward" onPress="1" onRelease="1" retriggerable="1">
+   <key name="w"/>
+  </action>
+  <action name="v_moveback" onPress="1" onRelease="1" retriggerable="1">
+   <key name="s"/>
+  </action>
+  <action name="v_rotatepitch" always="1">
+   <key name="maxis_y"/>
+  </action>
+  <action name="v_movedown" onPress="1" onRelease="1">
+   <key name="lctrl"/>
+   <key name="xi_dpad_down"/>
+  </action>
+  <action name="v_moveup" onPress="1" onRelease="1">
+   <key name="space"/>
+   <key name="xi_dpad_up"/>
+  </action>
+  <action name="v_straferight" onPress="1" onRelease="1" onHold="1">
+   <key name="d"/>
+  </action>
+  <action name="v_rollleft" onPress="1" onRelease="1" onHold="1">
+   <key name="q"/>
+  </action>
+  <action name="v_rollright" onPress="1" onRelease="1" onHold="1">
+   <key name="e"/>
+  </action>
+  <action name="v_boost" onPress="1" onRelease="1" retriggerable="1">
+   <key name="lshift"/>
+   <key name="xi_shoulderl"/>
+  </action>
+ </actionmap>
+</ActionMaps>
