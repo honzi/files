@@ -4,7 +4,7 @@
 #   $1: Relative path to the directory in which the
 #         honzi/common repository will be stored.
 #
-# Example usage: sh common-fork-setup.sh repositories
+# Example usage: sh common-fork-init.sh repositories
 
 # Check if at least 1 argument is passed.
 if [ $# -lt 1 ]
@@ -24,9 +24,6 @@ git clone --depth 1 http://github.com/honzi/common.git
 # Navigate to the root directory of the cloned repository.
 cd common
 
-# Set the origin remote url.
+# Set the origin and upstream remote urls.
 git remote set-url origin https://honzi@github.com/honzi/common.git
-
-# Push an empty commit to rebuild GitHub Pages.
-git commit -m "rebuilding pages" --allow-empty
-git push origin gh-pages
+git remote set-url upstream https://honzi@github.com/iterami/common.git
