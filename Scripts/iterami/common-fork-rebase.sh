@@ -16,11 +16,11 @@ fi
 # Navigate to the repository root directory.
 cd $1
 
-# Fetch changes from the upstream master branch.
+# Fetch changes from the upstream gh-pages branch.
 git fetch upstream
 
-# Rebase using the upstream master branch.
-git rebase upstream/master
+# Rebase using the upstream gh-pages branch.
+git rebase upstream/gh-pages
 
-# Force push to the origin master branch.
-git push -f origin master
+# Force push to the origin gh-pages branch.
+git push -f origin gh-pages
