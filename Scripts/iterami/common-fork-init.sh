@@ -26,4 +26,4 @@ cd common
 
 # Set the origin and upstream remote urls.
 git remote set-url origin https://honzi@github.com/honzi/common.git
-git remote set-url upstream https://honzi@github.com/iterami/common.git
+git remote add upstream https://github.com/iterami/common.git
