@@ -3,6 +3,9 @@
 # No arguments.
 # Example usage: sh wakeup.sh
 
+# Clear cache.
+sudo -K
+
 # Run configuration script.
 sh ~/.iterami/repositories/files/Scripts/Ubuntu/18-04/configure.sh
 
