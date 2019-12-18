@@ -19,6 +19,7 @@ Calculator.htm
 Chromium-iterami-DevTools
 Chromium-iterami-Extension
 Chromium-iterami-Theme
+clearundostack
 Click.htm
 Clock.htm
 ColorDrops.htm
