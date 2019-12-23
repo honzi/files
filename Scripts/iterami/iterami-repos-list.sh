@@ -13,7 +13,6 @@ AudioEditor.htm
 Avoidance-2D.htm
 BaseConverter.htm
 BinaryDataEndecoder.htm
-Birthday.htm
 Bookmarklets.htm
 Calculator.htm
 Chromium-iterami-DevTools
