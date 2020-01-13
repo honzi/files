@@ -22,7 +22,7 @@ echo
 # Get an array of all iterami repositories.
 . ./iterami-repos-list.sh
 
-# Navigate to the target directory name
+# Navigate to the target directory
 #   and create it if it doesn't exist.
 mkdir -p $1
 cd $1
