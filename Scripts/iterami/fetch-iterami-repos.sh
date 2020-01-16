@@ -1,15 +1,15 @@
 #!/bin/sh
 
-# Required arguments:
+# Required args:
 #   $1: Relative path to the directory in which
 #         the iterami repositories are/will_be stored.
 #
 # Example usage: sh fetch-iterami-repos.sh repositories/
 
-# Check if at least 1 argument was passed.
+# Check if at least 1 arg was passed.
 if [ $# -lt 1 ]
 then
-    echo 'Missing argument: path'
+    echo 'Missing arg: path'
     exit 2
 fi
 

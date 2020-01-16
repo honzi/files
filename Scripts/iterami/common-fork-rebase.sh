@@ -1,15 +1,15 @@
 #!/bin/sh
 
-# Required arguments:
+# Required args:
 #   $1: Relative path to the directory in which
 #         the honzi/common repository is stored.
 #
 # Example usage: sh common-fork-rebase.sh repositories/common
 
-# Check if at least 1 argument is passed.
+# Check if at least 1 arg is passed.
 if [ $# -lt 1 ]
 then
-    echo 'Missing argument: path'
+    echo 'Missing arg: path'
     exit 2
 fi
 

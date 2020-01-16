@@ -1,6 +1,6 @@
 #!/bin/sh
 
-# No arguments.
+# No args.
 # Example usage: sh disable-intro.sh
 
 # Navigate to the intro file directory.

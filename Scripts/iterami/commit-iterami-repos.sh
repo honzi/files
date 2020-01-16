@@ -1,16 +1,16 @@
 #!/bin/sh
 
-# Required arguments:
+# Required args:
 #   $1: Relative path to the directory in which
 #         the iterami repositories are stored.
 #   $2: Commit message.
 #
 # Example usage: sh commit-iterami-repos.sh repositories/ 'This is a commit message!'
 
-# Check if at least 2 arguments were passed.
+# Check if at least 2 args were passed.
 if [ $# -lt 2 ]
 then
-    echo 'Missing argument: path commit-message'
+    echo 'Missing arg: path commit-message'
     exit 2
 fi
 

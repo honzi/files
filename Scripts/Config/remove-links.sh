@@ -1,6 +1,6 @@
 #!/bin/bash
 
-# No arguments.
+# No args.
 # Example usage: bash remove-links.sh
 
 # List of config file destination directory paths.

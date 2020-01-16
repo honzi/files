@@ -1,6 +1,6 @@
 #!/bin/bash
 
-# No arguments.
+# No args.
 # Example usage: sh link-ai.sh
 
 # Make the required directories.
