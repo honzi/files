@@ -11,7 +11,7 @@
 if [ $# -lt 2 ]
 then
     echo 'Missing arg: path commit-message'
-    exit 2
+    exit 1
 fi
 
 # Update this repository to fetch latest
