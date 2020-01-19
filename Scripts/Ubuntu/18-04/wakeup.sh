@@ -7,9 +7,6 @@ set -eu
 # Clear cache.
 sudo -K
 
-# Run configuration script.
-sh ~/.iterami/repositories/files/Scripts/Ubuntu/18-04/configure.sh
-
 # Cleanup various directories.
 > ~/.bash_history
 sudo rm -rf ~/.cache/thumbnails/*
@@ -29,3 +26,6 @@ sudo apt-get dist-upgrade
 sudo apt-get autoremove
 sudo apt-get clean
 sudo winetricks --self-update
+
+# Run configuration script.
+sh ~/.iterami/repositories/files/Scripts/Ubuntu/18-04/configure.sh
