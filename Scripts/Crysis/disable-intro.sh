@@ -1,4 +1,5 @@
 #!/bin/sh
+set -eu
 
 # No args.
 # Example usage: sh disable-intro.sh

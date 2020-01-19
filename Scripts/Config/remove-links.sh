@@ -1,4 +1,5 @@
 #!/bin/bash
+set -eu
 
 # No args.
 # Example usage: bash remove-links.sh

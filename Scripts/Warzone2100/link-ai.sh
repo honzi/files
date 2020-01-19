@@ -1,4 +1,5 @@
 #!/bin/bash
+set -eu
 
 # No args.
 # Example usage: sh link-ai.sh

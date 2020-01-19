@@ -1,4 +1,5 @@
 #!/bin/sh
+set -eu
 
 # Required args:
 #   $1: Relative path to the directory in which
