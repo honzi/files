@@ -1,0 +1,8 @@
+'atom-text-editor':
+  'cmd-c': 'editor:copy-selection'
+  'cmd-d': 'editor:delete-line'
+  'cmd-l': 'go-to-line:toggle'
+  'cmd-r': 'sort-lines:case-insensitive-sort'
+  'cmd-shift-r': 'sort-lines:reverse'
+  'cmd-v': 'editor:paste-without-reformatting'
+  'ctrl-g': 'none!'

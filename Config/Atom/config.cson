@@ -1,0 +1,119 @@
+"*":
+  "bracket-matcher":
+    highlightMatchingLineNumber: true
+  core:
+    audioBeep: false
+    closeDeletedFileTabs: true
+    closeEmptyWindows: false
+    disabledPackages: [
+      "about"
+      "archive-view"
+      "autocomplete-atom-api"
+      "autocomplete-css"
+      "autocomplete-html"
+      "autocomplete-plus"
+      "autocomplete-snippets"
+      "autoflow"
+      "autosave"
+      "background-tips"
+      "bookmarks"
+      "busy-signal"
+      "command-palette"
+      "deprecation-cop"
+      "dev-live-reload"
+      "exception-reporting"
+      "fuzzy-finder"
+      "git-diff"
+      "github"
+      "keybinding-resolver"
+      "language-c"
+      "language-clojure"
+      "language-coffee-script"
+      "language-csharp"
+      "language-git"
+      "language-go"
+      "language-java"
+      "language-make"
+      "language-mustache"
+      "language-objective-c"
+      "language-perl"
+      "language-php"
+      "language-property-list"
+      "language-python"
+      "language-ruby-on-rails"
+      "language-ruby"
+      "language-rust-bundled"
+      "language-sass"
+      "language-sql"
+      "language-todo"
+      "language-toml"
+      "language-typescript"
+      "language-xml"
+      "language-yaml"
+      "metrics"
+      "open-on-github"
+      "package-generator"
+      "react"
+      "snippets"
+      "spell-check"
+      "styleguide"
+      "symbols-view"
+      "timecop"
+      "update-package-dependencies"
+      "welcome"
+    ]
+    packagesWithKeymapsDisabled: [
+      "archive-view"
+      "bracket-matcher"
+      "intentions"
+      "link"
+      "notifications"
+      "settings-view"
+      "sort-lines"
+      "spell-check"
+      "tree-view"
+    ]
+    packagesWithSnippetsDisabled: [
+      "language-css"
+      "language-gfm"
+      "language-html"
+      "language-javascript"
+      "language-text"
+      "snippets"
+    ]
+    telemetryConsent: "no"
+  editor:
+    autoIndentOnPaste: false
+    fontSize: 15
+    showIndentGuide: true
+    showInvisibles: true
+  linter:
+    lintOnChangeInterval: 1000
+  "linter-eslint":
+    disabling:
+      disableWhenNoEslintConfig: false
+  "linter-ui-default":
+    alwaysTakeMinimumSpace: true
+    decorateOnTreeView: "Files and Directories"
+    gutterPosition: "Left"
+    panelHeight: 140
+    showPanel: true
+    statusBarClickBehavior: "Jump to next issue"
+    statusBarRepresents: "Current File"
+    useBusySignal: false
+  "markdown-preview":
+    allowUnsafeProtocols: true
+  "settings-view":
+    packageUpdateConcurrency: 1
+  "status-bar":
+    fullWidth: false
+  tabs:
+    addNewTabsAtEnd: true
+    displayMruTabList: false
+    enableMruTabSwitching: false
+    enableVcsColoring: true
+  "tree-view":
+    alwaysOpenExisting: true
+  whitespace:
+    ensureSingleTrailingNewline: false
+    ignoreWhitespaceOnCurrentLine: false

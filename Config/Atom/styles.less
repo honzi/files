@@ -1,0 +1,60 @@
+atom-text-editor{
+    background: #000;
+    font-size: 14px;
+
+    .bracket-macher .region,
+    .find-result .region.region.region,
+    .wrap-guide{
+        background-color: #555;
+    }
+
+    .gutter .line-number{
+        color: #bbb;
+        padding-right: 5px;
+
+        &.bracket-matcher,
+        &.cursor-line{
+            background-color: #0f0;
+            color: #000;
+            font-weight: bold;
+        }
+
+        .icon-right{
+            display: none;
+        }
+    }
+
+    .invisible-character{
+        color: #555;
+    }
+
+    .line.cursor-line{
+        background-color: #333;
+    }
+
+    .linter-gutter{
+        &.linter-gutter-error{
+            color: #f00;
+        }
+        &.linter-gutter-info{
+            color: #fff;
+        }
+        &.linter-gutter-warning{
+            color: #ff0;
+        }
+    }
+
+    .syntax--comment{
+        color: #c0c;
+    }
+}
+
+.find-container atom-text-editor,
+.replace-container atom-text-editor,
+.sb-table.linter tbody{
+    background-color: #000;
+}
+
+.tree-view .list-tree.has-collapsable-children .list-nested-item > .list-tree > li{
+    padding-left: 9px;
+}
