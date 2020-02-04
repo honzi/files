@@ -17,268 +17,45 @@ xgamma -gamma 1
 git config --global user.name 'Jan Hořava'
 git config --global user.email czechinthemail@gmail.com
 
-gsettings reset ca.desrt.dconf-editor.Settings behaviour
-gsettings reset ca.desrt.dconf-editor.Settings refresh-settings-schema-source
-gsettings reset ca.desrt.dconf-editor.Settings sort-case-sensitive
-gsettings reset com.canonical.indicator.datetime alarm-default-sound
-gsettings reset com.canonical.indicator.datetime alarm-default-volume
-gsettings reset com.canonical.indicator.datetime alarm-duration-minutes
-gsettings reset com.canonical.indicator.datetime alarm-haptic-feedback
-gsettings reset com.canonical.indicator.datetime calendar-default-sound
-gsettings reset com.canonical.indicator.datetime custom-time-format
-gsettings reset com.canonical.indicator.datetime locations
-gsettings reset com.canonical.indicator.datetime show-auto-detected-location
-gsettings reset com.canonical.indicator.datetime show-calendar
-gsettings reset com.canonical.indicator.datetime show-clock
-gsettings reset com.canonical.indicator.datetime show-events
-gsettings reset com.canonical.indicator.datetime show-locations
-gsettings reset com.canonical.indicator.datetime snooze-duration-minutes
-gsettings reset com.canonical.indicator.datetime timezone-name
-gsettings reset com.canonical.indicator.messages applications
-gsettings reset com.canonical.indicator.power icon-policy
-gsettings reset com.canonical.indicator.session force-restart-menuitem
-gsettings reset com.canonical.indicator.session show-real-name-on-panel
-gsettings reset com.canonical.indicator.session suppress-logout-restart-shutdown
-gsettings reset com.canonical.indicator.session suppress-restart-menuitem
-gsettings reset com.canonical.indicator.session suppress-shutdown-menuitem
-gsettings reset com.canonical.indicator.sound amplified-volume-decibels
-gsettings reset com.canonical.indicator.sound blacklisted-media-players
-gsettings reset com.canonical.indicator.sound global-mute
-gsettings reset com.canonical.indicator.sound interested-media-players
-gsettings reset com.canonical.indicator.sound normal-volume-decibels
-gsettings reset com.canonical.indicator.sound preferred-media-players
-gsettings reset com.canonical.indicator.sound visible
-gsettings reset com.canonical.indicator.sound warning-volume-confirmation-ttl
-gsettings reset com.canonical.indicator.sound warning-volume-decibels
-gsettings reset com.canonical.indicator.sound warning-volume-enabled
-gsettings reset com.ubuntu.notifications.settings.applications applications
-gsettings reset com.ubuntu.notifications.settings.applications vibrate-silent-mode
-gsettings reset com.ubuntu.phone default-sim-for-calls
-gsettings reset com.ubuntu.phone default-sim-for-messages
-gsettings reset com.ubuntu.phone mms-group-chat-enabled
-gsettings reset com.ubuntu.phone sim-names
-gsettings reset com.ubuntu.sound allow-amplified-volume
-gsettings reset com.ubuntu.touch.network flight-mode
-gsettings reset com.ubuntu.touch.network gps
-gsettings reset com.ubuntu.touch.sound incoming-call-sound
-gsettings reset com.ubuntu.touch.sound incoming-message-sound
-gsettings reset com.ubuntu.touch.sound silent-mode
-gsettings reset com.ubuntu.touch.system activity-timeout
-gsettings reset com.ubuntu.touch.system auto-brightness
-gsettings reset com.ubuntu.touch.system brightness
-gsettings reset com.ubuntu.touch.system brightness-needs-hardware-default
-gsettings reset com.ubuntu.touch.system dim-timeout
-gsettings reset com.ubuntu.touch.system fingerprint-names
-gsettings reset com.ubuntu.touch.system orientation-lock
-gsettings reset com.ubuntu.touch.system rotation-lock
-gsettings reset com.ubuntu.update-manager check-dist-upgrades
-gsettings reset com.ubuntu.update-manager check-new-release-ignore
-gsettings reset com.ubuntu.update-manager summary-before-name
-gsettings reset com.ubuntu.update-notifier no-show-notifications
-gsettings reset com.ubuntu.update-notifier regular-auto-launch-interval
-gsettings reset com.ubuntu.update-notifier show-apport-crashes
-gsettings reset com.ubuntu.update-notifier show-livepatch-status-icon
-gsettings reset com.ubuntu.user-interface.desktop cursor-size
-gsettings reset com.ubuntu.user-interface.desktop scaling-factor
-gsettings reset com.ubuntu.user-interface.desktop text-scaling-factor
-gsettings reset org.gnome.Cheese brightness
-gsettings reset org.gnome.Cheese burst-delay
-gsettings reset org.gnome.Cheese burst-repeat
-gsettings reset org.gnome.Cheese camera
-gsettings reset org.gnome.Cheese contrast
-gsettings reset org.gnome.Cheese countdown
-gsettings reset org.gnome.Cheese countdown-duration
-gsettings reset org.gnome.Cheese flash
-gsettings reset org.gnome.Cheese hue
-gsettings reset org.gnome.Cheese photo-path
-gsettings reset org.gnome.Cheese photo-x-resolution
-gsettings reset org.gnome.Cheese photo-y-resolution
-gsettings reset org.gnome.Cheese saturation
-gsettings reset org.gnome.Cheese selected-effect
-gsettings reset org.gnome.Cheese video-path
-gsettings reset org.gnome.Cheese video-x-resolution
-gsettings reset org.gnome.Cheese video-y-resolution
-gsettings reset org.gnome.ControlCenter last-panel
-gsettings reset org.gnome.GWeather default-location
-gsettings reset org.gnome.GWeather pressure-unit
-gsettings reset org.gnome.GWeather radar
-gsettings reset org.gnome.SessionManager auto-save-session
-gsettings reset org.gnome.SessionManager auto-save-session-one-shot
-gsettings reset org.gnome.SessionManager logout-prompt
-gsettings reset org.gnome.SessionManager show-fallback-warning
-gsettings reset org.gnome.Terminal.Legacy.Keybindings:/org/gnome/terminal/legacy/keybindings/ close-tab
-gsettings reset org.gnome.Terminal.Legacy.Keybindings:/org/gnome/terminal/legacy/keybindings/ copy
-gsettings reset org.gnome.Terminal.Legacy.Keybindings:/org/gnome/terminal/legacy/keybindings/ paste
-gsettings reset org.gnome.Terminal.Legacy.Keybindings:/org/gnome/terminal/legacy/keybindings/ new-tab
-gsettings reset org.gnome.Terminal.Legacy.Settings confirm-close
-gsettings reset org.gnome.Terminal.Legacy.Settings default-show-menubar
-gsettings reset org.gnome.Terminal.Legacy.Settings menu-accelerator-enabled
-gsettings reset org.gnome.Terminal.Legacy.Settings mnemonics-enabled
-gsettings reset org.gnome.Terminal.Legacy.Settings shell-integration-enabled
-gsettings reset org.gnome.Terminal.Legacy.Settings shortcuts-enabled
-gsettings reset org.gnome.Terminal.Legacy.Settings tab-policy
-gsettings reset org.gnome.Terminal.Legacy.Settings tab-position
-gsettings reset org.gnome.Terminal.Legacy.Settings theme-variant
-gsettings reset org.gnome.calendar active-view
-gsettings reset org.gnome.calendar weather-settings
-gsettings reset org.gnome.calendar window-maximized
-gsettings reset org.gnome.calendar window-position
-gsettings reset org.gnome.calendar window-size
-gsettings reset org.gnome.eog.fullscreen loop
-gsettings reset org.gnome.eog.fullscreen seconds
-gsettings reset org.gnome.eog.fullscreen upscale
-gsettings reset org.gnome.eog.ui disable-close-confirmation
-gsettings reset org.gnome.eog.ui disable-trash-confirmation
-gsettings reset org.gnome.eog.ui filechooser-xdg-fallback
-gsettings reset org.gnome.eog.ui image-gallery
-gsettings reset org.gnome.eog.ui image-gallery-position
-gsettings reset org.gnome.eog.ui image-gallery-resizable
-gsettings reset org.gnome.eog.ui propsdialog-netbook-mode
-gsettings reset org.gnome.eog.ui scroll-buttons
-gsettings reset org.gnome.eog.ui sidebar
-gsettings reset org.gnome.eog.ui statusbar
-gsettings reset org.gnome.eog.view autorotate
-gsettings reset org.gnome.eog.view background-color
-gsettings reset org.gnome.eog.view extrapolate
-gsettings reset org.gnome.eog.view interpolate
-gsettings reset org.gnome.eog.view scroll-wheel-zoom
-gsettings reset org.gnome.eog.view trans-color
-gsettings reset org.gnome.eog.view transparency
-gsettings reset org.gnome.eog.view use-background-color
-gsettings reset org.gnome.eog.view zoom-multiplier
-gsettings reset org.gnome.gedit.plugins.externaltools font
-gsettings reset org.gnome.gedit.plugins.externaltools use-system-font
-gsettings reset org.gnome.gedit.plugins.filebrowser binary-patterns
-gsettings reset org.gnome.gedit.plugins.filebrowser enable-remote
-gsettings reset org.gnome.gedit.plugins.filebrowser filter-pattern
-gsettings reset org.gnome.gedit.plugins.filebrowser open-at-first-doc
-gsettings reset org.gnome.gedit.plugins.filebrowser tree-view
-gsettings reset org.gnome.gedit.plugins.filebrowser.nautilus click-policy
-gsettings reset org.gnome.gedit.plugins.filebrowser.nautilus confirm-trash
-gsettings reset org.gnome.gedit.plugins.pythonconsole command-color
-gsettings reset org.gnome.gedit.plugins.pythonconsole error-color
-gsettings reset org.gnome.gedit.plugins.pythonconsole font
-gsettings reset org.gnome.gedit.plugins.pythonconsole use-system-font
-gsettings reset org.gnome.gedit.plugins.time custom-format
-gsettings reset org.gnome.gedit.plugins.time prompt-type
-gsettings reset org.gnome.gedit.plugins.time selected-format
-gsettings reset org.gnome.gedit.state.history-entry replace-with-entry
-gsettings reset org.gnome.gedit.state.history-entry search-for-entry
-gsettings reset org.gnome.gnome-panel.general confirm-panel-removal
-gsettings reset org.gnome.gnome-panel.general enable-tooltips
-gsettings reset org.gnome.gnome-panel.general panel-menu
-gsettings reset org.gnome.gnome-panel.general panel-menu-bar
-gsettings reset org.gnome.gnome-panel.general theme-variant
-gsettings reset org.gnome.gnome-panel.lockdown disable-force-quit
-gsettings reset org.gnome.gnome-panel.lockdown disabled-applets
-gsettings reset org.gnome.gnome-panel.lockdown locked-down
-gsettings reset org.gnome.gnome-panel.run-dialog enable-autocompletion
-gsettings reset org.gnome.gnome-panel.run-dialog enable-program-list
-gsettings reset org.gnome.gnome-panel.run-dialog history
-gsettings reset org.gnome.gnome-panel.run-dialog show-program-list
-gsettings reset org.gnome.gnome-system-monitor cpu-colors
-gsettings reset org.gnome.gnome-system-monitor cpu-smooth-graph
-gsettings reset org.gnome.gnome-system-monitor cpu-stacked-area-chart
-gsettings reset org.gnome.gnome-system-monitor current-tab
-gsettings reset org.gnome.gnome-system-monitor disks-interval
-gsettings reset org.gnome.gnome-system-monitor graph-update-interval
-gsettings reset org.gnome.gnome-system-monitor kill-dialog
-gsettings reset org.gnome.gnome-system-monitor maximized
-gsettings reset org.gnome.gnome-system-monitor mem-color
-gsettings reset org.gnome.gnome-system-monitor net-in-color
-gsettings reset org.gnome.gnome-system-monitor net-out-color
-gsettings reset org.gnome.gnome-system-monitor network-in-bits
-gsettings reset org.gnome.gnome-system-monitor show-all-fs
-gsettings reset org.gnome.gnome-system-monitor show-dependencies
-gsettings reset org.gnome.gnome-system-monitor show-whose-processes
-gsettings reset org.gnome.gnome-system-monitor smooth-refresh
-gsettings reset org.gnome.gnome-system-monitor solaris-mode
-gsettings reset org.gnome.gnome-system-monitor swap-color
-gsettings reset org.gnome.gnome-system-monitor update-interval
-gsettings reset org.gnome.gnome-system-monitor window-state
-gsettings reset org.gnome.login-screen allowed-failures
-gsettings reset org.gnome.login-screen banner-message-enable
-gsettings reset org.gnome.login-screen banner-message-text
-gsettings reset org.gnome.login-screen disable-restart-buttons
-gsettings reset org.gnome.login-screen disable-user-list
-gsettings reset org.gnome.login-screen enable-password-authentication
-gsettings reset org.gnome.login-screen fallback-logo
-gsettings reset org.gnome.login-screen logo
-gsettings reset org.gnome.metacity alt-tab-thumbnails
-gsettings reset org.gnome.metacity compositing-manager
-gsettings reset org.gnome.metacity placement-mode
-gsettings reset org.gnome.metacity reduced-resources
-gsettings reset org.gnome.metacity.theme name
-gsettings reset org.gnome.metacity.theme type
-gsettings reset org.gnome.nautilus.compression default-compression-format
-gsettings reset org.gnome.nautilus.desktop background-fade
-gsettings reset org.gnome.nautilus.desktop font
-gsettings reset org.gnome.nautilus.desktop home-icon-name
-gsettings reset org.gnome.nautilus.desktop network-icon-name
-gsettings reset org.gnome.nautilus.desktop network-icon-visible
-gsettings reset org.gnome.nautilus.desktop text-ellipsis-limit
-gsettings reset org.gnome.nautilus.desktop trash-icon-name
-gsettings reset org.gnome.nautilus.icon-view captions
-gsettings reset org.gnome.nautilus.icon-view default-zoom-level
-gsettings reset org.gnome.nautilus.icon-view text-ellipsis-limit
-gsettings reset org.gnome.nautilus.icon-view thumbnail-size
-gsettings reset org.gnome.nautilus.list-view default-column-order
-gsettings reset org.gnome.nautilus.list-view default-visible-columns
-gsettings reset org.gnome.nautilus.list-view default-zoom-level
-gsettings reset org.gnome.nautilus.list-view use-tree-view
-gsettings reset org.gnome.nautilus.preferences always-use-location-entry
-gsettings reset org.gnome.nautilus.preferences bulk-rename-tool
-gsettings reset org.gnome.nautilus.preferences click-policy
-gsettings reset org.gnome.nautilus.preferences confirm-trash
-gsettings reset org.gnome.nautilus.preferences default-sort-in-reverse-order
-gsettings reset org.gnome.nautilus.preferences default-sort-order
-gsettings reset org.gnome.nautilus.preferences fts-default
-gsettings reset org.gnome.nautilus.preferences install-mime-activation
-gsettings reset org.gnome.nautilus.preferences mouse-back-button
-gsettings reset org.gnome.nautilus.preferences mouse-forward-button
-gsettings reset org.gnome.nautilus.preferences open-folder-on-dnd-hover
-gsettings reset org.gnome.nautilus.preferences recursive-search
-gsettings reset org.gnome.nautilus.preferences search-filter-time-type
-gsettings reset org.gnome.nautilus.preferences search-view
-gsettings reset org.gnome.nautilus.preferences show-delete-permanently
-gsettings reset org.gnome.nautilus.preferences show-directory-item-counts
-gsettings reset org.gnome.nautilus.preferences show-move-to-trash-shortcut-changed-dialog
-gsettings reset org.gnome.nautilus.preferences tabs-open-position
-gsettings reset org.gnome.nautilus.preferences thumbnail-limit
-gsettings reset org.gnome.nautilus.preferences use-experimental-views
-gsettings reset org.gnome.nautilus.window-state maximized
-gsettings reset org.gnome.nautilus.window-state sidebar-width
-gsettings reset org.gnome.nautilus.window-state start-with-location-bar
-gsettings reset org.gnome.nautilus.window-state start-with-sidebar
-gsettings reset org.gnome.nm-applet disable-connected-notifications
-gsettings reset org.gnome.nm-applet disable-disconnected-notifications
-gsettings reset org.gnome.nm-applet disable-vpn-notifications
-gsettings reset org.gnome.nm-applet show-applet
-gsettings reset org.gnome.nm-applet stamp
-gsettings reset org.gnome.nm-applet suppress-wireless-networks-available
-gsettings reset org.gnome.power-manager info-history-graph-points
-gsettings reset org.gnome.power-manager info-history-graph-smooth
-gsettings reset org.gnome.power-manager info-history-time
-gsettings reset org.gnome.power-manager info-history-type
-gsettings reset org.gnome.power-manager info-last-device
-gsettings reset org.gnome.power-manager info-page-number
-gsettings reset org.gnome.power-manager info-stats-graph-points
-gsettings reset org.gnome.power-manager info-stats-graph-smooth
-gsettings reset org.gnome.power-manager info-stats-type
-gsettings reset org.gnome.settings-daemon.peripherals.mouse double-click
-gsettings reset org.gnome.settings-daemon.peripherals.mouse drag-threshold
-gsettings reset org.gnome.settings-daemon.peripherals.mouse locate-pointer
-gsettings reset org.gnome.system.location enabled
-gsettings reset org.gnome.system.location max-accuracy-level
-gsettings reset org.gtk.Settings.ColorChooser custom-colors
-gsettings reset org.gtk.Settings.ColorChooser selected-color
-gsettings reset org.gtk.Settings.Debug enable-inspector-keybinding
-gsettings reset org.gtk.Settings.Debug inspector-warning
-gsettings reset org.gtk.Settings.EmojiChooser recent-emoji
-gsettings reset org.gtk.Settings.FileChooser clock-format
-gsettings reset org.gtk.Settings.FileChooser expand-folders
-gsettings reset org.gtk.Settings.FileChooser last-folder-uri
-gsettings reset org.gtk.Settings.FileChooser startup-mode
+gsettings reset-recursively ca.desrt.dconf-editor.Settings
+gsettings reset-recursively com.canonical.indicator.appmenu
+gsettings reset-recursively com.canonical.indicator.datetime
+gsettings reset-recursively com.canonical.indicator.keyboard
+gsettings reset-recursively com.canonical.indicator.messages
+gsettings reset-recursively com.canonical.indicator.power
+gsettings reset-recursively com.canonical.indicator.sound
+gsettings reset-recursively com.ubuntu.notifications.settings.applications
+gsettings reset-recursively com.ubuntu.phone
+gsettings reset-recursively com.ubuntu.sound
+gsettings reset-recursively com.ubuntu.touch.network
+gsettings reset-recursively com.ubuntu.touch.sound
+gsettings reset-recursively com.ubuntu.touch.system
+gsettings reset-recursively com.ubuntu.update-manager
+gsettings reset-recursively com.ubuntu.update-notifier
+gsettings reset-recursively com.ubuntu.user-interface.desktop
+gsettings reset-recursively org.gnome.Cheese
+gsettings reset-recursively org.gnome.GWeather
+gsettings reset-recursively org.gnome.SessionManager
+gsettings reset-recursively org.gnome.Terminal.Legacy.Settings
+gsettings reset-recursively org.gnome.calendar
+gsettings reset-recursively org.gnome.desktop.a11y
+gsettings reset-recursively org.gnome.eog
+gsettings reset-recursively org.gnome.gedit
+gsettings reset-recursively org.gnome.gnome-panel.general
+gsettings reset-recursively org.gnome.gnome-panel.lockdown
+gsettings reset-recursively org.gnome.gnome-panel.run-dialog
+gsettings reset-recursively org.gnome.gnome-system-monitor
+gsettings reset-recursively org.gnome.login-screen
+gsettings reset-recursively org.gnome.metacity
+gsettings reset-recursively org.gnome.nautilus
+gsettings reset-recursively org.gnome.nm-applet
+gsettings reset-recursively org.gnome.power-manager
+gsettings reset-recursively org.gnome.settings-daemon.peripherals
+gsettings reset-recursively org.gnome.system.location
+gsettings reset-recursively org.gtk.Settings.ColorChooser
+gsettings reset-recursively org.gtk.Settings.Debug
+gsettings reset-recursively org.gtk.Settings.EmojiChooser
+gsettings reset-recursively org.gtk.Settings.FileChooser
 
 gsettings set ca.desrt.dconf-editor.Settings mouse-use-extra-buttons false
 gsettings set ca.desrt.dconf-editor.Settings restore-view false
@@ -389,6 +166,7 @@ gsettings set org.gnome.desktop.wm.preferences num-workspaces 1
 gsettings set org.gnome.eog.plugins active-plugins []
 gsettings set org.gnome.gedit.plugins active-plugins []
 gsettings set org.gnome.gedit.plugins.filebrowser filter-mode []
+gsettings set org.gnome.gnome-panel.lockdown locked-down true
 gsettings set org.gnome.login-screen enable-fingerprint-authentication false
 gsettings set org.gnome.login-screen enable-smartcard-authentication false
 gsettings set org.gnome.metacity edge-tiling false
