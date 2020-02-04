@@ -39,6 +39,10 @@ gsettings reset-recursively org.gnome.SessionManager
 gsettings reset-recursively org.gnome.Terminal.Legacy.Settings
 gsettings reset-recursively org.gnome.calendar
 gsettings reset-recursively org.gnome.desktop.a11y
+gsettings reset-recursively org.gnome.desktop.a11y.applications
+gsettings reset-recursively org.gnome.desktop.a11y.keyboard
+gsettings reset-recursively org.gnome.desktop.a11y.magnifier
+gsettings reset-recursively org.gnome.desktop.a11y.mouse
 gsettings reset-recursively org.gnome.eog
 gsettings reset-recursively org.gnome.gedit
 gsettings reset-recursively org.gnome.gnome-panel.general
