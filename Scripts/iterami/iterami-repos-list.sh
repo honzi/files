@@ -55,6 +55,7 @@ Interpreters.htm
 IssueExport.htm
 iterami.github.io
 Jetpack-2D.htm
+Labs.htm
 LayeredSnake-2D3D.htm
 LocalStorage.htm
 Match.htm
