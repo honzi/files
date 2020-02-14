@@ -35,7 +35,7 @@ do
     then
         echo 'pushing https://github.com/iterami/'$repository
         cd $repository
-        git push origin HEAD
+        git push origin @
         cd ..
 
     else
