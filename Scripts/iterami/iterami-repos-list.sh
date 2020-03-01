@@ -7,7 +7,6 @@ set -eu
 # An array of all iterami repositories.
 iterami_repositories='
 9YG0E6r.htm
-Alarm.htm
 Aquarium-2D.htm
 AspectRatio.htm
 AudioEditor.htm
