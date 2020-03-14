@@ -8,13 +8,11 @@ set -eu
 iterami_repositories='
 9YG0E6r.htm
 Aquarium-2D.htm
-AspectRatio.htm
 AudioEditor.htm
 Avoidance-2D.htm
 BaseConverter.htm
 BinaryDataEndecoder.htm
 Bookmarklets.htm
-Calculator.htm
 Chromium-iterami-DevTools
 Chromium-iterami-Extension
 Chromium-iterami-Theme
@@ -58,6 +56,7 @@ Labs.htm
 LayeredSnake-2D3D.htm
 LocalStorage.htm
 Match.htm
+Math.htm
 MC-iterami-DataPacks
 MediaDevicesTest.htm
 Multiverse.htm
