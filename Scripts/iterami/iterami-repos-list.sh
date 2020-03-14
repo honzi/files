@@ -47,7 +47,6 @@ Guides.htm
 Hallway-2D3D.htm
 Hexagons-2D.htm
 Hrad.htm
-InterestCalculator.htm
 Interpreters.htm
 IssueExport.htm
 iterami.github.io
