@@ -67,7 +67,6 @@ OS.asm
 Particleball-2D.htm
 ParticleRun-2D.htm
 PasswordGenerator.htm
-Percentages.htm
 PixelEditor.htm
 Platform-2D.htm
 Platform-2D.sh
