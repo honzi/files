@@ -59,7 +59,19 @@ gsettings reset-recursively org.gnome.system.location
 gsettings reset-recursively org.gtk.Settings.ColorChooser
 gsettings reset-recursively org.gtk.Settings.Debug
 gsettings reset-recursively org.gtk.Settings.EmojiChooser
-gsettings reset-recursively org.gtk.Settings.FileChooser
+
+gsettings reset org.gtk.Settings.FileChooser clock-format
+gsettings reset org.gtk.Settings.FileChooser date-format
+gsettings reset org.gtk.Settings.FileChooser expand-folders
+gsettings reset org.gtk.Settings.FileChooser last-folder-uri
+gsettings reset org.gtk.Settings.FileChooser location-mode
+gsettings reset org.gtk.Settings.FileChooser show-hidden
+gsettings reset org.gtk.Settings.FileChooser show-size-column
+gsettings reset org.gtk.Settings.FileChooser sidebar-width
+gsettings reset org.gtk.Settings.FileChooser sort-column
+gsettings reset org.gtk.Settings.FileChooser sort-directories-first
+gsettings reset org.gtk.Settings.FileChooser sort-order
+gsettings reset org.gtk.Settings.FileChooser startup-mode
 
 gsettings set ca.desrt.dconf-editor.Settings mouse-use-extra-buttons false
 gsettings set ca.desrt.dconf-editor.Settings restore-view false
