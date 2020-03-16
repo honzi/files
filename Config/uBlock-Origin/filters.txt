@@ -7,5 +7,6 @@ twitch.tv##.player-alert
 ||vugames.com
 youtube.com###comments
 youtube.com###toast
+youtube.com##.ytd-mealbar-promo-renderer
 youtube.com##.ytp-ce-element-show
 youtube.com/live_chat$subdocument
