@@ -7,8 +7,8 @@ My EVE-related Public Domain Projects:
 * https://github.com/honzi/biggestisk: list of the most expensive kills in EVE.
 * https://github.com/iterami/EVE-Overviews.yaml: the current iterami Overview.
 
-* Alts = Honzibot + [REDACTED].
-* Amarr is home! https://zkillboard.com/system/30002187/topalltime/
+* Alts=Honzibot+[REDACTED].
+* Amarr is home, but Nestor is bestor!
 * Civilian Gatling Pulse Laser is the best weapon in EVE!
-* Nestor is bestor! https://zkillboard.com/ship/33472/topalltime/
 * https://zkillboard.com/character/96811141/
+sponsor me
