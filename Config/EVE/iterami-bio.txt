@@ -3,7 +3,7 @@ https://iterami.com/Guides.htm/eve/
 https://zkillboard.com/corporation/98481182/
 Contact=Honzifox
 Alts=imareti
-iterami Overview=2020-01-15.yaml
+iterami Overview=2020-03-13.yaml
 
 RECRUITMENT
 Alliance=OPEN
