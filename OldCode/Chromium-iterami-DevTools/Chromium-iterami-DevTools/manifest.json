@@ -1,0 +1,10 @@
+{
+  "author": "iterami",
+  "description": "CC0 Chromium extension that modifies the devtools.",
+  "devtools_page": "html/devtools.htm",
+  "homepage_url": "https://github.com/iterami/Chromium-iterami-DevTools",
+  "manifest_version": 2,
+  "name": "Chromium-iterami-DevTools",
+  "short_name": "CiDT",
+  "version": "20180707.0"
+}
