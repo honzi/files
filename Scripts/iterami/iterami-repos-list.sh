@@ -13,7 +13,6 @@ Avoidance-2D.htm
 BaseConverter.htm
 BinaryDataEndecoder.htm
 Bookmarklets.htm
-Chromium-iterami-DevTools
 Chromium-iterami-Extension
 Chromium-iterami-Theme
 clearundostack
@@ -35,9 +34,7 @@ Duel.htm
 EmojiText.htm
 ESP-Test.htm
 EVE-Overviews.yaml
-EVETools.gtk
 ExperienceCalculator.htm
-FileBrowser.gtk
 Fireworks-2D.htm
 FractalRunner-2D3D.htm
 GitHub-API.htm
@@ -69,10 +66,8 @@ ParticleRun-2D.htm
 PasswordGenerator.htm
 PixelEditor.htm
 Platform-2D.htm
-Platform-2D.sh
 PlusPlus.htm
 Poem.htm
-ProcessEditor
 Profiler.htm
 QjnyYap.htm
 RNG.htm
@@ -102,7 +97,6 @@ SpeedText.htm
 SpeedType.htm
 Starfield-2D3D.htm
 Sudoku.htm
-Terminal.gtk
 TextEditor.gtk
 TextInfo.htm
 Time.htm
