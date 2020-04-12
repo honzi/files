@@ -13,6 +13,7 @@ Avoidance-2D.htm
 BaseConverter.htm
 BinaryDataEndecoder.htm
 Bookmarklets.htm
+Browser.gtk
 Chromium-iterami-Extension
 Chromium-iterami-Theme
 clearundostack
