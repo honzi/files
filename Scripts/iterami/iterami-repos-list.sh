@@ -57,7 +57,6 @@ Math.htm
 MC-iterami-DataPacks
 MediaDevicesTest.htm
 Multiverse.htm
-MultiverseEditor.gtk
 MultiverseEditor.htm
 MultiverseLevels.htm
 Notes.htm
