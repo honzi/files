@@ -104,7 +104,6 @@ TimeColors.htm
 Timer.htm
 TinyMCE-Editor.htm
 Trains-2D.htm
-Trigonometry.htm
 Tubes-2D3D.htm
 U1.htm
 UnitConverter.htm
