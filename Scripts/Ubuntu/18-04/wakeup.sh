@@ -10,6 +10,7 @@ sudo -K
 # Cleanup various directories.
 > ~/.bash_history
 > ~/.python_history
+> ~/.minecraft/launcher_log.txt
 sudo rm -rf ~/.cache/thumbnails/*
 sudo rm -rf ~/.local/share/Trash/*
 sudo rm -rf ~/.minecraft/crash-reports/*
