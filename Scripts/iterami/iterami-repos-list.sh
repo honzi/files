@@ -9,7 +9,6 @@ iterami_repositories='
 9YG0E6r.htm
 Aquarium-2D.htm
 AudioEditor.htm
-Avoidance-2D.htm
 BaseConverter.htm
 BinaryDataEndecoder.htm
 Bookmarklets.htm
@@ -65,13 +64,11 @@ Particleball-2D.htm
 ParticleRun-2D.htm
 PasswordGenerator.htm
 PixelEditor.htm
-Platform-2D.htm
 PlusPlus.htm
 Poem.htm
 Profiler.htm
 QjnyYap.htm
 RNG.htm
-Race-2D.htm
 Rain-2D.htm
 random_number_test.gtk
 random_number_test.htm
@@ -80,13 +77,9 @@ RandomSCP.htm
 ReactionTest.htm
 RockPaperScissors.htm
 RomanNumerals.htm
-RPG-Above.htm
-RPG-Side.htm
-RTS-2D.htm
 RTS-Boxing.htm
 SC-AI.cpp
 Scripts
-Shooter-2D.htm
 Slots.htm
 Snakish.htm
 SnowyMountains.htm
