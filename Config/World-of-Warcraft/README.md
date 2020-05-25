@@ -162,7 +162,16 @@ Turn Right                  | D
 
 Keybindings - MultiActionBar | Keybinds
 -----------------------------|----------
-All Commands                 | Not Bound
+BottomLeft Action Button 1   | SHIFT-Q
+BottomLeft Action Button 2   | SHIFT-E
+BottomLeft Action Button 3   | SHIFT-R
+BottomLeft Action Button 4   | SHIFT-F
+BottomLeft Action Button 5   | SHIFT-1
+BottomLeft Action Button 6   | SHIFT-2
+BottomLeft Action Button 7   | SHIFT-3
+BottomLeft Action Button 8   | SHIFT-4
+BottomLeft Action Button 9   | SHIFT-5
+BottomLeft Action Button 10  | SHIFT-6
 
 Keybindings - Targeting | Keybinds
 ------------------------|----------
@@ -225,7 +234,7 @@ Display Aggro Highlight       | Enabled
 Display Class Colors          | Enabled
 Display Pets                  | Enabled
 Display Main Tank and Assist  | Disabled
-Display Border                | Enabled
+Display Border                | Disabled
 Show Debuffs                  | Enabled
 Show Only Dispellable Debuffs | Disabled
 Frame Height                  | Short
