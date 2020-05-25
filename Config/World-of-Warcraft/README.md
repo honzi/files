@@ -292,7 +292,7 @@ Target             | Enabled
 Townsfolk          | Disabled
 Track Digsites     | Enabled
 Track Quest POIs   | Enabled
-Track Warboards    | Enabled
+Track Warboards    | Disabled
 Trivial Quests     | Enabled
 
 Voice Chat Settings    | Setting
