@@ -122,6 +122,8 @@ Action Button 6          | 2
 Action Button 7          | 3
 Action Button 8          | 4
 Action Button 9          | 5
+Pet Action Button 1      | SHIFT-T
+Pet Action Button 2      | SHIFT-Y
 
 Keybindings - Camera | Keybinds
 ---------------------|-----------------
