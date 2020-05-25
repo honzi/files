@@ -140,6 +140,7 @@ Keybindings - Interface Panel | Keybinds
 Open All Bags                 | B
 Toggle Character Pane         | C
 Toggle Game Menu              | Escape
+Toggle Spellbook              | H
 Toggle World Map Pane         | G
 Toggle Talent Pane            | Y
 
@@ -189,22 +190,22 @@ Names Settings                    | Setting
 ----------------------------------|-----------------------
 Always Show Nameplates            | Disabled
 Critters and Companions           | Enabled
-Enemy Minions                     | Disabled
-Enemy Minor                       | Disabled
+Enemy Player Minions              | Enabled
 Enemy Players                     | Enabled
 Enemy Units                       | Disabled
+Enemy Units Minions               | Disabled
+Enemy Units Minor                 | Disabled
 Flash on Aggro Loss               | Disabled
-Friendly Minions                  | Disabled
-Friendly Players                  | Disabled
+Friendly Player Minion Nameplates | Disabled
+Friendly Player Minions           | Enabled
 Friendly Players                  | Enabled
+Friendly Players Nameplates       | Disabled
 Larger Nameplates                 | Disabled
-Minions                           | Enabled
-Minions                           | Enabled
 My Name                           | Disabled
 NPC Names                         | All NPCs
 Nameplate Motion TYpe             | Overlapping Nameplates
-Personal Resource Display         | Enabled
-Show Special Resources on Targets | Enabled
+Personal Resource Display         | Disabled
+Show Special Resources on Targets | Disabled
 
 Network Settings           | Setting
 ---------------------------|---------
