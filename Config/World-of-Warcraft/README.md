@@ -73,9 +73,9 @@ Display Settings            | Setting
 Chat Bubbles                | All
 Hide Adventure Guide Alerts | Disabled
 Outline Mode                | Quest Objectives and Mouseover
-Raid Self Highlight         | Circle
+Raid Self Highlight         | Off
 Rotate Minimap              | Disabled
-Status Text                 | Both
+Status Text                 | Numeric Value
 Tutorials                   | Enabled
 
 Graphics Settings                     | Setting
@@ -142,6 +142,7 @@ Keybindings - Interface Panel | Keybinds
 Open All Bags                 | B
 Toggle Character Pane         | C
 Toggle Game Menu              | Escape
+Toggle Group Finder           | J
 Toggle Score Screen           | T
 Toggle Spellbook              | H
 Toggle World Map Pane         | G
