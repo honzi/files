@@ -142,6 +142,7 @@ Keybindings - Interface Panel | Keybinds
 Open All Bags                 | B
 Toggle Character Pane         | C
 Toggle Game Menu              | Escape
+Toggle Score Screen           | T
 Toggle Spellbook              | H
 Toggle World Map Pane         | G
 Toggle Talent Pane            | Y
@@ -177,7 +178,6 @@ BottomLeft Action Button 10  | SHIFT-6
 
 Keybindings - Targeting | Keybinds
 ------------------------|----------
-Pet Attack              | T
 Target Nearest Enemy    | Tab
 
 Keybindings - Target Markers | Keybinds
