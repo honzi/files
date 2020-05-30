@@ -15,7 +15,7 @@ Bottom Left Bar             | Enabled
 Bottom Right Bar            | Enabled
 Lock ActionBars             | Enabled
 Pick Up Action Key          | ALT Key
-Right Bar                   | Enabled
+Right Bar                   | Disabled
 Right Bar 2                 | Disabled
 Show Numbers for CoolDowns  | Enabled
 Stack Right Bars Vertically | Disabled
