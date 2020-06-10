@@ -176,6 +176,7 @@ BottomLeft Action Button 7   | SHIFT-3
 BottomLeft Action Button 8   | SHIFT-4
 BottomLeft Action Button 9   | SHIFT-5
 BottomLeft Action Button 10  | SHIFT-6
+Right Action Button 12       | Num Pad -
 
 Keybindings - Targeting | Keybinds
 ------------------------|----------
