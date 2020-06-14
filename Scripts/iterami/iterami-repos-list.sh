@@ -105,5 +105,6 @@ Warped.htm
 WASD-2D.htm
 WebBrowser.gtk
 WindowInfo.htm
+WoW-iterami-Addon
 WZ2100-AI.js
 '
