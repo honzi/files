@@ -149,7 +149,8 @@ Toggle World Map Pane         | G
 Toggle Talent Pane            | Y
 
 Keybindings - Miscellaneous | Keybinds
-----------------------------|---------
+----------------------------|----------
+Toggle Sound                | Num Pad *
 Toggle User Interface       | ALT-Z
 
 Keybindings - Movement Keys | Keybinds
