@@ -1,4 +1,4 @@
-https://iterami.com/Guides.htm/eve/
+https://iterami.github.io/Guides.htm/eve/
 https://zkillboard.com/corporation/98481182/
 Contact=Honzifox
 Alts=imareti
