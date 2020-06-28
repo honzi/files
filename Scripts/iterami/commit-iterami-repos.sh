@@ -36,8 +36,12 @@ do
     then
         echo 'adding/committing https://github.com/iterami/'$repository
         cd $repository
-        git add -A
-        git commit -m "$2"
+        if [ -n "$(git status --porcelain)" ]; then
+            git add -A
+            git commit -m "$2"
+        else
+            echo 'Nothing to commit. Skipping.'
+        fi
         cd ..
 
     else
