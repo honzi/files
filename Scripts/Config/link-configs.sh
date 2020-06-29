@@ -28,6 +28,7 @@ configs=(
   "$HOME/.iterami/repositories/files/Config/Team-Fortress-2/soldier.cfg"
   "$HOME/.iterami/repositories/files/Config/Team-Fortress-2/spy.cfg"
   "$HOME/.iterami/repositories/files/Config/The-Stanley-Parable/autoexec.cfg"
+  "$HOME/.iterami/repositories/files/Config/The-Stanley-Parable-Demo/autoexec.cfg"
   "$HOME/.iterami/repositories/files/Config/Thief/3-Deadly-Shadows/System/Default.ini"
   "$HOME/.iterami/repositories/files/Config/Thief/3-Deadly-Shadows/System/T3UI.ini"
   "$HOME/.iterami/repositories/files/Config/Thief/3-Deadly-Shadows/options.ini"
@@ -56,12 +57,13 @@ destinations=(
   "$HOME/.steam/steam/steamapps/common/Team Fortress 2/tf/cfg/"
   "$HOME/.steam/steam/steamapps/common/Team Fortress 2/tf/cfg/"
   "$HOME/.steam/steam/steamapps/common/The Stanley Parable/thestanleyparable/cfg/"
+  "$HOME/.steam/steam/steamapps/common/The Stanley Parable Demo/thestanleyparabledemo/cfg/"
   "$HOME/.wine/drive_c/Program Files (x86)/Thief - Deadly Shadows Demo/System/"
   "$HOME/.wine/drive_c/Program Files (x86)/Thief - Deadly Shadows Demo/System/"
   "$HOME/Documents/Thief - Deadly Shadows Demo/SaveGames/User Options/"
 )
 
-for i in {0..24}
+for i in {0..25}
 do
     # The destination directory must already exist.
     if [[ -d ${destinations[i]} ]]
