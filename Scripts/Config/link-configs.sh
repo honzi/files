@@ -71,7 +71,9 @@ do
         # Create the symbolic link.
         ln -fs "${configs[i]}" "${destinations[i]}"
 
-        echo 'linked '${configs[i]}
-        echo
+        echo 'Linked: '${configs[i]}
+
+    else
+        echo 'Directory not found: '${destinations[i]}
     fi
 done
