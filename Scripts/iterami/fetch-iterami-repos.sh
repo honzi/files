@@ -38,7 +38,7 @@ do
         git pull
 
     else
-        git clone --depth 1 https://github.com/iterami/$repository.git
+        git clone https://github.com/iterami/$repository.git --depth 1
         cd $repository
     fi
 

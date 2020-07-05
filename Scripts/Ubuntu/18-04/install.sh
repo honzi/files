@@ -21,7 +21,7 @@ mkdir -p ~/.iterami/repositories/
 mkdir -p ~/.iterami/storage/
 
 cd ~/.iterami/repositories/
-git clone --depth 1 https://github.com/honzi/files.git
+git clone https://github.com/honzi/files.git --depth 1
 cd files/Scripts
 sh fetch-iterami-honzi-repos.sh ~/.iterami/repositories/
 
