@@ -254,7 +254,7 @@ Block Trades                                  | Disabled
 Broadcast Updates                             | Disabled
 Chat Style                                    | IM Style
 Chat Timestamps                               | HH:MM:SS
-Disable Only Character Achievements to Others | Disabled
+Disable Only Character Achievements to Others | Enabled
 Enable Twitter Functionality                  | Disabled
 Guild Member Alert                            | Disabled
 Mature Language Filter                        | Disabled
