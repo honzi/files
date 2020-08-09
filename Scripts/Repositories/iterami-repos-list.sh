@@ -35,6 +35,7 @@ EmojiText.htm
 ESP-Test.htm
 EVE-Overviews.yaml
 ExperienceCalculator.htm
+Finances.htm
 Fireworks-2D.htm
 FractalRunner-2D3D.htm
 GitHub-API.htm
