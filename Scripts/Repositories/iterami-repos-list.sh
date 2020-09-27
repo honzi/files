@@ -11,6 +11,7 @@ Aquarium-2D.htm
 AudioEditor.htm
 BaseConverter.htm
 BinaryDataEndecoder.htm
+BlindMouse.htm
 Bookmarklets.htm
 Browser.gtk
 Chromium-iterami-Extension
