@@ -14,6 +14,7 @@ sudo apt-get autoremove
 
 # INSTALL
 sudo apt-get install dconf-editor
+sudo apt-get install gdebi-core
 sudo apt-get install git
 
 mkdir -p ~/.iterami/
