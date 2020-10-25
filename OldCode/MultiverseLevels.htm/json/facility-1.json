@@ -1,0 +1,578 @@
+{
+  "fog-density": 0.00001,
+  "fog-state": true,
+  "multiplier-speed": 5,
+  "multiplier-jump": 3,
+  "paths": {
+    "path-moving-test-x": {
+      "end": -1,
+      "points": [
+        {
+          "translate-x": -50
+        },
+        {
+          "translate-x": 50
+        }
+      ]
+    },
+    "path-moving-test-y": {
+      "end": -1,
+      "points": [
+        {
+          "translate-y": 0
+        },
+        {
+          "translate-y": 50
+        }
+      ]
+    },
+    "path-moving-test-z": {
+      "end": -1,
+      "points": [
+        {
+          "translate-z": -100
+        },
+        {
+          "translate-z": -50
+        }
+      ]
+    }
+  },
+  "spawn-rotate-x": 25,
+  "characters": [
+    {
+      "id": "facility",
+      "entities": [
+        {
+          "id": "ground",
+          "texture-id": "grid.png",
+          "texture-repeat-x": 200,
+          "texture-repeat-y": 200,
+          "vertex-colors": [
+            0.2, 0.2, 0.2, 1,
+            0.2, 0.2, 0.2, 1,
+            0.2, 0.2, 0.2, 1,
+            0.2, 0.2, 0.2, 1
+          ],
+          "vertices": [
+            100, 0, -100, 1,
+            -100, 0, -100, 1,
+            -100, 0, 100, 1,
+            100, 0, 100, 1
+          ]
+        },
+        {
+          "id": "billboard-x",
+          "attach-offset-x": -40,
+          "attach-offset-y": 5,
+          "attach-offset-z": 15,
+          "billboard": [
+            "x"
+          ],
+          "vertex-colors": [
+            1, 0, 0, 1,
+            1, 0, 0, 1,
+            1, 0, 0, 1
+          ],
+          "vertices": [
+            -5, 0, 0, 1,
+            5, 0, 0, 1,
+            0, 5, 0, 1
+          ]
+        },
+        {
+          "id": "billboard-xy",
+          "attach-offset-x": -40,
+          "attach-offset-y": 5,
+          "attach-offset-z": 25,
+          "billboard": [
+            "x",
+            "y"
+          ],
+          "vertex-colors": [
+            1, 0, 0, 1,
+            1, 0, 0, 1,
+            1, 0, 0, 1
+          ],
+          "vertices": [
+            -5, 0, 0, 1,
+            5, 0, 0, 1,
+            0, 5, 0, 1
+          ]
+        },
+        {
+          "id": "billboard-xyz",
+          "attach-offset-x": -50,
+          "attach-offset-y": 5,
+          "attach-offset-z": 35,
+          "billboard": [
+            "x",
+            "y",
+            "z"
+          ],
+          "vertex-colors": [
+            1, 0, 0, 1,
+            1, 0, 0, 1,
+            1, 0, 0, 1
+          ],
+          "vertices": [
+            -5, 0, 0, 1,
+            5, 0, 0, 1,
+            0, 5, 0, 1
+          ]
+        },
+        {
+          "id": "billboard-xz",
+          "attach-offset-x": -50,
+          "attach-offset-y": 5,
+          "attach-offset-z": 25,
+          "billboard": [
+            "x",
+            "z"
+          ],
+          "vertex-colors": [
+            1, 0, 0, 1,
+            1, 0, 0, 1,
+            1, 0, 0, 1
+          ],
+          "vertices": [
+            -5, 0, 0, 1,
+            5, 0, 0, 1,
+            0, 5, 0, 1
+          ]
+        },
+        {
+          "id": "billboard-yz",
+          "attach-offset-x": -60,
+          "attach-offset-y": 5,
+          "attach-offset-z": 25,
+          "billboard": [
+            "y",
+            "z"
+          ],
+          "vertex-colors": [
+            1, 0, 0, 1,
+            1, 0, 0, 1,
+            1, 0, 0, 1
+          ],
+          "vertices": [
+            -5, 0, 0, 1,
+            5, 0, 0, 1,
+            0, 5, 0, 1
+          ]
+        },
+        {
+          "id": "billboard-y",
+          "attach-offset-x": -50,
+          "attach-offset-y": 5,
+          "attach-offset-z": 15,
+          "billboard": [
+            "y"
+          ],
+          "vertex-colors": [
+            0, 1, 0, 1,
+            0, 1, 0, 1,
+            0, 1, 0, 1
+          ],
+          "vertices": [
+            -5, 0, 0, 1,
+            5, 0, 0, 1,
+            0, 5, 0, 1
+          ]
+        },
+        {
+          "id": "billboard-z",
+          "attach-offset-x": -60,
+          "attach-offset-y": 5,
+          "attach-offset-z": 15,
+          "billboard": [
+            "z"
+          ],
+          "vertex-colors": [
+            1, 0, 0, 1,
+            1, 0, 0, 1,
+            1, 0, 0, 1
+          ],
+          "vertices": [
+            -5, 0, 0, 1,
+            5, 0, 0, 1,
+            0, 5, 0, 1
+          ]
+        },
+        {
+          "id": "door-0",
+          "attach-offset-x": 100,
+          "attach-offset-y": 8,
+          "event-modify": [
+            {
+              "amount": -90,
+              "set": true,
+              "stat": "translate-x"
+            }
+          ],
+          "event-range": 0,
+          "rotate-z": 90,
+          "texture-id": "door.png",
+          "vertex-colors": [
+            1, 1, 1, 1,
+            1, 1, 1, 1,
+            1, 1, 1, 1,
+            1, 1, 1, 1
+          ],
+          "vertices": [
+            8, 0, -4, 1,
+            -8, 0, -4, 1,
+            -8, 0, 4, 1,
+            8, 0, 4, 1
+          ]
+        }
+      ]
+    },
+    {
+      "id": "cuboid-0",
+      "translate-x": 50,
+      "translate-y": 15,
+      "translate-z": -25
+    },
+    {
+      "id": "ellipsoid-0",
+      "translate-x": 65,
+      "translate-y": 15,
+      "translate-z": -25
+    },
+    {
+      "id": "moving-test-x",
+      "entities": [
+        {
+          "id": "moving-test-x",
+          "vertex-colors": [
+            0.5, 0, 0, 1,
+            0.5, 0, 0, 1,
+            0.5, 0, 0, 1,
+            0.5, 0, 0, 1
+          ],
+          "vertices": [
+            15, 0, -15, 1,
+            -15, 0, -15, 1,
+            -15, 0, 15, 1,
+            15, 0, 15, 1
+          ]
+        }
+      ],
+      "path-id": "path-moving-test-x",
+      "translate-y": 15,
+      "translate-z": -85
+    },
+    {
+      "id": "moving-test-y",
+      "entities": [
+        {
+          "id": "moving-test-y",
+          "vertex-colors": [
+            0, 0.5, 0, 1,
+            0, 0.5, 0, 1,
+            0, 0.5, 0, 1,
+            0, 0.5, 0, 1
+          ],
+          "vertices": [
+            15, 0, -15, 1,
+            -15, 0, -15, 1,
+            -15, 0, 15, 1,
+            15, 0, 15, 1
+          ]
+        }
+      ],
+      "path-id": "path-moving-test-y",
+      "translate-y": 15,
+      "translate-z": -85
+    },
+    {
+      "id": "moving-test-z",
+      "entities": [
+        {
+          "id": "moving-test-z",
+          "rotate-x": 90,
+          "vertex-colors": [
+            0, 0, 0.5, 1,
+            0, 0, 0.5, 1,
+            0, 0, 0.5, 1,
+            0, 0, 0.5, 1
+          ],
+          "vertices": [
+            15, 0, -15, 1,
+            -15, 0, -15, 1,
+            -15, 0, 15, 1,
+            15, 0, 15, 1
+          ]
+        }
+      ],
+      "path-id": "path-moving-test-z",
+      "translate-y": 15,
+      "translate-z": -85
+    },
+    {
+      "id": "npc-0",
+      "entities": [
+        {
+          "id": "npc-0-face",
+          "billboard": "y",
+          "collision": false,
+          "vertex-colors": [
+            1, 0, 0, 1,
+            0, 1, 0, 1,
+            0, 0, 1, 1
+          ],
+          "vertices": [
+            -2, 0, 0, 1,
+            2, 0, 0, 1,
+            0, 2, 0, 1
+          ]
+        }
+      ],
+      "inventory": {
+        "test-hat": {
+          "amount": 100,
+          "entities": [
+            {
+              "attach-offset-y": 2.5,
+              "billboard": [
+                "y"
+              ],
+              "collision": false,
+              "vertex-colors": [
+                1, 0, 0, 1,
+                0, 1, 0, 1,
+                0, 0, 1, 1
+              ],
+              "vertices": [
+                -2, 0, 0, 1,
+                2, 0, 0, 1,
+                0, 2, 0, 1
+              ]
+            }
+          ],
+          "equipped": false,
+          "spell": false,
+          "stats": {}
+        }
+      },
+      "level": 23,
+      "talk": "Welcome to the facility!",
+      "trade": [
+        {
+          "get-amount": 10,
+          "get-id": "Coins",
+          "give-amount": 1,
+          "give-id": "test-hat"
+        }
+      ],
+      "translate-x": 50,
+      "translate-y": 5
+    },
+    {
+      "id": "tree-0",
+      "translate-x": -25,
+      "translate-z": -25
+    },
+    {
+      "id": "tree-1",
+      "translate-x": -40,
+      "translate-z": -25
+    },
+    {
+      "id": "flower-0",
+      "entities": [
+        {
+          "id": "flower-0-base",
+          "draw-type": "LINES",
+          "vertex-colors": [
+            0, 1, 0, 1,
+            0, 1, 0, 1
+          ],
+          "vertices": [
+            0, 0, 0, 1,
+            0, 3, 0, 1
+          ]
+        },
+        {
+          "id": "flower-0-top",
+          "draw-type": "POINTS",
+          "vertex-colors": [
+            1, 0.5, 0, 1
+          ],
+          "vertices": [
+            0, 3, 0, 1
+          ]
+        }
+      ],
+      "translate-x": -33,
+      "translate-z": -25
+    }
+  ],
+  "prefabs": [
+    {
+      "type": "prefabs_webgl_cuboid",
+      "properties": {
+        "prefix": "cuboid-0",
+        "all": {
+          "texture-id": "debug.png",
+          "vertex-colors": [
+            1, 1, 1, 1,
+            1, 1, 1, 1,
+            1, 1, 1, 1,
+            1, 1, 1, 1
+          ]
+        },
+        "character": "cuboid-0",
+        "size-x": 10,
+        "size-y": 10,
+        "size-z": 10
+      }
+    },
+    {
+      "type": "prefabs_webgl_cuboid_tree",
+      "properties": {
+        "prefix": "tree-0",
+        "character": "tree-0"
+      }
+    },
+    {
+      "type": "prefabs_webgl_ellipsoid",
+      "properties": {
+        "character": "ellipsoid-0",
+        "prefix": "ellipsoid-0",
+        "radius-x": 7,
+        "radius-y": 10,
+        "radius-z": 2
+      }
+    },
+    {
+      "type": "prefabs_webgl_ellipsoid",
+      "properties": {
+        "groups": [
+          "skybox"
+        ],
+        "prefix": "skybox",
+        "color0": [
+          0, 0, 0, 1
+        ],
+        "color1": [
+          0, 0, 0.1, 1
+        ],
+        "radius-x": -10,
+        "radius-y": -10,
+        "radius-z": -10,
+        "slices-latitude": 3,
+        "slices-longitude": 2
+      }
+    },
+    {
+      "type": "prefabs_webgl_lines_tree",
+      "properties": {
+        "prefix": "tree-1",
+        "character": "tree-1"
+      }
+    },
+    {
+      "type": "prefabs_webgl_tiles",
+      "properties": {
+        "prefix": "test-tiles",
+        "character": "facility",
+        "tiles": [
+          {
+            "attach-offset-x": 15,
+            "entities": [
+              {
+                "attach-offset-x": 6,
+                "rotate-z": 90,
+                "texture-id": "stone.png",
+                "texture-repeat-x": 2,
+                "texture-repeat-y": 2,
+                "vertex-colors": [
+                  0, 1, 0, 1,
+                  0, 1, 0, 1,
+                  0, 1, 0, 1,
+                  0, 1, 0, 1
+                ],
+                "vertices": [
+                  10, 0, -10, 1,
+                  -10, 0, -10, 1,
+                  -10, 0, 10, 1,
+                  10, 0, 10, 1
+                ]
+              },
+              {
+                "attach-offset-x": 6,
+                "rotate-z": 270,
+                "texture-id": "stone.png",
+                "texture-repeat-x": 2,
+                "texture-repeat-y": 2,
+                "vertex-colors": [
+                  0, 0, 1, 1,
+                  0, 0, 1, 1,
+                  0, 0, 1, 1,
+                  0, 0, 1, 1
+                ],
+                "vertices": [
+                  10, 0, -10, 1,
+                  -10, 0, -10, 1,
+                  -10, 0, 10, 1,
+                  10, 0, 10, 1
+                ]
+              }
+            ]
+          },
+          {
+            "attach-offset-x": 15,
+            "attach-rotate-y": 270,
+            "entities": [
+              {
+                "attach-offset-x": 6,
+                "rotate-z": 90,
+                "texture-id": "stone.png",
+                "texture-repeat-x": 2,
+                "texture-repeat-y": 2,
+                "vertex-colors": [
+                  1, 0, 0, 1,
+                  1, 0, 0, 1,
+                  1, 0, 0, 1,
+                  1, 0, 0, 1
+                ],
+                "vertices": [
+                  10, 0, -10, 1,
+                  -10, 0, -10, 1,
+                  -10, 0, 10, 1,
+                  10, 0, 10, 1
+                ]
+              },
+              {
+                "attach-offset-x": 6,
+                "rotate-z": 270,
+                "texture-id": "stone.png",
+                "texture-repeat-x": 2,
+                "texture-repeat-y": 2,
+                "vertex-colors": [
+                  0, 0, 1, 1,
+                  0, 0, 1, 1,
+                  0, 0, 1, 1,
+                  0, 0, 1, 1
+                ],
+                "vertices": [
+                  10, 0, -10, 1,
+                  -10, 0, -10, 1,
+                  -10, 0, 10, 1,
+                  10, 0, 10, 1
+                ]
+              }
+            ]
+          }
+        ],
+        "tiles-max": 5,
+        "tiles-min": 3,
+        "translate-x": -25,
+        "translate-y": 10,
+        "translate-z": 50
+      }
+    }
+  ]
+}
