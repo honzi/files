@@ -191,6 +191,7 @@ gsettings set org.gnome.metacity.keybindings toggle-tiled-right []
 gsettings set org.gnome.nautilus.desktop home-icon-visible false
 gsettings set org.gnome.nautilus.desktop trash-icon-visible false
 gsettings set org.gnome.nautilus.desktop volumes-visible false
+gsettings set org.gnome.nautilus.list-view default-zoom-level 'small'
 gsettings set org.gnome.nautilus.preferences default-folder-viewer 'list-view'
 gsettings set org.gnome.nautilus.preferences executable-text-activation 'ask'
 gsettings set org.gnome.nautilus.preferences mouse-use-extra-buttons false
