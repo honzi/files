@@ -46,26 +46,26 @@ ActionBar Setups
 ### Druid - Balance
 
 Druid - Balance | Buttons
-----------------|--------
+----------------|-----------------
 Q               | Prowl
 E               |
 R               |
 F               |
-1               |
+1               | Shadowmeld
 2               |
-3               |
-4               |
-5               |
+3               | Cat Form
+4               | Travel Form
+5               | Moonfire
 6               |
 7               |
 8               | Fishing
 s-Q             |
 s-E             |
 s-R             |
-s-F             |
+s-F             | Entangling Roots
 s-1             | Mount
 s-2             |
-s-3             |
+s-3             | Bear Form
 s-4             |
 s-5             |
 s-6             | AFK
@@ -76,26 +76,26 @@ np-+            |
 ### Druid - Feral
 
 Druid - Feral | Buttons
---------------|--------
+--------------|-----------------
 Q             | Prowl
 E             |
 R             |
 F             |
-1             |
+1             | Shadowmeld
 2             |
-3             |
-4             |
-5             |
+3             | Cat Form
+4             | Travel Form
+5             | Moonfire
 6             |
 7             |
 8             | Fishing
 s-Q           |
 s-E           |
 s-R           |
-s-F           |
+s-F           | Entangling Roots
 s-1           | Mount
 s-2           |
-s-3           |
+s-3           | Bear Form
 s-4           |
 s-5           |
 s-6           | AFK
@@ -106,26 +106,26 @@ np-+          |
 ### Druid - Guardian
 
 Druid - Guardian | Buttons
------------------|--------
+-----------------|-----------------
 Q                | Prowl
 E                |
 R                |
 F                |
-1                |
+1                | Shadowmeld
 2                |
-3                |
-4                |
-5                |
+3                | Cat Form
+4                | Travel Form
+5                | Moonfire
 6                |
 7                |
 8                | Fishing
 s-Q              |
 s-E              |
 s-R              |
-s-F              |
+s-F              | Entangling Roots
 s-1              | Mount
 s-2              |
-s-3              |
+s-3              | Bear Form
 s-4              |
 s-5              |
 s-6              | AFK
@@ -136,26 +136,26 @@ np-+             |
 ### Druid - Restoration
 
 Druid - Restoration | Buttons
---------------------|--------
+--------------------|-----------------
 Q                   | Prowl
-E                   |
-R                   |
+E                   | Rejuvenation
+R                   | Regrowth
 F                   |
-1                   |
+1                   | Shadowmeld
 2                   |
-3                   |
-4                   |
-5                   |
+3                   | Cat Form
+4                   | Travel Form
+5                   | Moonfire
 6                   |
 7                   |
 8                   | Fishing
 s-Q                 |
 s-E                 |
 s-R                 |
-s-F                 |
+s-F                 | Entangling Roots
 s-1                 | Mount
 s-2                 |
-s-3                 |
+s-3                 | Bear Form
 s-4                 |
 s-5                 |
 s-6                 | AFK
@@ -166,11 +166,11 @@ np-+                |
 ### Hunter - Beast Mastery
 
 Hunter - Beast Mastery | Buttons
------------------------|----------
+-----------------------|----------------
 Q                      |
 E                      |
 R                      |
-F                      |
+F                      | Concussive Shot
 1                      |
 2                      |
 3                      |
@@ -196,11 +196,11 @@ np-+                   |
 ### Hunter - Marksmanship
 
 Hunter - Marksmanship | Buttons
-----------------------|--------
+----------------------|----------------
 Q                     |
 E                     |
 R                     |
-F                     |
+F                     | Concussive Shot
 1                     |
 2                     |
 3                     |
@@ -256,15 +256,15 @@ np-+              |
 ### Mage - Arcane
 
 Mage - Arcane | Buttons
---------------|--------
-Q             |
-E             |
-R             |
-F             |
-1             |
-2             |
+--------------|-----------------
+Q             | Arcane Blast
+E             | Arcane Barrage
+R             | Arcane Missiles
+F             | Frost Nova
+1             | Shadowmeld
+2             | Arcane Explosion
 3             |
-4             |
+4             | Blink
 5             |
 6             |
 7             |
@@ -274,7 +274,7 @@ s-E           |
 s-R           |
 s-F           |
 s-1           | Mount
-s-2           |
+s-2           | Arcane Intellect
 s-3           |
 s-4           |
 s-5           |
@@ -286,15 +286,15 @@ np-+          |
 ### Mage - Fire
 
 Mage - Fire | Buttons
-------------|--------
+------------|-----------
 Q           |
 E           |
 R           |
-F           |
-1           |
+F           | Frost Nova
+1           | Shadowmeld
 2           |
 3           |
-4           |
+4           | Blink
 5           |
 6           |
 7           |
@@ -316,15 +316,15 @@ np-+        |
 ### Mage - Frost
 
 Mage - Frost | Buttons
--------------|--------
+-------------|-----------
 Q            |
 E            |
 R            |
-F            |
-1            |
+F            | Frost Nova
+1            | Shadowmeld
 2            |
 3            |
-4            |
+4            | Blink
 5            |
 6            |
 7            |
@@ -346,12 +346,12 @@ np-+         |
 ### Monk - Brewmaster
 
 Monk - Brewmaster | Buttons
-------------------|--------
-Q                 |
+------------------|-----------
+Q                 | Vivify
 E                 |
 R                 |
 F                 |
-1                 |
+1                 | Shadowmeld
 2                 |
 3                 |
 4                 | Roll
@@ -406,12 +406,12 @@ np-+              | Crackling Jade Lightning
 ### Monk - Windwalker
 
 Monk - Windwalker | Buttons
-------------------|--------
-Q                 |
+------------------|-----------
+Q                 | Vivify
 E                 |
 R                 |
 F                 |
-1                 |
+1                 | Shadowmeld
 2                 |
 3                 |
 4                 | Roll
@@ -436,16 +436,16 @@ np-+              |
 ### Paladin - Holy
 
 Paladin - Holy | Buttons
----------------|---------------
+---------------|------------------
 Q              | Flash of Light
 E              |
 R              | Holy Shock
-F              |
+F              | Consecration
 1              |
 2              |
 3              |
-4              |
-5              |
+4              | Hammer of Justice
+5              | Crusader Strike
 6              |
 7              |
 8              | Fishing
@@ -466,15 +466,15 @@ np-+           |
 ### Paladin - Protection
 
 Paladin - Protection | Buttons
----------------------|---------------
+---------------------|------------------
 Q                    | Flash of Light
 E                    |
 R                    |
-F                    |
+F                    | Consecration
 1                    |
 2                    |
 3                    |
-4                    |
+4                    | Hammer of Justice
 5                    |
 6                    |
 7                    |
@@ -496,15 +496,15 @@ np-+                 |
 ### Paladin - Retribution
 
 Paladin - Retribution | Buttons
-----------------------|---------------
+----------------------|------------------
 Q                     | Flash of Light
 E                     |
 R                     |
-F                     |
+F                     | Consecration
 1                     |
 2                     |
 3                     |
-4                     |
+4                     | Hammer of Justice
 5                     |
 6                     |
 7                     |
@@ -526,12 +526,12 @@ np-+                  |
 ### Priest - Discipline
 
 Priest - Discipline | Buttons
---------------------|--------
-Q                   |
+--------------------|---------------
+Q                   | Flash Heal
 E                   |
 R                   |
-F                   |
-1                   |
+F                   | Psychic Scream
+1                   | Shadowmeld
 2                   |
 3                   |
 4                   |
@@ -556,13 +556,13 @@ np-+                |
 ### Priest - Holy
 
 Priest - Holy | Buttons
---------------|--------
-Q             |
+--------------|--------------------
+Q             | Flash Heal
 E             | Renew
 R             |
-F             |
-1             |
-2             |
+F             | Psychic Scream
+1             | Shadowmeld
+2             | Holy Word: Serenity
 3             |
 4             |
 5             |
@@ -586,12 +586,12 @@ np-+          |
 ### Priest - Shadow
 
 Priest - Shadow | Buttons
-----------------|--------
-Q               |
+----------------|---------------
+Q               | Flash Heal
 E               |
 R               |
-F               |
-1               |
+F               | Psychic Scream
+1               | Shadowmeld
 2               |
 3               |
 4               |
@@ -706,18 +706,18 @@ np-+             |
 ### Shaman - Elemental
 
 Shaman - Elemental | Buttons
--------------------|--------
-Q                  |
-E                  |
+-------------------|--------------
+Q                  | Healing Surge
+E                  | Wind Shear
 R                  |
 F                  |
 1                  |
 2                  |
 3                  |
-4                  |
-5                  |
+4                  | Ghost Wolf
+5                  | Flame Shock
 6                  |
-7                  |
+7                  | Far Sight
 8                  | Fishing
 s-Q                |
 s-E                |
@@ -736,18 +736,18 @@ np-+               |
 ### Shaman - Enhancement
 
 Shaman - Enhancement | Buttons
----------------------|--------
-Q                    |
-E                    |
+---------------------|--------------
+Q                    | Healing Surge
+E                    | Wind Shear
 R                    |
 F                    |
 1                    |
 2                    |
 3                    |
-4                    |
-5                    |
+4                    | Ghost Wolf
+5                    | Flame Shock
 6                    |
-7                    |
+7                    | Far Sight
 8                    | Fishing
 s-Q                  |
 s-E                  |
@@ -766,18 +766,18 @@ np-+                 |
 ### Shaman - Restoration
 
 Shaman - Restoration | Buttons
----------------------|--------
-Q                    |
-E                    |
+---------------------|--------------
+Q                    | Healing Surge
+E                    | Wind Shear
 R                    |
-F                    |
+F                    | Riptide
 1                    |
 2                    |
 3                    |
-4                    |
-5                    |
+4                    | Ghost Wolf
+5                    | Flame Shock
 6                    |
-7                    |
+7                    | Far Sight
 8                    | Fishing
 s-Q                  |
 s-E                  |
@@ -796,7 +796,7 @@ np-+                 |
 ### Warlock - Affliction
 
 Warlock - Affliction | Buttons
----------------------|--------
+---------------------|---------------
 Q                    |
 E                    |
 R                    |
@@ -807,7 +807,7 @@ F                    | Fear
 4                    |
 5                    |
 6                    |
-7                    |
+7                    | Eye of Kilrogg
 8                    | Fishing
 s-Q                  |
 s-E                  |
@@ -826,7 +826,7 @@ np-+                 |
 ### Warlock - Demonology
 
 Warlock - Demonology | Buttons
----------------------|--------
+---------------------|---------------
 Q                    |
 E                    |
 R                    |
@@ -837,7 +837,7 @@ F                    | Fear
 4                    |
 5                    |
 6                    |
-7                    |
+7                    | Eye of Kilrogg
 8                    | Fishing
 s-Q                  |
 s-E                  |
@@ -856,18 +856,18 @@ np-+                 |
 ### Warlock - Destruction
 
 Warlock - Destruction | Buttons
-----------------------|--------
-Q                     |
-E                     |
-R                     |
+----------------------|---------------
+Q                     | Immolate
+E                     | Conflagrate
+R                     | Incinerate
 F                     | Fear
 1                     |
 2                     |
 3                     |
-4                     |
+4                     | Chaos Bolt
 5                     |
 6                     |
-7                     |
+7                     | Eye of Kilrogg
 8                     | Fishing
 s-Q                   |
 s-E                   |
@@ -886,13 +886,13 @@ np-+                  |
 ### Warrior - Arms
 
 Warrior - Arms | Buttons
----------------|--------
+---------------|-------------
 Q              |
 E              |
 R              |
-F              |
-1              |
-2              |
+F              | Hamstring
+1              | Execute
+2              | Victory Rush
 3              |
 4              | Charge
 5              |
@@ -916,13 +916,13 @@ np-+           |
 ### Warrior - Fury
 
 Warrior - Fury | Buttons
----------------|--------
+---------------|-------------
 Q              |
 E              |
-R              |
-F              |
-1              |
-2              |
+R              | Bloodthirst
+F              | Hamstring
+1              | Execute
+2              | Victory Rush
 3              |
 4              | Charge
 5              |
@@ -946,13 +946,13 @@ np-+           |
 ### Warrior - Protection
 
 Warrior - Protection | Buttons
----------------------|--------
+---------------------|-------------
 Q                    |
 E                    |
 R                    |
-F                    |
-1                    |
-2                    |
+F                    | Hamstring
+1                    | Execute
+2                    | Victory Rush
 3                    |
 4                    | Charge
 5                    |
