@@ -12,6 +12,8 @@ ActionBar Setups
 * [Warlock](#warlock)
 * [Warrior](#warrior)
 
+### Druid
+
 Druid - Balance | Buttons
 ----------------|--------
                 | Q
@@ -120,6 +122,8 @@ AFK                 | s-7
 AFK                 | s-8
                     | np-+
 
+### Hunter
+
 Hunter - Beast Mastery | Buttons
 -----------------------|--------
                        | Q
@@ -200,6 +204,8 @@ AFK               | s-6
 AFK               | s-7
 AFK               | s-8
                   | np-+
+
+### Mage
 
 Mage - Arcane | Buttons
 --------------|--------
@@ -282,6 +288,8 @@ AFK          | s-7
 AFK          | s-8
              | np-+
 
+### Monk
+
 Monk - Brewmaster | Buttons
 ------------------|--------
                   | Q
@@ -336,7 +344,6 @@ AFK               | s-7
 AFK               | s-8
                   | np-+
 
-
 Monk - Windwalker | Buttons
 ------------------|--------
                   | Q
@@ -364,6 +371,7 @@ AFK               | s-7
 AFK               | s-8
                   | np-+
 
+### Paladin
 
 Paladin - Holy | Buttons
 ---------------|--------
@@ -446,6 +454,8 @@ AFK                   | s-7
 AFK                   | s-8
                       | np-+
 
+### Priest
+
 Priest - Discipline | Buttons
 --------------------|--------
                     | Q
@@ -527,6 +537,8 @@ AFK             | s-7
 AFK             | s-8
                 | np-+
 
+### Rogue
+
 Rogue - Assassination | Buttons
 ----------------------|--------
                       | Q
@@ -554,34 +566,7 @@ AFK                   | s-7
 AFK                   | s-8
                       | np-+
 
-Rogue - Outlaw | Buttons
----------------|--------
-               | Q
-               | E
-               | R
-               | F
-               | 1
-               | 2
-               | 3
-               | 4
-               | 5
-               | 6
-               | 7
-Fishing        | 8
-               | s-E
-               | s-R
-               | s-F
-Mount          | s-1
-               | s-2
-               | s-3
-               | s-4
-               | s-5
-AFK            | s-6
-AFK            | s-7
-AFK            | s-8
-               | np-+
-
-Rogue - Subtlety             | Buttons
+Rogue - Outlaw               | Buttons
 -----------------------------|--------
 Stealth                      | Q
 Kick                         | E
@@ -607,6 +592,35 @@ AFK                          | s-6
 AFK                          | s-7
 AFK                          | s-8
                              | np-+
+
+Rogue - Subtlety | Buttons
+-----------------|--------
+                 | Q
+                 | E
+                 | R
+                 | F
+                 | 1
+                 | 2
+                 | 3
+                 | 4
+                 | 5
+                 | 6
+                 | 7
+Fishing          | 8
+                 | s-E
+                 | s-R
+                 | s-F
+Mount            | s-1
+                 | s-2
+                 | s-3
+                 | s-4
+                 | s-5
+AFK              | s-6
+AFK              | s-7
+AFK              | s-8
+                 | np-+
+
+### Shaman
 
 Shaman - Elemental | Buttons
 -------------------|--------
@@ -689,6 +703,8 @@ AFK                  | s-7
 AFK                  | s-8
                      | np-+
 
+### Warlock
+
 Warlock - Affliction | Buttons
 ---------------------|--------
                      | Q
@@ -769,6 +785,8 @@ AFK                   | s-6
 AFK                   | s-7
 AFK                   | s-8
                       | np-+
+
+### Warrior
 
 Warrior - Arms | Buttons
 ---------------|--------
