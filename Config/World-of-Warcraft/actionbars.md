@@ -1,18 +1,49 @@
 ActionBar Setups
 ----------------
 
-* [Druid](#druid)
-* [Hunter](#hunter)
-* [Mage](#mage)
-* [Monk](#monk)
-* [Paladin](#paladin)
-* [Priest](#priest)
-* [Rogue](#rogue)
-* [Shaman](#shaman)
-* [Warlock](#warlock)
-* [Warrior](#warrior)
+* Druid:
+  * [Balance](#druid-balance)
+  * [Feral](#druid-feral)
+  * [Guardian](#druid-guardian)
+  * [Restoration](#druid-restoration)
+* Hunter:
+  * [Beast Mastery](#hunter-beast-mastery)
+  * [Marksmanship](#hunter-marksmanship)
+  * [Survival](#hunter-survival)
+* Mage:
+  * [Arcane](#mage-arcane)
+  * [Fire](#mage-fire)
+  * [Frost](#mage-frost)
+* Monk:
+  * [Brewmaster](#monk-brewmaster)
+  * [Mistweaver](#monk-mistweaver)
+  * [Windwalker](#monk-windwlaker)
+* Paladin:
+  * [Holy](#paladin-holy)
+  * [Protection](#paladin-protection)
+  * [Retribution](#paladin-retribution)
+* Priest:
+  * [Discipline](#priest-discipline)
+  * [Holy](#priest-holy)
+  * [Shadow](#priest-shadow)
+* Rogue:
+  * [Assassination](#rogue-assassination)
+  * [Outlaw](#rogue-outlaw)
+  * [Subtlety](#rogue-subtlety)
+* Shaman:
+  * [Elemental](#shaman-elemental)
+  * [Enhancement](#shaman-enhancement)
+  * [Restoration](#shaman-restoration)
+* Warlock:
+  * [Affliction](#warlock-affliction)
+  * [Demonology](#warlock-demonology)
+  * [Destruction](#warlock-destruction)
+* Warrior:
+  * [Arms](#warrior-arms)
+  * [Fury](#warrior-fury)
+  * [Protection](#warrior-protection)
 
-### Druid
+### Druid - Balance
 
 Druid - Balance | Buttons
 ----------------|--------
@@ -42,6 +73,8 @@ s-7             | AFK
 s-8             | AFK
 np-+            |
 
+### Druid - Feral
+
 Druid - Feral | Buttons
 --------------|--------
 Q             | Prowl
@@ -69,6 +102,8 @@ s-6           | AFK
 s-7           | AFK
 s-8           | AFK
 np-+          |
+
+### Druid - Guardian
 
 Druid - Guardian | Buttons
 -----------------|--------
@@ -98,6 +133,8 @@ s-7              | AFK
 s-8              | AFK
 np-+             |
 
+### Druid - Restoration
+
 Druid - Restoration | Buttons
 --------------------|--------
 Q                   | Prowl
@@ -126,7 +163,7 @@ s-7                 | AFK
 s-8                 | AFK
 np-+                |
 
-### Hunter
+### Hunter - Beast Mastery
 
 Hunter - Beast Mastery | Buttons
 -----------------------|----------
@@ -156,6 +193,8 @@ s-7                    | AFK
 s-8                    | AFK
 np-+                   |
 
+### Hunter - Marksmanship
+
 Hunter - Marksmanship | Buttons
 ----------------------|--------
 Q                     |
@@ -183,6 +222,8 @@ s-6                   | AFK
 s-7                   | AFK
 s-8                   | AFK
 np-+                  |
+
+### Hunter - Survival
 
 Hunter - Survival | Buttons
 ------------------|--------
@@ -212,7 +253,7 @@ s-7               | AFK
 s-8               | AFK
 np-+              |
 
-### Mage
+### Mage - Arcane
 
 Mage - Arcane | Buttons
 --------------|--------
@@ -242,6 +283,8 @@ s-7           | AFK
 s-8           | AFK
 np-+          |
 
+### Mage - Fire
+
 Mage - Fire | Buttons
 ------------|--------
 Q           |
@@ -269,6 +312,8 @@ s-6         | AFK
 s-7         | AFK
 s-8         | AFK
 np-+        |
+
+### Mage - Frost
 
 Mage - Frost | Buttons
 -------------|--------
@@ -298,7 +343,7 @@ s-7          | AFK
 s-8          | AFK
 np-+         |
 
-### Monk
+### Monk - Brewmaster
 
 Monk - Brewmaster | Buttons
 ------------------|--------
@@ -328,6 +373,8 @@ s-7               | AFK
 s-8               | AFK
 np-+              |
 
+### Monk - Mistweaver
+
 Monk - Mistweaver | Buttons
 ------------------|-------------------------
 Q                 | Vivify
@@ -355,6 +402,8 @@ s-6               | AFK
 s-7               | AFK
 s-8               | AFK
 np-+              | Crackling Jade Lightning
+
+### Monk - Windwalker
 
 Monk - Windwalker | Buttons
 ------------------|--------
@@ -384,7 +433,7 @@ s-7               | AFK
 s-8               | AFK
 np-+              |
 
-### Paladin
+### Paladin - Holy
 
 Paladin - Holy | Buttons
 ---------------|---------------
@@ -414,6 +463,8 @@ s-7            | AFK
 s-8            | AFK
 np-+           |
 
+### Paladin - Protection
+
 Paladin - Protection | Buttons
 ---------------------|---------------
 Q                    | Flash of Light
@@ -441,6 +492,8 @@ s-6                  | AFK
 s-7                  | AFK
 s-8                  | AFK
 np-+                 |
+
+### Paladin - Retribution
 
 Paladin - Retribution | Buttons
 ----------------------|---------------
@@ -470,7 +523,7 @@ s-7                   | AFK
 s-8                   | AFK
 np-+                  |
 
-### Priest
+### Priest - Discipline
 
 Priest - Discipline | Buttons
 --------------------|--------
@@ -500,6 +553,8 @@ s-7                 | AFK
 s-8                 | AFK
 np-+                |
 
+### Priest - Holy
+
 Priest - Holy | Buttons
 --------------|--------
 Q             |
@@ -527,6 +582,8 @@ s-6           | AFK
 s-7           | AFK
 s-8           | AFK
 np-+          |
+
+### Priest - Shadow
 
 Priest - Shadow | Buttons
 ----------------|--------
@@ -556,7 +613,7 @@ s-7             | AFK
 s-8             | AFK
 np-+            |
 
-### Rogue
+### Rogue - Assassination
 
 Rogue - Assassination | Buttons
 ----------------------|-----------
@@ -586,6 +643,8 @@ s-7                   | AFK
 s-8                   | AFK
 np-+                  |
 
+### Rogue - Outlaw
+
 Rogue - Outlaw               | Buttons
 -----------------------------|-----------------------------
 Q                            | Stealth
@@ -613,6 +672,8 @@ s-6                          | AFK
 s-7                          | AFK
 s-8                          | AFK
 np-+                         |
+
+### Rogue - Subtlety
 
 Rogue - Subtlety | Buttons
 -----------------|-----------
@@ -642,7 +703,7 @@ s-7              | AFK
 s-8              | AFK
 np-+             |
 
-### Shaman
+### Shaman - Elemental
 
 Shaman - Elemental | Buttons
 -------------------|--------
@@ -672,6 +733,8 @@ s-7                | AFK
 s-8                | AFK
 np-+               |
 
+### Shaman - Enhancement
+
 Shaman - Enhancement | Buttons
 ---------------------|--------
 Q                    |
@@ -699,6 +762,8 @@ s-6                  | AFK
 s-7                  | AFK
 s-8                  | AFK
 np-+                 |
+
+### Shaman - Restoration
 
 Shaman - Restoration | Buttons
 ---------------------|--------
@@ -728,7 +793,7 @@ s-7                  | AFK
 s-8                  | AFK
 np-+                 |
 
-### Warlock
+### Warlock - Affliction
 
 Warlock - Affliction | Buttons
 ---------------------|--------
@@ -758,6 +823,8 @@ s-7                  | AFK
 s-8                  | AFK
 np-+                 |
 
+### Warlock - Demonology
+
 Warlock - Demonology | Buttons
 ---------------------|--------
 Q                    |
@@ -785,6 +852,8 @@ s-6                  | AFK
 s-7                  | AFK
 s-8                  | AFK
 np-+                 |
+
+### Warlock - Destruction
 
 Warlock - Destruction | Buttons
 ----------------------|--------
@@ -814,7 +883,7 @@ s-7                   | AFK
 s-8                   | AFK
 np-+                  |
 
-### Warrior
+### Warrior - Arms
 
 Warrior - Arms | Buttons
 ---------------|--------
@@ -844,6 +913,8 @@ s-7            | AFK
 s-8            | AFK
 np-+           |
 
+### Warrior - Fury
+
 Warrior - Fury | Buttons
 ---------------|--------
 Q              |
@@ -871,6 +942,8 @@ s-6            | AFK
 s-7            | AFK
 s-8            | AFK
 np-+           |
+
+### Warrior - Protection
 
 Warrior - Protection | Buttons
 ---------------------|--------
