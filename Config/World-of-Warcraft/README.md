@@ -1,6 +1,8 @@
 Honzi's World of Warcraft Config
 --------------------------------
 
+* [ActionBar Setup](https://github.com/honzi/files/blob/master/Config/World-of-Warcraft/actionbars.md)
+
 Accessibility Settings    | Setting
 --------------------------|---------
 Cinematic Subtitles       | Enabled
