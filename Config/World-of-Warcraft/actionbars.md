@@ -2,46 +2,46 @@ ActionBar Setups
 ----------------
 
 * Druid:
-  * [Balance](#druid-balance)
-  * [Feral](#druid-feral)
-  * [Guardian](#druid-guardian)
-  * [Restoration](#druid-restoration)
+  * [Balance](#druid---balance)
+  * [Feral](#druid---feral)
+  * [Guardian](#druid---guardian)
+  * [Restoration](#druid---restoration)
 * Hunter:
-  * [Beast Mastery](#hunter-beast-mastery)
-  * [Marksmanship](#hunter-marksmanship)
-  * [Survival](#hunter-survival)
+  * [Beast Mastery](#hunter---beast-mastery)
+  * [Marksmanship](#hunter---marksmanship)
+  * [Survival](#hunter---survival)
 * Mage:
-  * [Arcane](#mage-arcane)
-  * [Fire](#mage-fire)
-  * [Frost](#mage-frost)
+  * [Arcane](#mage---arcane)
+  * [Fire](#mage---fire)
+  * [Frost](#mage---frost)
 * Monk:
-  * [Brewmaster](#monk-brewmaster)
-  * [Mistweaver](#monk-mistweaver)
-  * [Windwalker](#monk-windwlaker)
+  * [Brewmaster](#monk---brewmaster)
+  * [Mistweaver](#monk---mistweaver)
+  * [Windwalker](#monk---windwlaker)
 * Paladin:
-  * [Holy](#paladin-holy)
-  * [Protection](#paladin-protection)
-  * [Retribution](#paladin-retribution)
+  * [Holy](#paladin---holy)
+  * [Protection](#paladin---protection)
+  * [Retribution](#paladin---retribution)
 * Priest:
-  * [Discipline](#priest-discipline)
-  * [Holy](#priest-holy)
-  * [Shadow](#priest-shadow)
+  * [Discipline](#priest---discipline)
+  * [Holy](#priest---holy)
+  * [Shadow](#priest---shadow)
 * Rogue:
-  * [Assassination](#rogue-assassination)
-  * [Outlaw](#rogue-outlaw)
-  * [Subtlety](#rogue-subtlety)
+  * [Assassination](#rogue---assassination)
+  * [Outlaw](#rogue---outlaw)
+  * [Subtlety](#rogue---subtlety)
 * Shaman:
-  * [Elemental](#shaman-elemental)
-  * [Enhancement](#shaman-enhancement)
-  * [Restoration](#shaman-restoration)
+  * [Elemental](#shaman---elemental)
+  * [Enhancement](#shaman---enhancement)
+  * [Restoration](#shaman---restoration)
 * Warlock:
-  * [Affliction](#warlock-affliction)
-  * [Demonology](#warlock-demonology)
-  * [Destruction](#warlock-destruction)
+  * [Affliction](#warlock---affliction)
+  * [Demonology](#warlock---demonology)
+  * [Destruction](#warlock---destruction)
 * Warrior:
-  * [Arms](#warrior-arms)
-  * [Fury](#warrior-fury)
-  * [Protection](#warrior-protection)
+  * [Arms](#warrior---arms)
+  * [Fury](#warrior---fury)
+  * [Protection](#warrior---protection)
 
 ### Druid - Balance
 
