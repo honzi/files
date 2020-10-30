@@ -16,7 +16,7 @@ ActionBar Setups
 
 Druid - Balance | Buttons
 ----------------|--------
-Q               |
+Q               | Prowl
 E               |
 R               |
 F               |
@@ -44,7 +44,7 @@ np-+            |
 
 Druid - Feral | Buttons
 --------------|--------
-Q             |
+Q             | Prowl
 E             |
 R             |
 F             |
@@ -72,7 +72,7 @@ np-+          |
 
 Druid - Guardian | Buttons
 -----------------|--------
-Q                |
+Q                | Prowl
 E                |
 R                |
 F                |
@@ -100,7 +100,7 @@ np-+             |
 
 Druid - Restoration | Buttons
 --------------------|--------
-Q                   |
+Q                   | Prowl
 E                   |
 R                   |
 F                   |
@@ -129,7 +129,7 @@ np-+                |
 ### Hunter
 
 Hunter - Beast Mastery | Buttons
------------------------|--------
+-----------------------|----------
 Q                      |
 E                      |
 R                      |
@@ -137,7 +137,7 @@ F                      |
 1                      |
 2                      |
 3                      |
-4                      |
+4                      | Disengage
 5                      |
 6                      |
 7                      |
@@ -165,7 +165,7 @@ F                     |
 1                     |
 2                     |
 3                     |
-4                     |
+4                     | Disengage
 5                     |
 6                     |
 7                     |
@@ -193,7 +193,7 @@ F                 |
 1                 |
 2                 |
 3                 |
-4                 |
+4                 | Disengage
 5                 |
 6                 |
 7                 |
@@ -309,7 +309,7 @@ F                 |
 1                 |
 2                 |
 3                 |
-4                 |
+4                 | Roll
 5                 |
 6                 |
 7                 |
@@ -329,32 +329,32 @@ s-8               | AFK
 np-+              |
 
 Monk - Mistweaver | Buttons
-------------------|--------
-Q                 |
-E                 |
-R                 |
-F                 |
-1                 |
-2                 |
-3                 |
-4                 |
-5                 |
-6                 |
-7                 |
+------------------|-------------------------
+Q                 | Vivify
+E                 | Enveloping Mist
+R                 | Soothing Mist
+F                 | Renewing Mist
+1                 | Shadowmeld
+2                 | Expel Harm
+3                 | Chi Wave
+4                 | Roll
+5                 | Tiger Palm
+6                 | Blackout Kick
+7                 | Rising Sun Kick
 8                 | Fishing
 s-Q               |
-s-E               |
-s-R               |
-s-F               |
+s-E               | Touch of Death
+s-R               | Spinning Crane Kick
+s-F               | Leg Sweep
 s-1               | Mount
-s-2               |
+s-2               | Provoke
 s-3               |
 s-4               |
 s-5               |
 s-6               | AFK
 s-7               | AFK
 s-8               | AFK
-np-+              |
+np-+              | Crackling Jade Lightning
 
 Monk - Windwalker | Buttons
 ------------------|--------
@@ -365,7 +365,7 @@ F                 |
 1                 |
 2                 |
 3                 |
-4                 |
+4                 | Roll
 5                 |
 6                 |
 7                 |
@@ -387,10 +387,10 @@ np-+              |
 ### Paladin
 
 Paladin - Holy | Buttons
----------------|--------
-Q              |
+---------------|---------------
+Q              | Flash of Light
 E              |
-R              |
+R              | Holy Shock
 F              |
 1              |
 2              |
@@ -402,7 +402,7 @@ F              |
 8              | Fishing
 s-Q            |
 s-E            |
-s-R            |
+s-R            | Divine Steed
 s-F            |
 s-1            | Mount
 s-2            |
@@ -415,8 +415,8 @@ s-8            | AFK
 np-+           |
 
 Paladin - Protection | Buttons
----------------------|--------
-Q                    |
+---------------------|---------------
+Q                    | Flash of Light
 E                    |
 R                    |
 F                    |
@@ -430,7 +430,7 @@ F                    |
 8                    | Fishing
 s-Q                  |
 s-E                  |
-s-R                  |
+s-R                  | Divine Steed
 s-F                  |
 s-1                  | Mount
 s-2                  |
@@ -443,8 +443,8 @@ s-8                  | AFK
 np-+                 |
 
 Paladin - Retribution | Buttons
-----------------------|--------
-Q                     |
+----------------------|---------------
+Q                     | Flash of Light
 E                     |
 R                     |
 F                     |
@@ -458,7 +458,7 @@ F                     |
 8                     | Fishing
 s-Q                   |
 s-E                   |
-s-R                   |
+s-R                   | Divine Steed
 s-F                   |
 s-1                   | Mount
 s-2                   |
@@ -503,7 +503,7 @@ np-+                |
 Priest - Holy | Buttons
 --------------|--------
 Q             |
-E             |
+E             | Renew
 R             |
 F             |
 1             |
@@ -561,7 +561,7 @@ np-+            |
 Rogue - Assassination | Buttons
 ----------------------|-----------
 Q                     | Stealth
-E                     |
+E                     | Kick
 R                     |
 F                     |
 1                     | Shadowmeld
@@ -617,7 +617,7 @@ np-+                         |
 Rogue - Subtlety | Buttons
 -----------------|-----------
 Q                | Stealth
-E                |
+E                | Kick
 R                |
 F                |
 1                | Shadowmeld
@@ -735,7 +735,7 @@ Warlock - Affliction | Buttons
 Q                    |
 E                    |
 R                    |
-F                    |
+F                    | Fear
 1                    |
 2                    |
 3                    |
@@ -763,7 +763,7 @@ Warlock - Demonology | Buttons
 Q                    |
 E                    |
 R                    |
-F                    |
+F                    | Fear
 1                    |
 2                    |
 3                    |
@@ -791,7 +791,7 @@ Warlock - Destruction | Buttons
 Q                     |
 E                     |
 R                     |
-F                     |
+F                     | Fear
 1                     |
 2                     |
 3                     |
@@ -825,7 +825,7 @@ F              |
 1              |
 2              |
 3              |
-4              |
+4              | Charge
 5              |
 6              |
 7              |
@@ -853,7 +853,7 @@ F              |
 1              |
 2              |
 3              |
-4              |
+4              | Charge
 5              |
 6              |
 7              |
@@ -881,7 +881,7 @@ F                    |
 1                    |
 2                    |
 3                    |
-4                    |
+4                    | Charge
 5                    |
 6                    |
 7                    |
