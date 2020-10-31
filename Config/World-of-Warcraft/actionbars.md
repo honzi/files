@@ -766,32 +766,32 @@ np-+                 |
 ### Shaman - Restoration
 
 Shaman - Restoration | Buttons
----------------------|--------------
+---------------------|------------------
 Q                    | Healing Surge
 E                    | Wind Shear
-R                    |
+R                    | Lava Burst
 F                    | Riptide
-1                    |
-2                    |
+1                    | Gift of the Naaru
+2                    | Unleash Life
 3                    |
 4                    | Ghost Wolf
 5                    | Flame Shock
-6                    |
+6                    | Primal Strike
 7                    | Far Sight
 8                    | Fishing
 s-Q                  |
 s-E                  |
 s-R                  |
-s-F                  |
+s-F                  | Earthbind Totem
 s-1                  | Mount
-s-2                  |
-s-3                  |
+s-2                  | Flametongue Weapon
+s-3                  | Lightning Shield
 s-4                  |
 s-5                  |
 s-6                  | AFK
 s-7                  | AFK
 s-8                  | AFK
-np-+                 |
+np-+                 | Lightning Bolt
 
 ### Warlock - Affliction
 
