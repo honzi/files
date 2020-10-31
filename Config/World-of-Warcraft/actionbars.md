@@ -645,33 +645,33 @@ np-+                  |
 
 ### Rogue - Outlaw
 
-Rogue - Outlaw               | Buttons
------------------------------|-----------------------------
-Q                            | Stealth
-E                            | Kick
-R                            | Cheap Shot / Sinister Strike
-F                            | Pistol Shot
-1                            | Shadowmeld
-2                            | Eviscerate
-3                            | Ambush / Ghostly Strike
-4                            | Sap / Kidney Shot
-5                            | Grappling Hook
-6                            |
-7                            |
-8                            | Fishing
-s-Q                          |
-s-E                          | Between the Eyes
-s-R                          | Sprint
-s-F                          | Crimson Vial
-s-1                          | Mount
-s-2                          | Blade Flurry
-s-3                          | Slice and Dice
-s-4                          | Trinket
-s-5                          | Trinket
-s-6                          | AFK
-s-7                          | AFK
-s-8                          | AFK
-np-+                         |
+Rogue - Outlaw | Buttons
+---------------|-----------------------------
+Q              | Stealth
+E              | Kick
+R              | Cheap Shot / Sinister Strike
+F              | Pistol Shot
+1              | Shadowmeld
+2              | Eviscerate
+3              | Ambush / Ghostly Strike
+4              | Sap / Kidney Shot
+5              | Grappling Hook
+6              |
+7              |
+8              | Fishing
+s-Q            |
+s-E            | Between the Eyes
+s-R            | Sprint
+s-F            | Crimson Vial
+s-1            | Mount
+s-2            | Blade Flurry
+s-3            | Slice and Dice
+s-4            | Trinket
+s-5            | Trinket
+s-6            | AFK
+s-7            | AFK
+s-8            | AFK
+np-+           |
 
 ### Rogue - Subtlety
 
@@ -856,28 +856,28 @@ np-+                 |
 ### Warlock - Destruction
 
 Warlock - Destruction | Buttons
-----------------------|---------------
+----------------------|--------------------
 Q                     | Immolate
 E                     | Conflagrate
 R                     | Incinerate
 F                     | Fear
-1                     |
-2                     |
-3                     |
+1                     | Drain Life
+2                     | Curse of Weakness
+3                     | Curse of Exhaustion
 4                     | Chaos Bolt
-5                     |
-6                     |
+5                     | Healthstone
+6                     | Corruption
 7                     | Eye of Kilrogg
 8                     | Fishing
 s-Q                   |
-s-E                   |
+s-E                   | Escape Artist
 s-R                   |
-s-F                   |
+s-F                   | Unending Resolve
 s-1                   | Mount
-s-2                   |
-s-3                   |
+s-2                   | Summon Imp
+s-3                   | Unending Breath
 s-4                   |
-s-5                   |
+s-5                   | Create Healthstone
 s-6                   | AFK
 s-7                   | AFK
 s-8                   | AFK
