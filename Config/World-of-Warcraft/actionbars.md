@@ -937,7 +937,7 @@ F                    | Riptide
 7                    | Far Sight
 8                    | Fishing
 s-Q                  |
-s-E                  |
+s-E                  | Purify Spirit
 s-R                  | Lava Burst
 s-F                  | Earthbind Totem
 s-1                  | Mount
@@ -1075,26 +1075,26 @@ np-+           |
 Warrior - Fury | Buttons
 ---------------|-------------
 Q              |
-E              |
+E              | Raging Blow
 R              | Bloodthirst
 F              | Hamstring
 1              | Execute
 2              | Victory Rush
-3              |
+3              | Whirlwind
 4              | Charge
-5              |
+5              | Pummel
 6              |
 7              |
 8              | Fishing
 s-Q            |
 s-E            |
 s-R            |
-s-F            |
+s-F            | Taunt
 s-1            | Mount
 s-2            |
 s-3            |
-s-4            |
-s-5            |
+s-4            | Trinket
+s-5            | Trinket
 s-6            | AFK
 s-7            | AFK
 s-8            | AFK
