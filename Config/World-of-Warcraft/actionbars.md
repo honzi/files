@@ -73,8 +73,8 @@ s-F                  |
 s-1                  | Mount
 s-2                  |
 s-3                  |
-s-4                  |
-s-5                  |
+s-4                  | Trinket
+s-5                  | Trinket
 s-6                  | AFK
 s-7                  | AFK
 s-8                  | AFK
@@ -103,8 +103,8 @@ s-F                  |
 s-1                  | Mount
 s-2                  |
 s-3                  |
-s-4                  |
-s-5                  |
+s-4                  | Trinket
+s-5                  | Trinket
 s-6                  | AFK
 s-7                  | AFK
 s-8                  | AFK
@@ -122,19 +122,19 @@ F                     | Death and Decay
 2                     |
 3                     |
 4                     | Death Coil
-5                     | Death Grip
+5                     | Scourge Strike
 6                     | Death Strike
 7                     |
 8                     | Fishing
 s-Q                   |
 s-E                   | Anti-Magic Shell
 s-R                   |
-s-F                   |
+s-F                   | Death Grip
 s-1                   | Mount
 s-2                   |
 s-3                   |
-s-4                   |
-s-5                   |
+s-4                   | Trinket
+s-5                   | Trinket
 s-6                   | AFK
 s-7                   | AFK
 s-8                   | AFK
@@ -161,7 +161,7 @@ s-E                  | Spectral Sight
 s-R                  |
 s-F                  | Glide
 s-1                  | Mount
-s-2                  |
+s-2                  | Torment
 s-3                  |
 s-4                  |
 s-5                  |
@@ -191,7 +191,7 @@ s-E                      |
 s-R                      |
 s-F                      |
 s-1                      | Mount
-s-2                      |
+s-2                      | Torment
 s-3                      |
 s-4                      |
 s-5                      |
@@ -926,7 +926,7 @@ Shaman - Restoration | Buttons
 ---------------------|-------------------
 Q                    | Healing Surge
 E                    | Wind Shear
-R                    | Lava Burst
+R                    | Frost Shock
 F                    | Riptide
 1                    | Gift of the Naaru
 2                    | Unleash Life
@@ -938,7 +938,7 @@ F                    | Riptide
 8                    | Fishing
 s-Q                  |
 s-E                  |
-s-R                  |
+s-R                  | Lava Burst
 s-F                  | Earthbind Totem
 s-1                  | Mount
 s-2                  | Flametongue Weapon
