@@ -1,6 +1,13 @@
 ActionBar Setups
 ----------------
 
+* Death Knight:
+  * [Blood](#death-knight---blood)
+  * [Frost](#death-knight---frost)
+  * [Unholy](#death-knight---unholy)
+* Demon Hunter:
+  * [Havoc](#demon-hunter---havoc)
+  * [Vengeance](#demon-hunter---vengeance)
 * Druid:
   * [Balance](#druid---balance)
   * [Feral](#druid---feral)
@@ -42,6 +49,156 @@ ActionBar Setups
   * [Arms](#warrior---arms)
   * [Fury](#warrior---fury)
   * [Protection](#warrior---protection)
+
+### Death Knight - Blood
+
+Death Knight - Blood | Buttons
+---------------------|-----------------
+Q                    |
+E                    | Mind Freeze
+R                    | Rune Strike
+F                    | Death and Decay
+1                    | Shadowmeld
+2                    |
+3                    |
+4                    | Death Coil
+5                    | Death Grip
+6                    | Death Strike
+7                    |
+8                    | Fishing
+s-Q                  |
+s-E                  | Anti-Magic Shell
+s-R                  |
+s-F                  |
+s-1                  | Mount
+s-2                  |
+s-3                  |
+s-4                  |
+s-5                  |
+s-6                  | AFK
+s-7                  | AFK
+s-8                  | AFK
+np-+                 |
+
+### Death Knight - Frost
+
+Death Knight - Frost | Buttons
+---------------------|-----------------
+Q                    |
+E                    | Mind Freeze
+R                    | Rune Strike
+F                    | Death and Decay
+1                    | Shadowmeld
+2                    |
+3                    |
+4                    | Death Coil
+5                    | Death Grip
+6                    | Death Strike
+7                    |
+8                    | Fishing
+s-Q                  |
+s-E                  | Anti-Magic Shell
+s-R                  |
+s-F                  |
+s-1                  | Mount
+s-2                  |
+s-3                  |
+s-4                  |
+s-5                  |
+s-6                  | AFK
+s-7                  | AFK
+s-8                  | AFK
+np-+                 |
+
+### Death Knight - Unholy
+
+Death Knight - Unholy | Buttons
+----------------------|-----------------
+Q                     |
+E                     | Mind Freeze
+R                     | Rune Strike
+F                     | Death and Decay
+1                     | Shadowmeld
+2                     |
+3                     |
+4                     | Death Coil
+5                     | Death Grip
+6                     | Death Strike
+7                     |
+8                     | Fishing
+s-Q                   |
+s-E                   | Anti-Magic Shell
+s-R                   |
+s-F                   |
+s-1                   | Mount
+s-2                   |
+s-3                   |
+s-4                   |
+s-5                   |
+s-6                   | AFK
+s-7                   | AFK
+s-8                   | AFK
+np-+                  |
+
+### Demon Hunter - Havoc
+
+Demon Hunter - Havoc | Buttons
+---------------------|---------------
+Q                    |
+E                    |
+R                    | Demon's Bite
+F                    |
+1                    | Shadowmeld
+2                    |
+3                    |
+4                    | Fel Rush
+5                    | Chaos Strike
+6                    |
+7                    |
+8                    | Fishing
+s-Q                  |
+s-E                  | Spectral Sight
+s-R                  |
+s-F                  | Glide
+s-1                  | Mount
+s-2                  |
+s-3                  |
+s-4                  |
+s-5                  |
+s-6                  | AFK
+s-7                  | AFK
+s-8                  | AFK
+np-+                 |
+
+### Demon Hunter - Vengeance
+
+Demon Hunter - Vengeance | Buttons
+-------------------------|-----------
+Q                        |
+E                        |
+R                        |
+F                        |
+1                        | Shadowmeld
+2                        |
+3                        |
+4                        |
+5                        |
+6                        |
+7                        |
+8                        | Fishing
+s-Q                      |
+s-E                      |
+s-R                      |
+s-F                      |
+s-1                      | Mount
+s-2                      |
+s-3                      |
+s-4                      |
+s-5                      |
+s-6                      | AFK
+s-7                      | AFK
+s-8                      | AFK
+np-+                     |
 
 ### Druid - Balance
 
@@ -766,7 +923,7 @@ np-+                 |
 ### Shaman - Restoration
 
 Shaman - Restoration | Buttons
----------------------|------------------
+---------------------|-------------------
 Q                    | Healing Surge
 E                    | Wind Shear
 R                    | Lava Burst
