@@ -1074,7 +1074,7 @@ np-+           |
 
 Warrior - Fury | Buttons
 ---------------|-------------
-Q              |
+Q              | Rampage
 E              | Raging Blow
 R              | Bloodthirst
 F              | Hamstring
@@ -1086,9 +1086,9 @@ F              | Hamstring
 6              |
 7              |
 8              | Fishing
-s-Q            |
-s-E            |
-s-R            |
+s-Q            | Berserking
+s-E            | Ignore Pain
+s-R            | Slam
 s-F            | Taunt
 s-1            | Mount
 s-2            |
