@@ -122,16 +122,16 @@ F                     | Death and Decay
 2                     |
 3                     |
 4                     | Death Coil
-5                     | Scourge Strike
-6                     | Death Strike
+5                     | Death Strike
+6                     |
 7                     |
 8                     | Fishing
 s-Q                   |
 s-E                   | Anti-Magic Shell
-s-R                   |
+s-R                   | Scourge Strike
 s-F                   | Death Grip
 s-1                   | Mount
-s-2                   |
+s-2                   | Raise Dead
 s-3                   |
 s-4                   | Trinket
 s-5                   | Trinket
@@ -158,7 +158,7 @@ F                    |
 8                    | Fishing
 s-Q                  |
 s-E                  | Spectral Sight
-s-R                  |
+s-R                  | Eye Beam
 s-F                  | Glide
 s-1                  | Mount
 s-2                  | Torment
@@ -323,28 +323,28 @@ np-+                |
 ### Hunter - Beast Mastery
 
 Hunter - Beast Mastery | Buttons
------------------------|----------------
-Q                      |
-E                      |
-R                      |
+-----------------------|----------------------
+Q                      | Kill Command
+E                      | Barbed Shot
+R                      | Cobra Shot
 F                      | Concussive Shot
-1                      |
-2                      |
-3                      |
+1                      | Mend Pet
+2                      | Hunter's Mark
+3                      | Freezing Trap
 4                      | Disengage
-5                      |
+5                      | Counter Shot
 6                      |
-7                      |
+7                      | Feign Death
 8                      | Fishing
-s-Q                    |
-s-E                    |
-s-R                    |
-s-F                    |
+s-Q                    | Blood Fury
+s-E                    | Exhilaration
+s-R                    | Aspect of the Cheetah
+s-F                    | Flare
 s-1                    | Mount
-s-2                    |
-s-3                    |
-s-4                    |
-s-5                    |
+s-2                    | Aspect of the Turtle
+s-3                    | Beastial Wrath
+s-4                    | Trinket
+s-5                    | Trinket
 s-6                    | AFK
 s-7                    | AFK
 s-8                    | AFK
