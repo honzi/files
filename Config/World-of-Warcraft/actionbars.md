@@ -293,13 +293,13 @@ np-+             |
 ### Druid - Restoration
 
 Druid - Restoration | Buttons
---------------------|-----------------
+--------------------|-----------------------
 Q                   | Prowl
 E                   | Rejuvenation
 R                   | Regrowth
-F                   |
-1                   | Shadowmeld
-2                   |
+F                   | Nourish
+1                   | Shadowmeld / War Stomp
+2                   | Swiftmend
 3                   | Cat Form
 4                   | Travel Form
 5                   | Moonfire
@@ -307,14 +307,14 @@ F                   |
 7                   |
 8                   | Fishing
 s-Q                 |
-s-E                 |
-s-R                 |
+s-E                 | Nature's Cure
+s-R                 | Dash
 s-F                 | Entangling Roots
 s-1                 | Mount
-s-2                 |
+s-2                 | Ironbark
 s-3                 | Bear Form
 s-4                 |
-s-5                 |
+s-5                 | Ironfur
 s-6                 | AFK
 s-7                 | AFK
 s-8                 | AFK
