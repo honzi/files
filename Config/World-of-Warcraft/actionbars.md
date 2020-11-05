@@ -147,7 +147,7 @@ Demon Hunter - Havoc | Buttons
 Q                    |
 E                    |
 R                    | Demon's Bite
-F                    |
+F                    | Blade Dance
 1                    | Shadowmeld
 2                    |
 3                    |
@@ -233,32 +233,32 @@ np-+            |
 ### Druid - Feral
 
 Druid - Feral | Buttons
---------------|-----------------
+--------------|--------------------------------------
 Q             | Prowl
-E             |
-R             |
-F             |
+E             | Rake
+R             | Shred / Mangle
+F             | Thrash / Ironfur
 1             | Shadowmeld
-2             |
+2             | Ferocious Bite / Strength of the Wild
 3             | Cat Form
 4             | Travel Form
 5             | Moonfire
-6             |
+6             | Regrowth
 7             |
 8             | Fishing
 s-Q           |
-s-E           |
-s-R           |
+s-E           | Remove Corruption
+s-R           | Dash
 s-F           | Entangling Roots
 s-1           | Mount
 s-2           |
 s-3           | Bear Form
 s-4           |
-s-5           |
+s-5           | Tiger's Fury
 s-6           | AFK
 s-7           | AFK
 s-8           | AFK
-np-+          |
+np-+          | Wrath
 
 ### Druid - Guardian
 
@@ -813,7 +813,7 @@ F              | Pistol Shot
 3              | Ambush / Ghostly Strike
 4              | Sap / Kidney Shot
 5              | Grappling Hook
-6              |
+6              | Dismantle
 7              |
 8              | Fishing
 s-Q            |
