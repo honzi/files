@@ -235,10 +235,10 @@ np-+            |
 Druid - Feral | Buttons
 --------------|--------------------------------------
 Q             | Prowl
-E             | Rake
-R             | Shred / Mangle
-F             | Thrash / Ironfur
-1             | Shadowmeld
+E             | Rake / Ironfur
+R             | Shred / Mangle / Regrowth
+F             | Thrash
+1             | Shadowmeld / War Stomp
 2             | Ferocious Bite / Strength of the Wild
 3             | Cat Form
 4             | Travel Form
@@ -247,14 +247,14 @@ F             | Thrash / Ironfur
 7             |
 8             | Fishing
 s-Q           |
-s-E           | Remove Corruption
+s-E           | Tiger's Fury
 s-R           | Dash
 s-F           | Entangling Roots
 s-1           | Mount
 s-2           |
 s-3           | Bear Form
 s-4           |
-s-5           | Tiger's Fury
+s-5           | Remove Corruption
 s-6           | AFK
 s-7           | AFK
 s-8           | AFK
