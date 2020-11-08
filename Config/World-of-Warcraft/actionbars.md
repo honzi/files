@@ -124,7 +124,7 @@ F                     | Death and Decay
 4                     | Death Coil
 5                     | Death Strike
 6                     |
-7                     |
+7                     | Dark Command
 8                     | Fishing
 s-Q                   |
 s-E                   | Anti-Magic Shell
@@ -159,7 +159,7 @@ F                    | Blade Dance
 s-Q                  |
 s-E                  | Spectral Sight
 s-R                  | Eye Beam
-s-F                  | Glide
+s-F                  | Immolation Aura
 s-1                  | Mount
 s-2                  | Torment
 s-3                  |
