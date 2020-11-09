@@ -115,7 +115,7 @@ np-+                 |
 Death Knight - Unholy | Buttons
 ----------------------|-----------------
 Q                     |
-E                     | Mind Freeze
+E                     | Clawing Shadows
 R                     | Rune Strike
 F                     | Death and Decay
 1                     | Shadowmeld
@@ -128,7 +128,7 @@ F                     | Death and Decay
 8                     | Fishing
 s-Q                   |
 s-E                   | Anti-Magic Shell
-s-R                   | Scourge Strike
+s-R                   | Mind Freeze
 s-F                   | Death Grip
 s-1                   | Mount
 s-2                   | Raise Dead
@@ -147,7 +147,7 @@ Demon Hunter - Havoc | Buttons
 Q                    |
 E                    |
 R                    | Demon's Bite
-F                    | Blade Dance
+F                    | Immolation Aura
 1                    | Shadowmeld
 2                    |
 3                    |
@@ -156,10 +156,10 @@ F                    | Blade Dance
 6                    |
 7                    |
 8                    | Fishing
-s-Q                  |
-s-E                  | Spectral Sight
+s-Q                  | Spectral Sight
+s-E                  | Blade Dance
 s-R                  | Eye Beam
-s-F                  | Immolation Aura
+s-F                  |
 s-1                  | Mount
 s-2                  | Torment
 s-3                  |
