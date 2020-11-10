@@ -5,11 +5,7 @@ set -eu
 # Example usage: sh install.sh
 
 # UPDATE
-sudo apt-get update
-sudo apt-get dist-upgrade
-sudo apt-get update
-sudo apt-get upgrade
-sudo apt-get autoremove
+sh ~/.iterami/repositories/files/Scripts/Ubuntu/18-04/update.sh
 
 
 # INSTALL
@@ -43,4 +39,4 @@ sudo apt-get autoremove
 
 
 # CONFIGURE
-sh configure.sh
+sh ~/.iterami/repositories/files/Scripts/Ubuntu/18-04/configure.sh

@@ -203,3 +203,18 @@ gsettings set org.gtk.Settings.FileChooser show-hidden true
 gsettings set org.gtk.Settings.FileChooser window-size '(1100, 600)'
 
 killall indicator-messages-service
+
+
+# Cleanup various directories.
+> ~/.bash_history
+> ~/.python_history
+> ~/.minecraft/launcher_log.txt
+sudo rm -rf ~/.cache/thumbnails/*
+sudo rm -rf ~/.local/share/Trash/*
+sudo rm -rf ~/.minecraft/crash-reports/*
+sudo rm -rf ~/.minecraft/logs/*
+sudo rm -rf ~/snap/warzone2100/current/.local/share/warzone2100-3.3.0/logs/*
+sudo rm -rf ~/.steam/steam/steamapps/common/Portal\ 2/portal2/maps/workshop/*
+sudo rm -rf ~/.wine/drive_c/Program\ Files\ \(x86\)/Electronic\ Arts/Crytek/Crysis\ SP\ Demo/LogBackups/*
+sudo rm -rf ~/.wine/drive_c/users/honzi/My\ Documents/EVE/capture/Screenshots/*
+sudo rm -rf ~/.wine/drive_c/users/honzi/My\ Documents/EVE/logs/Gamelogs/*
