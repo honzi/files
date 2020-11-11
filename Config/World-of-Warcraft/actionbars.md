@@ -595,30 +595,30 @@ np-+              |
 Paladin - Holy | Buttons
 ---------------|------------------
 Q              | Flash of Light
-E              |
+E              | Judgement
 R              | Holy Shock
 F              | Consecration
-1              |
-2              |
-3              |
+1              | Cleanse
+2              | Word of Glory
+3              | Bestow Faith
 4              | Hammer of Justice
 5              | Crusader Strike
-6              |
+6              | Hand of Reckoning
 7              |
 8              | Fishing
-s-Q            |
-s-E            |
+s-Q            | Gift of the Naaru
+s-E            | Divine Shield
 s-R            | Divine Steed
-s-F            |
+s-F            | Lay on Hands
 s-1            | Mount
-s-2            |
+s-2            | Beacon of Light
 s-3            |
 s-4            |
-s-5            |
+s-5            | Shield of the Righteous
 s-6            | AFK
 s-7            | AFK
 s-8            | AFK
-np-+           |
+np-+           | Holy Light
 
 ### Paladin - Protection
 
@@ -653,28 +653,28 @@ np-+                 |
 ### Paladin - Retribution
 
 Paladin - Retribution | Buttons
-----------------------|------------------
+----------------------|------------------------
 Q                     | Flash of Light
-E                     |
-R                     |
+E                     | Judgement
+R                     | Blade of Justice
 F                     | Consecration
-1                     |
-2                     |
+1                     | Cleanse Toxins
+2                     | Word of Glory
 3                     |
 4                     | Hammer of Justice
-5                     |
+5                     | Crusader Strike
 6                     |
 7                     |
 8                     | Fishing
 s-Q                   |
-s-E                   |
-s-R                   | Divine Steed
-s-F                   |
+s-E                   | Divine Shield
+s-R                   | Templar's Verdict
+s-F                   | Lay on Hands
 s-1                   | Mount
-s-2                   |
+s-2                   | Hand of Reckoning
 s-3                   |
-s-4                   |
-s-5                   |
+s-4                   | Hand of Hindrance
+s-5                   | Divine Steed
 s-6                   | AFK
 s-7                   | AFK
 s-8                   | AFK
@@ -713,62 +713,62 @@ np-+                |
 ### Priest - Holy
 
 Priest - Holy | Buttons
---------------|--------------------
+--------------|----------------------
 Q             | Flash Heal
 E             | Renew
-R             |
+R             | Heal
 F             | Psychic Scream
 1             | Shadowmeld
 2             | Holy Word: Serenity
-3             |
-4             |
-5             |
+3             | Shadow Word: Pain
+4             | Power Word: Shield
+5             | Holy Fire
 6             |
 7             |
 8             | Fishing
 s-Q           |
-s-E           |
-s-R           |
-s-F           |
+s-E           | Desperate Prayer
+s-R           | Shadow Word: Death
+s-F           | Purify
 s-1           | Mount
-s-2           |
-s-3           |
+s-2           | Power Word: Fortitude
+s-3           | Fade
 s-4           |
-s-5           |
+s-5           | Greater Heal
 s-6           | AFK
 s-7           | AFK
 s-8           | AFK
-np-+          |
+np-+          | Smite
 
 ### Priest - Shadow
 
 Priest - Shadow | Buttons
-----------------|---------------
-Q               | Flash Heal
-E               |
-R               |
+----------------|----------------------
+Q               | Shadow Mend
+E               | Shadow Word: Pain
+R               | Vampiric Touch
 F               | Psychic Scream
 1               | Shadowmeld
-2               |
-3               |
-4               |
-5               |
+2               | Devouring Plague
+3               | Psyfiend
+4               | Power Word: Shield
+5               | Mind Blast
 6               |
 7               |
 8               | Fishing
-s-Q             |
-s-E             |
-s-R             |
-s-F             |
+s-Q             | Shadowform
+s-E             | Desperate Prayer
+s-R             | Shadow Word: Death
+s-F             | Purify Disease
 s-1             | Mount
-s-2             |
-s-3             |
-s-4             |
-s-5             |
+s-2             | Power Word: Fortitude
+s-3             | Fade
+s-4             | Shadowfiend
+s-5             | Dispersion
 s-6             | AFK
 s-7             | AFK
 s-8             | AFK
-np-+            |
+np-+            | Mind Flay
 
 ### Rogue - Assassination
 
@@ -863,61 +863,61 @@ np-+             |
 ### Shaman - Elemental
 
 Shaman - Elemental | Buttons
--------------------|--------------
+-------------------|-------------------
 Q                  | Healing Surge
 E                  | Wind Shear
-R                  |
-F                  |
-1                  |
+R                  | Frost Shock
+F                  | Earth Shock
+1                  | Gift of the Naaru
 2                  |
 3                  |
 4                  | Ghost Wolf
 5                  | Flame Shock
-6                  |
-7                  | Far Sight
+6                  | Primal Strike
+7                  | Farsight
 8                  | Fishing
 s-Q                |
-s-E                |
-s-R                |
-s-F                |
+s-E                | Cleanse Spirit
+s-R                | Lava Burst
+s-F                | Earthbind Totem
 s-1                | Mount
-s-2                |
-s-3                |
+s-2                | Flametongue Weapon
+s-3                | Lightning Shield
 s-4                |
 s-5                |
 s-6                | AFK
 s-7                | AFK
 s-8                | AFK
-np-+               |
+np-+               | Lightning Bolt
 
 ### Shaman - Enhancement
 
 Shaman - Enhancement | Buttons
 ---------------------|--------------
-Q                    | Healing Surge
-E                    | Wind Shear
+Q                    |
+E                    |
 R                    |
 F                    |
 1                    |
 2                    |
 3                    |
-4                    | Ghost Wolf
-5                    | Flame Shock
+4                    |
+5                    |
 6                    |
-7                    | Far Sight
-8                    | Fishing
+7                    |
+8                    |
 s-Q                  |
 s-E                  |
 s-R                  |
 s-F                  |
-s-1                  | Mount
+s-1                  |
 s-2                  |
 s-3                  |
 s-4                  |
 s-5                  |
-s-6                  | AFK
-s-7                  | AFK
-s-8                  | AFK
+s-6                  |
+s-7                  |
+s-8                  |
 np-+                 |
 
 ### Shaman - Restoration
