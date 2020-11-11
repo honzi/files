@@ -563,32 +563,32 @@ np-+              | Crackling Jade Lightning
 ### Monk - Windwalker
 
 Monk - Windwalker | Buttons
-------------------|-----------
+------------------|-------------------------
 Q                 | Vivify
-E                 |
-R                 |
-F                 |
+E                 | Spear Hand Strike
+R                 | Tiger Palm
+F                 | Fists of Fury
 1                 | Shadowmeld
-2                 |
+2                 | Expel Harm
 3                 |
 4                 | Roll
-5                 |
-6                 |
+5                 | Blackout Kick
+6                 | Rising Sun Kick
 7                 |
 8                 | Fishing
 s-Q               |
-s-E               |
-s-R               |
-s-F               |
+s-E               | Touch of Death
+s-R               | Spinning Crane Kick
+s-F               | Leg Sweep
 s-1               | Mount
-s-2               |
+s-2               | Provoke
 s-3               |
 s-4               |
 s-5               |
 s-6               | AFK
 s-7               | AFK
 s-8               | AFK
-np-+              |
+np-+              | Crackling Jade Lightning
 
 ### Paladin - Holy
 
