@@ -114,13 +114,13 @@ np-+                 |
 
 Death Knight - Unholy | Buttons
 ----------------------|-----------------
-Q                     |
-E                     | Clawing Shadows
-R                     | Rune Strike
-F                     | Death and Decay
+Q                     | Apocalypse
+E                     | Outbreak
+R                     | Clawing Shadows
+F                     | Rune Strike
 1                     | Shadowmeld
-2                     |
-3                     |
+2                     | Chains of Ice
+3                     | Death and Decay
 4                     | Death Coil
 5                     | Death Strike
 6                     |
@@ -143,26 +143,26 @@ np-+                  |
 ### Demon Hunter - Havoc
 
 Demon Hunter - Havoc | Buttons
----------------------|---------------
+---------------------|-----------------
 Q                    |
-E                    |
+E                    | Chaos Strike
 R                    | Demon's Bite
-F                    | Immolation Aura
+F                    | Throw Glaive
 1                    | Shadowmeld
-2                    |
-3                    |
+2                    | Immolation Aura
+3                    | Vengeful Retreat
 4                    | Fel Rush
-5                    | Chaos Strike
-6                    |
+5                    | Disrupt
+6                    | Consume Magic
 7                    |
 8                    | Fishing
-s-Q                  | Spectral Sight
+s-Q                  | Metamorphosis
 s-E                  | Blade Dance
 s-R                  | Eye Beam
-s-F                  |
+s-F                  | Throw Glaive
 s-1                  | Mount
 s-2                  | Torment
-s-3                  |
+s-3                  | Spectral Sight
 s-4                  |
 s-5                  |
 s-6                  | AFK
