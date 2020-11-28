@@ -144,7 +144,7 @@ np-+                  |
 
 Demon Hunter - Havoc | Buttons
 ---------------------|-----------------
-Q                    |
+Q                    | Mana Rift
 E                    | Chaos Strike
 R                    | Demon's Bite
 F                    | Throw Glaive
@@ -233,20 +233,20 @@ np-+            |
 ### Druid - Feral
 
 Druid - Feral | Buttons
---------------|--------------------------------------
+--------------|------------------------------------
 Q             | Prowl
-E             | Rake / Ironfur
+E             | Rake / Strength of the Wild / Wrath
 R             | Shred / Mangle / Regrowth
-F             | Thrash
+F             | Thrash / Thrash
 1             | Shadowmeld / War Stomp
-2             | Ferocious Bite / Strength of the Wild
+2             | Ferocious Bite / Ironfur
 3             | Cat Form
 4             | Travel Form
 5             | Moonfire
-6             | Regrowth
+6             |
 7             |
 8             | Fishing
-s-Q           |
+s-Q           | Regrowth
 s-E           | Tiger's Fury
 s-R           | Dash
 s-F           | Entangling Roots
@@ -258,7 +258,7 @@ s-5           | Remove Corruption
 s-6           | AFK
 s-7           | AFK
 s-8           | AFK
-np-+          | Wrath
+np-+          | Regrowth
 
 ### Druid - Guardian
 
@@ -306,7 +306,7 @@ F                   | Nourish
 6                   |
 7                   |
 8                   | Fishing
-s-Q                 |
+s-Q                 | Regrowth
 s-E                 | Nature's Cure
 s-R                 | Dash
 s-F                 | Entangling Roots
