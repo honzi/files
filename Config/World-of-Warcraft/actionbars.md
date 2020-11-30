@@ -114,7 +114,7 @@ np-+                 |
 
 Death Knight - Unholy | Buttons
 ----------------------|-----------------
-Q                     | Apocalypse
+Q                     |
 E                     | Outbreak
 R                     | Clawing Shadows
 F                     | Rune Strike
@@ -132,7 +132,7 @@ s-R                   | Mind Freeze
 s-F                   | Death Grip
 s-1                   | Mount
 s-2                   | Raise Dead
-s-3                   |
+s-3                   | Apocalypse
 s-4                   | Trinket
 s-5                   | Trinket
 s-6                   | AFK
