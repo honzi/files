@@ -143,7 +143,7 @@ np-+                  |
 ### Demon Hunter - Havoc
 
 Demon Hunter - Havoc | Buttons
----------------------|-----------------
+---------------------|--------------------------
 Q                    | Mana Rift
 E                    | Chaos Strike
 R                    | Demon's Bite
@@ -156,15 +156,15 @@ F                    | Throw Glaive
 6                    | Consume Magic
 7                    |
 8                    | Fishing
-s-Q                  | Metamorphosis
+s-Q                  | Spectral Sight
 s-E                  | Blade Dance
 s-R                  | Eye Beam
 s-F                  | Throw Glaive
 s-1                  | Mount
 s-2                  | Torment
-s-3                  | Spectral Sight
+s-3                  | Inquisitor's Menacing Eye
 s-4                  |
-s-5                  |
+s-5                  | Metamorphosis
 s-6                  | AFK
 s-7                  | AFK
 s-8                  | AFK
@@ -173,7 +173,7 @@ np-+                 |
 ### Demon Hunter - Vengeance
 
 Demon Hunter - Vengeance | Buttons
--------------------------|-----------
+-------------------------|--------------------------
 Q                        |
 E                        |
 R                        |
@@ -194,7 +194,7 @@ s-1                      | Mount
 s-2                      | Torment
 s-3                      |
 s-4                      |
-s-5                      |
+s-5                      | Inquisitor's Menacing Eye
 s-6                      | AFK
 s-7                      | AFK
 s-8                      | AFK
@@ -311,10 +311,10 @@ s-E                 | Nature's Cure
 s-R                 | Dash
 s-F                 | Entangling Roots
 s-1                 | Mount
-s-2                 | Ironbark
+s-2                 | Ironfur
 s-3                 | Bear Form
 s-4                 |
-s-5                 | Ironfur
+s-5                 | Ironbark
 s-6                 | AFK
 s-7                 | AFK
 s-8                 | AFK
