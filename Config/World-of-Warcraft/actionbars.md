@@ -154,14 +154,14 @@ F                    | Throw Glaive
 4                    | Fel Rush
 5                    | Disrupt
 6                    | Consume Magic
-7                    |
+7                    | Torment
 8                    | Fishing
 s-Q                  | Spectral Sight
 s-E                  | Blade Dance
 s-R                  | Eye Beam
 s-F                  | Throw Glaive
 s-1                  | Mount
-s-2                  | Torment
+s-2                  |
 s-3                  | Inquisitor's Menacing Eye
 s-4                  |
 s-5                  | Metamorphosis
@@ -753,7 +753,7 @@ F               | Psychic Scream
 3               | Psyfiend
 4               | Power Word: Shield
 5               | Mind Blast
-6               |
+6               | Shadowfiend
 7               |
 8               | Fishing
 s-Q             | Shadowform
@@ -763,8 +763,8 @@ s-F             | Purify Disease
 s-1             | Mount
 s-2             | Power Word: Fortitude
 s-3             | Fade
-s-4             | Shadowfiend
-s-5             | Dispersion
+s-4             | Dispersion
+s-5             |
 s-6             | AFK
 s-7             | AFK
 s-8             | AFK
