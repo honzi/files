@@ -1077,10 +1077,10 @@ Warrior - Fury | Buttons
 Q              | Rampage
 E              | Raging Blow
 R              | Bloodthirst
-F              | Hamstring
+F              | Whirlwind
 1              | Execute
 2              | Victory Rush
-3              | Whirlwind
+3              | Hamstring
 4              | Charge
 5              | Pummel
 6              |
