@@ -833,14 +833,14 @@ np-+           |
 ### Rogue - Subtlety
 
 Rogue - Subtlety | Buttons
------------------|------------------------
+-----------------|--------------------------
 Q                | Stealth
 E                | Kick
-R                | Cheap Shot / Gloomblade
+R                | Shadowstrike / Gloomblade
 F                | Shuriken Storm
 1                | Shadowmeld
-2                |
-3                |
+2                | Shuriken Toss
+3                | Cheap Shot / Rupture
 4                | Sap / Kidney Shot
 5                | Shadowstep
 6                |
