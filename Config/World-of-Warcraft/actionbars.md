@@ -55,23 +55,23 @@ ActionBar Setups
 Death Knight - Blood | Buttons
 ---------------------|-----------------
 Q                    |
-E                    | Mind Freeze
-R                    | Rune Strike
-F                    | Death and Decay
+E                    |
+R                    |
+F                    |
 1                    | Shadowmeld
-2                    |
-3                    |
+2                    | Chains of Ice
+3                    | Death and Decay
 4                    | Death Coil
-5                    | Death Grip
-6                    | Death Strike
-7                    |
+5                    |
+6                    |
+7                    | Murderous Intent
 8                    | Fishing
 s-Q                  |
 s-E                  | Anti-Magic Shell
-s-R                  |
-s-F                  |
+s-R                  | Mind Freeze
+s-F                  | Death Grip
 s-1                  | Mount
-s-2                  |
+s-2                  | Raise Dead
 s-3                  |
 s-4                  | Trinket
 s-5                  | Trinket
@@ -85,23 +85,23 @@ np-+                 |
 Death Knight - Frost | Buttons
 ---------------------|-----------------
 Q                    |
-E                    | Mind Freeze
-R                    | Rune Strike
-F                    | Death and Decay
+E                    |
+R                    |
+F                    |
 1                    | Shadowmeld
-2                    |
-3                    |
+2                    | Chains of Ice
+3                    | Death and Decay
 4                    | Death Coil
-5                    | Death Grip
-6                    | Death Strike
-7                    |
+5                    |
+6                    |
+7                    | Dark Command
 8                    | Fishing
 s-Q                  |
 s-E                  | Anti-Magic Shell
-s-R                  |
-s-F                  |
+s-R                  | Mind Freeze
+s-F                  | Death Grip
 s-1                  | Mount
-s-2                  |
+s-2                  | Raise Dead
 s-3                  |
 s-4                  | Trinket
 s-5                  | Trinket
@@ -179,22 +179,22 @@ E                        |
 R                        |
 F                        |
 1                        | Shadowmeld
-2                        |
+2                        | Immolation Aura
 3                        |
 4                        |
-5                        |
-6                        |
-7                        |
+5                        | Disrupt
+6                        | Consume Magic
+7                        | Torment
 8                        | Fishing
-s-Q                      |
+s-Q                      | Spectral Sight
 s-E                      |
 s-R                      |
-s-F                      |
+s-F                      | Throw Glaive
 s-1                      | Mount
-s-2                      | Torment
-s-3                      |
+s-2                      |
+s-3                      | Inquisitor's Menacing Eye
 s-4                      |
-s-5                      | Inquisitor's Menacing Eye
+s-5                      | Metamorphosis
 s-6                      | AFK
 s-7                      | AFK
 s-8                      | AFK
@@ -203,7 +203,7 @@ np-+                     |
 ### Druid - Balance
 
 Druid - Balance | Buttons
-----------------|-----------------
+----------------|------------------
 Q               | Prowl
 E               |
 R               |
@@ -217,8 +217,8 @@ F               |
 7               |
 8               | Fishing
 s-Q             |
-s-E             |
-s-R             |
+s-E             | Remove Corruption
+s-R             | Dash
 s-F             | Entangling Roots
 s-1             | Mount
 s-2             |
@@ -228,7 +228,7 @@ s-5             |
 s-6             | AFK
 s-7             | AFK
 s-8             | AFK
-np-+            |
+np-+            | Wrath
 
 ### Druid - Feral
 
@@ -238,7 +238,7 @@ Q             | Prowl
 E             | Rake / Strength of the Wild / Wrath
 R             | Shred / Mangle / Regrowth
 F             | Thrash / Thrash
-1             | Shadowmeld / War Stomp
+1             | Shadowmeld
 2             | Ferocious Bite / Ironfur
 3             | Cat Form
 4             | Travel Form
@@ -278,7 +278,7 @@ F                |
 8                | Fishing
 s-Q              |
 s-E              |
-s-R              |
+s-R              | Dash
 s-F              | Entangling Roots
 s-1              | Mount
 s-2              |
@@ -293,12 +293,12 @@ np-+             |
 ### Druid - Restoration
 
 Druid - Restoration | Buttons
---------------------|-----------------------
+--------------------|-----------------
 Q                   | Prowl
 E                   | Rejuvenation
 R                   | Regrowth
 F                   | Nourish
-1                   | Shadowmeld / War Stomp
+1                   | Shadowmeld
 2                   | Swiftmend
 3                   | Cat Form
 4                   | Travel Form
@@ -353,25 +353,25 @@ np-+                   |
 ### Hunter - Marksmanship
 
 Hunter - Marksmanship | Buttons
-----------------------|----------------
+----------------------|----------------------
 Q                     |
 E                     |
 R                     |
 F                     | Concussive Shot
-1                     |
-2                     |
-3                     |
+1                     | Mend Pet
+2                     | Hunter's Mark
+3                     | Freezing Trap
 4                     | Disengage
-5                     |
+5                     | Counter Shot
 6                     |
 7                     |
 8                     | Fishing
 s-Q                   |
-s-E                   |
-s-R                   |
-s-F                   |
+s-E                   | Exhilaration
+s-R                   | Aspect of the Cheetah
+s-F                   | Flare
 s-1                   | Mount
-s-2                   |
+s-2                   | Aspect of the Turtle
 s-3                   |
 s-4                   |
 s-5                   |
@@ -383,28 +383,28 @@ np-+                  |
 ### Hunter - Survival
 
 Hunter - Survival | Buttons
-------------------|--------
+------------------|----------------------
 Q                 |
 E                 |
 R                 |
-F                 |
-1                 |
-2                 |
-3                 |
+F                 | Wing Clip
+1                 | Mend Pet
+2                 | Hunter's Mark
+3                 | Freezing Trap
 4                 | Disengage
 5                 |
 6                 |
 7                 |
 8                 | Fishing
 s-Q               |
-s-E               |
-s-R               |
-s-F               |
+s-E               | Exhilaration
+s-R               | Aspect of the Cheetah
+s-F               | Flare
 s-1               | Mount
-s-2               |
+s-2               | Aspect of the Turtle
 s-3               |
 s-4               |
-s-5               |
+s-5               | Mending Bandage
 s-6               | AFK
 s-7               | AFK
 s-8               | AFK
@@ -420,51 +420,51 @@ R             | Arcane Missiles
 F             | Frost Nova
 1             | Shadowmeld
 2             | Arcane Explosion
-3             |
+3             | Slow
 4             | Blink
-5             |
+5             | Counterspell
 6             |
 7             |
 8             | Fishing
-s-Q           |
-s-E           |
-s-R           |
-s-F           |
+s-Q           | Fire Blast
+s-E           | Polymorph
+s-R           | Alter Time
+s-F           | Slow Fall
 s-1           | Mount
-s-2           | Arcane Intellect
-s-3           |
+s-2           | Arcane Familiar
+s-3           | Arcane Intellect
 s-4           |
-s-5           |
+s-5           | Mana Gem
 s-6           | AFK
 s-7           | AFK
 s-8           | AFK
-np-+          |
+np-+          | Frostbolt
 
 ### Mage - Fire
 
 Mage - Fire | Buttons
-------------|-----------
-Q           |
-E           |
-R           |
+------------|-----------------
+Q           | Scorch
+E           | Fire Blast
+R           | Fireball
 F           | Frost Nova
 1           | Shadowmeld
-2           |
-3           |
+2           | Arcane Explosion
+3           | Phoenix Flames
 4           | Blink
-5           |
+5           | Counterspell
 6           |
 7           |
 8           | Fishing
 s-Q         |
-s-E         |
-s-R         |
-s-F         |
+s-E         | Polymorph
+s-R         | Pyroblast
+s-F         | Slow Fall
 s-1         | Mount
-s-2         |
-s-3         |
-s-4         |
-s-5         |
+s-2         | Blazing Barrier
+s-3         | Arcane Intellect
+s-4         | Flamestrike
+s-5         | Mana Gem
 s-6         | AFK
 s-7         | AFK
 s-8         | AFK
@@ -473,62 +473,62 @@ np-+        |
 ### Mage - Frost
 
 Mage - Frost | Buttons
--------------|-----------
-Q            |
-E            |
-R            |
+-------------|-----------------
+Q            | Flurry
+E            | Cone of Cold
+R            | Ice Lance
 F            | Frost Nova
 1            | Shadowmeld
-2            |
+2            | Arcane Explosion
 3            |
 4            | Blink
-5            |
+5            | Counterspell
 6            |
 7            |
 8            | Fishing
-s-Q          |
-s-E          |
-s-R          |
-s-F          |
+s-Q          | Fire Blast
+s-E          | Polymorph
+s-R          | Blizzard
+s-F          | Slow Fall
 s-1          | Mount
-s-2          |
-s-3          |
+s-2          | Ice Barrier
+s-3          | Arcane Intellect
 s-4          |
-s-5          |
+s-5          | Mana Gem
 s-6          | AFK
 s-7          | AFK
 s-8          | AFK
-np-+         |
+np-+         | Frostbolt
 
 ### Monk - Brewmaster
 
 Monk - Brewmaster | Buttons
-------------------|-----------
+------------------|-------------------------
 Q                 | Vivify
-E                 |
-R                 |
+E                 | Spear Hand Strike
+R                 | Tiger Palm
 F                 |
 1                 | Shadowmeld
-2                 |
+2                 | Expel Harm
 3                 |
 4                 | Roll
-5                 |
+5                 | Blackout Kick
 6                 |
 7                 |
 8                 | Fishing
 s-Q               |
-s-E               |
-s-R               |
-s-F               |
+s-E               | Touch of Death
+s-R               | Spinning Crane Kick
+s-F               | Leg Sweep
 s-1               | Mount
-s-2               |
+s-2               | Provoke
 s-3               |
 s-4               |
 s-5               |
 s-6               | AFK
 s-7               | AFK
 s-8               | AFK
-np-+              |
+np-+              | Crackling Jade Lightning
 
 ### Monk - Mistweaver
 
@@ -625,21 +625,21 @@ np-+           | Holy Light
 Paladin - Protection | Buttons
 ---------------------|------------------
 Q                    | Flash of Light
-E                    |
+E                    | Judgement
 R                    |
 F                    | Consecration
-1                    |
-2                    |
+1                    | Gift of the Naaru
+2                    | Word of Glory
 3                    |
 4                    | Hammer of Justice
 5                    |
-6                    |
+6                    | Hand of Reckoning
 7                    |
 8                    | Fishing
 s-Q                  |
-s-E                  |
+s-E                  | Divine Shield
 s-R                  | Divine Steed
-s-F                  |
+s-F                  | Lay on Hands
 s-1                  | Mount
 s-2                  |
 s-3                  |
@@ -683,32 +683,32 @@ np-+                  |
 ### Priest - Discipline
 
 Priest - Discipline | Buttons
---------------------|---------------
-Q                   | Flash Heal
-E                   |
-R                   |
+--------------------|----------------------
+Q                   | Shadow Mend
+E                   | Shadow Word: Pain
+R                   | Penance
 F                   | Psychic Scream
 1                   | Shadowmeld
 2                   |
 3                   |
-4                   |
-5                   |
-6                   |
+4                   | Power Word: Shield
+5                   | Mind Blast
+6                   | Shadowfiend
 7                   |
 8                   | Fishing
 s-Q                 |
-s-E                 |
-s-R                 |
-s-F                 |
+s-E                 | Desperate Prayer
+s-R                 | Shadow Word: Death
+s-F                 | Purify
 s-1                 | Mount
-s-2                 |
-s-3                 |
+s-2                 | Power Word: Fortitude
+s-3                 | Fade
 s-4                 |
 s-5                 |
 s-6                 | AFK
 s-7                 | AFK
 s-8                 | AFK
-np-+                |
+np-+                | Smite
 
 ### Priest - Holy
 
@@ -773,26 +773,26 @@ np-+            | Mind Flay
 ### Rogue - Assassination
 
 Rogue - Assassination | Buttons
-----------------------|-----------
+----------------------|----------------------
 Q                     | Stealth
 E                     | Kick
-R                     |
-F                     |
+R                     | Cheap Shot / Mutilate
+F                     | Fan of Knives
 1                     | Shadowmeld
-2                     |
-3                     |
-4                     |
-5                     |
+2                     | Eviscerate
+3                     | Ambush
+4                     | Sap / Kidney Shot
+5                     | Shadowstep
 6                     |
 7                     |
 8                     | Fishing
 s-Q                   |
 s-E                   |
-s-R                   |
-s-F                   |
+s-R                   | Sprint
+s-F                   | Crimson Vial
 s-1                   | Mount
 s-2                   |
-s-3                   |
+s-3                   | Slice and Dice
 s-4                   |
 s-5                   |
 s-6                   | AFK
@@ -833,26 +833,26 @@ np-+           |
 ### Rogue - Subtlety
 
 Rogue - Subtlety | Buttons
------------------|-----------
+-----------------|------------------------
 Q                | Stealth
 E                | Kick
-R                |
-F                |
+R                | Cheap Shot / Gloomblade
+F                | Shuriken Storm
 1                | Shadowmeld
 2                |
 3                |
-4                |
-5                |
+4                | Sap / Kidney Shot
+5                | Shadowstep
 6                |
 7                |
 8                | Fishing
 s-Q              |
 s-E              |
-s-R              |
-s-F              |
+s-R              | Sprint
+s-F              | Crimson Vial
 s-1              | Mount
 s-2              |
-s-3              |
+s-3              | Slice and Dice
 s-4              |
 s-5              |
 s-6              | AFK
@@ -894,31 +894,31 @@ np-+               | Lightning Bolt
 
 Shaman - Enhancement | Buttons
 ---------------------|--------------
-Q                    |
-E                    |
-R                    |
+Q                    | Healing Surge
+E                    | Wind Shear
+R                    | Frost Shock
 F                    |
-1                    |
+1                    | Gift of the Naaru
 2                    |
 3                    |
-4                    |
-5                    |
+4                    | Ghost Wolf
+5                    | Flame Shock
 6                    |
-7                    |
-8                    |
+7                    | Far Sight
+8                    | Fishing
 s-Q                  |
-s-E                  |
+s-E                  | Cleanse Spirit
 s-R                  |
-s-F                  |
-s-1                  |
-s-2                  |
-s-3                  |
-s-4                  |
+s-F                  | Earthbind Totem
+s-1                  | Mount
+s-2                  | Flametongue Weapon
+s-3                  | Lightning Shield
+s-4                  | Windfury Weapon
 s-5                  |
-s-6                  |
-s-7                  |
-s-8                  |
-np-+                 |
+s-6                  | AFK
+s-7                  | AFK
+s-8                  | AFK
+np-+                 | Lightning Bolt
 
 ### Shaman - Restoration
 
@@ -953,32 +953,32 @@ np-+                 | Lightning Bolt
 ### Warlock - Affliction
 
 Warlock - Affliction | Buttons
----------------------|---------------
-Q                    |
-E                    |
-R                    |
+---------------------|--------------------
+Q                    | Unstable Affliction
+E                    | Corruption
+R                    | Agony
 F                    | Fear
-1                    |
-2                    |
-3                    |
+1                    | Drain Life
+2                    | Curse of Weakness
+3                    | Curse of Exhaustion
 4                    |
-5                    |
+5                    | Healthstone
 6                    |
 7                    | Eye of Kilrogg
 8                    | Fishing
 s-Q                  |
 s-E                  |
-s-R                  |
-s-F                  |
+s-R                  | Malefic Rapture
+s-F                  | Unending Resolve
 s-1                  | Mount
 s-2                  |
-s-3                  |
+s-3                  | Unending Breath
 s-4                  |
-s-5                  |
+s-5                  | Create Healthstone
 s-6                  | AFK
 s-7                  | AFK
 s-8                  | AFK
-np-+                 |
+np-+                 | Shadow Bolt
 
 ### Warlock - Demonology
 
@@ -988,27 +988,27 @@ Q                    |
 E                    |
 R                    |
 F                    | Fear
-1                    |
-2                    |
-3                    |
+1                    | Drain Life
+2                    | Curse of Weakness
+3                    | Curse of Exhaustion
 4                    |
-5                    |
+5                    | Healthstone
 6                    |
 7                    | Eye of Kilrogg
 8                    | Fishing
 s-Q                  |
 s-E                  |
 s-R                  |
-s-F                  |
+s-F                  | Unending Resolve
 s-1                  | Mount
 s-2                  |
-s-3                  |
+s-3                  | Unending Breath
 s-4                  |
-s-5                  |
+s-5                  | Create Healthstone
 s-6                  | AFK
 s-7                  | AFK
 s-8                  | AFK
-np-+                 |
+np-+                 | Shadow Bolt
 
 ### Warlock - Destruction
 
@@ -1043,28 +1043,28 @@ np-+                  |
 ### Warrior - Arms
 
 Warrior - Arms | Buttons
----------------|-------------
+---------------|--------------
 Q              |
 E              |
-R              |
+R              | Mortal Strike
 F              | Hamstring
 1              | Execute
 2              | Victory Rush
 3              |
 4              | Charge
-5              |
+5              | Pummel
 6              |
 7              |
 8              | Fishing
 s-Q            |
-s-E            |
+s-E            | Ignore Pain
 s-R            |
 s-F            |
 s-1            | Mount
 s-2            |
 s-3            |
 s-4            |
-s-5            |
+s-5            | War Banner
 s-6            | AFK
 s-7            | AFK
 s-8            | AFK
@@ -1103,27 +1103,27 @@ np-+           |
 ### Warrior - Protection
 
 Warrior - Protection | Buttons
----------------------|-------------
-Q                    |
+---------------------|--------------
+Q                    | Revenge
 E                    |
-R                    |
-F                    | Hamstring
+R                    | Devastate
+F                    | Thunder Clap
 1                    | Execute
 2                    | Victory Rush
 3                    |
 4                    | Charge
-5                    |
+5                    | Pummel
 6                    |
 7                    |
 8                    | Fishing
 s-Q                  |
-s-E                  |
+s-E                  | Ignore Pain
 s-R                  |
 s-F                  |
 s-1                  | Mount
 s-2                  |
 s-3                  |
-s-4                  |
+s-4                  | Dragon Charge
 s-5                  |
 s-6                  | AFK
 s-7                  | AFK
