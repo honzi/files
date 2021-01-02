@@ -851,7 +851,7 @@ s-E              | Shuriken Toss
 s-R              | Sprint
 s-F              | Crimson Vial
 s-1              | Mount
-s-2              | Deadly Poison
+s-2              | Instant Poison
 s-3              | Slice and Dice
 s-4              |
 s-5              |
