@@ -839,7 +839,7 @@ E                | Kick
 R                | Shadowstrike / Gloomblade
 F                | Shuriken Storm
 1                | Shadowmeld
-2                | Shuriken Toss
+2                | Eviscerate
 3                | Cheap Shot / Rupture
 4                | Sap / Kidney Shot
 5                | Shadowstep
@@ -847,11 +847,11 @@ F                | Shuriken Storm
 7                |
 8                | Fishing
 s-Q              |
-s-E              |
+s-E              | Shuriken Toss
 s-R              | Sprint
 s-F              | Crimson Vial
 s-1              | Mount
-s-2              |
+s-2              | Deadly Poison
 s-3              | Slice and Dice
 s-4              |
 s-5              |
