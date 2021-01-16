@@ -854,7 +854,7 @@ s-1              | Mount
 s-2              | Instant Poison
 s-3              | Slice and Dice
 s-4              |
-s-5              |
+s-5              | Death from Above
 s-6              | AFK
 s-7              | AFK
 s-8              | AFK
