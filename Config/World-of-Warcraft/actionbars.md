@@ -328,13 +328,13 @@ Q                      | Kill Command
 E                      | Barbed Shot
 R                      | Cobra Shot
 F                      | Concussive Shot
-1                      | Mend Pet
+1                      | Feign Death
 2                      | Hunter's Mark
 3                      | Freezing Trap
 4                      | Disengage
 5                      | Counter Shot
 6                      |
-7                      | Feign Death
+7                      |
 8                      | Fishing
 s-Q                    | Blood Fury
 s-E                    | Exhilaration
@@ -344,7 +344,7 @@ s-1                    | Mount
 s-2                    | Aspect of the Turtle
 s-3                    | Beastial Wrath
 s-4                    | Trinket
-s-5                    | Trinket
+s-5                    | Mend Pet
 s-6                    | AFK
 s-7                    | AFK
 s-8                    | AFK
