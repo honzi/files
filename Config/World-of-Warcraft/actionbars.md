@@ -150,10 +150,10 @@ R                    | Demon's Bite
 F                    | Throw Glaive
 1                    | Shadowmeld
 2                    | Immolation Aura
-3                    | Vengeful Retreat
+3                    | Consume Magic
 4                    | Fel Rush
 5                    | Disrupt
-6                    | Consume Magic
+6                    |
 7                    | Torment
 8                    | Fishing
 s-Q                  | Spectral Sight
@@ -161,9 +161,9 @@ s-E                  | Blade Dance
 s-R                  | Eye Beam
 s-F                  | Throw Glaive
 s-1                  | Mount
-s-2                  |
-s-3                  | Inquisitor's Menacing Eye
-s-4                  |
+s-2                  | Inquisitor's Menacing Eye
+s-3                  |
+s-4                  | Vengeful Retreat
 s-5                  | Metamorphosis
 s-6                  | AFK
 s-7                  | AFK
