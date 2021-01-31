@@ -114,7 +114,7 @@ np-+                 |
 
 Death Knight - Unholy | Buttons
 ----------------------|-----------------
-Q                     |
+Q                     | Reanimation
 E                     | Outbreak
 R                     | Clawing Shadows
 F                     | Rune Strike
@@ -126,15 +126,15 @@ F                     | Rune Strike
 6                     |
 7                     | Dark Command
 8                     | Fishing
-s-Q                   |
+s-Q                   | Raise Dead
 s-E                   | Anti-Magic Shell
 s-R                   | Mind Freeze
 s-F                   | Death Grip
 s-1                   | Mount
-s-2                   | Raise Dead
-s-3                   | Apocalypse
-s-4                   | Trinket
-s-5                   | Trinket
+s-2                   |
+s-3                   |
+s-4                   |
+s-5                   | Apocalypse
 s-6                   | AFK
 s-7                   | AFK
 s-8                   | AFK
