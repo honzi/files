@@ -18,15 +18,6 @@ configs=(
   "$HOME/.iterami/repositories/files/Config/Portal/1/autoexec.cfg"
   "$HOME/.iterami/repositories/files/Config/Portal/2/autoexec.cfg"
   "$HOME/.iterami/repositories/files/Config/Team-Fortress-2/autoexec.cfg"
-  "$HOME/.iterami/repositories/files/Config/Team-Fortress-2/demoman.cfg"
-  "$HOME/.iterami/repositories/files/Config/Team-Fortress-2/engineer.cfg"
-  "$HOME/.iterami/repositories/files/Config/Team-Fortress-2/heavyweapons.cfg"
-  "$HOME/.iterami/repositories/files/Config/Team-Fortress-2/medic.cfg"
-  "$HOME/.iterami/repositories/files/Config/Team-Fortress-2/pyro.cfg"
-  "$HOME/.iterami/repositories/files/Config/Team-Fortress-2/scout.cfg"
-  "$HOME/.iterami/repositories/files/Config/Team-Fortress-2/sniper.cfg"
-  "$HOME/.iterami/repositories/files/Config/Team-Fortress-2/soldier.cfg"
-  "$HOME/.iterami/repositories/files/Config/Team-Fortress-2/spy.cfg"
   "$HOME/.iterami/repositories/files/Config/The-Stanley-Parable/autoexec.cfg"
   "$HOME/.iterami/repositories/files/Config/The-Stanley-Parable-Demo/autoexec.cfg"
   "$HOME/.iterami/repositories/files/Config/Thief/3-Deadly-Shadows/System/Default.ini"
@@ -47,15 +38,6 @@ destinations=(
   "$HOME/.steam/steam/steamapps/common/Portal/portal/cfg/"
   "$HOME/.steam/steam/steamapps/common/Portal 2/portal2/cfg/"
   "$HOME/.steam/steam/steamapps/common/Team Fortress 2/tf/cfg/"
-  "$HOME/.steam/steam/steamapps/common/Team Fortress 2/tf/cfg/"
-  "$HOME/.steam/steam/steamapps/common/Team Fortress 2/tf/cfg/"
-  "$HOME/.steam/steam/steamapps/common/Team Fortress 2/tf/cfg/"
-  "$HOME/.steam/steam/steamapps/common/Team Fortress 2/tf/cfg/"
-  "$HOME/.steam/steam/steamapps/common/Team Fortress 2/tf/cfg/"
-  "$HOME/.steam/steam/steamapps/common/Team Fortress 2/tf/cfg/"
-  "$HOME/.steam/steam/steamapps/common/Team Fortress 2/tf/cfg/"
-  "$HOME/.steam/steam/steamapps/common/Team Fortress 2/tf/cfg/"
-  "$HOME/.steam/steam/steamapps/common/Team Fortress 2/tf/cfg/"
   "$HOME/.steam/steam/steamapps/common/The Stanley Parable/thestanleyparable/cfg/"
   "$HOME/.steam/steam/steamapps/common/The Stanley Parable Demo/thestanleyparabledemo/cfg/"
   "$HOME/.wine/drive_c/Program Files (x86)/Thief - Deadly Shadows Demo/System/"
@@ -63,7 +45,7 @@ destinations=(
   "$HOME/Documents/Thief - Deadly Shadows Demo/SaveGames/User Options/"
 )
 
-for i in {0..25}
+for i in {0..16}
 do
     # The destination directory must already exist.
     if [[ -d ${destinations[i]} ]]
