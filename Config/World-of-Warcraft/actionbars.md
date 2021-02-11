@@ -974,7 +974,7 @@ s-1                  | Mount
 s-2                  |
 s-3                  | Unending Breath
 s-4                  |
-s-5                  | Create Healthstone
+s-5                  | Health Funnel
 s-6                  | AFK
 s-7                  | AFK
 s-8                  | AFK
@@ -1004,7 +1004,7 @@ s-1                  | Mount
 s-2                  |
 s-3                  | Unending Breath
 s-4                  |
-s-5                  | Create Healthstone
+s-5                  | Health Funnel
 s-6                  | AFK
 s-7                  | AFK
 s-8                  | AFK
@@ -1034,7 +1034,7 @@ s-1                   | Mount
 s-2                   | Summon Imp
 s-3                   | Unending Breath
 s-4                   |
-s-5                   | Create Healthstone
+s-5                   | Health Funnel
 s-6                   | AFK
 s-7                   | AFK
 s-8                   | AFK
