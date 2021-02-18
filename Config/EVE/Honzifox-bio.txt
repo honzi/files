@@ -1,5 +1,5 @@
 NPSI
-iterami CEO https://iterami.github.io
+iterami "CEO" https://iterami.github.io
 https://honzi.github.io/personalbests/eve.htm
 
 My EVE-related Public Domain Projects:

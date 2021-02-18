@@ -2,11 +2,11 @@ https://iterami.github.io/Guides.htm/eve/
 https://zkillboard.com/corporation/98481182/
 Contact=Honzifox
 Alts=imareti
-iterami Overview=2020-04-19.yaml
+iterami Overview=2021-02-05.yaml
 
 RECRUITMENT
 Alliance=OPEN
-Member=1T FEE
+Member=1T DONATION
 War=OPEN
 
 FACTION=DAMAGE DEALT=RESISTANCE HOLE

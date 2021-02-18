@@ -17,3 +17,15 @@ Honzi's EVE Config
 13. Wallet
 14. Contracts
 15. Project Discovery
+
+### Disabled Notifications
+
+* Insurance:
+  * Covette Replacement: history
+* Miscellaneous
+  * Activity Tracker Mastery: history, popup
+  * Daily alpha injection available: history
+* Skill Training:
+  * Skill Queue Empty: history, popup
+  * Skill Training Complete: history, popup
+  * Unused Skill Points: history, popup
