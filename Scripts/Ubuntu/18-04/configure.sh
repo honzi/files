@@ -90,6 +90,7 @@ gsettings set com.canonical.indicator.power show-time true
 gsettings set com.canonical.indicator.session suppress-logout-menuitem true
 gsettings set com.canonical.indicator.session user-show-menu false
 gsettings set com.ubuntu.update-manager autoclose-install-window false
+gsettings set com.ubuntu.update-manager check-new-release-ignore 'focal'
 gsettings set com.ubuntu.update-manager first-run false
 gsettings set com.ubuntu.update-manager show-details true
 gsettings set com.ubuntu.update-manager show-versions true
