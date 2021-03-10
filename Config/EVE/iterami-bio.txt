@@ -2,60 +2,10 @@ https://iterami.github.io/Guides.htm/eve/
 https://zkillboard.com/corporation/98481182/
 Contact=Honzifox
 Alts=imareti
-iterami Overview=2021-02-05.yaml
+iterami Overview=2021-03-09.yaml
 
 RECRUITMENT
 Alliance=OPEN
-Member=1T DONATION
-War=OPEN
-
-FACTION=DAMAGE DEALT=RESISTANCE HOLE
-Amarr Empire=EM/Thermal=EM/Thermal
-Ammatar Mandate=EM/Thermal=Thermal
-Angel Cartel=Explosive/Kinetic=Explosive/Kinetic
-Blood Raiders=EM/Thermal=EM/Thermal
-Caldari State=Kinetic/Thermal=Kinetic/Thermal
-CONCORD=OMNI=Kinetic/Thermal
-Equilibrium of Mankind=Kinetic/Thermal=Kinetic
-Gallente Federation=Kinetic/Thermal=Kinetic/Thermal
-Guristas Pirates=Kinetic/Thermal=Kinetic/Thermal
-Intaki Syndicate=Kinetic/Thermal=Kinetic/Thermal
-Khanid Kingdom=EM/Thermal=EM/Thermal
-Mercenaries=Kinetic/Thermal=Kinetic/Thermal
-Minmatar Republic=Explosive/Kinetic=Explosive/Kinetic
-Mordu's Legion=Kinetic/Thermal=EM/Kinetic
-Rogue Drones=ALL=EM/Thermal
-Sansha's Nation (Incursions)=OMNI=OMNI
-Sansha's Nation (Other)=EM/Thermal=EM/Thermal
-Serpentis=Thermal/Kinetic=Kinetic/Thermal
-Sleepers=OMNI=OMNI
-Thukker Tribe=Explosive/Kinetic/Thermal=EM/Thermal
-
-SENSORS
-Amarr=Radar
-Caldari=Gravimetric
-Gallente=Magnetometric
-Minmatar=Ladar
-
-STACKING PENALTIES
-1=100%
-2=87%
-3=57%
-4=28%
-5=10%
-6=3%
-
-AGENT LEVEL/STANDING
-1/-10
-2/1
-3/3
-4/5
-5/7
-
-OFFICER=REGION=BEST-WORST
-Angel=Curse=Tobias,Gotan,Hakim,Mizuro
-Blood Raiders=Delve=Draclira,Ahremen,Raysere,Tairei
-Guristas=Venal=Estamel,Vepas,Thon,Kaikka
-Rogue Drones=???=W-634,P-343554,F-435454,D-34343
-Sansha=Stain=Chelm,Vizan,Selynne,Brokara
-Serpentis=Fountain=Cormack,Setele,Tuvan,Brynn
+Members=1T DONATION
+Structures=OPEN
+Wars=OPEN
