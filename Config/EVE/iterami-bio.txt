@@ -2,7 +2,7 @@ https://iterami.github.io/Guides.htm/eve/
 https://zkillboard.com/corporation/98481182/
 Contact=Honzifox
 Alts=imareti
-iterami Overview=2021-03-09.yaml
+iterami Overview=2021-03-09
 
 -https://iterami.github.io/Guides.htm/eve/index.htm=guides+fits+notes+tools
 -https://github.com/honzi/biggestisk=list of the most expensive kills in EVE
