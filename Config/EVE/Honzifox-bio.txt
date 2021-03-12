@@ -1,7 +1,5 @@
 NPSI
 iterami "CEO" https://iterami.github.io
-https://honzi.github.io/personalbests/eve.htm
-
 -https://iterami.github.io/Guides.htm/eve/index.htm=guides+fits+notes+tools
 -https://github.com/honzi/biggestisk=list of the most expensive kills in EVE
 -https://github.com/iterami/EVE-Overviews.yaml=iterami Overview
@@ -9,5 +7,6 @@ https://honzi.github.io/personalbests/eve.htm
 -Alts=Honzibot+[REDACTED].
 -Amarr is home, but Nestor is bestor!
 -Civilian Gatling Pulse Laser is the best weapon in EVE!
+-https://honzi.github.io/personalbests/eve.htm
 -https://zkillboard.com/character/96811141/
 sponsor me
