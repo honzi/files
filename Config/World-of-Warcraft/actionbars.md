@@ -59,6 +59,10 @@ ActionBar Setups
   * Attraction Sign
   * Haunting Memento
   * Gaze of the Darkmoon
+  * Toy Train Set
+  * Darkmoon Gazer
+  * Tiny Green Ragdoll
+  * Tonga's Totem
 
 ### Death Knight - Blood
 
