@@ -1,6 +1,7 @@
 ActionBar Setups
 ----------------
 
+* [All Characters](#all-characters)
 * Death Knight:
   * [Blood](#death-knight---blood)
   * [Frost](#death-knight---frost)
@@ -49,6 +50,15 @@ ActionBar Setups
   * [Arms](#warrior---arms)
   * [Fury](#warrior---fury)
   * [Protection](#warrior---protection)
+
+### All Characters
+
+* Toys:
+  * Blue Crashin' Thrashin' Racer Controller
+  * Darkmoon Tonk Controller
+  * Attraction Sign
+  * Haunting Memento
+  * Gaze of the Darkmoon
 
 ### Death Knight - Blood
 
