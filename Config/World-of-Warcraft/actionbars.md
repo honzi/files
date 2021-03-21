@@ -617,22 +617,22 @@ F              | Consecration
 3              | Bestow Faith
 4              | Hammer of Justice
 5              | Crusader Strike
-6              | Hand of Reckoning
+6              | Shield of the Righteous
 7              |
 8              | Fishing
 s-Q            | Gift of the Naaru
 s-E            | Divine Shield
-s-R            | Divine Steed
+s-R            | Holy Light
 s-F            | Lay on Hands
 s-1            | Mount
 s-2            | Beacon of Light
-s-3            |
+s-3            | Hand of Reckoning
 s-4            |
-s-5            | Shield of the Righteous
+s-5            | Divine Steed
 s-6            | AFK
 s-7            | AFK
 s-8            | AFK
-np-+           | Holy Light
+np-+           |
 
 ### Paladin - Protection
 
