@@ -398,19 +398,19 @@ np-+                  |
 
 Hunter - Survival | Buttons
 ------------------|----------------------
-Q                 |
-E                 |
-R                 |
+Q                 | Kill Command
+E                 | Serpent Sting
+R                 | Raptor Strike
 F                 | Wing Clip
 1                 | Mend Pet
 2                 | Hunter's Mark
 3                 | Freezing Trap
 4                 | Disengage
-5                 |
-6                 |
-7                 |
+5                 | Harpoon
+6                 | Muzzle
+7                 | Feign Death
 8                 | Fishing
-s-Q               |
+s-Q               | Mending Bandage
 s-E               | Exhilaration
 s-R               | Aspect of the Cheetah
 s-F               | Flare
@@ -418,7 +418,7 @@ s-1               | Mount
 s-2               | Aspect of the Turtle
 s-3               |
 s-4               |
-s-5               | Mending Bandage
+s-5               | Wildfire Bomb
 s-6               | AFK
 s-7               | AFK
 s-8               | AFK
