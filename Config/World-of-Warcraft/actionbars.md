@@ -1097,12 +1097,12 @@ F              | Whirlwind
 3              | Hamstring
 4              | Charge
 5              | Pummel
-6              |
+6              | Slam
 7              |
 8              | Fishing
-s-Q            | Berserking
+s-Q            |
 s-E            | Ignore Pain
-s-R            | Slam
+s-R            | Berserking
 s-F            | Taunt
 s-1            | Mount
 s-2            |
