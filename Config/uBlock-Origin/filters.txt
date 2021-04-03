@@ -3,6 +3,7 @@ clips.twitch.tv##.clips-chat-replay
 ||condemnedgame.com
 google.com##.AUiS2
 reddit.com##.listing-chooser
+stackexchange.com##.js-consent-banner
 twitch.tv##.player-alert
 ||vugames.com
 youtube.com###comments
