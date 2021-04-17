@@ -2,7 +2,7 @@ NPSI
 iterami "CEO" https://iterami.github.io
 -https://iterami.github.io/Guides.htm/eve/index.htm=guides+fits+notes+tools
 -https://github.com/honzi/biggestisk=list of the most expensive kills in EVE
--https://github.com/iterami/EVE-Overviews.yaml=iterami overview, link in corp bio
+-https://github.com/iterami/EVE-Overviews.yaml=iterami Overview
 
 -Alts=Honzibot+[REDACTED].
 -Amarr is home, but Nestor is bestor!
