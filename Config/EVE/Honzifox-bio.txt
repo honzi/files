@@ -1,4 +1,5 @@
-NPSI
+Kill: Honzifox (Nestor) GF :)
+
 iterami "CEO" https://iterami.github.io
 -https://iterami.github.io/Guides.htm/eve/index.htm=guides+fits+notes+tools
 -https://github.com/honzi/biggestisk=list of the most expensive kills in EVE
@@ -9,4 +10,3 @@ iterami "CEO" https://iterami.github.io
 -Civilian Gatling Pulse Laser is the best weapon in EVE!
 -https://honzi.github.io/personalbests/eve.htm
 -https://zkillboard.com/character/96811141/
-sponsor me
