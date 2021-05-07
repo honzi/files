@@ -250,17 +250,17 @@ Druid - Feral | Buttons
 --------------|------------------------------------
 Q             | Prowl
 E             | Rake / Strength of the Wild / Wrath
-R             | Shred / Mangle / Regrowth
+R             | Regrowth
 F             | Thrash / Thrash
 1             | Shadowmeld
 2             | Ferocious Bite / Ironfur
 3             | Cat Form
 4             | Travel Form
-5             | Moonfire
-6             |
+5             | Moonfire / Mangle
+6             | Shread
 7             |
 8             | Fishing
-s-Q           | Regrowth
+s-Q           |
 s-E           | Tiger's Fury
 s-R           | Dash
 s-F           | Entangling Roots
