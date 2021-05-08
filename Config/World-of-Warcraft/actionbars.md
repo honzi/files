@@ -248,16 +248,16 @@ np-+            | Wrath
 ### Druid - Feral
 
 Druid - Feral | Buttons
---------------|------------------------------------
+--------------|--------------------------------
 Q             | Prowl
-E             | Rake / Strength of the Wild / Wrath
+E             | Rake / Mangle / Wrath
 R             | Regrowth
-F             | Thrash / Thrash
+F             | Thrash
 1             | Shadowmeld
 2             | Ferocious Bite / Ironfur
 3             | Cat Form
 4             | Travel Form
-5             | Moonfire / Mangle
+5             | Moonfire / Strength of the Wild
 6             | Shread
 7             |
 8             | Fishing
