@@ -63,6 +63,7 @@ ActionBar Setups
   * Darkmoon Gazer
   * Tiny Green Ragdoll
   * Tonga's Totem
+  * Hot Buttered Popcorn
 
 ### Death Knight - Blood
 
