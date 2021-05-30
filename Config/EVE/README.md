@@ -25,6 +25,7 @@ Honzi's EVE Config
 * Miscellaneous
   * Activity Tracker Mastery: history, popup
   * Daily alpha injection available: history
+  * Implant Plugged In: history, popup
 * Skill Training:
   * Skill Queue Empty: history, popup
   * Skill Training Complete: history, popup
