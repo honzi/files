@@ -1,0 +1,18 @@
+<!doctype html>
+<meta charset=utf-8>
+<meta content="width=device-width,initial-scale=1" name=viewport>
+<title>GitHub-API.htm</title>
+<link href=../common/css/core.css rel=stylesheet>
+
+https://api.github.com/<select id=type></select>/<input id=path><select id=callback>
+  <option>?callback=result</option>
+  <option selected value="">No Callback</option>
+</select><input id=parameters><br>
+<input id=fetch type=button value="Fetch [ENTER]">
+<a id=url></a>
+<hr>
+<textarea id=result-textarea readonly></textarea>
+
+<script src=../common/js/core.js></script>
+<script src=js/main.js></script>
+<script src=js/data.js></script>
