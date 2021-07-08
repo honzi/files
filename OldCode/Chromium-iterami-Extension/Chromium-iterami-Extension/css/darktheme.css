@@ -1,0 +1,20 @@
+body{
+    cursor: default !important;
+}
+body,
+body *{
+    background-color: #000 !important;
+    color: #bbb !important;
+}
+body a{
+    color: #19f !important;
+}
+body a:visited{
+    color: #c44 !important;
+}
+body a:hover{
+    color: #777 !important;
+}
+button{
+    overflow: hidden !important;
+}

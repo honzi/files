@@ -1,0 +1,28 @@
+.chat-buttons-container,
+.chat-header,
+.chat-rules,
+#channel_panels,
+.cn-nav-wrapper .balloon-wrapper,
+.cn-cover-wrap,
+.cn-tabs__inner,
+.js-offers,
+.js-username-hover-tip,
+#small_more,
+#small_search,
+.sticky-message,
+.upsell-banner{
+    display: none !important;
+}
+.chat-interface{
+    height: auto !important;
+    padding: 0 !important;
+}
+.chat-room{
+    top: 0 !important;
+}
+.chat-messages{
+    bottom: 50px !important;
+}
+.textarea-contain{
+    margin-bottom: 0 !important;
+}

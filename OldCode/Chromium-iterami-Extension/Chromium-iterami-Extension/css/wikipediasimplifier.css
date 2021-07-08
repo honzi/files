@@ -1,0 +1,23 @@
+#content{
+    border: 0 !important;
+    margin: 0 !important;
+}
+div.vectorTabs{
+    background: none;
+}
+#footer,
+#mw-head-base,
+#mw-panel,
+#siteSub{
+    display: none !important;
+}
+#left-navigation{
+    margin: 0 !important;
+}
+#mw-page-base{
+    height: 2em !important;
+}
+#right-navigation{
+    display: inline !important;
+    float: none !important;
+}

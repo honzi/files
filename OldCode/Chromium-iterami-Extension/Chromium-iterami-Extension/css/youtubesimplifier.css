@@ -1,0 +1,5 @@
+#ticker-content,
+#watch-discussion,
+.ytp-ce-element{
+    display: none !important;
+}

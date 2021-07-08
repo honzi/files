@@ -1,0 +1,26 @@
+body{
+    cursor: default !important;
+}
+body >.content .link .rank{
+    display: none !important;
+}
+.content{
+    margin-left: 0 !important;
+}
+.footer-parent,
+.listing-chooser,
+.side,
+#sr-header-area{
+    display: none !important;
+}
+#header-img.default-header{
+    height: 15px !important;
+}
+.md{
+    max-width: none !important;
+}
+.panestack-title,
+.sitetable.linklisting,
+.thing{
+    margin: 0 !important;
+}

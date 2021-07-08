@@ -14,7 +14,6 @@ BinaryDataEndecoder.htm
 BlindMouse.htm
 Bookmarklets.htm
 Browser.gtk
-Chromium-iterami-Extension
 Chromium-iterami-Theme
 clearundostack
 Click.htm

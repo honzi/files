@@ -1,0 +1,93 @@
+{
+  "author": "iterami",
+  "browser_action": {
+    "default_icon": {
+      "48": "assets/icon.png"
+    },
+    "default_popup": "html/popup.htm"
+  },
+  "content_scripts": [
+    {
+      "js": [
+        "js/darktheme.js"
+      ],
+      "matches": [
+        "<all_urls>"
+      ],
+      "run_at": "document_start"
+    },
+    {
+      "js": [
+        "js/githubcodewrap.js"
+      ],
+      "matches": [
+        "*://*.github.com/*"
+      ],
+      "run_at": "document_end"
+    },
+    {
+      "js": [
+        "js/redditsimplifier.js"
+      ],
+      "matches": [
+        "*://*.reddit.com/*"
+      ],
+      "run_at": "document_end"
+    },
+    {
+      "js": [
+        "js/twitchsimplifier.js"
+      ],
+      "matches": [
+        "*://*.twitch.tv/*"
+      ],
+      "run_at": "document_end"
+    },
+    {
+      "js": [
+        "js/wikipediasimplifier.js"
+      ],
+      "matches": [
+        "*://*.wikipedia.org/*"
+      ],
+      "run_at": "document_end"
+    },
+    {
+      "js": [
+        "js/youtubesimplifier.js"
+      ],
+      "matches": [
+        "*://*.youtube.com/*"
+      ],
+      "run_at": "document_end"
+    }
+  ],
+  "content_security_policy": "script-src 'self' 'unsafe-eval';object-src 'self'",
+  "description": "CC0 Chromium extension that can modify various websites.",
+  "homepage_url": "https://github.com/iterami/Chromium-iterami-Extension",
+  "icons": {
+    "48": "assets/icon.png"
+  },
+  "incognito": "split",
+  "manifest_version": 2,
+  "name": "Chromium-iterami-Extension",
+  "offline_enabled": false,
+  "permissions": [
+    "*://*.github.com/*",
+    "*://*.reddit.com/*",
+    "*://*.twitch.tv/*",
+    "*://*.youtube.com/*",
+    "*://*.wikipedia.org/*",
+    "storage"
+  ],
+  "short_name": "CiE",
+  "version": "20180707.0",
+  "web_accessible_resources": [
+    "css/darktheme.css",
+    "css/githubcodewrap.css",
+    "css/redditsimplifier.css",
+    "css/twitchsimplifier.css",
+    "css/wikipediasimplifier.css",
+    "css/youtubesimplifier.css"
+  ]
+}
