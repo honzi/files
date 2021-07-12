@@ -27,6 +27,6 @@ Honzi's EVE Config
   * Daily alpha injection available: history
   * Implant Plugged In: history, popup
 * Skill Training:
+  * Skill Injected: history, popup
   * Skill Queue Empty: history, popup
-  * Skill Training Complete: history, popup
   * Unused Skill Points: history, popup
