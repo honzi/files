@@ -12,6 +12,7 @@ sh ~/.iterami/repositories/files/Scripts/Ubuntu/18-04/update.sh
 sudo apt-get install dconf-editor
 sudo apt-get install gdebi-core
 sudo apt-get install git
+sudo apt-get install lm-sensors
 
 mkdir -p ~/.iterami/
 mkdir -p ~/.iterami/repositories/
