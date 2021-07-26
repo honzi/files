@@ -7,9 +7,7 @@ set -eu
 # An array of all honzi repositories.
 honzi_repositories='
 biggestisk
-BrowserQuest
 files
 honzi.github.io
 practice
-uot
 '
