@@ -21,7 +21,7 @@ Honzi's EVE Config
 ### Disabled Notifications
 
 * Insurance:
-  * Covette Replacement: history
+  * Corvette Replacement: history
 * Miscellaneous
   * Activity Tracker Mastery: history, popup
   * Daily alpha injection available: history
