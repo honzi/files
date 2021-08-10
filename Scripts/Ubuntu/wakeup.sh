@@ -5,8 +5,8 @@ set -eu
 # Example usage: sh wakeup.sh
 
 # UPDATE
-sh ~/.iterami/repositories/files/Scripts/Ubuntu/18-04/update.sh
+sh ~/.iterami/repositories/files/Scripts/Ubuntu/update.sh
 
 
 # CONFIGURE
-sh ~/.iterami/repositories/files/Scripts/Ubuntu/18-04/configure.sh
+sh ~/.iterami/repositories/files/Scripts/Ubuntu/configure.sh
