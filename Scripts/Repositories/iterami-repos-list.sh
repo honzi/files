@@ -39,6 +39,7 @@ Finances.htm
 Fireworks-2D.htm
 FractalRunner-2D3D.htm
 GMod-iterami-Addon
+GradientIllusion.htm
 Guess.htm
 Guides.htm
 Hallway-2D3D.htm
