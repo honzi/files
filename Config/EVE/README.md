@@ -15,8 +15,9 @@ Honzi's EVE Config
 11. Corporation
 12. Notepad
 13. Wallet
-14. Contracts
-15. Project Discovery
+14. Planetary Industry
+15. Contracts
+16. Project Discovery
 
 ### Disabled Notifications
 
