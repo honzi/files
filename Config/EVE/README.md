@@ -21,6 +21,8 @@ Honzi's EVE Config
 
 ### Disabled Notifications
 
+* Agents:
+  * Research Mission Available: history, popup
 * Insurance:
   * Corvette Replacement: history
 * Miscellaneous
