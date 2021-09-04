@@ -14,3 +14,4 @@ User Interface  | Keybind
 ----------------|--------
 Collect Loot    | F
 Inventory: View | C
+Specialties     | Y
