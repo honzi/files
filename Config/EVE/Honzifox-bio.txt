@@ -3,7 +3,7 @@ iterami "CEO" https://iterami.github.io
 -https://github.com/honzi/biggestisk=list of the most expensive kills of each entity
 -https://github.com/iterami/EVE-Overviews.yaml=iterami Overview
 
--Alts=Honzibot+[REDACTED]
+-Alts=Honzibot
 -Amarr is home and Civilian Gatling Pulse Laser is the best weapon in EVE
 -https://honzi.github.io/personalbests/eve.htm
 -https://zkillboard.com/character/96811141/
