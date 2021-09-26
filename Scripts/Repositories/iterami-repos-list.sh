@@ -31,10 +31,8 @@ Docs.htm
 DotEyeIllusion.htm
 Dropdown.htm
 Duel.htm
-EmojiText.htm
 ESP-Test.htm
 EVE-Overviews.yaml
-ExperienceCalculator.htm
 Finances.htm
 Fireworks-2D.htm
 FractalRunner-2D3D.htm
@@ -96,7 +94,6 @@ TextInfo.htm
 Time.htm
 TimeColors.htm
 Timer.htm
-TinyMCE-Editor.htm
 Trains-2D.htm
 Tubes-2D3D.htm
 U1.htm
