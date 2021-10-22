@@ -4,10 +4,10 @@ Contact=Honzifox
 Alts=imareti
 -https://iterami.github.io/Guides.htm/eve/index.htm=guides+fits+notes+tools
 -https://github.com/honzi/biggestisk=list of the most expensive kills of each entity
--https://github.com/iterami/EVE-Overviews.yaml=iterami Overview=2021-08-09
+-https://github.com/iterami/EVE-Overviews.yaml=iterami Overview=2021-10-20
 
 RECRUITMENT
 -Alliance=PENDING
--Members=1T DONATION
+-Corp=1T DONATION
 -Structures=NO
 -Wars=NO
