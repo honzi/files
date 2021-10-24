@@ -7,7 +7,7 @@ Alts=imareti
 -https://github.com/iterami/EVE-Overviews.yaml=iterami Overview=2021-10-20
 
 RECRUITMENT
--Alliance=PENDING
+-Alliance=HAPPY
 -Corp=1T DONATION
--Structures=NO
--Wars=NO
+-Structures=NAH
+-Wars=BAD
