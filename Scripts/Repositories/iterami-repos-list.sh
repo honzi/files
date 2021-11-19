@@ -44,7 +44,6 @@ Hallway-2D3D.htm
 Hexagons-2D.htm
 Hrad.htm
 Interpreters.htm
-IssueExport.htm
 iterami.github.io
 Jetpack-2D.htm
 Labs.htm

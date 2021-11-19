@@ -1,0 +1,62 @@
+<!doctype html>
+<meta charset=utf-8>
+<meta content="width=device-width,initial-scale=1" name=viewport>
+<title>IssueExport.htm</title>
+<link href=../common/css/core.css rel=stylesheet>
+
+<table>
+  <tr>
+    <td>Repository Name
+    <td><input id=repo>
+  <tr>
+    <td>Repository Owner
+    <td><input id=owner>
+  <tr>
+    <td>Direction
+    <td><select id=direction>
+        <option value=desc>Newest to Oldest</a>
+        <option value=asc>Oldest to Newest</a>
+      </select>
+  <tr>
+    <td>Labels
+    <td><input id=labels>
+  <tr>
+    <td>Since
+    <td><input id=since>
+  <tr>
+    <td>Sort
+    <td><select id=sort>
+        <option value=comments>Comments</a>
+        <option selected value=created>Created</a>
+        <option value=updated>Updated</a>
+      </select>
+  <tr>
+    <td>State
+    <td><select id=state>
+        <option value=all>All</a>
+        <option value=closed>Closed</a>
+        <option value=open>Open</a>
+      </select>
+</table>
+<input id=fetch type=button value="Fetch [ENTER]">
+<hr>
+<table>
+  <tr>
+    <td>JSON
+    <td><textarea id=results-json readonly></textarea>
+</table>
+<table>
+  <thead>
+    <tr class=header>
+      <td>#
+      <td>Title
+      <td>Author
+      <td>Date
+      <td>Comments
+      <td>State
+  <tbody id=results-table>
+</table>
+
+<script src=../common/js/core.js></script>
+<script src=js/main.js></script>
+<script src=js/data.js></script>
