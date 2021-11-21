@@ -117,10 +117,10 @@ Combat Settings                   | Setting
 Target of Target                  | Enabled
 Do Not Flash Screen at Low Health | Enabled
 Loss of Control Alerts            | Enabled
-Scrolling COmbat Text for Self    | Enabled
+Scrolling Combat Text for Self    | Enabled
 Spell Alert Opacity               | Highest
 Focus Cast Key                    | None
-Self Cast Key                     | ALT Key
+Self Cast Key                     | ALT
 Auto Self Cast                    | Enabled
 
 Display Settings            | Setting
@@ -140,7 +140,7 @@ Mature Language Filter                        | Disabled
 Guild Member Alert                            | Disabled
 Block Trades                                  | Disabled
 Block Guild Invites                           | Disabled
-BLock Chat Channel Invites                    | Disabled
+Block Chat Channel Invites                    | Disabled
 Disable Only Character Achievements to Others | Enabled
 Chat Style                                    | IM Style
 Chat Timestamps                               | HH:MM:SS
@@ -161,7 +161,7 @@ Right Bar                   | Enabled
 Right Bar 2                 | Enabled
 Stack Right Bars Vertically | Disabled
 Lock ActionBars             | Enabled
-Pick Up Action Key          | ALT Key
+Pick Up Action Key          | ALT
 Always Show ActionBars      | Disabled
 Show Numbers for CoolDowns  | Enabled
 
@@ -212,7 +212,7 @@ Camera Shake                  | None
 Cursor Size                   | Default
 Transcribe Voice Chat         | Disabled
 Read Chat Text Out Loud       | Disabled
-Speak for me in Voice Chat    | Disabled
+Speak for Me in Voice Chat    | Disabled
 Enable UI Colorblind Mode     | Disabled
 Colorblind Filter             | None
 
