@@ -53,6 +53,25 @@ ActionBar Setups
 
 ### All Characters
 
+* Debug:
+  * Food and Drinks
+  * Graphics Macro
+  * /iterami_print Macro
+  * Reload Macro
+  * Focus Pet Macro
+  * /iterami_config Macro
+  * Sea Pony
+  * Spam Ability
+* Professions:
+  * Cooking Fire
+  * Survey
+  * Resurrection Abilities
+  * Cooking
+  * Archaeology
+  * Primary Professions
+  * Elixir of Water Walking
+  * Swim Speed Potion
+  * Swiftness Potion
 * Toys:
   * Blue Crashin' Thrashin' Racer Controller
   * Darkmoon Tonk Controller
