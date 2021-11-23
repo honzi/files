@@ -243,7 +243,7 @@ E               | Starfire
 R               | Wrath
 F               | Starsurge
 1               | Shadowmeld
-2               |
+2               | Regrowth
 3               | Cat Form
 4               | Travel Form
 5               | Moonfire
