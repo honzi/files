@@ -220,9 +220,9 @@ np-+                     |
 Druid - Balance | Buttons
 ----------------|------------------
 Q               | Prowl
-E               |
-R               |
-F               |
+E               | Starfire
+R               | Wrath
+F               | Starsurge
 1               | Shadowmeld
 2               |
 3               | Cat Form
@@ -232,25 +232,25 @@ F               |
 7               |
 8               | Fishing
 s-Q             |
-s-E             | Remove Corruption
+s-E             | Warrior of Elune
 s-R             | Dash
 s-F             | Entangling Roots
 s-1             | Mount
 s-2             |
 s-3             | Bear Form
 s-4             |
-s-5             |
+s-5             | Remove Corruption
 s-6             | AFK
 s-7             | AFK
 s-8             | AFK
-np-+            | Wrath
+np-+            | Regrowth
 
 ### Druid - Feral
 
 Druid - Feral | Buttons
 --------------|--------------------------------
 Q             | Prowl
-E             | Rake / Mangle / Wrath
+E             | Rake / Mangle
 R             | Regrowth
 F             | Thrash
 1             | Shadowmeld
@@ -273,7 +273,7 @@ s-5           | Remove Corruption
 s-6           | AFK
 s-7           | AFK
 s-8           | AFK
-np-+          | Regrowth
+np-+          | Wrath
 
 ### Druid - Guardian
 
