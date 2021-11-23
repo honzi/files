@@ -237,7 +237,7 @@ np-+                     |
 ### Druid - Balance
 
 Druid - Balance | Buttons
-----------------|------------------
+----------------|-------------------------
 Q               | Prowl
 E               | Starfire
 R               | Wrath
@@ -247,15 +247,15 @@ F               | Starsurge
 3               | Cat Form
 4               | Travel Form
 5               | Moonfire
-6               |
-7               |
+6               | Ferocious Bite / Ironfur
+7               | Mangle / Shred
 8               | Fishing
 s-Q             |
 s-E             | Warrior of Elune
 s-R             | Dash
 s-F             | Entangling Roots
 s-1             | Mount
-s-2             |
+s-2             | Growl
 s-3             | Bear Form
 s-4             |
 s-5             | Remove Corruption
