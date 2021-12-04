@@ -1111,10 +1111,10 @@ Warrior - Fury | Buttons
 Q              | Rampage
 E              | Raging Blow
 R              | Bloodthirst
-F              | Whirlwind
+F              | Hamstring
 1              | Execute
 2              | Victory Rush
-3              | Hamstring
+3              |
 4              | Charge
 5              | Pummel
 6              | Slam
@@ -1123,9 +1123,9 @@ F              | Whirlwind
 s-Q            |
 s-E            | Ignore Pain
 s-R            | Berserking
-s-F            | Taunt
+s-F            | Whirlwind
 s-1            | Mount
-s-2            |
+s-2            | Taunt
 s-3            |
 s-4            | Trinket
 s-5            | Trinket
