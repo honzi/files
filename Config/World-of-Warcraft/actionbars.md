@@ -167,7 +167,7 @@ s-F                   | Death Grip
 s-1                   | Mount
 s-2                   |
 s-3                   |
-s-4                   |
+s-4                   | Necklace
 s-5                   | Apocalypse
 s-6                   | AFK
 s-7                   | AFK
@@ -187,7 +187,7 @@ F                    | Throw Glaive
 3                    | Consume Magic
 4                    | Fel Rush
 5                    | Disrupt
-6                    |
+6                    | Necklace
 7                    | Torment
 8                    | Fishing
 s-Q                  | Spectral Sight
@@ -257,7 +257,7 @@ s-F             | Entangling Roots
 s-1             | Mount
 s-2             | Growl
 s-3             | Bear Form
-s-4             |
+s-4             | Necklace
 s-5             | Remove Corruption
 s-6             | AFK
 s-7             | AFK
@@ -442,7 +442,7 @@ s-5               | Wildfire Bomb
 s-6               | AFK
 s-7               | AFK
 s-8               | AFK
-np-+              |
+np-+              | Necklace
 
 ### Mage - Arcane
 
@@ -517,7 +517,7 @@ F            | Frost Nova
 3            |
 4            | Blink
 5            | Counterspell
-6            |
+6            | Necklace
 7            |
 8            | Fishing
 s-Q          | Fire Blast
@@ -587,7 +587,7 @@ s-F               | Leg Sweep
 s-1               | Mount
 s-2               | Provoke
 s-3               |
-s-4               |
+s-4               | Necklace
 s-5               |
 s-6               | AFK
 s-7               | AFK
@@ -647,7 +647,7 @@ s-F            | Lay on Hands
 s-1            | Mount
 s-2            | Beacon of Light
 s-3            | Hand of Reckoning
-s-4            |
+s-4            | Necklace
 s-5            | Divine Steed
 s-6            | AFK
 s-7            | AFK
@@ -697,7 +697,7 @@ F                     | Consecration
 3                     |
 4                     | Hammer of Justice
 5                     | Crusader Strike
-6                     |
+6                     | Necklace
 7                     |
 8                     | Fishing
 s-Q                   |
@@ -887,7 +887,7 @@ s-F              | Crimson Vial
 s-1              | Mount
 s-2              | Instant Poison
 s-3              | Slice and Dice
-s-4              |
+s-4              | Necklace
 s-5              | Death from Above
 s-6              | AFK
 s-7              | AFK
@@ -977,7 +977,7 @@ s-F                  | Earthbind Totem
 s-1                  | Mount
 s-2                  | Flametongue Weapon
 s-3                  | Lightning Shield
-s-4                  |
+s-4                  | Necklace
 s-5                  |
 s-6                  | AFK
 s-7                  | AFK
@@ -1047,7 +1047,7 @@ np-+                 | Shadow Bolt
 ### Warlock - Destruction
 
 Warlock - Destruction | Buttons
-----------------------|--------------------
+----------------------|---------------------
 Q                     | Immolate
 E                     | Conflagrate
 R                     | Incinerate
@@ -1067,12 +1067,12 @@ s-F                   | Unending Resolve
 s-1                   | Mount
 s-2                   | Summon Imp
 s-3                   | Unending Breath
-s-4                   |
+s-4                   | Necklace
 s-5                   | Health Funnel
 s-6                   | AFK
 s-7                   | AFK
 s-8                   | AFK
-np-+                  |
+np-+                  | Threatening Presence
 
 ### Warrior - Arms
 
@@ -1114,7 +1114,7 @@ R              | Bloodthirst
 F              | Hamstring
 1              | Execute
 2              | Victory Rush
-3              |
+3              | Necklace
 4              | Charge
 5              | Pummel
 6              | Slam
