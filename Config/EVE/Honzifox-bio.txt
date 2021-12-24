@@ -1,6 +1,6 @@
 iterami "CEO" https://iterami.github.io
 -https://iterami.github.io/Guides.htm/eve/index.htm=guides+fits+notes+tools
--https://github.com/honzi/biggestisk=list of the most expensive kills of each entity
+-https://github.com/honzi/biggestisk=list of the most expensive kill of each entity
 -https://github.com/iterami/EVE-Overviews.yaml=iterami Overview
 
 -Alts=Honzibot
