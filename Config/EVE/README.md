@@ -63,15 +63,15 @@ Honzi's EVE Config
 1. Search New Eden (hidden)
 2. System Info
 3. Route
-  * Show Route in Space: disabled
-  * Prefer Safer
-  * Include Jump Gates in Route: enabled
-  * Security Penalty: 100
-  * Avoid Systems Where Pod Killing has Recently Occured: disabled
-  * Avoid Triglavian Minor Victory Systems: enabled
-  * Avoid EDENCOM Systems: disabled
-  * Avoid Systems on Your Avoidance List: enabled
-  * Disable Autopilot at each Waypoint: enabled
+    * Show Route in Space: disabled
+    * Prefer Safer
+    * Include Jump Gates in Route: enabled
+    * Security Penalty: 100
+    * Avoid Systems Where Pod Killing has Recently Occured: disabled
+    * Avoid Triglavian Minor Victory Systems: enabled
+    * Avoid EDENCOM Systems: disabled
+    * Avoid Systems on Your Avoidance List: enabled
+    * Disable Autopilot at each Waypoint: enabled
 4. Agent Missions
 5. Events
 6. Skilling Spree
