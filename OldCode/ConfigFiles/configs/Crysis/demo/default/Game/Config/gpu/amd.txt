@@ -1,0 +1,209 @@
+0x1002, 0x9400, 3 // ATI Radeon HD 2900 XT
+0x1002, 0x9401, 3 // ATI Radeon HD 2900 XT
+0x1002, 0x9402, 3 // ATI Radeon HD 2900 XT
+0x1002, 0x9403, 3 // ATI Radeon HD 2900 PRO
+0x1002, 0x9405, 3 // ATI Radeon HD 2900 GT
+0x1002, 0x9500, 2 // RV670
+0x1002, 0x9501, 2 // RV670
+0x1002, 0x9505, 2 // RV670
+0x1002, 0x9507, 2 // RV670
+0x1002, 0x9580, 3 // RV630
+0x1002, 0x9586, 2 // ATI Radeon HD 2600 XT AGP
+0x1002, 0x9588, 2 // ATI Radeon HD 2600 XT
+0x1002, 0x9587, 2 // ATI Radeon HD 2600 Pro AGP
+0x1002, 0x9589, 2 // ATI Radeon HD 2600 Pro
+0x1002, 0x94C4, 2 // ATI Radeon HD 2400 PRO AGP
+0x1002, 0x94C1, 2 // ATI Radeon HD 2400 XT
+0x1002, 0x94C3, 2 // ATI Radeon HD 2400 PRO
+0x1002, 0x94C7, 2 // ATI Radeon HD 2350
+0x1002, 0x5653, 1 // ATI Mobility/Radeon X700
+0x1002, 0x7109, 2 // Radeon X1800 CrossFire Edition
+0x1002, 0x7249, 2 // Radeon X1900 CrossFire Edition
+0x1002, 0x7240, 2 // Radeon X1950 CrossFire Edition
+0x1002, 0x7248, 2 // Radeon X1950 XTX Uber - Limited Edition
+0x1002, 0x554D, 1 // Radeon X800 CrossFire Edition
+0x1002, 0x5D52, 1 // Radeon X850 CrossFire Edition
+0x1002, 0x564F, 1 // Radeon X550/X700 Series
+0x1002, 0x724E,-1 // AMD Stream Processor
+0x1002, 0x4154,-1 // ATI FireGL T2
+0x1002, 0x5B64,-1 // ATI FireGL V3100
+0x1002, 0x3E54,-1 // ATI FireGL V3200
+0x1002, 0x7152,-1 // ATI FireGL V3300
+0x1002, 0x7153,-1 // ATI FireGL V3350
+0x1002, 0x71D2,-1 // ATI FireGL V3400
+0x1002, 0x5E48,-1 // ATI FireGL V5000
+0x1002, 0x5551,-1 // ATI FireGL V5100
+0x1002, 0x71DA,-1 // ATI FireGL V5200
+0x1002, 0x5550,-1 // ATI FireGL V7100
+0x1002, 0x7104,-1 // ATI FireGL V7200
+0x1002, 0x710E,-1 // ATI FireGL V7300
+0x1002, 0x710F,-1 // ATI FireGL V7350
+0x1002, 0x4E47,-1 // ATI FireGL X1
+0x1002, 0x4E4B,-1 // ATI FireGL X2-256/X2-256t
+0x1002, 0x4A4D,-1 // ATI FireGL X3-256
+0x1002, 0x4147,-1 // ATI FireGL Z1
+0x1002, 0x5B65,-1 // ATI FireMV 2200
+0x1002, 0x719B,-1 // ATI FireMV 2250
+0x1002, 0x3151,-1 // ATI FireMV 2400
+0x1002, 0x4E54,-1 // ATI Mobility FIRE GL T2/T2e
+0x1002, 0x5464,-1 // ATI Mobility FireGL V3100
+0x1002, 0x3154,-1 // ATI Mobility FireGL V3200
+0x1002, 0x564A,-1 // ATI Mobility FireGL V5000
+0x1002, 0x564B,-1 // ATI Mobility FireGL V5000
+0x1002, 0x5D49,-1 // ATI Mobility FireGL V5100
+0x1002, 0x71C4,-1 // ATI Mobility FireGL V5200
+0x1002, 0x71D4,-1 // ATI Mobility FireGL V5250
+0x1002, 0x7106,-1 // ATI Mobility FireGL V7100
+0x1002, 0x7103,-1 // ATI Mobility FireGL V7200
+0x1002, 0x4E52, 1 // ATI Mobility Radeon 9500
+0x1002, 0x4E56, 1 // ATI Mobility Radeon 9550
+0x1002, 0x4E50, 1 // ATI Mobility Radeon 9600/9700 Series
+0x1002, 0x4A4E, 1 // ATI Mobility Radeon 9800
+0x1002, 0x7149, 1 // ATI Mobility Radeon X1300
+0x1002, 0x714A, 1 // ATI Mobility Radeon X1300
+0x1002, 0x714B, 1 // ATI Mobility Radeon X1300
+0x1002, 0x714C, 1 // ATI Mobility Radeon X1300
+0x1002, 0x7196, 1 // ATI Mobility Radeon X1350
+0x1002, 0x718B, 1 // ATI Mobility Radeon X1350
+0x1002, 0x718C, 1 // ATI Mobility Radeon X1350
+0x1002, 0x7145, 1 // ATI Mobility Radeon X1400
+0x1002, 0x718D, 1 // ATI Mobility Radeon X1450
+0x1002, 0x7186, 1 // ATI Mobility Radeon X1450
+0x1002, 0x71C5, 1 // ATI Mobility Radeon X1600
+0x1002, 0x71D5, 1 // ATI Mobility Radeon X1700
+0x1002, 0x71DE, 1 // ATI Mobility Radeon X1700
+0x1002, 0x71D6, 1 // ATI Mobility Radeon X1700
+0x1002, 0x7102, 2 // ATI Mobility Radeon X1800
+0x1002, 0x7101, 2 // ATI Mobility Radeon X1800
+0x1002, 0x7284, 2 // ATI Mobility Radeon X1900
+0x1002, 0x7188, 2 // ATI Mobility Radeon X2300
+0x1002, 0x5460, 1 // ATI Mobility Radeon X300
+0x1002, 0x3152, 1 // ATI Mobility Radeon X300
+0x1002, 0x5461, 1 // ATI Mobility Radeon X300
+0x1002, 0x3150, 1 // ATI Mobility Radeon X600
+0x1002, 0x5462, 1 // ATI Mobility Radeon X600 SE
+0x1002, 0x5652, 1 // ATI Mobility Radeon X700
+0x1002, 0x5D4A, 1 // ATI Mobility Radeon X800
+0x1002, 0x5D48, 1 // ATI Mobility Radeon X800 XT
+0x1002, 0x4153, 1 // ATI Radeon 9550/X1050 Series
+0x1002, 0x4150, 1 // ATI Radeon 9600 Series
+0x1002, 0x4152, 1 // ATI Radeon 9600 Series
+0x1002, 0x4151, 1 // ATI Radeon 9600 Series
+0x1002, 0x4E51, 1 // ATI Radeon 9600 Series
+0x1002, 0x4155, 1 // ATI Radeon 9600 Series
+0x1002, 0x791E, 1 // ATI Radeon X1200 Series
+0x1002, 0x791F, 1 // ATI Radeon X1200 Series
+0x1002, 0x7288, 2 // ATI Radeon X1950 GT
+0x1002, 0x5E4B, 1 // ATI Radeon X700 PRO
+0x1002, 0x5E4A, 1 // ATI Radeon X700 XT0
+0x1002, 0x554E, 1 // ATI Radeon X800 GT0
+0x1002, 0x554B, 1 // ATI Radeon X800 GT
+0x1002, 0x5D4E, 1 // ATI Radeon X800 GT
+0x1002, 0x4B4B, 1 // ATI Radeon X850 PRO
+0x1002, 0x4B4A, 1 // ATI Radeon X850 SE
+0x1002, 0x4B49, 1 // ATI Radeon X850 XT
+0x1002, 0x4B4C, 1 // ATI Radeon X850 XT Platinum Edition
+0x1002, 0x793F, 1 // ATI Radeon Xpress 1200 Series
+0x1002, 0x7941, 1 // ATI Radeon Xpress 1200 Series
+0x1002, 0x7942, 1 // ATI Radeon Xpress 1200 Series
+0x1002, 0x5A41, 1 // ATI Radeon Xpress Series
+0x1002, 0x5A42, 1 // ATI Radeon Xpress Series
+0x1002, 0x5954, 1 // ATI Radeon Xpress Series
+0x1002, 0x5955, 1 // ATI Radeon Xpress Series
+0x1002, 0x5A43, 1 // ATI Radeon Xpress Series
+0x1002, 0x5854, 1 // ATI Radeon Xpress Series
+0x1002, 0x5A61, 1 // ATI Radeon Xpress Series
+0x1002, 0x5A63, 1 // ATI Radeon Xpress Series
+0x1002, 0x5A62, 1 // ATI Radeon Xpress Series
+0x1002, 0x5975, 1 // ATI Radeon Xpress Series
+0x1002, 0x5874, 1 // ATI Radeon Xpress Series
+0x1002, 0x5974, 1 // ATI Radeon Xpress Series
+0x1002, 0x7210, 2 // Mobility Radeon X2300 HD
+0x1002, 0x7211, 2 // Mobility Radeon X2300 HD
+0x1002, 0x554C, 1 // R430 XTP
+0x1002, 0x5D4C, 2 // R480 Consumer 4P
+0x1002, 0x5D50, 2 // R480 GL 16P
+0x1002, 0x4144, 1 // Radeon 9500
+0x1002, 0x4149, 1 // Radeon 9500
+0x1002, 0x4E45, 1 // Radeon 9500 PRO / 9700
+0x1002, 0x4E46, 1 // Radeon 9600 TX
+0x1002, 0x4146, 1 // Radeon 9600TX
+0x1002, 0x4E44, 1 // Radeon 9700 PRO
+0x1002, 0x4E49, 1 // Radeon 9800
+0x1002, 0x4E48, 1 // Radeon 9800 PRO
+0x1002, 0x4148, 1 // Radeon 9800 SE
+0x1002, 0x4E4A, 1 // Radeon 9800 XT
+0x1002, 0x714D, 1 // Radeon X1300 Series
+0x1002, 0x7146, 1 // Radeon X1300 Series
+0x1002, 0x714E, 1 // Radeon X1300 Series
+0x1002, 0x715E, 1 // Radeon X1300 Series
+0x1002, 0x71C3, 1 // Radeon X1300 Series
+0x1002, 0x718F, 1 // Radeon X1300 Series
+0x1002, 0x7180, 1 // Radeon X1300/X1550 Series
+0x1002, 0x7187, 1 // Radeon X1300/X1550 Series
+0x1002, 0x7183, 1 // Radeon X1300/X1550 Series
+0x1002, 0x7142, 1 // Radeon X1300/X1550 Series
+0x1002, 0x715F, 1 // Radeon X1550 64-bit
+0x1002, 0x7147, 1 // Radeon X1550 64-bit
+0x1002, 0x7143, 1 // Radeon X1550 Series
+0x1002, 0x71CE, 1 // Radeon X1600 Pro / Radeon X1300 XT
+0x1002, 0x71C2, 1 // Radeon X1600 Series
+0x1002, 0x71C0, 1 // Radeon X1600 Series
+0x1002, 0x71CD, 1 // Radeon X1600 Series
+0x1002, 0x7140, 1 // Radeon X1600 Series
+0x1002, 0x7181, 1 // Radeon X1600 Series
+0x1002, 0x71C6, 1 // Radeon X1650 Series
+0x1002, 0x7291, 1 // Radeon X1650 Series
+0x1002, 0x7293, 1 // Radeon X1650 Series
+0x1002, 0x71C1, 1 // Radeon X1650 Series
+0x1002, 0x71C7, 1 // Radeon X1650 Series
+0x1002, 0x7100, 2 // Radeon X1800 Series
+0x1002, 0x7105, 2 // Radeon X1800 Series
+0x1002, 0x7108, 2 // Radeon X1800 Series
+0x1002, 0x710C, 2 // Radeon X1800 Series
+0x1002, 0x710A, 1 // Radeon X1800 Series
+0x1002, 0x710B, 2 // Radeon X1800 Series
+0x1002, 0x724A, 2 // Radeon X1900 Series
+0x1002, 0x724C, 2 // Radeon X1900 Series
+0x1002, 0x724D, 2 // Radeon X1900 Series
+0x1002, 0x724F, 2 // Radeon X1900 Series
+0x1002, 0x724B, 2 // Radeon X1900 Series
+0x1002, 0x7247, 2 // Radeon X1900 Series
+0x1002, 0x7243, 2 // Radeon X1900 Series
+0x1002, 0x7245, 2 // Radeon X1900 Series
+0x1002, 0x7246, 2 // Radeon X1900 Series
+0x1002, 0x7280, 2 // Radeon X1950 Series
+0x1002, 0x7244, 2 // Radeon X1950 Series
+0x1002, 0x7200, 2 // Radeon X2300HD
+0x1002, 0x5B60, 1 // Radeon X300/X550/X1050 Series
+0x1002, 0x5B63, 1 // Radeon X300/X550/X1050 Series
+0x1002, 0x5B62, 1 // Radeon X600 Series
+0x1002, 0x3E50, 1 // Radeon X600/X550
+0x1002, 0x5E4D, 1 // Radeon X700
+0x1002, 0x5E4C, 1 // Radeon X700 SE
+0x1002, 0x5657, 1 // Radeon X700 Series
+0x1002, 0x5E4F, 1 // Radeon X700/X550 Series
+0x1002, 0x554F, 1 // Radeon X800 GTO
+0x1002, 0x5549, 1 // Radeon X800 GTO
+0x1002, 0x5D4F, 1 // Radeon X800 GTO
+0x1002, 0x4A49, 1 // Radeon X800 PRO
+0x1002, 0x4A4F, 1 // Radeon X800 SE
+0x1002, 0x5548, 1 // Radeon X800 Series
+0x1002, 0x4A48, 1 // Radeon X800 Series
+0x1002, 0x4A4A, 1 // Radeon X800 Series
+0x1002, 0x4A4C, 1 // Radeon X800 Series
+0x1002, 0x4A54, 1 // Radeon X800 VE
+0x1002, 0x4A4B, 1 // Radeon X800 XT
+0x1002, 0x5D57, 1 // Radeon X800 XT
+0x1002, 0x554A, 1 // Radeon X800 XT Platinum Edition
+0x1002, 0x4A50, 1 // Radeon X800 XT Platinum Edition
+0x1002, 0x5D4D, 1 // Radeon X850 XT Platinum Edition
+0x1002, 0x5B66, 1 // RV370X
+0x1002, 0x5B61, 1 // RV371
+0x1002, 0x7141, 1 // RV505
+0x1002, 0x714F, 1 // RV505
+0x1002, 0x7151, 1 // RV505
+0x1002, 0x7290, 1 // RV560
+0x1002, 0x7297, 1 // RV560
+0x1002, 0x728B, 1 // RV570
+0x1002, 0x7289, 1 // RV570

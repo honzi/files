@@ -1,0 +1,405 @@
+;automatic generated readme file
+;-------------------------------
+ 
+[Readme]
+Version=1, 08, 25822, 0
+ 
+;Assigned keyboard commands (game keys)
+;------------------------------------------------
+ 
+;(+)                           Zoomen +                                          
+ 
+;(-)                           Zoomen -                                          
+ 
+;(0)                           QuickUse 0                                        
+ 
+;(0 (ZEHNERTASTATUR))          Springen                                          
+ 
+;(1)                           QuickUse 1                                        
+ 
+;(2)                           QuickUse 2                                        
+ 
+;(2 (ZEHNERTASTATUR))          Camera Look                                       
+ 
+;(3)                           QuickUse 3                                        
+ 
+;(4)                           QuickUse 4                                        
+ 
+;(4 (ZEHNERTASTATUR))          Reset Camera                                      
+ 
+;(5)                           QuickUse 5                                        
+ 
+;(6)                           QuickUse 6                                        
+ 
+;(7)                           QuickUse 7                                        
+ 
+;(8)                           QuickUse 8                                        
+ 
+;(9)                           QuickUse 9                                        
+ 
+;(A)                           Strafe Links                                      
+ 
+;(ALT)                         Springen                                          
+ 
+;(B)                           Magie Buch                                        
+ 
+;(C)                           Character-Screen                                  
+ 
+;(D)                           Strafe Rechts                                     
+ 
+;(E)                           Camera Rotation Rechts                            
+ 
+;(EINGABE)                     Bestätigen                                        
+ 
+;(ENDE)                        Target locken                                     
+ 
+;(Energie sparen)              Abbrechen                                         
+ 
+;(F5)                          Schnellspeichern                                  
+ 
+;(F9)                          Schnellladen                                      
+ 
+;(FESTSTELL)                   Gehen Toggle                                      
+ 
+;(I)                           Inventar öffnen                                   
+ 
+;(KOMMA (ZEHNERTASTATUR))      First Person Camera                               
+ 
+;(L)                           Quest-Log                                         
+ 
+;(LEER)                        Waffe ziehen                                      
+ 
+;(M)                           Karte                                             
+ 
+;(Maus X Achse +)              Camera Rotation Rechts                            
+ 
+;(Maus X Achse -e)             Camera Rotation Links                             
+ 
+;(Maus Y Achse +)              Rotation Runter                                   
+ 
+;(Maus Y Achse -)              Rotation Hoch                                     
+ 
+;(Maus Z Achse +)              Zoomen +                                          
+ 
+;(Maus Z Achse -)              Zoomen -                                          
+ 
+;(Mausbutton 1)                Aktion 1                                          
+ 
+;(Mausbutton 2)                Aktion 2                                          
+ 
+;(Mausbutton 3)                Waffe ziehen                                      
+ 
+;(NACH-LINKS)                  Strafe Links                                      
+ 
+;(NACH-OBEN)                   Vorwärts                                          
+ 
+;(NACH-RECHTS)                 Strafe Rechts                                     
+ 
+;(NACH-UNTEN)                  Rückwärts                                         
+ 
+;(PAUSE)                       Toggle entity debugging                           
+ 
+;(Q)                           Camera Rotation Links                             
+ 
+;(R)                           Target locken                                     
+ 
+;(ROLLEN-FESTSTELL)            Toggle HUD                                        
+ 
+;(RÜCK)                        Inventar öffnen                                   
+ 
+;(S)                           Rückwärts                                         
+ 
+;(STRG)                        Ducken                                            
+ 
+;(STRG-RECHTS)                 Ducken                                            
+ 
+;(T)                           First Person Camera                               
+ 
+;(UMSCHALT)                    Gehen                                             
+ 
+;(UMSCHALT RECHTS)             Gehen                                             
+ 
+;(W)                           Vorwärts                                          
+ 
+ 
+;Assigned keyboard commands (debug keys)
+;------------------------------------------------
+ 
+;(F1)                          Make Snapshot                                     
+ 
+;(F12)                         Quit Application                                  
+ 
+;(F2)                          Toggle Fullscreen                                 
+ 
+;(F3)                          Toggle RenderMode                                 
+ 
+;(F6)                          OnPlayerToggleSpeedUp                             
+ 
+;(F7)                          OnPlayerToggleSloMo                               
+ 
+;(F8)                          Reset Player                                      
+ 
+;(LEFT CTRL+0)                 Walk Animation Mixing                             
+ 
+;(LEFT CTRL+A)                 Toggle AI Debug                                   toggles the focus ai debug mode                                                 
+ 
+;(LEFT CTRL+B)                 Toggle Bounding Boxes                             
+ 
+;(LEFT CTRL+BACKSPACE)         Stop  Game                                        
+ 
+;(LEFT CTRL+F)                 Control Focus                                     controls the given entity or the focus/editor entity if no name given           
+ 
+;(LEFT CTRL+F1)                Toggle HUD                                        
+ 
+;(LEFT CTRL+F4)                Pause Game                                        
+ 
+;(LEFT CTRL+G)                 View Gamekeys                                     Prints all active gamekeys and debug-actions on screen                          
+ 
+;(LEFT CTRL+H)                 Goto Startposition                                beams the player to the starting point                                          
+ 
+;(LEFT CTRL+HOME)              Fixed Camera                                      
+ 
+;(LEFT CTRL+I)                 Cycle Lightningmodes                              cycles through all lightning modes                                              
+ 
+;(LEFT CTRL+INSERT)            Free Camera                                       
+ 
+;(LEFT CTRL+K)                 Beam Player Forward                               
+ 
+;(LEFT CTRL+L)                 Cycle Moving Light                                cycles through all moving light modes                                           
+ 
+;(LEFT CTRL+N)                 View Navigation                                   visualizes all relevant navigation psets                                        
+ 
+;(LEFT CTRL+N+M)               Reset Navigation                                  
+ 
+;(LEFT CTRL+N+P)               Pause Navigation                                  
+ 
+;(LEFT CTRL+PAGE UP)           Goto Camera                                       beams player to camera position                                                 
+ 
+;(LEFT CTRL+Q)                 Collision Shapes                                  
+ 
+;(LEFT CTRL+R)                 Toggle Rays                                       Shows ray debug lines                                                           
+ 
+;(LEFT CTRL+R)                 Profile All                                       
+ 
+;(LEFT CTRL+RETURN)            Start Game                                        
+ 
+;(LEFT CTRL+S)                 Toggle Global Stats                               Toggles global scene-debug-output                                               
+ 
+;(LEFT CTRL+SCROLL)            Single Step                                       
+ 
+;(LEFT CTRL+SPACE)             Toggle Editor                                     
+ 
+;(LEFT CTRL+V)                 Toggle Vegetation                                 
+ 
+;(LEFT CTRL+W)                 Watch Focus                                       controls the given entity or the focus/editor entity if no name given           
+ 
+;(NUM 7)                       OnIncEnclaveTheftCount                            
+ 
+;(NUM 8)                       OnIncEnclaveMurderCount                           
+ 
+;(NUM 9)                       OnIncPoliticalCrimeCount                          
+ 
+;(SHIFT+S)                     Toggle SpeedTree                                  
+ 
+ 
+;Assigned console commands
+;-------------------------
+ 
+;(audio.fAmbientVolume)                                      (null)                                            sets the ambient volume                                                         
+ 
+;(audio.fEffectVolume)                                       (null)                                            sets the effect volume                                                          
+ 
+;(audio.fMasterVolume)                                       (null)                                            sets the master volume                                                          
+ 
+;(audio.fMusicVolume)                                        (null)                                            sets the music volume                                                           
+ 
+;(audio.fVoiceVolume)                                        (null)                                            sets the voice volume                                                           
+ 
+;(caps.DisableAlphaRendering)                                (null)                                            
+ 
+;(caps.DisableModuleRendering)                               (null)                                            
+ 
+;(caps.DisableStencilTesting)                                (null)                                            
+ 
+;(caps.EnableDynamicVisualsRendering)                        (null)                                            
+ 
+;(caps.EnableLightMaps)                                      (null)                                            
+ 
+;(caps.EnableObjectVPTHCCulling)                             (null)                                            
+ 
+;(caps.EnableOcclusionCulling)                               (null)                                            
+ 
+;(caps.EnableStaticVisualsRendering)                         (null)                                            
+ 
+;(caps.EntityProcessingRangeSphere)                          (null)                                            changes the EnterProcessing range, must be greater than the processing range    
+ 
+;(caps.EntityROI)                                            (null)                                            changes the processing range, must be smaller than the EnterProcessingRange     
+ 
+;(caps.FarClippingPlane)                                     (null)                                            changes far  clipping plane                                                     
+ 
+;(caps.FarClippingPlaneLowPoly)                              (null)                                            changes far  clipping plane for lowpoly mesh                                    
+ 
+;(caps.GlobalVisualLoDFactor)                                (null)                                            Global property for visual mesh lodding: 1.0f = default value > 1.0 use only for high end systems, < 1.0 for slower machines
+ 
+;(caps.OCCheckThreshold)                                     (null)                                            
+ 
+;(caps.OCPixelOverdrawThreshold)                             (null)                                            
+ 
+;(caps.RenderDebug)                                          (null)                                            toggles rendering of entity debug infos                                         
+ 
+;(caps.ScreenObjectDistanceCulling)                          (null)                                            Simple distance screen metric object distance culling used. Culls all objects under threshold
+ 
+;(compile navigation)                                        (null)                                            (re-)compiles the navigation scene!                                             
+ 
+;(console.font)                                              (null)                                            defines the font of the output window                                           
+ 
+;(console.dimy)                                              (null)                                            defines the y height of the console in pixel (default 250)                      
+ 
+;(console.dimx)                                              (null)                                            defines the x width of the console in pixel (default: renderer width)           
+ 
+;(console.posy)                                              (null)                                            defines the y pos of the console in pixel (default 0)                           
+ 
+;(console.posx)                                              (null)                                            defines the x pos of the console in pixel (default:0)                           
+ 
+;(console.filterlevel)                                       (null)                                            defines the spy filter level (default 5)                                        
+ 
+;(console.outputlines)                                       (null)                                            defines the number of buffered output lines in the console (default: 5000)      
+ 
+;(colorscheme)                                               (null)                                            choose next color scheme                                                        
+ 
+;(control)                                                   Control Focus                                     controls the given entity or the focus/editor entity if no name given (assigned to key: LEFT CTRL+F)
+ 
+;(DebugShowDiffMem)                                          (null)                                            shows memory diff output in zspy and traceview                                  
+ 
+;(DebugShowMem)                                              (null)                                            shows memory output in zspy and traceview                                       
+ 
+;(defeat)                                                    (null)                                            something you should not use!                                                   
+ 
+;(DisablePrefetcher)                                         (null)                                            Disables prefetcher                                                             
+ 
+;(dispose)                                                   (null)                                            disposes items from the inventory                                               
+ 
+;(dViewGameKeys())                                           View Gamekeys                                     Prints all active gamekeys and debug-actions on screen  (assigned to key: LEFT CTRL+G)
+ 
+;(edit)                                                      OnConsoleCommand                                  edits the current entity                                                        
+ 
+;(EnablePrefetcher)                                          (null)                                            Enable prefetcher                                                               
+ 
+;(focus.ShowTA())                                            Toggle AI Debug                                   toggles the focus ai debug mode (assigned to key: LEFT CTRL+A)                  
+ 
+;(fullhealth)                                                (null)                                            something you should not use!                                                   
+ 
+;(game.bTestMode)                                            (null)                                            toggles the testmode on or off, 0: off, 1: on (default:1)                       
+ 
+;(game.Chat())                                               IRC Chat                                          start an irc chat session                                                       
+ 
+;(game.ForceCrash)                                           (null)                                            guess what!                                                                     
+ 
+;(game.ForceFloatException)                                  (null)                                            causes a floating point exception!                                              
+ 
+;(game.SetTime)                                              (null)                                            Sets the World Time                                                             
+ 
+;(game.ShowVersion)                                          (null)                                            prints out the current game version                                             
+ 
+;(game.WatchFPS)                                             (null)                                            opens a statistic control with fps output                                       
+ 
+;(give)                                                      (null)                                            places an instance of the given item in the player's inventory                  
+ 
+;(god)                                                       (null)                                            something you should not use!                                                   
+ 
+;(goto)                                                      (null)                                            beams player and camera to the given entity                                     
+ 
+;(gotocamera)                                                Goto Camera                                       beams player to camera position (assigned to key: LEFT CTRL+PAGE UP)            
+ 
+;(idkfa)                                                     (null)                                            something you should not use!                                                   
+ 
+;(illumination.CycleLightningModes)                          Cycle Lightningmodes                              cycles through all lightning modes (assigned to key: LEFT CTRL+I)               
+ 
+;(illumination.CycleMovingLight)                             Cycle Moving Light                                cycles through all moving light modes (assigned to key: LEFT CTRL+L)            
+ 
+;(illumination.SetPixelHemispherePixelLightning)             Pixel Hemisphere Pixel Lightning                  set the lightning to pixel  hemisphere mode                                     
+ 
+;(illumination.SetSimpleLightning)                           Simple Lightning                                  set the lightning to simple mode                                                
+ 
+;(illumination.SetVertexHemispherePixelLightning)            Vertex Hemisphere Pixel Lightning                 set the lightning to vertex hemisphere mode                                     
+ 
+;(illumination.SetVertexHemisphereVertexLightning)           Vertex Hemisphere Vertex Lightning                set the lightning to vertex hemisphere mode                                     
+ 
+;(invisibility)                                              (null)                                            something you should not use!                                                   
+ 
+;(kill)                                                      (null)                                            something you should not use!                                                   
+ 
+;(music.bEnableAutoUpdate)                                   (null)                                            enables or disables automatic updates                                           
+ 
+;(music.bEnableTriggers)                                     (null)                                            enables or disables accepting triggers                                          
+ 
+;(music.sDayTime)                                            (null)                                            sets the daytime                                                                
+ 
+;(music.sLocation)                                           (null)                                            sets the location                                                               
+ 
+;(music.sSituation)                                          (null)                                            sets the situation                                                              
+ 
+;(PhysicFPS)                                                 (null)                                            steps the physicscene at [n] fps                                                
+ 
+;(physics.dToggleActorAxes)                                  Actor Axes                                        Toggles the visualization of the axes of the physic actors                      
+ 
+;(physics.dToggleBodyAxes)                                   Body Axes                                         Toggles the visualization of the axes of the bodies of the physic actors        
+ 
+;(physics.dToggleContactForce)                               Contact Force                                     Toggles the visualization of the contact forces acting on the bodies of the physic actors
+ 
+;(play ani)                                                  (null)                                            syntax: play ani [a1] [a2] [ib] [name] plays the ani [a1] to [a2] with optional blending [ib]
+ 
+;(player.fForwardSpeedMax)                                   (null)                                            sets the maximum forward speed of the player in m/sec (default: 300.0)          
+ 
+;(player.GotoStartPosition())                                Goto Startposition                                beams the player to the starting point (assigned to key: LEFT CTRL+H)           
+ 
+;(spawn)                                                     (null)                                            spawns an instance of the given entity name                                     
+ 
+;(trigger)                                                   (null)                                            triggers the given entity or the focus/editor entity if no name given           
+ 
+;(version)                                                   (null)                                            prints the engine version                                                       
+ 
+;(quit)                                                      (null)                                            closes the application's window                                                 
+ 
+;(history)                                                   (null)                                            prints the history of entered commands                                          
+ 
+;(help)                                                      (null)                                            prints a help line for each command                                             
+ 
+;(clear)                                                     (null)                                            clears the console output                                                       
+ 
+;(physics.dToggleBodyMassAxes)                               Body Mass Axes                                    Toggles the visualization of the mass-axes of the bodies of the physic actors   
+ 
+;(physics.dToggleRays)                                       Toggle Rays                                       Shows ray debug lines (assigned to key: LEFT CTRL+R)                            
+ 
+;(physics.dToggleStatistics)                                 Toggle Status                                     Shows some physics debug output                                                 
+ 
+;(Remotedebugger)                                            (null)                                            starts a remote debugging session on the target machine [localhost], if nothing entered
+ 
+;(show position)                                             (null)                                            display the current camera position                                             
+ 
+;(spy.AddComment)                                            (null)                                            adds a comment line in the spy                                                  
+ 
+;(stats.dToggleGlobal())                                     Toggle Global Stats                               Toggles global scene-debug-output (assigned to key: LEFT CTRL+S)                
+ 
+;(teach)                                                     (null)                                            teaches the specified spell(s) and/or skill(s)                                  
+ 
+;(timer.fTimeScale)                                          (null)                                            sets the time scale value (default: 1.0)                                        
+ 
+;(toggle memdebug)                                           (null)                                            tests the memory for corruptions (SLOW!)                                        
+ 
+;(untrigger)                                                 (null)                                            untriggers the given entity or the focus/editor entity if no name given         
+ 
+;(view.dShowLabels())                                        View Labels                                       visualizes all relevant label psets                                             
+ 
+;(view.dShowLights())                                        View Lights                                       visualizes all relevant light psets                                             
+ 
+;(view.dShowNavigation())                                    View Navigation                                   visualizes all relevant navigation psets (assigned to key: LEFT CTRL+N)         
+ 
+;(watch)                                                     Watch Focus                                       controls the given entity or the focus/editor entity if no name given (assigned to key: LEFT CTRL+W)
+ 
+;(world.ToggleFolder)                                        (null)                                            enables or disables the given sector-folder                                     
+ 
+;(world.ToggleSector)                                        (null)                                            enables or disables the given sector                                            
+ 
+ 
+;--------------------------------EOF----------------------------------

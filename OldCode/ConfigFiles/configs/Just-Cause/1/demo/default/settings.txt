@@ -1,0 +1,50 @@
+
+//----------------------------------------------------------------------------------
+//
+//    Just Cause Settings
+//
+//    Settings:				Possible values:
+//
+//    audio_sfx				0.0 to 1.0
+//    audio_music			0.0 to 1.0
+//    audio_dialog			0.0 to 1.0
+//    video_motion_blur			On = 1, Off = 0
+//    general_action_cam		On = 1, Off = 0
+//    general_subtitles			On = 1, Off = 0
+//    general_invert_updown		On = 1, Off = 0
+//    hud_health_bar			Dynamic, Always show, Always hide
+//    hud_weapon_selector		Dynamic, Always show, Always hide
+//    hud_onscreen_obj_info		Dynamic, Always show, Always hide
+//    hud_minimap			Show, Hide
+//    pc_video_screen_resolution	640x480, 800x600, 1024x768, 1280x1024, 1600x1200
+//    pc_video_heat_haze		On = 1, Off = 0
+//    pc_video_water_quality		Low, Medium, High
+//    pc_video_scene_complexity		Low, Medium, High
+//    pc_video_terrain_detail_quality	Low, Medium, High
+//    pc_video_texture_resolution	Low, Medium, High
+//    pc_video_post_effects		On = 1, Off = 0
+//
+//----------------------------------------------------------------------------------
+//
+// NOTE: Editing this file will override any settings saved in user profiles!
+//
+//----------------------------------------------------------------------------------
+
+audio_sfx: 1.000000
+audio_music: 1.000000
+audio_dialog: 1.000000
+general_action_cam: 1
+general_subtitles: 1
+general_invert_updown: 0
+hud_health_bar: Dynamic
+hud_weapon_selector: Dynamic
+hud_onscreen_obj_info: Dynamic
+hud_minimap: Show
+video_motion_blur: 1
+pc_video_screen_resolution: 1024x768
+pc_video_heat_haze: 1
+pc_video_water_quality: High
+pc_video_scene_complexity: High
+pc_video_terrain_detail_quality: High
+pc_video_texture_resolution: High
+pc_video_post_effects: 1

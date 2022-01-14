@@ -1,0 +1,52 @@
+Resolution 800 600
+Fullscreen 1
+Units 1
+Currency 1
+TemperatureUnits 1
+VegetationLOD 1 3
+BuildingLOD 1 3
+TrackLOD 1.86 2.85
+SkipStartScreen 0
+SkipBannerSequence 0
+DisableAutoPersonInjection 0
+DisableWeather 1
+DisableHorizonMapping 0
+ReflectEnable 0
+ReflectBackground 0
+ReflectTerrain 0
+ReflectScenery 0
+ReflectPeople 0
+ReflectParticles 0
+GrowGrass 1
+CorrectDayNightCycle 1
+CameraControls 1
+CameraIgnoresScenery 1
+CameraFocusIsMiddleScreen 0
+CameraUserControlMode 3
+CompressTextures 1
+BlendSceneryLODs 1
+Shadows 1
+ModulateX2 1
+TakeAllPhotos 1
+TakeCoasterPhotos 1
+TakeVistaPointPhotos 1
+SceneryVisibilityAlpha 0.3
+GeometryImposterDistance 150
+GeometryImposterTolerance 0.45
+Keys WireFrameChange X SlideLeft A SlideRight D SlideForwards W SlideBackwards S RotLeft Q RotRight E RotUp Home RotDown End
+GuestsHaveFixedHealth 0
+GuestsIgnoreRideIntensity 0
+GuestsIgnoreRideNausea 0
+GuestsIgnoreRideCost 0
+GuestsRevisitRides 1
+GuestsRideUnratedRides 0
+HighQualityTrees 1
+AutoLevelTerrain 1
+SmoothDuringAutoLevel 0
+AutoScrollAtEdge 1
+DetailMapTerrain 1
+StaticBatchTriCutoff 50
+DynamicBatchTriCutoff 50
+AttractionSceneryAllowTerrainIntersect 0
+PauseOnLoseFocus 1
+FirstTime 1

@@ -1,0 +1,301 @@
+settings
+    Name Directories
+    Main_data_directory ..\data
+    Templates_directory Templates
+    Animations_directory Animations
+    Scenes_directory Scenes
+    Textures_directory Textures
+    Compressed_textures_directory Compressed Textures
+    Terrain_textures_directory Terrain textures
+    Compressed_terrain_textures_directory Compressed Terrain Textures
+    Sounds_directory Sounds
+    Movies_directory Video
+    Deleted_templates_directory Deleted templates
+    Deleted_textures_directory Deleted textures
+    Deleted_terrain_textures_directory Deleted terrain textures
+    Softimage_bin_directory .
+    Globals_directory Globals
+    Import_directory Softimage objects
+    Dialogs_directory Dialogs
+    Scripts_include_directory Scripts include
+    Screenshots_directory .
+    Import_from_current_dir 0
+    Scenes_from_current_dir 0
+end-variables
+
+    Name Editor
+    Snap_to_ground 1
+    Default_selection_behaviour 0
+    Unselect_before_adding_new_object 1
+    Select_created_object 1
+    Show_properties_window_when_creating_object 0
+    Rotation_angle_step 5.000000
+    Show_area_map_creation_warnings 1
+    Autosave 1
+    Autosave_frequency 120.000000
+    Show_tips_at_startup 1
+    Use_only_selected_lights 0
+    Terrain_horizontal_random_shift_strength 1.000000
+    Drag_brush_size 15
+    Drag_brush_power 16.000000
+    Report_loaded_files 0
+    Tips_filepos 0
+    Tips_stored_time 
+    SAVE_load_slot_1 
+    SAVE_load_slot_2 
+    SAVE_load_slot_3 
+    SAVE_load_slot_4 
+    Template_shortcut_1 
+    Template_shortcut_2 
+    Template_shortcut_3 
+    Template_shortcut_4 
+    Template_shortcut_5 
+    Template_shortcut_6 
+    Template_shortcut_7 
+    Template_shortcut_8 
+    Template_shortcut_9 
+end-variables
+
+    Name Engine
+    Use_SSE_extension 1
+    Skeletal_normals_animation 1
+    Save_bin_animations 1
+    Force_loading_bin_animations 1
+    SectorBox_grid_size 0.500000 0.500000 0.500000 1.000000
+    Show_console_automatically 0
+    Save_console_to_file 0
+    Show_red_errors_in_annoying_message_boxes 0
+    Disable_textures 0
+    Textures_memory_buffer_in_MB 128
+    Console_X_coordinate 0.250000
+    Console_Y_coordinate 0.250000
+    Console_width 1.018750
+    Console_height 0.958333
+end-variables
+
+    Name Game
+    Start_game_in_fullscreen 0
+    Place_game_window_in_top_left_corner 0
+    Recorder_mode 0
+    Game_resolution 0
+    ScreenWidth 640.000000
+    ScreenHeight 480.000000
+    Is16bitOr32bit 1
+    Difficulty_level 0
+    First_level_scene demo\monastyr_wnetrze
+    Fullscreen_gamma_correction 1.000000
+    Sound_recorder 0
+    Play_mode 0
+    Replay_framerate 30.000000
+    Start_game_without_menu 0
+    Special_camera_key 19
+    Move_forward 22
+    Move_backward 18
+    Step_left 0
+    Step_right 3
+    Turn_left 36
+    Turn_right 37
+    Jump 40
+    Crouch_modifier 54
+    Run_modifier 52
+    Strafe_modifier 41
+    Action 106
+    Block 107
+    Camera_key 55
+    Inventory_key 4
+    Quick_slot_1 27
+    Quick_slot_2 28
+    Quick_slot_3 29
+    Quick_slot_4 30
+    Quick_slot_5 31
+    Quick_slot_6 32
+    Quick_slot_7 33
+    Quick_slot_8 34
+    Quick_slot_9 35
+    Quick_slot_10 26
+    Remove_weapon_key 16
+    Inventory_select 106
+    Inventory_cancel 107
+    Inventory_use 106
+    Camera_up 38
+    Camera_down 39
+    Camera_left 36
+    Camera_right 37
+    Camera_keys_sensitivity 180.000000
+    Quick_save 63
+    Quick_load 66
+    Screenshot 62
+    Quick_slot_use_modifier 109
+    Sniper_mode 69
+    Sniper_mode_zoom_in 68
+    Sniper_mode_zoom_out 67
+    Quick_slot_1_item 
+    Quick_slot_2_item 
+    Quick_slot_3_item 
+    Quick_slot_4_item 
+    Quick_slot_5_item 
+    Quick_slot_6_item 
+    Quick_slot_7_item 
+    Quick_slot_8_item 
+    Quick_slot_9_item 
+    Quick_slot_10_item 
+    Pickup_key 2
+    Reload_key 21
+    Invert_mouse 0
+    Mouse_look 1
+    Mouse_sensitivity_Y 2.000000
+    Mouse_sensitivity_X 0.100000
+    Mouse_acceleration_limit 20.000000
+    Mouse_sensitivity 299.000000
+    Mouse_sensitivity_min 20.000000
+    Mouse_sensitivity_max 300.000000
+    Smooth_mouse 0
+    Mouse_smoothness 20.000000
+    Analog_joystick 0
+    Analog_run_threshold 1.000000
+    Analog_sneak_threshold 0.250000
+    Analog_turn_threshold 0.000000
+    Dead_zone 0.100000
+    Saturation 0.900000
+    Always_run 1
+    Show_HUB_Logo 0
+    Dialog_texts_reading_speed_in_letters_per_sec 25.000000
+    Logo_in_config_dialog tw_logo_no_print.bmp
+    Text_in_config_dialog Archangel Demo\n (c) Metropolis Software\n Publisher: Fishtank Interactive.
+    Block_user_interface 0
+    Cursor_rendered 1
+    Double_click_time 1.000000
+    Click_point_color 0.113281 0.519531 0.550781 1.000000
+    Object_selector_color 0.023438 0.238281 0.300781 1.000000
+    Object_speaking_color 0.160156 0.738281 0.058594 1.000000
+    Object_selector_size 4.500000
+    Enemy_Health_color_min 0.585938 0.078125 0.000000 1.000000
+    Enemy_Health_color_max 0.996094 0.859375 0.000000 1.000000
+    Friend_Health_color_min 0.000000 0.078125 0.585938 1.000000
+    Friend_Health_color_max 0.996094 0.996094 0.996094 1.000000
+    Enable_sound_engine 1
+    Sound_engine_on_high_priority 1
+    Num_of_sound_voices 1
+    Music_volume 63.000000
+    Sounds_volume 63.000000
+    Speech_volume 63.000000
+    Testy_Jacka 0
+end-variables
+
+    Name Game debug
+    Ask_before_switching 0
+    Precache_effect3dvis 1
+    Display_scripts_generated_from_dialogs 0
+    Report_started_animations 0
+    Report_movement_params 0
+    Report_movement_modes 0
+    Report_action_modes 0
+    Report_activity_modes 0
+    Report_attitudes 0
+    Report_spoken_text 0
+    Report_lightmap_data 0
+    Report_script_variables 0
+    Report_executing_scripts 1
+    Report_started_effects 0
+    Report_pathfinding_information 0
+    Report_missing_objects_in_dialogs 0
+    Report_texture_loading 0
+    Report_attack_results 0
+    Report_pathfinding_information_2 0
+    Report_loading_sounds 0
+    Report_played_sound_blocks_from_animations 0
+    Report_played_sounds_in_sound_blocks_from_animations 0
+    Report_all_played_sounds 0
+    Report_tease_sequence 0
+    Enable_stay_still_effect_assert 1
+    Allow_scripts_to_use_console 1
+    Report_progress_scheme_blocks_and_comments 0
+    Report_generated_events 2
+    Selected_events 
+    Display_paths 0
+    Display_paths_marks 0
+    Display_tile_forms 0
+    Display_terrain_bounding_boxes 0
+    Display_character_spheres 0
+    Display_statistics 0
+    Display_dialog_flags 0
+    Display_pathfinding_info 0
+    Display_pathfinding_stats 0
+    Display_bounding_boxes 0
+    Display_dynamic_lights 0
+    Display_PC_info 0
+    Display_scene_name 0
+    Display_animated_objects 0
+    Display_lipsync_lines 0
+    Visible_statistics 0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
+    Display_precise_manual_targetter 0
+    Display_LOS_boxes 0
+    Display_precise_areamap_surface 0
+    Display_object_names 0
+    Display_distance_to_player 0
+    Invulnerable 0
+    Path_smoothing 1
+    Disable_message_boxes_on_errors 1
+    Runtime_variable_validation 1
+end-variables
+
+    Name Rendering
+    Render_graphics_quality 1
+    Degrade_to_wireframe_if_fps_is_less_than 30
+    Gameview_glasses_support 0
+    Textured_view_background_color 0.200000 0.200000 0.200000 1.000000
+    Lightmapped_objects_threshold 1.000000
+    Sector_box_wireframe_color 0.700000 0.700000 1.000000 1.000000
+    Sector_box_fill_color 0.500000 0.300000 0.300000 0.200000
+    Sector_box_selected_face_color 0.500000 1.000000 0.500000 0.800000
+    Draw_compiled_sector_box 0
+    Texture_filtering 1
+    Texture_degradation 0
+    Force_16bpp_lightmaps 0
+    Force_16bpp_textures 0
+    Use_BGRA_extension_if_available 0
+    Use_texture_compression_extension_if_available 1
+    Use_software_texture_compression 0
+    Render_water 1
+    Terrain_wireframe_color 0.800000 0.800000 0.900000 1.000000
+    Terrain_upper_height 300.000000
+    Terrain_lower_height -200.000000
+    Terrain_upper_wireframe_color 0.700000 0.000000 0.000000 1.000000
+    Terrain_middle_wireframe_color 0.800000 0.800000 0.000000 1.000000
+    Terrain_lower_wireframe_color 0.200000 0.400000 0.200000 1.000000
+    Terrain_vertices_color 1.000000 0.000000 0.000000 1.000000
+    Selected_terrain_vertices_color 1.000000 1.000000 1.000000 1.000000
+    Terrain_vertices_size 2.000000
+    New_rendering_architecture 1
+    Detail_textures 1
+    Detail_textures_distance 150.000000
+    Detail_water_distance 300.000000
+    Keyframe_interpolation 2
+    Animation_interpolation 1
+    Animation_interpolation_time 0.200000
+    Use_mesh_LOD 1
+    Progressive_meshing 0
+    Draw_hierarchical_bounding_boxes 0
+    Draw_object_center 0
+    Draw_all_subobjects_in_wireframe 0
+    Enable_grid 1
+    Draw_tiled_bounding_box 0
+    Snap_to_grid 1
+    Grid_size 5.000000 5.000000 5.000000 1.000000
+    Grid_color 0.300000 0.300000 0.300000 1.000000
+    Show_lights_wireframes 1
+    Use_default_light 0
+    Dynamic_lighting 1
+    Max_lights_per_object 0
+    Max_specular_lights_per_object 1
+    Specular_light_exponent 32.000000
+    Dynamic_shadows 1
+    Objects_self_shadow 0
+    Shadow_color 0.000000 0.000000 0.000000 0.500000
+    Game_screen_properties 640x480, 32bits, 75Hz
+    Draw_action_spheres_for_selected_characters 0
+    Draw_tile_forms_for_selected_characters 0
+    Show_freespacemap_surface 0
+    Draw_walls_for_wallpaths 1
+end-variables
+

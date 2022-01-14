@@ -1,0 +1,82 @@
+﻿
+train-0 {
+	name						"Passenger HST BR"
+	list {
+		car-0					<kuid:-1:100039>
+		num-0					
+		dir-0					1
+		car-1					<kuid:-1:100058>
+		num-1					
+		dir-1					1
+		car-2					<kuid:-1:100058>
+		num-2					
+		dir-2					1
+		car-3					<kuid:-1:100059>
+		num-3					
+		dir-3					0
+		car-4					<kuid:-1:100062>
+		num-4					
+		dir-4					1
+		car-5					<kuid:-1:100062>
+		num-5					
+		dir-5					1
+		car-6					<kuid:-1:100062>
+		num-6					
+		dir-6					1
+		car-7					<kuid:-1:101221>
+		num-7					
+		dir-7					0
+		car-8					<kuid:-1:100039>
+		num-8					
+		dir-8					0
+	}
+}
+train-1 {
+	name						"Coal Train"
+	list {
+		car-0					<kuid:-1:100758>
+		num-0					
+		dir-0					1
+		car-1					<kuid:44179:60006>
+		num-1					
+		dir-1					1
+		car-2					<kuid:44179:60006>
+		num-2					
+		dir-2					1
+		car-3					<kuid:44179:60006>
+		num-3					
+		dir-3					1
+		car-4					<kuid:44179:60006>
+		num-4					
+		dir-4					1
+		car-5					<kuid:44179:60006>
+		num-5					
+		dir-5					1
+		car-6					<kuid:44179:60006>
+		num-6					
+		dir-6					1
+	}
+}
+train-2 {
+	name						"MkII Coaches"
+	list {
+		car-0					<kuid:-1:100106>
+		num-0					
+		dir-0					0
+		car-1					<kuid:-1:100108>
+		num-1					
+		dir-1					0
+		car-2					<kuid:-1:100107>
+		num-2					
+		dir-2					1
+		car-3					<kuid:-1:100107>
+		num-3					
+		dir-3					0
+		car-4					<kuid:-1:100107>
+		num-4					
+		dir-4					1
+		car-5					<kuid:-1:100106>
+		num-5					
+		dir-5					1
+	}
+}

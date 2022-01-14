@@ -1,0 +1,142 @@
+0x10DE, 0x014F, 1 // GeForce 6200
+0x10DE, 0x00F3, 1 // GeForce 6200
+0x10DE, 0x0221, 1 // GeForce 6200
+0x10DE, 0x0163, 1 // GeForce 6200 LE
+0x10DE, 0x0162, 1 // GeForce 6200SE TurboCache(TM)
+0x10DE, 0x0161, 1 // GeForce 6200 TurboCache(TM)
+0x10DE, 0x0160, 1 // GeForce 6500
+0x10DE, 0x0141, 1 // GeForce 6600
+0x10DE, 0x00F2, 1 // GeForce 6600
+0x10DE, 0x0140, 1 // GeForce 6600 GT
+0x10DE, 0x00F1, 1 // GeForce 6600 GT
+0x10DE, 0x0142, 1 // GeForce 6600 LE
+0x10DE, 0x00F4, 1 // GeForce 6600 LE
+0x10DE, 0x0143, 1 // GeForce 6600 VE
+0x10DE, 0x0147, 1 // GeForce 6700 XL
+0x10DE, 0x0041, 1 // GeForce 6800
+0x10DE, 0x00C1, 1 // GeForce 6800
+0x10DE, 0x0047, 1 // GeForce 6800 GS
+0x10DE, 0x00F6, 1 // GeForce 6800 GS
+0x10DE, 0x00C0, 1 // GeForce 6800 GS
+0x10DE, 0x0045, 1 // GeForce 6800 GT
+0x10DE, 0x00C2, 1 // GeForce 6800 LE
+0x10DE, 0x0040, 1 // GeForce 6800 Ultra
+0x10DE, 0x00F9, 1 // GeForce 6800 Series GPU
+0x10DE, 0x0043, 1 // GeForce 6800 XE
+0x10DE, 0x0048, 1 // GeForce 6800 XT
+0x10DE, 0x0218, 1 // GeForce 6800 XT
+0x10DE, 0x00C3, 1 // GeForce 6800 XT
+0x10DE, 0x01DF, 1 // GeForce 7300 GS
+0x10DE, 0x0393, 1 // GeForce 7300 GT
+0x10DE, 0x01D1, 1 // GeForce 7300 LE
+0x10DE, 0x01D3, 1 // GeForce 7300 SE
+0x10DE, 0x01DD, 1 // GeForce 7500 LE
+0x10DE, 0x0392, 1 // GeForce 7600 GS
+0x10DE, 0x02E1, 1 // GeForce 7600 GS
+0x10DE, 0x0391, 1 // GeForce 7600 GT
+0x10DE, 0x0394, 1 // GeForce 7600 LE
+0x10DE, 0x00F5, 1 // GeForce 7800 GS
+0x10DE, 0x0092, 1 // GeForce 7800 GT
+0x10DE, 0x0090, 1 // GeForce 7800 GTX 512
+0x10DE, 0x0091, 1 // GeForce 7800 GTX
+0x10DE, 0x0291, 2 // GeForce 7900 GT/GTO
+0x10DE, 0x0290, 2 // GeForce 7900 GTX
+0x10DE, 0x0293, 2 // GeForce 7900 GX2
+0x10DE, 0x0294, 2 // GeForce 7950 GX2
+0x10DE, 0x0322,-1 // GeForce FX 5200
+0x10DE, 0x0321,-1 // GeForce FX 5200 Ultra
+0x10DE, 0x0323,-1 // GeForce FX 5200LE
+0x10DE, 0x0326,-1 // GeForce FX 5500
+0x10DE, 0x0312,-1 // GeForce FX 5600
+0x10DE, 0x0311,-1 // GeForce FX 5600 Ultra
+0x10DE, 0x0314,-1 // GeForce FX 5600XT
+0x10DE, 0x0342,-1 // GeForce FX 5700
+0x10DE, 0x0341,-1 // GeForce FX 5700 Ultra
+0x10DE, 0x0343,-1 // GeForce FX 5700LE
+0x10DE, 0x0344,-1 // GeForce FX 5700VE
+0x10DE, 0x0302,-1 // GeForce FX 5800
+0x10DE, 0x0301,-1 // GeForce FX 5800 Ultra
+0x10DE, 0x0331,-1 // GeForce FX 5900
+0x10DE, 0x0330,-1 // GeForce FX 5900 Ultra
+0x10DE, 0x0333,-1 // GeForce FX 5950 Ultra
+0x10DE, 0x0324,-1 // GeForce FX Go5200 64M
+0x10DE, 0x031A,-1 // GeForce FX Go5600
+0x10DE, 0x0347,-1 // GeForce FX Go5700
+0x10DE, 0x0167, 1 // GeForce Go 6200/6400
+0x10DE, 0x0168, 1 // GeForce Go 6200/6400
+0x10DE, 0x0148, 1 // GeForce Go 6600
+0x10DE, 0x00c8, 1 // GeForce Go 6800
+0x10DE, 0x00c9, 1 // GeForce Go 6800 Ultra
+0x10DE, 0x0098, 1 // GeForce Go 7800
+0x10DE, 0x0099, 1 // GeForce Go 7800 GTX
+0x10DE, 0x0298, 2 // GeForce Go 7900 GS
+0x10DE, 0x0299, 2 // GeForce Go 7900 GTX
+0x10DE, 0x0185,-1 // GeForce MX 4000
+0x10DE, 0x00FA,-1 // GeForce PCX 5750
+0x10DE, 0x00FB,-1 // GeForce PCX 5900
+0x10DE, 0x0110,-1 // GeForce2 MX/MX 400
+0x10DE, 0x0111,-1 // GeForce2 MX200
+0x10DE, 0x0200,-1 // GeForce3
+0x10DE, 0x0201,-1 // GeForce3 Ti200
+0x10DE, 0x0202,-1 // GeForce3 Ti500
+0x10DE, 0x0172,-1 // GeForce4 MX 420
+0x10DE, 0x0171,-1 // GeForce4 MX 440
+0x10DE, 0x0181,-1 // GeForce4 MX 440 with AGP8X
+0x10DE, 0x0173,-1 // GeForce4 MX 440-SE
+0x10DE, 0x0170,-1 // GeForce4 MX 460
+0x10DE, 0x0253,-1 // GeForce4 Ti 4200
+0x10DE, 0x0281,-1 // GeForce4 Ti 4200 with AGP8X
+0x10DE, 0x0251,-1 // GeForce4 Ti 4400
+0x10DE, 0x0250,-1 // GeForce4 Ti 4600
+0x10DE, 0x0280,-1 // GeForce4 Ti 4800
+0x10DE, 0x0282,-1 // GeForce4 Ti 4800SE
+0x10DE, 0x0203,-1 // Quadro DCC
+0x10DE, 0x0309,-1 // Quadro FX 1000
+0x10DE, 0x034E,-1 // Quadro FX 1100
+0x10DE, 0x00FE,-1 // Quadro FX 1300
+0x10DE, 0x00CE,-1 // Quadro FX 1400
+0x10DE, 0x0308,-1 // Quadro FX 2000
+0x10DE, 0x0338,-1 // Quadro FX 3000
+0x10DE, 0x00F8,-1 // Quadro FX 3400/4400
+0x10DE, 0x00CD,-1 // Quadro FX 3450/4000 SDI
+0x10DE, 0x004E,-1 // Quadro FX 4000
+0x10DE, 0x009D,-1 // Quadro FX 4500
+0x10DE, 0x029F,-1 // Quadro FX 4500 X2
+0x10DE, 0x032B,-1 // Quadro FX 500/FX 600
+0x10DE, 0x014E,-1 // Quadro FX 540
+0x10DE, 0x014C,-1 // Quadro FX 540 MXM
+0x10DE, 0X033F,-1 // Quadro FX 700
+0x10DE, 0x034C,-1 // Quadro FX Go1000
+0x10DE, 0x00CC,-1 // Quadro FX Go1400
+0x10DE, 0x031C,-1 // Quadro FX Go700
+0x10DE, 0x032A,-1 // Quadro NVS 280 PCI
+0x10DE, 0x00FD,-1 // Quadro PCI-E Series
+0x10DE, 0x0165,-1 // Quadro NVS 285
+0x10DE, 0x017A,-1 // Quadro NVS
+0x10DE, 0x018A,-1 // Quadro NVS with AGP8X
+0x10DE, 0x0113,-1 // Quadro2 MXR/EX
+0x10DE, 0x018B,-1 // Quadro4 380 XGL
+0x10DE, 0x0178,-1 // Quadro4 550 XGL
+0x10DE, 0x0188,-1 // Quadro4 580 XGL
+0x10DE, 0x025B,-1 // Quadro4 700 XGL
+0x10DE, 0x0259,-1 // Quadro4 750 XGL
+0x10DE, 0x0258,-1 // Quadro4 900 XGL
+0x10DE, 0x0288,-1 // Quadro4 980 XGL
+0x10DE, 0x028C,-1 // Quadro4 Go700
+0x10DE, 0x0295, 3 // NVIDIA GeForce 7950 GT
+0x10DE, 0x03D0, 1 // NVIDIA GeForce 6100 nForce 430
+0x10DE, 0x03D1, 1 // NVIDIA GeForce 6100 nForce 405
+0x10DE, 0x03D2, 1 // NVIDIA GeForce 6100 nForce 400
+0x10DE, 0x0241, 1 // NVIDIA GeForce 6150 LE
+0x10DE, 0x0242, 1 // NVIDIA GeForce 6100
+0x10DE, 0x0245,-1 // NVIDIA Quadro NVS 210S / NVIDIA GeForce 6150LE
+0x10DE, 0x029C,-1 // NVIDIA Quadro FX 5500
+0x10DE, 0x0191, 4 // NVIDIA GeForce 8800 GTX
+0x10DE, 0x0193, 3 // NVIDIA GeForce 8800 GTS
+0x10DE, 0x0194, 4 // NVIDIA GeForce 8800 Ultra
+0x10DE, 0x0400, 2 // NVIDIA GeForce 8600 GTS
+0x10DE, 0x0402, 2 // NVIDIA GeForce 8600 GT
+0x10DE, 0x0421, 1 // NVIDIA GeForce 8500 GT
+0x10DE, 0x0422, 1 // NVIDIA GeForce 8400 GS
+0x10DE, 0x0423, 1 // NVIDIA GeForce 8300 GS
+0x10DE, 0x0611, 4 // NVIDIA GeForce 8800 GT

@@ -1,0 +1,12 @@
+world_cache_Australia 1
+world_cache_English_countryside 1
+world_cache_USA 1
+world_cache_SP3 1
+world_cache_UTC_scenarios 1
+world_cache_Swiss_Alps 1
+world_cache_Ultimate_Trainz 1
+world_cache_Germany 1
+cache_trains 1
+world_cache_Dispatcher 1
+world_cache_Yardmaster 1
+world_cache_3rd_Party_assets 1

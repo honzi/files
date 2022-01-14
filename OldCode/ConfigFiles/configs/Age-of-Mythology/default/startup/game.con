@@ -1,0 +1,887 @@
+// game.con
+//
+// This file defines the console commands run by everyone when the game starts up.
+// You should only add things here if you intend them to be run by everyone.  If you 
+// want to add commands you wish to have run only for yourself, place these in your
+// personal "user.con" instead.
+
+
+/////////////////////
+//  Root mappings  //
+/////////////////////
+
+map ("shift-r", "developer", "gameSpeed(2) rateSet(10)")
+map ("control-shift-r", "developer", "gameSpeed(1) rateSetNormal()")
+
+// basic interface mappings
+//map ("arrowdown", "root", "gadgetScrollDown")
+//map ("arrowup", "root", "gadgetScrollUp")
+
+map ("mousex", "root", "movePointerX")
+map ("mousey", "root", "movePointerY")
+
+map ("control-b", "developer", "renderCycleBoundingBoxMode")
+map ("f2", "developer", "display")
+map ("alt-f2", "developer", "displayType")
+map ("alt-shift-f2", "developer", "displayType(-2)")
+map ("pause", "game", "pause")
+map ("alt-enter", "root", "renderWindow")
+
+map("control-shift-F1", "developer", "playerOfSelectedUnit")
+
+
+/////////////////////////////
+//  Console Gadget Mode    //
+/////////////////////////////
+map ("`", "root", "console")
+map ("`", "console", "console")
+map ("esc", "console", "console")
+
+
+/////////////////////
+//  Game mappings  //
+/////////////////////
+
+// chat
+map ("enter", "game", "gadgetReal(\"chatInput\") uiIgnoreNextKey")
+
+// Misc keyboard shortcuts
+//map ("+delete", "game", "uiDeleteSelectedUnit")
+//map ("+numpadperiod", "game", "uiDeleteSelectedUnit")
+
+map ("F1", "game", "uiUnitDetailHelp(-1, 255)")
+map ("F2", "game", "uiShowFakeTechTree")
+map ("F2", "pregame", "uiShowFakeTechTree")
+map ("F3", "game", "uiShowObjectivesDialog() subModeEnter(\"Simulation\", \"GameMenu\")")
+map ("F4", "game", "toggleScore")
+map ("F5", "game", "gadgetToggle(\"MainChatDialog\") subModeEnter(\"Simulation\", \"GameMenu\")")
+map ("F6", "game", "uiShowTributeDialog()")
+map ("F7", "game", "gadgetToggle(\"player status\") subModeEnter(\"Simulation\", \"GameMenu\")")
+map ("F8", "game", "saveGame(\"QuickSavegame\")")
+map ("F9", "game", "loadGame(\"QuickSavegame\")")
+map ("F10", "game", "showGameMenu()")
+map ("F11", "world", "toggleTime") 
+
+map ("F1", "detailHelp", "gadgetToggle(\"HelpDialog\")")
+map ("esc", "detailHelp", "gadgetToggle(\"HelpDialog\")")
+
+map ("esc", "faketechtree", "gadgetUnreal(\"FakeTechTree-Root\")")
+map ("F2", "faketechtree", "gadgetUnreal(\"FakeTechTree-Root\")")
+
+map ("esc", "objectives", "gadgetUnreal(\"objectivesdialog-screen\")")
+map ("F3", "objectives", "gadgetUnreal(\"objectivesdialog-screen\")")
+
+map ("esc", "ChatDialog", "gadgetUnreal(\"MainChatDialog\")")
+map ("F5", "ChatDialog", "gadgetUnreal(\"MainChatDialog\")")
+
+map ("esc", "tributedialog", "gadgetUnreal(\"tributedlg\")")
+map ("F6", "tributedialog", "gadgetUnreal(\"tribute dialog\")")
+
+map ("esc", "playerstatusdialog", "gadgetUnreal(\"player status\")")
+map ("F7", "playerstatusdialog", "gadgetUnreal(\"player status\")")
+
+map ("F10", "mainGameMenu", "hideGameMenu")
+
+////////////////////////////////
+//  Building placement Mode   //
+////////////////////////////////
+map ("mouse1down", "building", "")
+map ("mouse1up", "building", "uiBuildAtPointer")
+map ("shift-mouse1down", "building", "")
+map ("shift-mouse1up", "building", "uiBuildAtPointer uiLeaveModeOnUnshift")
+map ("mouse2down", "building", "")
+map ("mouse2up", "building", "editMode(\"none\")")
+//map ("mouse2up", "building", "uiBuildAtPointer")
+map ("mousez", "building", "uiWheelRotatePlacedUnit")
+map ("esc", "building", "editMode(\"none\")")
+map ("mouse1doubleup", "building", "uiBuildAtPointer")
+
+
+/////////////////////////////
+//  Wall Building Mode     //
+/////////////////////////////
+map ("mouse1down", "buildWall", "")
+map ("shift-mouse1down", "buildWall", "")
+map ("mouse1up", "buildWall", "uiBuildWallAtPointer(0)")
+map ("shift-mouse1up", "buildWall", "uiBuildWallAtPointer(1)")
+map ("mouse2down", "buildWall", "")
+map ("mouse2up", "buildWall", "editMode(\"none\")")
+map ("esc", "buildWall", "editMode(\"none\")")
+map ("mouse1doubledown", "buildWall", "")
+map ("shift-mouse1doubledown", "buildWall", "")
+map ("mouse1doubleup", "buildWall", "uiBuildWallAtPointer(0)")
+map ("shift-mouse1doubleup", "buildWall", "uiBuildWallAtPointer(1)")
+
+
+////////////////////////////////
+//  Un-build Mode   //
+////////////////////////////////
+map ("mouse1down", "unbuild", "")
+map ("mouse1up", "unbuild", "uiUnbuildSelectedUnitAtPointer")
+map ("mouse2down", "unbuild", "")
+map ("mouse2up", "unbuild", "editMode(\"none\")")
+map ("esc", "unbuild", "editMode(\"none\")")
+map ("mouse1doubleup", "unbuild", "uiUnbuildSelectedUnitAtPointer")
+
+////////////////////////////////
+//  Gather point mode        //
+////////////////////////////////
+map ("mouse1down", "setGatherPoint", "")
+map ("mouse1up", "setGatherPoint", "uiSetGatherPointAtPointer editMode(\"none\")")
+map ("mouse2down", "setGatherPoint", "")
+map ("mouse2up", "setGatherPoint", "uiSetGatherPointAtPointer editMode(\"none\")")
+map ("esc", "setGatherPoint", "editMode(\"none\")")
+
+
+////////////////////////////////
+//  special power invocation  //
+////////////////////////////////
+map ("mouse1down", "specialpower", "")
+map ("mouse1up", "specialpower", "uiSpecialPowerAtPointer")
+map ("mouse1doubleup", "specialpower", "uiSpecialPowerAtPointer")
+map ("mouse2down", "specialpower", "")
+map ("mouse2up", "specialpower", "editMode(\"none\")")
+map ("mousez", "specialpower", "uiWheelRotatePlacedUnit")
+map ("esc", "specialpower", "editMode(\"none\")")
+
+
+/////////////////////////
+//  garrison mappings  //
+/////////////////////////
+map ("mouse1down", "garrison", "")
+map ("mouse1up", "garrison", "uiGarrisonToPointer editMode(\"none\")")
+map ("mouse2down", "garrison", "")
+map ("mouse2up", "garrison", "editMode(\"none\")")
+map ("esc", "garrison", "editMode(\"none\")")
+//map ("b", "game", "unitTownBell")
+//map ("u", "game", "unitReturnToWork")
+//map ("n", "game", "uiEjectGarrisonedUnits")
+
+
+///////////////////////////////////////////////
+//  scenario editing / editing key mappings  //
+///////////////////////////////////////////////
+
+// editing UI
+map ("e", "editor", "gadgetToggleIfNotMP(\"maineditlist\")")
+map ("t", "editor", "editMode(\"PaintLand\")")
+map ("o", "editor", "editMode(\"PlaceUnit\")")
+map ("alt-o", "editor", "editMode(\"PlaceUnit\")")
+map ("r", "editor", "gadgetToggleIfNotMP(\"RoughenSettings\")")
+
+
+map ("control-shift-s", "editor", "saveGame(\"QuickSavegame\")")
+map ("control-shift-q", "editor", "gadgetToggle(\"ABrushSizeSquare\")")
+map ("control-shift-h", "editor", "gadgetToggle(\"ABrushSizeHollowSquare\")")
+map ("control-shift-r", "editor", "gadgetToggle(\"ABrushSizeRectangular\")")
+
+map ("esc", "editor", "uiClearMenu(\"EditorMenu\")")
+map ("control-s", "editor", "uiSaveScenarioBrowser")
+map ("control-l", "editor", "uiScenarioLoad")
+
+
+
+//brush size changing mappings
+map ("1", "editor", "uiChangeBrushSize(1)")
+map ("2", "editor", "uiChangeBrushSize(2)")
+map ("3", "editor", "uiChangeBrushSize(3)")
+map ("4", "editor", "uiChangeBrushSize(4)")
+map ("5", "editor", "uiChangeBrushSize(5)")
+map ("6", "editor", "uiChangeBrushSize(6)")
+map ("7", "editor", "uiChangeBrushSize(7)")
+map ("8", "editor", "uiChangeBrushSize(8)")
+map ("9", "editor", "uiChangeBrushSize(9)")
+map ("0", "editor", "uiChangeBrushSize(10)")
+map ("alt-mousez", "editor", "uiScrollBrushSize")
+
+//New Scenario Editor hotkeys
+map ("control-z",  "editor", "undo")
+map ("control-y",  "editor", "redo")
+map ("control-e",  "editor", "editmode(\"elevation\")")
+map ("control-P",  "editor", "editmode(\"Paint\")")
+map ("control-a",  "editor", "editmode(\"elevationsample\")")
+//map ("control-s",  "editor", "editmode(\"smooth\")")
+map ("control-r",  "editor", "editmode(\"roughen\")")
+map ("w",          "editor", "editmode(\"paintwater\")")
+map ("c",          "editor", "editmode(\"paintCliff\")")
+map ("f",          "editor", "editmode(\"paintforest\")")
+map ("control-u",  "editor", "editmode(\"moveunit\")")
+map ("control-t",  "editor", "editmode(\"Triggers\")")
+map ("control-i",  "editor", "editmode(\"CameraTracks\")")
+map ("alt-r",      "editor", "renderObstructionManager")
+map ("alt-c",      "editor", "cameraRotate")
+
+//brush type changing functions
+map ("[", "editor", "uiChangeBrushType(\"Circular\")")
+map ("]", "editor", "uiChangeBrushType(\"Rectangular\")")
+
+// brush drag size functions
+map ("control-mouse1down", "editor", "uiTerrainSelection(0)")
+map ("control-mouse1up", "editor", "uiTerrainSelection(1)")
+
+
+//uniform height changes
+map ("control-,", "editor", "uiUniformRaiseElevation()")
+map ("control-.", "editor", "uiUniformLowerElevation()")
+
+// this is kind of a hack for now
+map ("control-z", "editor", "undo")
+map ("control-y", "editor", "redo")
+map ("control-c", "editor", "uiCopyToClipboard")
+map ("control-v", "editor", "editMode(\"unitpaste\")")
+
+// elevation
+map ("mouse1down", "elevation", "uiRaiseElevation(0)")
+map ("mouse1up", "elevation", "uiRaiseElevation(1)")
+map ("mouse2down", "elevation", "uiLowerElevation(0)")
+map ("mouse2up", "elevation", "uiLowerElevation(1)")
+map ("esc", "elevation", "editMode(\"none\")")
+
+// elevation by sample
+map ("mouse1down", "elevationsample", "uiChangeElevationToSample(0)")
+map ("mouse1up", "elevationsample", "uiChangeElevationToSample(1)")
+map ("mouse2down", "elevationsample", "uiSampleElevationAtPointer")
+map ("mouse2up", "elevationsample", "")
+map ("esc", "elevationsample", "editMode(\"none\")")
+
+// roughen
+map ("mouse1down", "roughen", "uiRoughen(0)")
+map ("mouse1up", "roughen", "uiRoughen(1)")
+map ("esc", "roughen", "editMode(\"none\")")
+
+// deleteunits
+map ("mouse1down", "deleteunits", "uiDeleteUnits(0)")
+map ("mouse1up", "deleteunits", "uiDeleteUnits(1)")
+map ("esc", "deleteunits", "editMode(\"none\")")
+
+// paint by sample
+map ("mouse1down", "paintsample", "uiPaintTerrainToSample(0)")
+map ("mouse1up", "paintsample", "uiPaintTerrainToSample(1)")
+map ("mouse2down", "paintsample", "uiSampleTerrainAtPointer")
+map ("mouse2up", "paintsample", "")
+map ("esc", "paintsample", "editMode(\"none\")")
+
+
+// copy and paste
+map ("mouse1down", "copy", "uiTerrainSelection(0)")
+map ("mouse1up",   "copy", "uiTerrainSelection(1)")
+map ("control-v",  "copy", "editMode(\"TerrainPaste\") ")
+map ("mouse2down", "copy", "")
+map ("mouse2up",   "copy", "")
+map ("esc", "copy", "editMode(\"none\")")
+
+map ("mouse1down", "TerrainPaste", "")
+map ("mouse1up",   "TerrainPaste", "uiPasteFromClipboard")
+map ("mouse2down", "TerrainPaste", "")
+map ("mouse2up",   "TerrainPaste", "editMode(\"copy\")")
+map ("esc",        "TerrainPaste", "editMode(\"none\")")
+
+map ("mouse1down", "UnitPaste", "")
+map ("mouse1up",   "UnitPaste", "uiPasteFromClipboard")
+map ("mouse2down", "UnitPaste", "")
+map ("mousez",     "UnitPaste", "uiRotateClipboard")
+map ("esc",        "UnitPaste", "editMode(\"none\")")
+
+
+//handle editing list gadgets
+map ("esc", "list", "editMode(\"none\")")
+
+// Sun. orientation keys
+map ("+y", "editor", "sunIncreaseInclination")
+map ("+shift-y", "editor", "sunDecreaseInclination")
+map ("+alt-y", "editor", "sunIncreaseRotation")
+map ("+alt-shift-y", "editor", "sunDecreaseRotation")
+
+// Player shifting keys
+map ("control-f1", "editor", "player(1)")
+map ("control-f2", "editor", "player(2)")
+map ("control-f3", "editor", "player(3)")
+map ("control-f4", "editor", "player(4)")
+map ("control-f5", "editor", "player(5)")
+map ("control-f6", "editor", "player(6)")
+map ("control-f7", "editor", "player(7)")
+map ("control-f8", "editor", "player(8)")
+map ("control-f9", "editor", "player(9)")
+map ("control-f10", "editor", "player(0)")
+
+// Animation Controller
+map ("alt-a", "editor", "gadgetToggle(\"animgadget\")")
+map ("control-d", "editor", "gadgetToggle(\"soundsetgadget\")")
+map ("alt-u", "editor", "gadgetToggle(\"soundgadget\")")
+
+// Misc
+map ("delete", "editor", "uiRemoveSelectedUnit")
+map ("control-k", "editor", "configToggle(\"cameraMovementLock\")")
+map ("mouse3down", "editor", "uiMoveSelectionButtonDown")
+map ("mouse3up", "editor", "uiMoveSelectionButtonUp editMode(\"none\")")
+map ("shift-mouse3down", "editor", "uiMoveSelectionAddButtonDown")
+map ("shift-mouse3up", "editor", "uiMoveSelectionAddButtonUp")
+map ("control-mousez", "editor", "uiRotateSelection")
+
+// painting
+map ("mouse1down", "paint", "uiPaint(true)")
+map ("alt-mouse1down", "paint", "uiSampleTerrainAtPointer")
+map ("mouse1up", "paint", "uiPaint(false)")
+//map ("alt-mouse1down", "paint", "uiPaint(true, true)")
+map ("mouse2down", "paint", "uiSampleTerrainAtPointer")
+map ("mouse2up", "paint", "")
+map ("esc", "paint", "editMode(\"none\")")
+
+// Density is used improperly with these.  It is really units per repeat.
+map ("shift-[", "paint", "terrainResizeSubtype(-1)")
+map ("shift-]", "paint", "terrainResizeSubtype(1)")
+map ("+alt-[", "paint", "uiIncreaseTextureDensity")
+map ("+alt-]", "paint", "uiDecreaseTextureDensity")
+map ("mouse1down", "paintmix", "uiPaint(true)")
+map ("mouse1up", "paintmix", "uiPaint(false)")
+map ("mouse2up", "paintmix", "")
+map ("esc", "paintmix", "editMode(\"none\")")
+//map ("alt-m", "developer", "reloadMixes")
+
+// place units
+map ("mouse1down", "placeunit", "")
+map ("mouse1up", "placeunit", "uiPlaceAtPointer")
+map ("shift-mouse1up", "placeunit", "uiPlaceAtPointer(false)")
+map ("mouse2down", "placeunit", "")
+map ("mouse2up", "placeunit", "uiIncPlaceVariation")
+map ("shift-mouse2up", "placeunit", "uiDecPlaceVariation")
+map("mousez", "placeunit", "uiWheelRotatePlacedUnit")
+map ("esc", "placeunit", "uiClearCursor editMode(\"none\")")
+
+// paint pine forest
+map ("control-f", "editor", "editMode(\"paintforest\")")
+map ("mouse1down", "paintforest", "uiPaint(true)")
+map ("mouse1up", "paintforest", "uiPaint(false)")
+map ("esc", "paintforest", "editMode(\"none\")")
+
+// smoothing tools
+map ("mouse1down", "smooth", "uiSmooth(0)")
+map ("mouse1up", "smooth", "uiSmooth(1)")
+map ("esc", "smooth", "editMode(\"none\")")
+
+// world editor tools
+map ("mouse1down", "WorldEditor", "uiApplyWorldEditor")
+map ("mouse1up", "WorldEditor", "")
+map ("mouse2down", "WorldEditor", "")
+map ("mouse2up", "WorldEditor", "")
+map ("esc", "WorldEditor", "editMode(\"none\")")
+//map ("control-w", "editor", "uiEditCurrentWorldEditor")
+
+// edit water tools
+map ("esc", "editwater", "editMode(\"none\") uiUnSelectWater")
+map ("mouse1down", "editwater", "uiSelectWaterAtPointer")
+map ("mouse1up", "editwater", "")
+
+// paintwater tools
+map ("esc", "paintwater", "editMode(\"none\")")
+map ("mouse1down", "paintwater", "uiPaintWater(0)")
+map ("mouse1up", "paintwater", "uiPaintWater(1)"
+map ("d", "paintwater", "gadgetToggle(\"waterColorDialog\")")
+map ("c", "paintwater", "configToggle(\"waterColorPaint\")")
+
+
+// paintcliff tools
+map ("shift-c", "editor", "editMode(\"paintCliff\")")
+map ("esc", "paintcliff", "editMode(\"none\")")
+map ("mouse1down", "paintcliff", "uiPaintCliff(0)")
+map ("mouse1up", "paintcliff", "uiPaintCliff(1)"
+map ("mouse2down", "paintcliff", "uiPaintCliff(2)")
+map ("mouse2up", "paintcliff", "uiPaintCliff(3)")
+
+// modify terrain
+map ("mouse1down", "modifyterrain", "uiTerrainSelection(0)")
+map ("mouse1up", "modifyterrain", "uiTerrainSelection(1)")
+map ("+[", "modifyterrain", "uiLowerTerrainSelection")
+map ("+]", "modifyterrain", "uiRaiseTerrainSelection")
+map ("+alt-[", "modifyterrain", "uiLowerTerrainSelection")
+map ("+alt-]", "modifyterrain", "uiRaiseTerrainSelection")
+map ("space", "modifyterrain", "uiFilterTerrainSelection")
+map ("control-space", "modifyterrain", "uiFlattenTerrainSelection")
+map ("esc","modifyterrain", "editMode(\"none\")")
+
+// Move unit mode
+map ("mouse1down",      "moveunit", "uiMoveSelectionButtonDown")
+map ("mouse1up",        "moveunit", "uiMoveSelectionButtonUp")
+map ("mousez",  "moveunit", "uiRotateSelection")
+
+map("+control-arrowleft", "moveunit", "uiYawUnitLeft")
+map("+control-arrowright", "moveunit", "uiYawUnitRight")
+map("+alt-control-arrowleft", "moveunit", "uiYawUnitLeft")
+map("+alt-control-arrowright", "moveunit", "uiYawUnitRight")
+map("+control-arrowup", "moveunit", "uiPitchUnitDown")
+map("+control-arrowdown", "moveunit", "uiPitchUnitUp")
+map("+alt-control-arrowup", "moveunit", "uiPitchUnitDown")
+map("+alt-control-arrowdown", "moveunit", "uiPitchUnitUp")
+map("+s", "moveunit", "uiRollUnitLeft")
+map("+d", "moveunit", "uiRollUnitRight")
+map("+alt-s", "moveunit", "uiRollUnitLeft")
+map("+alt-d", "moveunit", "uiRollUnitRight")
+
+map("+arrowleft", "moveunit", "uiMoveUnitLeft")
+map("+arrowright", "moveunit", "uiMoveUnitRight")
+map("+alt-arrowleft", "moveunit", "uiMoveUnitLeft")
+map("+alt-arrowright", "moveunit", "uiMoveUnitRight")
+map("+arrowup", "moveunit", "uiMoveUnitForward")
+map("+arrowdown", "moveunit", "uiMoveUnitBackward")
+map("+alt-arrowup", "moveunit", "uiMoveUnitForward")
+map("+alt-arrowdown", "moveunit", "uiMoveUnitBackward")
+map("esc", "moveunit", "editMode(\"none\")")
+
+// paint terrain overlay
+map ("mouse1down", "paintterrainoverlay", "uiPaint(true)")
+map ("mouse1up", "paintterrainoverlay", "uiPaint(false)")
+map ("mouse2down", "paintterrainoverlay", "uiRemoveTerrainOverlay")
+map ("mouse2up", "paintterrainoverlay", "")
+map ("esc", "paintterrainoverlay", "editMode(\"none\")")
+
+// trigger area selection mode
+map ("mouse1up",     "trigselect", "")
+map ("mouse1down",   "trigselect", "uiTriggerSelectLocation()")
+map ("mouse2up",     "trigselect", "editMode(\"triggers\")")
+map ("mouse2down",   "trigselect", "")
+map ("esc",          "trigselect", "editMode(\"triggers\")")
+
+map ("esc",          "trigger", "editMode(\"none\")")
+map ("esc",          "triggroups", "editMode(\"none\")")
+map ("esc",          "camtrack", "editMode(\"none\")")
+
+// AI Chat area selection mode
+map ("mouse1up",     "AILocSelect", "")
+map ("mouse1down",   "AILocSelect", "uiAIChatSelectLocation")
+map ("mouse2up",     "AILocSelect", "editMode(\"none\")")
+map ("mouse2down",   "AILocSelect", "")
+map ("esc",          "AILocSelect", "editMode(\"none\")")
+
+
+//////////////////////////
+//  developer mode      //
+//////////////////////////
+
+map ("control-q", "developer", "mpCommand(\"rateToggle\")")
+map ("control-w", "developer", "renderWireframe")
+map ("control-alt-b", "developer", "renderBackfaceCull")
+map ("control-n", "developer", "configToggle(\"drawSurfaceNormals\")")
+map ("shift-control-n", "developer", "configToggle(\"drawVertexNormals\")")
+map ("shift-g", "developer", "gameSpeedMult(2.0)")
+map ("control-shift-g", "developer", "gameSpeedMult(0.5)")
+map ("f12", "developer", "loadQuickCamera")
+map ("shift-f12", "developer", "saveQuickCamera")
+map ("p", "developer", "playerIncCurrent")
+map ("shift-p", "developer", "playerDecCurrent")
+map ("f5", "developer", "gadgetToggle(\"APerfDialog\")")
+map ("f6", "developer", "blackmap")
+map ("f7", "developer", "fog")
+map ("control-alt-d", "developer", "toggleDebugUI")
+map ("+shift-,", "developer", "uiScaleProtoUnitDown")
+map ("+shift-.", "developer", "uiScaleProtoUnitUp")
+
+
+map ("control-alt-i", "aidebug", "AIDebugInfoToggle")
+map ("+shift-k", "editor", "uiScaleUnitDown")
+map ("+k", "editor", "uiScaleUnitUp")
+
+
+
+// Mappings for resource addition
+map ("shift-f1", "world", "resourceAdjust(-1, \"Food\", 50000)")
+map ("shift-f2", "world", "resourceAdjust(-1, \"Wood\", 50000)")
+map ("shift-f3", "world", "resourceAdjust(-1, \"Gold\", 50000)")
+map ("shift-f4", "world", "resourceAdjust(-1, \"Favor\", 100)")
+map ("shift-f5", "world", "resourceAdjust(-1, \"Favor\", 100)")
+
+// Mappings for player switching
+map ("control-f1", "world", "player(1)")
+map ("control-f2", "world", "player(2)")
+map ("control-f3", "world", "player(3)")
+map ("control-f4", "world", "player(4)")
+map ("control-f5", "world", "player(5)")
+map ("control-f6", "world", "player(6)")
+map ("control-f7", "world", "player(7)")
+map ("control-f8", "world", "player(8)")
+map ("control-f9", "world", "player(9)")
+map ("control-f10", "world", "player(0)")
+
+//Debugging keys.
+map ("control-alt-o", "developer", "renderObstructionManager")
+map ("alt-p", "developer", "pathShow")
+map ("alt-shift-p", "developer", "configToggle(\"showLowLevelPather\")")
+map ("alt-u", "developer", "configToggle(\"showUnits\")")
+map ("alt-i", "developer", "unitIncRenderIDStyle")
+map ("alt-g", "developer", "renderUnitGroups")
+map ("control-alt-e", "developer", "renderUnitGrouper")
+map ("alt-b", "developer", "renderBorders")
+//map ("control-alt-r", "developer", "renderAreas")
+map ("control-alt-r", "developer", "reloadSelected")
+//map ("alt-h", "developer", "renderRotateHPBars")
+//map ("control-alt-t", "developer", "areaCalculateTileAreas(100.0)")
+//map ("control-alt-w", "developer", "areaIncrementAreaToRender")
+//map ("alt-m", "developer", "specialEffect(0)")
+map ("alt-h", "developer", "uiToggleDebugUnitData")
+map ("alt-l", "developer", "doSingleUpdate(1)")
+map ("alt-shift-l", "developer", "doSingleUpdate(5)")
+map ("alt-v", "root", "toggleDeveloper")
+
+map ("alt-q", "aidebug", "AIDebugInfoToggle")
+map ("alt-w", "aidebug", "uiShowAIDebugInfoKBUnit")
+map ("control-alt-w", "aidebug", "uiShowAIDebugInfoKBUnit(1)")
+map ("alt-shift-d", "aidebug", "gadgetToggle(\"XSDebugger\")")
+
+// Toggle camera limiting
+map("control-alt-c", "developer", "cameraLimit")
+map("control-alt-c", "editor", "cameraLimit")
+
+// Get to a camera limit valid viewing angle but with camera limit off.
+map("alt-shift-c", "developer", "cameraLimit(1) cameraLimit(0)")
+map("alt-shift-c", "editor", "cameraLimit(1) cameraLimit(0)")
+
+// Toggle camera rotation
+map("alt-c", "world", "cameraRotate")
+
+// Unit debugging.
+map("alt-f1", "developer", "configToggle(\"showSelectedUnitLOS\")")
+map("alt-shift-f1", "developer", "configToggle(\"showUnitLOS\")")
+map("alt-f3", "developer", "unitToggleShowSelectedActionRange(\"rangedattack\")")
+map("alt-shift-f3", "developer", "unitToggleShowActionRange(\"rangedattack\")")
+
+// Animation Controller
+map ("control-alt-v", "developer", "unitIncVariation(-1)")
+map ("control-alt-v", "editor", "unitIncVariation(-1)")
+
+// editing UI
+map ("control-i", "game", "gadgetToggle(\"UnitStatsDialog\")")
+map ("alt-o", "developer", "gadgetToggleIfNotMP(\"gameprotopalette\")")
+
+//Misc
+map ("shift-control-c", "world", "uiFindType(\"Camera Start\")")
+
+
+
+//////////////////////////
+//  world mode          //
+//////////////////////////
+
+// World screen shots
+map ("control-f12", "world", "screenshot")
+map ("printscreen", "world", "screenshot")
+// Supa screen shot
+map("control-alt-f12", "root", "supascreenshot(10000)")
+
+// World Misc
+map ("alt-x", "world", "gadgetReal(\"exitdialog\")")
+map ("esc", "world", "uiClearSelection")
+
+// World Camera control
+map("+numpad1", "world", "cameraWorldBackwardLeft")
+map("+numpad2", "world", "cameraWorldBackward")
+map("+numpad3", "world", "cameraWorldBackwardRight")
+map("+numpad4", "world", "cameraLeft")
+map("+numpad6", "world", "cameraRight")
+map("+numpad7", "world", "cameraWorldForwardLeft")
+map("+numpad8", "world", "cameraWorldForward")
+map("+numpad9", "world", "cameraWorldForwardRight")
+map("+alt-numpad1", "world", "cameraWorldBackwardLeft")
+map("+alt-numpad2", "world", "cameraWorldBackward")
+map("+alt-numpad3", "world", "cameraWorldBackwardRight")
+map("+alt-numpad4", "world", "cameraLeft")
+map("+alt-numpad6", "world", "cameraRight")
+map("+alt-numpad7", "world", "cameraWorldForwardLeft")
+map("+alt-numpad8", "world", "cameraWorldForward")
+map("+alt-numpad9", "world", "cameraWorldForwardRight")
+map("+shift-numpad1", "world", "cameraWorldBackwardLeft")
+map("+shift-numpad2", "world", "cameraWorldBackward")
+map("+shift-numpad3", "world", "cameraWorldBackwardRight")
+map("+shift-numpad4", "world", "cameraLeft")
+map("+shift-numpad6", "world", "cameraRight")
+map("+shift-numpad7", "world", "cameraWorldForwardLeft")
+map("+shift-numpad8", "world", "cameraWorldForward")
+map("+shift-numpad9", "world", "cameraWorldForwardRight")
+map("+control-numpad6", "world", "cameraYawRight")
+map("+control-numpad4", "world", "cameraYawLeft")
+map("+control-numpad8", "world", "cameraPitchForward")
+map("+control-numpad2", "world", "cameraPitchBackward")
+map("+control-numpad7", "world", "")
+map("+control-numpad9", "world", "")
+map("+control-numpad1", "world", "")
+map("+control-numpad3", "world", "")
+
+map("+arrowup", "world", "cameraWorldForward")
+map("+arrowdown", "world", "cameraWorldBackward")
+map("+arrowright", "world", "cameraRight")
+map("+arrowleft", "world", "cameraLeft")
+map("+numpadplus", "world", "cameraForward")
+map("+=", "world", "cameraForward")
+map("+numpadminus", "world", "cameraBackward")
+map("+-", "world", "cameraBackward")
+map("+control-arrowup", "world", "cameraPitchForward")
+map("+control-arrowdown", "world", "cameraPitchBackward")
+map("+control-arrowright", "world", "cameraYawRight")
+map("+control-arrowleft", "world", "cameraYawLeft")
+map("control-mousez", "world", "uiWheelRotate")
+map("mousez", "world", "uiWheelZoom")
+map("shift-mousez", "world", "uiWheelZoomFine")
+// jce 10/8/99 -- camera control hack until fallback on modifiers implemented.
+map("+alt-arrowup", "world", "cameraWorldForward")
+map("+alt-arrowdown", "world", "cameraWorldBackward")
+map("+alt-arrowright", "world", "cameraRight")
+map("+alt-arrowleft", "world", "cameraLeft")
+map("+alt-numpadplus", "world", "cameraForward")
+map("+alt-=", "world", "cameraForward")
+map("+alt-numpadminus", "world", "cameraBackward")
+map("+alt--", "world", "cameraBackward")
+map("+alt-pagedown", "world", "cameraDown")
+map("+alt-pageup", "world", "cameraUp")
+map("+alt-control-arrowup", "world", "cameraPitchForward")
+map("+alt-control-arrowdown", "world", "cameraPitchBackward")
+map("+alt-a", "world", "cameraPitchForward")
+map("+alt-z", "world", "cameraPitchBackward")
+map("+alt-control-arrowright", "world", "cameraYawRight")
+map("+alt-control-arrowleft", "world", "cameraYawLeft")
+map("+shift-arrowup", "world", "cameraWorldForward")
+map("+shift-arrowdown", "world", "cameraWorldBackward")
+map("+shift-arrowright", "world", "cameraRight")
+map("+shift-arrowleft", "world", "cameraLeft")
+map("+shift-numpadplus", "world", "cameraForward")
+map("+shift-=", "world", "cameraForward")
+map("+shift-numpadminus", "world", "cameraBackward")
+map("+shift--", "world", "cameraBackward")
+map("+shift-pagedown", "world", "cameraDown")
+map("+shift-pageup", "world", "cameraUp")
+map("+shift-control-arrowup", "world", "cameraPitchForward")
+map("+shift-control-arrowdown", "world", "cameraPitchBackward")
+map("+shift-a", "world", "cameraPitchForward")
+map("+shift-z", "world", "cameraPitchBackward")
+map("+shift-control-arrowright", "world", "cameraYawRight")
+map("+shift-control-arrowleft", "world", "cameraYawLeft")
+
+// World minimap
+map ("control-alt-m", "world", "gadgetRefresh(\"AGameMinimap\")")
+//map ("]", "world", "minimapZoomDelta(-0.1)")
+//map ("shift-]", "world", "minimapZoom(0.1)")
+//map ("[", "world", "minimapZoomDelta(0.1)")
+//map ("shift-[", "world", "minimapZoom(1.0)")
+map ("control-alt-tab", "world", "gadgetToggle(\"AGameMinimap\")")
+
+// World Game UI
+//map ("q", "game", "uiStopSelectedUnits")
+//map ("alt-f", "game", "renderFriendOrFoe")
+//map ("alt-f", "postgame", "renderFriendOrFoe")
+
+map ("control-arrowdown", "game", "uiMinimizeMainBackground")
+map ("control-arrowup", "game", "uiMaximizeMainBackground")
+
+// World Quick save and quick load
+//map ("control-alt-s", "world", "saveScenario(\"QuickSave\")")
+//map ("control-alt-l", "world", "loadScenario(\"QuickSave\")")
+//map ("control-s", "developer", "saveScenario(\"QuickSave\")")
+//map ("control-l", "developer", "loadScenario(\"QuickSave\")")
+map ("control-shift-s", "world", "saveGame(\"QuickSavegame\")")
+map ("control-shift-l", "world", "loadGame(\"QuickSavegame\")")
+
+// World selection
+map ("mouse1down", "world", "uiSelectionButtonDown")
+map ("mouse1up", "world", "uiSelectionButtonUp")
+map ("alt-mouse1down", "world", "uiSelectionButtonDown")
+map ("alt-mouse1up", "world", "uiSelectionButtonUp")
+map ("control-mouse1down", "world", "uiAddSelectionButtonDown")
+map ("control-mouse1up", "world", "uiToggleSelectionButton")
+map ("shift-mouse1down", "world", "uiAddSelectionButtonDown")
+map ("shift-mouse1up", "world", "uiToggleSelectionButton")
+//map ("shift-mouse1down", "world", "")
+//map ("shift-mouse1up", "world", "uiToggleSelectionButton")
+map ("mouse2up", "world", "uiWorkAtPointer")
+map ("mouse2doubleup", "world", "uiWorkAtPointer")
+map ("mouse1doubleup", "world", "uiDoubleClickSelect(0)")
+map ("shift-mouse1doubledown", "world", "")
+map ("shift-mouse1doubleup", "world", "uiDoubleClickSelect(1)")
+map ("control-mouse1doubledown", "world", "")
+map ("control-mouse1doubleup", "world", "uiDoubleClickSelect(0, true)")
+map ("control-shift-mouse1doubledown", "world", "")
+map ("control-shift-mouse1doubleup", "world", "uiDoubleClickSelect(1, true)")
+
+//map ("tab", "game", "strategicMap")
+//map ("tab", "world", "strategicMap")
+//map ("tab", "strategicmap", "strategicMap")
+
+map("mousez", "strategicmap", "uiWheelRotate")
+map("+arrowup", "strategicmap", "cameraWorldForward")
+map("+arrowdown", "strategicmap", "cameraWorldBackward")
+map("+arrowright", "strategicmap", "cameraRight")
+map("+arrowleft", "strategicmap", "cameraLeft")
+
+map ("mouse2up", "attackMove", "uiWorkAtPointer editMode(\"none\")")
+map ("mouse2down", "attackMove", "")
+map ("mouse1up", "attackMove", "uiWorkAtPointer editMode(\"none\")")
+map ("mouse1down", "attackMove", "")
+map ("esc", "attackMove", "editMode(\"none\")")
+//map ("a", "game", "enterAttackMoveMode")
+
+
+// World game modes
+map ("alt-e", "developer", "subModeToggleBetweenIfNotMP(\"Simulation\", \"Editor\", \"SinglePlayer\")")
+map ("control-alt-g", "developer", "subModeToggleBetweenIfNotMP(\"Simulation\", \"Editor\", \"SinglePlayer\")")
+
+///////////////////////
+//  Observer Modes   //
+///////////////////////
+//Resources Tab
+map ("alt-shift-r", "observer", "uiToggleObserverMode(0)")
+//Productions Tab
+map ("alt-shift-p", "observer", "uiToggleObserverMode(1)")
+//Losses Tab
+map ("alt-shift-l", "observer", "uiToggleObserverMode(2)")
+//Kills Tab
+map ("alt-shift-k", "observer", "uiToggleObserverMode(3)")
+//Units Tab
+map ("alt-shift-u", "observer", "uiToggleObserverMode(4)")
+//Buildings Tab
+map ("alt-shift-b", "observer", "uiToggleObservermode(5)")
+//Nothing(observer) Tab
+map ("alt-shift-o", "observer", "uiToggleObserverMode(6)")
+
+//Change playerPerspective
+map ("alt-shift-=", "observer", "uiChangeObserverPerspective(-1)")
+map ("alt-shift-1", "observer", "uiChangeObserverPerspective(1)")
+map ("alt-shift-2", "observer", "uiChangeObserverPerspective(2)")
+map ("alt-shift-3", "observer", "uiChangeObserverPerspective(3)")
+map ("alt-shift-4", "observer", "uiChangeObserverPerspective(4)")
+map ("alt-shift-5", "observer", "uiChangeObserverPerspective(5)")
+map ("alt-shift-6", "observer", "uiChangeObserverPerspective(6)")
+map ("alt-shift-7", "observer", "uiChangeObserverPerspective(7)")
+map ("alt-shift-8", "observer", "uiChangeObserverPerspective(8)")
+map ("alt-shift-9", "observer", "uiChangeObserverPerspective(9)")
+map ("alt-shift-0", "observer", "uiChangeObserverPerspective(10)")
+map ("alt-shift--", "observer", "uiChangeObserverPerspective(11)")
+//Toggle chat output
+map ("alt-shift-c", "observer", "uiToggleChat()")
+//Toggle FOW
+map ("alt-shift-f", "observer", "uiToggleObserverFOW()")
+//Reset camera rotation
+map ("alt-shift-home", "world", "uiResetWheelRotate()")
+
+///////////////////////
+//  Other Modes      //
+///////////////////////
+
+// flare
+map ("mouse1down", "flare", "")
+map ("mouse1up", "flare", "uiFlareAtPointer editMode(\"none\")")
+map ("mouse2down", "flare", "")
+map ("mouse2up", "flare", "editMode(\"none\")")
+map ("esc", "flare", "editMode(\"none\")")
+// respond to flare, but game context
+map ("mouse3down", "game", "uiZoomToMinimapEvent()")
+map ("home", "game", "uiZoomToMinimapEvent()")
+
+// help
+map ("mouse1down", "help", "")
+map ("mouse1up", "help", "uiHelpAtPointer editMode(\"none\")")
+map ("mouse2down", "help", "")
+map ("mouse2up", "help", "editMode(\"none\")")
+map ("esc", "help", "editMode(\"none\")")
+
+// repair
+map ("mouse1down", "repair", "")
+map ("mouse1up", "repair", "uiRepairAtPointer editMode(\"none\")")
+map ("mouse2down", "repair", "")
+map ("mouse2up", "repair", "editMode(\"none\")")
+map ("esc", "repair", "editMode(\"none\")")
+
+// empower
+map ("mouse1down", "empower", "")
+map ("mouse1up", "empower", "uiEmpowerAtPointer editMode(\"none\")")
+map ("mouse2down", "empower", "")
+map ("mouse2up", "empower", "editMode(\"none\")")
+map ("esc", "empower", "editMode(\"none\")")
+
+// eject at
+map ("mouse1down", "ejectat", "")
+map ("mouse1up", "ejectat", "uiEjectAtPointer editMode(\"none\")")
+map ("mouse2down", "ejectat", "")
+map ("mouse2up", "ejectat", "editMode(\"none\")")
+map ("esc", "ejectat", "editMode(\"none\")")
+
+// guard
+map ("mouse1down", "guard", "")
+map ("mouse1up", "guard", "uiGuardAtPointer editMode(\"none\")")
+map ("mouse2down", "guard", "")
+map ("mouse2up", "guard", "editMode(\"none\")")
+map ("esc", "guard", "editMode(\"none\")")
+
+// patrol
+map ("mouse1down", "patrol", "")
+map ("mouse1up", "patrol", "uiPatrolAtPointer editMode(\"none\")")
+map ("shift-mouse1down", "patrol", "")
+map ("shift-mouse1up", "patrol", "uiPatrolAtPointer uiLeaveModeOnUnshift")
+map ("mouse2down", "patrol", "")
+map ("mouse2up", "patrol", "editMode(\"none\")")
+map ("esc", "patrol", "editMode(\"none\")")
+
+// earthquake
+map ("mouse1down", "earthquake", "")
+map ("mouse1up", "earthquake", "uiEarthquakeAtPointer")
+map ("esc", "earthquake", "editMode(\"none\")")
+
+// create hull
+map ("mouse1down", "createhull", "")
+map ("mouse1up", "createhull", "uiAddPointToHull")
+map ("mouse2down", "createhull", "uiClearHull")
+map ("mouse2up", "createhull", "")
+map ("esc", "createhull","editMode(\"none\")")
+
+// field set type gadgets
+map ("esc", "fieldSet", "uiCloseFieldSet")
+map ("tab", "fieldSet", "uiCycleGadget(1)")
+map ("shift-tab", "fieldSet", "uiCycleGadget(-1)")
+
+// dialog set type gadgets
+//map ("esc", "dialog", "uiCloseDialog")
+map ("tab", "dialog", "uiCycleGadget(1)")
+map ("shift-tab", "dialog", "uiCycleGadget(-1)")
+//map ("enter", "dialog", "uiCycleCurrentActivate")
+
+
+// requested designer feature
+map ("alt-b", "editor", "fogToBlack")
+
+// Tribute Hot Key
+//map ("alt-t", "game", "uiShowTributeDialog() subModeEnter("Simulation", "GameMenu")")
+
+// XS Debugger.
+map("F10", "xsdebugger", "")
+map("F11", "xsdebugger", "")
+
+// combat comparisoN
+map("alt-n", "developer", "gadgetToggle(\"CCDialog\")")
+
+// cinematic mode
+map("esc", "cinematic", "abortCinematic")
+map("space", "cinematic", "abortCinematic")
+
+//pregame stuff
+map("esc", "pregame", "gadgetUnreal(\"PlayBanner\") gadgetUnReal(\"MoreBanner\")")
+
+map("pagedown", "world", "uiChatScroll(0)")
+map("pageup", "world", "uiChatScroll(1)")
+
+// jce 2/12/2002 -- restore some of the freaky camera keys/move them into developer context so
+// the can override other hotkeys in developer mode.
+map("+pagedown", "developer", "cameraDown")
+map("+pageup", "developer", "cameraUp")
+//map("+a", "developer", "cameraPitchForward")
+//map("+z", "developer", "cameraPitchBackward")
+map("+pagedown", "editor", "cameraDown")
+map("+pageup", "editor", "cameraUp")
+map("+a", "editor", "cameraPitchForward")
+map("+z", "editor", "cameraPitchBackward")
+
+// stances & formations
+//map("alt-a", "game", "unitSetStanceAggressive()")
+//map("alt-d", "game", "unitSetStanceDefensive()")
+//map("alt-s", "game", "unitSetStancePassive()")
+
+//map("alt-l", "game", "unitSetFormationDefault()")
+//map("alt-b", "game", "unitSetFormationBox()")
+//map("alt-m", "game", "unitSetFormationMixed()")
+//map("alt-x", "game", "unitSetFormationSpread()")
+
+//map("alt-n", "game", "uiToggleCombatCommands")

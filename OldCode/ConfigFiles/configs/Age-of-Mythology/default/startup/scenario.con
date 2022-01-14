@@ -1,0 +1,4 @@
+//loadScenario("default")
+// E3 fast research and train turned off - GTS
+//rateSetResearch(5)
+//rateSetTrain(5)

@@ -1,0 +1,3 @@
+
+// Screen shot
+binddown    printscreen     "screenshot"

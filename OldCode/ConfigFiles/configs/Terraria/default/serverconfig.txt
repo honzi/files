@@ -1,0 +1,15 @@
+world=C:\Users\YOUR_USERNAME_HERE\My Documents\My Games\Terraria\Worlds\world1.wld
+autocreate=1
+worldname=Terraria
+difficulty=1
+maxplayers=8
+port=7777
+password=p@55w0rd
+motd=Please don’t cut the purple trees!
+worldpath=C:\Users\Defaults\My Documents\My Games\Terraria\Worlds\
+banlist=banlist.txt
+secure=1
+lang=1
+upnp=1
+npcstream=60
+priority=1

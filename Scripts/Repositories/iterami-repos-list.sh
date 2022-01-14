@@ -24,7 +24,6 @@ ColorSquares.htm
 ColorSteps.htm
 ColorWaves.htm
 common
-ConfigFiles
 Countdown.htm
 D2LoD-ArcaneSanctuary.htm
 Docs.htm

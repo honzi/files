@@ -1,0 +1,8 @@
+<levelrotation>
+	<level name="multiplayer/ia/battleground" gamerules="InstantAction" />
+	<level name="multiplayer/ia/quarry" />
+	<level name="multiplayer/ia/steelmill" />
+	<level name="multiplayer/ia/armada" gamerules="TeamInstantAction" />
+	<level name="multiplayer/ia/outpost" />
+	<level name="multiplayer/ia/steelmill" />
+</levelrotation>

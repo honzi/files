@@ -1,0 +1,69 @@
+deraillevel 0
+showhelp 0
+weather 0
+changeability 0
+autopilotmode 1
+timerate 2
+name North American Plains
+startingtime 0.37503
+controlmethod 1
+terrain <KUID:-1:100927>
+consistlist {
+train-0 {
+startmark 2050
+startdir 1
+consistlist {
+car-0 <KUID:-1:100117>
+rni-0 #4494
+rnf-0 1
+car-1 <KUID:-1:100086>
+rni-1 
+rnf-1 1
+car-2 <KUID:-1:100086>
+rni-2 
+rnf-2 1
+car-3 <KUID:-1:100086>
+rni-3 
+rnf-3 1
+car-4 <KUID:-1:100086>
+rni-4 
+rnf-4 1
+car-5 <KUID:-1:100086>
+rni-5 
+rnf-5 1
+car-6 <KUID:-1:100087>
+rni-6 
+rnf-6 1
+car-7 <KUID:-1:100087>
+rni-7 
+rnf-7 1
+car-8 <KUID:-1:100087>
+rni-8 
+rnf-8 1
+}
+}
+train-1 {
+startmark 1794
+startdir 1
+consistlist {
+car-0 <KUID:-1:101220>
+rni-0 
+rnf-0 1
+car-1 <KUID:-1:101220>
+rni-1 
+rnf-1 1
+car-2 <KUID:-1:101220>
+rni-2 
+rnf-2 1
+car-3 <KUID:-1:101220>
+rni-3 
+rnf-3 1
+}
+}
+train-2 {
+startmark -1
+startdir 1
+consistlist {
+}
+}
+}

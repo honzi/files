@@ -1,0 +1,46 @@
+
+Version (1.00)
+
+DeviceGroupID 'G80'
+{
+  VendorID = 4318  // NVidia
+  Devices
+  {
+    MinID = 0x191
+    MaxID = 0x194
+  }
+  Devices
+  {
+    MinID = 0x400
+    MaxID = 0x423
+  }
+}
+
+FSAAProfile 'G80'
+{
+  DeviceGroup = G80
+  Mode
+  {
+    Samples = 4
+    Quality = 2
+    Desc '8x'
+  }
+  Mode
+  {
+    Samples = 8
+    Quality = 0
+    Desc '8xQ'
+  }
+  Mode
+  {
+    Samples = 4
+    Quality = 4
+    Desc '16x'
+  }
+  Mode
+  {
+    Samples = 8
+    Quality = 2
+    Desc '16xQ'
+  }
+}
