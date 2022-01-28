@@ -24,7 +24,7 @@ configs=(
   "$HOME/.iterami/repositories/files/Config/Thief/3-Deadly-Shadows/System/T3UI.ini"
   "$HOME/.iterami/repositories/files/Config/Thief/3-Deadly-Shadows/options.ini"
 )
-# List of config file destination directory paths.
+# List of config file destination folder paths.
 destinations=(
   "$HOME/Documents/EVE/Overview/"
   "$HOME/.wine/drive_c/Program Files (x86)/Electronic Arts/Crytek/Crysis SP Demo/Game/Config/"
