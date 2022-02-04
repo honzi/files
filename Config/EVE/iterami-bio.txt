@@ -9,5 +9,5 @@ Alts=imareti
 RECRUITMENT
 -Alliance=HAPPY
 -Corp=1T DONATION
--Structures=NAH
--Wars=BAD
+-Structures=UNLESS
+-Wars=OOF
