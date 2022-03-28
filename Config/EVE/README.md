@@ -58,6 +58,8 @@ Honzi's EVE Config
 * General:
   * Toggle 3D View: Control_L-Shift_L-\
   * Toggle User Interface Visibility: KP_Divide
+* Window:
+  * Probe Scanner: A
 
 ### Top Left
 1. Search New Eden (hidden)
