@@ -1,5 +1,5 @@
 #!/bin/sh
-set -eu
+set -eux
 
 # Required args:
 #   $1: Relative path to the directory in which the

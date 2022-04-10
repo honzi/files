@@ -1,5 +1,5 @@
 #!/bin/sh
-set -eu
+set -eux
 
 # No args.
 # Example usage: sh plugy.sh
