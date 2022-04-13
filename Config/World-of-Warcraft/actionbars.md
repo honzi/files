@@ -297,7 +297,7 @@ np-+  | Wrath
 ### Druid - Guardian
 
 Guardian | Buttons
---- -----|------------------
+---------|------------------
 Q        | Prowl
 E        |
 R        |
