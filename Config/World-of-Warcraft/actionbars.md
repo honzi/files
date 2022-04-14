@@ -93,9 +93,9 @@ E     | Blood Boil
 R     |
 F     |
 1     | Shadowmeld
-2     | Chains of Ice
-3     | Death and Decay
-4     | Death Coil
+2     | Death and Decay
+3     | Death Coil
+4     | Chains of Ice
 5     |
 6     |
 7     | Murderous Intent
@@ -123,9 +123,9 @@ E     | Howling Blast
 R     |
 F     |
 1     | Shadowmeld
-2     | Chains of Ice
-3     | Death and Decay
-4     | Death Coil
+2     | Death and Decay
+3     | Death Coil
+4     | Chains of Ice
 5     |
 6     |
 7     | Dark Command
@@ -148,25 +148,25 @@ np-+  |
 
 Unholy | Buttons
 -------|-----------------
-Q      | Reanimation
+Q      | Raise Dead
 E      | Outbreak
 R      | Clawing Shadows
 F      | Festering Strike
 1      | Shadowmeld
-2      |
+2      | Death and Decay
 3      | Death Coil
 4      | Chains of Ice
 5      | Death Strike
 6      |
 7      | Dark Command
 8      | Fishing
-s-Q    | Raise Dead
+s-Q    |
 s-E    | Anti-Magic Shell
 s-R    | Mind Freeze
 s-F    | Death Grip
 s-1    | Mount
 s-2    |
-s-3    | Death and Decay
+s-3    |
 s-4    | Necklace
 s-5    | Apocalypse
 s-6    | AFK
