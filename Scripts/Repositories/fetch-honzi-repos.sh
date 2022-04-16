@@ -2,7 +2,7 @@
 set -eux
 
 # Required args:
-#   $1: Relative path to the directory in which
+#   $1: Relative path to the folder in which
 #         the honzi repositories are/will_be stored.
 #
 # Example usage: sh fetch-honzi-repos.sh repositories/
@@ -16,14 +16,12 @@ fi
 
 # Update this repository to fetch latest
 #   list of honzi repositories.
-echo 'pulling https://github.com/honzi/files'
 git pull
-echo
 
 # Get an array of all honzi repositories.
 . ./honzi-repos-list.sh
 
-# Navigate to the target directory
+# Navigate to the target folder
 #   and create it if it doesn't exist.
 mkdir -p $1
 cd $1
@@ -43,9 +41,6 @@ do
     fi
 
     git remote set-url origin https://honzi@github.com/honzi/$repository.git
-    echo 'fetched and set origin url for https://github.com/honzi/'$repository
 
     cd ..
-
-    echo
 done

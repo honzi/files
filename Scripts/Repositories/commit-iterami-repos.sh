@@ -2,7 +2,7 @@
 set -eux
 
 # Required args:
-#   $1: Relative path to the directory in which
+#   $1: Relative path to the folder in which
 #         the iterami repositories are stored.
 #   $2: Commit message.
 #
@@ -17,14 +17,12 @@ fi
 
 # Update this repository to fetch latest
 #   list of iterami repositories.
-echo 'pulling https://github.com/honzi/files'
 git pull
-echo
 
 # Get an array of all iterami repositories.
 . ./iterami-repos-list.sh
 
-# Navigate to the target directory
+# Navigate to the target folder
 #   and create it if it doesn't exist.
 mkdir -p $1
 cd $1
@@ -34,19 +32,14 @@ for repository in $iterami_repositories
 do
     if [ -d $repository ]
     then
-        echo 'adding/committing https://github.com/iterami/'$repository
         cd $repository
         if [ -n "$(git status --porcelain)" ]; then
             git add -A
             git commit -m "$2"
-        else
-            echo 'Nothing to commit. Skipping.'
         fi
         cd ..
 
     else
-        echo 'https://github.com/iterami/'$repository' NOT YET CLONED'
+        echo 'NOT YET CLONED'
     fi
-
-    echo
 done

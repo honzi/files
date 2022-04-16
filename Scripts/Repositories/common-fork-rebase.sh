@@ -2,7 +2,7 @@
 set -eux
 
 # Required args:
-#   $1: Relative path to the directory in which
+#   $1: Relative path to the folder in which
 #         the honzi/common repository is stored.
 #
 # Example usage: sh common-fork-rebase.sh repositories/common
@@ -14,7 +14,7 @@ then
     exit 1
 fi
 
-# Navigate to the repository root directory.
+# Navigate to the repository root folder.
 cd $1
 
 # Fetch changes from the upstream gh-pages branch.

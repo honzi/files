@@ -4,7 +4,7 @@ set -eux
 # No args.
 # Example usage: bash remove-links.sh
 
-# List of config file destination directory paths.
+# List of config file destination folder paths.
 destinations=(
   "$HOME/Documents/EVE/Overview/iterami-overview.yaml"
   "$HOME/.wine/drive_c/Program Files (x86)/Electronic Arts/Crytek/Crysis SP Demo/Game/Config/diff_bauer.cfg"

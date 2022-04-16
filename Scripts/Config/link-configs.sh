@@ -47,15 +47,13 @@ destinations=(
 
 for i in {0..16}
 do
-    # The destination directory must already exist.
+    # The destination folder must already exist.
     if [[ -d ${destinations[i]} ]]
     then
         # Create the symbolic link.
         ln -fs "${configs[i]}" "${destinations[i]}"
 
-        echo 'Linked: '${configs[i]}
-
     else
-        echo 'Directory not found: '${destinations[i]}
+        echo 'folder not found'
     fi
 done
