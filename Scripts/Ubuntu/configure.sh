@@ -206,7 +206,7 @@ gsettings set org.gtk.Settings.FileChooser window-size '(1100, 600)'
 killall indicator-messages-service
 
 
-# Cleanup various directories.
+# Cleanup various folders.
 > ~/.bash_history
 > ~/.python_history
 > ~/.minecraft/launcher_log.txt
