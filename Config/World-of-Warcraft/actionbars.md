@@ -299,19 +299,19 @@ np-+  | Wrath
 Guardian | Buttons
 ---------|------------------
 Q        | Prowl
-E        |
-R        |
-F        |
+E        | Maul
+R        | Mangle
+F        | Thrash
 1        | Shadowmeld
-2        |
+2        | Growl
 3        | Cat Form
 4        | Travel Form
 5        | Moonfire
-6        |
+6        | Overrun
 7        |
 8        | Fishing
 s-Q      |
-s-E      |
+s-E      | Ironfur
 s-R      | Dash
 s-F      | Entangling Roots
 s-1      | Mount
