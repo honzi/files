@@ -88,15 +88,15 @@ ActionBar Setups
 
 Blood | Buttons
 ------|-----------------
-Q     |
+Q     | Blooddrinker
 E     | Blood Boil
-R     |
-F     |
+R     | Heart Strike
+F     | Marrowrend
 1     | Shadowmeld
 2     | Death and Decay
 3     | Death Coil
 4     | Chains of Ice
-5     |
+5     | Death Strike
 6     |
 7     | Murderous Intent
 8     | Fishing
@@ -108,7 +108,7 @@ s-1   | Mount
 s-2   | Raise Dead
 s-3   |
 s-4   | Necklace
-s-5   |
+s-5   | Rune Tap
 s-6   | AFK
 s-7   | AFK
 s-8   | AFK
@@ -126,7 +126,7 @@ F     |
 2     | Death and Decay
 3     | Death Coil
 4     | Chains of Ice
-5     |
+5     | Death Strike
 6     |
 7     | Dark Command
 8     | Fishing
