@@ -93,8 +93,8 @@ E     | Blood Boil
 R     | Heart Strike
 F     | Marrowrend
 1     | Shadowmeld
-2     | Death and Decay
-3     | Death Coil
+2     | Death Coil
+3     | Death and Decay
 4     | Chains of Ice
 5     | Death Strike
 6     |
@@ -123,8 +123,8 @@ E     | Howling Blast
 R     |
 F     |
 1     | Shadowmeld
-2     | Death and Decay
-3     | Death Coil
+2     | Death Coil
+3     | Death and Decay
 4     | Chains of Ice
 5     | Death Strike
 6     |
@@ -153,8 +153,8 @@ E      | Outbreak
 R      | Clawing Shadows
 F      | Festering Strike
 1      | Shadowmeld
-2      | Death and Decay
-3      | Death Coil
+2      | Death Coil
+3      | Death and Decay
 4      | Chains of Ice
 5      | Death Strike
 6      |
@@ -208,22 +208,22 @@ np-+  |
 
 Vengeance | Buttons
 ----------|--------------------------
-Q         |
-E         |
-R         |
-F         | Infernal Strike
+Q         | Sigil of Flame
+E         | Soul Cleave
+R         | Shear
+F         | Throw Glaive
 1         | Shadowmeld
 2         | Immolation Aura
 3         |
-4         | Sigil of Flame
+4         | Infernal Strike
 5         | Disrupt
 6         | Consume Magic
 7         | Torment
 8         | Fishing
 s-Q       | Spectral Sight
-s-E       |
-s-R       |
-s-F       | Throw Glaive
+s-E       | Demon Spikes
+s-R       | Fel Devastation
+s-F       | Fiery Brand
 s-1       | Mount
 s-2       | Inquisitor's Menacing Eye
 s-3       |
