@@ -237,10 +237,10 @@ Auto-Activate On              | All Disabled
 
 ### UI Settings
 
-Chat Settings  | Setting
----------------|------------------
-Font Size      | 14pt
-Background     | Transparent Black
+Chat Settings | Setting
+--------------|------------------
+Font Size     | 14pt
+Background    | Transparent Black
 
 Tracking Settings  | Setting
 -------------------|-------------
@@ -266,88 +266,87 @@ Character Specific Key Bindings | Disabled
 All Key 2s                      | Not Bound
 Commands Not Listed Here        | Not Bound
 
-Key Bindings - Movement Keys | Keybinds
------------------------------|---------
-Move Forward                 | W
-Move Backward                | S
-Turn Left                    | A
-Turn Right                   | D
-Jump                         | Spacebar
-Sit/Move Down                | X
-Sheath/Unsheath Weapon       | Z
-Toggle Autorun               | `
-Toggle Run/Walk              | V
+Movement Keys          | Keybinds
+-----------------------|---------
+Move Forward           | W
+Move Backward          | S
+Turn Left              | A
+Turn Right             | D
+Jump                   | Spacebar
+Sit/Move Down          | X
+Sheath/Unsheath Weapon | Z
+Toggle Autorun         | `
+Toggle Run/Walk        | V
 
-Key Bindings - Chat            | Keybinds
--------------------------------|---------
-Open Chat                      | Enter
-Open Chat Slash                | /
-Chat Reply                     | \
-Re-Whisper                     | SHIFT-\
+Chat       | Keybinds
+-----------|---------
+Open Chat  | Enter
+Chat Reply | \
+Re-Whisper | SHIFT-\
 
-Key Bindings - Action Bar | Keybinds
---------------------------|---------
-Action Button 1           | Q
-Action Button 2           | E
-Action Button 3           | R
-Action Button 4           | F
-Action Button 5           | 1
-Action Button 6           | 2
-Action Button 7           | 3
-Action Button 8           | 4
-Action Button 9           | 5
-Action Button 10          | 6
-Action Button 11          | 7
-Action Button 12          | 8
-Pet Action Button 1       | SHIFT-T
-Pet Action Button 2       | SHIFT-Y
-Pet Action Button 3       | SHIFT-U
+Action Bar          | Keybinds
+--------------------|---------
+Action Button 1     | Q
+Action Button 2     | E
+Action Button 3     | R
+Action Button 4     | F
+Action Button 5     | 1
+Action Button 6     | 2
+Action Button 7     | 3
+Action Button 8     | 4
+Action Button 9     | 5
+Action Button 10    | 6
+Action Button 11    | 7
+Action Button 12    | 8
+Pet Action Button 1 | SHIFT-T
+Pet Action Button 2 | SHIFT-Y
+Pet Action Button 3 | SHIFT-U
 
-Key Bindings - MultiActionBar | Keybinds
-------------------------------|----------
-BottomLeft Action Button 1    | SHIFT-Q
-BottomLeft Action Button 2    | SHIFT-E
-BottomLeft Action Button 3    | SHIFT-R
-BottomLeft Action Button 4    | SHIFT-F
-BottomLeft Action Button 5    | SHIFT-1
-BottomLeft Action Button 6    | SHIFT-2
-BottomLeft Action Button 7    | SHIFT-3
-BottomLeft Action Button 8    | SHIFT-4
-BottomLeft Action Button 9    | SHIFT-5
-BottomLeft Action Button 10   | SHIFT-6
-BottomLeft Action Button 11   | SHIFT-7
-BottomLeft Action Button 12   | SHIFT-8
-Right Action Button 12        | Num Pad +
+MultiActionBar              | Keybinds
+----------------------------|----------
+BottomLeft Action Button 1  | SHIFT-Q
+BottomLeft Action Button 2  | SHIFT-E
+BottomLeft Action Button 3  | SHIFT-R
+BottomLeft Action Button 4  | SHIFT-F
+BottomLeft Action Button 5  | SHIFT-1
+BottomLeft Action Button 6  | SHIFT-2
+BottomLeft Action Button 7  | SHIFT-3
+BottomLeft Action Button 8  | SHIFT-4
+BottomLeft Action Button 9  | SHIFT-5
+BottomLeft Action Button 10 | SHIFT-6
+BottomLeft Action Button 11 | SHIFT-7
+BottomLeft Action Button 12 | SHIFT-8
+Right Action Button 12      | Num Pad +
 
-Key Bindings - Targeting | Keybinds
--------------------------|---------
-Target Nearest Enemy     | Tab
+Targeting            | Keybinds
+---------------------|---------
+Target Nearest Enemy | Tab
 
-Key Bindings - Interface Panel | Keybinds
--------------------------------|---------
-Toggle Game Menu               | Escape
-Open All Bags                  | B
-Toggle Character Pane          | C
-Toggle Spellbook               | H
-Toggle Talent Pane             | Y
-Toggle World Map Pane          | G
-Toggle Score Screen            | T
-Toggle Group Finder            | J
+Interface Panel       | Keybinds
+----------------------|---------
+Toggle Game Menu      | Escape
+Open All Bags         | B
+Toggle Character Pane | C
+Toggle Spellbook      | H
+Toggle Talent Pane    | Y
+Toggle World Map Pane | G
+Toggle Score Screen   | T
+Toggle Group Finder   | J
 
-Key Bindings - Miscellaneous | Keybinds
------------------------------|----------
-Toggle Sound                 | Num Pad *
-Toggle User Interface        | ALT-Z
+Miscellaneous         | Keybinds
+----------------------|----------
+Toggle Sound          | Num Pad *
+Toggle User Interface | ALT-Z
 
-Key Bindings - Camera | Keybinds
-----------------------|-----------------
-Zoom In               | Mouse Wheel Up
-Zoom Out              | Mouse Wheel Down
+Camera   | Keybinds
+---------|-----------------
+Zoom In  | Mouse Wheel Up
+Zoom Out | Mouse Wheel Down
 
-Key Bindings - Target Markers | Keybinds
-------------------------------|----------
-All Commands                  | Not Bound
+Target Markers | Keybinds
+---------------|----------
+All Commands   | Not Bound
 
-Key Bindings - Vehicle Controls | Keybinds
---------------------------------|----------
-All Commands                    | Not Bound
+Vehicle Controls | Keybinds
+-----------------|----------
+All Commands     | Not Bound
