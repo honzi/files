@@ -81,8 +81,9 @@ ActionBar Setups
   * Toy Train Set
   * Darkmoon Gazer
   * Tiny Green Ragdoll
-  * Tonga's Totem
+  * Spring Florist's Pouch
   * Hot Buttered Popcorn
+  * Tonga's Totem
 
 ### Death Knight - Blood
 
