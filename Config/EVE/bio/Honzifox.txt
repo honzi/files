@@ -3,7 +3,7 @@ iterami "CEO" https://iterami.github.io
 -https://github.com/honzi/biggestisk=list of the most expensive kill of each entity
 -https://github.com/iterami/EVE-Overviews.yaml=iterami Overview
 
--Alts=Honzibot, only 1 account
+-Alts=Honzibot+[REDACTED]. only 1 account
 -Civilian Gatling Pulse Laser is the best weapon in EVE
 -https://honzi.github.io/personalbests/eve.htm(~262kb)
 -https://zkillboard.com/character/96811141/
