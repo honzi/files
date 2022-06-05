@@ -827,9 +827,9 @@ s-R           | Sprint
 s-F           | Crimson Vial
 s-1           | Mount
 s-2           |
-s-3           | Slice and Dice
+s-3           |
 s-4           | Necklace
-s-5           |
+s-5           | Slice and Dice
 s-6           | AFK
 s-7           | AFK
 s-8           | AFK
@@ -848,7 +848,7 @@ F      | Pistol Shot
 3      | Ambush / Ghostly Strike
 4      | Sap / Kidney Shot
 5      | Grappling Hook
-6      |
+6      | Dismantle
 7      |
 8      | Fishing
 s-Q    |
@@ -857,9 +857,9 @@ s-R    | Sprint
 s-F    | Crimson Vial
 s-1    | Mount
 s-2    | Blade Flurry
-s-3    | Slice and Dice
+s-3    |
 s-4    | Necklace
-s-5    | Dismantle
+s-5    | Slice and Dice
 s-6    | AFK
 s-7    | AFK
 s-8    | AFK
@@ -887,9 +887,9 @@ s-R      | Sprint
 s-F      | Crimson Vial
 s-1      | Mount
 s-2      | Instant Poison
-s-3      | Slice and Dice
+s-3      |
 s-4      | Necklace
-s-5      | Death from Above
+s-5      | Slice and Dice
 s-6      | AFK
 s-7      | AFK
 s-8      | AFK

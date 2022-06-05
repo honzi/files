@@ -1,0 +1,106 @@
+<!doctype html>
+<meta charset=utf-8>
+<meta content="width=device-width,initial-scale=1" name=viewport>
+<title>CVars</title>
+<link href=../../common/css/writings.css rel=stylesheet>
+
+<a href=../../index.htm>iterami</a>/<a href=../index.htm>Guides.htm</a>/<a href=index.htm>World of Warcraft</a>/CVars
+<ul>
+  <li>CVar names are not case sensitive.
+</ul>
+<table>
+  <tr class=header>
+    <td>CVar
+    <td>Default Value
+    <td>Recommended Value
+    <td class=tables-nosort>Notes
+  <tr>
+    <td>alwayscompareitems
+    <td>0
+    <td>1
+    <td><ul>
+      <li>If set to 1, hovering over an item in your backpack that can be equipped will display your currently equipped item in that slot.
+      <li>If set to 0, you must hold shift to display item comparisons.
+    </ul>
+  <tr>
+    <td>autolootdefault
+    <td>0
+    <td>1
+    <td><ul>
+      <li>If set to 1, items are automatically added to your backpack when looting.
+      <li>If set to 0, you must click on items in the loot window to add them to your backpack.
+    </ul>
+  <tr>
+    <td>autolootrate
+    <td>150
+    <td>100
+    <td>Number of milliseconds between each item in the loot window being autolooted and added to your backpack.
+  <tr>
+    <td>colorchatnamesbyclass
+    <td>0
+    <td>1
+    <td><ul>
+      <li>If set to 1, player names in chat are colored by their class, thus giving you free additional information.
+      <li>If set to 0, player names all have the same color.
+    </ul>
+  <tr>
+    <td>enablefloatingcombattext
+    <td>0
+    <td>1
+    <td><ul>
+      <li>If set to 1, floating text will be displayed near the center of your screen when your character's state or stats change. Additional CVars are available to customize which changes should be displayed.
+      <li>If set to 0, no changes to your character will be displayed as text floating near the center of your screen.
+    </ul>
+  <tr>
+    <td>miniworldmap
+    <td>1
+    <td>1
+    <td><ul>
+      <li>If set to 1, your world map is displayed in a regular-sized UI window, allowing you to retain visibility and full character control.
+      <li>If set to 0, your world map takes up the entire screen and obscures your vision. You have keyboard control of your character, but not mouse control.
+    </ul>
+  <tr>
+    <td>missingtransmogsourceinitemtooltips
+    <td>0
+    <td>1
+    <td><ul>
+      <li>If set to 1, hovering over an item that can be used for transmog will display if you have collected that appearance but not from that specific item. This can be useful as the names of items you use for transmog can be collected as well.
+      <li>If set to 0, hovering over an item will only display a notice if you haven't collected the appearance.
+    </ul>
+  <tr>
+    <td>nobuffdebufffilterontarget
+    <td>0
+    <td>1
+    <td><ul>
+      <li>If set to 1, displays all buffs and debuffs on your target, which can help you make better decisions during combat.
+      <li>If set to 0, only your own buffs and debuffs will be displayed.
+    </ul>
+  <tr>
+    <td>statustext
+    <td>0
+    <td>1
+    <td><ul>
+      <li>If set to 1, health and resource bars will display text values instead of only being a solid-color bar. Specific display text is hanlded by the "statustextdisplay" CVar.
+      <li>If set to 0, health and resource bars will not display any text values.
+    </ul>
+  <tr>
+    <td>statustextdisplay
+    <td>"NONE"
+    <td>"NUMERIC"
+    <td><ul>
+      <li>If set to "BOTH", health and resource bars will display a percentage between 0% and 100% on the left and remaining value on the right. No maximum is displayed.
+      <li>If set to "NONE", health and resource bars will not display any text values.
+      <li>If set to "NUMERIC", health and resource bars will display "remaining / maximum". No percentage is displayed.
+      <li>If set to "PERCENT", health and resource bars will display a percentage between 0% and 100%. No numbers indicating remaining or maximum are displayed.
+    </ul>
+  <tr>
+    <td>xpbartext
+    <td>0
+    <td>1
+    <td><ul>
+      <li>If set to 1, always displays text values on your XP bar, including when displaying reputation or honor.
+      <li>If set to 0, values are only displayed when your character info window is open.
+    </ul>
+</table>
+
+<script src=../../common/js/tables.js></script>
