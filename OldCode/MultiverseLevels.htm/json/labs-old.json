@@ -1,0 +1,1523 @@
+{
+  "multiplier-speed": 5,
+  "multiplier-jump": 3,
+  "paths": {
+    "path-moving-x": {
+      "end": -1,
+      "points": [
+        {
+          "translate-x": -100
+        },
+        {
+          "translate-x": 100
+        }
+      ]
+    },
+    "path-moving-y": {
+      "end": -1,
+      "points": [
+        {
+          "translate-y": -80
+        },
+        {
+          "translate-y": -26
+        }
+      ]
+    },
+    "path-moving-z": {
+      "end": -1,
+      "points": [
+        {
+          "translate-z": 25
+        },
+        {
+          "translate-z": 125
+        }
+      ]
+    },
+    "tram-loop": {
+      "end": 1,
+      "points": [
+        {
+          "translate-x": -165,
+          "translate-y": -24.9,
+          "translate-z": -250
+        },
+        {
+          "speed": 2,
+          "translate-x": 150,
+          "translate-y": 31.1,
+          "translate-z": -250
+        },
+        {
+          "translate-x": 150,
+          "translate-y": 31.1,
+          "translate-z": 250
+        },
+        {
+          "translate-x": 150,
+          "translate-y": -80.9,
+          "translate-z": 250
+        },
+        {
+          "speed": 2,
+          "translate-x": -165,
+          "translate-y": -80.9,
+          "translate-z": 250
+        },
+        {
+          "translate-x": -165,
+          "translate-y": -80.9,
+          "translate-z": -250
+        },
+        {
+          "speed": 2,
+          "translate-x": 150,
+          "translate-y": -24.9,
+          "translate-z": -250
+        },
+        {
+          "speed": 2,
+          "translate-x": 150,
+          "translate-y": -24.9,
+          "translate-z": 250
+        },
+        {
+          "speed": 2,
+          "translate-x": -165,
+          "translate-y": -24.9,
+          "translate-z": 250
+        }
+      ]
+    }
+  },
+  "spawn-rotate-x": 25,
+  "spawn-rotate-y": 315,
+  "spawn-translate-x": 50,
+  "spawn-translate-z": 50,
+  "characters": [
+    {
+      "id": "lab",
+      "entities": [
+        {
+          "id": "billboarding-x",
+          "attach-offset-x": -25,
+          "attach-offset-y": -80,
+          "attach-offset-z": -130,
+          "billboard": [
+            "x"
+          ],
+          "collision": false,
+          "vertex-colors": [
+            1, 0, 0, 1,
+            1, 0, 0, 1,
+            1, 0, 0, 1
+          ],
+          "vertices": [
+            -5, 0, 0, 1,
+            5, 0, 0, 1,
+            0, 5, 0, 1
+          ]
+        },
+        {
+          "id": "billboarding-xy",
+          "attach-offset-x": -25,
+          "attach-offset-y": -70,
+          "attach-offset-z": -140,
+          "billboard": [
+            "x",
+            "y"
+          ],
+          "collision": false,
+          "vertex-colors": [
+            1, 1, 0, 1,
+            1, 1, 0, 1,
+            1, 1, 0, 1
+          ],
+          "vertices": [
+            -5, 0, 0, 1,
+            5, 0, 0, 1,
+            0, 5, 0, 1
+          ]
+        },
+        {
+          "id": "billboarding-xyz",
+          "attach-offset-y": -60,
+          "attach-offset-z": -150,
+          "billboard": [
+            "x",
+            "y",
+            "z"
+          ],
+          "collision": false,
+          "vertex-colors": [
+            1, 1, 1, 1,
+            1, 1, 1, 1,
+            1, 1, 1, 1
+          ],
+          "vertices": [
+            -5, 0, 0, 1,
+            5, 0, 0, 1,
+            0, 5, 0, 1
+          ]
+        },
+        {
+          "id": "billboarding-xz",
+          "attach-offset-y": -70,
+          "attach-offset-z": -140,
+          "billboard": [
+            "x",
+            "z"
+          ],
+          "collision": false,
+          "vertex-colors": [
+            1, 0, 1, 1,
+            1, 0, 1, 1,
+            1, 0, 1, 1
+          ],
+          "vertices": [
+            -5, 0, 0, 1,
+            5, 0, 0, 1,
+            0, 5, 0, 1
+          ]
+        },
+        {
+          "id": "billboarding-y",
+          "attach-offset-y": -80,
+          "attach-offset-z": -130,
+          "billboard": [
+            "y"
+          ],
+          "collision": false,
+          "vertex-colors": [
+            0, 1, 0, 1,
+            0, 1, 0, 1,
+            0, 1, 0, 1
+          ],
+          "vertices": [
+            -5, 0, 0, 1,
+            5, 0, 0, 1,
+            0, 5, 0, 1
+          ]
+        },
+        {
+          "id": "billboarding-yz",
+          "attach-offset-x": 25,
+          "attach-offset-y": -70,
+          "attach-offset-z": -140,
+          "billboard": [
+            "y",
+            "z"
+          ],
+          "collision": false,
+          "vertex-colors": [
+            0, 1, 1, 1,
+            0, 1, 1, 1,
+            0, 1, 1, 1
+          ],
+          "vertices": [
+            -5, 0, 0, 1,
+            5, 0, 0, 1,
+            0, 5, 0, 1
+          ]
+        },
+        {
+          "id": "billboarding-z",
+          "attach-offset-x": 25,
+          "attach-offset-y": -80,
+          "attach-offset-z": -130,
+          "billboard": [
+            "z"
+          ],
+          "collision": false,
+          "vertex-colors": [
+            0, 0, 1, 1,
+            0, 0, 1, 1,
+            0, 0, 1, 1
+          ],
+          "vertices": [
+            -5, 0, 0, 1,
+            5, 0, 0, 1,
+            0, 5, 0, 1
+          ]
+        },
+        {
+          "id": "launching-pad",
+          "attach-offset-x": -45,
+          "attach-offset-y": 26,
+          "texture-id": "stone.png",
+          "texture-repeat-x": 10,
+          "texture-repeat-y": 10,
+          "vertex-colors": [
+            0.1, 0.4, 0.1, 1,
+            0.1, 0.4, 0.1, 1,
+            0.1, 0.4, 0.1, 1,
+            0.1, 0.4, 0.1, 1
+          ],
+          "vertices": [
+            146, 0, -201, 1,
+            -146, 0, -201, 1,
+            -146, 0, 201, 1,
+            146, 0, 201, 1
+          ]
+        },
+        {
+          "id": "testgun",
+          "attach-offset-x": -120,
+          "attach-offset-y": -78,
+          "item-id": "labs-testgun",
+          "item-spell": true,
+          "item-spellproperties": {
+            "gravity": false
+          },
+          "rotate-x": 90,
+          "vertex-colors": [
+            0, 1, 0, 1,
+            0, 1, 0, 1,
+            0, 1, 0, 1,
+            0, 1, 0, 1
+          ],
+          "vertices": [
+            2, 0, -2, 1,
+            -2, 0, -2, 1,
+            -2, 0, 2, 1,
+            2, 0, 2, 1
+          ]
+        },
+        {
+          "id": "landing-pad",
+          "attach-offset-x": 50,
+          "attach-offset-y": -24.9,
+          "attach-offset-z": 50,
+          "collide-damage": -1,
+          "vertex-colors": [
+            0, 0.1, 0, 1,
+            0, 0.1, 0, 1,
+            0, 0.1, 0, 1,
+            0, 0.1, 0, 1
+          ],
+          "vertices": [
+            10, 0, -10, 1,
+            -10, 0, -10, 1,
+            -10, 0, 10, 1,
+            10, 0, 10, 1
+          ]
+        },
+        {
+          "id": "spawner",
+          "attach-offset-y": -50,
+          "draw-type": "POINTS",
+          "spawn-entity": true,
+          "vertex-colors": [
+            0, 0, 1, 1
+          ],
+          "vertices": [
+            0, 0, 0, 1
+          ]
+        },
+        {
+          "id": "station-0-ceiling",
+          "attach-offset-x": -145,
+          "attach-offset-y": 25,
+          "rotate-x": 180,
+          "vertex-colors": [
+            0.05, 0.05, 0.05, 1,
+            0.05, 0.05, 0.05, 1,
+            0.05, 0.05, 0.05, 1,
+            0.05, 0.05, 0.05, 1
+          ],
+          "vertices": [
+            45, 0, -200, 1,
+            -45, 0, -200, 1,
+            -45, 0, 200, 1,
+            45, 0, 200, 1
+          ]
+        },
+        {
+          "id": "station-0-hidewall",
+          "attach-offset-x": -140,
+          "attach-offset-y": -27.5,
+          "rotate-z": 90,
+          "vertex-colors": [
+            0.04, 0.04, 0.04, 1,
+            0.04, 0.04, 0.04, 1,
+            0.04, 0.04, 0.04, 1,
+            0.04, 0.04, 0.04, 1
+          ],
+          "vertices": [
+            2.5, 0, -200, 1,
+            -2.5, 0, -200, 1,
+            -2.5, 0, 200, 1,
+            2.5, 0, 200, 1
+          ]
+        },
+        {
+          "id": "station-0-platform",
+          "attach-offset-x": -120,
+          "attach-offset-y": -25,
+          "vertex-colors": [
+            0.1, 0.1, 0.1, 1,
+            0.1, 0.1, 0.1, 1,
+            0.1, 0.1, 0.1, 1,
+            0.1, 0.1, 0.1, 1
+          ],
+          "vertices": [
+            20, 0, -200, 1,
+            -20, 0, -200, 1,
+            -20, 0, 200, 1,
+            20, 0, 200, 1
+          ]
+        },
+        {
+          "id": "station-0-trackground",
+          "attach-offset-x": -165,
+          "attach-offset-y": -30,
+          "vertex-colors": [
+            0.01, 0.01, 0.01, 1,
+            0.01, 0.01, 0.01, 1,
+            0.01, 0.01, 0.01, 1,
+            0.01, 0.01, 0.01, 1
+          ],
+          "vertices": [
+            25, 0, -200, 1,
+            -25, 0, -200, 1,
+            -25, 0, 200, 1,
+            25, 0, 200, 1
+          ]
+        },
+        {
+          "id": "station-1-ceiling",
+          "attach-offset-x": -145,
+          "attach-offset-y": -31,
+          "rotate-x": 180,
+          "vertex-colors": [
+            0.05, 0.05, 0.05, 1,
+            0.05, 0.05, 0.05, 1,
+            0.05, 0.05, 0.05, 1,
+            0.05, 0.05, 0.05, 1
+          ],
+          "vertices": [
+            45, 0, -200, 1,
+            -45, 0, -200, 1,
+            -45, 0, 200, 1,
+            45, 0, 200, 1
+          ]
+        },
+        {
+          "id": "station-1-hidewall",
+          "attach-offset-x": -140,
+          "attach-offset-y": -83.5,
+          "rotate-z": 90,
+          "vertex-colors": [
+            0.04, 0.04, 0.04, 1,
+            0.04, 0.04, 0.04, 1,
+            0.04, 0.04, 0.04, 1,
+            0.04, 0.04, 0.04, 1
+          ],
+          "vertices": [
+            2.5, 0, -200, 1,
+            -2.5, 0, -200, 1,
+            -2.5, 0, 200, 1,
+            2.5, 0, 200, 1
+          ]
+        },
+        {
+          "id": "station-1-platform",
+          "attach-offset-x": -120,
+          "attach-offset-y": -81,
+          "vertex-colors": [
+            0.1, 0.1, 0.1, 1,
+            0.1, 0.1, 0.1, 1,
+            0.1, 0.1, 0.1, 1,
+            0.1, 0.1, 0.1, 1
+          ],
+          "vertices": [
+            20, 0, -200, 1,
+            -20, 0, -200, 1,
+            -20, 0, 200, 1,
+            20, 0, 200, 1
+          ]
+        },
+        {
+          "id": "station-1-trackground",
+          "attach-offset-x": -165,
+          "attach-offset-y": -86,
+          "vertex-colors": [
+            0.01, 0.01, 0.01, 1,
+            0.01, 0.01, 0.01, 1,
+            0.01, 0.01, 0.01, 1,
+            0.01, 0.01, 0.01, 1
+          ],
+          "vertices": [
+            25, 0, -200, 1,
+            -25, 0, -200, 1,
+            -25, 0, 200, 1,
+            25, 0, 200, 1
+          ]
+        },
+        {
+          "id": "station-wall-far",
+          "attach-offset-x": -190,
+          "attach-offset-y": -30.5,
+          "rotate-z": 270,
+          "vertex-colors": [
+            0.04, 0.04, 0.04, 1,
+            0.04, 0.04, 0.04, 1,
+            0.04, 0.04, 0.04, 1,
+            0.04, 0.04, 0.04, 1
+          ],
+          "vertices": [
+            55.5, 0, -200, 1,
+            -55.5, 0, -200, 1,
+            -55.5, 0, 200, 1,
+            55.5, 0, 200, 1
+          ]
+        },
+        {
+          "id": "station-wall-right",
+          "attach-offset-x": -120,
+          "attach-offset-y": -28,
+          "attach-offset-z": -200,
+          "rotate-x": 90,
+          "vertex-colors": [
+            0.05, 0.05, 0.05, 1,
+            0.05, 0.05, 0.05, 1,
+            0.05, 0.05, 0.05, 1,
+            0.05, 0.05, 0.05, 1
+          ],
+          "vertices": [
+            20, 0, -53, 1,
+            -20, 0, -53, 1,
+            -20, 0, 53, 1,
+            20, 0, 53, 1
+          ]
+        },
+        {
+          "id": "station-wall-left",
+          "attach-offset-x": -120,
+          "attach-offset-y": -28,
+          "attach-offset-z": 200,
+          "rotate-x": 270,
+          "vertex-colors": [
+            0.05, 0.05, 0.05, 1,
+            0.05, 0.05, 0.05, 1,
+            0.05, 0.05, 0.05, 1,
+            0.05, 0.05, 0.05, 1
+          ],
+          "vertices": [
+            20, 0, -53, 1,
+            -20, 0, -53, 1,
+            -20, 0, 53, 1,
+            20, 0, 53, 1
+          ]
+        },
+        {
+          "id": "thin-x",
+          "attach-offset-y": -71,
+          "attach-offset-z": 150,
+          "rotate-z": 270,
+          "vertex-colors": [
+            1, 0, 0, 1,
+            1, 0, 0, 1,
+            1, 0, 0, 1,
+            1, 0, 0, 1
+          ],
+          "vertices": [
+            10, 0, -10, 1,
+            -10, 0, -10, 1,
+            -10, 0, 10, 1,
+            10, 0, 10, 1
+          ]
+        },
+        {
+          "id": "thin-z",
+          "attach-offset-y": -71,
+          "attach-offset-z": 150,
+          "rotate-x": 270,
+          "vertex-colors": [
+            0, 0, 1, 1,
+            0, 0, 1, 1,
+            0, 0, 1, 1,
+            0, 0, 1, 1
+          ],
+          "vertices": [
+            10, 0, -10, 1,
+            -10, 0, -10, 1,
+            -10, 0, 10, 1,
+            10, 0, 10, 1
+          ]
+        },
+        {
+          "id": "tram-tracks",
+          "attach-offset-x": -165,
+          "attach-offset-y": -29,
+          "collision": false,
+          "draw-type": "LINE_LOOP",
+          "vertex-colors": [
+            1, 1, 1, 1,
+            1, 1, 1, 1,
+            1, 1, 1, 1,
+            1, 1, 1, 1,
+            1, 1, 1, 1,
+            1, 1, 1, 1,
+            1, 1, 1, 1,
+            1, 1, 1, 1,
+            1, 1, 1, 1
+          ],
+          "vertices": [
+            0, 0, -250, 1,
+            315, 54, -250, 1,
+            315, 54, 250, 1,
+            315, -54, 250, 1,
+            0, -54, 250, 1,
+            0, -54, -250, 1,
+            315, 0, -250, 1,
+            315, 0, 250, 1,
+            0, 0, 250, 1
+          ]
+        },
+        {
+          "id": "wall-outer-xminus",
+          "attach-offset-x": -191,
+          "attach-offset-y": -31,
+          "rotate-z": 90,
+          "vertex-colors": [
+            0.04, 0.04, 0.04, 1,
+            0.04, 0.04, 0.04, 1,
+            0.04, 0.04, 0.04, 1,
+            0.04, 0.04, 0.04, 1
+          ],
+          "vertices": [
+            57, 0, -201, 1,
+            -57, 0, -201, 1,
+            -57, 0, 201, 1,
+            57, 0, 201, 1
+          ]
+        },
+        {
+          "id": "wall-outer-xplus",
+          "attach-offset-x": 101,
+          "attach-offset-y": -31,
+          "rotate-z": 270,
+          "vertex-colors": [
+            0.04, 0.04, 0.04, 1,
+            0.04, 0.04, 0.04, 1,
+            0.04, 0.04, 0.04, 1,
+            0.04, 0.04, 0.04, 1
+          ],
+          "vertices": [
+            57, 0, -201, 1,
+            -57, 0, -201, 1,
+            -57, 0, 201, 1,
+            57, 0, 201, 1
+          ]
+        },
+        {
+          "id": "wall-outer-yminus",
+          "attach-offset-x": -45,
+          "attach-offset-y": -88,
+          "rotate-x": 180,
+          "vertex-colors": [
+            0.02, 0.02, 0.02, 1,
+            0.02, 0.02, 0.02, 1,
+            0.02, 0.02, 0.02, 1,
+            0.02, 0.02, 0.02, 1
+          ],
+          "vertices": [
+            146, 0, -201, 1,
+            -146, 0, -201, 1,
+            -146, 0, 201, 1,
+            146, 0, 201, 1
+          ]
+        },
+        {
+          "id": "wall-outer-zminus",
+          "attach-offset-x": -19.5,
+          "attach-offset-y": -31,
+          "attach-offset-z": -201,
+          "rotate-x": 270,
+          "vertex-colors": [
+            0.05, 0.05, 0.05, 1,
+            0.05, 0.05, 0.05, 1,
+            0.05, 0.05, 0.05, 1,
+            0.05, 0.05, 0.05, 1
+          ],
+          "vertices": [
+            120.5, 0, -57, 1,
+            -120.5, 0, -57, 1,
+            -120.5, 0, 57, 1,
+            120.5, 0, 57, 1
+          ]
+        },
+        {
+          "id": "wall-outer-zplus",
+          "attach-offset-x": -19.5,
+          "attach-offset-y": -31,
+          "attach-offset-z": 201,
+          "rotate-x": 90,
+          "vertex-colors": [
+            0.05, 0.05, 0.05, 1,
+            0.05, 0.05, 0.05, 1,
+            0.05, 0.05, 0.05, 1,
+            0.05, 0.05, 0.05, 1
+          ],
+          "vertices": [
+            120.5, 0, -57, 1,
+            -120.5, 0, -57, 1,
+            -120.5, 0, 57, 1,
+            120.5, 0, 57, 1
+          ]
+        }
+      ]
+    },
+    {
+      "id": "tram",
+      "entities": [
+        {
+          "id": "tram",
+          "texture-id": "stone.png",
+          "vertex-colors": [
+            0.5, 0.5, 0.5, 1,
+            0.5, 0.5, 0.5, 1,
+            0.5, 0.5, 0.5, 1,
+            0.5, 0.5, 0.5, 1
+          ],
+          "vertices": [
+            25, 0, -25, 1,
+            -25, 0, -25, 1,
+            -25, 0, 25, 1,
+            25, 0, 25, 1
+          ]
+        }
+      ],
+      "path-id": "tram-loop",
+      "speed": 1,
+      "translate-x": -165,
+      "translate-y": -24.9,
+      "translate-z": 250
+    },
+    {
+      "id": "cube-0",
+      "translate-x": -25,
+      "translate-y": 46,
+      "translate-z": 75
+    },
+    {
+      "id": "labtech-landing",
+      "entities": [
+        {
+          "id": "labtech-landing-face",
+          "billboard": "y",
+          "collision": false,
+          "vertex-colors": [
+            1, 0, 0, 1,
+            0, 1, 0, 1,
+            0, 0, 1, 1
+          ],
+          "vertices": [
+            -2, 0, 0, 1,
+            2, 0, 0, 1,
+            0, 2, 0, 1
+          ]
+        }
+      ],
+      "inventory": {
+        "sample-hat": {
+          "amount": 100,
+          "entities": [
+            {
+              "attach-offset-y": 2.5,
+              "billboard": [
+                "y"
+              ],
+              "collision": false,
+              "vertex-colors": [
+                1, 0, 0, 1,
+                0, 1, 0, 1,
+                0, 0, 1, 1
+              ],
+              "vertices": [
+                -2, 0, 0, 1,
+                2, 0, 0, 1,
+                0, 2, 0, 1
+              ]
+            }
+          ],
+          "equipped": false,
+          "spell": false,
+          "stats": {}
+        }
+      },
+      "level": 5,
+      "talk": "Welcome to the iterami labs!",
+      "talk-range": 50,
+      "trade": [
+        {
+          "get-amount": 10,
+          "get-id": "Coins",
+          "give-amount": 1,
+          "give-id": "sample-hat"
+        }
+      ]
+    },
+    {
+      "id": "labtech-range",
+      "entities": [
+        {
+          "id": "labtech-range",
+          "billboard": "y",
+          "collision": false,
+          "vertex-colors": [
+            1, 0, 0, 1,
+            0, 1, 0, 1,
+            0, 0, 1, 1
+          ],
+          "vertices": [
+            -2, 0, 0, 1,
+            2, 0, 0, 1,
+            0, 2, 0, 1
+          ]
+        }
+      ],
+      "level": 5,
+      "talk": "Pick up this item and equip it.<br>Press bound fire key to shoot!",
+      "talk-range": 50,
+      "translate-x": -100,
+      "translate-y": -50
+    },
+    {
+      "id": "moving-x",
+      "entities": [
+        {
+          "id": "moving-x",
+          "attach-offset-x": -100,
+          "attach-offset-y": -71,
+          "attach-offset-z": 110,
+          "rotate-z": 270,
+          "vertex-colors": [
+            1, 0, 0, 1,
+            1, 0, 0, 1,
+            1, 0, 0, 1,
+            1, 0, 0, 1
+          ],
+          "vertices": [
+            10, 0, -10, 1,
+            -10, 0, -10, 1,
+            -10, 0, 10, 1,
+            10, 0, 10, 1
+          ]
+        }
+      ],
+      "path-id": "path-moving-x",
+      "speed": 1
+    },
+    {
+      "id": "moving-y",
+      "entities": [
+        {
+          "id": "moving-y",
+          "attach-offset-x": 70,
+          "attach-offset-y": -71,
+          "attach-offset-z": 130,
+          "vertex-colors": [
+            0, 1, 0, 1,
+            0, 1, 0, 1,
+            0, 1, 0, 1,
+            0, 1, 0, 1
+          ],
+          "vertices": [
+            10, 0, -10, 1,
+            -10, 0, -10, 1,
+            -10, 0, 10, 1,
+            10, 0, 10, 1
+          ]
+        }
+      ],
+      "path-id": "path-moving-y",
+      "speed": 1
+    },
+    {
+      "id": "moving-z",
+      "entities": [
+        {
+          "id": "moving-z",
+          "attach-offset-y": -71,
+          "attach-offset-z": 100,
+          "rotate-x": 270,
+          "vertex-colors": [
+            0, 0, 1, 1,
+            0, 0, 1, 1,
+            0, 0, 1, 1,
+            0, 0, 1, 1
+          ],
+          "vertices": [
+            10, 0, -10, 1,
+            -10, 0, -10, 1,
+            -10, 0, 10, 1,
+            10, 0, 10, 1
+          ]
+        }
+      ],
+      "path-id": "path-moving-z",
+      "speed": 1
+    },
+    {
+      "id": "tree-0",
+      "translate-x": -50,
+      "translate-y": 26,
+      "translate-z": -150
+    },
+    {
+      "id": "tree-1",
+      "translate-y": 26,
+      "translate-z": -150,
+      "trunk-count-min": 5
+    },
+    {
+      "id": "dsm",
+      "entities": [
+        {
+         "id": "dsm-ground-inside",
+          "attach-offset-x": -10,
+          "attach-offset-y": -41.99,
+          "attach-offset-z": -15,
+          "vertex-colors": [
+            0.4, 0.15, 0, 1,
+            0.4, 0.15, 0, 1,
+            0.4, 0.15, 0, 1,
+            0.4, 0.15, 0, 1
+          ],
+          "vertices": [
+            30, 0, -24, 1,
+            -24, 0, -24, 1,
+            -24, 0, 30, 1,
+            30, 0, 30, 1
+          ]
+        },
+        {
+          "id": "dsm-ground-outside-0",
+          "attach-offset-x": -10,
+          "attach-offset-y": -41.99,
+          "attach-offset-z": 25,
+          "vertex-colors": [
+            0.4, 0.15, 0, 1,
+            0.4, 0.15, 0, 1,
+            0.5882, 0.4196, 0.0863, 1,
+            0.5882, 0.4196, 0.0863, 1
+          ],
+          "vertices": [
+            30, 0, -10, 1,
+            -30, 0, -10, 1,
+            -30, 0, 10, 1,
+            50, 0, 10, 1
+          ]
+        },
+        {
+          "id": "dsm-ground-outside-1",
+          "attach-offset-x": 30,
+          "attach-offset-y": -41.99,
+          "attach-offset-z": -15,
+          "vertex-colors": [
+            0.5882, 0.4196, 0.0863, 1,
+            0.4, 0.15, 0, 1,
+            0.4, 0.15, 0, 1,
+            0.5882, 0.4196, 0.0863, 1
+          ],
+          "vertices": [
+            10, 0, -30, 1,
+            -10, 0, -30, 1,
+            -10, 0, 30, 1,
+            10, 0, 50, 1
+          ]
+        },
+        {
+          "id": "dsm-sand-0",
+          "attach-offset-x": -40,
+          "attach-offset-y": -32,
+          "attach-offset-z": 25,
+          "rotate-z": 270,
+          "vertex-colors": [
+            0.5882, 0.4196, 0.0863, 1,
+            0.5882, 0.4196, 0.0863, 1,
+            0.7, 0.5, 0.1, 1,
+            0.7, 0.5, 0.1, 1
+          ],
+          "vertices": [
+            10, 0, -10, 1,
+            -14, 0, -10, 1,
+            -14, 0, 60, 1,
+            10, 0, 60, 1
+          ]
+        },
+        {
+          "id": "dsm-sand-1",
+          "attach-offset-x": 30,
+          "attach-offset-y": -32,
+          "attach-offset-z": -45,
+          "rotate-x": 90,
+          "vertex-colors": [
+            0.7, 0.5, 0.1, 1,
+            0.5882, 0.4196, 0.0863, 1,
+            0.5882, 0.4196, 0.0863, 1,
+            0.7, 0.5, 0.1, 1
+          ],
+          "vertices": [
+            50, 0, -16, 1,
+            -10, 0, -16, 1,
+            -10, 0, 10, 1,
+            50, 0, 10, 1
+          ]
+        },
+        {
+          "id": "dsm-wall-back",
+          "attach-offset-x": -10,
+          "attach-offset-y": -30,
+          "attach-offset-z": -39,
+          "rotate-x": 90,
+          "vertex-colors": [
+            0.38, 0.12, 0, 1,
+            0.38, 0.12, 0, 1,
+            0.38, 0.12, 0, 1,
+            0.38, 0.12, 0, 1
+          ],
+          "vertices": [
+            10, 0, -12, 1,
+            -10, 0, -12, 1,
+            -10, 0, 12, 1,
+            10, 0, 12, 1
+          ]
+        },
+        {
+          "id": "dsm-wall-left",
+          "attach-offset-x": -34,
+          "attach-offset-y": -32,
+          "attach-offset-z": -15,
+          "rotate-z": 270,
+          "vertex-colors": [
+            0.38, 0.12, 0, 1,
+            0.38, 0.12, 0, 1,
+            0.38, 0.12, 0, 1,
+            0.38, 0.12, 0, 1
+          ],
+          "vertices": [
+            10, 0, -10, 1,
+            -10, 0, -10, 1,
+            -10, 0, 10, 1,
+            10, 0, 10, 1
+          ]
+        },
+        {
+          "id": "dsm-pillar-0-0",
+          "attach-offset-x": 10,
+          "attach-offset-z": -5,
+          "rotate-x": 270,
+          "vertex-colors": [
+            0.4, 0.1, 0, 1,
+            0.4, 0.1, 0, 1,
+            0.7, 0.5, 0.1, 1,
+            0.7, 0.5, 0.1, 1
+          ],
+          "vertices": [
+            10, 0, -42, 1,
+            -10, 0, -42, 1,
+            -10, 0, 42, 1,
+            10, 0, 42, 1
+          ]
+        },
+        {
+          "id": "dsm-pillar-0-1",
+          "attach-offset-x": 10,
+          "attach-offset-z": 15,
+          "rotate-x": 90,
+          "vertex-colors": [
+            0.7, 0.5, 0.1, 1,
+            0.7, 0.5, 0.1, 1,
+            0.4, 0.1, 0, 1,
+            0.4, 0.1, 0, 1
+          ],
+          "vertices": [
+            10, 0, -42, 1,
+            -10, 0, -42, 1,
+            -10, 0, 42, 1,
+            10, 0, 42, 1
+          ]
+        },
+        {
+          "id": "dsm-pillar-0-2",
+          "attach-offset-z": 5,
+          "rotate-z": 90,
+          "vertex-colors": [
+            0.7, 0.5, 0.1, 1,
+            0.4, 0.1, 0, 1,
+            0.4, 0.1, 0, 1,
+            0.7, 0.5, 0.1, 1
+          ],
+          "vertices": [
+            42, 0, -10, 1,
+            -42, 0, -10, 1,
+            -42, 0, 10, 1,
+            42, 0, 10, 1
+          ]
+        },
+        {
+          "id": "dsm-pillar-0-3",
+          "attach-offset-x": 20,
+          "attach-offset-z": 5,
+          "rotate-z": 270,
+          "vertex-colors": [
+            0.4, 0.1, 0, 1,
+            0.7, 0.5, 0.1, 1,
+            0.7, 0.5, 0.1, 1,
+            0.4, 0.1, 0, 1
+          ],
+          "vertices": [
+            42, 0, -10, 1,
+            -42, 0, -10, 1,
+            -42, 0, 10, 1,
+            42, 0, 10, 1
+          ]
+        },
+        {
+          "id": "dsm-pillar-1-0",
+          "attach-offset-x": -30,
+          "attach-offset-z": -5,
+          "rotate-x": 270,
+          "vertex-colors": [
+            0.4, 0.1, 0, 1,
+            0.4, 0.1, 0, 1,
+            0.7, 0.5, 0.1, 1,
+            0.7, 0.5, 0.1, 1
+          ],
+          "vertices": [
+            10, 0, -42, 1,
+            -10, 0, -42, 1,
+            -10, 0, 42, 1,
+            10, 0, 42, 1
+          ]
+        },
+        {
+          "id": "dsm-pillar-1-1",
+          "attach-offset-x": -30,
+          "attach-offset-z": 15,
+          "rotate-x": 90,
+          "vertex-colors": [
+            0.7, 0.5, 0.1, 1,
+            0.7, 0.5, 0.1, 1,
+            0.4, 0.1, 0, 1,
+            0.4, 0.1, 0, 1
+          ],
+          "vertices": [
+            10, 0, -42, 1,
+            -10, 0, -42, 1,
+            -10, 0, 42, 1,
+            10, 0, 42, 1
+          ]
+        },
+        {
+          "id": "dsm-pillar-1-2",
+          "attach-offset-x": -20,
+          "attach-offset-z": 5,
+          "rotate-z": 270,
+          "vertex-colors": [
+            0.4, 0.1, 0, 1,
+            0.7, 0.5, 0.1, 1,
+            0.7, 0.5, 0.1, 1,
+            0.4, 0.1, 0, 1
+          ],
+          "vertices": [
+            42, 0, -10, 1,
+            -42, 0, -10, 1,
+            -42, 0, 10, 1,
+            42, 0, 10, 1
+          ]
+        },
+        {
+          "id": "dsm-pillar-2-0",
+          "attach-offset-x": 10,
+          "attach-offset-z": -25,
+          "rotate-x": 90,
+          "vertex-colors": [
+            0.7, 0.5, 0.1, 1,
+            0.7, 0.5, 0.1, 1,
+            0.4, 0.1, 0, 1,
+            0.4, 0.1, 0, 1
+          ],
+          "vertices": [
+            10, 0, -42, 1,
+            -10, 0, -42, 1,
+            -10, 0, 42, 1,
+            10, 0, 42, 1
+          ]
+        },
+        {
+          "id": "dsm-pillar-2-1",
+          "attach-offset-z": -35,
+          "rotate-z": 90,
+          "vertex-colors": [
+            0.7, 0.5, 0.1, 1,
+            0.4, 0.1, 0, 1,
+            0.4, 0.1, 0, 1,
+            0.7, 0.5, 0.1, 1
+          ],
+          "vertices": [
+            42, 0, -10, 1,
+            -42, 0, -10, 1,
+            -42, 0, 10, 1,
+            42, 0, 10, 1
+          ]
+        },
+        {
+          "id": "dsm-pillar-2-2",
+          "attach-offset-x": 20,
+          "attach-offset-z": -35,
+          "rotate-z": 270,
+          "vertex-colors": [
+            0.4, 0.1, 0, 1,
+            0.7, 0.5, 0.1, 1,
+            0.7, 0.5, 0.1, 1,
+            0.4, 0.1, 0, 1
+          ],
+          "vertices": [
+            42, 0, -10, 1,
+            -42, 0, -10, 1,
+            -42, 0, 10, 1,
+            42, 0, 10, 1
+          ]
+        },
+        {
+          "id": "dsm-pillar-3-0",
+          "attach-offset-x": -30,
+          "attach-offset-z": -25,
+          "rotate-x": 90,
+          "vertex-colors": [
+            0.7, 0.5, 0.1, 1,
+            0.7, 0.5, 0.1, 1,
+            0.4, 0.1, 0, 1,
+            0.4, 0.1, 0, 1
+          ],
+          "vertices": [
+            10, 0, -42, 1,
+            -10, 0, -42, 1,
+            -10, 0, 42, 1,
+            10, 0, 42, 1
+          ]
+        },
+        {
+          "id": "dsm-pillar-3-1",
+          "attach-offset-x": -20,
+          "attach-offset-z": -35,
+          "rotate-z": 270,
+          "vertex-colors": [
+            0.4, 0.1, 0, 1,
+            0.7, 0.5, 0.1, 1,
+            0.7, 0.5, 0.1, 1,
+            0.4, 0.1, 0, 1
+          ],
+          "vertices": [
+            42, 0, -10, 1,
+            -42, 0, -10, 1,
+            -42, 0, 10, 1,
+            42, 0, 10, 1
+          ]
+        },
+        {
+          "id": "dsm-pillar-4-0",
+          "attach-offset-x": -70,
+          "attach-offset-z": -5,
+          "rotate-x": 270,
+          "vertex-colors": [
+            0.4, 0.1, 0, 1,
+            0.4, 0.1, 0, 1,
+            0.7, 0.5, 0.1, 1,
+            0.7, 0.5, 0.1, 1
+          ],
+          "vertices": [
+            10, 0, -42, 1,
+            -10, 0, -42, 1,
+            -10, 0, 42, 1,
+            10, 0, 42, 1
+          ]
+        },
+        {
+          "id": "dsm-pillar-4-1",
+          "attach-offset-x": -70,
+          "attach-offset-z": 15,
+          "rotate-x": 90,
+          "vertex-colors": [
+            0.7, 0.5, 0.1, 1,
+            0.7, 0.5, 0.1, 1,
+            0.4, 0.1, 0, 1,
+            0.4, 0.1, 0, 1
+          ],
+          "vertices": [
+            10, 0, -42, 1,
+            -10, 0, -42, 1,
+            -10, 0, 42, 1,
+            10, 0, 42, 1
+          ]
+        },
+        {
+          "id": "dsm-pillar-4-2",
+          "attach-offset-x": -60,
+          "attach-offset-z": 5,
+          "rotate-z": 270,
+          "vertex-colors": [
+            0.4, 0.1, 0, 1,
+            0.7, 0.5, 0.1, 1,
+            0.7, 0.5, 0.1, 1,
+            0.4, 0.1, 0, 1
+          ],
+          "vertices": [
+            42, 0, -10, 1,
+            -42, 0, -10, 1,
+            -42, 0, 10, 1,
+            42, 0, 10, 1
+          ]
+        },
+        {
+          "id": "dsm-pillar-5-0",
+          "attach-offset-x": -70,
+          "attach-offset-z": -25,
+          "rotate-x": 90,
+          "vertex-colors": [
+            0.7, 0.5, 0.1, 1,
+            0.7, 0.5, 0.1, 1,
+            0.4, 0.1, 0, 1,
+            0.4, 0.1, 0, 1
+          ],
+          "vertices": [
+            10, 0, -42, 1,
+            -10, 0, -42, 1,
+            -10, 0, 42, 1,
+            10, 0, 42, 1
+          ]
+        },
+        {
+          "id": "dsm-pillar-5-1",
+          "attach-offset-x": -60,
+          "attach-offset-z": -35,
+          "rotate-z": 270,
+          "vertex-colors": [
+            0.4, 0.1, 0, 1,
+            0.7, 0.5, 0.1, 1,
+            0.7, 0.5, 0.1, 1,
+            0.4, 0.1, 0, 1
+          ],
+          "vertices": [
+            42, 0, -10, 1,
+            -42, 0, -10, 1,
+            -42, 0, 10, 1,
+            42, 0, 10, 1
+          ]
+        },
+        {
+          "id": "dsm-pillar-6-0",
+          "attach-offset-x": 10,
+          "attach-offset-z": -65,
+          "rotate-x": 90,
+          "vertex-colors": [
+            0.7, 0.5, 0.1, 1,
+            0.7, 0.5, 0.1, 1,
+            0.4, 0.1, 0, 1,
+            0.4, 0.1, 0, 1
+          ],
+          "vertices": [
+            10, 0, -42, 1,
+            -10, 0, -42, 1,
+            -10, 0, 42, 1,
+            10, 0, 42, 1
+          ]
+        },
+        {
+          "id": "dsm-pillar-6-1",
+          "attach-offset-z": -75,
+          "rotate-z": 90,
+          "vertex-colors": [
+            0.7, 0.5, 0.1, 1,
+            0.4, 0.1, 0, 1,
+            0.4, 0.1, 0, 1,
+            0.7, 0.5, 0.1, 1
+          ],
+          "vertices": [
+            42, 0, -10, 1,
+            -42, 0, -10, 1,
+            -42, 0, 10, 1,
+            42, 0, 10, 1
+          ]
+        },
+        {
+          "id": "dsm-pillar-6-2",
+          "attach-offset-x": 20,
+          "attach-offset-z": -75,
+          "rotate-z": 270,
+          "vertex-colors": [
+            0.4, 0.1, 0, 1,
+            0.7, 0.5, 0.1, 1,
+            0.7, 0.5, 0.1, 1,
+            0.4, 0.1, 0, 1
+          ],
+          "vertices": [
+            42, 0, -10, 1,
+            -42, 0, -10, 1,
+            -42, 0, 10, 1,
+            42, 0, 10, 1
+          ]
+        },
+        {
+          "id": "dsm-pillar-7-0",
+          "attach-offset-x": -30,
+          "attach-offset-z": -65,
+          "rotate-x": 90,
+          "vertex-colors": [
+            0.7, 0.5, 0.1, 1,
+            0.7, 0.5, 0.1, 1,
+            0.4, 0.1, 0, 1,
+            0.4, 0.1, 0, 1
+          ],
+          "vertices": [
+            10, 0, -42, 1,
+            -10, 0, -42, 1,
+            -10, 0, 42, 1,
+            10, 0, 42, 1
+          ]
+        },
+        {
+          "id": "dsm-pillar-7-1",
+          "attach-offset-x": -20,
+          "attach-offset-z": -75,
+          "rotate-z": 270,
+          "vertex-colors": [
+            0.4, 0.1, 0, 1,
+            0.7, 0.5, 0.1, 1,
+            0.7, 0.5, 0.1, 1,
+            0.4, 0.1, 0, 1
+          ],
+          "vertices": [
+            42, 0, -10, 1,
+            -42, 0, -10, 1,
+            -42, 0, 10, 1,
+            42, 0, 10, 1
+          ]
+        }
+      ],
+      "translate-x": -300,
+      "translate-y": 42,
+      "translate-z": -25
+    }
+  ],
+  "prefabs": [
+    {
+      "type": "cuboid",
+      "properties": {
+        "prefix": "dsm-skybox",
+        "all-vertex-colors": [
+          0.7, 0.5, 0.1, 1,
+          0.7, 0.5, 0.1, 1,
+          0.7, 0.5, 0.1, 1,
+          0.7, 0.5, 0.1, 1
+        ],
+        "character": "dsm",
+        "size-x": -160,
+        "size-y": -84,
+        "size-z": -170
+      }
+    },
+    {
+      "type": "cuboid",
+      "properties": {
+        "prefix": "landing",
+        "character": "lab",
+        "exclude": {
+          "right": true
+        },
+        "properties": {
+          "texture-id": "stone.png",
+          "texture-repeat-x": 10,
+          "texture-repeat-y": 10
+        },
+        "random-colors": true,
+        "size-x": -200,
+        "size-y": -50,
+        "size-z": -400
+      }
+    },
+    {
+      "type": "cuboid",
+      "properties": {
+        "prefix": "pillar-of-transparency",
+        "all-alpha": 0.5,
+        "character": "lab",
+        "exclude": {
+          "bottom": true,
+          "top": true
+        },
+        "random-colors": true,
+        "size-x": 20,
+        "size-y": 50,
+        "size-z": 20
+      }
+    },
+    {
+      "type": "cuboid",
+      "properties": {
+        "prefix": "skybox",
+        "all-collision": false,
+        "random-colors": true,
+        "size-x": -99,
+        "size-y": -99,
+        "size-z": -99,
+        "groups": [
+          "skybox"
+        ]
+      }
+    },
+    {
+      "type": "cuboid",
+      "properties": {
+        "prefix": "testing-range",
+        "character": "lab",
+        "exclude": {
+          "right": true
+        },
+        "properties": {
+          "texture-id": "stone.png",
+          "texture-repeat-x": 10,
+          "texture-repeat-y": 10
+        },
+        "random-colors": true,
+        "size-x": -200,
+        "size-y": -50,
+        "size-z": -400,
+        "translate-y": -56
+      }
+    },
+    {
+      "type": "cuboid",
+      "properties": {
+        "prefix": "testing-track-cube-0",
+        "character": "cube-0",
+        "properties": {
+          "collide-damage": 1,
+          "texture-id": "debug.png"
+        },
+        "size-x": 40,
+        "size-y": 40,
+        "size-z": 40
+      }
+    },
+    {
+      "type": "cuboid_tree",
+      "properties": {
+        "prefix": "tree-0",
+        "character": "tree-0"
+      }
+    },
+    {
+      "type": "lines_tree",
+      "properties": {
+        "prefix": "tree-1",
+        "character": "tree-1"
+      }
+    }
+  ]
+}
