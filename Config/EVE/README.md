@@ -51,10 +51,10 @@ Honzi's EVE Config
 ### Shortcuts
 * Combat:
   * Directional Scan: Z
-  * Lock Target: LWIN
+  * Lock Target: X
 * Drones:
-  * All Drones: Engage: L_Alt
-  * All Drones: Return to Drone Bay: X
+  * All Drones: Engage: C
+  * All Drones: Return to Drone Bay: V
 * General:
   * Toggle 3D View: Control_L-Shift_L-\
   * Toggle User Interface Visibility: KP_Divide
@@ -76,4 +76,5 @@ Honzi's EVE Config
     * Disable Autopilot at each Waypoint: enabled
 4. Agent Missions
 5. Events
-6. Skilling Spree
+6. AIR Career Program
+7. Skilling Spree
