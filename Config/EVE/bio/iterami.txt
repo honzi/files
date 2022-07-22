@@ -4,7 +4,7 @@ Contact=Honzifox
 Alts=imareti
 -https://iterami.github.io/Guides.htm/eve/=guides+fits+notes+tools
 -https://github.com/honzi/biggestisk=list of the most expensive kill of each entity
--https://github.com/iterami/EVE-Overviews.yaml=iterami Overview=2022-03-09
+-https://github.com/iterami/EVE-Overviews.yaml=iterami Overview=2022-07-21
 
 RECRUITMENT
 -Alliance=HAPPY
