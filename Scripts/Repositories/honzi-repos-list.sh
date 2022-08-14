@@ -9,5 +9,4 @@ honzi_repositories='
 biggestisk
 files
 honzi.github.io
-practice
 '
