@@ -8,6 +8,7 @@ Alts=imareti
 
 RECRUITMENT
 -Alliance=HAPPY
--Corp=1T DONATION
+-Alliance Corps=POSSIBLY
+-Corp Members=1T DONATION
 -Structures=ACCEPTED
 -Wars=UNDEFEATED
