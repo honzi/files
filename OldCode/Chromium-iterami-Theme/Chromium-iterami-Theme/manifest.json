@@ -1,0 +1,29 @@
+{
+  "author": "iterami",
+  "description": "CC0 dark Chromium theme.",
+  "homepage_url": "https://github.com/iterami/Chromium-iterami-Theme",
+  "manifest_version": 2,
+  "name": "Chromium-iterami-Theme",
+  "short_name": "CiT",
+  "theme": {
+    "colors" : {
+      "bookmark_text": [170, 170, 170],
+      "button_background": [0, 0, 0],
+      "frame": [0, 0, 0],
+      "frame_inactive": [0, 0, 0],
+      "frame_incognito": [0, 0, 0],
+      "frame_incognito_inactive": [0, 0, 0],
+      "ntp_background": [0, 0, 0],
+      "ntp_header": [255, 255, 255],
+      "ntp_link": [68, 204, 68],
+      "ntp_section": [0, 0, 0],
+      "ntp_section_link": [68, 204, 68],
+      "ntp_section_text": [170, 170, 170],
+      "ntp_text": [170, 170, 170],
+      "tab_background_text": [170, 170, 170],
+      "tab_text": [255, 255, 255],
+      "toolbar": [0, 0, 0]
+    }
+  },
+  "version": "20180707.0"
+}

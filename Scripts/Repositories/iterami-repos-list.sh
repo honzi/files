@@ -12,7 +12,6 @@ AudioEditor.htm
 BaseConverter.htm
 BinaryDataEndecoder.htm
 BlindMouse.htm
-Chromium-iterami-Theme
 clearundostack
 Click.htm
 Clock.htm
