@@ -13,6 +13,7 @@ sudo apt-get install dconf-editor
 sudo apt-get install gdebi-core
 sudo apt-get install git
 sudo apt-get install lm-sensors
+sudo apt-get install ubuntu-restricted-extras
 
 mkdir -p ~/.iterami/
 mkdir -p ~/.iterami/repositories/
