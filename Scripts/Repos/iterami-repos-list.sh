@@ -4,8 +4,8 @@ set -eux
 # No args.
 # Not directly used.
 
-# An array of all iterami repositories.
-iterami_repositories='
+# An array of all iterami repos.
+iterami_repos='
 9YG0E6r.htm
 Aquarium-2D.htm
 AudioEditor.htm
@@ -62,7 +62,7 @@ Profiler.htm
 QjnyYap.htm
 Rain-2D.htm
 random_number_test.htm
-RandomRepository.htm
+RandomRepo.htm
 RandomSCP.htm
 ReactionTest.htm
 RNG.htm

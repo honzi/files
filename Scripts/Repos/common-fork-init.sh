@@ -3,9 +3,9 @@ set -eux
 
 # Required args:
 #   $1: Relative path to the folder in which the
-#         honzi/common repository will be stored.
+#         honzi/common repo will be stored.
 #
-# Example usage: sh common-fork-init.sh repositories
+# Example usage: sh common-fork-init.sh repos
 
 # Check if at least 1 arg is passed.
 if [ $# -lt 1 ]
@@ -19,10 +19,10 @@ fi
 mkdir -p $1
 cd $1
 
-# git clone the repository from GitHub.
+# git clone the repo from GitHub.
 git clone https://github.com/honzi/common.git --depth 1
 
-# Navigate to the root folder of the cloned repository.
+# Navigate to the root folder of the cloned repo.
 cd common
 
 # Set the origin and upstream remote urls.

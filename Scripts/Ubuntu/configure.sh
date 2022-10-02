@@ -10,7 +10,7 @@ amixer set Capture nocap
 amixer set Capture 0%
 amixer set Mic mute
 amixer set Mic 0%
-sh ~/.iterami/repositories/Scripts/ubuntu/xrandr-scale.sh eDP1 1600 900 1920 1080 1.2 1.2
+sh ~/.iterami/repos/Scripts/ubuntu/xrandr-scale.sh eDP1 1600 900 1920 1080 1.2 1.2
 xinput disable 'ETPS/2 Elantech Touchpad'
 xgamma -gamma 1
 

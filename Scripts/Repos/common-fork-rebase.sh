@@ -3,9 +3,9 @@ set -eux
 
 # Required args:
 #   $1: Relative path to the folder in which
-#         the honzi/common repository is stored.
+#         the honzi/common repo is stored.
 #
-# Example usage: sh common-fork-rebase.sh repositories/common
+# Example usage: sh common-fork-rebase.sh repos/common
 
 # Check if at least 1 arg is passed.
 if [ $# -lt 1 ]
@@ -14,7 +14,7 @@ then
     exit 1
 fi
 
-# Navigate to the repository root folder.
+# Navigate to the repo root folder.
 cd $1
 
 # Fetch changes from the upstream gh-pages branch.
