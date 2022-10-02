@@ -203,7 +203,7 @@ gsettings set org.gnome.nm-applet disable-wifi-create true
 gsettings set org.gtk.Settings.FileChooser show-hidden true
 gsettings set org.gtk.Settings.FileChooser window-size '(1100, 600)'
 
-killall indicator-messages-service
+killall indicator-messages-service || /bin/true
 
 
 # Cleanup various folders.
