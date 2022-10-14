@@ -1,5 +1,5 @@
 iterami "CEO" https://iterami.github.io
--https://iterami.github.io/Guides.htm/eve/=guides+fits+notes+tools
+-https://iterami.github.io/Guides.htm/eve/=fits, notes, and tools
 -https://github.com/honzi/biggestisk=list of the most expensive kill of each entity
 -https://github.com/iterami/EVE-Overviews.yaml=iterami Overview
 
