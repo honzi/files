@@ -32,6 +32,8 @@ Honzi's EVE Config
 * Skill Training:
   * Skill Injected
   * Skill Queue Empty
+  * Skill Training Complete
+  * Skills Added from Skill Plan
   * Unused Skill Points
 
 ### Ship HUD
