@@ -29,6 +29,7 @@ Honzi's EVE Config
   * Activity Tracker Mastery
   * Daily Alpha Injection Available
   * Implant Plugged In
+  * Personalization Unlocked
 * Skill Training:
   * Skill Injected
   * Skill Queue Empty
