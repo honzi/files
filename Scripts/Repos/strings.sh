@@ -24,7 +24,6 @@ conversation
 corporation
 difference
 documentation
-HTML
 repository
 statistics
 though
@@ -33,6 +32,6 @@ through
 
 for string in $strings
 do
-    grep -lr --exclude-dir=".git" --exclude-dir="OldCode" --exclude="LICENSE.md" "$string"
+    grep -ilr --exclude-dir=".git" --exclude-dir="OldCode" --exclude="LICENSE.md" "$string"
     echo
 done
