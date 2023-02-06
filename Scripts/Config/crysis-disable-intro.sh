@@ -2,7 +2,7 @@
 set -eux
 
 # No args.
-# Example usage: sh disable-intro.sh
+# Example usage: sh crysis-disable-intro.sh
 
 # Navigate to the intro file folder.
 cd ~/.wine/drive_c/Program\ Files\ \(x86\)/Electronic\ Arts/Crytek/Crysis\ SP\ Demo/Game/Localized/Video

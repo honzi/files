@@ -2,7 +2,7 @@
 set -eux
 
 # No args.
-# Example usage: sh link-ai.sh
+# Example usage: sh warzone2100-link-ai.sh
 
 # Make the required folders.
 mkdir $HOME/.warzone2100-3.1/mods
