@@ -33,6 +33,6 @@ through
 
 for string in $strings
 do
-    grep -ilr --exclude-dir=".git" --exclude-dir="OldCode" --exclude="LICENSE.md" "$string"
+    grep -ilr --exclude-dir=".git" --exclude-dir="OldCode" --exclude="LICENSE.md" --exclude="strings.sh" "$string"
     echo
 done
