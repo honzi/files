@@ -24,6 +24,7 @@ conversation
 corporation
 difference
 documentation
+noopener
 repository
 statistics
 though
