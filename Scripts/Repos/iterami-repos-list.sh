@@ -12,7 +12,6 @@ AudioEditor.htm
 BaseConverter.htm
 BinaryDataEndecoder.htm
 BlindMouse.htm
-clearundostack
 Click.htm
 Clock.htm
 ColorDrops.htm
