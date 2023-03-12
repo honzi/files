@@ -3,6 +3,7 @@ buycrysis.ea.com
 eveonline.com##.Navigation_navRight__1inNk
 google.com##.AUiS2
 reddit.com##.listing-chooser
+stackexchange.com##.js-consent-banner
 stackoverflow.com##.js-consent-banner
 ||vugames.com
 youtube.com###comments
