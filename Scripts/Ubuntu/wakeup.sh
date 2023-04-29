@@ -7,6 +7,5 @@ set -eux
 # CONFIGURE
 sh ~/.iterami/repos/files/Scripts/Ubuntu/configure.sh
 
-
 # UPDATE
 sh ~/.iterami/repos/files/Scripts/Ubuntu/update.sh
