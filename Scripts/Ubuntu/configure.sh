@@ -130,16 +130,21 @@ gsettings set org.gnome.desktop.background primary-color '#000000'
 gsettings set org.gnome.desktop.background secondary-color '#000000'
 gsettings set org.gnome.desktop.interface clock-show-date true
 gsettings set org.gnome.desktop.interface clock-show-seconds true
+gsettings set org.gnome.desktop.interface color-scheme 'prefer-dark'
+gsettings set org.gnome.desktop.interface enable-hot-corners false
 gsettings set org.gnome.desktop.notifications show-in-lock-screen false
 gsettings set org.gnome.desktop.peripherals.mouse speed 0.61151079136690645
 gsettings set org.gnome.desktop.peripherals.touchpad send-events 'disabled-on-external-mouse'
 gsettings set org.gnome.desktop.peripherals.touchpad tap-to-click false
+gsettings set org.gnome.desktop.privacy disable-camera true
+gsettings set org.gnome.desktop.privacy disable-microphone true
 gsettings set org.gnome.desktop.privacy remember-app-usage false
 gsettings set org.gnome.desktop.privacy remember-recent-files false
 gsettings set org.gnome.desktop.screensaver picture-options 'none'
 gsettings set org.gnome.desktop.screensaver primary-color '#000000'
 gsettings set org.gnome.desktop.screensaver secondary-color '#000000'
 gsettings set org.gnome.desktop.session idle-delay 3600
+gsettings set org.gnome.desktop.sound allow-volume-above-100-percent false
 gsettings set org.gnome.desktop.sound event-sounds false
 gsettings set org.gnome.desktop.wm.keybindings activate-window-menu []
 gsettings set org.gnome.desktop.wm.keybindings begin-move []
@@ -185,6 +190,7 @@ gsettings set org.gnome.eog.plugins active-plugins []
 gsettings set org.gnome.gedit.plugins active-plugins []
 gsettings set org.gnome.gedit.plugins.filebrowser filter-mode []
 gsettings set org.gnome.gnome-panel.lockdown locked-down true
+gsettings set org.gnome.login-screen allowed-failures 10
 gsettings set org.gnome.login-screen enable-fingerprint-authentication false
 gsettings set org.gnome.login-screen enable-smartcard-authentication false
 gsettings set org.gnome.metacity edge-tiling false
@@ -197,6 +203,7 @@ gsettings set org.gnome.nautilus.preferences show-create-link true
 gsettings set org.gnome.nautilus.preferences show-hidden-files true
 gsettings set org.gnome.nautilus.preferences show-image-thumbnails 'never'
 gsettings set org.gnome.nm-applet disable-wifi-create true
+gsettings set org.gnome.online-accounts whitelisted-providers []
 gsettings set org.gtk.Settings.FileChooser show-hidden true
 gsettings set org.gtk.Settings.FileChooser window-size '(1100, 600)'
 
