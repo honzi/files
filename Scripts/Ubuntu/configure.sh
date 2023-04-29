@@ -87,6 +87,8 @@ gsettings set com.canonical.indicator.keyboard visible false
 gsettings set com.canonical.indicator.power show-percentage true
 gsettings set com.canonical.indicator.power show-time true
 gsettings set com.canonical.indicator.session suppress-logout-menuitem true
+gsettings set com.canonical.indicator.session suppress-restart-menuitem true
+gsettings set com.canonical.indicator.session suppress-shutdown-menuitem true
 gsettings set com.canonical.indicator.session user-show-menu false
 gsettings set com.ubuntu.update-manager autoclose-install-window false
 gsettings set com.ubuntu.update-manager check-new-release-ignore 'focal'
@@ -197,9 +199,6 @@ gsettings set org.gnome.nautilus.preferences show-image-thumbnails 'never'
 gsettings set org.gnome.nm-applet disable-wifi-create true
 gsettings set org.gtk.Settings.FileChooser show-hidden true
 gsettings set org.gtk.Settings.FileChooser window-size '(1100, 600)'
-
-killall indicator-messages-service || /bin/true
-
 
 # Cleanup various folders.
 > ~/.bash_history
