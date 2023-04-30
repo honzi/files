@@ -10,6 +10,7 @@ sh ~/iterami/repos/files/Scripts/Ubuntu/update.sh
 # INSTALL
 sudo apt-get install dconf-editor
 sudo apt-get install git
+sudo apt-get install menulibre
 
 mkdir -p ~/iterami/
 mkdir -p ~/iterami/repos/
@@ -25,6 +26,7 @@ sudo apt-get upgrade
 sudo apt-get autoremove
 
 # UNINSTALL
+sudo apt-get remove alacarte
 sudo apt-get remove bluez
 sudo apt-get remove gnome-bluetooth
 sudo apt-get remove indicator-bluetooth
