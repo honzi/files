@@ -5,7 +5,7 @@ set -eux
 # Example usage: sh wakeup.sh
 
 # CONFIGURE
-sh ~/.iterami/repos/files/Scripts/Ubuntu/configure.sh
+sh ~/iterami/repos/files/Scripts/Ubuntu/configure.sh
 
 # UPDATE
-sh ~/.iterami/repos/files/Scripts/Ubuntu/update.sh
+sh ~/iterami/repos/files/Scripts/Ubuntu/update.sh
