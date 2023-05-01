@@ -198,6 +198,7 @@ gsettings set org.gnome.login-screen enable-smartcard-authentication false
 gsettings set org.gnome.metacity edge-tiling false
 gsettings set org.gnome.metacity.keybindings toggle-tiled-left []
 gsettings set org.gnome.metacity.keybindings toggle-tiled-right []
+gsettings set org.gnome.nautilus.list-view default-visible-columns ['name', 'size', 'date_modified']
 gsettings set org.gnome.nautilus.list-view default-zoom-level 'small'
 gsettings set org.gnome.nautilus.preferences default-folder-viewer 'list-view'
 gsettings set org.gnome.nautilus.preferences mouse-use-extra-buttons false
