@@ -140,6 +140,7 @@ gsettings set org.gnome.desktop.peripherals.touchpad send-events 'disabled-on-ex
 gsettings set org.gnome.desktop.peripherals.touchpad tap-to-click false
 gsettings set org.gnome.desktop.privacy disable-camera true
 gsettings set org.gnome.desktop.privacy disable-microphone true
+gsettings set org.gnome.desktop.privacy hide-identity true
 gsettings set org.gnome.desktop.privacy remember-app-usage false
 gsettings set org.gnome.desktop.privacy remember-recent-files false
 gsettings set org.gnome.desktop.screensaver picture-options 'none'
@@ -187,6 +188,7 @@ gsettings set org.gnome.desktop.wm.keybindings switch-to-workspace-right []
 gsettings set org.gnome.desktop.wm.keybindings switch-to-workspace-up []
 gsettings set org.gnome.desktop.wm.keybindings toggle-maximized []
 gsettings set org.gnome.desktop.wm.keybindings unmaximize []
+gsettings set org.gnome.desktop.wm.preferences action-middle-click-titlebar 'none'
 gsettings set org.gnome.desktop.wm.preferences num-workspaces 1
 gsettings set org.gnome.eog.plugins active-plugins []
 gsettings set org.gnome.gedit.plugins active-plugins []
