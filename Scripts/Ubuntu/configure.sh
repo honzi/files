@@ -45,6 +45,7 @@ gsettings reset-recursively org.gnome.desktop.a11y.magnifier
 gsettings reset-recursively org.gnome.desktop.a11y.mouse
 gsettings reset-recursively org.gnome.eog
 gsettings reset-recursively org.gnome.gedit
+gsettings reset-recursively org.gnome.gnome-flashback.desktop.icons
 gsettings reset-recursively org.gnome.gnome-panel.general
 gsettings reset-recursively org.gnome.gnome-panel.lockdown
 gsettings reset-recursively org.gnome.gnome-panel.run-dialog
@@ -55,28 +56,22 @@ gsettings reset-recursively org.gnome.nautilus
 gsettings reset-recursively org.gnome.nm-applet
 gsettings reset-recursively org.gnome.power-manager
 gsettings reset-recursively org.gnome.settings-daemon.peripherals
+gsettings reset-recursively org.gnome.shell
 gsettings reset-recursively org.gnome.system.location
 gsettings reset-recursively org.gtk.Settings.ColorChooser
 gsettings reset-recursively org.gtk.Settings.Debug
 gsettings reset-recursively org.gtk.Settings.EmojiChooser
-
-gsettings reset org.gtk.Settings.FileChooser clock-format
-gsettings reset org.gtk.Settings.FileChooser date-format
-gsettings reset org.gtk.Settings.FileChooser expand-folders
-gsettings reset org.gtk.Settings.FileChooser last-folder-uri
-gsettings reset org.gtk.Settings.FileChooser location-mode
-gsettings reset org.gtk.Settings.FileChooser show-hidden
-gsettings reset org.gtk.Settings.FileChooser show-size-column
-gsettings reset org.gtk.Settings.FileChooser sidebar-width
-gsettings reset org.gtk.Settings.FileChooser sort-column
-gsettings reset org.gtk.Settings.FileChooser sort-directories-first
-gsettings reset org.gtk.Settings.FileChooser sort-order
-gsettings reset org.gtk.Settings.FileChooser startup-mode
+gsettings reset-recursively org.gtk.Settings.FileChooser
+gsettings reset-recursively org.gtk.gtk4.Settings.ColorChooser
+gsettings reset-recursively org.gtk.gtk4.Settings.Debug
+gsettings reset-recursively org.gtk.gtk4.Settings.EmojiChooser
+gsettings reset-recursively org.gtk.gtk4.Settings.FileChooser
 
 gsettings set ca.desrt.dconf-editor.Settings mouse-use-extra-buttons false
 gsettings set ca.desrt.dconf-editor.Settings restore-view false
 gsettings set ca.desrt.dconf-editor.Settings show-warning false
 gsettings set ca.desrt.dconf-editor.Settings small-keys-list-rows true
+gsettings set ca.desrt.dconf-editor.Settings use-shortpaths true
 gsettings set com.canonical.indicator.appmenu.hud store-usage-data false
 gsettings set com.canonical.indicator.datetime show-date true
 gsettings set com.canonical.indicator.datetime show-day true
@@ -193,7 +188,11 @@ gsettings set org.gnome.desktop.wm.preferences num-workspaces 1
 gsettings set org.gnome.eog.plugins active-plugins []
 gsettings set org.gnome.gedit.plugins active-plugins []
 gsettings set org.gnome.gedit.plugins.filebrowser filter-mode []
+gsettings set org.gnome.gnome-flashback.desktop.icons show-home false
+gsettings set org.gnome.gnome-flashback.desktop.icons show-trash false
 gsettings set org.gnome.gnome-panel.lockdown locked-down true
+gsettings set org.gnome.gnome-panel.run-dialog enable-autocompletion false
+gsettings set org.gnome.gnome-panel.run-dialog enable-program-list false
 gsettings set org.gnome.login-screen allowed-failures 10
 gsettings set org.gnome.login-screen enable-fingerprint-authentication false
 gsettings set org.gnome.login-screen enable-smartcard-authentication false
@@ -209,13 +208,14 @@ gsettings set org.gnome.nautilus.preferences show-hidden-files true
 gsettings set org.gnome.nautilus.preferences show-image-thumbnails 'never'
 gsettings set org.gnome.nm-applet disable-wifi-create true
 gsettings set org.gnome.online-accounts whitelisted-providers []
+gsettings set org.gnome.shell favorite-apps []
 gsettings set org.gtk.Settings.FileChooser show-hidden true
-gsettings set org.gtk.Settings.FileChooser window-size '(1100, 600)'
+gsettings set org.gtk.gtk4.Settings.FileChooser show-hidden true
 
 # Cleanup various folders.
 > ~/.bash_history
-> ~/.python_history
 > ~/.minecraft/launcher_log.txt
+> ~/.python_history
 sudo rm -rf ~/.cache/thumbnails/*
 sudo rm -rf ~/.local/share/Trash/*
 sudo rm -rf ~/.minecraft/crash-reports/*
