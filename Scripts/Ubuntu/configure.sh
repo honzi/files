@@ -18,114 +18,77 @@ git config --global user.name 'Jan Hořava'
 git config --global user.email czechinthemail@gmail.com
 
 gsettings reset-recursively ca.desrt.dconf-editor.Settings
-gsettings reset-recursively com.canonical.indicator.appmenu
-gsettings reset-recursively com.canonical.indicator.datetime
-gsettings reset-recursively com.canonical.indicator.keyboard
-gsettings reset-recursively com.canonical.indicator.messages
-gsettings reset-recursively com.canonical.indicator.power
-gsettings reset-recursively com.canonical.indicator.sound
-gsettings reset-recursively com.ubuntu.notifications.settings.applications
-gsettings reset-recursively com.ubuntu.phone
-gsettings reset-recursively com.ubuntu.sound
-gsettings reset-recursively com.ubuntu.touch.network
-gsettings reset-recursively com.ubuntu.touch.sound
-gsettings reset-recursively com.ubuntu.touch.system
-gsettings reset-recursively com.ubuntu.update-manager
-gsettings reset-recursively com.ubuntu.update-notifier
-gsettings reset-recursively com.ubuntu.user-interface.desktop
-gsettings reset-recursively org.gnome.Cheese
-gsettings reset-recursively org.gnome.GWeather
-gsettings reset-recursively org.gnome.SessionManager
-gsettings reset-recursively org.gnome.Terminal.Legacy.Settings
-gsettings reset-recursively org.gnome.calendar
-gsettings reset-recursively org.gnome.desktop.a11y
-gsettings reset-recursively org.gnome.desktop.a11y.applications
-gsettings reset-recursively org.gnome.desktop.a11y.keyboard
-gsettings reset-recursively org.gnome.desktop.a11y.magnifier
-gsettings reset-recursively org.gnome.desktop.a11y.mouse
-gsettings reset-recursively org.gnome.desktop.background
-gsettings reset-recursively org.gnome.eog
-gsettings reset-recursively org.gnome.gedit
-gsettings reset-recursively org.gnome.gnome-flashback.desktop.icons
-gsettings reset-recursively org.gnome.gnome-panel.general
-gsettings reset-recursively org.gnome.gnome-panel.lockdown
-gsettings reset-recursively org.gnome.gnome-panel.run-dialog
-gsettings reset-recursively org.gnome.gnome-system-monitor
-gsettings reset-recursively org.gnome.login-screen
-gsettings reset-recursively org.gnome.metacity
-gsettings reset-recursively org.gnome.nautilus
-gsettings reset-recursively org.gnome.nm-applet
-gsettings reset-recursively org.gnome.power-manager
-gsettings reset-recursively org.gnome.settings-daemon.peripherals
-gsettings reset-recursively org.gnome.shell
-gsettings reset-recursively org.gnome.system.location
-gsettings reset-recursively org.gtk.Settings.ColorChooser
-gsettings reset-recursively org.gtk.Settings.Debug
-gsettings reset-recursively org.gtk.Settings.EmojiChooser
-gsettings reset-recursively org.gtk.Settings.FileChooser
-gsettings reset-recursively org.gtk.gtk4.Settings.ColorChooser
-gsettings reset-recursively org.gtk.gtk4.Settings.Debug
-gsettings reset-recursively org.gtk.gtk4.Settings.EmojiChooser
-gsettings reset-recursively org.gtk.gtk4.Settings.FileChooser
-
 gsettings set ca.desrt.dconf-editor.Settings mouse-use-extra-buttons false
 gsettings set ca.desrt.dconf-editor.Settings restore-view false
 gsettings set ca.desrt.dconf-editor.Settings show-warning false
 gsettings set ca.desrt.dconf-editor.Settings small-keys-list-rows true
 gsettings set ca.desrt.dconf-editor.Settings use-shortpaths true
+
+gsettings reset-recursively com.canonical.indicator.appmenu
 gsettings set com.canonical.indicator.appmenu.hud store-usage-data false
+
+gsettings reset-recursively com.canonical.indicator.datetime
 gsettings set com.canonical.indicator.datetime show-date true
 gsettings set com.canonical.indicator.datetime show-day true
 gsettings set com.canonical.indicator.datetime show-seconds true
 gsettings set com.canonical.indicator.datetime show-week-numbers true
 gsettings set com.canonical.indicator.datetime time-format '24-hour'
+
+gsettings reset-recursively com.canonical.indicator.keyboard
 gsettings set com.canonical.indicator.keyboard visible false
+
+gsettings reset-recursively com.canonical.indicator.messages
+
+gsettings reset-recursively com.canonical.indicator.power
 gsettings set com.canonical.indicator.power show-percentage true
 gsettings set com.canonical.indicator.power show-time true
 gsettings set com.canonical.indicator.session suppress-logout-menuitem true
 gsettings set com.canonical.indicator.session suppress-restart-menuitem true
 gsettings set com.canonical.indicator.session suppress-shutdown-menuitem true
 gsettings set com.canonical.indicator.session user-show-menu false
+
+gsettings reset-recursively com.canonical.indicator.sound
+
+gsettings reset-recursively com.ubuntu.notifications.settings.applications
+
+gsettings reset-recursively com.ubuntu.phone
+
+gsettings reset-recursively com.ubuntu.sound
+
+gsettings reset-recursively com.ubuntu.touch.network
+
+gsettings reset-recursively com.ubuntu.touch.sound
+
+gsettings reset-recursively com.ubuntu.touch.system
+
+gsettings reset-recursively com.ubuntu.update-manager
 gsettings set com.ubuntu.update-manager autoclose-install-window false
 gsettings set com.ubuntu.update-manager check-new-release-ignore 'focal'
 gsettings set com.ubuntu.update-manager first-run false
 gsettings set com.ubuntu.update-manager show-details true
 gsettings set com.ubuntu.update-manager show-versions true
+
+gsettings reset-recursively com.ubuntu.update-notifier
+
+gsettings reset-recursively com.ubuntu.user-interface.desktop
+
+gsettings reset-recursively org.gnome.calendar
+
+gsettings reset-recursively org.gnome.Cheese
 gsettings set org.gnome.ControlCenter last-panel 'background'
 gsettings set org.gnome.FileRoller.FileSelector show-hidden true
-gsettings set org.gnome.GWeather distance-unit 'km'
-gsettings set org.gnome.GWeather pressure-unit 'atm'
-gsettings set org.gnome.GWeather speed-unit 'ms'
-gsettings set org.gnome.GWeather temperature-unit 'centigrade'
-gsettings set org.gnome.GWeather4 distance-unit 'km'
-gsettings set org.gnome.GWeather4 pressure-unit 'atm'
-gsettings set org.gnome.GWeather4 speed-unit 'ms'
-gsettings set org.gnome.GWeather4 temperature-unit 'centigrade'
-gsettings set org.gnome.Terminal.Legacy.Keybindings:/org/gnome/terminal/legacy/keybindings/ close-window 'disabled'
-gsettings set org.gnome.Terminal.Legacy.Keybindings:/org/gnome/terminal/legacy/keybindings/ find 'disabled'
-gsettings set org.gnome.Terminal.Legacy.Keybindings:/org/gnome/terminal/legacy/keybindings/ find-clear 'disabled'
-gsettings set org.gnome.Terminal.Legacy.Keybindings:/org/gnome/terminal/legacy/keybindings/ find-next 'disabled'
-gsettings set org.gnome.Terminal.Legacy.Keybindings:/org/gnome/terminal/legacy/keybindings/ find-previous 'disabled'
-gsettings set org.gnome.Terminal.Legacy.Keybindings:/org/gnome/terminal/legacy/keybindings/ full-screen 'disabled'
-gsettings set org.gnome.Terminal.Legacy.Keybindings:/org/gnome/terminal/legacy/keybindings/ move-tab-left 'disabled'
-gsettings set org.gnome.Terminal.Legacy.Keybindings:/org/gnome/terminal/legacy/keybindings/ move-tab-right 'disabled'
-gsettings set org.gnome.Terminal.Legacy.Keybindings:/org/gnome/terminal/legacy/keybindings/ new-window 'disabled'
-gsettings set org.gnome.Terminal.Legacy.Keybindings:/org/gnome/terminal/legacy/keybindings/ next-tab 'disabled'
-gsettings set org.gnome.Terminal.Legacy.Keybindings:/org/gnome/terminal/legacy/keybindings/ prev-tab 'disabled'
-gsettings set org.gnome.Terminal.Legacy.Keybindings:/org/gnome/terminal/legacy/keybindings/ switch-to-tab-1 'disabled'
-gsettings set org.gnome.Terminal.Legacy.Keybindings:/org/gnome/terminal/legacy/keybindings/ switch-to-tab-10 'disabled'
-gsettings set org.gnome.Terminal.Legacy.Keybindings:/org/gnome/terminal/legacy/keybindings/ switch-to-tab-2 'disabled'
-gsettings set org.gnome.Terminal.Legacy.Keybindings:/org/gnome/terminal/legacy/keybindings/ switch-to-tab-3 'disabled'
-gsettings set org.gnome.Terminal.Legacy.Keybindings:/org/gnome/terminal/legacy/keybindings/ switch-to-tab-4 'disabled'
-gsettings set org.gnome.Terminal.Legacy.Keybindings:/org/gnome/terminal/legacy/keybindings/ switch-to-tab-5 'disabled'
-gsettings set org.gnome.Terminal.Legacy.Keybindings:/org/gnome/terminal/legacy/keybindings/ switch-to-tab-6 'disabled'
-gsettings set org.gnome.Terminal.Legacy.Keybindings:/org/gnome/terminal/legacy/keybindings/ switch-to-tab-7 'disabled'
-gsettings set org.gnome.Terminal.Legacy.Keybindings:/org/gnome/terminal/legacy/keybindings/ switch-to-tab-8 'disabled'
-gsettings set org.gnome.Terminal.Legacy.Keybindings:/org/gnome/terminal/legacy/keybindings/ switch-to-tab-9 'disabled'
-gsettings set org.gnome.Terminal.Legacy.Keybindings:/org/gnome/terminal/legacy/keybindings/ zoom-in 'disabled'
-gsettings set org.gnome.Terminal.Legacy.Keybindings:/org/gnome/terminal/legacy/keybindings/ zoom-normal 'disabled'
-gsettings set org.gnome.Terminal.Legacy.Keybindings:/org/gnome/terminal/legacy/keybindings/ zoom-out 'disabled'
-gsettings set org.gnome.Terminal.Legacy.Settings new-terminal-mode 'tab'
+
+gsettings reset-recursively org.gnome.desktop.a11y
+
+gsettings reset-recursively org.gnome.desktop.a11y.applications
+
+gsettings reset-recursively org.gnome.desktop.a11y.keyboard
+
+gsettings reset-recursively org.gnome.desktop.a11y.magnifier
+
+gsettings reset-recursively org.gnome.desktop.a11y.mouse
+
+gsettings reset-recursively org.gnome.desktop.background
 gsettings set org.gnome.desktop.background color-shading-type 'solid'
 gsettings set org.gnome.desktop.background picture-options 'none'
 gsettings set org.gnome.desktop.background primary-color '#000000'
@@ -196,9 +159,15 @@ gsettings set org.gnome.desktop.wm.keybindings toggle-maximized []
 gsettings set org.gnome.desktop.wm.keybindings unmaximize []
 gsettings set org.gnome.desktop.wm.preferences action-middle-click-titlebar 'none'
 gsettings set org.gnome.desktop.wm.preferences num-workspaces 1
+
+gsettings reset-recursively org.gnome.eog
 gsettings set org.gnome.eog.plugins active-plugins []
+
+gsettings reset-recursively org.gnome.gedit
 gsettings set org.gnome.gedit.plugins active-plugins []
 gsettings set org.gnome.gedit.plugins.filebrowser filter-mode []
+
+gsettings reset-recursively org.gnome.gnome-flashback.desktop.icons
 gsettings set org.gnome.gnome-flashback.desktop.icons show-home false
 gsettings set org.gnome.gnome-flashback.desktop.icons show-trash false
 gsettings set org.gnome.gnome-flashback.keybindings area-screenshot []
@@ -209,12 +178,36 @@ gsettings set org.gnome.gnome-flashback.keybindings screenshot []
 gsettings set org.gnome.gnome-flashback.keybindings screenshot-clip []
 gsettings set org.gnome.gnome-flashback.keybindings window-screenshot []
 gsettings set org.gnome.gnome-flashback.keybindings window-screenshot-clip []
+
+gsettings reset-recursively org.gnome.gnome-panel.general
+
+gsettings reset-recursively org.gnome.gnome-panel.lockdown
 gsettings set org.gnome.gnome-panel.lockdown locked-down true
+
+gsettings reset-recursively org.gnome.gnome-panel.run-dialog
 gsettings set org.gnome.gnome-panel.run-dialog enable-autocompletion false
 gsettings set org.gnome.gnome-panel.run-dialog enable-program-list false
+
+gsettings reset-recursively org.gnome.gnome-system-monitor
+
+gsettings reset-recursively org.gnome.GWeather
+gsettings set org.gnome.GWeather distance-unit 'km'
+gsettings set org.gnome.GWeather pressure-unit 'atm'
+gsettings set org.gnome.GWeather speed-unit 'ms'
+gsettings set org.gnome.GWeather temperature-unit 'centigrade'
+
+gsettings reset-recursively org.gnome.GWeather4
+gsettings set org.gnome.GWeather4 distance-unit 'km'
+gsettings set org.gnome.GWeather4 pressure-unit 'atm'
+gsettings set org.gnome.GWeather4 speed-unit 'ms'
+gsettings set org.gnome.GWeather4 temperature-unit 'centigrade'
+
+gsettings reset-recursively org.gnome.login-screen
 gsettings set org.gnome.login-screen allowed-failures 10
 gsettings set org.gnome.login-screen enable-fingerprint-authentication false
 gsettings set org.gnome.login-screen enable-smartcard-authentication false
+
+gsettings reset-recursively org.gnome.metacity
 gsettings set org.gnome.metacity edge-tiling false
 gsettings set org.gnome.metacity.keybindings toggle-tiled-left []
 gsettings set org.gnome.metacity.keybindings toggle-tiled-right []
@@ -234,6 +227,8 @@ gsettings set org.gnome.mutter.wayland.keybindings switch-to-session-6 []
 gsettings set org.gnome.mutter.wayland.keybindings switch-to-session-7 []
 gsettings set org.gnome.mutter.wayland.keybindings switch-to-session-8 []
 gsettings set org.gnome.mutter.wayland.keybindings switch-to-session-9 []
+
+gsettings reset-recursively org.gnome.nautilus
 gsettings set org.gnome.nautilus.list-view default-visible-columns "['name', 'size', 'date_modified']"
 gsettings set org.gnome.nautilus.list-view default-zoom-level 'small'
 gsettings set org.gnome.nautilus.preferences default-folder-viewer 'list-view'
@@ -242,8 +237,42 @@ gsettings set org.gnome.nautilus.preferences show-create-link true
 gsettings set org.gnome.nautilus.preferences show-hidden-files true
 gsettings set org.gnome.nautilus.preferences show-image-thumbnails 'never'
 gsettings set org.gnome.nautilus.preferences thumbnail-limit 10
+
+gsettings reset-recursively org.gnome.nm-applet
 gsettings set org.gnome.nm-applet disable-wifi-create true
 gsettings set org.gnome.online-accounts whitelisted-providers []
+
+gsettings reset-recursively org.gnome.power-manager
+
+gsettings reset-recursively org.gnome.SessionManager
+gsettings set org.gnome.Terminal.Legacy.Keybindings:/org/gnome/terminal/legacy/keybindings/ close-window 'disabled'
+gsettings set org.gnome.Terminal.Legacy.Keybindings:/org/gnome/terminal/legacy/keybindings/ find 'disabled'
+gsettings set org.gnome.Terminal.Legacy.Keybindings:/org/gnome/terminal/legacy/keybindings/ find-clear 'disabled'
+gsettings set org.gnome.Terminal.Legacy.Keybindings:/org/gnome/terminal/legacy/keybindings/ find-next 'disabled'
+gsettings set org.gnome.Terminal.Legacy.Keybindings:/org/gnome/terminal/legacy/keybindings/ find-previous 'disabled'
+gsettings set org.gnome.Terminal.Legacy.Keybindings:/org/gnome/terminal/legacy/keybindings/ full-screen 'disabled'
+gsettings set org.gnome.Terminal.Legacy.Keybindings:/org/gnome/terminal/legacy/keybindings/ move-tab-left 'disabled'
+gsettings set org.gnome.Terminal.Legacy.Keybindings:/org/gnome/terminal/legacy/keybindings/ move-tab-right 'disabled'
+gsettings set org.gnome.Terminal.Legacy.Keybindings:/org/gnome/terminal/legacy/keybindings/ new-window 'disabled'
+gsettings set org.gnome.Terminal.Legacy.Keybindings:/org/gnome/terminal/legacy/keybindings/ next-tab 'disabled'
+gsettings set org.gnome.Terminal.Legacy.Keybindings:/org/gnome/terminal/legacy/keybindings/ prev-tab 'disabled'
+gsettings set org.gnome.Terminal.Legacy.Keybindings:/org/gnome/terminal/legacy/keybindings/ switch-to-tab-1 'disabled'
+gsettings set org.gnome.Terminal.Legacy.Keybindings:/org/gnome/terminal/legacy/keybindings/ switch-to-tab-10 'disabled'
+gsettings set org.gnome.Terminal.Legacy.Keybindings:/org/gnome/terminal/legacy/keybindings/ switch-to-tab-2 'disabled'
+gsettings set org.gnome.Terminal.Legacy.Keybindings:/org/gnome/terminal/legacy/keybindings/ switch-to-tab-3 'disabled'
+gsettings set org.gnome.Terminal.Legacy.Keybindings:/org/gnome/terminal/legacy/keybindings/ switch-to-tab-4 'disabled'
+gsettings set org.gnome.Terminal.Legacy.Keybindings:/org/gnome/terminal/legacy/keybindings/ switch-to-tab-5 'disabled'
+gsettings set org.gnome.Terminal.Legacy.Keybindings:/org/gnome/terminal/legacy/keybindings/ switch-to-tab-6 'disabled'
+gsettings set org.gnome.Terminal.Legacy.Keybindings:/org/gnome/terminal/legacy/keybindings/ switch-to-tab-7 'disabled'
+gsettings set org.gnome.Terminal.Legacy.Keybindings:/org/gnome/terminal/legacy/keybindings/ switch-to-tab-8 'disabled'
+gsettings set org.gnome.Terminal.Legacy.Keybindings:/org/gnome/terminal/legacy/keybindings/ switch-to-tab-9 'disabled'
+gsettings set org.gnome.Terminal.Legacy.Keybindings:/org/gnome/terminal/legacy/keybindings/ zoom-in 'disabled'
+gsettings set org.gnome.Terminal.Legacy.Keybindings:/org/gnome/terminal/legacy/keybindings/ zoom-normal 'disabled'
+gsettings set org.gnome.Terminal.Legacy.Keybindings:/org/gnome/terminal/legacy/keybindings/ zoom-out 'disabled'
+
+gsettings reset-recursively org.gnome.settings-daemon.peripherals
+
+gsettings reset-recursively org.gnome.shell
 gsettings set org.gnome.shell favorite-apps []
 gsettings set org.gnome.shell.keybindings focus-active-notification []
 gsettings set org.gnome.shell.keybindings open-application-menu []
@@ -267,7 +296,28 @@ gsettings set org.gnome.shell.keybindings toggle-message-tray []
 gsettings set org.gnome.shell.keybindings toggle-overview []
 gsettings set org.gnome.shell.overrides edge-tiling false
 gsettings set org.gnome.shell.ubuntu color-scheme 'prefer-dark'
+
+gsettings reset-recursively org.gnome.system.location
+
+gsettings reset-recursively org.gnome.Terminal.Legacy.Settings
+gsettings set org.gnome.Terminal.Legacy.Settings new-terminal-mode 'tab'
+
+gsettings reset-recursively org.gtk.Settings.ColorChooser
+
+gsettings reset-recursively org.gtk.Settings.Debug
+
+gsettings reset-recursively org.gtk.Settings.EmojiChooser
+
+gsettings reset-recursively org.gtk.Settings.FileChooser
 gsettings set org.gtk.Settings.FileChooser show-hidden true
+
+gsettings reset-recursively org.gtk.gtk4.Settings.ColorChooser
+
+gsettings reset-recursively org.gtk.gtk4.Settings.Debug
+
+gsettings reset-recursively org.gtk.gtk4.Settings.EmojiChooser
+
+gsettings reset-recursively org.gtk.gtk4.Settings.FileChooser
 gsettings set org.gtk.gtk4.Settings.FileChooser show-hidden true
 
 # Cleanup various folders.
