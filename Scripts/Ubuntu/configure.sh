@@ -43,6 +43,7 @@ gsettings reset-recursively org.gnome.desktop.a11y.applications
 gsettings reset-recursively org.gnome.desktop.a11y.keyboard
 gsettings reset-recursively org.gnome.desktop.a11y.magnifier
 gsettings reset-recursively org.gnome.desktop.a11y.mouse
+gsettings reset-recursively org.gnome.desktop.background
 gsettings reset-recursively org.gnome.eog
 gsettings reset-recursively org.gnome.gedit
 gsettings reset-recursively org.gnome.gnome-flashback.desktop.icons
@@ -91,9 +92,15 @@ gsettings set com.ubuntu.update-manager first-run false
 gsettings set com.ubuntu.update-manager show-details true
 gsettings set com.ubuntu.update-manager show-versions true
 gsettings set org.gnome.ControlCenter last-panel 'background'
+gsettings set org.gnome.FileRoller.FileSelector show-hidden true
 gsettings set org.gnome.GWeather distance-unit 'km'
+gsettings set org.gnome.GWeather pressure-unit 'atm'
 gsettings set org.gnome.GWeather speed-unit 'ms'
 gsettings set org.gnome.GWeather temperature-unit 'centigrade'
+gsettings set org.gnome.GWeather4 distance-unit 'km'
+gsettings set org.gnome.GWeather4 pressure-unit 'atm'
+gsettings set org.gnome.GWeather4 speed-unit 'ms'
+gsettings set org.gnome.GWeather4 temperature-unit 'centigrade'
 gsettings set org.gnome.Terminal.Legacy.Keybindings:/org/gnome/terminal/legacy/keybindings/ close-window 'disabled'
 gsettings set org.gnome.Terminal.Legacy.Keybindings:/org/gnome/terminal/legacy/keybindings/ find 'disabled'
 gsettings set org.gnome.Terminal.Legacy.Keybindings:/org/gnome/terminal/legacy/keybindings/ find-clear 'disabled'
@@ -131,7 +138,9 @@ gsettings set org.gnome.desktop.interface gtk-theme 'Yaru-dark'
 gsettings set org.gnome.desktop.interface show-battery-percentage true
 gsettings set org.gnome.desktop.notifications show-in-lock-screen false
 gsettings set org.gnome.desktop.peripherals.mouse speed 0.61151079136690645
+gsettings set org.gnome.desktop.peripherals.touchpad natural-scroll false
 gsettings set org.gnome.desktop.peripherals.touchpad send-events 'disabled-on-external-mouse'
+gsettings set org.gnome.desktop.peripherals.touchpad tap-and-drag false
 gsettings set org.gnome.desktop.peripherals.touchpad tap-to-click false
 gsettings set org.gnome.desktop.privacy disable-camera true
 gsettings set org.gnome.desktop.privacy disable-microphone true
@@ -169,6 +178,8 @@ gsettings set org.gnome.desktop.wm.keybindings move-to-workspace-up []
 gsettings set org.gnome.desktop.wm.keybindings panel-main-menu []
 gsettings set org.gnome.desktop.wm.keybindings panel-run-dialog []
 gsettings set org.gnome.desktop.wm.keybindings show-desktop []
+gsettings set org.gnome.desktop.wm.keybindings switch-applications []
+gsettings set org.gnome.desktop.wm.keybindings switch-applications-backward []
 gsettings set org.gnome.desktop.wm.keybindings switch-group []
 gsettings set org.gnome.desktop.wm.keybindings switch-group-backward []
 gsettings set org.gnome.desktop.wm.keybindings switch-input-source []
@@ -190,6 +201,14 @@ gsettings set org.gnome.gedit.plugins active-plugins []
 gsettings set org.gnome.gedit.plugins.filebrowser filter-mode []
 gsettings set org.gnome.gnome-flashback.desktop.icons show-home false
 gsettings set org.gnome.gnome-flashback.desktop.icons show-trash false
+gsettings set org.gnome.gnome-flashback.keybindings area-screenshot []
+gsettings set org.gnome.gnome-flashback.keybindings area-screenshot-clip []
+gsettings set org.gnome.gnome-flashback.keybindings max-screencast-length 0
+gsettings set org.gnome.gnome-flashback.keybindings screencast []
+gsettings set org.gnome.gnome-flashback.keybindings screenshot []
+gsettings set org.gnome.gnome-flashback.keybindings screenshot-clip []
+gsettings set org.gnome.gnome-flashback.keybindings window-screenshot []
+gsettings set org.gnome.gnome-flashback.keybindings window-screenshot-clip []
 gsettings set org.gnome.gnome-panel.lockdown locked-down true
 gsettings set org.gnome.gnome-panel.run-dialog enable-autocompletion false
 gsettings set org.gnome.gnome-panel.run-dialog enable-program-list false
@@ -199,6 +218,22 @@ gsettings set org.gnome.login-screen enable-smartcard-authentication false
 gsettings set org.gnome.metacity edge-tiling false
 gsettings set org.gnome.metacity.keybindings toggle-tiled-left []
 gsettings set org.gnome.metacity.keybindings toggle-tiled-right []
+gsettings set org.gnome.mutter dynamic-workspaces false
+gsettings set org.gnome.mutter.keybindings toggle-tiled-left []
+gsettings set org.gnome.mutter.keybindings toggle-tiled-right []
+gsettings set org.gnome.mutter.wayland.keybindings restore-shortcuts []
+gsettings set org.gnome.mutter.wayland.keybindings switch-to-session-1 []
+gsettings set org.gnome.mutter.wayland.keybindings switch-to-session-10 []
+gsettings set org.gnome.mutter.wayland.keybindings switch-to-session-11 []
+gsettings set org.gnome.mutter.wayland.keybindings switch-to-session-12 []
+gsettings set org.gnome.mutter.wayland.keybindings switch-to-session-2 []
+gsettings set org.gnome.mutter.wayland.keybindings switch-to-session-3 []
+gsettings set org.gnome.mutter.wayland.keybindings switch-to-session-4 []
+gsettings set org.gnome.mutter.wayland.keybindings switch-to-session-5 []
+gsettings set org.gnome.mutter.wayland.keybindings switch-to-session-6 []
+gsettings set org.gnome.mutter.wayland.keybindings switch-to-session-7 []
+gsettings set org.gnome.mutter.wayland.keybindings switch-to-session-8 []
+gsettings set org.gnome.mutter.wayland.keybindings switch-to-session-9 []
 gsettings set org.gnome.nautilus.list-view default-visible-columns "['name', 'size', 'date_modified']"
 gsettings set org.gnome.nautilus.list-view default-zoom-level 'small'
 gsettings set org.gnome.nautilus.preferences default-folder-viewer 'list-view'
@@ -206,9 +241,32 @@ gsettings set org.gnome.nautilus.preferences mouse-use-extra-buttons false
 gsettings set org.gnome.nautilus.preferences show-create-link true
 gsettings set org.gnome.nautilus.preferences show-hidden-files true
 gsettings set org.gnome.nautilus.preferences show-image-thumbnails 'never'
+gsettings set org.gnome.nautilus.preferences thumbnail-limit 10
 gsettings set org.gnome.nm-applet disable-wifi-create true
 gsettings set org.gnome.online-accounts whitelisted-providers []
 gsettings set org.gnome.shell favorite-apps []
+gsettings set org.gnome.shell.keybindings focus-active-notification []
+gsettings set org.gnome.shell.keybindings open-application-menu []
+gsettings set org.gnome.shell.keybindings screenshot []
+gsettings set org.gnome.shell.keybindings screenshot-window []
+gsettings set org.gnome.shell.keybindings shift-overview-down []
+gsettings set org.gnome.shell.keybindings shift-overview-up []
+gsettings set org.gnome.shell.keybindings show-screen-recording-ui []
+gsettings set org.gnome.shell.keybindings show-screenshot-ui []
+gsettings set org.gnome.shell.keybindings switch-to-application-1 []
+gsettings set org.gnome.shell.keybindings switch-to-application-2 []
+gsettings set org.gnome.shell.keybindings switch-to-application-3 []
+gsettings set org.gnome.shell.keybindings switch-to-application-4 []
+gsettings set org.gnome.shell.keybindings switch-to-application-5 []
+gsettings set org.gnome.shell.keybindings switch-to-application-6 []
+gsettings set org.gnome.shell.keybindings switch-to-application-7 []
+gsettings set org.gnome.shell.keybindings switch-to-application-8 []
+gsettings set org.gnome.shell.keybindings switch-to-application-9 []
+gsettings set org.gnome.shell.keybindings toggle-application-view []
+gsettings set org.gnome.shell.keybindings toggle-message-tray []
+gsettings set org.gnome.shell.keybindings toggle-overview []
+gsettings set org.gnome.shell.overrides edge-tiling false
+gsettings set org.gnome.shell.ubuntu color-scheme 'prefer-dark'
 gsettings set org.gtk.Settings.FileChooser show-hidden true
 gsettings set org.gtk.gtk4.Settings.FileChooser show-hidden true
 
