@@ -42,6 +42,7 @@ gsettings reset-recursively com.canonical.indicator.messages
 gsettings reset-recursively com.canonical.indicator.power
 gsettings set com.canonical.indicator.power show-percentage true
 gsettings set com.canonical.indicator.power show-time true
+
 gsettings set com.canonical.indicator.session suppress-logout-menuitem true
 gsettings set com.canonical.indicator.session suppress-restart-menuitem true
 gsettings set com.canonical.indicator.session suppress-shutdown-menuitem true
@@ -75,7 +76,9 @@ gsettings reset-recursively com.ubuntu.user-interface.desktop
 gsettings reset-recursively org.gnome.calendar
 
 gsettings reset-recursively org.gnome.Cheese
+
 gsettings set org.gnome.ControlCenter last-panel 'background'
+
 gsettings set org.gnome.FileRoller.FileSelector show-hidden true
 
 gsettings reset-recursively org.gnome.desktop.a11y
@@ -93,29 +96,37 @@ gsettings set org.gnome.desktop.background color-shading-type 'solid'
 gsettings set org.gnome.desktop.background picture-options 'none'
 gsettings set org.gnome.desktop.background primary-color '#000000'
 gsettings set org.gnome.desktop.background secondary-color '#000000'
+
 gsettings set org.gnome.desktop.interface clock-show-date true
 gsettings set org.gnome.desktop.interface clock-show-seconds true
 gsettings set org.gnome.desktop.interface color-scheme 'prefer-dark'
 gsettings set org.gnome.desktop.interface enable-hot-corners false
 gsettings set org.gnome.desktop.interface gtk-theme 'Yaru-dark'
 gsettings set org.gnome.desktop.interface show-battery-percentage true
+
 gsettings set org.gnome.desktop.notifications show-in-lock-screen false
+
 gsettings set org.gnome.desktop.peripherals.mouse speed 0.61151079136690645
 gsettings set org.gnome.desktop.peripherals.touchpad natural-scroll false
 gsettings set org.gnome.desktop.peripherals.touchpad send-events 'disabled-on-external-mouse'
 gsettings set org.gnome.desktop.peripherals.touchpad tap-and-drag false
 gsettings set org.gnome.desktop.peripherals.touchpad tap-to-click false
+
 gsettings set org.gnome.desktop.privacy disable-camera true
 gsettings set org.gnome.desktop.privacy disable-microphone true
 gsettings set org.gnome.desktop.privacy hide-identity true
 gsettings set org.gnome.desktop.privacy remember-app-usage false
 gsettings set org.gnome.desktop.privacy remember-recent-files false
+
 gsettings set org.gnome.desktop.screensaver picture-options 'none'
 gsettings set org.gnome.desktop.screensaver primary-color '#000000'
 gsettings set org.gnome.desktop.screensaver secondary-color '#000000'
+
 gsettings set org.gnome.desktop.session idle-delay 3600
+
 gsettings set org.gnome.desktop.sound allow-volume-above-100-percent false
 gsettings set org.gnome.desktop.sound event-sounds false
+
 gsettings set org.gnome.desktop.wm.keybindings activate-window-menu []
 gsettings set org.gnome.desktop.wm.keybindings begin-move []
 gsettings set org.gnome.desktop.wm.keybindings begin-resize []
@@ -157,6 +168,7 @@ gsettings set org.gnome.desktop.wm.keybindings switch-to-workspace-right []
 gsettings set org.gnome.desktop.wm.keybindings switch-to-workspace-up []
 gsettings set org.gnome.desktop.wm.keybindings toggle-maximized []
 gsettings set org.gnome.desktop.wm.keybindings unmaximize []
+
 gsettings set org.gnome.desktop.wm.preferences action-middle-click-titlebar 'none'
 gsettings set org.gnome.desktop.wm.preferences num-workspaces 1
 
@@ -170,6 +182,7 @@ gsettings set org.gnome.gedit.plugins.filebrowser filter-mode []
 gsettings reset-recursively org.gnome.gnome-flashback.desktop.icons
 gsettings set org.gnome.gnome-flashback.desktop.icons show-home false
 gsettings set org.gnome.gnome-flashback.desktop.icons show-trash false
+
 gsettings set org.gnome.gnome-flashback.keybindings area-screenshot []
 gsettings set org.gnome.gnome-flashback.keybindings area-screenshot-clip []
 gsettings set org.gnome.gnome-flashback.keybindings max-screencast-length 0
@@ -211,9 +224,12 @@ gsettings reset-recursively org.gnome.metacity
 gsettings set org.gnome.metacity edge-tiling false
 gsettings set org.gnome.metacity.keybindings toggle-tiled-left []
 gsettings set org.gnome.metacity.keybindings toggle-tiled-right []
+
 gsettings set org.gnome.mutter dynamic-workspaces false
+
 gsettings set org.gnome.mutter.keybindings toggle-tiled-left []
 gsettings set org.gnome.mutter.keybindings toggle-tiled-right []
+
 gsettings set org.gnome.mutter.wayland.keybindings restore-shortcuts []
 gsettings set org.gnome.mutter.wayland.keybindings switch-to-session-1 []
 gsettings set org.gnome.mutter.wayland.keybindings switch-to-session-10 []
@@ -231,6 +247,7 @@ gsettings set org.gnome.mutter.wayland.keybindings switch-to-session-9 []
 gsettings reset-recursively org.gnome.nautilus
 gsettings set org.gnome.nautilus.list-view default-visible-columns "['name', 'size', 'date_modified']"
 gsettings set org.gnome.nautilus.list-view default-zoom-level 'small'
+
 gsettings set org.gnome.nautilus.preferences default-folder-viewer 'list-view'
 gsettings set org.gnome.nautilus.preferences mouse-use-extra-buttons false
 gsettings set org.gnome.nautilus.preferences show-create-link true
@@ -240,11 +257,45 @@ gsettings set org.gnome.nautilus.preferences thumbnail-limit 10
 
 gsettings reset-recursively org.gnome.nm-applet
 gsettings set org.gnome.nm-applet disable-wifi-create true
+
 gsettings set org.gnome.online-accounts whitelisted-providers []
 
 gsettings reset-recursively org.gnome.power-manager
 
 gsettings reset-recursively org.gnome.SessionManager
+
+gsettings reset-recursively org.gnome.settings-daemon.peripherals
+
+gsettings reset-recursively org.gnome.shell
+gsettings set org.gnome.shell favorite-apps []
+
+gsettings set org.gnome.shell.keybindings focus-active-notification []
+gsettings set org.gnome.shell.keybindings open-application-menu []
+gsettings set org.gnome.shell.keybindings screenshot []
+gsettings set org.gnome.shell.keybindings screenshot-window []
+gsettings set org.gnome.shell.keybindings shift-overview-down []
+gsettings set org.gnome.shell.keybindings shift-overview-up []
+gsettings set org.gnome.shell.keybindings show-screen-recording-ui []
+gsettings set org.gnome.shell.keybindings show-screenshot-ui []
+gsettings set org.gnome.shell.keybindings switch-to-application-1 []
+gsettings set org.gnome.shell.keybindings switch-to-application-2 []
+gsettings set org.gnome.shell.keybindings switch-to-application-3 []
+gsettings set org.gnome.shell.keybindings switch-to-application-4 []
+gsettings set org.gnome.shell.keybindings switch-to-application-5 []
+gsettings set org.gnome.shell.keybindings switch-to-application-6 []
+gsettings set org.gnome.shell.keybindings switch-to-application-7 []
+gsettings set org.gnome.shell.keybindings switch-to-application-8 []
+gsettings set org.gnome.shell.keybindings switch-to-application-9 []
+gsettings set org.gnome.shell.keybindings toggle-application-view []
+gsettings set org.gnome.shell.keybindings toggle-message-tray []
+gsettings set org.gnome.shell.keybindings toggle-overview []
+
+gsettings set org.gnome.shell.overrides edge-tiling false
+
+gsettings set org.gnome.shell.ubuntu color-scheme 'prefer-dark'
+
+gsettings reset-recursively org.gnome.system.location
+
 gsettings set org.gnome.Terminal.Legacy.Keybindings:/org/gnome/terminal/legacy/keybindings/ close-window 'disabled'
 gsettings set org.gnome.Terminal.Legacy.Keybindings:/org/gnome/terminal/legacy/keybindings/ find 'disabled'
 gsettings set org.gnome.Terminal.Legacy.Keybindings:/org/gnome/terminal/legacy/keybindings/ find-clear 'disabled'
@@ -269,35 +320,6 @@ gsettings set org.gnome.Terminal.Legacy.Keybindings:/org/gnome/terminal/legacy/k
 gsettings set org.gnome.Terminal.Legacy.Keybindings:/org/gnome/terminal/legacy/keybindings/ zoom-in 'disabled'
 gsettings set org.gnome.Terminal.Legacy.Keybindings:/org/gnome/terminal/legacy/keybindings/ zoom-normal 'disabled'
 gsettings set org.gnome.Terminal.Legacy.Keybindings:/org/gnome/terminal/legacy/keybindings/ zoom-out 'disabled'
-
-gsettings reset-recursively org.gnome.settings-daemon.peripherals
-
-gsettings reset-recursively org.gnome.shell
-gsettings set org.gnome.shell favorite-apps []
-gsettings set org.gnome.shell.keybindings focus-active-notification []
-gsettings set org.gnome.shell.keybindings open-application-menu []
-gsettings set org.gnome.shell.keybindings screenshot []
-gsettings set org.gnome.shell.keybindings screenshot-window []
-gsettings set org.gnome.shell.keybindings shift-overview-down []
-gsettings set org.gnome.shell.keybindings shift-overview-up []
-gsettings set org.gnome.shell.keybindings show-screen-recording-ui []
-gsettings set org.gnome.shell.keybindings show-screenshot-ui []
-gsettings set org.gnome.shell.keybindings switch-to-application-1 []
-gsettings set org.gnome.shell.keybindings switch-to-application-2 []
-gsettings set org.gnome.shell.keybindings switch-to-application-3 []
-gsettings set org.gnome.shell.keybindings switch-to-application-4 []
-gsettings set org.gnome.shell.keybindings switch-to-application-5 []
-gsettings set org.gnome.shell.keybindings switch-to-application-6 []
-gsettings set org.gnome.shell.keybindings switch-to-application-7 []
-gsettings set org.gnome.shell.keybindings switch-to-application-8 []
-gsettings set org.gnome.shell.keybindings switch-to-application-9 []
-gsettings set org.gnome.shell.keybindings toggle-application-view []
-gsettings set org.gnome.shell.keybindings toggle-message-tray []
-gsettings set org.gnome.shell.keybindings toggle-overview []
-gsettings set org.gnome.shell.overrides edge-tiling false
-gsettings set org.gnome.shell.ubuntu color-scheme 'prefer-dark'
-
-gsettings reset-recursively org.gnome.system.location
 
 gsettings reset-recursively org.gnome.Terminal.Legacy.Settings
 gsettings set org.gnome.Terminal.Legacy.Settings new-terminal-mode 'tab'
