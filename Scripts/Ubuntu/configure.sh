@@ -99,10 +99,18 @@ gsettings set org.gnome.desktop.background secondary-color '#000000'
 
 gsettings set org.gnome.desktop.interface clock-show-date true
 gsettings set org.gnome.desktop.interface clock-show-seconds true
+gsettings set org.gnome.desktop.interface clock-show-weekday true
 gsettings set org.gnome.desktop.interface color-scheme 'prefer-dark'
+gsettings set org.gnome.desktop.interface cursor-blink-time 1000
+gsettings set org.gnome.desktop.interface cursor-blink-timeout 999999
 gsettings set org.gnome.desktop.interface enable-hot-corners false
 gsettings set org.gnome.desktop.interface gtk-theme 'Yaru-dark'
 gsettings set org.gnome.desktop.interface show-battery-percentage true
+
+gsettings set org.gnome.desktop.lockdown disable-printing true
+gsettings set org.gnome.desktop.lockdown disable-print-setup true
+gsettings set org.gnome.desktop.lockdown disable-show-password true
+gsettings set org.gnome.desktop.lockdown disable-user-switching true
 
 gsettings set org.gnome.desktop.notifications show-in-lock-screen false
 
