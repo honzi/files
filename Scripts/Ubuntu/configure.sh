@@ -73,6 +73,16 @@ gsettings reset-recursively com.ubuntu.update-notifier
 
 gsettings reset-recursively com.ubuntu.user-interface.desktop
 
+gsettings set org.freedesktop.ibus.general.hotkey next-engine []
+gsettings set org.freedesktop.ibus.general.hotkey next-engine-in-menu []
+gsettings set org.freedesktop.ibus.general.hotkey trigger []
+gsettings set org.freedesktop.ibus.general.hotkey triggers []
+
+gsettings reset-recursively org.freedesktop.ibus.panel.emoji
+gsettings set org.freedesktop.ibus.panel.emoji hotkey []
+gsettings set org.freedesktop.ibus.panel.emoji load-emoji-at-startup false
+gsettings set org.freedesktop.ibus.panel.emoji unicode-hotkey []
+
 gsettings reset-recursively org.gnome.calendar
 
 gsettings reset-recursively org.gnome.Cheese
@@ -107,6 +117,7 @@ gsettings set org.gnome.desktop.interface enable-hot-corners false
 gsettings set org.gnome.desktop.interface gtk-theme 'Yaru-dark'
 gsettings set org.gnome.desktop.interface show-battery-percentage true
 
+gsettings reset-recursively org.gnome.desktop.lockdown
 gsettings set org.gnome.desktop.lockdown disable-printing true
 gsettings set org.gnome.desktop.lockdown disable-print-setup true
 gsettings set org.gnome.desktop.lockdown disable-show-password true
@@ -265,6 +276,7 @@ gsettings set org.gnome.nautilus.preferences thumbnail-limit 10
 
 gsettings reset-recursively org.gnome.nm-applet
 gsettings set org.gnome.nm-applet disable-wifi-create true
+gsettings set org.gnome.nm-applet suppress-wireless-networks-available true
 
 gsettings set org.gnome.online-accounts whitelisted-providers []
 
