@@ -288,6 +288,7 @@ gsettings reset-recursively org.gnome.SessionManager
 
 gsettings reset-recursively org.gnome.settings-daemon.peripherals
 
+gsettings reset-recursively org.gnome.settings-daemon.plugins.media-keys
 gsettings set org.gnome.settings-daemon.plugins.media-keys battery-status-static "['']"
 gsettings set org.gnome.settings-daemon.plugins.media-keys calculator-static "['']"
 gsettings set org.gnome.settings-daemon.plugins.media-keys control-center-static "['']"
@@ -295,6 +296,10 @@ gsettings set org.gnome.settings-daemon.plugins.media-keys email-static "['']"
 gsettings set org.gnome.settings-daemon.plugins.media-keys help "['']"
 gsettings set org.gnome.settings-daemon.plugins.media-keys hibernate-static "['']"
 gsettings set org.gnome.settings-daemon.plugins.media-keys home-static "['']"
+gsettings set org.gnome.settings-daemon.plugins.media-keys logout "['']"
+gsettings set org.gnome.settings-daemon.plugins.media-keys magnifier "['']"
+gsettings set org.gnome.settings-daemon.plugins.media-keys magnifier-zoom-in "['']"
+gsettings set org.gnome.settings-daemon.plugins.media-keys magnifier-zoom-out "['']"
 gsettings set org.gnome.settings-daemon.plugins.media-keys media-static "['']"
 gsettings set org.gnome.settings-daemon.plugins.media-keys mic-mute-static "['']"
 gsettings set org.gnome.settings-daemon.plugins.media-keys next-static "['']"
@@ -308,10 +313,13 @@ gsettings set org.gnome.settings-daemon.plugins.media-keys previous-static "['']
 gsettings set org.gnome.settings-daemon.plugins.media-keys rfkill-bluetooth-static "['']"
 gsettings set org.gnome.settings-daemon.plugins.media-keys rfkill-static "['']"
 gsettings set org.gnome.settings-daemon.plugins.media-keys rotate-video-lock-static "['']"
+gsettings set org.gnome.settings-daemon.plugins.media-keys screenreader "['']"
+gsettings set org.gnome.settings-daemon.plugins.media-keys screensaver "['']"
 gsettings set org.gnome.settings-daemon.plugins.media-keys screensaver-static "['']"
 gsettings set org.gnome.settings-daemon.plugins.media-keys search-static "['']"
 gsettings set org.gnome.settings-daemon.plugins.media-keys stop-static "['']"
 gsettings set org.gnome.settings-daemon.plugins.media-keys suspend-static "['']"
+gsettings set org.gnome.settings-daemon.plugins.media-keys terminal "['']"
 gsettings set org.gnome.settings-daemon.plugins.media-keys touchpad-off-static "['']"
 gsettings set org.gnome.settings-daemon.plugins.media-keys touchpad-on-static "['']"
 gsettings set org.gnome.settings-daemon.plugins.media-keys touchpad-toggle-static "['']"
