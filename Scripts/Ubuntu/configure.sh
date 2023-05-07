@@ -246,6 +246,8 @@ gsettings set org.gnome.metacity.keybindings toggle-tiled-right []
 
 gsettings set org.gnome.mutter dynamic-workspaces false
 
+gsettings set org.gnome.mutter.keybindings rotate-monitor []
+gsettings set org.gnome.mutter.keybindings switch-monitor []
 gsettings set org.gnome.mutter.keybindings toggle-tiled-left []
 gsettings set org.gnome.mutter.keybindings toggle-tiled-right []
 
@@ -285,6 +287,35 @@ gsettings reset-recursively org.gnome.power-manager
 gsettings reset-recursively org.gnome.SessionManager
 
 gsettings reset-recursively org.gnome.settings-daemon.peripherals
+
+gsettings set org.gnome.settings-daemon.plugins.media-keys battery-status-static "['']"
+gsettings set org.gnome.settings-daemon.plugins.media-keys calculator-static "['']"
+gsettings set org.gnome.settings-daemon.plugins.media-keys control-center-static "['']"
+gsettings set org.gnome.settings-daemon.plugins.media-keys email-static "['']"
+gsettings set org.gnome.settings-daemon.plugins.media-keys help "['']"
+gsettings set org.gnome.settings-daemon.plugins.media-keys hibernate-static "['']"
+gsettings set org.gnome.settings-daemon.plugins.media-keys home-static "['']"
+gsettings set org.gnome.settings-daemon.plugins.media-keys media-static "['']"
+gsettings set org.gnome.settings-daemon.plugins.media-keys mic-mute-static "['']"
+gsettings set org.gnome.settings-daemon.plugins.media-keys next-static "['']"
+gsettings set org.gnome.settings-daemon.plugins.media-keys pause-static "['']"
+gsettings set org.gnome.settings-daemon.plugins.media-keys playback-forward-static "['']"
+gsettings set org.gnome.settings-daemon.plugins.media-keys playback-random-static "['']"
+gsettings set org.gnome.settings-daemon.plugins.media-keys playback-repeat-static "['']"
+gsettings set org.gnome.settings-daemon.plugins.media-keys playback-rewind-static "['']"
+gsettings set org.gnome.settings-daemon.plugins.media-keys play-static "['']"
+gsettings set org.gnome.settings-daemon.plugins.media-keys previous-static "['']"
+gsettings set org.gnome.settings-daemon.plugins.media-keys rfkill-bluetooth-static "['']"
+gsettings set org.gnome.settings-daemon.plugins.media-keys rfkill-static "['']"
+gsettings set org.gnome.settings-daemon.plugins.media-keys rotate-video-lock-static "['']"
+gsettings set org.gnome.settings-daemon.plugins.media-keys screensaver-static "['']"
+gsettings set org.gnome.settings-daemon.plugins.media-keys search-static "['']"
+gsettings set org.gnome.settings-daemon.plugins.media-keys stop-static "['']"
+gsettings set org.gnome.settings-daemon.plugins.media-keys suspend-static "['']"
+gsettings set org.gnome.settings-daemon.plugins.media-keys touchpad-off-static "['']"
+gsettings set org.gnome.settings-daemon.plugins.media-keys touchpad-on-static "['']"
+gsettings set org.gnome.settings-daemon.plugins.media-keys touchpad-toggle-static "['']"
+gsettings set org.gnome.settings-daemon.plugins.media-keys www-static "['']"
 
 gsettings reset-recursively org.gnome.shell
 gsettings set org.gnome.shell favorite-apps []
