@@ -188,6 +188,7 @@ gsettings set org.gnome.desktop.wm.keybindings switch-to-workspace-up []
 gsettings set org.gnome.desktop.wm.keybindings toggle-maximized []
 gsettings set org.gnome.desktop.wm.keybindings unmaximize []
 
+gsettings set org.gnome.desktop.wm.preferences action-double-click-titlebar 'none'
 gsettings set org.gnome.desktop.wm.preferences action-middle-click-titlebar 'none'
 gsettings set org.gnome.desktop.wm.preferences num-workspaces 1
 
