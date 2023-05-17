@@ -356,6 +356,8 @@ gsettings set org.gnome.shell.ubuntu color-scheme 'prefer-dark'
 
 gsettings reset-recursively org.gnome.system.location
 
+gsettings reset-recursively org.gnome.Terminal.Legacy.Settings
+gsettings set org.gnome.Terminal.Legacy.Settings new-terminal-mode 'tab'
 gsettings set org.gnome.Terminal.Legacy.Keybindings:/org/gnome/terminal/legacy/keybindings/ close-window 'disabled'
 gsettings set org.gnome.Terminal.Legacy.Keybindings:/org/gnome/terminal/legacy/keybindings/ find 'disabled'
 gsettings set org.gnome.Terminal.Legacy.Keybindings:/org/gnome/terminal/legacy/keybindings/ find-clear 'disabled'
@@ -380,9 +382,6 @@ gsettings set org.gnome.Terminal.Legacy.Keybindings:/org/gnome/terminal/legacy/k
 gsettings set org.gnome.Terminal.Legacy.Keybindings:/org/gnome/terminal/legacy/keybindings/ zoom-in 'disabled'
 gsettings set org.gnome.Terminal.Legacy.Keybindings:/org/gnome/terminal/legacy/keybindings/ zoom-normal 'disabled'
 gsettings set org.gnome.Terminal.Legacy.Keybindings:/org/gnome/terminal/legacy/keybindings/ zoom-out 'disabled'
-
-gsettings reset-recursively org.gnome.Terminal.Legacy.Settings
-gsettings set org.gnome.Terminal.Legacy.Settings new-terminal-mode 'tab'
 
 gsettings reset-recursively org.gtk.Settings.ColorChooser
 
