@@ -12,3 +12,6 @@ youtube.com##.ytd-mealbar-promo-renderer
 youtube.com##.ytp-ce-element-show
 youtube.com/live_chat$subdocument
 zkillboard.com###nojsfulloverlay
+
+||mov^
+||zip^
