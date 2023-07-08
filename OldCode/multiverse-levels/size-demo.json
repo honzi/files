@@ -1,0 +1,131 @@
+{
+  "spawn-rotate-x": 45,
+  "characters": [
+    {
+      "id": "scale-1"
+    },
+    {
+      "id": "scale-2",
+      "translate-x": 500
+    },
+    {
+      "id": "scale-5",
+      "translate-x": 150
+    },
+    {
+      "id": "scale-10",
+      "translate-z": 150
+    },
+    {
+      "id": "scale-20",
+      "translate-z": -200
+    }
+  ],
+  "prefabs": [
+    {
+      "type": "prefabs_webgl_cuboid",
+      "properties": {
+        "prefix": "scale-1",
+        "all": {
+          "texture-id": "stone.png",
+          "texture-repeat-x": 15,
+          "texture-repeat-y": 18,
+          "vertex-colors": [
+            1, 1, 1, 1,
+            1, 1, 1, 1,
+            1, 1, 1, 1,
+            1, 1, 1, 1
+          ]
+        },
+        "character": "scale-1",
+        "size-x": -18,
+        "size-y": -5,
+        "size-z": -15
+      }
+    },
+    {
+      "type": "prefabs_webgl_cuboid",
+      "properties": {
+        "prefix": "scale-2",
+        "all": {
+          "texture-id": "stone.png",
+          "texture-repeat-x": 15,
+          "texture-repeat-y": 18,
+          "vertex-colors": [
+            1, 1, 1, 1,
+            1, 1, 1, 1,
+            1, 1, 1, 1,
+            1, 1, 1, 1
+          ]
+        },
+        "character": "scale-2",
+        "size-x": -36,
+        "size-y": -5,
+        "size-z": -30
+      }
+    },
+    {
+      "type": "prefabs_webgl_cuboid",
+      "properties": {
+        "prefix": "scale-5",
+        "all": {
+          "texture-id": "stone.png",
+          "texture-repeat-x": 15,
+          "texture-repeat-y": 18,
+          "vertex-colors": [
+            1, 1, 1, 1,
+            1, 1, 1, 1,
+            1, 1, 1, 1,
+            1, 1, 1, 1
+          ]
+        },
+        "character": "scale-5",
+        "size-x": -90,
+        "size-y": -5,
+        "size-z": -75
+      }
+    },
+    {
+      "type": "prefabs_webgl_cuboid",
+      "properties": {
+        "prefix": "scale-10",
+        "all": {
+          "texture-id": "stone.png",
+          "texture-repeat-x": 15,
+          "texture-repeat-y": 18,
+          "vertex-colors": [
+            1, 1, 1, 1,
+            1, 1, 1, 1,
+            1, 1, 1, 1,
+            1, 1, 1, 1
+          ]
+        },
+        "character": "scale-10",
+        "size-x": -180,
+        "size-y": -5,
+        "size-z": -150
+      }
+    },
+    {
+      "type": "prefabs_webgl_cuboid",
+      "properties": {
+        "prefix": "scale-20",
+        "all": {
+          "texture-id": "stone.png",
+          "texture-repeat-x": 15,
+          "texture-repeat-y": 18,
+          "vertex-colors": [
+            1, 1, 1, 1,
+            1, 1, 1, 1,
+            1, 1, 1, 1,
+            1, 1, 1, 1
+          ]
+        },
+        "character": "scale-20",
+        "size-x": -360,
+        "size-y": -5,
+        "size-z": -300
+      }
+    }
+  ]
+}

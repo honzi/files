@@ -1,0 +1,1508 @@
+{
+  "spawn-rotate-x": 45,
+  "spawn-translate-x": 75,
+  "spawn-translate-y": 50,
+  "spawn-translate-z": 175,
+  "characters": [
+    {
+      "id": "house",
+      "entities": [
+        {
+          "id": "0-floor",
+          "collision": false,
+          "texture-id": "grid.png",
+          "texture-repeat-x": 15,
+          "texture-repeat-y": 18,
+          "vertex-colors": [
+            1, 1, 1, 1,
+            1, 1, 1, 1,
+            1, 1, 1, 1,
+            1, 1, 1, 1
+          ],
+          "vertices": [
+            180, 0, 0, 1,
+            0, 0, 0, 1,
+            0, 0, 150, 1,
+            180, 0, 150, 1
+          ]
+        },
+        {
+          "id": "0-closet",
+          "attach-offset-x": 100,
+          "attach-offset-y": 0.1,
+          "attach-offset-z": 90,
+          "collision": false,
+          "texture-id": "grid.png",
+          "texture-repeat-x": 3,
+          "texture-repeat-y": 3,
+          "vertex-colors": [
+            0, 0.5, 1, 1,
+            0, 0.5, 1, 1,
+            0, 0.5, 1, 1,
+            0, 0.5, 1, 1
+          ],
+          "vertices": [
+            30, 0, 0, 1,
+            0, 0, 0, 1,
+            0, 0, 30, 1,
+            30, 0, 30, 1
+          ]
+        },
+        {
+          "id": "0-closet-wall0",
+          "attach-offset-x": 100,
+          "attach-offset-z": 120,
+          "collision": false,
+          "rotate-x": 90,
+          "rotate-z": 180,
+          "texture-id": "grid.png",
+          "texture-repeat-x": 2.5,
+          "texture-repeat-y": 2,
+          "vertex-colors": [
+            0, 0.5, 1, 1,
+            0, 0.5, 1, 1,
+            0, 0.5, 1, 1,
+            0, 0.5, 1, 1
+          ],
+          "vertices": [
+            0, 0, -25, 1,
+            -20, 0, -25, 1,
+            -20, 0, 0, 1,
+            0, 0, 0, 1
+          ]
+        },
+        {
+          "id": "0-closet-wall1",
+          "attach-offset-x": 100,
+          "attach-offset-z": 90,
+          "collision": false,
+          "rotate-x": 90,
+          "texture-id": "grid.png",
+          "texture-repeat-x": 2.5,
+          "texture-repeat-y": 3,
+          "vertex-colors": [
+            0, 0.5, 1, 1,
+            0, 0.5, 1, 1,
+            0, 0.5, 1, 1,
+            0, 0.5, 1, 1
+          ],
+          "vertices": [
+            30, 0, -25, 1,
+            0, 0, -25, 1,
+            0, 0, 0, 1,
+            30, 0, 0, 1
+          ]
+        },
+        {
+          "id": "0-closet-wall2",
+          "attach-offset-x": 130,
+          "attach-offset-z": 90,
+          "collision": false,
+          "rotate-z": 90,
+          "texture-id": "grid.png",
+          "texture-repeat-x": 2,
+          "texture-repeat-y": 2.5,
+          "vertex-colors": [
+            0, 0.5, 1, 1,
+            0, 0.5, 1, 1,
+            0, 0.5, 1, 1,
+            0, 0.5, 1, 1
+          ],
+          "vertices": [
+            25, 0, 0, 1,
+            0, 0, 0, 1,
+            0, 0, 20, 1,
+            25, 0, 20, 1
+          ]
+        },
+        {
+          "id": "0-closet-wall3",
+          "attach-offset-x": 100,
+          "attach-offset-z": 90,
+          "collision": false,
+          "rotate-x": 180,
+          "rotate-z": 270,
+          "texture-id": "grid.png",
+          "texture-repeat-x": 3,
+          "texture-repeat-y": 2.5,
+          "vertex-colors": [
+            0, 0.5, 1, 1,
+            0, 0.5, 1, 1,
+            0, 0.5, 1, 1,
+            0, 0.5, 1, 1
+          ],
+          "vertices": [
+            25, 0, -30, 1,
+            0, 0, -30, 1,
+            0, 0, 0, 1,
+            25, 0, 0, 1
+          ]
+        },
+        {
+          "id": "0-closet-wall4",
+          "attach-offset-x": 120,
+          "attach-offset-z": 110,
+          "collision": false,
+          "rotate-x": 90,
+          "rotate-z": 180,
+          "texture-id": "grid.png",
+          "texture-repeat-x": 2.5,
+          "texture-repeat-y": 1,
+          "vertex-colors": [
+            0, 0.5, 1, 1,
+            0, 0.5, 1, 1,
+            0, 0.5, 1, 1,
+            0, 0.5, 1, 1
+          ],
+          "vertices": [
+            0, 0, -25, 1,
+            -10, 0, -25, 1,
+            -10, 0, 0, 1,
+            0, 0, 0, 1
+          ]
+        },
+        {
+          "id": "0-closet-wall5",
+          "attach-offset-x": 120,
+          "attach-offset-z": 110,
+          "collision": false,
+          "rotate-z": 90,
+          "texture-id": "grid.png",
+          "texture-repeat-x": 1,
+          "texture-repeat-y": 2.5,
+          "vertex-colors": [
+            0, 0.5, 1, 1,
+            0, 0.5, 1, 1,
+            0, 0.5, 1, 1,
+            0, 0.5, 1, 1
+          ],
+          "vertices": [
+            25, 0, 0, 1,
+            0, 0, 0, 1,
+            0, 0, 10, 1,
+            25, 0, 10, 1
+          ]
+        },
+        {
+          "id": "0-garage",
+          "attach-offset-y": 0.1,
+          "attach-offset-z": 90,
+          "collision": false,
+          "texture-id": "grid.png",
+          "texture-repeat-x": 6,
+          "texture-repeat-y": 6,
+          "vertex-colors": [
+            1, 0, 0, 1,
+            1, 0, 0, 1,
+            1, 0, 0, 1,
+            1, 0, 0, 1
+          ],
+          "vertices": [
+            60, 0, 0, 1,
+            0, 0, 0, 1,
+            0, 0, 60, 1,
+            60, 0, 60, 1
+          ]
+        },
+        {
+          "id": "0-garage-wall0",
+          "attach-offset-z": 90,
+          "collision": false,
+          "rotate-x": 90,
+          "texture-id": "grid.png",
+          "texture-repeat-x": 2.5,
+          "texture-repeat-y": 6,
+          "vertex-colors": [
+            1, 0, 0, 1,
+            1, 0, 0, 1,
+            1, 0, 0, 1,
+            1, 0, 0, 1
+          ],
+          "vertices": [
+            60, 0, -25, 1,
+            0, 0, -25, 1,
+            0, 0, 0, 1,
+            60, 0, 0, 1
+          ]
+        },
+        {
+          "id": "0-garage-wall1",
+          "attach-offset-z": 150,
+          "collision": false,
+          "rotate-x": 90,
+          "rotate-z": 180,
+          "texture-id": "grid.png",
+          "texture-repeat-x": 2.5,
+          "texture-repeat-y": 6,
+          "vertex-colors": [
+            1, 0, 0, 1,
+            1, 0, 0, 1,
+            1, 0, 0, 1,
+            1, 0, 0, 1
+          ],
+          "vertices": [
+            0, 0, -25, 1,
+            -60, 0, -25, 1,
+            -60, 0, 0, 1,
+            0, 0, 0, 1
+          ]
+        },
+        {
+          "id": "0-garage-wall2",
+          "attach-offset-x": 60,
+          "attach-offset-z": 90,
+          "collision": false,
+          "rotate-z": 90,
+          "texture-id": "grid.png",
+          "texture-repeat-x": 6,
+          "texture-repeat-y": 2.5,
+          "vertex-colors": [
+            1, 0, 0, 1,
+            1, 0, 0, 1,
+            1, 0, 0, 1,
+            1, 0, 0, 1
+          ],
+          "vertices": [
+            25, 0, 0, 1,
+            0, 0, 0, 1,
+            0, 0, 60, 1,
+            25, 0, 60, 1
+          ]
+        },
+        {
+          "id": "0-garage-wall3",
+          "attach-offset-z": 90,
+          "collision": false,
+          "rotate-x": 180,
+          "rotate-z": 270,
+          "texture-id": "grid.png",
+          "texture-repeat-x": 6,
+          "texture-repeat-y": 2.5,
+          "vertex-colors": [
+            1, 0, 0, 1,
+            1, 0, 0, 1,
+            1, 0, 0, 1,
+            1, 0, 0, 1
+          ],
+          "vertices": [
+            25, 0, -60, 1,
+            0, 0, -60, 1,
+            0, 0, 0, 1,
+            25, 0, 0, 1
+          ]
+        },
+        {
+          "id": "0-kitchen",
+          "attach-offset-x": 130,
+          "attach-offset-y": 0.1,
+          "attach-offset-z": 90,
+          "collision": false,
+          "texture-id": "grid.png",
+          "texture-repeat-x": 6,
+          "texture-repeat-y": 5,
+          "vertex-colors": [
+            1, 1, 0, 1,
+            1, 1, 0, 1,
+            1, 1, 0, 1,
+            1, 1, 0, 1
+          ],
+          "vertices": [
+            50, 0, 0, 1,
+            0, 0, 0, 1,
+            0, 0, 60, 1,
+            50, 0, 60, 1
+          ]
+        },
+        {
+          "id": "0-kitchen-fridge",
+          "attach-offset-x": 120,
+          "attach-offset-y": 0.2,
+          "attach-offset-z": 110,
+          "collision": false,
+          "texture-id": "grid.png",
+          "vertex-colors": [
+            1, 1, 0, 1,
+            1, 1, 0, 1,
+            1, 1, 0, 1,
+            1, 1, 0, 1
+          ],
+          "vertices": [
+            10, 0, 0, 1,
+            0, 0, 0, 1,
+            0, 0, 10, 1,
+            10, 0, 10, 1
+          ]
+        },
+        {
+          "id": "0-kitchen-wall0",
+          "attach-offset-x": 130,
+          "attach-offset-z": 90,
+          "collision": false,
+          "rotate-x": 180,
+          "rotate-z": 270,
+          "texture-id": "grid.png",
+          "texture-repeat-x": 2,
+          "texture-repeat-y": 2.5,
+          "vertex-colors": [
+            1, 1, 1, 1,
+            1, 1, 1, 1,
+            1, 1, 1, 1,
+            1, 1, 1, 1
+          ],
+          "vertices": [
+            25, 0, -20, 1,
+            0, 0, -20, 1,
+            0, 0, 0, 1,
+            25, 0, 0, 1
+          ]
+        },
+        {
+          "id": "0-kitchen-wall1",
+          "attach-offset-x": 130,
+          "attach-offset-z": 120,
+          "collision": false,
+          "rotate-x": 180,
+          "rotate-z": 270,
+          "texture-id": "grid.png",
+          "texture-repeat-x": 3,
+          "texture-repeat-y": 2.5,
+          "vertex-colors": [
+            1, 1, 1, 1,
+            1, 1, 1, 1,
+            1, 1, 1, 1,
+            1, 1, 1, 1
+          ],
+          "vertices": [
+            25, 0, -30, 1,
+            0, 0, -30, 1,
+            0, 0, 0, 1,
+            25, 0, 0, 1
+          ]
+        },
+        {
+          "id": "0-kitchen-wall2",
+          "attach-offset-x": 120,
+          "attach-offset-z": 110,
+          "collision": false,
+          "rotate-x": 180,
+          "rotate-z": 270,
+          "texture-id": "grid.png",
+          "texture-repeat-x": 1,
+          "texture-repeat-y": 2.5,
+          "vertex-colors": [
+            1, 1, 1, 1,
+            1, 1, 1, 1,
+            1, 1, 1, 1,
+            1, 1, 1, 1
+          ],
+          "vertices": [
+            25, 0, -10, 1,
+            0, 0, -10, 1,
+            0, 0, 0, 1,
+            25, 0, 0, 1
+          ]
+        },
+        {
+          "id": "0-kitchen-wall3",
+          "attach-offset-x": 120,
+          "attach-offset-z": 110,
+          "collision": false,
+          "rotate-x": 90,
+          "texture-id": "grid.png",
+          "texture-repeat-x": 2.5,
+          "texture-repeat-y": 1,
+          "vertex-colors": [
+            1, 1, 1, 1,
+            1, 1, 1, 1,
+            1, 1, 1, 1,
+            1, 1, 1, 1
+          ],
+          "vertices": [
+            10, 0, -25, 1,
+            0, 0, -25, 1,
+            0, 0, 0, 1,
+            10, 0, 0, 1
+          ]
+        },
+        {
+          "id": "0-kitchen-wall4",
+          "attach-offset-x": 130,
+          "attach-offset-z": 120,
+          "collision": false,
+          "rotate-x": 270,
+          "rotate-y": 180,
+          "texture-id": "grid.png",
+          "texture-repeat-x": 2.5,
+          "texture-repeat-y": 1,
+          "vertex-colors": [
+            1, 1, 1, 1,
+            1, 1, 1, 1,
+            1, 1, 1, 1,
+            1, 1, 1, 1
+          ],
+          "vertices": [
+            10, 0, -25, 1,
+            0, 0, -25, 1,
+            0, 0, 0, 1,
+            10, 0, 0, 1
+          ]
+        },
+        {
+          "id": "0-pantry",
+          "attach-offset-x": 100,
+          "attach-offset-y": 0.1,
+          "attach-offset-z": 120,
+          "collision": false,
+          "texture-id": "grid.png",
+          "texture-repeat-x": 3,
+          "texture-repeat-y": 3,
+          "vertex-colors": [
+            1, 0, 1, 1,
+            1, 0, 1, 1,
+            1, 0, 1, 1,
+            1, 0, 1, 1
+          ],
+          "vertices": [
+            30, 0, 0, 1,
+            0, 0, 0, 1,
+            0, 0, 30, 1,
+            30, 0, 30, 1
+          ]
+        },
+        {
+          "id": "0-pantry-wall0",
+          "attach-offset-x": 100,
+          "attach-offset-z": 150,
+          "collision": false,
+          "rotate-x": 90,
+          "rotate-z": 180,
+          "texture-id": "grid.png",
+          "texture-repeat-x": 2.5,
+          "texture-repeat-y": 3,
+          "vertex-colors": [
+            1, 0, 1, 1,
+            1, 0, 1, 1,
+            1, 0, 1, 1,
+            1, 0, 1, 1
+          ],
+          "vertices": [
+            0, 0, -25, 1,
+            -30, 0, -25, 1,
+            -30, 0, 0, 1,
+            0, 0, 0, 1
+          ]
+        },
+        {
+          "id": "0-pantry-wall1",
+          "attach-offset-x": 100,
+          "attach-offset-z": 120,
+          "collision": false,
+          "rotate-x": 90,
+          "texture-id": "grid.png",
+          "texture-repeat-x": 2.5,
+          "texture-repeat-y": 3,
+          "vertex-colors": [
+            1, 0, 1, 1,
+            1, 0, 1, 1,
+            1, 0, 1, 1,
+            1, 0, 1, 1
+          ],
+          "vertices": [
+            30, 0, -25, 1,
+            0, 0, -25, 1,
+            0, 0, 0, 1,
+            30, 0, 0, 1
+          ]
+        },
+        {
+          "id": "0-pantry-wall2",
+          "attach-offset-x": 130,
+          "attach-offset-z": 120,
+          "collision": false,
+          "rotate-z": 90,
+          "texture-id": "grid.png",
+          "texture-repeat-x": 3,
+          "texture-repeat-y": 2.5,
+          "vertex-colors": [
+            1, 0, 1, 1,
+            1, 0, 1, 1,
+            1, 0, 1, 1,
+            1, 0, 1, 1
+          ],
+          "vertices": [
+            25, 0, 0, 1,
+            0, 0, 0, 1,
+            0, 0, 30, 1,
+            25, 0, 30, 1
+          ]
+        },
+        {
+          "id": "0-pantry-wall3",
+          "attach-offset-x": 100,
+          "attach-offset-z": 120,
+          "collision": false,
+          "rotate-x": 180,
+          "rotate-z": 270,
+          "texture-id": "grid.png",
+          "texture-repeat-x": 3,
+          "texture-repeat-y": 2.5,
+          "vertex-colors": [
+            1, 0, 1, 1,
+            1, 0, 1, 1,
+            1, 0, 1, 1,
+            1, 0, 1, 1
+          ],
+          "vertices": [
+            25, 0, -30, 1,
+            0, 0, -30, 1,
+            0, 0, 0, 1,
+            25, 0, 0, 1
+          ]
+        },
+        {
+          "id": "0-stairs",
+          "attach-offset-x": 60,
+          "attach-offset-y": 0.1,
+          "attach-offset-z": 50,
+          "collision": false,
+          "texture-id": "grid.png",
+          "texture-repeat-x": 5.831,
+          "texture-repeat-y": 2,
+          "vertex-colors": [
+            0, 1, 1, 1,
+            0, 1, 1, 1,
+            0, 1, 1, 1,
+            0, 1, 1, 1
+          ],
+          "vertices": [
+            20, 0, 0, 1,
+            0, 0, 0, 1,
+            0, 30, 50, 1,
+            20, 30, 50, 1
+          ]
+        },
+        {
+          "id": "0-stairs-base",
+          "attach-offset-x": 60,
+          "attach-offset-y": 0.1,
+          "attach-offset-z": 50,
+          "collision": false,
+          "texture-id": "grid.png",
+          "texture-repeat-x": 5,
+          "texture-repeat-y": 2,
+          "vertex-colors": [
+            0, 1, 1, 1,
+            0, 1, 1, 1,
+            0, 1, 1, 1,
+            0, 1, 1, 1
+          ],
+          "vertices": [
+            20, 0, 0, 1,
+            0, 0, 0, 1,
+            0, 0, 50, 1,
+            20, 0, 50, 1
+          ]
+        },
+        {
+          "id": "0-wc",
+          "attach-offset-x": 60,
+          "attach-offset-y": 0.1,
+          "attach-offset-z": 100,
+          "collision": false,
+          "texture-id": "grid.png",
+          "texture-repeat-x": 2,
+          "texture-repeat-y": 2,
+          "vertex-colors": [
+            0, 0, 1, 1,
+            0, 0, 1, 1,
+            0, 0, 1, 1,
+            0, 0, 1, 1
+          ],
+          "vertices": [
+            20, 0, 0, 1,
+            0, 0, 0, 1,
+            0, 0, 20, 1,
+            20, 0, 20, 1
+          ]
+        },
+        {
+          "id": "0-wc-wall0",
+          "attach-offset-x": 60,
+          "attach-offset-z": 100,
+          "collision": false,
+          "rotate-x": 90,
+          "texture-id": "grid.png",
+          "texture-repeat-x": 2.5,
+          "texture-repeat-y": 2,
+          "vertex-colors": [
+            0, 0, 1, 1,
+            0, 0, 1, 1,
+            0, 0, 1, 1,
+            0, 0, 1, 1
+          ],
+          "vertices": [
+            20, 0, -25, 1,
+            0, 0, -25, 1,
+            0, 0, 0, 1,
+            20, 0, 0, 1
+          ]
+        },
+        {
+          "id": "0-wc-wall1",
+          "attach-offset-x": 60,
+          "attach-offset-z": 120,
+          "collision": false,
+          "rotate-x": 90,
+          "rotate-z": 180,
+          "texture-id": "grid.png",
+          "texture-repeat-x": 2.5,
+          "texture-repeat-y": 2,
+          "vertex-colors": [
+            0, 0, 1, 1,
+            0, 0, 1, 1,
+            0, 0, 1, 1,
+            0, 0, 1, 1
+          ],
+          "vertices": [
+            0, 0, -25, 1,
+            -20, 0, -25, 1,
+            -20, 0, 0, 1,
+            0, 0, 0, 1
+          ]
+        },
+        {
+          "id": "0-wc-wall2",
+          "attach-offset-x": 80,
+          "attach-offset-z": 120,
+          "collision": false,
+          "rotate-z": 90,
+          "texture-id": "grid.png",
+          "texture-repeat-x": 2,
+          "texture-repeat-y": 2.5,
+          "vertex-colors": [
+            0, 0, 1, 1,
+            0, 0, 1, 1,
+            0, 0, 1, 1,
+            0, 0, 1, 1
+          ],
+          "vertices": [
+            25, 0, -20, 1,
+            0, 0, -20, 1,
+            0, 0, 0, 1,
+            25, 0, 0, 1
+          ]
+        },
+        {
+          "id": "0-wc-wall3",
+          "attach-offset-x": 60,
+          "attach-offset-z": 120,
+          "collision": false,
+          "rotate-x": 180,
+          "rotate-z": 270,
+          "texture-id": "grid.png",
+          "texture-repeat-x": 2,
+          "texture-repeat-y": 2.5,
+          "vertex-colors": [
+            0, 0, 1, 1,
+            0, 0, 1, 1,
+            0, 0, 1, 1,
+            0, 0, 1, 1
+          ],
+          "vertices": [
+            25, 0, 0, 1,
+            0, 0, 0, 1,
+            0, 0, 20, 1,
+            25, 0, 20, 1
+          ]
+        },
+        {
+          "id": "0-wall0",
+          "collision": false,
+          "rotate-x": 90,
+          "texture-id": "grid.png",
+          "texture-repeat-x": 2.5,
+          "texture-repeat-y": 18,
+          "vertex-colors": [
+            1, 1, 1, 1,
+            1, 1, 1, 1,
+            1, 1, 1, 1,
+            1, 1, 1, 1
+          ],
+          "vertices": [
+            180, 0, -25, 1,
+            0, 0, -25, 1,
+            0, 0, 0, 1,
+            180, 0, 0, 1
+          ]
+        },
+        {
+          "id": "0-wall1",
+          "attach-offset-x": 180,
+          "collision": false,
+          "rotate-z": 90,
+          "texture-id": "grid.png",
+          "texture-repeat-x": 15,
+          "texture-repeat-y": 2.5,
+          "vertex-colors": [
+            1, 1, 1, 1,
+            1, 1, 1, 1,
+            1, 1, 1, 1,
+            1, 1, 1, 1
+          ],
+          "vertices": [
+            25, 0, 0, 1,
+            0, 0, 0, 1,
+            0, 0, 150, 1,
+            25, 0, 150, 1
+          ]
+        },
+        {
+          "id": "0-wall2",
+          "collision": false,
+          "rotate-x": 180,
+          "rotate-z": 270,
+          "texture-id": "grid.png",
+          "texture-repeat-x": 9,
+          "texture-repeat-y": 2.5,
+          "vertex-colors": [
+            1, 1, 1, 1,
+            1, 1, 1, 1,
+            1, 1, 1, 1,
+            1, 1, 1, 1
+          ],
+          "vertices": [
+            25, 0, -90, 1,
+            0, 0, -90, 1,
+            0, 0, 0, 1,
+            25, 0, 0, 1
+          ]
+        },
+        {
+          "id": "0-wall4",
+          "attach-offset-z": 90,
+          "collision": false,
+          "rotate-x": 270,
+          "rotate-y": 180,
+          "texture-id": "grid.png",
+          "texture-repeat-x": 2.5,
+          "texture-repeat-y": 6,
+          "vertex-colors": [
+            1, 1, 1, 1,
+            1, 1, 1, 1,
+            1, 1, 1, 1,
+            1, 1, 1, 1
+          ],
+          "vertices": [
+            0, 0, -25, 1,
+            -60, 0, -25, 1,
+            -60, 0, 0, 1,
+            0, 0, 0, 1
+          ]
+        },
+        {
+          "id": "0-wall5",
+          "attach-offset-x": 100,
+          "attach-offset-z": 90,
+          "collision": false,
+          "rotate-x": 270,
+          "rotate-y": 180,
+          "texture-id": "grid.png",
+          "texture-repeat-x": 2.5,
+          "texture-repeat-y": 3,
+          "vertex-colors": [
+            1, 1, 1, 1,
+            1, 1, 1, 1,
+            1, 1, 1, 1,
+            1, 1, 1, 1
+          ],
+          "vertices": [
+            0, 0, -25, 1,
+            -30, 0, -25, 1,
+            -30, 0, 0, 1,
+            0, 0, 0, 1
+          ]
+        },
+        {
+          "id": "0-wall6",
+          "attach-offset-x": 100,
+          "attach-offset-z": 90,
+          "collision": false,
+          "rotate-z": 90,
+          "texture-id": "grid.png",
+          "texture-repeat-x": 6,
+          "texture-repeat-y": 2.5,
+          "vertex-colors": [
+            1, 1, 1, 1,
+            1, 1, 1, 1,
+            1, 1, 1, 1,
+            1, 1, 1, 1
+          ],
+          "vertices": [
+            25, 0, 0, 1,
+            0, 0, 0, 1,
+            0, 0, 60, 1,
+            25, 0, 60, 1
+          ]
+        },
+        {
+          "id": "0-wall7",
+          "collision": false,
+          "rotate-z": 90,
+          "texture-id": "grid.png",
+          "texture-repeat-x": 15,
+          "texture-repeat-y": 2.5,
+          "vertex-colors": [
+            1, 1, 1, 1,
+            1, 1, 1, 1,
+            1, 1, 1, 1,
+            1, 1, 1, 1
+          ],
+          "vertices": [
+            25, 0, 0, 1,
+            0, 0, 0, 1,
+            0, 0, 150, 1,
+            25, 0, 150, 1
+          ]
+        },
+        {
+          "id": "0-wall8",
+          "collision": false,
+          "rotate-x": 90,
+          "rotate-z": 180,
+          "texture-id": "grid.png",
+          "texture-repeat-x": 2.5,
+          "texture-repeat-y": 18,
+          "vertex-colors": [
+            1, 1, 1, 1,
+            1, 1, 1, 1,
+            1, 1, 1, 1,
+            1, 1, 1, 1
+          ],
+          "vertices": [
+            0, 0, -25, 1,
+            -180, 0, -25, 1,
+            -180, 0, 0, 1,
+            0, 0, 0, 1
+          ]
+        },
+        {
+          "id": "0-wall9",
+          "attach-offset-x": 180.01,
+          "collision": false,
+          "rotate-x": 180,
+          "rotate-z": 270,
+          "texture-id": "grid.png",
+          "texture-repeat-x": 15,
+          "texture-repeat-y": 2.5,
+          "vertex-colors": [
+            1, 1, 1, 1,
+            1, 1, 1, 1,
+            1, 1, 1, 1,
+            1, 1, 1, 1
+          ],
+          "vertices": [
+            25, 0, -150, 1,
+            0, 0, -150, 1,
+            0, 0, 0, 1,
+            25, 0, 0, 1
+          ]
+        },
+        {
+          "id": "0-wall10",
+          "attach-offset-z": 150.01,
+          "collision": false,
+          "rotate-x": 90,
+          "texture-id": "grid.png",
+          "texture-repeat-x": 2.5,
+          "texture-repeat-y": 18,
+          "vertex-colors": [
+            1, 1, 1, 1,
+            1, 1, 1, 1,
+            1, 1, 1, 1,
+            1, 1, 1, 1
+          ],
+          "vertices": [
+            180, 0, -25, 1,
+            0, 0, -25, 1,
+            0, 0, 0, 1,
+            180, 0, 0, 1
+          ]
+        },
+        {
+          "id": "0-wall11",
+          "attach-offset-z": 150.01,
+          "collision": false,
+          "rotate-x": 90,
+          "rotate-z": 180,
+          "texture-id": "grid.png",
+          "texture-repeat-x": 2.5,
+          "texture-repeat-y": 18,
+          "vertex-colors": [
+            1, 1, 1, 1,
+            1, 1, 1, 1,
+            1, 1, 1, 1,
+            1, 1, 1, 1
+          ],
+          "vertices": [
+            0, 0, -25, 1,
+            -180, 0, -25, 1,
+            -180, 0, 0, 1,
+            0, 0, 0, 1
+          ]
+        },
+        {
+          "id": "0-wall12",
+          "attach-offset-x": 59.99,
+          "attach-offset-z": 90,
+          "collision": false,
+          "rotate-x": 180,
+          "rotate-z": 270,
+          "texture-id": "grid.png",
+          "texture-repeat-x": 6,
+          "texture-repeat-y": 2.5,
+          "vertex-colors": [
+            1, 1, 1, 1,
+            1, 1, 1, 1,
+            1, 1, 1, 1,
+            1, 1, 1, 1
+          ],
+          "vertices": [
+            25, 0, -60, 1,
+            0, 0, -60, 1,
+            0, 0, 0, 1,
+            25, 0, 0, 1
+          ]
+        },
+        {
+          "id": "0-wall13",
+          "attach-offset-x": 60,
+          "attach-offset-z": 120,
+          "collision": false,
+          "rotate-x": 90,
+          "texture-id": "grid.png",
+          "texture-repeat-x": 2.5,
+          "texture-repeat-y": 2,
+          "vertex-colors": [
+            1, 1, 1, 1,
+            1, 1, 1, 1,
+            1, 1, 1, 1,
+            1, 1, 1, 1
+          ],
+          "vertices": [
+            20, 0, -25, 1,
+            0, 0, -25, 1,
+            0, 0, 0, 1,
+            20, 0, 0, 1
+          ]
+        },
+        {
+          "id": "0-wall14",
+          "attach-offset-x": 80,
+          "attach-offset-z": 120,
+          "collision": false,
+          "rotate-x": 180,
+          "rotate-z": 270,
+          "texture-id": "grid.png",
+          "texture-repeat-x": 7,
+          "texture-repeat-y": 2.5,
+          "vertex-colors": [
+            1, 1, 1, 1,
+            1, 1, 1, 1,
+            1, 1, 1, 1,
+            1, 1, 1, 1
+          ],
+          "vertices": [
+            25, 0, 0, 1,
+            0, 0, 0, 1,
+            0, 0, 70, 1,
+            25, 0, 70, 1
+          ]
+        },
+        {
+          "id": "0-wall15",
+          "attach-offset-x": 60,
+          "attach-offset-z": 50,
+          "collision": false,
+          "rotate-z": 90,
+          "texture-id": "grid.png",
+          "texture-repeat-x": 4,
+          "texture-repeat-y": 2.5,
+          "vertex-colors": [
+            1, 1, 1, 1,
+            1, 1, 1, 1,
+            1, 1, 1, 1,
+            1, 1, 1, 1
+          ],
+          "vertices": [
+            25, 0, 0, 1,
+            0, 0, 0, 1,
+            0, 0, 40, 1,
+            25, 0, 40, 1
+          ]
+        },
+        {
+          "id": "0-door0a",
+          "attach-offset-x": 59.99,
+          "attach-offset-z": 130,
+          "collision": false,
+          "rotate-z": 90,
+          "texture-id": "door.png",
+          "texture-repeat-x": 1,
+          "texture-repeat-y": 1,
+          "vertex-colors": [
+            1, 1, 1, 1,
+            1, 1, 1, 1,
+            1, 1, 1, 1,
+            1, 1, 1, 1
+          ],
+          "vertices": [
+            20, 0, 0, 1,
+            0, 0, 0, 1,
+            0, 0, 10, 1,
+            20, 0, 10, 1
+          ]
+        },
+        {
+          "id": "0-door0b",
+          "attach-offset-x": 60.01,
+          "attach-offset-z": 130,
+          "collision": false,
+          "rotate-z": 270,
+          "texture-id": "door.png",
+          "texture-repeat-x": 1,
+          "texture-repeat-y": 1,
+          "vertex-colors": [
+            1, 1, 1, 1,
+            1, 1, 1, 1,
+            1, 1, 1, 1,
+            1, 1, 1, 1
+          ],
+          "vertices": [
+            0, 0, 0, 1,
+            -20, 0, 0, 1,
+            -20, 0, 10, 1,
+            0, 0, 10, 1
+          ]
+        },
+        {
+          "id": "0-door1a",
+          "attach-offset-x": 129.99,
+          "attach-offset-z": 130,
+          "collision": false,
+          "rotate-z": 90,
+          "texture-id": "door.png",
+          "texture-repeat-x": 1,
+          "texture-repeat-y": 1,
+          "vertex-colors": [
+            1, 1, 1, 1,
+            1, 1, 1, 1,
+            1, 1, 1, 1,
+            1, 1, 1, 1
+          ],
+          "vertices": [
+            20, 0, 0, 1,
+            0, 0, 0, 1,
+            0, 0, 10, 1,
+            20, 0, 10, 1
+          ]
+        },
+        {
+          "id": "0-door1b",
+          "attach-offset-x": 130.01,
+          "attach-offset-z": 130,
+          "collision": false,
+          "rotate-z": 270,
+          "texture-id": "door.png",
+          "texture-repeat-x": 1,
+          "texture-repeat-y": 1,
+          "vertex-colors": [
+            1, 1, 1, 1,
+            1, 1, 1, 1,
+            1, 1, 1, 1,
+            1, 1, 1, 1
+          ],
+          "vertices": [
+            0, 0, 0, 1,
+            -20, 0, 0, 1,
+            -20, 0, 10, 1,
+            0, 0, 10, 1
+          ]
+        },
+        {
+          "id": "0-door2a",
+          "attach-offset-x": 60,
+          "attach-offset-z": 120.01,
+          "collision": false,
+          "rotate-x": 90,
+          "texture-id": "door.png",
+          "texture-repeat-x": 1,
+          "texture-repeat-y": 1,
+          "vertex-colors": [
+            1, 1, 1, 1,
+            1, 1, 1, 1,
+            1, 1, 1, 1,
+            1, 1, 1, 1
+          ],
+          "vertices": [
+            10, 0, -20, 1,
+            0, 0, -20, 1,
+            0, 0, 0, 1,
+            10, 0, 0, 1
+          ]
+        },
+        {
+          "id": "0-door2b",
+          "attach-offset-x": 60,
+          "attach-offset-z": 119.99,
+          "collision": false,
+          "rotate-x": 270,
+          "texture-id": "door.png",
+          "texture-repeat-x": 1,
+          "texture-repeat-y": 1,
+          "vertex-colors": [
+            1, 1, 1, 1,
+            1, 1, 1, 1,
+            1, 1, 1, 1,
+            1, 1, 1, 1
+          ],
+          "vertices": [
+            10, 0, 0, 1,
+            0, 0, 0, 1,
+            0, 0, 20, 1,
+            10, 0, 20, 1
+          ]
+        },
+        {
+          "id": "0-door3a",
+          "attach-offset-x": 90,
+          "attach-offset-z": 150.02,
+          "collision": false,
+          "rotate-x": 90,
+          "texture-id": "door.png",
+          "texture-repeat-x": 1,
+          "texture-repeat-y": 1,
+          "vertex-colors": [
+            1, 1, 1, 1,
+            1, 1, 1, 1,
+            1, 1, 1, 1,
+            1, 1, 1, 1
+          ],
+          "vertices": [
+            10, 0, -20, 1,
+            0, 0, -20, 1,
+            0, 0, 0, 1,
+            10, 0, 0, 1
+          ]
+        },
+        {
+          "id": "0-door3b",
+          "attach-offset-x": 90,
+          "attach-offset-z": 149.99,
+          "collision": false,
+          "rotate-x": 270,
+          "texture-id": "door.png",
+          "texture-repeat-x": 1,
+          "texture-repeat-y": 1,
+          "vertex-colors": [
+            1, 1, 1, 1,
+            1, 1, 1, 1,
+            1, 1, 1, 1,
+            1, 1, 1, 1
+          ],
+          "vertices": [
+            10, 0, 0, 1,
+            0, 0, 0, 1,
+            0, 0, 20, 1,
+            10, 0, 20, 1
+          ]
+        },
+        {
+          "id": "0-door4a",
+          "attach-offset-x": 80,
+          "attach-offset-z": 100.01,
+          "collision": false,
+          "rotate-x": 90,
+          "texture-id": "door.png",
+          "texture-repeat-x": 1,
+          "texture-repeat-y": 1,
+          "vertex-colors": [
+            1, 1, 1, 1,
+            1, 1, 1, 1,
+            1, 1, 1, 1,
+            1, 1, 1, 1
+          ],
+          "vertices": [
+            20, 0, -20, 1,
+            0, 0, -20, 1,
+            0, 0, 0, 1,
+            20, 0, 0, 1
+          ]
+        },
+        {
+          "id": "0-door4b",
+          "attach-offset-x": 80,
+          "attach-offset-z": 99.99,
+          "collision": false,
+          "rotate-x": 270,
+          "texture-id": "door.png",
+          "texture-repeat-x": 1,
+          "texture-repeat-y": 1,
+          "vertex-colors": [
+            1, 1, 1, 1,
+            1, 1, 1, 1,
+            1, 1, 1, 1,
+            1, 1, 1, 1
+          ],
+          "vertices": [
+            20, 0, 0, 1,
+            0, 0, 0, 1,
+            0, 0, 20, 1,
+            20, 0, 20, 1
+          ]
+        }
+      ]
+    }
+  ],
+  "prefabs": [
+    {
+      "type": "prefabs_webgl_cuboid",
+      "properties": {
+        "prefix": "0-kitchen-counter0",
+        "all": {
+          "texture-id": "grid.png",
+          "texture-repeat-y": 3,
+          "vertex-colors": [
+            1, 1, 0, 1,
+            1, 1, 0, 1,
+            1, 1, 0, 1,
+            1, 1, 0, 1
+          ]
+        },
+        "character": "house",
+        "collision": false,
+        "size-x": 30,
+        "size-y": 10,
+        "size-z": 10,
+        "translate-x": 165,
+        "translate-y": 5,
+        "translate-z": 95
+      }
+    },
+    {
+      "type": "prefabs_webgl_cuboid",
+      "properties": {
+        "prefix": "0-kitchen-counter1",
+        "all": {
+          "texture-id": "grid.png",
+          "texture-repeat-x": 4,
+          "vertex-colors": [
+            1, 1, 0, 1,
+            1, 1, 0, 1,
+            1, 1, 0, 1,
+            1, 1, 0, 1
+          ]
+        },
+        "character": "house",
+        "collision": false,
+        "size-x": 10,
+        "size-y": 10,
+        "size-z": 40,
+        "translate-x": 175,
+        "translate-y": 5,
+        "translate-z": 120
+      }
+    },
+    {
+      "type": "prefabs_webgl_cuboid",
+      "properties": {
+        "prefix": "0-kitchen-counter2",
+        "all": {
+          "texture-id": "grid.png",
+          "texture-repeat-y": 5,
+          "vertex-colors": [
+            1, 1, 0, 1,
+            1, 1, 0, 1,
+            1, 1, 0, 1,
+            1, 1, 0, 1
+          ]
+        },
+        "character": "house",
+        "collision": false,
+        "size-x": 50,
+        "size-y": 10,
+        "size-z": 10,
+        "translate-x": 155,
+        "translate-y": 5,
+        "translate-z": 145
+      }
+    },
+    {
+      "type": "prefabs_webgl_cuboid",
+      "properties": {
+        "prefix": "0-kitchen-island",
+        "all": {
+          "texture-id": "grid.png",
+          "texture-repeat-x": 2,
+          "vertex-colors": [
+            1, 1, 0, 1,
+            1, 1, 0, 1,
+            1, 1, 0, 1,
+            1, 1, 0, 1
+          ]
+        },
+        "character": "house",
+        "collision": false,
+        "size-x": 10,
+        "size-y": 10,
+        "size-z": 20,
+        "translate-x": 155,
+        "translate-y": 5,
+        "translate-z": 120
+      }
+    },
+    {
+      "type": "prefabs_webgl_cuboid",
+      "properties": {
+        "prefix": "0-kitchen-fridge",
+        "all": {
+          "texture-id": "grid.png",
+          "texture-repeat-y": 2,
+          "vertex-colors": [
+            1, 1, 0, 1,
+            1, 1, 0, 1,
+            1, 1, 0, 1,
+            1, 1, 0, 1
+          ]
+        },
+        "character": "house",
+        "collision": false,
+        "size-x": 9,
+        "size-y": 20,
+        "size-z": 9,
+        "translate-x": 125,
+        "translate-y": 10,
+        "translate-z": 115
+      }
+    },
+    {
+      "type": "prefabs_webgl_cuboid",
+      "properties": {
+        "prefix": "0-table",
+        "all": {
+          "texture-id": "grid.png",
+          "texture-repeat-x": 3,
+          "vertex-colors": [
+            1, 1, 1, 1,
+            1, 1, 1, 1,
+            1, 1, 1, 1,
+            1, 1, 1, 1
+          ]
+        },
+        "character": "house",
+        "collision": false,
+        "size-x": 10,
+        "size-y": 10,
+        "size-z": 30,
+        "translate-x": 15,
+        "translate-y": 5,
+        "translate-z": 35
+      }
+    },
+    {
+      "type": "prefabs_webgl_cuboid",
+      "properties": {
+        "prefix": "0-couch0",
+        "all": {
+          "texture-id": "grid.png",
+          "texture-repeat-y": 4,
+          "vertex-colors": [
+            1, 1, 1, 1,
+            1, 1, 1, 1,
+            1, 1, 1, 1,
+            1, 1, 1, 1
+          ]
+        },
+        "character": "house",
+        "collision": false,
+        "size-x": 40,
+        "size-y": 10,
+        "size-z": 10,
+        "translate-x": 140,
+        "translate-y": 5,
+        "translate-z": 15
+      }
+    },
+    {
+      "type": "prefabs_webgl_cuboid",
+      "properties": {
+        "prefix": "0-couch1",
+        "all": {
+          "texture-id": "grid.png",
+          "texture-repeat-y": 4,
+          "vertex-colors": [
+            1, 1, 1, 1,
+            1, 1, 1, 1,
+            1, 1, 1, 1,
+            1, 1, 1, 1
+          ]
+        },
+        "character": "house",
+        "collision": false,
+        "size-x": 40,
+        "size-y": 10,
+        "size-z": 10,
+        "translate-x": 140,
+        "translate-y": 5,
+        "translate-z": 45
+      }
+    },
+    {
+      "type": "prefabs_webgl_cuboid",
+      "properties": {
+        "prefix": "0-couch2",
+        "all": {
+          "texture-id": "grid.png",
+          "texture-repeat-x": 2,
+          "vertex-colors": [
+            1, 1, 1, 1,
+            1, 1, 1, 1,
+            1, 1, 1, 1,
+            1, 1, 1, 1
+          ]
+        },
+        "character": "house",
+        "collision": false,
+        "size-x": 10,
+        "size-y": 10,
+        "size-z": 20,
+        "translate-x": 125,
+        "translate-y": 5,
+        "translate-z": 30
+      }
+    },
+    {
+      "type": "prefabs_webgl_cuboid",
+      "properties": {
+        "prefix": "0-couch3",
+        "all": {
+          "texture-id": "grid.png",
+          "texture-repeat-x": 2,
+          "vertex-colors": [
+            1, 1, 1, 1,
+            1, 1, 1, 1,
+            1, 1, 1, 1,
+            1, 1, 1, 1
+          ]
+        },
+        "character": "house",
+        "collision": false,
+        "size-x": 10,
+        "size-y": 10,
+        "size-z": 20,
+        "translate-x": 55,
+        "translate-y": 5,
+        "translate-z": 65
+      }
+    }
+  ]
+}

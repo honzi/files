@@ -1,0 +1,171 @@
+{
+  "spawn-translate-z": 10,
+  "characters": [
+    {
+      "id": "center",
+      "entities": [
+        {
+          "id": "gym-floor",
+          "attach-offset-x": -10,
+          "attach-offset-z": -10,
+          "texture-id": "grid.png",
+          "texture-repeat-x": 20,
+          "texture-repeat-y": 20,
+          "vertex-colors": [
+            1, 0, 0, 1,
+            1, 0, 0, 1,
+            1, 0, 0, 1,
+            1, 0, 0, 1
+          ],
+          "vertices": [
+            10, 0, -10,
+            -10, 0, -10,
+            -10, 0, 10,
+            10, 0, 10
+          ]
+        },
+        {
+          "id": "library-floor",
+          "attach-offset-x": 10,
+          "attach-offset-z": -5,
+          "texture-id": "grid.png",
+          "texture-repeat-x": 20,
+          "texture-repeat-y": 10,
+          "vertex-colors": [
+            0, 1, 0, 1,
+            0, 1, 0, 1,
+            0, 1, 0, 1,
+            0, 1, 0, 1
+          ],
+          "vertices": [
+            10, 0, -5,
+            -10, 0, -5,
+            -10, 0, 5,
+            10, 0, 5
+          ]
+        },
+        {
+          "id": "library-wall-0",
+          "attach-offset-x": 4,
+          "attach-offset-y": 2,
+          "attach-offset-z": -10,
+          "rotate-x": 90,
+          "texture-id": "wall.png",
+          "texture-repeat-x": 8,
+          "texture-repeat-y": 4,
+          "vertex-colors": [
+            0, 1, 0, 1,
+            0, 1, 0, 1,
+            0, 1, 0, 1,
+            0, 1, 0, 1
+          ],
+          "vertices": [
+            4, 0, -2,
+            -4, 0, -2,
+            -4, 0, 2,
+            4, 0, 2
+          ]
+        },
+        {
+          "id": "library-wall-1",
+          "attach-offset-x": 16,
+          "attach-offset-y": 2,
+          "attach-offset-z": -10,
+          "rotate-x": 90,
+          "texture-id": "wall.png",
+          "texture-repeat-x": 8,
+          "texture-repeat-y": 4,
+          "vertex-colors": [
+            0, 1, 0, 1,
+            0, 1, 0, 1,
+            0, 1, 0, 1,
+            0, 1, 0, 1
+          ],
+          "vertices": [
+            4, 0, -2,
+            -4, 0, -2,
+            -4, 0, 2,
+            4, 0, 2
+          ]
+        },
+        {
+          "id": "locker-floor",
+          "attach-offset-x": 10,
+          "attach-offset-z": -15,
+          "texture-id": "grid.png",
+          "texture-repeat-x": 20,
+          "texture-repeat-y": 10,
+          "vertex-colors": [
+            0, 0, 1, 1,
+            0, 0, 1, 1,
+            0, 0, 1, 1,
+            0, 0, 1, 1
+          ],
+          "vertices": [
+            10, 0, -5,
+            -10, 0, -5,
+            -10, 0, 5,
+            10, 0, 5
+          ]
+        },
+        {
+          "id": "locker-wall-0",
+          "attach-offset-x": 10,
+          "attach-offset-y": 2,
+          "attach-offset-z": -20,
+          "rotate-x": 90,
+          "texture-id": "wall.png",
+          "texture-repeat-x": 20,
+          "texture-repeat-y": 4,
+          "vertex-colors": [
+            0, 0, 1, 1,
+            0, 0, 1, 1,
+            0, 0, 1, 1,
+            0, 0, 1, 1
+          ],
+          "vertices": [
+            10, 0, -2,
+            -10, 0, -2,
+            -10, 0, 2,
+            10, 0, 2
+          ]
+        },
+        {
+          "id": "locker-wall-1",
+          "attach-offset-x": 20,
+          "attach-offset-y": 2,
+          "attach-offset-z": -15,
+          "rotate-x": 90,
+          "rotate-z": 90,
+          "texture-id": "wall.png",
+          "texture-repeat-x": 10,
+          "texture-repeat-y": 4,
+          "vertex-colors": [
+            0, 0, 1, 1,
+            0, 0, 1, 1,
+            0, 0, 1, 1,
+            0, 0, 1, 1
+          ],
+          "vertices": [
+            5, 0, -2,
+            -5, 0, -2,
+            -5, 0, 2,
+            5, 0, 2
+          ]
+        }
+      ]
+    }
+  ],
+  "prefabs": [
+    {
+      "type": "prefabs_webgl_humanoid",
+      "properties": {
+        "character": "center",
+        "prefix": "humanoid-0",
+        "scale": 0.2,
+        "translate-x": -15,
+        "translate-z": -15
+      }
+    }
+  ]
+}

@@ -1,0 +1,56 @@
+{
+  "spawn-translate-y": 15,
+  "spawn-translate-z": 25,
+  "characters": [
+    {
+      "id": "garden",
+      "entities": [
+        {
+          "texture-id": "grid.png",
+          "texture-repeat-x": 23,
+          "texture-repeat-y": 27,
+          "vertex-colors": [
+            0, 0.7, 0, 1,
+            0, 0.7, 0, 1,
+            0, 0.7, 0, 1,
+            0, 0.7, 0, 1
+          ],
+          "vertices": [
+            12, 0, -13,
+            -11, 0, -13,
+            -11, 0, 14,
+            12, 0, 14
+          ]
+        },
+        {
+          "attach-offset-x": 16,
+          "attach-offset-z": 8,
+          "texture-id": "grid.png",
+          "texture-repeat-x": 8,
+          "texture-repeat-y": 13,
+          "vertex-colors": [
+            0, 0.7, 0, 1,
+            0, 0.7, 0, 1,
+            0, 0.7, 0, 1,
+            0, 0.7, 0, 1
+          ],
+          "vertices": [
+            4, 0, -7,
+            -4, 0, -7,
+            -4, 0, 6,
+            4, 0, 6
+          ]
+        }
+      ]
+    }
+  ],
+  "prefabs": [
+    {
+      "type": "prefabs_webgl_cuboid_tree",
+      "properties": {
+        "character": "garden",
+        "translate-x": 8
+      }
+    }
+  ]
+}
