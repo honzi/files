@@ -3,7 +3,7 @@
 :: No args.
 :: Example usage: cleanup.bat
 
-# Cleanup various folders.
+:: Cleanup various folders.
 del /S "C:\Users\janho\Documents\EVE\capture\*"
 del /S "C:\Users\janho\Documents\EVE\logs\*"
 del /S "C:\Users\janho\Music\*"
