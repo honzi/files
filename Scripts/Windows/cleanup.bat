@@ -4,10 +4,10 @@
 :: Example usage: cleanup.bat
 
 :: Cleanup various folders.
-del /S "C:\Users\janho\Documents\EVE\capture\*"
-del /S "C:\Users\janho\Documents\EVE\logs\*"
-del /S "C:\Users\janho\Music\*"
-del /S "C:\Users\janho\Pictures\*"
-del /S "C:\Users\janho\Videos\*"
+del /q /s "C:\Users\janho\Documents\EVE\capture\*"
+del /q /s "C:\Users\janho\Documents\EVE\logs\*"
+del /q /s "C:\Users\janho\Music\*"
+del /q /s "C:\Users\janho\Pictures\*"
+del /q /s "C:\Users\janho\Videos\*"
 
 PAUSE
