@@ -1,5 +1,3 @@
-@ECHO OFF
-
 :: No args.
 :: Example usage: configure.bat
 

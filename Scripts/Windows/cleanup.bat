@@ -1,5 +1,3 @@
-@ECHO OFF
-
 :: No args.
 :: Example usage: cleanup.bat
 
