@@ -8,5 +8,7 @@ del /q /s "C:\Users\janho\Documents\EVE\logs\*"
 del /q /s "C:\Users\janho\Music\*"
 del /q /s "C:\Users\janho\Pictures\*"
 del /q /s "C:\Users\janho\Videos\*"
+del /q /s %TEMP%\*
+rd /q /s %systemdrive%\$Recycle.bin
 
 PAUSE
