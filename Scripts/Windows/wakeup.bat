@@ -2,9 +2,9 @@
 :: Example usage: cleanup.bat
 
 :: CONFIGURE
-call configure.bat
+call configure
 
 :: CLEANUP
-call cleanup.bat
+call cleanup
 
 PAUSE
