@@ -245,6 +245,7 @@ gsettings set org.gnome.metacity edge-tiling false
 gsettings set org.gnome.metacity.keybindings toggle-tiled-left []
 gsettings set org.gnome.metacity.keybindings toggle-tiled-right []
 
+gsettings set org.gnome.mutter draggable-border-width 0
 gsettings set org.gnome.mutter dynamic-workspaces false
 
 gsettings set org.gnome.mutter.keybindings rotate-monitor []
