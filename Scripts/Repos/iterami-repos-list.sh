@@ -11,6 +11,7 @@ Aquarium-2D.htm
 AudioEditor.htm
 BaseConverter.htm
 BinaryDataEndecoder.htm
+BlankPage.htm
 BlindMouse.htm
 Click.htm
 Clock.htm
