@@ -24,6 +24,7 @@ conversation
 corporation
 difference
 documentation
+introduction
 noopener
 repository
 statistics
@@ -33,6 +34,6 @@ through
 
 for string in $strings
 do
-    grep -ilr --exclude-dir=".git" --exclude-dir="OldCode" --exclude="LICENSE.md" --exclude="strings.sh" "$string"
+    grep -Filr --exclude-dir=".git" --exclude-dir="OldCode" --exclude="LICENSE.md" --exclude="strings.sh" "$string"
     echo
 done
