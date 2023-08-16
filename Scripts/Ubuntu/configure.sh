@@ -125,6 +125,8 @@ gsettings set org.gnome.desktop.lockdown disable-user-switching true
 
 gsettings set org.gnome.desktop.notifications show-in-lock-screen false
 
+gsettings set org.gnome.desktop.peripherals.keyboard numlock-state true
+gsettings set org.gnome.desktop.peripherals.keyboard remember-numlock-state false
 gsettings set org.gnome.desktop.peripherals.mouse speed 0.61151079136690645
 gsettings set org.gnome.desktop.peripherals.touchpad natural-scroll false
 gsettings set org.gnome.desktop.peripherals.touchpad send-events 'disabled-on-external-mouse'
