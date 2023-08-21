@@ -11,6 +11,8 @@ sh ~/iterami/repos/files/Scripts/Ubuntu/update.sh
 sudo apt-get install dconf-editor
 sudo apt-get install git
 sudo apt-get install menulibre
+sudo apt-get install nodejs
+sudo apt-get install npm
 
 mkdir -p ~/iterami/
 mkdir -p ~/iterami/repos/
@@ -21,9 +23,7 @@ git clone https://github.com/honzi/files.git --depth 1
 cd files/Scripts
 sh fetch-iterami-honzi-repos.sh ~/iterami/repos/
 
-sudo apt-get update
-sudo apt-get upgrade
-sudo apt-get autoremove
+sh ~/iterami/repos/files/Scripts/Ubuntu/update.sh
 
 # UNINSTALL
 sudo apt-get remove alacarte
@@ -31,9 +31,7 @@ sudo apt-get remove bluez
 sudo apt-get remove gnome-bluetooth
 sudo apt-get remove indicator-bluetooth
 
-sudo apt-get update
-sudo apt-get upgrade
-sudo apt-get autoremove
+sh ~/iterami/repos/files/Scripts/Ubuntu/update.sh
 
 # CONFIGURE
 sh ~/iterami/repos/files/Scripts/Ubuntu/configure.sh
