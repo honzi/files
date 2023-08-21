@@ -14,10 +14,12 @@ sudo apt-get install menulibre
 sudo apt-get install nodejs
 sudo apt-get install npm
 
+mkdir -p ~/.npm-packages/
+npm config set prefix "${HOME}/.npm-packages"
+
 mkdir -p ~/iterami/
 mkdir -p ~/iterami/repos/
 mkdir -p ~/iterami/storage/
-
 cd ~/iterami/repos/
 git clone https://github.com/honzi/files.git --depth 1
 cd files/Scripts
