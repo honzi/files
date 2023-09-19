@@ -8,6 +8,7 @@ stackoverflow.com##.js-consent-banner
 ||vugames.com
 youtube.com###comments
 youtube.com###toast
+youtube.com###voice-search-button
 youtube.com##.ytd-mealbar-promo-renderer
 youtube.com##.ytp-ce-element-show
 youtube.com/live_chat$subdocument
