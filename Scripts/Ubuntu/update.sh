@@ -6,7 +6,7 @@ set -eux
 
 # UPDATE
 sudo apt-get -y update
-sudo apt-get -y dist-upgrade
+sudo apt-get -Vy dist-upgrade
 sudo apt-get -y autoclean
-sudo apt-get -y autoremove
+sudo apt-get -Vy autoremove
 sudo snap refresh
