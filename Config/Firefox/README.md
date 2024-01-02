@@ -59,3 +59,4 @@ Honzi's Firefox Config
 * `about:config`:
   * `browser.tabs.closeWindowWithLastTab`: false
   * `gfx.downloadable_fonts.enabled`: false
+  * `middlemouse.paste`: false
