@@ -37,6 +37,10 @@ while IFS= read -r line; do
       fi
       updatedline=$( echo "$line" | cut -b 6- )
       sed -i "$i c $lineprefix$linenumber $updatedline" README.md
+
+      if [ $(( linenumber % 100 )) -eq 0 ]; then
+          echo $linenumber
+      fi
   fi
   i=$((i+1))
 done < README.md
