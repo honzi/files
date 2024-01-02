@@ -58,3 +58,4 @@ Honzi's Firefox Config
   * `Security`: all YES
 * `about:config`:
   * `browser.tabs.closeWindowWithLastTab`: false
+  * `gfx.downloadable_fonts.enabled`: false
