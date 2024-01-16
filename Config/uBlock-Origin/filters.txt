@@ -12,6 +12,7 @@ youtube.com###voice-search-button
 youtube.com##.ytd-mealbar-promo-renderer
 youtube.com##.ytp-ce-element-show
 youtube.com##.ytp-miniplayer-button
+youtube.com##.ytp-size-button
 youtube.com/live_chat$subdocument
 zkillboard.com###nojsfulloverlay
 
