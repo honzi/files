@@ -274,6 +274,7 @@ gsettings set org.gnome.nautilus.list-view default-visible-columns "['name', 'si
 gsettings set org.gnome.nautilus.list-view default-zoom-level 'small'
 
 gsettings set org.gnome.nautilus.preferences default-folder-viewer 'list-view'
+gsettings set org.gnome.nautilus.preferences tabs-open-position 'end'
 gsettings set org.gnome.nautilus.preferences mouse-use-extra-buttons false
 gsettings set org.gnome.nautilus.preferences show-create-link true
 gsettings set org.gnome.nautilus.preferences show-hidden-files true
