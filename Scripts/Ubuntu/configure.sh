@@ -359,8 +359,11 @@ gsettings set org.gnome.shell.overrides edge-tiling false
 gsettings set org.gnome.shell.ubuntu color-scheme 'prefer-dark'
 
 gsettings reset-recursively org.gnome.system.location
+gsettings set org.gnome.system.location max-accuracy-level 'country'
 
 gsettings reset-recursively org.gnome.Terminal.Legacy.Settings
+gsettings set org.gnome.Terminal.Legacy.Settings context-info []
+gsettings set org.gnome.Terminal.Legacy.Settings menu-accelerator-enabled false
 gsettings set org.gnome.Terminal.Legacy.Settings new-terminal-mode 'tab'
 gsettings set org.gnome.Terminal.Legacy.Keybindings:/org/gnome/terminal/legacy/keybindings/ close-window 'disabled'
 gsettings set org.gnome.Terminal.Legacy.Keybindings:/org/gnome/terminal/legacy/keybindings/ find 'disabled'
