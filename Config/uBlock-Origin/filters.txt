@@ -7,6 +7,8 @@ stackexchange.com##.js-consent-banner
 stackoverflow.com##.js-consent-banner
 ||vugames.com
 youtube.com###comments
+youtube.com###related
+youtube.com###search-icon-legacy
 youtube.com###toast
 youtube.com###voice-search-button
 youtube.com##.ytd-mealbar-promo-renderer
