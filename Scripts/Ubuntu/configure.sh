@@ -138,15 +138,21 @@ gsettings set org.gnome.desktop.privacy disable-microphone true
 gsettings set org.gnome.desktop.privacy hide-identity true
 gsettings set org.gnome.desktop.privacy remember-app-usage false
 gsettings set org.gnome.desktop.privacy remember-recent-files false
+gsettings set org.gnome.desktop.privacy show-full-name-in-top-bar false
 
 gsettings set org.gnome.desktop.screensaver picture-options 'none'
 gsettings set org.gnome.desktop.screensaver primary-color '#000000'
 gsettings set org.gnome.desktop.screensaver secondary-color '#000000'
+gsettings set org.gnome.desktop.screensaver show-full-name-in-top-bar false
+
+gsettings reset-recursively org.gnome.desktop.search-providers
 
 gsettings set org.gnome.desktop.session idle-delay 3600
 
 gsettings set org.gnome.desktop.sound allow-volume-above-100-percent false
 gsettings set org.gnome.desktop.sound event-sounds false
+
+gsettings set org.gnome.desktop.thumbnailers disable-all true
 
 gsettings set org.gnome.desktop.wm.keybindings activate-window-menu []
 gsettings set org.gnome.desktop.wm.keybindings begin-move []
@@ -274,12 +280,14 @@ gsettings set org.gnome.nautilus.list-view default-visible-columns "['name', 'si
 gsettings set org.gnome.nautilus.list-view default-zoom-level 'small'
 
 gsettings set org.gnome.nautilus.preferences default-folder-viewer 'list-view'
-gsettings set org.gnome.nautilus.preferences tabs-open-position 'end'
+gsettings set org.gnome.nautilus.preferences fts-enabled false
+gsettings set org.gnome.nautilus.preferences install-mime-activation false
 gsettings set org.gnome.nautilus.preferences mouse-use-extra-buttons false
 gsettings set org.gnome.nautilus.preferences show-create-link true
 gsettings set org.gnome.nautilus.preferences show-hidden-files true
 gsettings set org.gnome.nautilus.preferences show-image-thumbnails 'never'
-gsettings set org.gnome.nautilus.preferences thumbnail-limit 10
+gsettings set org.gnome.nautilus.preferences tabs-open-position 'end'
+gsettings set org.gnome.nautilus.preferences thumbnail-limit 0
 
 gsettings reset-recursively org.gnome.nm-applet
 gsettings set org.gnome.nm-applet disable-wifi-create true
