@@ -8,6 +8,7 @@ set -eux
 > ~/.bash_history
 > ~/.minecraft/launcher_log.txt
 > ~/.python_history
+sudo journalctl --vacuum-time=1d
 sudo rm -rf ~/.cache/thumbnails/*
 sudo rm -rf ~/.local/share/Trash/*
 sudo rm -rf ~/.minecraft/crash-reports/*
