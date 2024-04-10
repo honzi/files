@@ -6,6 +6,7 @@ reddit.com##.listing-chooser
 stackexchange.com##.js-consent-banner
 stackoverflow.com##.js-consent-banner
 ||vugames.com
+youtube.com###clarify-box
 youtube.com###comments
 youtube.com###related
 youtube.com###search-icon-legacy
