@@ -7,6 +7,7 @@ set -eux
 # An array of all honzi repos.
 honzi_repos='
 biggestisk
+CastleOfAges
 EVE-Overviews.yaml
 files
 GMod-Addons.lua
