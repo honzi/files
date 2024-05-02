@@ -33,7 +33,6 @@ Fireworks-2D.htm
 FractalRunner-2D3D.htm
 GradientIllusion.htm
 Guess.htm
-Guides.htm
 Hallway-2D3D.htm
 Hexagons-2D.htm
 Hrad.htm
