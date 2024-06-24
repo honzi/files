@@ -28,6 +28,7 @@ DotEyeIllusion.htm
 Dropdown.htm
 Duel.htm
 ESP-Test.htm
+EyeChart.htm
 Finances.htm
 Fireworks-2D.htm
 FractalRunner-2D3D.htm
