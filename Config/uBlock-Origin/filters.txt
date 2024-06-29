@@ -25,6 +25,7 @@ youtube.com##.ytp-mute-button
 youtube.com##.ytp-size-button
 youtube.com##.ytp-subtitles-button
 youtube.com##.ytp-volume-panel
+youtube.com##ytd-metadata-row-container-renderer
 youtube.com/live_chat$subdocument
 zkillboard.com###nojsfulloverlay
 
