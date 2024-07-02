@@ -2,6 +2,7 @@ buycrysis.ea.com
 ||condemnedgame.com
 eveonline.com##.Navigation_navRight__1inNk
 google.com##.AUiS2
+||neverendingnightmares.com
 reddit.com##alert-controller
 reddit.com##.infobar-toaster-container
 reddit.com##.listing-chooser
