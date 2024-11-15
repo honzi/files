@@ -11,7 +11,7 @@ reddit.com##.listing-chooser
 stackexchange.com##.js-consent-banner
 stackoverflow.com##.js-consent-banner
 ||tiktok.com
-||twitch.com
+||twitch.tv
 ||twitter.com
 ||vugames.com
 ||x.com
