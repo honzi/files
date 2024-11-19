@@ -6,8 +6,12 @@ google.com##.AUiS2
 ||mov^
 ||neverendingnightmares.com
 reddit.com##alert-controller
+reddit.com###auth-unit-container
+reddit.com##.h-header-large
 reddit.com##.infobar-toaster-container
+reddit.com###left-sidebar-container
 reddit.com##.listing-chooser
+reddit.com###right-sidebar-container
 stackexchange.com##.js-consent-banner
 stackoverflow.com##.js-consent-banner
 ||tiktok.com
