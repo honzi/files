@@ -31,12 +31,14 @@ youtube.com###voice-search-button
 youtube.com##.ytd-mealbar-promo-renderer
 youtube.com##.YtInlinePlayerControlsTopLeftControls
 youtube.com##.ytp-ce-element-show
+youtube.com##.ytp-chrome-top
 youtube.com##.ytp-fullscreen-button
 youtube.com##.ytp-miniplayer-button
 youtube.com##.ytp-mute-button
 youtube.com##.ytp-size-button
 youtube.com##.ytp-subtitles-button
 youtube.com##.ytp-volume-panel
+youtube.com##.ytp-youtube-button
 youtube.com##ytd-metadata-row-container-renderer
 youtube.com/live_chat$subdocument
 ||zip^
