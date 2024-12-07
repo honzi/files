@@ -16,4 +16,5 @@ MC-DataPacks
 SC-AI.cpp
 WoW-Addons.lua
 WZ2100-AI.js
+YouTubeViewer.htm
 '
