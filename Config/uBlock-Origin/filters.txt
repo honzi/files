@@ -33,6 +33,8 @@ youtube.com##.YtInlinePlayerControlsTopLeftControls
 youtube.com##.ytp-ce-element-show
 youtube.com##.ytp-chrome-top
 youtube.com##.ytp-fullscreen-button
+youtube.com##.ytp-gradient-bottom
+youtube.com##.ytp-gradient-top
 youtube.com##.ytp-miniplayer-button
 youtube.com##.ytp-mute-button
 youtube.com##.ytp-size-button
