@@ -29,6 +29,8 @@ fifth
 first
 fourth
 introduction
+maximum
+minimum
 ninth
 noopener
 repository
