@@ -23,7 +23,6 @@ youtube.com###clarify-box
 youtube.com###comments
 youtube.com###panels-full-bleed-container
 youtube.com###related
-youtube.com###search-icon-legacy
 youtube.com###ticket-shelf
 youtube.com###toast
 youtube.com###voice-search-button
@@ -42,6 +41,8 @@ youtube.com##.ytp-size-button
 youtube.com##.ytp-subtitles-button
 youtube.com##.ytp-volume-panel
 youtube.com##.ytp-youtube-button
+youtube.com##.ytSearchboxComponentSearchButton
+youtube.com##ytd-button-renderer
 youtube.com##ytd-metadata-row-container-renderer
 youtube.com/live_chat$subdocument
 ||zip^
