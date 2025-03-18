@@ -5,6 +5,7 @@ eveonline.com##.Navigation_navRight__1inNk
 ||mov^
 ||neverendingnightmares.com
 reddit.com##alert-controller
+reddit.com##auth-landing-experience-xpromo-cbau-wrapper
 reddit.com###auth-unit-container
 reddit.com##.h-header-large
 reddit.com##.infobar-toaster-container
