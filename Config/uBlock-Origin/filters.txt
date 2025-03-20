@@ -22,6 +22,7 @@ stackoverflow.com##.js-consent-banner
 youtube.com###chat
 youtube.com###clarify-box
 youtube.com###comments
+youtube.com###hover-overlays
 youtube.com###panels-full-bleed-container
 youtube.com###related
 youtube.com###ticket-shelf
