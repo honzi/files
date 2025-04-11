@@ -1,5 +1,5 @@
 #!/bin/sh
-set -eux
+set -ux
 
 # Required args:
 #   $1: Relative path to the folder in which
@@ -28,6 +28,7 @@ eighth
 fifth
 first
 fourth
+getYear
 introduction
 maximum
 minimum
@@ -35,13 +36,17 @@ ninth
 noopener
 repository
 second
+setYear
 seventh
 sixth
 statistics
+substr(
 tenth
 third
 though
 through
+trimLeft
+trimRight
 '
 
 for string in $strings
