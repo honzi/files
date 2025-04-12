@@ -17,6 +17,7 @@ fi
 cd $1
 
 strings='
+0.
 argument
 combination
 configuration
