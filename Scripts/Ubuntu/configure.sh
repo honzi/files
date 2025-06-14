@@ -70,6 +70,7 @@ gsettings set com.ubuntu.update-manager show-details true
 gsettings set com.ubuntu.update-manager show-versions true
 
 gsettings reset-recursively com.ubuntu.update-notifier
+gsettings set com.ubuntu.update-notifier release-check-time 4294967295
 
 gsettings reset-recursively com.ubuntu.user-interface.desktop
 
