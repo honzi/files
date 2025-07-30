@@ -138,16 +138,22 @@ gsettings set org.gnome.desktop.peripherals.touchpad tap-to-click false
 gsettings set org.gnome.desktop.privacy disable-camera true
 gsettings set org.gnome.desktop.privacy disable-microphone true
 gsettings set org.gnome.desktop.privacy hide-identity true
+gsettings set org.gnome.desktop.privacy privacy-screen true
+gsettings set org.gnome.desktop.privacy recent-files-max-age 0
 gsettings set org.gnome.desktop.privacy remember-app-usage false
 gsettings set org.gnome.desktop.privacy remember-recent-files false
+gsettings set org.gnome.desktop.privacy remove-old-temp-files false
+gsettings set org.gnome.desktop.privacy remove-old-trash-files false
 gsettings set org.gnome.desktop.privacy show-full-name-in-top-bar false
 
 gsettings set org.gnome.desktop.screensaver picture-options 'none'
 gsettings set org.gnome.desktop.screensaver primary-color '#000000'
 gsettings set org.gnome.desktop.screensaver secondary-color '#000000'
 gsettings set org.gnome.desktop.screensaver show-full-name-in-top-bar false
+gsettings set org.gnome.desktop.screensaver user-switch-enabled false
 
 gsettings reset-recursively org.gnome.desktop.search-providers
+gsettings set org.gnome.desktop.search-providers disable-external true
 
 gsettings set org.gnome.desktop.session idle-delay 3600
 
@@ -210,12 +216,13 @@ gsettings set org.gnome.gedit.plugins active-plugins []
 gsettings set org.gnome.gedit.plugins.filebrowser filter-mode []
 
 gsettings reset-recursively org.gnome.gnome-flashback.desktop.icons
+gsettings set org.gnome.gnome-flashback.desktop draw-background false
 gsettings set org.gnome.gnome-flashback.desktop.icons show-home false
 gsettings set org.gnome.gnome-flashback.desktop.icons show-trash false
 
 gsettings set org.gnome.gnome-flashback.keybindings area-screenshot []
 gsettings set org.gnome.gnome-flashback.keybindings area-screenshot-clip []
-gsettings set org.gnome.gnome-flashback.keybindings max-screencast-length 0
+gsettings set org.gnome.gnome-flashback.keybindings max-screencast-length 1
 gsettings set org.gnome.gnome-flashback.keybindings screencast []
 gsettings set org.gnome.gnome-flashback.keybindings screenshot []
 gsettings set org.gnome.gnome-flashback.keybindings screenshot-clip []
