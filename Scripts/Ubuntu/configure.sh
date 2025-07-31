@@ -216,7 +216,6 @@ gsettings set org.gnome.gedit.plugins active-plugins []
 gsettings set org.gnome.gedit.plugins.filebrowser filter-mode []
 
 gsettings reset-recursively org.gnome.gnome-flashback.desktop.icons
-gsettings set org.gnome.gnome-flashback.desktop draw-background false
 gsettings set org.gnome.gnome-flashback.desktop.icons show-home false
 gsettings set org.gnome.gnome-flashback.desktop.icons show-trash false
 
