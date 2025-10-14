@@ -1,6 +1,7 @@
 #!/bin/sh
 set -eux
 
+# Version: 22.02
 # No args.
 # Example usage: sh install.sh
 

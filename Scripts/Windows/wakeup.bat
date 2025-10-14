@@ -1,3 +1,4 @@
+:: Version: 10
 :: No args.
 :: Example usage: wakeup.bat
 
