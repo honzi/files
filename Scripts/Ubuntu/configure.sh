@@ -1,7 +1,7 @@
 #!/bin/sh
 set -eux
 
-# Version: 22.02
+# Version: 22.04
 # No args.
 # Example usage: sh configure.sh
 
