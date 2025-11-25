@@ -20,7 +20,7 @@ cd $1
 IFS='\n'
 i=1
 start=10
-end=$((start+761))
+end=$((start+764))
 
 while IFS= read -r line; do
   if [ $i -ge $start ] && [ $i -lt $end ]
