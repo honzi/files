@@ -32,6 +32,7 @@ EyeChart.htm
 Finances.htm
 Fireworks-2D.htm
 FractalRunner-2D3D.htm
+Gears.htm
 GradientIllusion.htm
 Guess.htm
 Hallway-2D3D.htm
