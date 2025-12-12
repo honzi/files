@@ -11,6 +11,7 @@ set -eux
 > ~/.python_history
 sudo journalctl --vacuum-time=1d
 sudo rm -rf ~/.cache/thumbnails/*
+sudo rm -rf ~/.cache/tracker3/*
 sudo rm -rf ~/.local/share/Trash/*
 sudo rm -rf ~/.minecraft/crash-reports/*
 sudo rm -rf ~/.minecraft/logs/*
