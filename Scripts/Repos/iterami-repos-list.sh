@@ -66,7 +66,6 @@ RockPaperScissors.htm
 RomanNumerals.htm
 RTS-Boxing.htm
 Scripts
-Slots.htm
 Snakish.htm
 SnowyMountains.htm
 SolarSystem-2D.htm
