@@ -7,6 +7,7 @@ eveonline.com##.Navigation_navRight__hGXZP
 reddit.com##alert-controller
 reddit.com##auth-landing-experience-xpromo-cbau-wrapper
 reddit.com###auth-unit-container
+reddit.com###data-protection-consent-dialog
 reddit.com##.h-header-large
 reddit.com##.infobar-toaster-container
 reddit.com###left-sidebar-container
