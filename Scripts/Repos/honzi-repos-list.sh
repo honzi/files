@@ -10,6 +10,7 @@ biggestisk
 CastleOfAges
 EVE-Overviews.yaml
 files
+Firefox-Extensions.js
 GMod-Addons.lua
 honzi.github.io
 MC-DataPacks
