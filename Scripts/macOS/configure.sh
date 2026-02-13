@@ -1,7 +1,7 @@
 #!/bin/sh
 set -eux
 
-# Version: ???
+# Version: ?
 # No args.
 # Example usage: sh configure.sh
 
