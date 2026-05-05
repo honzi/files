@@ -14,7 +14,6 @@ amixer set Mic 0%
 sh ~/iterami/repos/Scripts/ubuntu/xrandr-scale.sh eDP1 1600 900 1920 1080 1.2 1.2
 xinput disable 'ETPS/2 Elantech Touchpad'
 xgamma -gamma 1
-[ -f /etc/apt/sources.list.d/google-chrome.sources ] && sudo mv -f /etc/apt/sources.list.d/google-chrome.sources /etc/apt/sources.list.d/google-chrome.sources.disabled
 
 git config --global user.name 'Jan Hořava'
 git config --global user.email czechinthemail@gmail.com
