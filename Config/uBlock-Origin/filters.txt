@@ -14,8 +14,6 @@ reddit.com###left-sidebar-container
 reddit.com##.listing-chooser
 reddit.com###right-sidebar-container
 ||shop.battle.net
-stackexchange.com##.js-consent-banner
-stackoverflow.com##.js-consent-banner
 ||tiktok.com
 ||twitch.tv
 ||twitter.com
