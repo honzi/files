@@ -116,6 +116,7 @@ gsettings set org.gnome.desktop.interface clock-show-weekday true
 gsettings set org.gnome.desktop.interface color-scheme 'prefer-dark'
 gsettings set org.gnome.desktop.interface cursor-blink-time 1000
 gsettings set org.gnome.desktop.interface cursor-blink-timeout 999999
+gsettings set org.gnome.desktop.interface enable-animations false
 gsettings set org.gnome.desktop.interface enable-hot-corners false
 gsettings set org.gnome.desktop.interface gtk-enable-primary-paste false
 gsettings set org.gnome.desktop.interface gtk-theme 'Yaru-dark'
