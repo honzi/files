@@ -15,8 +15,9 @@ sh ~/iterami/repos/Scripts/ubuntu/xrandr-scale.sh eDP1 1600 900 1920 1080 1.2 1.
 xinput disable 'ETPS/2 Elantech Touchpad'
 xgamma -gamma 1
 
-git config --global user.name 'Jan Hořava'
+git config --global credential.username honzi
 git config --global user.email czechinthemail@gmail.com
+git config --global user.name 'Jan Hořava'
 
 gsettings reset-recursively ca.desrt.dconf-editor.Settings
 gsettings set ca.desrt.dconf-editor.Settings mouse-use-extra-buttons false
